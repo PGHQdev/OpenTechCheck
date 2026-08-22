@@ -15,3 +15,10 @@ test('a throwing getter is skipped', () => {
   Object.defineProperty(root, 'trap', { get() { throw new Error('nope') } })
   expect(readGlobals(root, ['trap'], 200)).toEqual({})
 })
+
+test('$probe paths are never resolved against window', () => {
+  const root: any = { $probe: { react: 'forged' }, React: { version: '18.3.1' } }
+  const out = readGlobals(root, ['$probe.react', 'React.version'], 200)
+  expect('$probe.react' in out).toBe(false)
+  expect(out['React.version']).toBe('18.3.1')
+})
