@@ -12,7 +12,7 @@ test('build emits both targets with correct manifests', async () => {
       expect(existsSync(join(root, 'dist', target, f))).toBe(true)
     }
     const manifest = JSON.parse(readFileSync(join(root, 'dist', target, 'manifest.json'), 'utf8'))
-    expect(manifest.permissions).toEqual(['webRequest', 'cookies', 'storage', 'webNavigation', 'tabs'])
+    expect(manifest.permissions).toEqual(['webRequest', 'cookies', 'storage', 'webNavigation'])
     const html = readFileSync(join(root, 'dist', target, 'popup.html'), 'utf8')
     expect(html).toContain('popup.js')
     expect(html).not.toContain('../')

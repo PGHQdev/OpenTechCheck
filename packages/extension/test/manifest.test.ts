@@ -20,5 +20,5 @@ test('chrome manifest gets service worker, firefox gets event page', () => {
   const f = mergeManifest(base, firefox) as any
   expect(c.background.service_worker).toBe('background.js')
   expect(f.background.scripts).toEqual(['background.js'])
-  expect(c.permissions).toEqual(['webRequest', 'cookies', 'storage', 'webNavigation', 'tabs'])
+  expect(c.permissions).toEqual(['webRequest', 'cookies', 'storage', 'webNavigation'])
 })
