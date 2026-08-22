@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "lit",
+    "google-analytics"
+  ]
+}
