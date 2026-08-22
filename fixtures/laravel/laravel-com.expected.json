@@ -1,9 +1,10 @@
 {
   "detects": [
     "cloudflare",
-    "laravel",
-    "tailwindcss",
     "fathom",
-    "google-tag-manager"
+    "google-tag-manager",
+    "hubspot",
+    "laravel",
+    "tailwindcss"
   ]
 }
