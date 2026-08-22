@@ -1,0 +1,14 @@
+name: WordPress
+slug: wordpress
+category: cms
+website: https://wordpress.org
+detect:
+  html:
+    - pattern: '/wp-content/'
+    - pattern: '/wp-includes/'
+  meta:
+    generator:
+      - pattern: 'WordPress(?:\s([\d.]+))?'
+        version: 1
+  scripts:
+    - pattern: '/wp-includes/'
