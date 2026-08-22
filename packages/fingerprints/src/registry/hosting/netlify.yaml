@@ -1,0 +1,10 @@
+name: Netlify
+slug: netlify
+category: hosting
+website: https://www.netlify.com
+detect:
+  headers:
+    x-nf-request-id:
+      - pattern: ''
+    server:
+      - pattern: '^Netlify$'

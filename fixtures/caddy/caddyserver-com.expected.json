@@ -2,6 +2,7 @@
   "detects": [
     "caddy",
     "google-analytics",
-    "fathom"
+    "fathom",
+    "jsdelivr"
   ]
 }

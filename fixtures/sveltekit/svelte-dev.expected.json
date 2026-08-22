@@ -1,6 +1,7 @@
 {
   "detects": [
     "svelte",
-    "sveltekit"
+    "sveltekit",
+    "vercel"
   ]
 }

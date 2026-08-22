@@ -1,0 +1,10 @@
+name: GitHub Pages
+slug: github-pages
+category: hosting
+website: https://pages.github.com
+detect:
+  headers:
+    # github.com itself answers with lowercase "github.com"; Pages answers
+    # with "GitHub.com", so this match must stay case-sensitive.
+    server:
+      - pattern: '^(?-i:GitHub\.com)$'

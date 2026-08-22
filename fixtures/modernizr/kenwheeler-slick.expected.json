@@ -2,6 +2,9 @@
   "detects": [
     "modernizr",
     "slick",
-    "jquery"
+    "jquery",
+    "fastly",
+    "cdnjs",
+    "github-pages"
   ]
 }

@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "cdnjs",
+    "slick",
+    "modernizr",
+    "jquery",
+    "fastly",
+    "github-pages"
+  ]
+}

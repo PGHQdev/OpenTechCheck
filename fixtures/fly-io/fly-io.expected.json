@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "fly-io",
+    "phoenix",
+    "google-analytics",
+    "google-tag-manager",
+    "tailwindcss"
+  ]
+}

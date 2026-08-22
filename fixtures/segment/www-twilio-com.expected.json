@@ -1,6 +1,8 @@
 {
   "detects": [
     "adobe-launch",
+    "amazon-s3",
+    "cloudfront",
     "google-tag-manager",
     "segment"
   ]

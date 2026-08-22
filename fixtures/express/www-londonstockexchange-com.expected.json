@@ -2,6 +2,7 @@
   "detects": [
     "angular",
     "express",
-    "nginx"
+    "nginx",
+    "cloudfront"
   ]
 }

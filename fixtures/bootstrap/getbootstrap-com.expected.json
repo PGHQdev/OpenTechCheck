@@ -3,6 +3,7 @@
     "bootstrap",
     "astro",
     "cloudflare",
-    "fathom"
+    "fathom",
+    "fastly"
   ]
 }

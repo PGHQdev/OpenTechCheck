@@ -4,6 +4,7 @@
     "sanity",
     "tailwindcss",
     "fathom",
-    "google-tag-manager"
+    "google-tag-manager",
+    "vercel"
   ]
 }

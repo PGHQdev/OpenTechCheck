@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "unpkg",
+    "gatsby",
+    "react",
+    "vercel"
+  ]
+}

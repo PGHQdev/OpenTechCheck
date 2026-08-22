@@ -3,6 +3,7 @@
     "contentful",
     "gatsby",
     "react",
-    "google-tag-manager"
+    "google-tag-manager",
+    "netlify"
   ]
 }

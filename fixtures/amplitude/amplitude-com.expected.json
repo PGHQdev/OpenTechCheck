@@ -6,6 +6,7 @@
     "react",
     "sanity",
     "tailwindcss",
-    "google-tag-manager"
+    "google-tag-manager",
+    "vercel"
   ]
 }

@@ -1,6 +1,8 @@
 {
   "detects": [
     "ghost",
-    "openresty"
+    "openresty",
+    "fastly",
+    "jsdelivr"
   ]
 }

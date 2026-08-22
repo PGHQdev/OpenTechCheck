@@ -1,0 +1,16 @@
+name: Akamai
+slug: akamai
+category: cdn
+website: https://www.akamai.com
+detect:
+  headers:
+    akamai-grn:
+      - pattern: ''
+    x-akamai-transformed:
+      - pattern: ''
+    server:
+      - pattern: '^AkamaiGHost$'
+      - pattern: '^AkamaiNetStorage$'
+    server-timing:
+      - pattern: '\bak_p;'
+        confidence: 90

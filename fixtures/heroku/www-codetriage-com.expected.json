@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "heroku",
+    "cloudflare",
+    "ruby-on-rails"
+  ]
+}

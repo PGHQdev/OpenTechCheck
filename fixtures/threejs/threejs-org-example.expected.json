@@ -1,5 +1,7 @@
 {
   "detects": [
-    "threejs"
+    "threejs",
+    "fastly",
+    "github-pages"
   ]
 }

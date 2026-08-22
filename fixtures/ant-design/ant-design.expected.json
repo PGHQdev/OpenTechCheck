@@ -4,6 +4,8 @@
     "react",
     "cloudflare",
     "google-analytics",
-    "microsoft-clarity"
+    "microsoft-clarity",
+    "fastly",
+    "jsdelivr"
   ]
 }

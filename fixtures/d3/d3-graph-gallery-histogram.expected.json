@@ -4,6 +4,8 @@
     "bootstrap",
     "jquery",
     "google-analytics",
-    "font-awesome"
+    "font-awesome",
+    "fastly",
+    "github-pages"
   ]
 }

@@ -1,5 +1,7 @@
 {
   "detects": [
-    "anime"
+    "anime",
+    "fastly",
+    "github-pages"
   ]
 }

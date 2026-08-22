@@ -3,6 +3,7 @@
     "tailwindcss",
     "nextjs",
     "react",
-    "cloudflare"
+    "cloudflare",
+    "vercel"
   ]
 }

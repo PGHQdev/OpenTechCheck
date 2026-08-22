@@ -1,6 +1,8 @@
 {
   "detects": [
     "bulma",
-    "font-awesome"
+    "font-awesome",
+    "fastly",
+    "github-pages"
   ]
 }

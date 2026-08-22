@@ -1,6 +1,7 @@
 {
   "detects": [
     "ember",
-    "tailwindcss"
+    "tailwindcss",
+    "netlify"
   ]
 }
