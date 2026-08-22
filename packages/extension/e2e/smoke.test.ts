@@ -68,6 +68,7 @@ test('badge and popup reflect fixture detections', async () => {
   expect(slugs).toContain('nextjs')
   expect(slugs).toContain('wordpress')
   expect(slugs).toContain('nginx')
+  expect(slugs).toContain('react')
 
   // Badge text is set fire-and-forget right after the stored result, so
   // give it a few retries to settle rather than asserting immediately.
@@ -96,11 +97,12 @@ test('badge and popup reflect fixture detections', async () => {
   await popupPage.waitForSelector('section button')
 
   const rows = await popupPage.$$('section button')
-  expect(rows.length).toBeGreaterThanOrEqual(3)
+  expect(rows.length).toBeGreaterThanOrEqual(4)
   const popupText = await popupPage.evaluate(() => document.body.innerText)
   expect(popupText).toContain('Next.js')
   expect(popupText).toContain('WordPress')
   expect(popupText).toContain('Nginx')
+  expect(popupText).toContain('React')
 
   await popupPage.close()
   await page.close()

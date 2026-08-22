@@ -1,9 +1,9 @@
 import { detect, type Fingerprint } from '@opentechcheck/core'
 import registry from '@opentechcheck/fingerprints'
 import { toBundle, toCookieRecord, toHeaderTable } from './assemble'
-import { clearTab, getTab, setTab } from './store'
+import { clearTab, clearTabResult, getTab, setTab } from './store'
 import { ext } from '../shared/ext'
-import type { TabResult, ToBackground, ToContent } from '../shared/protocol'
+import type { PageSignals, TabResult, ToBackground, ToContent } from '../shared/protocol'
 
 const fingerprints = registry as unknown as Fingerprint[]
 
@@ -12,7 +12,7 @@ export interface BackgroundApi {
   getCookies(url: string): Promise<Array<{ name: string; value: string }>>
   setBadge(tabId: number, text: string): void
   sendToTab(tabId: number, msg: ToContent): Promise<void>
-  onHeaders(cb: (tabId: number, headers: Array<{ name: string; value?: string }>) => void): void
+  onHeaders(cb: (tabId: number, url: string, headers: Array<{ name: string; value?: string }>) => void): void
   onMessage(cb: (msg: ToBackground, tabId: number | undefined) => Promise<unknown> | void): void
   onCommitted(cb: (tabId: number) => void): void          // main-frame new document
   onHistoryUpdated(cb: (tabId: number) => void): void      // SPA navigation
@@ -22,23 +22,32 @@ export interface BackgroundApi {
   clearTimer(t: unknown): void
 }
 
+async function detectAndStore(api: BackgroundApi, tabId: number, signals: PageSignals): Promise<void> {
+  const headers = await getTab<Record<string, string[]>>(api.session, 'headers', tabId)
+  const cookies = toCookieRecord(await api.getCookies(signals.url))
+  const bundle = toBundle(signals, headers ?? undefined, cookies)
+  const detections = detect(bundle, fingerprints)
+  const result: TabResult = { url: signals.url, detections }
+  await setTab(api.session, 'result', tabId, result)
+  api.setBadge(tabId, detections.length > 0 ? String(detections.length) : '')
+}
+
 export function createBackground(api: BackgroundApi): void {
   const timers = new Map<number, unknown>()
 
-  api.onHeaders((tabId, headers) => {
-    setTab(api.session, 'headers', tabId, toHeaderTable(headers)).catch(console.warn)
+  api.onHeaders((tabId, url, headers) => {
+    return (async () => {
+      await setTab(api.session, 'headers', tabId, toHeaderTable(headers))
+      const signals = await getTab<PageSignals>(api.session, 'signals', tabId)
+      if (signals && signals.url === url) await detectAndStore(api, tabId, signals)
+    })().catch(console.warn)
   })
 
   api.onMessage(async (msg: ToBackground, tabId) => {
     try {
       if (msg.type === 'signals' && tabId !== undefined) {
-        const headers = await getTab<Record<string, string[]>>(api.session, 'headers', tabId)
-        const cookies = toCookieRecord(await api.getCookies(msg.signals.url))
-        const bundle = toBundle(msg.signals, headers ?? undefined, cookies)
-        const detections = detect(bundle, fingerprints)
-        const result: TabResult = { url: msg.signals.url, detections }
-        await setTab(api.session, 'result', tabId, result)
-        api.setBadge(tabId, detections.length > 0 ? String(detections.length) : '')
+        await setTab(api.session, 'signals', tabId, msg.signals)
+        await detectAndStore(api, tabId, msg.signals)
         return
       }
       if (msg.type === 'get-result' && tabId !== undefined) {
@@ -49,7 +58,7 @@ export function createBackground(api: BackgroundApi): void {
   })
 
   api.onCommitted((tabId) => {
-    api.session.remove(`result:${tabId}`).catch(console.warn)
+    clearTabResult(api.session, tabId).catch(console.warn)
     api.setBadge(tabId, '')
   })
 
@@ -76,7 +85,7 @@ function realApi(c: typeof chrome): BackgroundApi {
     setBadge: (tabId, text) => { c.action.setBadgeText({ tabId, text }).catch(() => {}) },
     sendToTab: (tabId, msg) => c.tabs.sendMessage(tabId, msg),
     onHeaders: (cb) => c.webRequest.onHeadersReceived.addListener(
-      (d) => { if (d.tabId >= 0) cb(d.tabId, d.responseHeaders ?? []) },
+      (d) => { if (d.tabId >= 0) cb(d.tabId, d.url, d.responseHeaders ?? []) },
       { urls: ['<all_urls>'], types: ['main_frame'] }, ['responseHeaders'],
     ),
     onMessage: (cb) => c.runtime.onMessage.addListener((msg, sender, sendResponse) => {
