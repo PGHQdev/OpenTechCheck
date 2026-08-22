@@ -65,14 +65,16 @@ URL or page
   html, headers, cookies, meta tags, and script URLs from one response.
 - Browser-runtime collectors (DOM, JS globals) arrive later with the
   extension as a separate package. The schema supports them from day one, so
-  the extension needs no schema change.
+  the extension needs no schema change. Note for that phase: the browser
+  collector must read the compiled fingerprints to know which DOM selectors
+  and JS globals to sample before it can build the bundle.
 - `fingerprints` ships compiled JSON plus YAML sources. Consumers load JSON
   and never parse YAML at runtime.
 
 ## 4. Fingerprint Schema
 
 One YAML file per technology at
-`packages/fingerprints/src/<category>/<name>.yaml`:
+`packages/fingerprints/src/<category>/<slug>.yaml`:
 
 ```yaml
 name: Next.js
@@ -103,6 +105,8 @@ Rules:
 - Every rule is a structured object: `pattern` (regex string), optional
   `version` (capture group index), optional `confidence` (integer 0-100,
   default 100). No inline `\;version:\1` string conventions.
+- Patterns compile with the case-insensitive flag. Header names and meta
+  names are lowercased, both in the bundle and in fingerprint keys.
 - The compiler rejects patterns with catastrophic-backtracking risk (nested
   quantifiers) via a lint rule, because untrusted page content feeds the
   matcher.
@@ -153,8 +157,11 @@ Behavior:
 - Confidence per technology = maximum rule confidence, plus 5 points per
   additional distinct source that matches, capped at 100. Implied
   technologies receive the source technology's confidence × 0.9.
-- Version: the first non-empty capture wins. When two rules capture
-  different versions, the higher-confidence rule wins.
+- Version: among rules that capture a non-empty version, the
+  highest-confidence rule wins. On equal confidence, file order decides and
+  the first wins.
+- Order of resolution: match all rules, apply `excludes`, then expand
+  `implies`. `implies` never adds a slug that `excludes` removed.
 - Every matched rule appends one evidence entry. Evidence from the html
   source truncates the matched text to 100 characters.
 - Regex execution wraps in try/catch. A bad pattern disables that one rule
