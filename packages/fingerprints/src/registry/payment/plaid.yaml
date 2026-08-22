@@ -1,0 +1,10 @@
+name: Plaid
+slug: plaid
+category: payment
+website: https://plaid.com
+detect:
+  scripts:
+    - pattern: 'cdn\.plaid\.com/link/'
+  js:
+    Plaid:
+      - pattern: ''

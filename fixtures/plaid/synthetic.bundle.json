@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-plaid",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://cdn.plaid.com/link/v2/stable/link-initialize.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "Plaid": true
+  }
+}
