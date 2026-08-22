@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "ant-design",
+    "react",
+    "cloudflare",
+    "google-analytics"
+  ]
+}
