@@ -4,6 +4,7 @@
     "nextjs",
     "react",
     "slick",
+    "styled-components",
     "google-tag-manager",
     "vercel"
   ]

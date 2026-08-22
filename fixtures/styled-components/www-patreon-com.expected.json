@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "styled-components",
+    "cloudflare",
+    "nextjs",
+    "react"
+  ]
+}

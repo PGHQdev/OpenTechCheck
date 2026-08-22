@@ -2,6 +2,7 @@
   "detects": [
     "nextjs",
     "react",
+    "styled-components",
     "vercel",
     "wordpress",
     "zendesk"

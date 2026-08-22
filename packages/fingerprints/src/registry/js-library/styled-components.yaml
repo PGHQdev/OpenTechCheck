@@ -1,0 +1,12 @@
+name: styled-components
+slug: styled-components
+category: js-library
+website: https://styled-components.com
+implies: [react]
+detect:
+  html:
+    - pattern: '<style data-styled='
+      confidence: 90
+  dom:
+    'style[data-styled]':
+      - pattern: ''
