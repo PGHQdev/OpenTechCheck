@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "solid",
+    "cloudflare"
+  ]
+}
