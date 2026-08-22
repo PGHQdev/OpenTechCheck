@@ -3,6 +3,7 @@
     "gsap",
     "jquery",
     "cloudflare",
+    "plausible",
     "webflow"
   ]
 }
