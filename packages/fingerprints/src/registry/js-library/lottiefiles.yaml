@@ -1,0 +1,10 @@
+name: LottieFiles
+slug: lottiefiles
+category: js-library
+website: https://lottiefiles.com
+detect:
+  scripts:
+    - pattern: '@lottiefiles/lottie-player|lottie-player\.js'
+  dom:
+    'lottie-player':
+      - pattern: ''

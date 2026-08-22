@@ -1,0 +1,10 @@
+name: Envoy
+slug: envoy
+category: server
+website: https://www.envoyproxy.io
+detect:
+  headers:
+    server:
+      - pattern: '^envoy$'
+    x-envoy-upstream-service-time:
+      - pattern: ''
