@@ -1,0 +1,17 @@
+name: Alpine.js
+slug: alpinejs
+category: js-framework
+website: https://alpinejs.dev
+detect:
+  html:
+    - pattern: '<[a-z][^>]*\sx-data(?:=|\s|>)'
+      confidence: 90
+  scripts:
+    - pattern: '(?:cdn\.jsdelivr\.net/npm|unpkg\.com)/alpinejs@([\dx.]+)'
+      version: 1
+    - pattern: '\balpine(?:\.min)?\.js'
+      confidence: 70
+  js:
+    Alpine.version:
+      - pattern: '^([\d.]+)'
+        version: 1
