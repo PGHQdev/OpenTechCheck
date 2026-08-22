@@ -1,0 +1,11 @@
+name: Tealium
+slug: tealium
+category: tag-manager
+website: https://tealium.com
+detect:
+  html:
+    - pattern: 'tags\.tiqcdn\.com/utag/'
+    - pattern: 'utag_data'
+      confidence: 85
+  scripts:
+    - pattern: 'tags\.tiqcdn\.com/utag/'
