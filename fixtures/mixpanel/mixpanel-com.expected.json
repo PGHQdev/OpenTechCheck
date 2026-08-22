@@ -2,6 +2,7 @@
   "detects": [
     "mixpanel",
     "nginx",
-    "google-tag-manager"
+    "google-tag-manager",
+    "sentry"
   ]
 }
