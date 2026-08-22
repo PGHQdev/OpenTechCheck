@@ -1,0 +1,12 @@
+name: Solid
+slug: solid
+category: js-framework
+website: https://www.solidjs.com
+detect:
+  html:
+    - pattern: 'window\._\$HY'
+    - pattern: '\bdata-hk="[0-9-]+"'
+      confidence: 80
+  js:
+    Solid$$:
+      - pattern: ''

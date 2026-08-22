@@ -1,0 +1,9 @@
+name: Nginx
+slug: nginx
+category: server
+website: https://nginx.org
+detect:
+  headers:
+    server:
+      - pattern: '^nginx(?:/([\d.]+))?$'
+        version: 1

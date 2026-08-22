@@ -1,0 +1,10 @@
+name: Phoenix
+slug: phoenix
+category: web-framework
+website: https://www.phoenixframework.org
+detect:
+  html:
+    - pattern: '\bdata-phx-main\b'
+    - pattern: '\bdata-phx-session='
+    - pattern: '\bphx-track-static\b'
+      confidence: 90

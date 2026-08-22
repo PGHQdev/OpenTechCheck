@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "mixpanel",
+    "nginx",
+    "google-tag-manager"
+  ]
+}

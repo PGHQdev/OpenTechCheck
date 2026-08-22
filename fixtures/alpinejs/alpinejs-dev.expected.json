@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "alpinejs",
+    "cloudflare",
+    "laravel",
+    "tailwindcss",
+    "fathom",
+    "jsdelivr"
+  ]
+}

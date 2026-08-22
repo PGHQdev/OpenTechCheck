@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "nextjs",
+    "react",
+    "vercel",
+    "wordpress",
+    "zendesk"
+  ]
+}

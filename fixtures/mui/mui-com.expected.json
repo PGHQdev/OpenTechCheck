@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "mui",
+    "react",
+    "nextjs",
+    "google-analytics",
+    "netlify"
+  ]
+}

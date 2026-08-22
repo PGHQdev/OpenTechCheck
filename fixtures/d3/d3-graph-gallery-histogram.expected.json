@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "d3",
+    "bootstrap",
+    "jquery",
+    "google-analytics",
+    "font-awesome",
+    "fastly",
+    "github-pages"
+  ]
+}

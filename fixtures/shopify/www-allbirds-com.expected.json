@@ -1,6 +1,8 @@
 {
   "detects": [
     "cloudflare",
-    "shopify"
+    "shopify",
+    "tailwindcss",
+    "google-tag-manager"
   ]
 }

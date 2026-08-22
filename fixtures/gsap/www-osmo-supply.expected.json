@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "gsap",
+    "jquery",
+    "cloudflare",
+    "plausible",
+    "webflow",
+    "jsdelivr"
+  ]
+}

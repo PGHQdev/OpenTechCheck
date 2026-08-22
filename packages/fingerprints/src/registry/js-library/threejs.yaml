@@ -1,0 +1,19 @@
+name: Three.js
+slug: threejs
+category: js-library
+website: https://threejs.org
+detect:
+  html:
+    - pattern: 'three\.module(?:\.min)?\.js'
+    - pattern: '"three/addons/"'
+  scripts:
+    - pattern: 'npm/three@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/three\.js/([\dr.]+)/'
+      version: 1
+    - pattern: '/three(?:\.module)?(?:\.min)?\.js'
+      confidence: 80
+  js:
+    THREE.REVISION:
+      - pattern: '^(\d+)'
+        version: 1

@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "django",
+    "fastly",
+    "nginx",
+    "stripe"
+  ]
+}

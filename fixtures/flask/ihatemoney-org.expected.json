@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "flask",
+    "bootstrap",
+    "jquery"
+  ]
+}

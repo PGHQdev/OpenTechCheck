@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "litespeed",
+    "recaptcha"
+  ]
+}

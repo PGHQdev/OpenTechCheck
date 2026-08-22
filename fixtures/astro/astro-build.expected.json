@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "astro",
+    "cloudflare",
+    "tailwindcss",
+    "fathom"
+  ]
+}

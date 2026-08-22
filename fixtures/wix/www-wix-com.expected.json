@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "react",
+    "wix",
+    "fastly"
+  ]
+}

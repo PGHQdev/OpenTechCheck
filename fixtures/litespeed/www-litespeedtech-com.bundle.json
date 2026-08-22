@@ -1,0 +1,48 @@
+{
+  "url": "https://www.litespeedtech.com/",
+  "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n    <title>Bot Verification</title>\n    <script>\n        function onSubmit() {\n            document.getElementById('lsrecaptcha-form').submit();\n        }\n\n        var onloadCallback = function() {\n            var cont = grecaptcha.render('recaptchadiv', {\n                'sitekey': '6Ld4O3QUAAAAANo81VuJbgKdb2vqLQyrh28VFyas',\n                'callback': onSubmit,\n                \n            });\n            grecaptcha.execute(cont);\n        };\n    </script>\n    <style>\n        body {\n        height: 100%;\n        }\n        .panel {\n        padding: 30px;\n        max-width: 425px;\n        margin: 10% auto;\n        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);\n        }\n        .title {\n        font-size: 1.5em;\n        font-weight: 100;\n        margin-top: 10px;\n        text-align: center;\n        }\n        .recaptcha-center {\n        margin-top: 35px;\n        margin-bottom: 20px;\n        margin-left: 13%;\n        margin-right: 13%;\n        display: block;\n        }\n    </style>\n</head>\n<body>\n    <div class=\"panel\">\n        <h3 class=\"title\">Verifying that you are not a robot...</h3>\n        <form id=\"lsrecaptcha-form\" method=\"POST\" action=\"/.adcrecaptcha_verify?\">\n            <div id=\"recaptchadiv\" class=\"recaptcha-center\"></div>\n        </form>\n    </div>\n    <script src=\"https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit\"\n            async defer>\n    </script>\n</body>\n</html>\n",
+  "scripts": [
+    "https://www.recaptcha.net/recaptcha/api.js?onload=onloadCallback&render=explicit"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width, initial-scale=1, shrink-to-fit=no"
+    ]
+  },
+  "headers": {
+    "alt-svc": [
+      "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+    ],
+    "cache-control": [
+      "no-cache,no-store,private"
+    ],
+    "connection": [
+      "Keep-Alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-length": [
+      "976"
+    ],
+    "content-type": [
+      "text/html"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 10:17:10 GMT"
+    ],
+    "keep-alive": [
+      "timeout=5, max=100"
+    ],
+    "server": [
+      "LiteSpeed"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ],
+    "x-frame-options": [
+      "SAMEORIGIN"
+    ]
+  },
+  "cookies": {}
+}

@@ -1,0 +1,7 @@
+name: jsDelivr
+slug: jsdelivr
+category: cdn
+website: https://www.jsdelivr.com
+detect:
+  scripts:
+    - pattern: '//(?:cdn|fastly|gcore|testingcf)\.jsdelivr\.net/'

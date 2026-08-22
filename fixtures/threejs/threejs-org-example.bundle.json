@@ -1,0 +1,97 @@
+{
+  "url": "https://threejs.org/examples/webgl_animation_keyframes.html",
+  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>three.js webgl - animation - keyframes</title>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\">\n\t\t<meta property=\"og:title\" content=\"three.js webgl - animation - keyframes\">\n\t\t<meta property=\"og:type\" content=\"website\">\n\t\t<meta property=\"og:url\" content=\"https://threejs.org/examples/webgl_animation_keyframes.html\">\n\t\t<meta property=\"og:image\" content=\"https://threejs.org/examples/screenshots/webgl_animation_keyframes.jpg\">\n\t\t<link type=\"text/css\" rel=\"stylesheet\" href=\"main.css\">\n\t\t<style>\n\t\t\tbody {\n\t\t\t\tbackground-color: #e2e0e0;\n\t\t\t\tcolor: #000;\n\t\t\t}\n\n\t\t\ta {\n\t\t\t\tcolor: #2983ff;\n\t\t\t}\n\t\t</style>\n\t</head>\n\n\t<body>\n\n\t\t<div id=\"container\"></div>\n\n\t\t<div id=\"info\">\n\t\t\t<a href=\"https://threejs.org\" target=\"_blank\" rel=\"noopener\">three.js</a> webgl - animation - keyframes<br/>\n\t\t\tModel: <a href=\"https://artstation.com/artwork/1AGwX\" target=\"_blank\" rel=\"noopener\">Littlest Tokyo</a> by\n\t\t\t<a href=\"https://artstation.com/glenatron\" target=\"_blank\" rel=\"noopener\">Glen Fox</a>, CC Attribution.\n\t\t</div>\n\n\t\t<script type=\"importmap\">\n\t\t\t{\n\t\t\t\t\"imports\": {\n\t\t\t\t\t\"three\": \"../build/three.module.js\",\n\t\t\t\t\t\"three/addons/\": \"./jsm/\"\n\t\t\t\t}\n\t\t\t}\n\t\t</script>\n\n\t\t<script type=\"module\">\n\n\t\t\timport * as THREE from 'three';\n\n\t\t\timport Stats from 'three/addons/libs/stats.module.js';\n\n\t\t\timport { OrbitControls } from 'three/addons/controls/OrbitControls.js';\n\t\t\timport { Sky } from 'three/addons/objects/Sky.js';\n\n\t\t\timport { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';\n\t\t\timport { DRACOLoader, DRACO_GLTF_CONFIG } from 'three/addons/loaders/DRACOLoader.js';\n\n\t\t\tlet mixer;\n\n\t\t\tconst timer = new THREE.Timer();\n\t\t\ttimer.connect( document );\n\t\t\tconst container = document.getElementById( 'container' );\n\n\t\t\tconst stats = new Stats();\n\t\t\tcontainer.appendChild( stats.dom );\n\n\t\t\tconst renderer = new THREE.WebGLRenderer( { antialias: true } );\n\t\t\trenderer.setPixelRatio( window.devicePixelRatio );\n\t\t\trenderer.setSize( window.innerWidth, window.innerHeight );\n\t\t\trenderer.toneMapping = THREE.ACESFilmicToneMapping;\n\t\t\tcontainer.appendChild( renderer.domElement );\n\n\t\t\tconst scene = new THREE.Scene();\n\n\t\t\t// Sky\n\n\t\t\tconst sky = new Sky();\n\t\t\tsky.scale.setScalar( 10000 );\n\t\t\tscene.add( sky );\n\n\t\t\tconst uniforms = sky.material.uniforms;\n\t\t\tuniforms[ 'turbidity' ].value = 0;\n\t\t\tuniforms[ 'rayleigh' ].value = 3;\n\t\t\tuniforms[ 'mieDirectionalG' ].value = 0.7;\n\t\t\tuniforms[ 'cloudElevation' ].value = 1;\n\t\t\tuniforms[ 'sunPosition' ].value.set( - 0.8, 0.19, 0.56 ); // elevation: 11, azimuth: -55\n\n\t\t\tconst pmremGenerator = new THREE.PMREMGenerator( renderer );\n\t\t\tconst environment = pmremGenerator.fromScene( sky ).texture;\n\t\t\tscene.environment = environment;\n\n\t\t\tconst camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 100 );\n\t\t\tcamera.position.set( 5, 2, 8 );\n\n\t\t\tconst controls = new OrbitControls( camera, renderer.domElement );\n\t\t\tcontrols.enableDamping = true;\n\t\t\tcontrols.target.set( 0, 0.7, 0 );\n\t\t\tcontrols.update();\n\n\t\t\tconst dracoLoader = new DRACOLoader();\n\t\t\tdracoLoader.setDecoderPath( DRACO_GLTF_CONFIG );\n\n\t\t\tconst loader = new GLTFLoader();\n\t\t\tloader.setDRACOLoader( dracoLoader );\n\t\t\tloader.load( 'models/gltf/LittlestTokyo.glb', function ( gltf ) {\n\n\t\t\t\tconst model = gltf.scene;\n\t\t\t\tmodel.position.set( 1, 1, 0 );\n\t\t\t\tmodel.scale.set( 0.01, 0.01, 0.01 );\n\t\t\t\tscene.add( model );\n\n\t\t\t\tmixer = new THREE.AnimationMixer( model );\n\t\t\t\tmixer.clipAction( gltf.animations[ 0 ] ).play();\n\n\t\t\t\trenderer.setAnimationLoop( animate );\n\n\t\t\t}, undefined, function ( e ) {\n\n\t\t\t\tconsole.error( e );\n\n\t\t\t} );\n\n\t\t\twindow.onresize = function () {\n\n\t\t\t\tcamera.aspect = window.innerWidth / window.innerHeight;\n\t\t\t\tcamera.updateProjectionMatrix();\n\n\t\t\t\trenderer.setSize( window.innerWidth, window.innerHeight );\n\n\t\t\t};\n\n\t\t\tfunction animate() {\n\n\t\t\t\ttimer.update();\n\n\t\t\t\tconst delta = timer.getDelta();\n\n\t\t\t\tmixer.update( delta );\n\n\t\t\t\tcontrols.update();\n\n\t\t\t\tstats.update();\n\n\t\t\t\trenderer.render( scene, camera );\n\n\t\t\t}\n\n\n\t\t</script>\n\n\t</body>\n\n</html>\n",
+  "scripts": [],
+  "meta": {
+    "viewport": [
+      "width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    ],
+    "og:title": [
+      "three.js webgl - animation - keyframes"
+    ],
+    "og:type": [
+      "website"
+    ],
+    "og:url": [
+      "https://threejs.org/examples/webgl_animation_keyframes.html"
+    ],
+    "og:image": [
+      "https://threejs.org/examples/screenshots/webgl_animation_keyframes.jpg"
+    ]
+  },
+  "headers": {
+    "accept-ranges": [
+      "bytes"
+    ],
+    "access-control-allow-origin": [
+      "*"
+    ],
+    "age": [
+      "0"
+    ],
+    "cache-control": [
+      "max-age=600"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-length": [
+      "1575"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 09:30:21 GMT"
+    ],
+    "etag": [
+      "W/\"6a47688e-1019\""
+    ],
+    "expires": [
+      "Sat, 22 Aug 2026 08:03:22 GMT"
+    ],
+    "last-modified": [
+      "Fri, 03 Jul 2026 07:45:18 GMT"
+    ],
+    "server": [
+      "GitHub.com"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ],
+    "via": [
+      "1.1 varnish"
+    ],
+    "x-cache": [
+      "HIT"
+    ],
+    "x-cache-hits": [
+      "0"
+    ],
+    "x-fastly-request-id": [
+      "96066f05363a37ce7a2b305ffa5bb0f9358e3883"
+    ],
+    "x-github-edge-region": [
+      "japaneast"
+    ],
+    "x-github-request-id": [
+      "97F6:09FC:5CC66:607BD:6A895571"
+    ],
+    "x-origin-cache": [
+      "HIT"
+    ],
+    "x-proxy-cache": [
+      "MISS"
+    ],
+    "x-served-by": [
+      "cache-nrt-rjaa8190020-NRT"
+    ],
+    "x-timer": [
+      "S1787391021.237030,VS0,VE164"
+    ]
+  },
+  "cookies": {}
+}

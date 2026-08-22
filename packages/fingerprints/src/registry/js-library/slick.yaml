@@ -1,0 +1,17 @@
+name: Slick
+slug: slick
+category: js-library
+website: https://kenwheeler.github.io/slick/
+detect:
+  html:
+    - pattern: 'class="[^"]*\bslick-(?:slider|track|slide|prev|next)\b'
+      confidence: 90
+  scripts:
+    - pattern: 'slick-carousel[@/]([\d.]+)?'
+      version: 1
+    - pattern: '/slick/slick(?:\.min)?\.js'
+    - pattern: '/slick\.min\.js'
+      confidence: 70
+  js:
+    jQuery.fn.slick:
+      - pattern: ''

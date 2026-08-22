@@ -1,0 +1,91 @@
+{
+  "url": "https://pages.razorpay.com/demo",
+  "html": "<!doctype html>\n<html lang=\"en\">\n    <head>\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"Content-Type\" content=\"text/html;charset=UTF-8\">\n        <meta name=\"viewport\" content=\"user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1\">\n        <meta name=\"robots\" content=\"index, follow\">\n        <meta name=\"description\" content=\"Payment request by Vrisle MediaWorks\">\n\n        <meta property=\"og:title\" content=\"Pay for Demo Payment Page by Vrisle MediaWorks\">\n        <meta property=\"og:image\" content=\"https://cdn.razorpay.com/logos/F26aJnNJN8Kx3V_large.png\">\n        <meta property=\"og:image:width\" content=\"276px\">\n        <meta property=\"og:image:height\" content=\"276px\">\n        <meta property=\"og:description\" content=\"Payment request by Vrisle MediaWorks\">\n\n        <meta name=\"twitter:card\" content=\"summary\" />\n        <meta name=\"twitter:title\" content=\"Pay for Demo Payment Page by Vrisle MediaWorks\" />\n        <meta name=\"twitter:description\" content=\"Payment request by Vrisle MediaWorks\" />\n        <meta name=\"twitter:image\" content=\"https://cdn.razorpay.com/logos/F26aJnNJN8Kx3V_large.png\" />\n\n        <link rel=\"icon\" href=\"https://razorpay.com/favicon.png\" type=\"image/x-icon\" />\n\n\n        <style>\n            body {\n                background-color: #efefef;\n            }\n        </style>\n\n        <script>\n            var Razorpay = {\n                config: {\n                    keyless_header: \"api_v1:FjJkXDe8nOA/yOpelK3kuw/BqaX4a6t8XbvjDZ+uY/4CfMVA2cfnW6nB/svAvh0XVcSQOwQlGkuxSgJZvTfPYopTiGWTog==\"\n                }\n            }\n        </script>\n\n                            \n        <script>\n            // <<<JSON_DATA_START>>>\n            var data = {\"key_id\":\"rzp_live_Sgb1j4P8dKsTnx\",\"is_test_mode\":false,\"merchant\":{\"id\":\"BCLEf8iCWWvwZs\",\"name\":\"Vrisle MediaWorks\",\"image\":\"https:\\/\\/cdn.razorpay.com\\/logos\\/F26aJnNJN8Kx3V_large.png\",\"brand_color\":\"rgb(82,143,240)\",\"brand_text_color\":\"#ffffff\",\"branding_variant\":\"control\",\"optimised_web_vitals\":\"on\",\"contact_optional\":false,\"email_optional\":false,\"support_email\":\"\",\"support_mobile\":\"\",\"tnc_link\":null,\"merchant_country_code\":\"IN\",\"policy_url\":null},\"payment_link\":{\"id\":\"pl_D2hKQzj0hz1ZPC\",\"amount\":null,\"currency\":\"INR\",\"currency_symbol\":\"₹\",\"expire_by\":null,\"times_payable\":null,\"times_paid\":0,\"status\":\"active\",\"status_reason\":null,\"short_url\":\"https:\\/\\/rzp.io\\/l\\/demo\",\"receipt\":null,\"title\":\"Demo Payment Page\",\"description\":\"{\\\"value\\\":[{\\\"insert\\\":\\\"Donation Cause\\\"},{\\\"attributes\\\":{\\\"header\\\":2},\\\"insert\\\":\\\"\\\\n\\\"},{\\\"insert\\\":\\\"# Provide information about your fundraising drive\\\\n\\\\nCampaign starts on \\\"},{\\\"attributes\\\":{\\\"header\\\":2},\\\"insert\\\":\\\"\\\\n\\\"},{\\\"insert\\\":\\\"# Date and time of the start of the drive\\\\n\\\\nCampaign ends on \\\"},{\\\"attributes\\\":{\\\"header\\\":2},\\\"insert\\\":\\\"\\\\n\\\"},{\\\"insert\\\":\\\"# Date and time of the end of the drive\\\\n\\\\nOrganiser details \\\"},{\\\"attributes\\\":{\\\"header\\\":2},\\\"insert\\\":\\\"\\\\n\\\"},{\\\"insert\\\":\\\"# Organisation \\/ Organiser description with address and contact information\\\\n\\\\nTax exemption details \\\"},{\\\"attributes\\\":{\\\"header\\\":2},\\\"insert\\\":\\\"\\\\n\\\"},{\\\"insert\\\":\\\"# Details of tax exemption eligibility for donors\\\\n\\\\nCampaign images\\\"},{\\\"attributes\\\":{\\\"header\\\":2},\\\"insert\\\":\\\"\\\\n\\\"},{\\\"insert\\\":\\\"# Select and upload up to 4 images for fundraising drive\\\\n\\\"}],\\\"metaText\\\":\\\"\\\"}\",\"support_contact\":null,\"support_email\":null,\"terms\":null,\"type\":\"payment\",\"payment_page_items\":[{\"id\":\"ppi_DOiOaLT2yBAZqO\",\"entity\":\"payment_page_item\",\"payment_link_id\":\"pl_D2hKQzj0hz1ZPC\",\"item\":{\"id\":\"item_DOiOaKw5tvwBQ7\",\"active\":true,\"name\":\"amount\",\"description\":null,\"amount\":null,\"unit_amount\":null,\"currency\":\"INR\",\"type\":\"payment_page\",\"unit\":null,\"tax_inclusive\":false,\"hsn_code\":null,\"sac_code\":null,\"tax_rate\":null,\"tax_id\":null,\"tax_group_id\":null,\"created_at\":1569913035},\"mandatory\":true,\"image_url\":null,\"min_purchase\":null,\"max_purchase\":null,\"min_amount\":100,\"max_amount\":null,\"settings\":{\"position\":\"0\"},\"plan_id\":null,\"product_config\":null,\"quantity_available\":null}],\"hosted_template_id\":null,\"udf_jsonschema_id\":null,\"min_amount_value\":100,\"amount_formatted\":\"0.00\",\"expire_by_formatted\":null,\"settings\":{\"allow_multiple_units\":\"0\",\"allow_social_share\":\"0\",\"udf_schema\":\"[{\\\"title\\\":\\\"Email\\\",\\\"name\\\":\\\"email\\\",\\\"type\\\":\\\"string\\\",\\\"pattern\\\":\\\"email\\\",\\\"required\\\":true,\\\"settings\\\":{\\\"position\\\":1}},{\\\"title\\\":\\\"Phone\\\",\\\"name\\\":\\\"phone\\\",\\\"type\\\":\\\"number\\\",\\\"pattern\\\":\\\"phone\\\",\\\"required\\\":true,\\\"minLength\\\":\\\"8\\\",\\\"options\\\":[],\\\"settings\\\":{\\\"position\\\":2}}]\",\"theme\":\"light\",\"payment_success_message\":\"Thank You. Payment Received.\",\"checkout_options\":{\"email\":\"email\",\"phone\":\"phone\"},\"payment_button_label\":\"Pay\",\"payment_success_url_deferred\":\"1\"}},\"org\":{\"branding\":{\"show_rzp_logo\":true,\"branding_logo\":\"\",\"security_branding_logo\":\"\",\"product_domain_name\":\"Razorpay Payment Pages\"},\"custom_code\":\"rzp\"},\"checkout_2_enabled\":false,\"is_pp_batch_upload\":false,\"keyless_header\":\"api_v1:FjJkXDe8nOA\\/yOpelK3kuw\\/BqaX4a6t8XbvjDZ+uY\\/4CfMVA2cfnW6nB\\/svAvh0XVcSQOwQlGkuxSgJZvTfPYopTiGWTog==\",\"view_preferences\":{\"exempt_customer_flagging\":false,\"disclaimer_text_enabled\":\"on\",\"crossorigin_enabled\":\"on\"},\"base_url\":\"https:\\/\\/api.razorpay.com\",\"environment\":\"production\"};\n            // <<<JSON_DATA_END>>>\n\n            var paymentPageData = data.payment_link;\n            paymentPageData.description = paymentPageData.description ? JSON.parse(paymentPageData.description).value : null;\n\n            var requestParams = [];\n\n            var templateData = {\n                key_id: data.key_id,\n                base_url: data.base_url,\n                is_test_mode: data.is_test_mode,\n                merchant: data.merchant,\n                org: data.org,\n                payment_page_data: data.payment_link,\n                context: {\n                  page_title: data.payment_link.title,\n                  form_title: 'Payment Details'\n                },\n                requestParams: requestParams,\n                view_preferences: data.view_preferences,\n                keyless_header: data.keyless_header,\n                checkout_2_enabled: data.checkout_2_enabled ?? false,\n                is_pp_batch_upload: data.is_pp_batch_upload ?? false,\n              };\n        </script>\n\n                    <script>\n                function renderPaymentPage() {\n                    window.RZP.renderApp('paymentpage-container', templateData);\n                }\n            </script>\n            <!-- Temporary polyfill for analytics -->\n            <script src=\"https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=URL%2CURLSearchParams\"></script>\n                                                <script src=\"https://cdn.razorpay.com/static/analytics/bundle.js\" defer></script>\n                                <script src=\"https://cdn.razorpay.com/static/assets/color.js\" defer></script>\n\n                <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\"/>\n                <link href=\"https://fonts.googleapis.com/css?family=Muli:400,700&display=swap\" rel=\"stylesheet\">\n                <script src=\"https://cdn.razorpay.com/static/assets/quilljs/1.3.6/quill.min.js\" defer ></script>\n\n                <script\n                    src=\"https://cdn.razorpay.com/static/hosted/wysiwyg.js\"\n                    onload=\"renderPaymentPage()\"\n                    defer\n                    crossorigin\n                ></script>\n                <link rel=\"stylesheet\" href=\"https://cdn.razorpay.com/static/assets/social-share/icons.css\" />\n                        </head>\n\n    <body>\n        <div id=\"paymentpage-container\">\n                    </div>\n        <!-- Adding checkout scripts after initial load -->\n                    <script>\n                window.addEventListener('load', function() {\n                    setTimeout(function () {\n                        var script = document.createElement(\"script\");\n                        script.src = \"https://checkout.razorpay.com/v1/checkout.js\";\n                        document.body.appendChild(script);\n                    }, 2000);\n                });\n            </script>\n            </body>\n</html>\n",
+  "scripts": [
+    "https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=URL%2CURLSearchParams",
+    "https://cdn.razorpay.com/static/analytics/bundle.js",
+    "https://cdn.razorpay.com/static/assets/color.js",
+    "https://cdn.razorpay.com/static/assets/quilljs/1.3.6/quill.min.js",
+    "https://cdn.razorpay.com/static/hosted/wysiwyg.js"
+  ],
+  "meta": {
+    "viewport": [
+      "user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1"
+    ],
+    "robots": [
+      "index, follow"
+    ],
+    "description": [
+      "Payment request by Vrisle MediaWorks"
+    ],
+    "og:title": [
+      "Pay for Demo Payment Page by Vrisle MediaWorks"
+    ],
+    "og:image": [
+      "https://cdn.razorpay.com/logos/F26aJnNJN8Kx3V_large.png"
+    ],
+    "og:image:width": [
+      "276px"
+    ],
+    "og:image:height": [
+      "276px"
+    ],
+    "og:description": [
+      "Payment request by Vrisle MediaWorks"
+    ],
+    "twitter:card": [
+      "summary"
+    ],
+    "twitter:title": [
+      "Pay for Demo Payment Page by Vrisle MediaWorks"
+    ],
+    "twitter:description": [
+      "Payment request by Vrisle MediaWorks"
+    ],
+    "twitter:image": [
+      "https://cdn.razorpay.com/logos/F26aJnNJN8Kx3V_large.png"
+    ]
+  },
+  "headers": {
+    "alt-svc": [
+      "h3=\":443\"; ma=86400"
+    ],
+    "cache-control": [
+      "no-cache, private"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 11:20:12 GMT"
+    ],
+    "strict-transport-security": [
+      "max-age=315360000; includeSubDomains"
+    ],
+    "transfer-encoding": [
+      "chunked"
+    ],
+    "via": [
+      "rws, 1.1 6bf7139ab1260e393b31dd78c4c70c42.cloudfront.net (CloudFront)"
+    ],
+    "x-amz-cf-id": [
+      "Q8bxU6DwVDQAnzBZiGVH3-LUqyZ6DiPYMXcsg9-gU2eCEIv4ndCBlw=="
+    ],
+    "x-amz-cf-pop": [
+      "NRT57-P3"
+    ],
+    "x-cache": [
+      "Miss from cloudfront"
+    ],
+    "x-pam": [
+      "0"
+    ],
+    "x-xss-protection": [
+      "0"
+    ]
+  },
+  "cookies": {}
+}

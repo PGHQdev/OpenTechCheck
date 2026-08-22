@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "ant-design",
+    "cloudflare",
+    "google-analytics",
+    "microsoft-clarity",
+    "fastly",
+    "jsdelivr"
+  ]
+}

@@ -1,0 +1,16 @@
+name: Swiper
+slug: swiper
+category: js-library
+website: https://swiperjs.com
+detect:
+  html:
+    - pattern: 'class="[^"]*\bswiper-wrapper\b'
+      confidence: 90
+  scripts:
+    - pattern: 'npm/swiper@([\d.]+)'
+      version: 1
+    - pattern: '/swiper(?:-bundle)?(?:\.min)?\.js(?:\?ver=([\d.]+))?'
+      version: 1
+  js:
+    Swiper.prototype:
+      - pattern: ''

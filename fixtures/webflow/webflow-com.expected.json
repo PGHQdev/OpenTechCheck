@@ -1,0 +1,13 @@
+{
+  "detects": [
+    "cloudflare",
+    "gsap",
+    "jquery",
+    "swiper",
+    "threejs",
+    "webflow",
+    "google-tag-manager",
+    "jsdelivr",
+    "cdnjs"
+  ]
+}

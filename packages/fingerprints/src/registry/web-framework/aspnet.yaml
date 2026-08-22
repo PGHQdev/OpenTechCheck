@@ -1,0 +1,16 @@
+name: ASP.NET
+slug: aspnet
+category: web-framework
+website: https://dotnet.microsoft.com/apps/aspnet
+detect:
+  html:
+    - pattern: 'name="__VIEWSTATE"'
+  headers:
+    x-powered-by:
+      - pattern: '^ASP\.NET$'
+    x-aspnet-version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  cookies:
+    ASP.NET_SessionId:
+      - pattern: ''

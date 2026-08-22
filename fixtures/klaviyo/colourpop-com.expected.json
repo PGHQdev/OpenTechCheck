@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "cloudflare",
+    "google-tag-manager",
+    "klarna",
+    "klaviyo",
+    "microsoft-clarity",
+    "shopify",
+    "tailwindcss"
+  ]
+}

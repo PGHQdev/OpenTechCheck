@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "bulma",
+    "font-awesome",
+    "fastly",
+    "github-pages"
+  ]
+}

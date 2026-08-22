@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "contentful",
+    "gatsby",
+    "react",
+    "google-tag-manager",
+    "netlify"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "detects": [
+    "swiper",
+    "gsap",
+    "jquery",
+    "wordpress",
+    "cloudflare",
+    "google-tag-manager",
+    "jsdelivr",
+    "unpkg"
+  ]
+}

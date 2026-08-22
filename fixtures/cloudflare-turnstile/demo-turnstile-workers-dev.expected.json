@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "cloudflare-turnstile",
+    "cloudflare",
+    "bootstrap"
+  ]
+}

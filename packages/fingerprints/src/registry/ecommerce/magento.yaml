@@ -1,0 +1,12 @@
+name: Magento
+slug: magento
+category: ecommerce
+website: https://business.adobe.com/products/magento/magento-commerce.html
+detect:
+  html:
+    - pattern: 'text/x-magento-init'
+    - pattern: 'Magento_Theme'
+    - pattern: 'data-mage-init'
+  scripts:
+    - pattern: '/static/version[\d.]+/frontend/'
+    - pattern: 'mage/requirejs/'

@@ -1,0 +1,20 @@
+name: Drupal
+slug: drupal
+category: cms
+website: https://www.drupal.org
+detect:
+  html:
+    - pattern: 'data-drupal-selector'
+    - pattern: 'data-drupal-link-system-path'
+  meta:
+    generator:
+      - pattern: 'Drupal(?:\s([\d.]+))?'
+        version: 1
+  headers:
+    x-generator:
+      - pattern: 'Drupal(?:\s([\d.]+))?'
+        version: 1
+    x-drupal-cache:
+      - pattern: ''
+  scripts:
+    - pattern: '/core/misc/drupal\.js'

@@ -1,0 +1,11 @@
+name: Hotjar
+slug: hotjar
+category: analytics
+website: https://www.hotjar.com
+detect:
+  html:
+    - pattern: 'static\.hotjar\.com/c/hotjar-'
+    - pattern: '_hjSettings'
+      confidence: 90
+  scripts:
+    - pattern: 'static\.hotjar\.com/c/hotjar-'

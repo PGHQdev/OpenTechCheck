@@ -1,0 +1,14 @@
+name: Angular
+slug: angular
+category: js-framework
+website: https://angular.dev
+detect:
+  html:
+    - pattern: '\bng-version="([\d.]+)[^"]*"'
+      version: 1
+    - pattern: '\b_ngcontent-[a-z0-9-]+='
+      confidence: 80
+  js:
+    ng.version.full:
+      - pattern: '^([\d.]+)'
+        version: 1

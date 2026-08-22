@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "solid",
+    "cloudflare",
+    "tailwindcss",
+    "netlify"
+  ]
+}

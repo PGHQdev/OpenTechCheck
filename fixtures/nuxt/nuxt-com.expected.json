@@ -1,6 +1,8 @@
 {
   "detects": [
     "nuxt",
-    "vue"
+    "vue",
+    "tailwindcss",
+    "vercel"
   ]
 }

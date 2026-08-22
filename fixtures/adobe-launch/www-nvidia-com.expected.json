@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "adobe-launch",
+    "apache"
+  ]
+}

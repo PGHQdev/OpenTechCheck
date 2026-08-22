@@ -1,5 +1,8 @@
 {
   "detects": [
-    "cloudflare"
+    "astro",
+    "cloudflare",
+    "tailwindcss",
+    "google-tag-manager"
   ]
 }

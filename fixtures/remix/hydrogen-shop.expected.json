@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "cloudflare",
+    "react",
+    "remix",
+    "shopify",
+    "tailwindcss"
+  ]
+}

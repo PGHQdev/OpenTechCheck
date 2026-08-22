@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "cloudflare",
+    "google-analytics",
+    "jquery",
+    "tawk-to"
+  ]
+}

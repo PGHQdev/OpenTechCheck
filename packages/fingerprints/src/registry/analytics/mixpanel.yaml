@@ -1,0 +1,11 @@
+name: Mixpanel
+slug: mixpanel
+category: analytics
+website: https://mixpanel.com
+detect:
+  html:
+    - pattern: 'cdn\.mxpnl\.com'
+    - pattern: 'mixpanel\.init\('
+      confidence: 90
+  scripts:
+    - pattern: 'cdn\.mxpnl\.com'

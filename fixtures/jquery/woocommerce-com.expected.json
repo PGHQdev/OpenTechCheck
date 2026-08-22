@@ -3,6 +3,8 @@
     "jquery",
     "react",
     "woocommerce",
-    "wordpress"
+    "wordpress",
+    "nginx",
+    "google-tag-manager"
   ]
 }

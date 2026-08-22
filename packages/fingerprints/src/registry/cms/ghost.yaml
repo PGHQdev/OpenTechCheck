@@ -1,0 +1,21 @@
+name: Ghost
+slug: ghost
+category: cms
+website: https://ghost.org
+detect:
+  html:
+    - pattern: '/public/ghost-stats\.min\.js'
+    - pattern: 'cdn\.jsdelivr\.net/ghost/portal@'
+    - pattern: 'unpkg\.com/@tryghost/portal'
+  meta:
+    generator:
+      - pattern: '^Ghost(?:\s([\d.]+))?'
+        version: 1
+  headers:
+    ghost-fastly:
+      - pattern: ''
+  scripts:
+    - pattern: 'cdn\.jsdelivr\.net/ghost/portal@'
+    - pattern: '/public/cards\.min\.js'
+      confidence: 80
+    - pattern: 'unpkg\.com/@tryghost/portal'

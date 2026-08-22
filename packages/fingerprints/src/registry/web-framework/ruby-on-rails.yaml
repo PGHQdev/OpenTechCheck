@@ -1,0 +1,15 @@
+name: Ruby on Rails
+slug: ruby-on-rails
+category: web-framework
+website: https://rubyonrails.org
+detect:
+  html:
+    - pattern: 'name="authenticity_token"'
+      confidence: 95
+  meta:
+    csrf-param:
+      - pattern: '^authenticity_token$'
+  headers:
+    x-powered-by:
+      - pattern: 'Phusion Passenger'
+        confidence: 70

@@ -1,0 +1,78 @@
+{
+  "url": "https://httpd.apache.org/",
+  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <link href=\"/css/apsite.css\" rel=\"stylesheet\" media=\"all\" type=\"text/css\" title=\"Main stylesheet\">\n        <meta name=\"author\" content=\"Documentation Group\"><meta name=\"email\" content=\"docs@httpd.apache.org\">\n        <title>Welcome! - The Apache HTTP Server Project</title>\n\t<style>\n.headerlink {\n  visibility: hidden;\n}\nh1:hover > .headerlink, h2:hover > .headerlink, h3:hover > .headerlink, h4:hover > .headerlink, h5:hover > .headerlink, h6:hover > .headerlink, li:hover > .headerlink {\n  visibility: visible\n}\n\t</style>\n    </head>\n    <body>\n        <div id=\"page-header\">\n            <p class=\"menu\">&nbsp;</p>\n            <p class=\"apache\">&nbsp;</p>\n            <a href=\"/\">\n            <img alt=\"Apache HTTP Server\" src=\"/images/httpd_logo_wide_new.png\" id=\"site-logo\">\n            </a>\n            <a class=\"badge\" href=\"https://www.apache.org/foundation/contributing.html\">\n                <img src=\"https://www.apache.org/images/SupportApache-small.png\" alt=\"Support Apache\">\n            </a>\n            <button id=\"menu-toggle\" aria-label=\"Toggle navigation menu\">&#9776;</button>\n        </div>\n        <div id=\"site-wrapper\">\n        <div id=\"apmenu\">\n\t  <script src=\"https://www.apachecon.com/event-images/snippet.js\"></script>\n\t  <p style=\"margin-top: -10px;\">\n\t    <!-- Apachecon! -->\n\t    <a class=\"acevent\" data-format=\"wide\" data-mode=\"light\" data-width=\"160\"></a>\n\t  </p>\n\t  <h1 id=\"essentials\">Essentials<a class=\"headerlink\" href=\"#essentials\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"/download.cgi\">Download!</a></li>\n\t    <li><a href=\"/ABOUT_APACHE.html\">About</a></li>\n\t    <li><a href=\"https://www.apache.org/licenses/\">License</a></li>\n\t    <li><a href=\"https://wiki.apache.org/httpd/FAQ\">FAQ</a></li>\n\t    <li><a href=\"/security_report.html\">Security Reports</a></li>\n\t  </ul>\n\t  <h1 id=\"source-repositories\">Source Repositories<a class=\"headerlink\" href=\"#source-repositories\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"/dev/devnotes.html\">General Information</a></li>\n\t    <li><a href=\"https://svn.apache.org/viewvc/httpd/httpd/trunk/\">Trunk</a></li>\n\t    <li><a href=\"https://svn.apache.org/viewvc/httpd/httpd/branches/2.4.x/\">2.4</a></li>\n\t  </ul>\n\t  <h1 id=\"documentation\"><a href=\"/docs/\">Documentation</a><a class=\"headerlink\" href=\"#documentation\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"/docs/2.4/\">Version 2.4</a></li>\n\t    <li><a href=\"/docs/trunk/\">Trunk (dev)</a></li>\n\t    <li><a href=\"https://wiki.apache.org/httpd/\">Wiki</a></li>\n\t  </ul>\n\t  <h1 id=\"get-involved\"><a href=\"/contribute/\">Get Involved</a><a class=\"headerlink\" href=\"#get-involved\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"/lists.html\">Mailing Lists</a></li>\n\t    <li><a href=\"/bug_report.html\">Bug Reports</a></li>\n\t    <li><a href=\"/dev/\">Developer Info</a></li>\n\t    <li><a href=\"/support.html\">User Support</a></li>\n\t  </ul>\n\t  <h1 id=\"subprojects\">Subprojects<a class=\"headerlink\" href=\"#subprojects\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"/docs-project/\">Docs</a></li>\n\t    <li><a href=\"/test/\">Test</a></li>\n\t    <li><a href=\"/test/flood/\">Flood</a></li>\n\t    <li><a href=\"/modules\">Modules</a></li>\n\t    <li><a href=\"/mod_fcgid/\">mod_fcgid</a></li>\n\t  </ul>\n\t  <h1 id=\"related-projects\">Related Projects<a class=\"headerlink\" href=\"#related-projects\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"https://trafficserver.apache.org/\">Apache Traffic Server</a></li>\n\t    <li><a href=\"https://trafficcontrol.apache.org/\">Apache Traffic Control</a></li>\n\t    <li><a href=\"https://tomcat.apache.org/\">Tomcat</a></li>\n\t    <li><a href=\"https://apr.apache.org/\">APR</a></li>\n\t    <li><a href=\"https://perl.apache.org/\">mod_perl</a></li>\n\t  </ul>\n\t  <h1 id=\"miscellaneous\">Miscellaneous<a class=\"headerlink\" href=\"#miscellaneous\" title=\"Permanent link\">&para;</a></h1>\n\t  <ul>\n\t    <li><a href=\"/contributors/\">Contributors</a></li>\n\t    <li><a href=\"https://www.apache.org/foundation/thanks.html\">Thanks!</a></li>\n\t    <li><a href=\"https://www.apache.org/foundation/sponsorship.html\">Sponsorship</a></li>\n\t    <li><a href=\"https://www.apache.org/foundation/policies/privacy.html\">Privacy</a></li>\n\t  </ul>\n        </div>\n        <!-- RIGHT SIDE INFORMATION -->\n        <div id=\"apcontents\">\n    <h1 id=\"apache-http-server\">Apache HTTP Server<a class=\"headerlink\" href=\"#apache-http-server\" title=\"Permalink\">&para;</a></h1>\n<p>A fast, reliable, and extensible open-source web server for modern\noperating systems. Apache httpd powers everything from personal sites to\nmission-critical production infrastructure with:</p>\n<ul>\n<li><strong>Flexible configuration</strong> &mdash; <a href=\"/docs/current/howto/htaccess.html\">.htaccess</a> per-directory config, <a href=\"/docs/current/vhosts/\">virtual hosts</a>, <a href=\"/docs/current/dso.html\">dynamic module loading</a></li>\n<li><strong>Security</strong> &mdash; <a href=\"/docs/current/ssl/\">TLS/SSL</a>, <a href=\"/docs/current/howto/auth.html\">authentication modules</a>, <a href=\"/docs/current/howto/access.html\">fine-grained access control</a></li>\n<li><strong>Performance</strong> &mdash; <a href=\"/docs/current/mpm.html\">Multi-processing (MPMs)</a>, <a href=\"/docs/current/howto/http2.html\">HTTP/2</a>, <a href=\"/docs/current/caching.html\">content caching</a>, <a href=\"/docs/current/howto/reverse_proxy.html\">reverse proxy</a></li>\n<li><strong>Extensibility</strong> &mdash; 100+ modules for <a href=\"/docs/current/rewrite/\">rewriting</a>, <a href=\"/docs/current/mod/mod_proxy.html\">proxying</a>, <a href=\"/docs/current/mod/mod_proxy_balancer.html\">load balancing</a>, scripting, and more</li>\n<li><strong>Portability</strong> &mdash; runs on Linux, Windows, macOS, and most Unix-like systems</li>\n</ul>\n<p>The Apache HTTP Server is a project of <a href=\"https://www.apache.org/\">The Apache Software\nFoundation</a>.</p>\n<h1 id=\"apache-httpd-2468-released-2026-06-08\">Apache httpd 2.4.68 Released <span>2026-06-08</span><a class=\"headerlink\" href=\"#apache-httpd-2468-released-2026-06-08\" title=\"Permalink\">&para;</a></h1>\n<p>The Apache Software Foundation and the Apache HTTP Server Project are\npleased to\n<a href=\"https://downloads.apache.org/httpd/Announcement2.4.html\">announce</a> the\nrelease of version 2.4.68 of the Apache HTTP Server (\"httpd\").</p>\n<p>This latest release from the 2.4.x stable branch represents the best available\nversion of Apache HTTP Server.</p>\n<p>Apache HTTP Server version 2.<span>4</span>.43 or newer is required in order to operate a TLS 1.3 web server with OpenSSL 1.1.1.</p>\n<p class=\"centered\"><a href=\"download.cgi#apache24\">Download</a> | <a href=\"https://downloads.apache.org/httpd/CHANGES_2.4.68\">ChangeLog for\n2.4.68</a> | <a href=\"https://downloads.apache.org/httpd/CHANGES_2.4\">Complete ChangeLog for\n2.4</a> | <a href=\"docs/trunk/new_features_2_4.html\">New Features in httpd\n2.4</a></p>\n<h1 id=\"apache-httpd-22-end-of-life\">Apache httpd 2.2 End-of-Life<a class=\"headerlink\" href=\"#apache-httpd-22-end-of-life\" title=\"Permalink\">&para;</a></h1>\n<p>Apache httpd 2.2 is end-of-life. The final release was 2.2.34 (July 2017).\nNo further patches, bug fixes, or security updates will be provided.\nUsers should upgrade to 2.4.x.</p>\n<h1 id=\"download-and-install\">Download and Install<a class=\"headerlink\" href=\"#download-and-install\" title=\"Permalink\">&para;</a></h1>\n<p>Get Apache HTTP source code from the <a href=\"/download.cgi\">download page</a> and\nconsult the <a href=\"https://httpd.apache.org/docs/current/install.html\">installation\nguide</a> for\nplatform-specific instructions on building and configuring your server.\nDon't forget to <a href=\"/download.cgi#verify\">verify</a> your downloads.</p>\n\n            <!-- FOOTER -->\n            <div id=\"footer\">\n\t      <p>Copyright &copy; 1997-2026 The Apache Software Foundation.<br>\n\t\tApache HTTP Server, Apache, the Apache logo and the Apache HTTP Server logo are\n either registered trademarks or trademarks of The Apache Software Foundation in the United States\n and other countries.</p>\n            </div>\n        </div>\n        </div><!-- /#site-wrapper -->\n        <script>\n        (function() {\n            var toggle = document.getElementById('menu-toggle');\n            var menu = document.getElementById('apmenu');\n            if (toggle && menu) {\n                toggle.addEventListener('click', function() {\n                    menu.classList.toggle('open');\n                });\n            }\n        })();\n        </script>\n    </body>\n</html>",
+  "scripts": [
+    "https://www.apachecon.com/event-images/snippet.js"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width, initial-scale=1"
+    ],
+    "author": [
+      "Documentation Group"
+    ],
+    "email": [
+      "docs@httpd.apache.org"
+    ]
+  },
+  "headers": {
+    "accept-ranges": [
+      "bytes"
+    ],
+    "access-control-allow-origin": [
+      "*"
+    ],
+    "age": [
+      "2293"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-length": [
+      "2762"
+    ],
+    "content-security-policy": [
+      "default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://www.apachecon.com/ https://www.communityovercode.org/ https://*.apache.org/ https://apache.org/ https://*.scarf.sh/  ; script-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://www.apachecon.com/ https://www.communityovercode.org/ https://*.apache.org/ https://apache.org/ https://*.scarf.sh/  ; style-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://www.apachecon.com/ https://www.communityovercode.org/ https://*.apache.org/ https://apache.org/ https://*.scarf.sh/  ; frame-ancestors 'self'; frame-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://www.apachecon.com/ https://www.communityovercode.org/ https://*.apache.org/ https://apache.org/ https://*.scarf.sh/  ; worker-src 'self' data: blob:;"
+    ],
+    "content-type": [
+      "text/html"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 10:16:54 GMT"
+    ],
+    "etag": [
+      "\"2204-6545ffafd1635-gzip\""
+    ],
+    "last-modified": [
+      "Tue, 16 Jun 2026 14:44:29 GMT"
+    ],
+    "server": [
+      "Apache"
+    ],
+    "strict-transport-security": [
+      "max-age=31536000; includeSubDomains; preload"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ],
+    "via": [
+      "1.1 varnish, 1.1 varnish"
+    ],
+    "x-cache": [
+      "HIT, HIT"
+    ],
+    "x-cache-hits": [
+      "2, 1"
+    ],
+    "x-served-by": [
+      "cache-hel1410030-HEL, cache-nrt-rjaa8190032-NRT"
+    ],
+    "x-timer": [
+      "S1787393815.520836,VS0,VE1"
+    ]
+  },
+  "cookies": {}
+}

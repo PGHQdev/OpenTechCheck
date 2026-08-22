@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "cloudflare",
+    "font-awesome",
+    "google-analytics",
+    "recaptcha",
+    "stripe"
+  ]
+}

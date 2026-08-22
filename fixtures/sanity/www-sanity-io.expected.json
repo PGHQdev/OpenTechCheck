@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "astro",
+    "sanity",
+    "tailwindcss",
+    "fathom",
+    "google-tag-manager",
+    "vercel"
+  ]
+}

@@ -1,0 +1,12 @@
+name: Matomo
+slug: matomo
+category: analytics
+website: https://matomo.org
+detect:
+  html:
+    - pattern: '_paq\.push\('
+      confidence: 90
+  scripts:
+    - pattern: '/matomo\.js'
+    - pattern: 'cdn\.matomo\.cloud/'
+    - pattern: '/piwik\.js'

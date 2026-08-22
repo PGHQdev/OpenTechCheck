@@ -1,0 +1,10 @@
+name: Remix
+slug: remix
+category: web-framework
+website: https://remix.run
+implies: [react]
+detect:
+  html:
+    - pattern: '__remixContext'
+    - pattern: '__remixManifest'
+    - pattern: '__remixRouteModules'

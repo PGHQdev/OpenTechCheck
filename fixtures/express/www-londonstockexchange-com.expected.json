@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "angular",
+    "express",
+    "nginx",
+    "cloudfront"
+  ]
+}

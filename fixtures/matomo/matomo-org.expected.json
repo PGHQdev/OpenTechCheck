@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "apache",
+    "jquery",
+    "matomo",
+    "wordpress",
+    "cloudfront"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "bootstrap",
+    "astro",
+    "cloudflare",
+    "fathom",
+    "fastly"
+  ]
+}

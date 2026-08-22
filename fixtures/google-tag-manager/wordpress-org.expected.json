@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "google-tag-manager",
+    "nginx",
+    "wordpress"
+  ]
+}

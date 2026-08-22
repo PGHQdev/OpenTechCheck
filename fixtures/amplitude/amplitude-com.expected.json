@@ -1,0 +1,12 @@
+{
+  "detects": [
+    "amplitude",
+    "nextjs",
+    "nginx",
+    "react",
+    "sanity",
+    "tailwindcss",
+    "google-tag-manager",
+    "vercel"
+  ]
+}

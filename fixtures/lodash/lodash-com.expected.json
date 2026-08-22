@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "lodash",
+    "netlify"
+  ]
+}

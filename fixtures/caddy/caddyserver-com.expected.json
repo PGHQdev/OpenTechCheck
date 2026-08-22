@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "caddy",
+    "google-analytics",
+    "fathom",
+    "jsdelivr"
+  ]
+}

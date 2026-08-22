@@ -1,0 +1,13 @@
+name: Plausible
+slug: plausible
+category: analytics
+website: https://plausible.io
+detect:
+  html:
+    - pattern: 'plausible\.io/js/'
+    - pattern: 'window\.plausible\.q\s*=\s*window\.plausible\.q'
+      confidence: 90
+  scripts:
+    - pattern: 'plausible\.io/js/'
+    - pattern: '/js/plausible\.js'
+      confidence: 80

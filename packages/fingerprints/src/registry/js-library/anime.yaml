@@ -1,0 +1,16 @@
+name: Anime.js
+slug: anime
+category: js-library
+website: https://animejs.com
+detect:
+  scripts:
+    - pattern: 'npm/animejs@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/animejs/([\d.]+)/'
+      version: 1
+    - pattern: '/anime(?:\.min|\.esm|\.iife)?\.js'
+      confidence: 80
+  js:
+    anime.version:
+      - pattern: '^([\d.]+)'
+        version: 1

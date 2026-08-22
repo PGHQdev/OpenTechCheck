@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "anime",
+    "fastly",
+    "github-pages",
+    "mailchimp"
+  ]
+}

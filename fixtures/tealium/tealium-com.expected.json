@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "apache",
+    "swiper",
+    "tealium",
+    "wordpress",
+    "cloudfront"
+  ]
+}

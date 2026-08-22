@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "contentful",
+    "nextjs",
+    "react",
+    "slick",
+    "google-tag-manager",
+    "vercel"
+  ]
+}

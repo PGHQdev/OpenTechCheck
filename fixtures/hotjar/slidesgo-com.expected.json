@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "alpinejs",
+    "cloudflare",
+    "hotjar",
+    "posthog",
+    "swiper",
+    "tailwindcss",
+    "google-tag-manager"
+  ]
+}

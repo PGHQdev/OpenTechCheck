@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "alpinejs",
+    "plausible",
+    "tailwindcss",
+    "bunny"
+  ]
+}

@@ -1,0 +1,18 @@
+name: D3.js
+slug: d3
+category: js-library
+website: https://d3js.org
+detect:
+  scripts:
+    - pattern: 'd3js\.org/d3\.v(\d+)(?:\.min)?\.js'
+      version: 1
+    - pattern: 'npm/d3@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/d3/([\d.]+)/'
+      version: 1
+    - pattern: '/d3(?:\.min)?\.js'
+      confidence: 70
+  js:
+    d3.version:
+      - pattern: '^([\d.]+)'
+        version: 1

@@ -1,0 +1,11 @@
+name: Razorpay
+slug: razorpay
+category: payment
+website: https://razorpay.com
+detect:
+  html:
+    - pattern: 'checkout\.razorpay\.com/v1/checkout\.js'
+  scripts:
+    - pattern: 'checkout\.razorpay\.com/v1/'
+    - pattern: 'cdn\.razorpay\.com/static/'
+      confidence: 90

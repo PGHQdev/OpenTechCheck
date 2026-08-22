@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "bigcommerce",
+    "cloudflare",
+    "google-analytics",
+    "google-tag-manager",
+    "jquery",
+    "klaviyo"
+  ]
+}
