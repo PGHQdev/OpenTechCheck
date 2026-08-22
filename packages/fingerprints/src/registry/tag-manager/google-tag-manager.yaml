@@ -1,0 +1,12 @@
+name: Google Tag Manager
+slug: google-tag-manager
+category: tag-manager
+website: https://tagmanager.google.com
+detect:
+  html:
+    - pattern: 'googletagmanager\.com/gtm\.js'
+    - pattern: 'googletagmanager\.com/ns\.html'
+    - pattern: '["'']gtm\.start["'']'
+      confidence: 90
+  scripts:
+    - pattern: 'googletagmanager\.com/gtm\.js'
