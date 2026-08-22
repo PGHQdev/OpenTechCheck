@@ -1,0 +1,10 @@
+name: React Router
+slug: react-router
+category: js-library
+website: https://reactrouter.com
+implies: [react]
+detect:
+  js:
+    __reactRouterVersion:
+      - pattern: '^([\d.]+)'
+        version: 1
