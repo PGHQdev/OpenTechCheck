@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "netlify",
+    "astro",
+    "google-analytics",
+    "google-tag-manager"
+  ]
+}

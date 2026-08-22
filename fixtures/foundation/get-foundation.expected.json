@@ -1,5 +1,6 @@
 {
   "detects": [
-    "foundation"
+    "foundation",
+    "netlify"
   ]
 }

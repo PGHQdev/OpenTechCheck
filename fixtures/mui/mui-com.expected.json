@@ -3,6 +3,7 @@
     "mui",
     "react",
     "nextjs",
-    "google-analytics"
+    "google-analytics",
+    "netlify"
   ]
 }

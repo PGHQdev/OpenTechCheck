@@ -1,6 +1,7 @@
 {
   "detects": [
     "vue",
-    "fathom"
+    "fathom",
+    "netlify"
   ]
 }
