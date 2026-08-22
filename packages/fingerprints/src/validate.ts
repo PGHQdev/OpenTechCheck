@@ -1,9 +1,8 @@
-import { Ajv } from 'ajv'
-import rawSchema from '../../../schemas/fingerprint.schema.json'
+import { Ajv2020 } from 'ajv/dist/2020'
+import schema from '../../../schemas/fingerprint.schema.json'
 import categories from '../../../schemas/categories.json'
 
-const ajv = new Ajv({ allErrors: true })
-const { $schema, ...schema } = rawSchema as { $schema?: string }
+const ajv = new Ajv2020({ allErrors: true })
 const validateSchema = ajv.compile(schema)
 
 export function validateFingerprint(doc: unknown): string[] {
