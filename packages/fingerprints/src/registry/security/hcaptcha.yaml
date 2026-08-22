@@ -1,0 +1,10 @@
+name: hCaptcha
+slug: hcaptcha
+category: security
+website: https://www.hcaptcha.com
+detect:
+  scripts:
+    - pattern: 'hcaptcha\.com/1/api\.js'
+  html:
+    - pattern: 'class="[^"]*\bh-captcha\b'
+      confidence: 80

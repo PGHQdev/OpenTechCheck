@@ -1,0 +1,17 @@
+name: Bunny
+slug: bunny
+category: cdn
+website: https://bunny.net
+detect:
+  headers:
+    server:
+      - pattern: '^BunnyCDN\b'
+    cdn-pullzone:
+      - pattern: ''
+        confidence: 90
+    cdn-requestid:
+      - pattern: ''
+        confidence: 90
+  scripts:
+    - pattern: '\.b-cdn\.net/'
+      confidence: 90

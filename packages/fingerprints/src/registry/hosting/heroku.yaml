@@ -1,0 +1,13 @@
+name: Heroku
+slug: heroku
+category: hosting
+website: https://www.heroku.com
+detect:
+  headers:
+    via:
+      - pattern: '\bvegur\b'
+      - pattern: '\bheroku-router\b'
+      - pattern: '\bspaces-router\b'
+        confidence: 90
+    server:
+      - pattern: '^heroku-router$'

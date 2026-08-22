@@ -1,0 +1,11 @@
+name: Amazon S3
+slug: amazon-s3
+category: hosting
+website: https://aws.amazon.com/s3/
+detect:
+  headers:
+    server:
+      - pattern: '^AmazonS3$'
+    x-amz-request-id:
+      - pattern: ''
+        confidence: 90
