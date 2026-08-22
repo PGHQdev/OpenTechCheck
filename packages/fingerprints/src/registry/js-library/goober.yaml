@@ -1,0 +1,11 @@
+name: goober
+slug: goober
+category: js-library
+website: https://goober.rocks
+detect:
+  html:
+    - pattern: '<style id="_goober"'
+      confidence: 90
+  dom:
+    'style#_goober':
+      - pattern: ''
