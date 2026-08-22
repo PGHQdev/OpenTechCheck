@@ -9,3 +9,7 @@ detect:
   scripts:
     - pattern: 'googletagmanager\.com/gtag/js'
     - pattern: 'google-analytics\.com/analytics\.js'
+  cookies:
+    _ga:
+      - pattern: '^GA1\.|^GS\d\.'
+        confidence: 85
