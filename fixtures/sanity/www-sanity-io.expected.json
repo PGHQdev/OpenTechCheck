@@ -3,6 +3,7 @@
     "astro",
     "sanity",
     "tailwindcss",
-    "fathom"
+    "fathom",
+    "google-tag-manager"
   ]
 }

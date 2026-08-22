@@ -3,6 +3,7 @@
     "bigcommerce",
     "cloudflare",
     "google-analytics",
-    "jquery"
+    "jquery",
+    "google-tag-manager"
   ]
 }

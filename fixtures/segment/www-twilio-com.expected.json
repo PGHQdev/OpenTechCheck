@@ -1,5 +1,6 @@
 {
   "detects": [
-    "segment"
+    "segment",
+    "google-tag-manager"
   ]
 }

@@ -4,6 +4,7 @@
     "gsap",
     "jquery",
     "wordpress",
-    "cloudflare"
+    "cloudflare",
+    "google-tag-manager"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "detects": [
     "apache",
-    "typo3"
+    "typo3",
+    "google-tag-manager"
   ]
 }

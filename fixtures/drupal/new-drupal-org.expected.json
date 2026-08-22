@@ -1,6 +1,7 @@
 {
   "detects": [
     "apache",
-    "drupal"
+    "drupal",
+    "google-tag-manager"
   ]
 }

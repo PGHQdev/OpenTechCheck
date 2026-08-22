@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudflare",
-    "posthog"
+    "posthog",
+    "google-tag-manager"
   ]
 }

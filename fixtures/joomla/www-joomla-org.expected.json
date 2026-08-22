@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudflare",
-    "joomla"
+    "joomla",
+    "google-tag-manager"
   ]
 }

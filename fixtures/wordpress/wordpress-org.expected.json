@@ -1,6 +1,7 @@
 {
   "detects": [
     "wordpress",
-    "nginx"
+    "nginx",
+    "google-tag-manager"
   ]
 }

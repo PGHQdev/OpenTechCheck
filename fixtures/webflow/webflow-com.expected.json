@@ -5,6 +5,7 @@
     "jquery",
     "swiper",
     "threejs",
-    "webflow"
+    "webflow",
+    "google-tag-manager"
   ]
 }

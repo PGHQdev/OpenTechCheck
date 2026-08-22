@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudflare",
-    "magento"
+    "magento",
+    "google-tag-manager"
   ]
 }

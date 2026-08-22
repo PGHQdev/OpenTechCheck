@@ -2,6 +2,7 @@
   "detects": [
     "astro",
     "cloudflare",
-    "tailwindcss"
+    "tailwindcss",
+    "google-tag-manager"
   ]
 }

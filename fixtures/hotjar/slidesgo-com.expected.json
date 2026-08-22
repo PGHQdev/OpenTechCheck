@@ -5,6 +5,7 @@
     "hotjar",
     "posthog",
     "swiper",
-    "tailwindcss"
+    "tailwindcss",
+    "google-tag-manager"
   ]
 }

@@ -4,6 +4,7 @@
     "react",
     "woocommerce",
     "wordpress",
-    "nginx"
+    "nginx",
+    "google-tag-manager"
   ]
 }

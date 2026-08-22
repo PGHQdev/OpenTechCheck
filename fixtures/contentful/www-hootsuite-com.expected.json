@@ -3,6 +3,7 @@
     "contentful",
     "nextjs",
     "react",
-    "slick"
+    "slick",
+    "google-tag-manager"
   ]
 }

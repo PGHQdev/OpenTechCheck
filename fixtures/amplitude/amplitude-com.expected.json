@@ -5,6 +5,7 @@
     "nginx",
     "react",
     "sanity",
-    "tailwindcss"
+    "tailwindcss",
+    "google-tag-manager"
   ]
 }
