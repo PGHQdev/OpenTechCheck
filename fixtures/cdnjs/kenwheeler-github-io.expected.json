@@ -4,6 +4,7 @@
     "slick",
     "modernizr",
     "jquery",
-    "fastly"
+    "fastly",
+    "github-pages"
   ]
 }

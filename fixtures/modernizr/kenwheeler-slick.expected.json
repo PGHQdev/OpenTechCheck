@@ -4,6 +4,7 @@
     "slick",
     "jquery",
     "fastly",
-    "cdnjs"
+    "cdnjs",
+    "github-pages"
   ]
 }

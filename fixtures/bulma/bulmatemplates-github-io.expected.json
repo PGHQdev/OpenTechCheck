@@ -2,6 +2,7 @@
   "detects": [
     "bulma",
     "font-awesome",
-    "fastly"
+    "fastly",
+    "github-pages"
   ]
 }

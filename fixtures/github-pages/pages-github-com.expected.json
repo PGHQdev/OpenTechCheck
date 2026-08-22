@@ -1,7 +1,7 @@
 {
   "detects": [
-    "threejs",
+    "github-pages",
     "fastly",
-    "github-pages"
+    "jquery"
   ]
 }

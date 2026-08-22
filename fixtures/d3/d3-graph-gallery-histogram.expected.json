@@ -5,6 +5,7 @@
     "jquery",
     "google-analytics",
     "font-awesome",
-    "fastly"
+    "fastly",
+    "github-pages"
   ]
 }
