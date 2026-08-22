@@ -11,6 +11,12 @@ detect:
     React.version:
       - pattern: '^([\d.]+)'
         version: 1
+    '$probe.react':
+      - pattern: '^([\d.]+)$'
+        version: 1
+        confidence: 90
+      - pattern: ''
+        confidence: 85
   dom:
     '[data-reactroot]':
       - pattern: ''
