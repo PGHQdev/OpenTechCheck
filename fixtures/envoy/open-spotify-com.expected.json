@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "varnish",
+    "envoy",
+    "fastly"
+  ]
+}
