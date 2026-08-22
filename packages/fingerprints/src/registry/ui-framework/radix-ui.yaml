@@ -1,0 +1,9 @@
+name: Radix UI
+slug: radix-ui
+category: ui-framework
+website: https://www.radix-ui.com
+implies: [react]
+detect:
+  dom:
+    '[id^="radix-"]':
+      - pattern: ''
