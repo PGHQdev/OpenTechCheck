@@ -1,0 +1,13 @@
+name: Comscore
+slug: comscore
+category: analytics
+website: https://www.comscore.com
+detect:
+  scripts:
+    - pattern: 'sb\.scorecardresearch\.com/'
+  html:
+    - pattern: 'scorecardresearch\.com/p\?'
+      confidence: 80
+  js:
+    _comscore:
+      - pattern: ''
