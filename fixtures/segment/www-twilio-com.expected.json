@@ -1,6 +1,7 @@
 {
   "detects": [
     "segment",
-    "google-tag-manager"
+    "google-tag-manager",
+    "cloudfront"
   ]
 }

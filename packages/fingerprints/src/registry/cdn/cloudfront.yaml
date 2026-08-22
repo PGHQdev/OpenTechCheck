@@ -1,0 +1,15 @@
+name: Amazon CloudFront
+slug: cloudfront
+category: cdn
+website: https://aws.amazon.com/cloudfront/
+detect:
+  headers:
+    x-amz-cf-id:
+      - pattern: ''
+    x-amz-cf-pop:
+      - pattern: ''
+    via:
+      - pattern: '\.cloudfront\.net \(CloudFront\)'
+    x-cache:
+      - pattern: '\bfrom cloudfront$'
+        confidence: 90

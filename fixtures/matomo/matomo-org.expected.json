@@ -3,6 +3,7 @@
     "apache",
     "jquery",
     "matomo",
-    "wordpress"
+    "wordpress",
+    "cloudfront"
   ]
 }

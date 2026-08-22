@@ -3,6 +3,7 @@
     "apache",
     "swiper",
     "tealium",
-    "wordpress"
+    "wordpress",
+    "cloudfront"
   ]
 }
