@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-new-relic",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://js-agent.newrelic.com/nr-loader-spa-current.min.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "NREUM": true,
+    "newrelic": true
+  }
+}
