@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": { "types": ["bun-types", "chrome"] },
+  "include": ["src", "build", "test"]
+}
