@@ -2,6 +2,7 @@
   "detects": [
     "chartjs",
     "cloudflare",
-    "fastly"
+    "fastly",
+    "varnish"
   ]
 }

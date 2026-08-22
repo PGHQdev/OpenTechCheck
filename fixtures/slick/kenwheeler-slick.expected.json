@@ -5,6 +5,7 @@
     "jquery",
     "fastly",
     "cdnjs",
-    "github-pages"
+    "github-pages",
+    "varnish"
   ]
 }

@@ -3,6 +3,7 @@
     "django",
     "fastly",
     "nginx",
-    "stripe"
+    "stripe",
+    "varnish"
   ]
 }

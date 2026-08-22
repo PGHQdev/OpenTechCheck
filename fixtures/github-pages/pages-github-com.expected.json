@@ -2,6 +2,7 @@
   "detects": [
     "github-pages",
     "fastly",
-    "jquery"
+    "jquery",
+    "varnish"
   ]
 }

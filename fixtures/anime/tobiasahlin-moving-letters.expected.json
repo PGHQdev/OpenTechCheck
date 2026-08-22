@@ -3,6 +3,7 @@
     "anime",
     "fastly",
     "github-pages",
-    "mailchimp"
+    "mailchimp",
+    "varnish"
   ]
 }
