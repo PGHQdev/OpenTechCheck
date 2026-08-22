@@ -1,0 +1,111 @@
+{
+  "url": "https://d3-graph-gallery.com/graph/histogram_basic.html",
+  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n\n    <!-- Global site tag (gtag.js) - Google Analytics -->\n\n    <script\n      async\n      src=\"https://www.googletagmanager.com/gtag/js?id=UA-79254642-6\"\n    ></script>\n\n    <script>\n      window.dataLayer = window.dataLayer || [];\n      function gtag() {\n        dataLayer.push(arguments);\n      }\n      gtag(\"js\", new Date());\n\n      gtag(\"config\", \"UA-79254642-6\");\n    </script>\n\n    <meta charset=\"utf-8\" />\n    <title>Basic histogram in d3.js</title>\n    <meta\n      name=\"viewport\"\n      content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"\n    />\n    <meta\n      name=\"description\"\n      content=\"This post shows how to use d3.js to create a very basic histogram, providing explanations and reproducible code. Example with code (d3.js v4 and v6).\"\n    />\n    <meta\n      name=\"keywords\"\n      content=\"Data, Dataviz, Datavisualization, Javascript, JS, d3.js, boxplot\"\n    />\n    <meta name=\"author\" content=\"Yan Holtz\" />\n    <link rel=\"icon\" href=\"../img/logo/D3_single_small.png\" />\n\n    <meta property=\"og:title\" content=\"Basic histogram in d3.js\" />\n    <meta\n      property=\"og:image\"\n      content=\"https://www.d3-graph-gallery.com/img/logo/D3_full_medium.png\"\n    />\n    <meta\n      property=\"og:description\"\n      content=\"This post shows how to use d3.js to create a very basic histogram, providing explanations and reproducible code. Example with code (d3.js v4 and v6).\"\n    />\n\n    <!-- Bootstrap core CSS -->\n    <link href=\"../vendor/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\" />\n\n    <!-- Custom fonts for this template -->\n    <link\n      href=\"../vendor/font-awesome/css/font-awesome.min.css\"\n      rel=\"stylesheet\"\n      type=\"text/css\"\n    />\n\n    <!-- Custom styles for this template -->\n    <link href=\"../css/agency.css\" rel=\"stylesheet\" />\n\n    <!-- PRISM -->\n    <script src=\"../LIB/prism.js\"></script>\n    <link href=\"../LIB/prism.css\" rel=\"stylesheet\" />\n\n    <!-- JQUERY -->\n    <script src=\"../vendor/jquery/jquery.min.js\"></script>\n\n    <!-- HTML TO CANVAS -->\n    <script src=\"../js/html2canvas.js\"></script>\n\n    <!-- Function to parse html and js code chunks made by Yan Holtz -->\n    <script src=\"../js/myParser.js\"></script>\n  </head>\n\n  <body id=\"page-top\">\n    <!-- THIS ALLOWS TO INSERT THE MENU THAT IS STORED IN A MENU.HTML FILE-->\n    <nav class=\"navbar navbar-expand-lg fixed-top\" id=\"mainNav\"></nav>\n    <script>\n      $(function () {\n        $(\"#mainNav\").load(\"../html_chunk/menu.html\");\n      });\n    </script>\n\n    <!-- THIS ALLOWS TO INSERT THE MODAL OF THE MENU THAT IS STORED IN A MENU_MODAL.HTML FILE-->\n    <div id=\"modal_menu_insertion\"></div>\n    <script>\n      $(function () {\n        $(\"#modal_menu_insertion\").load(\"../html_chunk/menu_modal.html\");\n      });\n    </script>\n\n    <!-- Header -->\n    <header class=\"masthead\">\n      <div class=\"textlanding\">\n        <h1>Most basic histogram in d3.js</h1>\n        <hr class=\"short_hr\" />\n        <br />\n        <ul class=\"list-inline social-buttons\">\n          <li class=\"list-inline-item\">\n            <a href=\"https://twitter.com/R_Graph_Gallery\">\n              <i class=\"fa fa-twitter\"></i>\n            </a>\n          </li>\n          <li class=\"list-inline-item social-buttons\">\n            <a href=\"https://github.com/holtzy\">\n              <i class=\"fa fa-github\" style=\"color: white\"></i>\n            </a>\n          </li>\n          <li class=\"list-inline-item social-buttons\">\n            <a href=\"https://www.linkedin.com/in/yan-holtz-2477534a/\">\n              <i class=\"fa fa-linkedin\"></i>\n            </a>\n          </li>\n          <li class=\"list-inline-item social-buttons\">\n            <a href=\"https://www.yan-holtz.com\">\n              <i class=\"fa fa-home\"></i>\n            </a>\n          </li>\n        </ul>\n        <br /><br />\n        <p style=\"max-width: 700px; margin: auto\">\n          This post describes how to build a very basic\n          <a href=\"../histogram.html\">histogram</a> with d3.js. Only one\n          category is represented, to simplify the code as much as possible. You\n          can see many other examples in the\n          <a href=\"../histogram.html\">histogram section</a> of the gallery.\n          Learn more about the theory of histogram in\n          <a href=\"https://www.data-to-viz.com/graph/histogram.html\"\n            >data-to-viz.com</a\n          >. This example works with d3.js <code>v4</code> and <code>v6</code>\n        </p>\n        <br />\n        <a\n          class=\"btn btn-secondary btn-md\"\n          style=\"font-weight: 400\"\n          href=\"https://www.react-graph-gallery.com/histogram?utm_source=d3-gallery&utm_medium=example-button&utm_campaign=histogram\"\n          >React version</a\n        >\n        <a\n          class=\"btn btn-secondary btn-md\"\n          style=\"font-weight: 400\"\n          href=\"../histogram.html\"\n          >Histogram section</a\n        >\n        <button\n          class=\"btn btn-secondary btn-md\"\n          style=\"font-weight: 400\"\n          onclick=\"myCodeDownload('chart_example_from_d3-graph-gallery.html', 'code-html-v4', 'code-js-v4')\"\n        >\n          Download code\n        </button>\n      </div>\n    </header>\n\n    <section class=\"bg\" style=\"padding-top: 20px; padding-bottom: 20px\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <!-- ==================== GRAPH SECTION = WHERE THE GRAPH APPEARS ==================== -->\n\n          <div class=\"col-lg-5 .align-middle\">\n            <div style=\"position: -webkit-sticky; position: sticky; top: 120px\">\n              <div class=\"bg-light\" id=\"result\"></div>\n              <br />\n              <div>\n                <h5>Steps:</h5>\n                <ul>\n                  <br />\n                  <li>\n                    The Html part of the code just creates a\n                    <code>div</code> that will be modified by d3 later on.\n                  </li>\n                  <br />\n                  <li>\n                    The first part of the javascript code set a\n                    <code>svg</code> area. It specify the chart size and its\n                    margin. <a href=\"\">Read more</a>.\n                  </li>\n                  <br />\n                  <li>\n                    A histogram displays the <u>distribution</u> of a numeric\n                    variable. So you basically need only one column in your\n                    input file. (see input\n                    <a\n                      href=\"https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv\"\n                      >here</a\n                    >)\n                  </li>\n                  <br />\n                  <li>\n                    This numeric variable is provided to the\n                    <code>d3.histogram()</code> function that will compute the\n                    binning and returns the coordinates of each bar.\n                  </li>\n                  <br />\n                  <li>\n                    These bars can thus be drawn using a classic\n                    <code>.append(\"rect\")</code> approach.\n                  </li>\n                </ul>\n              </div>\n            </div>\n          </div>\n\n          <!-- ================================================================================= -->\n\n          <!-- ==================== CODE SECTION = WHERE THE CODE APPEARS ==================== -->\n          <div class=\"col-lg-7 text-center .align-middle\">\n            <div class=\"v4-v6-toggle\">\n              <button\n                id=\"button-show-v4\"\n                onclick=\"showCodeVersion('v4')\"\n                type=\"button\"\n                class=\"btn btn-secondary btn-sm active\"\n              >\n                d3 v4\n              </button>\n              <span> | </span>\n              <button\n                id=\"button-show-v6\"\n                onclick=\"showCodeVersion('v6')\"\n                type=\"button\"\n                class=\"btn btn-secondary btn-sm\"\n              >\n                d3 v6\n              </button>\n            </div>\n\n            <!-- ========= show html code ============== -->\n            <aside\n              style=\"position: -webkit-sticky; position: sticky; top: 120px\"\n            >\n              &larr; Edit me!\n            </aside>\n            <pre\n              class=\"language-html d-none d3v4-chunk\"\n            ><code id=\"code-html-v4\" contenteditable=\"true\"><xmp><!DOCTYPE html>\n<meta charset=\"utf-8\">\n\n<!-- Load d3.js -->\n<script src=\"https://d3js.org/d3.v4.js\"></script>\n\n<!-- Create a div where the graph will take place -->\n<div id=\"my_dataviz\"></div>\n\n</xmp></code></pre>\n            <pre\n              class=\"language-html d-none d3v6-chunk\"\n            ><code id=\"code-html-v6\" contenteditable=\"true\"><xmp><!DOCTYPE html>\n<meta charset=\"utf-8\">\n\n<!-- Load d3.js -->\n<script src=\"https://d3js.org/d3.v6.js\"></script>\n\n<!-- Create a div where the graph will take place -->\n<div id=\"my_dataviz\"></div>\n\n</xmp></code></pre>\n\n            <!-- ==================================== -->\n\n            <!-- ========= show JS code v4 ==============  -->\n            <pre\n              class=\"language-js d-none d3v4-chunk\"\n            ><code id=\"code-js-v4\" contenteditable=\"true\"><xmp><script>\n\n// set the dimensions and margins of the graph\nvar margin = {top: 10, right: 30, bottom: 30, left: 40},\n    width = 460 - margin.left - margin.right,\n    height = 400 - margin.top - margin.bottom;\n\n// append the svg object to the body of the page\nvar svg = d3.select(\"#my_dataviz\")\n  .append(\"svg\")\n    .attr(\"width\", width + margin.left + margin.right)\n    .attr(\"height\", height + margin.top + margin.bottom)\n  .append(\"g\")\n    .attr(\"transform\",\n          \"translate(\" + margin.left + \",\" + margin.top + \")\");\n\n// get the data\nd3.csv(\"https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv\", function(data) {\n\n  // X axis: scale and draw:\n  var x = d3.scaleLinear()\n      .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })\n      .range([0, width]);\n  svg.append(\"g\")\n      .attr(\"transform\", \"translate(0,\" + height + \")\")\n      .call(d3.axisBottom(x));\n\n  // set the parameters for the histogram\n  var histogram = d3.histogram()\n      .value(function(d) { return d.price; })   // I need to give the vector of value\n      .domain(x.domain())  // then the domain of the graphic\n      .thresholds(x.ticks(70)); // then the numbers of bins\n\n  // And apply this function to data to get the bins\n  var bins = histogram(data);\n\n  // Y axis: scale and draw:\n  var y = d3.scaleLinear()\n      .range([height, 0]);\n      y.domain([0, d3.max(bins, function(d) { return d.length; })]);   // d3.hist has to be called before the Y axis obviously\n  svg.append(\"g\")\n      .call(d3.axisLeft(y));\n\n  // append the bar rectangles to the svg element\n  svg.selectAll(\"rect\")\n      .data(bins)\n      .enter()\n      .append(\"rect\")\n        .attr(\"x\", 1)\n        .attr(\"transform\", function(d) { return \"translate(\" + x(d.x0) + \",\" + y(d.length) + \")\"; })\n        .attr(\"width\", function(d) { return x(d.x1) - x(d.x0) -1 ; })\n        .attr(\"height\", function(d) { return height - y(d.length); })\n        .style(\"fill\", \"#69b3a2\")\n\n});\n</script></xmp></code></pre>\n            <!-- ==================================== -->\n\n            <!-- ========= show JS code v6 ==============  -->\n            <pre\n              class=\"language-js d-none d3v6-chunk\"\n            ><code id=\"code-js-v6\" contenteditable=\"true\"><xmp><script>\n\n// set the dimensions and margins of the graph\nconst margin = {top: 10, right: 30, bottom: 30, left: 40},\n    width = 460 - margin.left - margin.right,\n    height = 400 - margin.top - margin.bottom;\n\n// append the svg object to the body of the page\nconst svg = d3.select(\"#my_dataviz\")\n  .append(\"svg\")\n    .attr(\"width\", width + margin.left + margin.right)\n    .attr(\"height\", height + margin.top + margin.bottom)\n  .append(\"g\")\n    .attr(\"transform\",\n          `translate(${margin.left},${margin.top})`);\n\n// get the data\nd3.csv(\"https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/1_OneNum.csv\").then( function(data) {\n\n  // X axis: scale and draw:\n  const x = d3.scaleLinear()\n      .domain([0, 1000])     // can use this instead of 1000 to have the max of data: d3.max(data, function(d) { return +d.price })\n      .range([0, width]);\n  svg.append(\"g\")\n      .attr(\"transform\", `translate(0, ${height})`)\n      .call(d3.axisBottom(x));\n\n  // set the parameters for the histogram\n  const histogram = d3.histogram()\n      .value(function(d) { return d.price; })   // I need to give the vector of value\n      .domain(x.domain())  // then the domain of the graphic\n      .thresholds(x.ticks(70)); // then the numbers of bins\n\n  // And apply this function to data to get the bins\n  const bins = histogram(data);\n\n  // Y axis: scale and draw:\n  const y = d3.scaleLinear()\n      .range([height, 0]);\n      y.domain([0, d3.max(bins, function(d) { return d.length; })]);   // d3.hist has to be called before the Y axis obviously\n  svg.append(\"g\")\n      .call(d3.axisLeft(y));\n\n  // append the bar rectangles to the svg element\n  svg.selectAll(\"rect\")\n      .data(bins)\n      .join(\"rect\")\n        .attr(\"x\", 1)\n    .attr(\"transform\", function(d) { return `translate(${x(d.x0)} , ${y(d.length)})`})\n        .attr(\"width\", function(d) { return x(d.x1) - x(d.x0) -1})\n        .attr(\"height\", function(d) { return height - y(d.length); })\n        .style(\"fill\", \"#69b3a2\")\n\n});\n</script></xmp></code></pre>\n            <!-- ==================================== -->\n          </div>\n        </div>\n      </div>\n    </section>\n    <br />\n\n    <!-- ============================ -->\n\n    <!-- ============================ RELATED BLOCKS ============================ -->\n\n    <section class=\"bg-light\" style=\"padding-top: 70px; padding-bottom: 70px\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-5 text-center align-self-center\">\n            <h3 class=\"text-uppercase\">Related blocks &rarr;</h3>\n          </div>\n          <div class=\"col-lg-5\">\n            <ul>\n              <li>\n                <i>Simple histogram using v4 - </i>by\n                <a\n                  href=\"https://bl.ocks.org/d3noob/96b74d0bd6d11427dd797892551a103c\"\n                  >d3Noob</a\n                >\n              </li>\n              <br />\n              <li>\n                <i>Histogram section - </i>by\n                <a href=\"../histogram.html\">the D3 graph gallery</a>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </section>\n\n    <!-- ============================ CONTACT SECTION ============================ -->\n\n\n    <section id=\"contact\" class=\"bg\" style=\"background-color: white\"></section>\n\n    <!-- THIS ALLOWS TO INSERT THE NEWSLETTER CHUNK THAT IS STORED IN A NEWSLETTER_SECTION.HTML FILE-->\n    <script>\n      $(function () {\n        $(\"#contact\").load(\"../html_chunk/newsletter_section.html\");\n      });\n    </script>\n\n    <!-- ============================ FOOTER SECTION ============================ -->\n    <footer class=\"bg-light\" id=\"myFooter\"></footer>\n\n\n    <!-- THIS ALLOWS TO INSERT THE FOOTER THAT IS STORED IN A FOOTER.HTML FILE-->\n    <script>\n      $(function () {\n        $(\"#myFooter\").load(\"../html_chunk/footer.html\");\n      });\n    </script>\n\n    <!-- ============================ -->\n\n    <!-- ============================ JAVASCRIPT SECTION ============================ -->\n\n    <!-- Bootstrap core JavaScript -->\n    <script src=\"../vendor/bootstrap/js/bootstrap.bundle.min.js\"></script>\n\n    <!-- Custom scripts for this template -->\n    <script src=\"../js/agency.min.js\"></script>\n\n    <!-- Activate the bootstrap tooltip, must be after jQuery load -->\n    <script>\n      $(function () {\n        $('[data-toggle=\"tooltip\"]').tooltip();\n      });\n    </script>\n\n    <script>\n      showCodeVersion(\"v4\");\n    </script>\n    <!-- Newsletter toast (pops bottom-right after a few seconds). Content lives in js/newsletter-toast.js -->\n    <script src=\"../js/newsletter-toast.js\"></script>\n  </body>\n</html>\n",
+  "scripts": [
+    "https://www.googletagmanager.com/gtag/js?id=UA-79254642-6",
+    "../LIB/prism.js",
+    "../vendor/jquery/jquery.min.js",
+    "../js/html2canvas.js",
+    "../js/myParser.js",
+    "https://d3js.org/d3.v4.js",
+    "https://d3js.org/d3.v6.js",
+    "../vendor/bootstrap/js/bootstrap.bundle.min.js",
+    "../js/agency.min.js",
+    "../js/newsletter-toast.js"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width, initial-scale=1, shrink-to-fit=no"
+    ],
+    "description": [
+      "This post shows how to use d3.js to create a very basic histogram, providing explanations and reproducible code. Example with code (d3.js v4 and v6)."
+    ],
+    "keywords": [
+      "Data, Dataviz, Datavisualization, Javascript, JS, d3.js, boxplot"
+    ],
+    "author": [
+      "Yan Holtz"
+    ],
+    "og:title": [
+      "Basic histogram in d3.js"
+    ],
+    "og:image": [
+      "https://www.d3-graph-gallery.com/img/logo/D3_full_medium.png"
+    ],
+    "og:description": [
+      "This post shows how to use d3.js to create a very basic histogram, providing explanations and reproducible code. Example with code (d3.js v4 and v6)."
+    ]
+  },
+  "headers": {
+    "accept-ranges": [
+      "bytes"
+    ],
+    "access-control-allow-origin": [
+      "*"
+    ],
+    "age": [
+      "0"
+    ],
+    "cache-control": [
+      "max-age=600"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-length": [
+      "4205"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 09:31:09 GMT"
+    ],
+    "etag": [
+      "W/\"6a6e0ce7-3f11\""
+    ],
+    "expires": [
+      "Sat, 22 Aug 2026 09:41:09 GMT"
+    ],
+    "last-modified": [
+      "Sat, 01 Aug 2026 15:12:39 GMT"
+    ],
+    "server": [
+      "GitHub.com"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ],
+    "via": [
+      "1.1 varnish"
+    ],
+    "x-cache": [
+      "MISS"
+    ],
+    "x-cache-hits": [
+      "0"
+    ],
+    "x-fastly-request-id": [
+      "84fb476458686ee95c3bc9a02e18353cf0aaa2cb"
+    ],
+    "x-github-edge-region": [
+      "japaneast"
+    ],
+    "x-github-request-id": [
+      "FB86:3F05F3:3210C2:342543:6A896C5A"
+    ],
+    "x-proxy-cache": [
+      "MISS"
+    ],
+    "x-served-by": [
+      "cache-nrt-rjaa8190071-NRT"
+    ],
+    "x-timer": [
+      "S1787391069.018821,VS0,VE174"
+    ]
+  },
+  "cookies": {}
+}

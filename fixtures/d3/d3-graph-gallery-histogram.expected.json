@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "d3",
+    "jquery",
+    "google-analytics"
+  ]
+}
