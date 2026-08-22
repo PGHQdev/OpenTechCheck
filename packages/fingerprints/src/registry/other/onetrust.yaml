@@ -1,0 +1,16 @@
+name: OneTrust
+slug: onetrust
+category: other
+website: https://www.onetrust.com
+detect:
+  scripts:
+    - pattern: 'cdn\.cookielaw\.org/scripttemplates/otSDKStub\.js'
+    - pattern: 'cdn\.cookielaw\.org/'
+  html:
+    - pattern: 'id="onetrust-consent-sdk"'
+      confidence: 90
+  js:
+    OneTrust:
+      - pattern: ''
+    OnetrustActiveGroups:
+      - pattern: ''
