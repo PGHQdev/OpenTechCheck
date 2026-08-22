@@ -1,0 +1,13 @@
+name: Flask
+slug: flask
+category: web-framework
+website: https://flask.palletsprojects.com
+detect:
+  headers:
+    server:
+      - pattern: '^Werkzeug/([\d.]+)'
+        version: 1
+  cookies:
+    session:
+      - pattern: '^\.?eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+\.[A-Za-z0-9_-]+$'
+        confidence: 80
