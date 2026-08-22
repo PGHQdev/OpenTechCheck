@@ -1,0 +1,14 @@
+name: Bulma
+slug: bulma
+category: ui-framework
+website: https://bulma.io
+detect:
+  html:
+    - pattern: 'jsdelivr\.net/npm/bulma@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/bulma/([\d.]+)'
+      version: 1
+    - pattern: 'unpkg\.com/bulma@([\d.]+)'
+      version: 1
+    - pattern: 'href="[^"]*/bulma(?:\.min)?\.css'
+      confidence: 70
