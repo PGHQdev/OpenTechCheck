@@ -1,6 +1,7 @@
 {
   "detects": [
     "astro",
-    "cloudflare"
+    "cloudflare",
+    "tailwindcss"
   ]
 }

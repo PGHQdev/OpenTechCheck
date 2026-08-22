@@ -1,8 +1,8 @@
 {
   "detects": [
-    "google-analytics",
+    "tailwindcss",
     "nextjs",
     "react",
-    "tailwindcss"
+    "cloudflare"
   ]
 }

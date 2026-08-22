@@ -1,6 +1,7 @@
 {
   "detects": [
     "solid",
-    "cloudflare"
+    "cloudflare",
+    "tailwindcss"
   ]
 }

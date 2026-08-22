@@ -3,6 +3,7 @@
     "cloudflare",
     "react",
     "remix",
-    "shopify"
+    "shopify",
+    "tailwindcss"
   ]
 }

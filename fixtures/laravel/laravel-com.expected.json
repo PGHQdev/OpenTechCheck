@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudflare",
-    "laravel"
+    "laravel",
+    "tailwindcss"
   ]
 }

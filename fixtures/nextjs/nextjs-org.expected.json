@@ -1,6 +1,7 @@
 {
   "detects": [
     "nextjs",
-    "react"
+    "react",
+    "tailwindcss"
   ]
 }

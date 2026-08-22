@@ -2,6 +2,7 @@
   "detects": [
     "alpinejs",
     "cloudflare",
-    "laravel"
+    "laravel",
+    "tailwindcss"
   ]
 }
