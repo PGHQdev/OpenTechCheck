@@ -1,0 +1,11 @@
+name: Amplitude
+slug: amplitude
+category: analytics
+website: https://amplitude.com
+detect:
+  html:
+    - pattern: 'cdn\.amplitude\.com/'
+    - pattern: 'amplitude\.init\('
+      confidence: 85
+  scripts:
+    - pattern: 'cdn\.amplitude\.com/'

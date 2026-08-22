@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "amplitude",
+    "nextjs",
+    "nginx",
+    "react",
+    "sanity",
+    "tailwindcss"
+  ]
+}
