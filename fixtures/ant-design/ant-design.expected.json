@@ -5,6 +5,7 @@
     "cloudflare",
     "google-analytics",
     "microsoft-clarity",
-    "fastly"
+    "fastly",
+    "jsdelivr"
   ]
 }

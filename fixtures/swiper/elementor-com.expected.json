@@ -5,6 +5,7 @@
     "jquery",
     "wordpress",
     "cloudflare",
-    "google-tag-manager"
+    "google-tag-manager",
+    "jsdelivr"
   ]
 }

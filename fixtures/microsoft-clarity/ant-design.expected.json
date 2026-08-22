@@ -5,6 +5,7 @@
     "google-analytics",
     "microsoft-clarity",
     "react",
-    "fastly"
+    "fastly",
+    "jsdelivr"
   ]
 }

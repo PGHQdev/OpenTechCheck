@@ -4,6 +4,7 @@
     "jquery",
     "cloudflare",
     "plausible",
-    "webflow"
+    "webflow",
+    "jsdelivr"
   ]
 }

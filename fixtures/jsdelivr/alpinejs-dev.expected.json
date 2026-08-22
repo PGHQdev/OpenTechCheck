@@ -1,10 +1,10 @@
 {
   "detects": [
+    "jsdelivr",
     "alpinejs",
     "cloudflare",
     "laravel",
     "tailwindcss",
-    "fathom",
-    "jsdelivr"
+    "fathom"
   ]
 }
