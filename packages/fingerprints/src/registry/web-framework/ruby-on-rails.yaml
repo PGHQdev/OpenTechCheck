@@ -12,4 +12,4 @@ detect:
   headers:
     x-powered-by:
       - pattern: 'Phusion Passenger'
-        confidence: 90
+        confidence: 70

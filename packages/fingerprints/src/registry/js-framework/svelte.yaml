@@ -5,6 +5,7 @@ website: https://svelte.dev
 detect:
   html:
     - pattern: 'class="[^"]*\bsvelte-[a-z0-9]{4,12}\b'
+      confidence: 90
     - pattern: '\bdata-sveltekit-preload-data\b'
       confidence: 90
   js:
