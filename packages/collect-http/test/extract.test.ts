@@ -32,3 +32,15 @@ test('keeps raw html', () => {
   const b = extractSignals('https://a.com', HTML, new Headers())
   expect(b.html).toContain('WordPress 6.5')
 })
+
+test('does not match data-src for script src', () => {
+  const html = `<script data-src="placeholder.js" src="real.js"></script>`
+  const b = extractSignals('https://a.com', html, new Headers())
+  expect(b.scripts).toEqual(['real.js'])
+})
+
+test('does not match name inside attribute value', () => {
+  const html = `<meta content="name=foo" name="generator" />`
+  const b = extractSignals('https://a.com', html, new Headers())
+  expect(b.meta?.['generator']).toEqual(['name=foo'])
+})
