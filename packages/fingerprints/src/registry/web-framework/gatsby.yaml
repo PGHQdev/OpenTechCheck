@@ -1,0 +1,14 @@
+name: Gatsby
+slug: gatsby
+category: web-framework
+website: https://www.gatsbyjs.com
+implies: [react]
+detect:
+  html:
+    - pattern: 'id="___gatsby"'
+  scripts:
+    - pattern: '/page-data/app-data\.json'
+  meta:
+    generator:
+      - pattern: '^Gatsby(?:\s([\d.]+))?'
+        version: 1
