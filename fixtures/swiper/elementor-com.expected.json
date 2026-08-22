@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "swiper",
+    "gsap",
+    "jquery",
+    "wordpress",
+    "cloudflare"
+  ]
+}
