@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "gsap",
+    "jquery",
+    "cloudflare"
+  ]
+}
