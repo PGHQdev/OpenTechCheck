@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-linkedin-insight",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://snap.licdn.com/li.lms-analytics/insight.min.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "_linkedin_data_partner_ids": ["123456"]
+  }
+}

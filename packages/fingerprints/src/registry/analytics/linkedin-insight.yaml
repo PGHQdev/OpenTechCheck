@@ -1,0 +1,10 @@
+name: LinkedIn Insight Tag
+slug: linkedin-insight
+category: analytics
+website: https://business.linkedin.com/marketing-solutions/insight-tag
+detect:
+  scripts:
+    - pattern: 'snap\.licdn\.com'
+  js:
+    _linkedin_data_partner_ids:
+      - pattern: ''
