@@ -1,12 +1,11 @@
 {
   "detects": [
     "cloudflare",
-    "jquery",
+    "google-tag-manager",
     "klarna",
     "klaviyo",
     "microsoft-clarity",
-    "paypal",
     "shopify",
-    "slick"
+    "tailwindcss"
   ]
 }

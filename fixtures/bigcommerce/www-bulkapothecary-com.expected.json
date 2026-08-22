@@ -3,7 +3,8 @@
     "bigcommerce",
     "cloudflare",
     "google-analytics",
+    "google-tag-manager",
     "jquery",
-    "google-tag-manager"
+    "klaviyo"
   ]
 }
