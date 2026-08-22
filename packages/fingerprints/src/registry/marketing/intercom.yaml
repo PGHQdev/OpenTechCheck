@@ -1,0 +1,11 @@
+name: Intercom
+slug: intercom
+category: marketing
+website: https://www.intercom.com
+detect:
+  html:
+    - pattern: 'widget\.intercom\.io/widget/'
+    - pattern: 'window\.intercomSettings'
+      confidence: 90
+  scripts:
+    - pattern: 'widget\.intercom\.io/widget/'
