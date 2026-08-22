@@ -64,12 +64,23 @@ export function toDetection(fp: Fingerprint, hits: RuleHit[]): Detection {
   const maxConf = Math.max(...hits.map((h) => h.rule.confidence ?? 100))
   const sources = new Set(hits.map((h) => h.evidence.source))
   const confidence = Math.min(100, maxConf + 5 * (sources.size - 1))
+
+  let version: string | null = null
+  let versionConf = -1
+  for (const h of hits) {
+    if (h.rule.version === undefined) continue
+    const captured = h.captures[h.rule.version]
+    if (!captured) continue
+    const conf = h.rule.confidence ?? 100
+    if (conf > versionConf) { version = captured; versionConf = conf }
+  }
+
   return {
     slug: fp.slug,
     name: fp.name,
     category: fp.category,
     confidence,
-    version: null,                      // real resolution in Task 5
+    version,
     evidence: hits.map((h) => h.evidence),
   }
 }
