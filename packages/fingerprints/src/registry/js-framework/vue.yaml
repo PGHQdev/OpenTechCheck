@@ -1,0 +1,11 @@
+name: Vue
+slug: vue
+category: js-framework
+website: https://vuejs.org
+detect:
+  html:
+    - pattern: '\bdata-v-[0-9a-f]{7,8}\b'
+  js:
+    Vue.version:
+      - pattern: '^([\d.]+)'
+        version: 1

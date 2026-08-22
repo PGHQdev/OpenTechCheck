@@ -1,0 +1,10 @@
+name: Cloudflare
+slug: cloudflare
+category: cdn
+website: https://www.cloudflare.com
+detect:
+  headers:
+    server:
+      - pattern: '^cloudflare$'
+    cf-ray:
+      - pattern: ''

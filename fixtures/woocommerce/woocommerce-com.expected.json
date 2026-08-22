@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "jquery",
+    "react",
+    "woocommerce",
+    "wordpress"
+  ]
+}

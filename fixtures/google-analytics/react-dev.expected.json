@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "google-analytics",
+    "nextjs",
+    "react"
+  ]
+}

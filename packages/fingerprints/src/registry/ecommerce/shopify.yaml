@@ -1,0 +1,16 @@
+name: Shopify
+slug: shopify
+category: ecommerce
+website: https://www.shopify.com
+detect:
+  html:
+    - pattern: 'Shopify\.theme'
+    - pattern: 'cdn\.shopify\.com'
+  scripts:
+    - pattern: 'cdn\.shopify\.com'
+  headers:
+    x-shopify-stage:
+      - pattern: ''
+  cookies:
+    _shopify_s:
+      - pattern: ''

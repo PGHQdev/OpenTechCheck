@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["name", "slug", "category", "website", "detect"],
+  "additionalProperties": false,
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "category": { "type": "string" },
+    "website": { "type": "string", "pattern": "^https?://" },
+    "implies": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "excludes": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "detect": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "html": { "$ref": "#/$defs/ruleList" },
+        "scripts": { "$ref": "#/$defs/ruleList" },
+        "headers": { "$ref": "#/$defs/keyedRules" },
+        "meta": { "$ref": "#/$defs/keyedRules" },
+        "cookies": { "$ref": "#/$defs/keyedRules" },
+        "js": { "$ref": "#/$defs/keyedRules" },
+        "dom": { "$ref": "#/$defs/keyedRules" }
+      }
+    }
+  },
+  "$defs": {
+    "rule": {
+      "type": "object",
+      "required": ["pattern"],
+      "additionalProperties": false,
+      "properties": {
+        "pattern": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "confidence": { "type": "integer", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "ruleList": { "type": "array", "items": { "$ref": "#/$defs/rule" } },
+    "keyedRules": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/ruleList" }
+    }
+  }
+}
