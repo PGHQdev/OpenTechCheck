@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "astro",
+    "sanity",
+    "tailwindcss"
+  ]
+}
