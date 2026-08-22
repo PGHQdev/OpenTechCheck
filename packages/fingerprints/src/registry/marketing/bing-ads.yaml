@@ -1,0 +1,10 @@
+name: Microsoft Advertising UET
+slug: bing-ads
+category: marketing
+website: https://about.ads.microsoft.com
+detect:
+  scripts:
+    - pattern: 'bat\.bing\.com/bat\.js'
+  js:
+    UET:
+      - pattern: ''
