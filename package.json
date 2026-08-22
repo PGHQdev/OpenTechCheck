@@ -5,7 +5,7 @@
   "workspaces": ["packages/*"],
   "scripts": {
     "test": "bun test",
-    "typecheck": "bunx tsc --noEmit -p packages/core && bunx tsc --noEmit -p packages/fingerprints && bunx tsc --noEmit -p packages/collect-http",
+    "typecheck": "bunx tsc --noEmit -p packages/core && bunx tsc --noEmit -p packages/fingerprints && bunx tsc --noEmit -p packages/collect-http && bunx tsc --noEmit -p packages/extension",
     "capture": "bun run scripts/capture.ts",
     "compile": "cd packages/fingerprints && bun run compile"
   },

@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "OpenTechCheck",
+  "version": "0.1.0",
+  "description": "Detect the technologies a page uses. Fully local, no data leaves your browser.",
+  "permissions": ["webRequest", "cookies", "storage", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_popup": "popup.html", "default_title": "OpenTechCheck" },
+  "content_scripts": [
+    { "matches": ["http://*/*", "https://*/*"], "js": ["content.js"], "run_at": "document_idle" },
+    { "matches": ["http://*/*", "https://*/*"], "js": ["main-world.js"], "run_at": "document_idle", "world": "MAIN" }
+  ]
+}

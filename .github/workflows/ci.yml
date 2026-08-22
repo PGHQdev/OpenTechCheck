@@ -12,4 +12,11 @@ jobs:
       - run: bun install --frozen-lockfile
       - run: bun run compile
       - run: bun run typecheck
-      - run: bun test
+      - name: Unit tests (core, fingerprints, collect-http)
+        run: bun test packages/core packages/fingerprints packages/collect-http
+      - name: Extension unit tests
+        run: cd packages/extension && bun test test/
+      - name: Extension build
+        run: cd packages/extension && bun run build
+      - name: Extension e2e
+        run: cd packages/extension && bun test e2e/
