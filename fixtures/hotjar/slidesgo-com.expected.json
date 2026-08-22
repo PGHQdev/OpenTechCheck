@@ -3,6 +3,7 @@
     "alpinejs",
     "cloudflare",
     "hotjar",
+    "posthog",
     "swiper",
     "tailwindcss"
   ]
