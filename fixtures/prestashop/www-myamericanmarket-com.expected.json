@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "apache",
+    "google-analytics",
+    "prestashop",
+    "swiper"
+  ]
+}

@@ -1,0 +1,14 @@
+name: PrestaShop
+slug: prestashop
+category: ecommerce
+website: https://www.prestashop.com
+detect:
+  html:
+    - pattern: 'var prestashop\s*='
+    - pattern: 'Powered by PrestaShop'
+  meta:
+    generator:
+      - pattern: '^PrestaShop$'
+  headers:
+    powered-by:
+      - pattern: '^PrestaShop$'
