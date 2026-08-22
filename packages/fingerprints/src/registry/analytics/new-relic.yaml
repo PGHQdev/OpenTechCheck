@@ -1,0 +1,12 @@
+name: New Relic
+slug: new-relic
+category: analytics
+website: https://newrelic.com
+detect:
+  scripts:
+    - pattern: 'js-agent\.newrelic\.com'
+  js:
+    NREUM:
+      - pattern: ''
+    newrelic:
+      - pattern: ''
