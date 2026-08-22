@@ -1,0 +1,11 @@
+name: Microsoft Clarity
+slug: microsoft-clarity
+category: analytics
+website: https://clarity.microsoft.com
+detect:
+  html:
+    - pattern: 'clarity\.ms/tag/'
+    - pattern: '"clarity",\s*"script"'
+      confidence: 90
+  scripts:
+    - pattern: 'clarity\.ms/tag/'
