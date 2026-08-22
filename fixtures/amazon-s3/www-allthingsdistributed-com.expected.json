@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "amazon-s3",
+    "cloudfront",
+    "fathom"
+  ]
+}

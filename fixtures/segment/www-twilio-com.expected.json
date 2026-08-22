@@ -2,6 +2,7 @@
   "detects": [
     "segment",
     "google-tag-manager",
-    "cloudfront"
+    "cloudfront",
+    "amazon-s3"
   ]
 }
