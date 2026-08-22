@@ -1,0 +1,154 @@
+{
+  "url": "https://www.djangoproject.com/accounts/login/",
+  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"ROBOTS\" content=\"ALL\" />\n    <meta name=\"MSSmartTagsPreventParsing\" content=\"true\" />\n    <meta name=\"Copyright\" content=\"Django Software Foundation\" />\n    <meta name=\"keywords\" content=\"Python, Django, framework, open-source\" />\n    <meta name=\"description\" content=\"\" />\n    <meta name=\"fediverse:creator\" content=\"@django@fosstodon.org\" />\n    \n    <!-- Favicons -->\n    <link rel=\"apple-touch-icon\" href=\"https://static.djangoproject.com/img/icon-touch.e4872c4da341.png\">\n    <link rel=\"icon\" sizes=\"192x192\" href=\"https://static.djangoproject.com/img/icon-touch.e4872c4da341.png\">\n    <link rel=\"shortcut icon\" href=\"https://static.djangoproject.com/img/favicon.6dbf28c0650e.ico\">\n    <meta name=\"msapplication-TileColor\" content=\"#113228\">\n    <meta name=\"msapplication-TileImage\" content=\"https://static.djangoproject.com/img/icon-tile.b01ac0ef9f67.png\">\n    <meta name=\"theme-color\" content=\"#0C4B33\">\n\n    \n      <meta property=\"og:title\" content=\"Log in\" />\n      <meta property=\"og:description\" content=\"Log in to your account\" />\n      <meta property=\"og:image\" content=\"https://static.djangoproject.com/img/logos/django-logo-negative.1d528e2cb5fb.png\" />\n      <meta property=\"og:image:alt\" content=\"Django logo\" />\n      <meta property=\"og:image:width\" content=\"1200\" />\n      <meta property=\"og:image:height\" content=\"546\" />\n      <meta property=\"og:image:type\" content=\"image/png\"/>\n      <meta property=\"og:url\" content=\"https://www.djangoproject.com/accounts/login/\" />\n      <meta property=\"og:site_name\" content=\"Django Project\" />\n\n      <meta property=\"twitter:creator\" content=\"djangoproject\" />\n      <meta property=\"twitter:site\" content=\"djangoproject\" />\n      <meta property=\"twitter:card\" content=\"summary\">\n    \n\n    <title>Log in | Django</title>\n\n    <link rel=\"stylesheet\" href=\"https://static.djangoproject.com/css/output.d33b01d8932d.css\" >\n\n    <script src=\"https://static.djangoproject.com/js/mod/switch-dark-mode.139625c684db.js\"></script>\n    \n  </head>\n\n  <body id=\"community\" class=\"\">\n    \n\n    <a href=\"#main-content\" class=\"skip-link\">Skip to main content</a>\n    \n\n<header id=\"top\">\n  <div class=\"container container--flex--wrap--mobile\">\n    <a class=\"logo\" href=\"https://www.djangoproject.com/\">Django</a>\n    <p class=\"meta\">The web framework for perfectionists with deadlines.</p>\n    <button class=\"menu-button\">\n      <i class=\"icon icon-reorder\" aria-hidden=\"true\"></i>\n      <span class=\"visuallyhidden\">Menu</span>\n    </button>\n    <nav aria-labelledby=\"navigation-header\">\n      <span id=\"navigation-header\" class=\"visuallyhidden\">Main navigation</span>\n      <ul>\n        <li>\n          <a href=\"https://www.djangoproject.com/start/overview/\">Overview</a>\n        </li>\n        <li>\n          <a href=\"https://www.djangoproject.com/download/\">Download</a>\n        </li>\n        <li>\n          <a href=\"https://docs.djangoproject.com/\">Documentation</a>\n        </li>\n        <li>\n          <a href=\"https://www.djangoproject.com/weblog/\">News</a>\n        </li>\n        <li>\n          <a href=\"https://github.com/django/django\" target=\"_blank\" rel=\"noopener\">Code</a>\n        </li>\n        <li>\n          <a href=\"https://code.djangoproject.com/\">Issues</a>\n        </li>\n        <li>\n          <a href=\"https://www.djangoproject.com/community/\">Community</a>\n        </li>\n        <li>\n          <a href=\"https://www.djangoproject.com/foundation/\">Foundation</a>\n        </li>\n        <li>\n          <a href=\"https://www.djangoproject.com/fundraising/\">&#9829; Donate</a>\n        </li>\n      </ul>\n    </nav>\n    <div class=\"header-tools\">\n      \n<search class=\"search form-input\" aria-labelledby=\"docs-search-label\">\n  <form action=\"https://docs.djangoproject.com/en/6.1/search/\">\n    <label id=\"docs-search-label\" class=\"visuallyhidden\" for=\"id_q\">Search</label>\n    <input type=\"search\" name=\"q\" placeholder=\"Search\" id=\"id_q\">\n    <input type=\"hidden\" name=\"category\" value=\"\">\n\n    <button type=\"submit\">\n      <i class=\"icon icon-search\" aria-hidden=\"true\"></i>\n      <span class=\"visuallyhidden\">Submit</span>\n    </button>\n  </form>\n</search>\n\n      \n\n<button class=\"theme-toggle\">\n  <div class=\"visually-hidden theme-label-when-auto\">Toggle theme (current theme: auto)</div>\n  <div class=\"visually-hidden theme-label-when-light\">Toggle theme (current theme: light)</div>\n  <div class=\"visually-hidden theme-label-when-dark\">Toggle theme (current theme: dark)</div>\n\n  <div class=\"visually-hidden\">Toggle Light / Dark / Auto color theme</div>\n  <i aria-hidden=\"true\" class=\"theme-icon-when-auto icon icon-adjust\"></i>\n  <i aria-hidden=\"true\" class=\"theme-icon-when-dark icon icon-moon-o\"></i>\n  <i aria-hidden=\"true\" class=\"theme-icon-when-light icon icon-sun-o\"></i>\n</button>\n\n    </div>\n  </div>\n</header>\n\n    \n\n    <section class=\"copy-banner\">\n      <div class=\"container \">\n        <p>Accounts</p>\n      </div>\n    </section>\n\n    <div id=\"billboard\">\n      \n\n    </div>\n\n    <div class=\"container \">\n      <main id=\"main-content\">\n\n        \n          \n        \n\n        \n    <h1>Log in</h1>\n\n    \n\n    <form method=\"post\" action=\"\" class=\"form-input\">\n        <input type=\"hidden\" name=\"csrfmiddlewaretoken\" value=\"7y02FUS80aJwESH2G2LlIvxhG46KfFiHLEf7BzelwvCcUy9qUgeMkW8e3EqaKcID\">\n        \n\n        <div>\n            <label for=\"id_username\">Username:</label>\n            \n            <input type=\"text\" name=\"username\" autofocus autocapitalize=\"none\" autocomplete=\"username\" maxlength=\"150\" required id=\"id_username\">\n        </div>\n        <div>\n            <label for=\"id_password\">Password:</label>\n            \n            <input type=\"password\" name=\"password\" autocomplete=\"current-password\" required id=\"id_password\">\n        </div>\n        <p>\n            <input type=\"submit\" value=\"Log in\" class=\"cta\"/>\n        </p>\n    </form>\n\n        <a href=\"#top\" class=\"backtotop\"><i class=\"icon icon-chevron-up\"></i> Back to Top</a>\n      </main>\n\n      \n    <div role=\"complementary\">\n        <h2 class=\"visuallyhidden\" id=\"aside-header\">Additional Information</h2>\n        \n        <p>\n            If you don't have an account, you can <a href=\"https://www.djangoproject.com/accounts/register/\">sign up</a> for one.\n        </p>\n        \n        <p>\n            If you forgot your password, you can <a href=\"https://www.djangoproject.com/accounts/password/reset/\">reset it</a>.\n        </p>\n    </div>\n\n      \n\n    </div>\n\n     \n     \n\n    \n    \n    \n\n    \n      \n\n<footer>\n  <div class=\"subfooter\">\n    <div class=\"container\">\n      <h2 class=\"visuallyhidden\">Django Links</h2>\n      <div class=\"column-container\">\n        <div class=\"col-learn-more\">\n          <h3>Learn More</h3>\n          <ul>\n            <li><a href=\"https://www.djangoproject.com/start/overview/\">About Django</a></li>\n            \n            <li><a href=\"https://www.djangoproject.com/start/\">Getting Started with Django</a></li>\n            <li><a href=\"https://www.djangoproject.com/foundation/teams/\">Team Organization</a></li>\n            <li><a href=\"https://www.djangoproject.com/foundation/\">Django Software Foundation</a></li>\n            <li><a href=\"https://www.djangoproject.com/conduct/\">Code of Conduct</a></li>\n            <li><a href=\"https://www.djangoproject.com/diversity/\">Diversity Statement</a></li>\n          </ul>\n        </div>\n\n        <div class=\"col-get-involved\">\n          <h3>Get Involved</h3>\n          <ul>\n            <li><a href=\"https://www.djangoproject.com/community/\">Join a Group</a></li>\n            <li><a href=\"https://docs.djangoproject.com/en/dev/internals/contributing/\">Contribute\n              to Django</a></li>\n            <li><a\n              href=\"https://docs.djangoproject.com/en/dev/internals/contributing/bugs-and-features/\">Submit\n              a Bug</a></li>\n            <li><a\n              href=\"https://docs.djangoproject.com/en/dev/internals/security/#reporting-security-issues\">Report\n              a Security Issue</a></li>\n            <li><a href=\"https://www.djangoproject.com/foundation/individual-members/\">Individual membership</a></li>\n          </ul>\n        </div>\n\n        <div class=\"col-get-help\">\n          <h3>Get Help</h3>\n          <ul>\n            <li><a href=\"https://docs.djangoproject.com/en/stable/faq/\">Getting Help FAQ</a>\n            </li>\n            <li><a href=\"https://chat.djangoproject.com\" target=\"_blank\">Django Discord</a></li>\n            <li><a href=\"https://forum.djangoproject.com/\" target=\"_blank\">Official Django Forum</a></li>\n          </ul>\n        </div>\n\n        <div class=\"col-follow-us\">\n          <h3>Follow Us</h3>\n          <ul>\n            <li><a href=\"https://github.com/django\">GitHub</a></li>\n            <li><a href=\"https://x.com/djangoproject\">X</a></li>\n            <li><a href=\"https://fosstodon.org/@django\" rel=\"me\">Fediverse (Mastodon)</a></li>\n            <li><a href=\"https://bsky.app/profile/djangoproject.com\">Bluesky</a></li>\n            <li><a href=\"https://www.linkedin.com/company/django-software-foundation\">LinkedIn</a></li>\n            <li><a href=\"https://www.djangoproject.com/rss/weblog/\">News RSS</a></li>\n          </ul>\n        </div>\n\n        <div class=\"col-support-us\">\n          <h3>Support Us</h3>\n          <ul>\n            <li><a href=\"https://www.djangoproject.com/fundraising/\">Sponsor Django</a></li>\n            <li><a href=\"https://www.djangoproject.com/foundation/corporate-members/\">Corporate membership</a></li>\n            <li><a href=\"https://django.threadless.com/\" target=\"_blank\">Official merchandise store</a></li>\n            <li><a href=\"https://www.djangoproject.com/fundraising/#benevity-giving\">Benevity Workplace Giving Program</a></li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"footer\">\n    <div class=\"container\">\n      <div class=\"footer-logo\">\n        <a class=\"logo\" href=\"https://www.djangoproject.com/\">Django</a>\n      </div>\n      <ul class=\"thanks\">\n        <li>\n          <span>Hosting by</span> <a class=\"in-kind-donors\" href=\"https://www.djangoproject.com/fundraising/#in-kind-donors\">In-kind\n            donors</a>\n        </li>\n        <li class=\"design\"><span>Design by</span> <a class=\"threespot\" href=\"https://www.threespot.com\">Threespot</a>\n          <span class=\"ampersand\">&amp;</span> <a class=\"andrevv\" href=\"http://andrevv.com/\">andrevv</a></li>\n      </ul>\n      <p class=\"copyright\">&copy; 2005-2026\n        <a href=\"https://www.djangoproject.com/foundation/\"> Django Software\n          Foundation</a> and individual contributors. Django is a\n        <a href=\"https://www.djangoproject.com/trademarks/\">registered\n          trademark</a> of the Django Software Foundation.\n      </p>\n    </div>\n  </div>\n\n</footer>\n\n    \n\n    \n      \n      <script>\n        function extless(input) {\n          return input.replace(/(.*)\\.[^.]+$/, '$1');\n        }\n        var require = {\n          shim: {\n            'jquery': [],\n            'stripe': {\n              exports: 'Stripe'\n            }\n          },\n          paths: {\n            \"jquery\": extless(\"https://static.djangoproject.com/js/lib/jquery.min.5790ead7ad3b.js\"),\n            \"mod/list-collapsing\": extless(\"https://static.djangoproject.com/js/mod/list-collapsing.2d844151b2ec.js\"),\n            \"mod/stripe-change-card\": extless(\"https://static.djangoproject.com/js/mod/stripe-change-card.fb7229cdd9b0.js\"),\n            \"mod/switch-dark-mode\": extless(\"https://static.djangoproject.com/js/mod/switch-dark-mode.139625c684db.js\"),\n            \"stripe-checkout\": \"https://checkout.stripe.com/checkout\",\n            \"stripe\": \"https://js.stripe.com/v3/?\" // ? needed due to require.js\n          }\n        };\n      </script>\n      <script data-main=\"https://static.djangoproject.com/js/main.8677b21133eb.js\" src=\"https://static.djangoproject.com/js/lib/require.177879fbe7dd.js\"></script>\n      <script src=\"https://static.djangoproject.com/js/djangoproject.ae16178f2b1f.js\"></script>\n    \n  </body>\n</html>\n",
+  "scripts": [
+    "https://static.djangoproject.com/js/mod/switch-dark-mode.139625c684db.js",
+    "https://static.djangoproject.com/js/lib/require.177879fbe7dd.js",
+    "https://static.djangoproject.com/js/djangoproject.ae16178f2b1f.js"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width, initial-scale=1"
+    ],
+    "robots": [
+      "ALL"
+    ],
+    "mssmarttagspreventparsing": [
+      "true"
+    ],
+    "copyright": [
+      "Django Software Foundation"
+    ],
+    "keywords": [
+      "Python, Django, framework, open-source"
+    ],
+    "description": [
+      ""
+    ],
+    "fediverse:creator": [
+      "@django@fosstodon.org"
+    ],
+    "msapplication-tilecolor": [
+      "#113228"
+    ],
+    "msapplication-tileimage": [
+      "https://static.djangoproject.com/img/icon-tile.b01ac0ef9f67.png"
+    ],
+    "theme-color": [
+      "#0C4B33"
+    ],
+    "og:title": [
+      "Log in"
+    ],
+    "og:description": [
+      "Log in to your account"
+    ],
+    "og:image": [
+      "https://static.djangoproject.com/img/logos/django-logo-negative.1d528e2cb5fb.png"
+    ],
+    "og:image:alt": [
+      "Django logo"
+    ],
+    "og:image:width": [
+      "1200"
+    ],
+    "og:image:height": [
+      "546"
+    ],
+    "og:image:type": [
+      "image/png"
+    ],
+    "og:url": [
+      "https://www.djangoproject.com/accounts/login/"
+    ],
+    "og:site_name": [
+      "Django Project"
+    ],
+    "twitter:creator": [
+      "djangoproject"
+    ],
+    "twitter:site": [
+      "djangoproject"
+    ],
+    "twitter:card": [
+      "summary"
+    ]
+  },
+  "headers": {
+    "accept-ranges": [
+      "bytes"
+    ],
+    "access-control-allow-origin": [
+      "https://code.djangoproject.com"
+    ],
+    "cache-control": [
+      "max-age=0, no-cache, no-store, must-revalidate, private"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-language": [
+      "en"
+    ],
+    "content-length": [
+      "12158"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "cross-origin-opener-policy": [
+      "same-origin"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 09:47:54 GMT"
+    ],
+    "expires": [
+      "Sat, 22 Aug 2026 09:47:53 GMT"
+    ],
+    "permissions-policy": [
+      "interest-cohort=()"
+    ],
+    "referrer-policy": [
+      "same-origin"
+    ],
+    "server": [
+      "nginx"
+    ],
+    "strict-transport-security": [
+      "max-age=31536000; includeSubDomains; preload"
+    ],
+    "vary": [
+      "Cookie, Accept-Language, Accept-Encoding"
+    ],
+    "via": [
+      "1.1 varnish, 1.1 varnish"
+    ],
+    "x-cache": [
+      "MISS, MISS"
+    ],
+    "x-cache-hits": [
+      "0, 0"
+    ],
+    "x-content-type-options": [
+      "nosniff"
+    ],
+    "x-frame-options": [
+      "SAMEORIGIN"
+    ],
+    "x-served-by": [
+      "cache-fra-eddf8230179-FRA, cache-nrt-rjaa8190068-NRT"
+    ],
+    "x-timer": [
+      "S1787392074.846587,VS0,VE258"
+    ],
+    "x-xss-protection": [
+      "1; mode=block"
+    ],
+    "set-cookie": [
+      "csrftoken=Ogpf6PwnGv3QqQCyooDBMBL7xKuAFHA6; expires=Sat, 21 Aug 2027 09:47:53 GMT; Max-Age=31449600; Path=/; SameSite=Lax; Secure"
+    ]
+  },
+  "cookies": {
+    "csrftoken": "Ogpf6PwnGv3QqQCyooDBMBL7xKuAFHA6"
+  }
+}
