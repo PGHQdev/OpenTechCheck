@@ -1,6 +1,7 @@
 {
   "detects": [
     "phoenix",
-    "tailwindcss"
+    "tailwindcss",
+    "fly-io"
   ]
 }

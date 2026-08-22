@@ -1,0 +1,12 @@
+name: Fly.io
+slug: fly-io
+category: hosting
+website: https://fly.io
+detect:
+  headers:
+    fly-request-id:
+      - pattern: ''
+    server:
+      - pattern: '^Fly/'
+    via:
+      - pattern: '\bfly\.io\b'
