@@ -1,9 +1,9 @@
 {
   "detects": [
+    "cdnjs",
     "slick",
     "modernizr",
     "jquery",
-    "fastly",
-    "cdnjs"
+    "fastly"
   ]
 }

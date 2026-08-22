@@ -1,0 +1,7 @@
+name: cdnjs
+slug: cdnjs
+category: cdn
+website: https://cdnjs.com
+detect:
+  scripts:
+    - pattern: '//cdnjs\.cloudflare\.com/ajax/libs/'

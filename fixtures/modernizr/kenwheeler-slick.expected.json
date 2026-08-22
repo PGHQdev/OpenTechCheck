@@ -3,6 +3,7 @@
     "modernizr",
     "slick",
     "jquery",
-    "fastly"
+    "fastly",
+    "cdnjs"
   ]
 }
