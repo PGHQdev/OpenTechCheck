@@ -1,0 +1,16 @@
+name: Chart.js
+slug: chartjs
+category: js-library
+website: https://www.chartjs.org
+detect:
+  scripts:
+    - pattern: 'npm/chart\.js@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/Chart\.js/([\d.]+)/'
+      version: 1
+    - pattern: 'npm/chart\.js\b'
+    - pattern: '/Chart\.(?:bundle|umd)(?:\.min)?\.js'
+  js:
+    Chart.version:
+      - pattern: '^([\d.]+)'
+        version: 1

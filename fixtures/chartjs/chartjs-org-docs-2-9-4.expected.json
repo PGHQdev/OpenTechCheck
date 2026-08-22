@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "chartjs",
+    "cloudflare"
+  ]
+}
