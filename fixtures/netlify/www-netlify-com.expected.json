@@ -1,8 +1,9 @@
 {
   "detects": [
-    "netlify",
     "astro",
     "google-analytics",
-    "google-tag-manager"
+    "google-tag-manager",
+    "hubspot",
+    "netlify"
   ]
 }

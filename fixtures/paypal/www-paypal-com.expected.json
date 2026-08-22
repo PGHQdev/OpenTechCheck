@@ -1,5 +1,6 @@
 {
   "detects": [
+    "fastly",
     "google-tag-manager",
     "paypal",
     "tailwindcss"

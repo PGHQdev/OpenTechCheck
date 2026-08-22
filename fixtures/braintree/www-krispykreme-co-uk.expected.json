@@ -1,6 +1,8 @@
 {
   "detects": [
     "braintree",
+    "cdnjs",
+    "fastly",
     "google-tag-manager",
     "hotjar",
     "magento",

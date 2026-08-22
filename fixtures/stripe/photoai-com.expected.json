@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudflare",
+    "cloudflare-turnstile",
     "google-analytics",
     "google-tag-manager",
     "jquery",
