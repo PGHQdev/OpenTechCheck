@@ -1,7 +1,7 @@
 {
   "detects": [
-    "flask",
     "bootstrap",
-    "jquery"
+    "astro",
+    "cloudflare"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "detects": [
     "d3",
+    "bootstrap",
     "jquery",
     "google-analytics"
   ]
