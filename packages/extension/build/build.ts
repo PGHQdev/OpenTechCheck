@@ -21,7 +21,7 @@ for (const target of ['chrome', 'firefox'] as const) {
   const nested = join(outDir, 'src', 'popup', 'popup.html')
   if (existsSync(nested)) {
     let html = readFileSync(nested, 'utf8')
-    html = html.replace(/(\.\.\/)+/g, '')
+    html = html.replace(/(src|href)="(\.\.\/)+/g, '$1="')
     writeFileSync(join(outDir, 'popup.html'), html)
     rmSync(join(outDir, 'src'), { recursive: true, force: true })
   }
