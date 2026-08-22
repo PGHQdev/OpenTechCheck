@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "hcaptcha",
+    "cloudflare",
+    "webflow"
+  ]
+}
