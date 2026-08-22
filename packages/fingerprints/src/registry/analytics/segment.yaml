@@ -1,0 +1,9 @@
+name: Segment
+slug: segment
+category: analytics
+website: https://segment.com
+detect:
+  html:
+    - pattern: 'cdn\.segment\.com/analytics\.js'
+  scripts:
+    - pattern: 'cdn\.segment\.com/analytics\.js'

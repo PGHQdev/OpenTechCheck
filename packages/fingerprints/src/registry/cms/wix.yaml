@@ -1,0 +1,22 @@
+name: Wix
+slug: wix
+category: cms
+website: https://www.wix.com
+detect:
+  html:
+    - pattern: 'static\.parastorage\.com'
+    - pattern: 'wix-first-paint'
+      confidence: 80
+  meta:
+    generator:
+      - pattern: 'Wix\.com Website Builder'
+  headers:
+    x-wix-request-id:
+      - pattern: ''
+    server:
+      - pattern: '^Pepyaka$'
+  cookies:
+    _wix_browser_sess:
+      - pattern: ''
+  scripts:
+    - pattern: 'static\.parastorage\.com'

@@ -1,0 +1,12 @@
+name: Stripe
+slug: stripe
+category: payment
+website: https://stripe.com
+detect:
+  html:
+    - pattern: 'js\.stripe\.com/v3'
+  scripts:
+    - pattern: 'js\.stripe\.com/'
+  cookies:
+    __stripe_mid:
+      - pattern: ''

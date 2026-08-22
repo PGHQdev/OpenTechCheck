@@ -1,0 +1,11 @@
+name: Laravel
+slug: laravel
+category: web-framework
+website: https://laravel.com
+detect:
+  cookies:
+    laravel_session:
+      - pattern: ''
+    XSRF-TOKEN:
+      - pattern: '^eyJpdiI6'
+        confidence: 90

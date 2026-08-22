@@ -1,0 +1,8 @@
+name: Sanity
+slug: sanity
+category: cms
+website: https://www.sanity.io
+detect:
+  html:
+    - pattern: 'cdn\.sanity\.io'
+    - pattern: '\.apicdn\.sanity\.io'

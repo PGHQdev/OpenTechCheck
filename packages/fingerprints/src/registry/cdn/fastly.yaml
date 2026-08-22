@@ -1,0 +1,13 @@
+name: Fastly
+slug: fastly
+category: cdn
+website: https://www.fastly.com
+detect:
+  headers:
+    x-fastly-request-id:
+      - pattern: ''
+    x-served-by:
+      - pattern: '(?:^|,\s)cache-\w+-\w+'
+    x-timer:
+      - pattern: '^S\d+\.\d+,VS\d'
+        confidence: 80

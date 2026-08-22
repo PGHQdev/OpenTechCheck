@@ -1,0 +1,7 @@
+name: unpkg
+slug: unpkg
+category: cdn
+website: https://unpkg.com
+detect:
+  scripts:
+    - pattern: '//unpkg\.com/'

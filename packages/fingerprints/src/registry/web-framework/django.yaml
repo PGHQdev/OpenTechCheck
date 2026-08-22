@@ -1,0 +1,11 @@
+name: Django
+slug: django
+category: web-framework
+website: https://www.djangoproject.com
+detect:
+  html:
+    - pattern: 'name="csrfmiddlewaretoken"'
+  cookies:
+    csrftoken:
+      - pattern: '^[A-Za-z0-9]{32,64}$'
+        confidence: 85

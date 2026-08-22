@@ -1,0 +1,9 @@
+name: Apache HTTP Server
+slug: apache
+category: server
+website: https://httpd.apache.org
+detect:
+  headers:
+    server:
+      - pattern: '^Apache(?:/([\d.]+))?(?:\s|$)'
+        version: 1

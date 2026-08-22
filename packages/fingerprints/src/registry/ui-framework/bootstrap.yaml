@@ -1,0 +1,19 @@
+name: Bootstrap
+slug: bootstrap
+category: ui-framework
+website: https://getbootstrap.com
+detect:
+  html:
+    - pattern: 'cdn\.jsdelivr\.net/npm/bootstrap@([\d.]+)'
+      version: 1
+    - pattern: 'bootstrapcdn\.com/bootstrap/([\d.]+)'
+      version: 1
+    - pattern: 'href="[^"]*/bootstrap(?:\.min)?\.css'
+      confidence: 70
+  scripts:
+    - pattern: 'cdn\.jsdelivr\.net/npm/bootstrap@([\d.]+)'
+      version: 1
+    - pattern: 'bootstrapcdn\.com/bootstrap/([\d.]+)'
+      version: 1
+    - pattern: '/bootstrap(?:\.bundle)?(?:\.min)?\.js'
+      confidence: 70

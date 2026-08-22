@@ -1,0 +1,9 @@
+name: Microsoft IIS
+slug: iis
+category: server
+website: https://www.iis.net
+detect:
+  headers:
+    server:
+      - pattern: '^Microsoft-IIS(?:/([\d.]+))?$'
+        version: 1

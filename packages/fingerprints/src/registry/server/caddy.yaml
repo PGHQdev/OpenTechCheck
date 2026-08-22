@@ -1,0 +1,8 @@
+name: Caddy
+slug: caddy
+category: server
+website: https://caddyserver.com
+detect:
+  headers:
+    server:
+      - pattern: '^Caddy$'

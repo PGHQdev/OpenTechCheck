@@ -1,0 +1,15 @@
+name: Flask
+slug: flask
+category: web-framework
+website: https://flask.palletsprojects.com
+detect:
+  headers:
+    server:
+      - pattern: '^Werkzeug/[\d.]+'
+        confidence: 80
+  cookies:
+    session:
+      # itsdangerous format: payload.short-timestamp.signature; the {4,12}
+      # middle segment keeps three-segment JWTs (long header.payload.sig) out
+      - pattern: '^\.?eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]{4,12}\.[A-Za-z0-9_-]+$'
+        confidence: 70

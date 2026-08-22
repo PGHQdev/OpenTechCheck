@@ -1,0 +1,14 @@
+name: Lit
+slug: lit
+category: js-framework
+website: https://lit.dev
+detect:
+  html:
+    - pattern: '<!--lit-part'
+    - pattern: '<!--lit-node \d+-->'
+  scripts:
+    - pattern: '(?:cdn\.jsdelivr\.net/npm|unpkg\.com)/lit(?:-element|-html)?@([\d.]+)'
+      version: 1
+  js:
+    litElementVersions:
+      - pattern: ''

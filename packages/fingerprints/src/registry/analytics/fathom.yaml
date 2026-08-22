@@ -1,0 +1,9 @@
+name: Fathom Analytics
+slug: fathom
+category: analytics
+website: https://usefathom.com
+detect:
+  html:
+    - pattern: 'cdn\.usefathom\.com/'
+  scripts:
+    - pattern: '\.usefathom\.com/'

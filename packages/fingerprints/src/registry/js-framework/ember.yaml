@@ -1,0 +1,16 @@
+name: Ember.js
+slug: ember
+category: js-framework
+website: https://emberjs.com
+detect:
+  html:
+    - pattern: '<meta name="[^"]+/config/environment"'
+    - pattern: '\bid="ember\d+"'
+      confidence: 70
+  scripts:
+    - pattern: '/assets/vendor-[a-f0-9]{32}\.js'
+      confidence: 60
+  js:
+    Ember.VERSION:
+      - pattern: '^([\d.]+)'
+        version: 1

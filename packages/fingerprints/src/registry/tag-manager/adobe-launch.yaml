@@ -1,0 +1,11 @@
+name: Adobe Experience Platform Launch
+slug: adobe-launch
+category: tag-manager
+website: https://business.adobe.com/products/experience-platform/data-collection.html
+detect:
+  html:
+    - pattern: 'assets\.adobedtm\.com/'
+    - pattern: '_satellite\.pageBottom\('
+      confidence: 85
+  scripts:
+    - pattern: 'assets\.adobedtm\.com/'

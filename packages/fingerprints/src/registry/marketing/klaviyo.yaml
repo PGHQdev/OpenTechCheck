@@ -1,0 +1,12 @@
+name: Klaviyo
+slug: klaviyo
+category: marketing
+website: https://www.klaviyo.com
+detect:
+  html:
+    - pattern: 'static\.klaviyo\.com/onsite/js/'
+    - pattern: 'a\.klaviyo\.com/client/'
+      confidence: 90
+  scripts:
+    - pattern: 'static\.klaviyo\.com/onsite/js/'
+    - pattern: 'static-tracking\.klaviyo\.com/'

@@ -1,0 +1,14 @@
+name: Ant Design
+slug: ant-design
+category: ui-framework
+website: https://ant.design
+detect:
+  html:
+    - pattern: 'class="(?:[^"]* )?ant-(?:btn|layout|menu|row|col|card|typography|input|form|table|modal|select|dropdown|tabs|tag|badge|avatar|tooltip|drawer|space|divider|breadcrumb|pagination|spin|alert|affix|anchor|carousel)(?:[ "-]|$)'
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/antd/([\d.]+)'
+      version: 1
+  scripts:
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/antd/([\d.]+)'
+      version: 1
+    - pattern: 'unpkg\.com/antd@([\d.]+)'
+      version: 1

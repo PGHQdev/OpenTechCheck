@@ -1,0 +1,16 @@
+name: Webflow
+slug: webflow
+category: cms
+website: https://webflow.com
+detect:
+  html:
+    - pattern: 'data-wf-site='
+    - pattern: 'data-wf-page='
+    - pattern: '\.website-files\.com'
+  meta:
+    generator:
+      - pattern: '^Webflow$'
+  scripts:
+    - pattern: '\.website-files\.com'
+    - pattern: '/js/webflow\.[0-9a-f][0-9a-f.]*\.js'
+      confidence: 80

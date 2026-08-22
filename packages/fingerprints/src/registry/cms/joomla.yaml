@@ -1,0 +1,16 @@
+name: Joomla
+slug: joomla
+category: cms
+website: https://www.joomla.org
+detect:
+  html:
+    - pattern: 'Joomla! - Open Source Content Management'
+    - pattern: '/media/system/js/'
+      confidence: 70
+  meta:
+    generator:
+      - pattern: 'Joomla!(?:\s([\d.]+))?'
+        version: 1
+  scripts:
+    - pattern: '/media/system/js/core(?:\.min)?\.js'
+    - pattern: '/media/jui/js/'
