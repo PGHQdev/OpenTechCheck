@@ -1,0 +1,7 @@
+name: Crazy Egg
+slug: crazyegg
+category: analytics
+website: https://www.crazyegg.com
+detect:
+  scripts:
+    - pattern: 'script\.crazyegg\.com'

@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/synthetic-crazyegg",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://script.crazyegg.com/pages/scripts/0040/9118.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {}
+}
