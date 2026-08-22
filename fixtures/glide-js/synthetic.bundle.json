@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-glide-js",
+  "html": "<!doctype html><html><head></head><body><div class=\"glide\"><div class=\"glide__track\" data-glide-el=\"track\"></div></div></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "Glide": true
+  },
+  "dom": [".glide__track"]
+}
