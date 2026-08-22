@@ -19,7 +19,13 @@ beforeAll(async () => {
   server = serveFixture(PORT)
   browser = await puppeteer.launch({
     headless: true,
-    args: [`--disable-extensions-except=${EXT}`, `--load-extension=${EXT}`],
+    args: [
+      `--disable-extensions-except=${EXT}`,
+      `--load-extension=${EXT}`,
+      // Ubuntu 23.10+ runners block unprivileged user namespaces via
+      // AppArmor, so Chrome's sandbox cannot start on CI.
+      ...(process.env.CI ? ['--no-sandbox', '--disable-setuid-sandbox'] : []),
+    ],
   })
 }, 120_000)
 afterAll(async () => {
