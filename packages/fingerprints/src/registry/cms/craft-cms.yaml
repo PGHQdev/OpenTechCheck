@@ -1,0 +1,16 @@
+name: Craft CMS
+slug: craft-cms
+category: cms
+website: https://craftcms.com
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Craft CMS'
+  cookies:
+    CraftSessionId:
+      - pattern: ''
+    CRAFT_CSRF_TOKEN:
+      - pattern: ''
+  html:
+    - pattern: '/cpresources/'
+      confidence: 80
