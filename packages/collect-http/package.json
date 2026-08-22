@@ -1,0 +1,9 @@
+{
+  "name": "@opentechcheck/collect-http",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "Apache-2.0",
+  "main": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": { "@opentechcheck/core": "workspace:*" }
+}

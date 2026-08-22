@@ -1,0 +1,16 @@
+name: React
+slug: react
+category: js-framework
+website: https://react.dev
+detect:
+  html:
+    - pattern: 'data-reactroot'
+    - pattern: '\breact(?:\.production)?(?:\.min)?\.js'
+      confidence: 70
+  js:
+    React.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  dom:
+    '[data-reactroot]':
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: jQuery
+slug: jquery
+category: js-library
+website: https://jquery.com
+detect:
+  scripts:
+    - pattern: 'jquery[/.-]([\d.]+)[^/]*\.js'
+      version: 1
+    - pattern: 'jquery(?:\.min)?\.js'
+      confidence: 80
+  js:
+    jQuery.fn.jquery:
+      - pattern: '^([\d.]+)'
+        version: 1
