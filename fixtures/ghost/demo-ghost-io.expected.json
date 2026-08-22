@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "ghost",
+    "openresty"
+  ]
+}
