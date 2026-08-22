@@ -34,6 +34,18 @@ bun test
 bun run compile   # validate + build the fingerprint registry
 ```
 
+## Browser extension
+
+Local-only technology detection for the current page (Chrome ≥ 121, Firefox ≥ 121).
+
+    bun run compile          # refresh the fingerprint registry
+    cd packages/extension
+    bun run build            # emits dist/chrome and dist/firefox
+
+Load `dist/chrome` via chrome://extensions → "Load unpacked" (enable Developer mode),
+or `dist/firefox` via about:debugging → "Load Temporary Add-on". Detection runs
+entirely in your browser; no request ever leaves it.
+
 ## Contributing
 
 Add a technology in one YAML file plus one fixture — see [CONTRIBUTING.md](CONTRIBUTING.md).
