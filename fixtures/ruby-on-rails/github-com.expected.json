@@ -1,0 +1,5 @@
+{
+  "detects": [
+    "ruby-on-rails"
+  ]
+}
