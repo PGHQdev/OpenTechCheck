@@ -1,0 +1,19 @@
+name: Lodash
+slug: lodash
+category: js-library
+website: https://lodash.com
+detect:
+  html:
+    - pattern: '<script[^>]*src=[^>]*npm/lodash@([\d.]+)'
+      version: 1
+  scripts:
+    - pattern: 'npm/lodash@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/lodash\.js/([\d.]+)/'
+      version: 1
+    - pattern: '/lodash(?:\.core|\.fp)?(?:\.min)?\.js'
+      confidence: 80
+  js:
+    _.VERSION:
+      - pattern: '^([\d.]+)'
+        version: 1
