@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "cloudflare",
+    "jquery",
+    "mailchimp",
+    "wordpress"
+  ]
+}

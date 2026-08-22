@@ -1,5 +1,6 @@
 {
   "detects": [
-    "anime"
+    "anime",
+    "mailchimp"
   ]
 }

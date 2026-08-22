@@ -1,6 +1,7 @@
 {
   "detects": [
     "ecwid",
+    "mailchimp",
     "nginx",
     "stripe",
     "tailwindcss"
