@@ -88,11 +88,38 @@ export function toDetection(fp: Fingerprint, hits: RuleHit[]): Detection {
 export function detect(
   bundle: SignalBundle, fingerprints: Fingerprint[], options: DetectOptions = {},
 ): Detection[] {
-  const out: Detection[] = []
+  const bySlug = new Map(fingerprints.map((f) => [f.slug, f]))
+  const found = new Map<string, Detection>()
   for (const fp of fingerprints) {
     const hits = collectHits(fp, bundle, options)
-    if (hits.length > 0) out.push(toDetection(fp, hits))
+    if (hits.length > 0) found.set(fp.slug, toDetection(fp, hits))
   }
+  // excludes: fingerprint list order; mutual excludes resolve to the earlier one
+  const excluded = new Set<string>()
+  for (const fp of fingerprints) {
+    if (!found.has(fp.slug) || excluded.has(fp.slug)) continue
+    for (const ex of fp.excludes ?? []) { excluded.add(ex); found.delete(ex) }
+  }
+  // implies: BFS from every direct detection
+  const queue = [...found.values()]
+  while (queue.length > 0) {
+    const parent = queue.shift()!
+    const fp = bySlug.get(parent.slug)
+    for (const slug of fp?.implies ?? []) {
+      if (found.has(slug) || excluded.has(slug)) continue
+      const target = bySlug.get(slug)
+      if (!target) continue                      // compiler prevents this; be lenient at runtime
+      const child: Detection = {
+        slug: target.slug, name: target.name, category: target.category,
+        confidence: Math.round(parent.confidence * 0.9),
+        version: null,
+        evidence: [{ source: 'implied', pattern: `implied-by: ${parent.slug}`, match: '' }],
+      }
+      found.set(slug, child)
+      queue.push(child)
+    }
+  }
+  const out = [...found.values()]
   out.sort((a, b) => b.confidence - a.confidence || a.slug.localeCompare(b.slug))
   return out
 }
