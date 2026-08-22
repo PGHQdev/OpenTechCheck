@@ -1,9 +1,9 @@
 {
   "detects": [
     "ant-design",
-    "react",
     "cloudflare",
     "google-analytics",
-    "microsoft-clarity"
+    "microsoft-clarity",
+    "react"
   ]
 }
