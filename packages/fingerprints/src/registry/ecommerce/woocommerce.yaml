@@ -1,0 +1,14 @@
+name: WooCommerce
+slug: woocommerce
+category: ecommerce
+website: https://woocommerce.com
+implies: [wordpress]
+detect:
+  html:
+    - pattern: 'class="[^"]*woocommerce[^"]*"'
+  meta:
+    generator:
+      - pattern: 'WooCommerce\s([\d.]+)'
+        version: 1
+  scripts:
+    - pattern: '/plugins/woocommerce/'
