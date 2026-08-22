@@ -1,0 +1,11 @@
+name: Mailchimp
+slug: mailchimp
+category: marketing
+website: https://mailchimp.com
+detect:
+  html:
+    - pattern: 'list-manage\.com/subscribe'
+    - pattern: 'chimpstatic\.com/mcjs-connected/'
+  scripts:
+    - pattern: 'chimpstatic\.com/mcjs-connected/'
+    - pattern: 'downloads\.mailchimp\.com/js/mc-validate\.js'
