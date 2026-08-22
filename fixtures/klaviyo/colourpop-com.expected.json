@@ -1,10 +1,11 @@
 {
   "detects": [
     "cloudflare",
-    "fathom",
     "google-tag-manager",
-    "hubspot",
-    "laravel",
+    "klarna",
+    "klaviyo",
+    "microsoft-clarity",
+    "shopify",
     "tailwindcss"
   ]
 }

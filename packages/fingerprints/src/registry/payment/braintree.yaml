@@ -1,0 +1,11 @@
+name: Braintree
+slug: braintree
+category: payment
+website: https://www.braintreepayments.com
+detect:
+  html:
+    - pattern: 'js\.braintreegateway\.com/web/'
+    - pattern: 'braintreegateway\.com/merchants/[a-z0-9]+/verified'
+      confidence: 90
+  scripts:
+    - pattern: 'js\.braintreegateway\.com/'

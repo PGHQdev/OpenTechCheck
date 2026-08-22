@@ -1,0 +1,16 @@
+name: Square
+slug: square
+category: payment
+website: https://squareup.com
+detect:
+  html:
+    - pattern: 'web\.squarecdn\.com/v1/square\.js'
+    - pattern: 'sandbox\.web\.squarecdn\.com'
+    - pattern: 'js\.squareup\.com/v2/paymentform'
+    - pattern: 'cdn\d\.editmysite\.com/app/checkout/'
+      confidence: 85
+  scripts:
+    - pattern: 'web\.squarecdn\.com/v1/square\.js'
+    - pattern: 'js\.squareup\.com/v2/paymentform'
+    - pattern: 'cdn\d\.editmysite\.com/app/checkout/'
+      confidence: 85

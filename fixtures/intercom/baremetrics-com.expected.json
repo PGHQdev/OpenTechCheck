@@ -1,10 +1,11 @@
 {
   "detects": [
-    "bigcommerce",
     "cloudflare",
+    "font-awesome",
     "google-analytics",
     "google-tag-manager",
-    "jquery",
-    "klaviyo"
+    "hubspot",
+    "intercom",
+    "jquery"
   ]
 }

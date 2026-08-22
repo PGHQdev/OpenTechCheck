@@ -1,0 +1,11 @@
+name: Crisp
+slug: crisp
+category: marketing
+website: https://crisp.chat
+detect:
+  html:
+    - pattern: 'client\.crisp\.chat'
+    - pattern: 'CRISP_WEBSITE_ID'
+      confidence: 90
+  scripts:
+    - pattern: 'client\.crisp\.chat'

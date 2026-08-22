@@ -1,0 +1,12 @@
+name: Klarna
+slug: klarna
+category: payment
+website: https://www.klarna.com
+detect:
+  html:
+    - pattern: 'klarnaservices\.com/lib\.js'
+    - pattern: 'x\.klarnacdn\.net/kp/lib/'
+  scripts:
+    - pattern: 'klarnaservices\.com/lib\.js'
+    - pattern: 'x\.klarnacdn\.net/kp/lib/'
+    - pattern: 'js\.klarna\.com/web-sdk/'

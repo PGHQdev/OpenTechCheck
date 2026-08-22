@@ -1,10 +1,7 @@
 {
   "detects": [
-    "cloudflare",
-    "fathom",
     "google-tag-manager",
-    "hubspot",
-    "laravel",
+    "paypal",
     "tailwindcss"
   ]
 }

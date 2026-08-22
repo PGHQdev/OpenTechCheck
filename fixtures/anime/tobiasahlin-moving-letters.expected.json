@@ -2,6 +2,7 @@
   "detects": [
     "anime",
     "fastly",
-    "github-pages"
+    "github-pages",
+    "mailchimp"
   ]
 }

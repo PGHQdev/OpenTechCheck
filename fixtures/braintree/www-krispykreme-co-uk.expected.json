@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "braintree",
+    "google-tag-manager",
+    "hotjar",
+    "magento",
+    "zendesk"
+  ]
+}
