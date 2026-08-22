@@ -2,6 +2,7 @@
   "detects": [
     "ecwid",
     "nginx",
+    "stripe",
     "tailwindcss"
   ]
 }
