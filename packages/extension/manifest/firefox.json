@@ -1,4 +1,4 @@
 {
   "background": { "scripts": ["background.js"] },
-  "browser_specific_settings": { "gecko": { "id": "extension@opentechcheck.org", "strict_min_version": "121.0" } }
+  "browser_specific_settings": { "gecko": { "id": "extension@opentechcheck.org", "strict_min_version": "128.0" } }
 }

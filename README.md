@@ -36,7 +36,7 @@ bun run compile   # validate + build the fingerprint registry
 
 ## Browser extension
 
-Local-only technology detection for the current page (Chrome ≥ 121, Firefox ≥ 121).
+Local-only technology detection for the current page (Chrome ≥ 121, Firefox ≥ 128).
 
     bun run compile          # refresh the fingerprint registry
     cd packages/extension
