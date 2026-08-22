@@ -1,0 +1,12 @@
+name: Heap
+slug: heap
+category: analytics
+website: https://www.heap.io
+detect:
+  html:
+    - pattern: 'cdn\.heapanalytics\.com/js/heap-'
+    - pattern: 'heap\.load\('
+      confidence: 90
+  scripts:
+    - pattern: 'cdn\.heapanalytics\.com/js/heap-'
+    - pattern: 'heap-api\.com/js/heap-'

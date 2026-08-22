@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "cloudflare",
+    "contentful",
+    "heap",
+    "hotjar"
+  ]
+}
