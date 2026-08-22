@@ -1,0 +1,11 @@
+name: Tawk.to
+slug: tawk-to
+category: marketing
+website: https://www.tawk.to
+detect:
+  html:
+    - pattern: 'embed\.tawk\.to/[0-9a-f]+/'
+    - pattern: 'Tawk_API'
+      confidence: 85
+  scripts:
+    - pattern: 'embed\.tawk\.to/[0-9a-f]+/'
