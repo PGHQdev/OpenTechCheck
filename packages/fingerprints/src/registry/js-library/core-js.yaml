@@ -1,0 +1,11 @@
+name: core-js
+slug: core-js
+category: js-library
+website: https://github.com/zloirock/core-js
+detect:
+  js:
+    '__core-js_shared__.versions':
+      - pattern: ''
+    '__core-js_shared__':
+      - pattern: ''
+        confidence: 80

@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-core-js",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "__core-js_shared__": true,
+    "__core-js_shared__.versions": [{ "version": "3.38.1", "mode": "pure", "copyright": "core-js" }]
+  }
+}
