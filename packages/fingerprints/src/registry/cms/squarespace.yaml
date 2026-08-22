@@ -1,0 +1,14 @@
+name: Squarespace
+slug: squarespace
+category: cms
+website: https://www.squarespace.com
+detect:
+  html:
+    - pattern: 'Static\.SQUARESPACE_CONTEXT'
+    - pattern: 'static1\.squarespace\.com'
+  headers:
+    server:
+      - pattern: '^Squarespace$'
+  scripts:
+    - pattern: 'static1\.squarespace\.com'
+    - pattern: 'assets\.squarespace\.com'
