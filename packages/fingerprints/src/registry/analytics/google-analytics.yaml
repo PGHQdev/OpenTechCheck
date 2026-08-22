@@ -1,0 +1,11 @@
+name: Google Analytics
+slug: google-analytics
+category: analytics
+website: https://marketingplatform.google.com/about/analytics/
+detect:
+  html:
+    - pattern: "gtag\\('config'"
+      confidence: 80
+  scripts:
+    - pattern: 'googletagmanager\.com/gtag/js'
+    - pattern: 'google-analytics\.com/analytics\.js'
