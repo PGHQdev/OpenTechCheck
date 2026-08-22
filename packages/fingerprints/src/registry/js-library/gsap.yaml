@@ -1,0 +1,18 @@
+name: GSAP
+slug: gsap
+category: js-library
+website: https://gsap.com
+detect:
+  scripts:
+    - pattern: 'npm/gsap@([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/gsap/([\d.]+)/'
+      version: 1
+    - pattern: '/gsap(?:\.min)?\.js'
+      confidence: 80
+    - pattern: '/TweenMax(?:\.min)?\.js'
+      confidence: 90
+  js:
+    gsap.version:
+      - pattern: '^([\d.]+)'
+        version: 1
