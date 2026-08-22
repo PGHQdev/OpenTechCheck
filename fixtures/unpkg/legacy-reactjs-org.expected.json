@@ -2,6 +2,7 @@
   "detects": [
     "unpkg",
     "gatsby",
-    "react"
+    "react",
+    "vercel"
   ]
 }

@@ -1,9 +1,8 @@
 {
   "detects": [
-    "tailwindcss",
+    "vercel",
     "nextjs",
     "react",
-    "cloudflare",
-    "vercel"
+    "tailwindcss"
   ]
 }

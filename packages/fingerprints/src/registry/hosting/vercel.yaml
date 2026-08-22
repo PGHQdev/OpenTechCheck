@@ -1,0 +1,12 @@
+name: Vercel
+slug: vercel
+category: hosting
+website: https://vercel.com
+detect:
+  headers:
+    x-vercel-id:
+      - pattern: ''
+    x-vercel-cache:
+      - pattern: ''
+    server:
+      - pattern: '^Vercel$'

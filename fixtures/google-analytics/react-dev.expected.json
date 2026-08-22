@@ -3,6 +3,7 @@
     "google-analytics",
     "nextjs",
     "react",
-    "tailwindcss"
+    "tailwindcss",
+    "vercel"
   ]
 }
