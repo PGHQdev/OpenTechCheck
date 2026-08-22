@@ -5,6 +5,6 @@
   "license": "Apache-2.0",
   "main": "dist/fingerprints.json",
   "scripts": { "compile": "bun run src/compile.ts" },
-  "dependencies": {},
-  "devDependencies": { "yaml": "^2.5.0", "ajv": "^8.17.0" }
+  "dependencies": { "@opentechcheck/core": "workspace:*", "yaml": "^2.5.0" },
+  "devDependencies": { "ajv": "^8.17.0" }
 }

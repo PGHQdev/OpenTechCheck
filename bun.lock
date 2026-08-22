@@ -16,9 +16,12 @@
     "packages/fingerprints": {
       "name": "@opentechcheck/fingerprints",
       "version": "0.0.1",
+      "dependencies": {
+        "@opentechcheck/core": "workspace:*",
+        "yaml": "^2.5.0",
+      },
       "devDependencies": {
         "ajv": "^8.17.0",
-        "yaml": "^2.5.0",
       },
     },
   },
