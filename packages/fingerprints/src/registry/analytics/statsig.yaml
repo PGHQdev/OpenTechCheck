@@ -1,0 +1,8 @@
+name: Statsig
+slug: statsig
+category: analytics
+website: https://statsig.com
+detect:
+  js:
+    __STATSIG__:
+      - pattern: ''
