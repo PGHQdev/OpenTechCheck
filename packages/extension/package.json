@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "bun run build/build.ts",
-    "test": "bun test"
+    "test": "bun test test/"
   },
   "dependencies": {
     "@opentechcheck/core": "workspace:*",
