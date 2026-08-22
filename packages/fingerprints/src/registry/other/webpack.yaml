@@ -1,0 +1,12 @@
+# Webpack 5's runtime chunk global is `webpackChunk<name>` where <name> is the
+# project's `output.uniqueName` (dynamic per build). Our js detector matches
+# fixed dotted keys only, so that global can't be expressed here. This rule
+# catches Webpack 4 and earlier's fixed `webpackJsonp` array only.
+name: Webpack
+slug: webpack
+category: other
+website: https://webpack.js.org
+detect:
+  js:
+    webpackJsonp:
+      - pattern: ''
