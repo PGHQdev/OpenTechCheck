@@ -15,6 +15,8 @@ with confidence scores and the evidence for every detection.
 
 ## Quick start
 
+Run `bun install && bun run compile` first to build the fingerprint registry that the example imports.
+
 ```ts
 import { detect } from '@opentechcheck/core'
 import { collect } from '@opentechcheck/collect-http'
