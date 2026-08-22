@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "comscore",
+    "fastly"
+  ]
+}

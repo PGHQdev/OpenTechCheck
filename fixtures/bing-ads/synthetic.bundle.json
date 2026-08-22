@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-bing-ads",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://bat.bing.com/bat.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "UET": true
+  }
+}

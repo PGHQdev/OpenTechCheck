@@ -7,3 +7,6 @@ detect:
     - pattern: 'cdn\.segment\.com/analytics\.js'
   scripts:
     - pattern: 'cdn\.segment\.com/analytics\.js'
+  js:
+    analytics.SNIPPET_VERSION:
+      - pattern: ''

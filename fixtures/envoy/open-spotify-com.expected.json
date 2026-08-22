@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "varnish",
+    "envoy",
+    "fastly",
+    "react",
+    "styled-components"
+  ]
+}

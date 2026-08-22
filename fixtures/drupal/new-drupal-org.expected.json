@@ -3,6 +3,7 @@
     "apache",
     "drupal",
     "google-tag-manager",
-    "fastly"
+    "fastly",
+    "varnish"
   ]
 }

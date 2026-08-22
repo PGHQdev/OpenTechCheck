@@ -3,6 +3,7 @@
     "astro",
     "cloudflare",
     "tailwindcss",
-    "google-tag-manager"
+    "google-tag-manager",
+    "google-analytics"
   ]
 }

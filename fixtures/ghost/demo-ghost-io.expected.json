@@ -3,6 +3,7 @@
     "ghost",
     "openresty",
     "fastly",
-    "jsdelivr"
+    "jsdelivr",
+    "varnish"
   ]
 }

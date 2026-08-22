@@ -4,6 +4,7 @@
     "astro",
     "cloudflare",
     "fathom",
-    "fastly"
+    "fastly",
+    "varnish"
   ]
 }

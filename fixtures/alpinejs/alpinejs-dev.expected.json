@@ -5,6 +5,7 @@
     "laravel",
     "tailwindcss",
     "fathom",
-    "jsdelivr"
+    "jsdelivr",
+    "google-fonts"
   ]
 }

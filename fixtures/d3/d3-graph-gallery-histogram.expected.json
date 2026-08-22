@@ -6,6 +6,7 @@
     "google-analytics",
     "font-awesome",
     "fastly",
-    "github-pages"
+    "github-pages",
+    "varnish"
   ]
 }

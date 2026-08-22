@@ -1,6 +1,7 @@
 {
   "detects": [
     "adobe-launch",
-    "apache"
+    "apache",
+    "onetrust"
   ]
 }

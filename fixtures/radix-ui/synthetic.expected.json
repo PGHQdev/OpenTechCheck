@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "radix-ui",
+    "react"
+  ]
+}

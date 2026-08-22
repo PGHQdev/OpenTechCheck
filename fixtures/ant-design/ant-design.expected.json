@@ -5,6 +5,7 @@
     "google-analytics",
     "microsoft-clarity",
     "fastly",
-    "jsdelivr"
+    "jsdelivr",
+    "varnish"
   ]
 }

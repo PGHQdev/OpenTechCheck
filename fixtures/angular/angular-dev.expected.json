@@ -1,6 +1,7 @@
 {
   "detects": [
     "angular",
-    "fastly"
+    "fastly",
+    "google-fonts"
   ]
 }

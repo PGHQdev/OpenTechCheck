@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "sentry",
+    "cloudfront",
+    "contentful",
+    "envoy",
+    "express",
+    "mui",
+    "react"
+  ]
+}

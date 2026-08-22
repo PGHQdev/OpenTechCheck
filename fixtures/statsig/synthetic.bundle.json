@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-statsig",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "__STATSIG__": true
+  }
+}

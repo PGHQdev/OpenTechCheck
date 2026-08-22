@@ -2,6 +2,7 @@
   "detects": [
     "cloudflare",
     "joomla",
-    "google-tag-manager"
+    "google-tag-manager",
+    "google-fonts"
   ]
 }

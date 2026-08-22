@@ -1,0 +1,13 @@
+name: Sentry
+slug: sentry
+category: other
+website: https://sentry.io
+detect:
+  scripts:
+    - pattern: 'browser\.sentry-cdn\.com'
+    - pattern: 'js\.sentry-cdn\.com'
+  js:
+    Sentry:
+      - pattern: ''
+    __SENTRY__:
+      - pattern: ''

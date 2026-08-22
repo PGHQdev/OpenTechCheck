@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "google-publisher-tag",
+    "cloudfront",
+    "envoy",
+    "google-tag-manager",
+    "nextjs",
+    "react",
+    "swiper"
+  ]
+}

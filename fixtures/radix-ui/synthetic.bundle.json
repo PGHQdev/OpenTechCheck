@@ -1,0 +1,9 @@
+{
+  "url": "https://example.com/synthetic-radix-ui",
+  "html": "<!doctype html><html><head></head><body><button id=\"radix-:r0:\" aria-haspopup=\"menu\">Open</button></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "dom": ["[id^=\"radix-\"]"]
+}

@@ -2,6 +2,7 @@
   "detects": [
     "threejs",
     "fastly",
-    "github-pages"
+    "github-pages",
+    "varnish"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudfront",
-    "razorpay"
+    "razorpay",
+    "google-fonts"
   ]
 }

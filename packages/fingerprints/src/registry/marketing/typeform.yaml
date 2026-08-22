@@ -1,0 +1,7 @@
+name: Typeform
+slug: typeform
+category: marketing
+website: https://www.typeform.com
+detect:
+  scripts:
+    - pattern: 'embed\.typeform\.com'

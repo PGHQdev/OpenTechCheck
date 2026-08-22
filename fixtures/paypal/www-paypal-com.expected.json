@@ -3,6 +3,7 @@
     "fastly",
     "google-tag-manager",
     "paypal",
-    "tailwindcss"
+    "tailwindcss",
+    "varnish"
   ]
 }

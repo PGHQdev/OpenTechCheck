@@ -2,8 +2,10 @@
   "detects": [
     "nextjs",
     "react",
+    "styled-components",
     "vercel",
     "wordpress",
-    "zendesk"
+    "zendesk",
+    "google-fonts"
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "url": "https://example.com/synthetic-lottiefiles",
+  "html": "<!doctype html><html><head></head><body><lottie-player src=\"animation.json\" autoplay loop></lottie-player></body></html>",
+  "scripts": ["https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "dom": ["lottie-player"]
+}
