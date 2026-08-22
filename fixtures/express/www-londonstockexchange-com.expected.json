@@ -1,6 +1,7 @@
 {
   "detects": [
     "angular",
-    "express"
+    "express",
+    "nginx"
   ]
 }

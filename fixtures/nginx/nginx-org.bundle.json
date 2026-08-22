@@ -1,0 +1,46 @@
+{
+  "url": "https://nginx.org/",
+  "html": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><title>nginx</title><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><link rel=\"stylesheet\" href=\"css/style_en.css\"></head><body><div id=\"banner\"><div id=\"banner-content\">\n\nJoin us for the first quarterly\n<a href=\"https://go.f5.net/nginxcommunitycall\">NGINX Community Call</a>\non July 22nd to connect and discuss NGINX development.\n\n</div></div><div id=\"main\"><div id=\"menu\"><input class=\"side-menu\" type=\"checkbox\" id=\"side-menu\"><label class=\"hamb\" for=\"side-menu\"><span class=\"hamb-line\"></span></label><nav class=\"nav\"><h1><a href=\"/\"><img src=\"/img/nginx_logo.svg\" alt=\"NGINX\" class=\"lightimage\" style=\"display: block; height: auto;\"><div class=\"darkimageWrapper\" style=\"mso-hide: all; display: none\"><img src=\"/img/nginx_logo_dark.svg\" alt=\"NGINX\" class=\"darkimage\" style=\"display: none;\"></div></a></h1><div><ul class=\"mobilemenu\"><li>english<br></li><li><a href=\"ru/\">русский</a></li><li><br></li><li><a href=\"news.html\">news</a></li><li><a href=\"en/\">about</a></li><li><a href=\"en/download.html\">download</a></li><li><a href=\"en/security_advisories.html\">security</a></li><li><a href=\"en/docs/\">documentation</a></li><li><a href=\"en/docs/faq.html\">faq</a></li><li><a href=\"en/books.html\">books</a></li><li><a href=\"en/community.html\">community</a></li><li><a href=\"en/enterprise.html\">enterprise</a></li><li><br></li><li><a href=\"https://community.nginx.org\">community forum (new)</a></li><li><a href=\"https://x.com/nginxorg\">x.com</a></li><li><a href=\"https://blog.nginx.org/\">blog</a></li><li><br></li><li><a href=\"en/docs/njs/\">njs</a></li><li><a href=\"https://github.com/nginx/kubernetes-ingress\">ingress controller</a></li><li><a href=\"https://github.com/nginx/nginx-gateway-fabric\">gateway fabric</a></li></ul></div></nav></div><div id=\"content\"><h2>nginx</h2><p>\nnginx (\"<i>engine x</i>\") is an HTTP web server, reverse proxy,\ncontent cache, load balancer,\nTCP/UDP proxy server,\nand mail proxy server.\nOriginally written by <a href=\"http://sysoev.ru/en/\">Igor Sysoev</a>\nand distributed under the\n<a href=\"../LICENSE\">2-clause BSD License</a>.\nEnterprise distributions, commercial support and training are\n<a href=\"en/enterprise.html\">available from F5, Inc.</a>\n</p><p>\n<a href=\"en/docs/index.html\">Docs</a>\n•\n<a href=\"https://github.com/nginx/nginx\">Code</a>\n•\n<a href=\"en/docs/install.html\">Install</a>\n•\n<a href=\"en/docs/beginners_guide.html\">Beginner's Guide</a>\n</p><center><h4>Latest News</h4></center>\n        <table class=\"news\">\n    <tr><td class=\"date\"><a name=\"2026-08-19\"></a>2026-08-19</td><td><p>\n<a href=\"en/download.html\">nginx-1.31.4</a>\nmainline version has been released.\n</p></td></tr><tr><td class=\"date\"><a name=\"2026-07-15\"></a>2026-07-15</td><td><p>\n<a href=\"en/download.html\">nginx-1.30.4</a>\nstable and\n<a href=\"en/download.html\">nginx-1.31.3</a>\nmainline versions have been released,\nwith fixes for\n<a href=\"en/security_advisories.html\">buffer overflow</a>\nvulnerability when using map with regex (CVE-2026-42533),\n<a href=\"en/security_advisories.html\">memory disclosure</a>\nvulnerability when using ngx_http_slice_module (CVE-2026-60005), and\n<a href=\"en/security_advisories.html\">use-after-free</a>\nvulnerability when using ngx_http_ssi_module (CVE-2026-56434).\n</p></td></tr><tr><td class=\"date\"><a name=\"2026-06-23\"></a>2026-06-23</td><td><p>\n<a href=\"en/docs/njs/index.html\">njs-1.0.0</a>\nversion has been\n<a href=\"en/docs/njs/changes.html#njs1.0.0\">released</a>,\ndeprecating the\n<a href=\"en/docs/njs/engine.html\">njs</a>\nengine in favor of QuickJS,\naligning exception classes between the engines,\nand hardening\n<a href=\"en/docs/njs/reference.html#ngx_fetch\">ngx.fetch()</a>\nrequest validation.\n</p></td></tr><tr><td class=\"date\"><a name=\"2026-06-17\"></a>2026-06-17</td><td><p>\n<a href=\"en/download.html\">nginx-1.30.3</a>\nstable and\n<a href=\"en/download.html\">nginx-1.31.2</a>\nmainline versions have been released,\nwith fixes for\n<a href=\"en/security_advisories.html\">buffer overflow</a>\nvulnerability in the ngx_http_proxy_v2_module\nand ngx_http_grpc_module (CVE-2026-42055), and\n<a href=\"en/security_advisories.html\">buffer overread</a>\nvulnerability in the ngx_http_charset_module (CVE-2026-48142).\nAdditionally, <a href=\"en/download.html\">nginx-1.31.2</a>\nincludes a fix for\n<a href=\"en/security_advisories.html\">use-after-free</a>\nvulnerability in the ngx_http_v3_module (CVE-2026-42530).\n</p></td></tr>\n        </table>\n    <p>\n<a href=\"news.html\">Older news</a>\n</p><center><h4>Other NGINX Projects</h4></center><div class=\"projects\">\n\n<table><tr><td width=\"90px\" align=\"center\" valign=\"middle\"><a href=\"/en/docs/njs/\" valign=\"top\"><img src=\"img/njs_icon.png\" width=\"50px\" alt=\"NGINX JavaScript logo\"></a></td><td valign=\"bottom\"><strong>NGINX JavaScript</strong> (njs) extends nginx functionality with an ECMAScript-compatible interpreter for HTTP and Stream modules.<br><a href=\"/en/docs/njs/\">Docs</a> •\n    <a href=\"https://github.com/nginx/njs\">Code</a></td></tr><tr><td colspan=\"2\"><br></td></tr></table>\n\n<table><tr><td width=\"90px\" align=\"center\" valign=\"middle\"><a href=\"https://docs.nginx.com/nginx-ingress-controller/\" valign=\"top\"><img src=\"img/ingress_icon.png\" width=\"50px\" alt=\"NGINX Ingress Controller logo\"></a></td><td valign=\"bottom\"><strong>NGINX Ingress Controller</strong>  connects Kubernetes apps and services with rock solid request handling, auth, self-service CRDs, and easy debugging. Not to be confused with ingress-nginx, the separate Kubernetes community project.<br><a href=\"https://docs.nginx.com/nginx-ingress-controller/\">Docs</a> •\n    <a href=\"https://github.com/nginxinc/kubernetes-ingress\">Code</a></td></tr><tr><td colspan=\"2\"><br></td></tr></table>\n\n<table><tr><td width=\"90px\" align=\"center\" valign=\"middle\"><a href=\"https://docs.nginx.com/nginx-gateway-fabric/\" valign=\"top\"><img src=\"img/gateway_fabric_icon.png\" width=\"50px\" alt=\"NGINX Gateway Fabric logo\"></a></td><td valign=\"bottom\"><strong>NGINX Gateway Fabric</strong>  provides L4 and L7 routing capabilities in Kubernetes, implementing the Gateway API using NGINX as the data plane.<br><a href=\"https://docs.nginx.com/nginx-gateway-fabric/\">Docs</a> •\n    <a href=\"https://github.com/nginxinc/nginx-gateway-fabric\">Code</a></td></tr><tr><td colspan=\"2\"><br></td></tr></table>\n\n</div></div></div></body></html>\n",
+  "scripts": [],
+  "meta": {
+    "viewport": [
+      "width=device-width,initial-scale=1"
+    ]
+  },
+  "headers": {
+    "accept-ranges": [
+      "bytes"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-length": [
+      "2220"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 10:16:24 GMT"
+    ],
+    "etag": [
+      "\"6a86f182-8ac\""
+    ],
+    "keep-alive": [
+      "timeout=15"
+    ],
+    "last-modified": [
+      "Thu, 20 Aug 2026 12:22:26 GMT"
+    ],
+    "server": [
+      "nginx/1.29.8"
+    ],
+    "strict-transport-security": [
+      "max-age=31536000"
+    ]
+  },
+  "cookies": {}
+}

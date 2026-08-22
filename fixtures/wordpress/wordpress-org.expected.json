@@ -1,5 +1,6 @@
 {
   "detects": [
-    "wordpress"
+    "wordpress",
+    "nginx"
   ]
 }
