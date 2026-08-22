@@ -1,0 +1,10 @@
+name: MobX
+slug: mobx
+category: js-library
+website: https://mobx.js.org
+detect:
+  js:
+    __mobxGlobals:
+      - pattern: ''
+    __mobxInstanceCount:
+      - pattern: ''
