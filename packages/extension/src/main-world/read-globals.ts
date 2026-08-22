@@ -3,6 +3,7 @@ export function readGlobals(
 ): Record<string, unknown> {
   const out: Record<string, unknown> = {}
   for (const path of paths) {
+    if (path.startsWith('$probe.')) continue
     try {
       let value: unknown = root
       for (const part of path.split('.')) {
