@@ -61,11 +61,14 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
 }
 
 export function toDetection(fp: Fingerprint, hits: RuleHit[]): Detection {
+  const maxConf = Math.max(...hits.map((h) => h.rule.confidence ?? 100))
+  const sources = new Set(hits.map((h) => h.evidence.source))
+  const confidence = Math.min(100, maxConf + 5 * (sources.size - 1))
   return {
     slug: fp.slug,
     name: fp.name,
     category: fp.category,
-    confidence: 100,                    // real math in Task 4
+    confidence,
     version: null,                      // real resolution in Task 5
     evidence: hits.map((h) => h.evidence),
   }
@@ -79,5 +82,6 @@ export function detect(
     const hits = collectHits(fp, bundle, options)
     if (hits.length > 0) out.push(toDetection(fp, hits))
   }
+  out.sort((a, b) => b.confidence - a.confidence || a.slug.localeCompare(b.slug))
   return out
 }
