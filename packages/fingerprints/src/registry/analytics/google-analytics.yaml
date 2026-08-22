@@ -11,5 +11,5 @@ detect:
     - pattern: 'google-analytics\.com/analytics\.js'
   cookies:
     _ga:
-      - pattern: '^GA1\.|^GS\d\.'
+      - pattern: '^GA1\.'
         confidence: 85
