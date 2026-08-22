@@ -1,6 +1,5 @@
 {
   "detects": [
-    "alpinejs",
     "cloudflare",
     "laravel"
   ]
