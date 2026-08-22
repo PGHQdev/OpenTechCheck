@@ -9,3 +9,9 @@ detect:
     Vue.version:
       - pattern: '^([\d.]+)'
         version: 1
+    '$probe.vue':
+      - pattern: '^([\d.]+)$'
+        version: 1
+        confidence: 90
+      - pattern: ''
+        confidence: 85

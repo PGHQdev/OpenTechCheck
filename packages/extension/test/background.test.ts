@@ -76,6 +76,17 @@ test('history updates debounce into one recollect', async () => {
   expect(calls.sent).toEqual([[5, { type: 'recollect' }]])
 })
 
+test('a $probe.react signal detects react with version', async () => {
+  const { api, m, handlers } = fakeApi()
+  createBackground(api)
+  const probeSignals: PageSignals = { ...signals, js: { '$probe.react': '18.3.1' } }
+  await handlers.message({ type: 'signals', signals: probeSignals }, 7)
+  const result = m.get('result:7') as any
+  const react = result.detections.find((d: any) => d.slug === 'react')
+  expect(react).toBeDefined()
+  expect(react.version).toBe('18.3.1')
+})
+
 test('tab removal clears both keys', async () => {
   const { api, m, handlers } = fakeApi()
   createBackground(api)
