@@ -1,0 +1,10 @@
+name: MUI
+slug: mui
+category: ui-framework
+website: https://mui.com
+implies: [react]
+detect:
+  html:
+    - pattern: 'class="(?:[^"]* )?Mui[A-Za-z]+-root'
+    - pattern: '<style[^>]*data-emotion="css[^"]*"[^>]*>[^<]*\.Mui[A-Za-z]+-'
+      confidence: 90
