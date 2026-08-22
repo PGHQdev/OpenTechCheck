@@ -1,8 +1,8 @@
-import { collectSignals } from './collect'
+import { collectSignals, sanitizeJsPayload } from './collect'
 import { ext } from '../shared/ext'
-import { MAIN_WORLD_SOURCE, type MainWorldMessage, type ToContent } from '../shared/protocol'
-// DOM_SELECTORS is injected at build time (Task 8) via the "virtual:lists" module
-import { DOM_SELECTORS } from 'virtual:lists'
+import { CAPS, MAIN_WORLD_SOURCE, type MainWorldMessage, type ToContent } from '../shared/protocol'
+// DOM_SELECTORS and JS_PATHS are injected at build time (Task 8) via the "virtual:lists" module
+import { DOM_SELECTORS, JS_PATHS } from 'virtual:lists'
 
 let jsGlobals: Record<string, unknown> = {}
 
@@ -15,7 +15,7 @@ window.addEventListener('message', (event: MessageEvent) => {
   if (event.source !== window) return
   const data = event.data as MainWorldMessage
   if (data?.source !== MAIN_WORLD_SOURCE) return
-  jsGlobals = data.js
+  jsGlobals = sanitizeJsPayload(data.js, JS_PATHS, CAPS.jsValue)
   send()
 })
 
