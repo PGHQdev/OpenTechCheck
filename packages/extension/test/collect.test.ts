@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test'
 import { Window } from 'happy-dom'
-import { collectSignals } from '../src/content/collect'
+import { collectSignals, sanitizeJsPayload } from '../src/content/collect'
 
 function doc(html: string): Document {
   const w = new Window()
@@ -34,4 +34,25 @@ test('a selector that throws is skipped', () => {
   const d = doc('<html><body></body></html>')
   const s = collectSignals(d, 'https://example.com/', ['::bogus!!', 'body'])
   expect(s.dom).toEqual(['body'])
+})
+
+test('sanitizeJsPayload drops keys not in the allowlist', () => {
+  const out = sanitizeJsPayload(
+    { 'next.version': '14.1.0', forged: 'x'.repeat(10), extra: 'y' },
+    ['next.version'],
+    200,
+  )
+  expect(out).toEqual({ 'next.version': '14.1.0' })
+})
+
+test('sanitizeJsPayload recaps oversized values', () => {
+  const out = sanitizeJsPayload({ 'next.version': 'x'.repeat(500) }, ['next.version'], 10)
+  expect(out['next.version']).toBe('x'.repeat(10))
+})
+
+test('sanitizeJsPayload returns {} for non-object input', () => {
+  expect(sanitizeJsPayload(null, ['a'], 10)).toEqual({})
+  expect(sanitizeJsPayload('forged', ['a'], 10)).toEqual({})
+  expect(sanitizeJsPayload(42, ['a'], 10)).toEqual({})
+  expect(sanitizeJsPayload(undefined, ['a'], 10)).toEqual({})
 })
