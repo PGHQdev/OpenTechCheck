@@ -1,0 +1,14 @@
+name: Salesforce Commerce Cloud
+slug: salesforce-commerce-cloud
+category: ecommerce
+website: https://www.salesforce.com/products/commerce-cloud/
+detect:
+  html:
+    - pattern: 'demandware\.static'
+    - pattern: '/on/demandware\.store/'
+  scripts:
+    - pattern: 'demandware\.static'
+    - pattern: 'dwanalytics'
+  cookies:
+    dwsid:
+      - pattern: ''
