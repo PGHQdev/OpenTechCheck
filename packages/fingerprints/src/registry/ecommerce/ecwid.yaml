@@ -1,0 +1,13 @@
+name: Ecwid
+slug: ecwid
+category: ecommerce
+website: https://www.ecwid.com
+detect:
+  html:
+    - pattern: 'app\.ecwid\.com(?::\d+)?/script\.js'
+    - pattern: 'xProductBrowser'
+  meta:
+    generator:
+      - pattern: '^ec-instant-site$'
+  scripts:
+    - pattern: 'app\.ecwid\.com(?::\d+)?/script\.js'
