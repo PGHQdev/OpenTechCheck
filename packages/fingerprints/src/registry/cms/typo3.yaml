@@ -1,0 +1,13 @@
+name: TYPO3
+slug: typo3
+category: cms
+website: https://typo3.org
+detect:
+  html:
+    - pattern: '/typo3conf/'
+    - pattern: '/typo3temp/'
+  meta:
+    generator:
+      - pattern: 'TYPO3(?:\sCMS)?'
+  scripts:
+    - pattern: '/typo3(?:conf|temp)/'
