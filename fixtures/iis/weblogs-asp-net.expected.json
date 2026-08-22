@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "iis",
+    "aspnet",
+    "jquery"
+  ]
+}
