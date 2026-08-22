@@ -1,6 +1,7 @@
 {
   "detects": [
     "caddy",
-    "google-analytics"
+    "google-analytics",
+    "fathom"
   ]
 }

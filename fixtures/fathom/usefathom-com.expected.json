@@ -1,6 +1,5 @@
 {
   "detects": [
-    "vue",
     "fathom"
   ]
 }

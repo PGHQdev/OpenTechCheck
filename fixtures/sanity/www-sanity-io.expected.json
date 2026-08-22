@@ -2,6 +2,7 @@
   "detects": [
     "astro",
     "sanity",
-    "tailwindcss"
+    "tailwindcss",
+    "fathom"
   ]
 }

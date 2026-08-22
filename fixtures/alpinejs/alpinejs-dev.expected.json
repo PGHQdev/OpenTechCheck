@@ -3,6 +3,7 @@
     "alpinejs",
     "cloudflare",
     "laravel",
-    "tailwindcss"
+    "tailwindcss",
+    "fathom"
   ]
 }

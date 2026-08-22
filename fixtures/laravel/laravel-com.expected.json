@@ -2,6 +2,7 @@
   "detects": [
     "cloudflare",
     "laravel",
-    "tailwindcss"
+    "tailwindcss",
+    "fathom"
   ]
 }
