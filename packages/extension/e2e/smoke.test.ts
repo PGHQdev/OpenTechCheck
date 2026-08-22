@@ -30,7 +30,7 @@ afterAll(async () => {
   }
 })
 
-test('badge and stored result reflect fixture detections', async () => {
+test('badge and popup reflect fixture detections', async () => {
   // Wait for the background service worker before navigating: its
   // chrome.webRequest.onHeadersReceived listener must be registered
   // before the navigation request completes, or the response headers
@@ -42,7 +42,7 @@ test('badge and stored result reflect fixture detections', async () => {
   const page = await browser.newPage()
   await page.goto(`http://localhost:${PORT}/`, { waitUntil: 'networkidle0' })
 
-  const slugs: string[] = await worker.evaluate(async (fixtureUrl: string) => {
+  const { tabId, slugs } = await worker.evaluate(async (fixtureUrl: string) => {
     for (let i = 0; i < 50; i++) {
       const all = await chrome.storage.session.get(null)
       const key = Object.keys(all).find((k) => {
@@ -50,14 +50,52 @@ test('badge and stored result reflect fixture detections', async () => {
         const result = all[k] as { url?: string }
         return result?.url === fixtureUrl
       })
-      if (key) return (all[key] as { detections: Array<{ slug: string }> }).detections.map((d) => d.slug)
+      if (key) {
+        const result = all[key] as { detections: Array<{ slug: string }> }
+        return { tabId: Number(key.slice('result:'.length)), slugs: result.detections.map((d) => d.slug) }
+      }
       await new Promise((r) => setTimeout(r, 200))
     }
-    return []
+    return { tabId: -1, slugs: [] as string[] }
   }, `http://localhost:${PORT}/`)
 
   expect(slugs).toContain('nextjs')
   expect(slugs).toContain('wordpress')
   expect(slugs).toContain('nginx')
+
+  // Badge text is set fire-and-forget right after the stored result, so
+  // give it a few retries to settle rather than asserting immediately.
+  let badgeText = ''
+  for (let i = 0; i < 20; i++) {
+    badgeText = await worker.evaluate((id: number) => chrome.action.getBadgeText({ tabId: id }), tabId)
+    if (badgeText === String(slugs.length)) break
+    await new Promise((r) => setTimeout(r, 100))
+  }
+  expect(badgeText).toBe(String(slugs.length))
+
+  // The popup's load() resolves the "current" tab via the background's
+  // sender.tab fallback, which only stays undefined (and so falls back to
+  // querying the active tab) for a *real* action popup. Opening popup.html
+  // as an ordinary Puppeteer tab defeats this: Chrome then treats that tab
+  // as a genuine tab of its own (chrome.tabs.getCurrent() resolves), so
+  // sender.tab points at the popup's own tab instead of the fixture's, and
+  // get-result comes back null. chrome.action.openPopup() (Chrome 127+,
+  // available in Puppeteer's bundled Chromium) opens the real, non-tab
+  // popup surface instead, so it reads the fixture's cached result exactly
+  // as a user clicking the toolbar icon would.
+  await page.bringToFront()
+  await worker.evaluate(() => (chrome.action as unknown as { openPopup(): Promise<void> }).openPopup())
+  const popupTarget = await browser.waitForTarget((t) => t.url().endsWith('/popup.html'), { timeout: 10_000 })
+  const popupPage = await popupTarget.asPage()
+  await popupPage.waitForSelector('section button')
+
+  const rows = await popupPage.$$('section button')
+  expect(rows.length).toBeGreaterThanOrEqual(3)
+  const popupText = await popupPage.evaluate(() => document.body.innerText)
+  expect(popupText).toContain('Next.js')
+  expect(popupText).toContain('WordPress')
+  expect(popupText).toContain('Nginx')
+
+  await popupPage.close()
   await page.close()
 }, 60_000)
