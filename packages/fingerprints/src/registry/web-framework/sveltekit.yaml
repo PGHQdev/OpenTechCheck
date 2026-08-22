@@ -1,0 +1,12 @@
+name: SvelteKit
+slug: sveltekit
+category: web-framework
+website: https://svelte.dev/docs/kit
+implies: [svelte]
+detect:
+  html:
+    - pattern: '\bdata-sveltekit-preload-data\b'
+    - pattern: '__sveltekit_[a-z0-9]+'
+  scripts:
+    - pattern: '/_app/immutable/'
+      confidence: 90
