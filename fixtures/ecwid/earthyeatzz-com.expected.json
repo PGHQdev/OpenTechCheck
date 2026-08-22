@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "ecwid",
+    "nginx",
+    "tailwindcss"
+  ]
+}
