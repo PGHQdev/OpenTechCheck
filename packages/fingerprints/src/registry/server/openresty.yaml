@@ -1,0 +1,10 @@
+name: OpenResty
+slug: openresty
+category: server
+website: https://openresty.org
+detect:
+  headers:
+    server:
+      - pattern: '^openresty(?:/([\d.]+))?$'
+        version: 1
+      - pattern: '^OpenResty Edge$'
