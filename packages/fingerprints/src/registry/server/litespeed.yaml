@@ -1,0 +1,10 @@
+name: LiteSpeed
+slug: litespeed
+category: server
+website: https://www.litespeedtech.com
+detect:
+  headers:
+    server:
+      - pattern: '^LiteSpeed$'
+    x-litespeed-cache:
+      - pattern: ''
