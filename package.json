@@ -10,8 +10,6 @@
     "compile": "cd packages/fingerprints && bun run compile"
   },
   "dependencies": {
-    "@opentechcheck/core": "workspace:*",
-    "@opentechcheck/fingerprints": "workspace:*",
     "@opentechcheck/collect-http": "workspace:*"
   },
   "devDependencies": {
