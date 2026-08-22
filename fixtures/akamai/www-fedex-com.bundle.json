@@ -1,0 +1,41 @@
+{
+  "url": "https://www.fedex.com/",
+  "html": "\n\n \n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n<HTML><HEAD><TITLE>FedEx | System Down</TITLE>\n<META http-equiv=Content-Type content=\"text/html; charset=iso-8859-1\">\n<LINK REL=\"stylesheet\" HREF=\"/waf/failover-objects/fedexascend.css\" TYPE=\"text/css\"></HEAD>\n<BODY bgColor=\"#ffffff\" leftMargin=\"0\" topMargin=\"0\">\n<TABLE cellSpacing=\"0\" cellPadding=\"0\" width=\"775\" border=\"0\">\n  <TBODY>\n   <TR>\n    <td width = \"20\">&nbsp;</td>\n\n\t<TD width=\"758\"><img src=\"/waf/failover-objects/corp_logo.gif\" align=\"left\" alt=\"FedEx Corporation, your single source for time-sensitive, time-definite and day-definite package, document, and freight transportation services domestically and internationally.\" border=\"0\" hspace=\"0\" vspace=\"0\"></TD>\n  </TR> \n  <tr>\n   <td height=\"90\"><img src=\"/waf/failover-objects/spacer.gif\" align=\"left\" alt=\"FedEx Corporation, your single source for time-sensitive, time-definite and day-definite package, document, and freight transportation services domestically and internationally.\" border=\"0\" hspace=\"0\" vspace=\"0\"></td>      \n  </tr>     \n</tbody>\n  </table>\n<!--content starts here-->\n<table width=\"800\" valign=\"bottom\">                      \n  <TR>\n                  \n    <td width = \"39\">&nbsp;</td>   \n    <TD align=\"left\">\n<p class=\"mainheader1\">We're sorry, we can't process your request right now. It appears you don't have permission to view this webpage.</p><BR>\n<span>Incident Number: 18.856ad117.1787396911.3211f34a</span>\n<br><br><br>\n<HR><br><br> \nFor assistance with your shipping needs, you can call us anytime at <span class=\"subheader1\">1.800.GoFedEx 1.800.463.3339</span> or visit fedex.com. \n \n<BR><br><br><HR>\n<p class=\"mainheader1\">Thank you for choosing FedEx.</p></TD>\n  </TR>\n</table>\n\n  </BODY>\n  </HTML>\n",
+  "scripts": [],
+  "meta": {},
+  "headers": {
+    "akamai-grn": [
+      "0.856ad117.1787396911.3211f34a"
+    ],
+    "connection": [
+      "keep-alive, Transfer-Encoding"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-type": [
+      "text/html"
+    ],
+    "date": [
+      "Sat, 22 Aug 2026 11:08:31 GMT"
+    ],
+    "etag": [
+      "\"ab7bdafca29bb9ab209e450b176fae8d:1442501983\""
+    ],
+    "server": [
+      "AkamaiNetStorage"
+    ],
+    "transfer-encoding": [
+      "chunked"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ],
+    "set-cookie": [
+      "Rbt=f0; path=/"
+    ]
+  },
+  "cookies": {
+    "Rbt": "f0"
+  }
+}
