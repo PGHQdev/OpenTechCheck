@@ -1,8 +1,10 @@
 {
   "detects": [
+    "cloudflare",
     "gsap",
     "jquery",
-    "cloudflare",
+    "swiper",
+    "threejs",
     "webflow"
   ]
 }
