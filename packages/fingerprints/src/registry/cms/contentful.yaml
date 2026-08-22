@@ -1,0 +1,8 @@
+name: Contentful
+slug: contentful
+category: cms
+website: https://www.contentful.com
+detect:
+  html:
+    - pattern: '(?:images|assets|downloads|videos)\.ctfassets\.net'
+    - pattern: 'cdn\.contentful\.com'

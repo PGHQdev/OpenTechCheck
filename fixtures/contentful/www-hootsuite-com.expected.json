@@ -1,7 +1,8 @@
 {
   "detects": [
     "contentful",
-    "gatsby",
-    "react"
+    "nextjs",
+    "react",
+    "slick"
   ]
 }
