@@ -1,0 +1,11 @@
+name: Glide.js
+slug: glide-js
+category: js-library
+website: https://glidejs.com
+detect:
+  js:
+    Glide:
+      - pattern: ''
+  dom:
+    '.glide__track':
+      - pattern: ''
