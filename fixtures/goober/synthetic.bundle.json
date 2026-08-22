@@ -1,0 +1,9 @@
+{
+  "url": "https://example.com/synthetic-goober",
+  "html": "<!doctype html><html><head></head><body><div id=\"root\"></div><style id=\"_goober\">.go1234{color:red}</style></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "dom": ["style#_goober"]
+}
