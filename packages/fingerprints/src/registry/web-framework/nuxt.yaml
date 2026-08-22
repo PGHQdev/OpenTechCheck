@@ -1,0 +1,11 @@
+name: Nuxt
+slug: nuxt
+category: web-framework
+website: https://nuxt.com
+implies: [vue]
+detect:
+  html:
+    - pattern: '__NUXT__'
+    - pattern: 'id="__nuxt"'
+  scripts:
+    - pattern: '/_nuxt/'
