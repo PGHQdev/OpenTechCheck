@@ -1,7 +1,6 @@
 {
   "detects": [
     "adobe-launch",
-    "google-tag-manager",
-    "segment"
+    "apache"
   ]
 }
