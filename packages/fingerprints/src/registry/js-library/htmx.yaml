@@ -1,0 +1,16 @@
+name: htmx
+slug: htmx
+category: js-library
+website: https://htmx.org
+detect:
+  html:
+    - pattern: '<[a-z][^>]*\shx-(?:get|post|put|delete|patch|boost|trigger|target|swap|ext)='
+      confidence: 90
+  scripts:
+    - pattern: 'htmx\.org@([\d.]+)'
+      version: 1
+    - pattern: '/htmx(?:\.min)?\.js'
+  js:
+    htmx.version:
+      - pattern: '^([\d.]+)'
+        version: 1
