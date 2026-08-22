@@ -3,6 +3,7 @@
     "d3",
     "bootstrap",
     "jquery",
-    "google-analytics"
+    "google-analytics",
+    "font-awesome"
   ]
 }

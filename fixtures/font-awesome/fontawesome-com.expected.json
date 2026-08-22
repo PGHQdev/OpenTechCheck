@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "font-awesome",
+    "cloudflare",
+    "google-analytics"
+  ]
+}

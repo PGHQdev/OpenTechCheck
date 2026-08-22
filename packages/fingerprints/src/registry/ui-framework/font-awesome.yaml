@@ -1,0 +1,20 @@
+name: Font Awesome
+slug: font-awesome
+category: ui-framework
+website: https://fontawesome.com
+detect:
+  html:
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/font-awesome/([\d.]+)'
+      version: 1
+    - pattern: '(?:site-assets|use)\.fontawesome\.com/releases/v([\d.]+)'
+      version: 1
+    - pattern: 'fontawesome-free-([\d.]+)'
+      version: 1
+    - pattern: 'href="[^"]*/font-awesome(?:\.min)?\.css'
+      confidence: 70
+  scripts:
+    - pattern: 'kit\.fontawesome\.com/[0-9a-f]+\.js'
+    - pattern: '(?:site-assets|use)\.fontawesome\.com/releases/v([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/font-awesome/([\d.]+)'
+      version: 1
