@@ -1,0 +1,10 @@
+name: Google Publisher Tag
+slug: google-publisher-tag
+category: marketing
+website: https://developers.google.com/publisher-tag
+detect:
+  scripts:
+    - pattern: 'securepubads\.g\.doubleclick\.net/tag/js/gpt\.js|www\.googletagservices\.com/tag/js/gpt\.js'
+  js:
+    googletag:
+      - pattern: ''
