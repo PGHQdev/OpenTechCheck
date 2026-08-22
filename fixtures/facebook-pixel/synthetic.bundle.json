@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-facebook-pixel",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://connect.facebook.net/en_US/fbevents.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "fbq": true
+  }
+}

@@ -1,0 +1,10 @@
+name: Facebook Pixel
+slug: facebook-pixel
+category: analytics
+website: https://www.facebook.com/business/tools/meta-pixel
+detect:
+  scripts:
+    - pattern: 'connect\.facebook\.net/[^/"]+/fbevents\.js'
+  js:
+    fbq:
+      - pattern: ''
