@@ -1,0 +1,11 @@
+name: Zendesk
+slug: zendesk
+category: marketing
+website: https://www.zendesk.com
+detect:
+  html:
+    - pattern: 'static\.zdassets\.com/ekr/snippet\.js'
+    - pattern: 'id="ze-snippet"'
+      confidence: 90
+  scripts:
+    - pattern: 'static\.zdassets\.com/ekr/snippet\.js'

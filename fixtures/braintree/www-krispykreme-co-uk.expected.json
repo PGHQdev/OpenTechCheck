@@ -3,6 +3,7 @@
     "braintree",
     "google-tag-manager",
     "hotjar",
-    "magento"
+    "magento",
+    "zendesk"
   ]
 }
