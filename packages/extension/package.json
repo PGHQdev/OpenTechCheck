@@ -1,0 +1,24 @@
+{
+  "name": "@opentechcheck/extension",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun run build/build.ts",
+    "test": "bun test test/"
+  },
+  "dependencies": {
+    "@opentechcheck/core": "workspace:*",
+    "@opentechcheck/fingerprints": "workspace:*"
+  },
+  "trustedDependencies": ["puppeteer"],
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/chrome": "^0.0.268",
+    "happy-dom": "^15.0.0",
+    "puppeteer": "^23.0.0",
+    "svelte": "^5.0.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0"
+  }
+}

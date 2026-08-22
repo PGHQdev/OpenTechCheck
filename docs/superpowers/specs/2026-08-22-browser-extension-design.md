@@ -16,7 +16,8 @@ fully locally. It reuses `@opentechcheck/core` for matching and the compiled
   sites; `webRequest` (observational) captures real response headers.
 - No network requests leave the browser. The registry is bundled at build
   time; registry updates ship as extension releases. No telemetry.
-- Targets: Chrome/Chromium and Firefox, MV3, one codebase.
+- Targets: Chrome/Chromium ≥ 121 and Firefox ≥ 128, MV3, one codebase.
+  Firefox's floor tracks its `world: "MAIN"` content-script support.
 - Confidence appears as a grade, never a percentage:
   A ≥ 90, B ≥ 75, C ≥ 60, D < 60.
 - V1 features: categorized results, version display, grades, evidence view,
