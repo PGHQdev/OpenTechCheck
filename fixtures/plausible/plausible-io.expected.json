@@ -2,6 +2,7 @@
   "detects": [
     "alpinejs",
     "plausible",
-    "tailwindcss"
+    "tailwindcss",
+    "bunny"
   ]
 }

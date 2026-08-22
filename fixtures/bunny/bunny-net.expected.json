@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "bunny",
+    "gatsby",
+    "matomo",
+    "posthog",
+    "react",
+    "tailwindcss"
+  ]
+}
