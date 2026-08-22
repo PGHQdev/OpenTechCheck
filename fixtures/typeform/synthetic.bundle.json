@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/synthetic-typeform",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": ["https://embed.typeform.com/next/embed.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {}
+}
