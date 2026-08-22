@@ -6,13 +6,13 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
   const d = fp.detect
   if (bundle.html !== undefined) {
     for (const rule of d.html ?? []) {
-      const h = runRule(rule, 'html', bundle.html)
+      const h = runRule(rule, 'html', bundle.html, undefined, options.onWarning)
       if (h) hits.push(h)
     }
   }
   for (const rule of d.scripts ?? []) {
     for (const src of bundle.scripts ?? []) {
-      const h = runRule(rule, 'scripts', src)
+      const h = runRule(rule, 'scripts', src, undefined, options.onWarning)
       if (h) { hits.push(h); break }
     }
   }
@@ -28,7 +28,7 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
       if (values === undefined) continue
       for (const rule of rules) {
         for (const value of values.length > 0 ? values : ['']) {
-          const h = runRule(rule, source, value, key)
+          const h = runRule(rule, source, value, key, options.onWarning)
           if (h) { hits.push(h); break }
         }
       }
@@ -38,7 +38,7 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
     const value = bundle.cookies?.[key]
     if (value === undefined) continue
     for (const rule of rules) {
-      const h = runRule(rule, 'cookies', value, key)
+      const h = runRule(rule, 'cookies', value, key, options.onWarning)
       if (h) hits.push(h)
     }
   }
@@ -46,14 +46,14 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
     if (!bundle.js || !(key in bundle.js)) continue
     const value = String(bundle.js[key] ?? '')
     for (const rule of rules) {
-      const h = runRule(rule, 'js', value, key)
+      const h = runRule(rule, 'js', value, key, options.onWarning)
       if (h) hits.push(h)
     }
   }
   for (const [key, rules] of Object.entries(d.dom ?? {})) {
     if (!bundle.dom?.includes(key)) continue
     for (const rule of rules) {
-      const h = runRule(rule, 'dom', '', key)
+      const h = runRule(rule, 'dom', '', key, options.onWarning)
       if (h) hits.push(h)
     }
   }

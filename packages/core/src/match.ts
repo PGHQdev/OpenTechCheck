@@ -10,12 +10,18 @@ const MAX_MATCH_LEN = 100
 
 export function runRule(
   rule: Rule, source: Source, text: string, key?: string,
+  onWarning?: (message: string) => void,
 ): RuleHit | null {
   if (rule.pattern === '') {
     return { rule, captures: [], evidence: { source, pattern: '', match: '', ...(key ? { key } : {}) } }
   }
-  const re = new RegExp(rule.pattern, 'i')
-  const m = re.exec(text)
+  let m: RegExpExecArray | null
+  try {
+    m = new RegExp(rule.pattern, 'i').exec(text)
+  } catch (err) {
+    onWarning?.(`invalid pattern ${JSON.stringify(rule.pattern)} (${source}): ${String(err)}`)
+    return null
+  }
   if (!m) return null
   return {
     rule,
