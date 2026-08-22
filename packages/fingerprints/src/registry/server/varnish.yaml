@@ -1,0 +1,10 @@
+name: Varnish
+slug: varnish
+category: server
+website: https://varnish-cache.org
+detect:
+  headers:
+    via:
+      - pattern: '\bvarnish\b'
+    x-varnish:
+      - pattern: ''
