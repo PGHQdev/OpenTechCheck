@@ -1,0 +1,11 @@
+name: PayPal
+slug: paypal
+category: payment
+website: https://www.paypal.com
+detect:
+  html:
+    - pattern: 'paypal\.com/sdk/js'
+  scripts:
+    - pattern: 'paypal\.com/sdk/js'
+    - pattern: 'paypalobjects\.com/'
+      confidence: 70
