@@ -1,6 +1,7 @@
 {
   "detects": [
     "bulma",
-    "font-awesome"
+    "font-awesome",
+    "fastly"
   ]
 }

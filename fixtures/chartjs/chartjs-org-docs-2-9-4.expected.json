@@ -1,6 +1,7 @@
 {
   "detects": [
     "chartjs",
-    "cloudflare"
+    "cloudflare",
+    "fastly"
   ]
 }

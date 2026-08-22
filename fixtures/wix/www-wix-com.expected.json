@@ -1,6 +1,7 @@
 {
   "detects": [
     "react",
-    "wix"
+    "wix",
+    "fastly"
   ]
 }

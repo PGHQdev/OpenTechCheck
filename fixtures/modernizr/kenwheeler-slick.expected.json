@@ -2,6 +2,7 @@
   "detects": [
     "modernizr",
     "slick",
-    "jquery"
+    "jquery",
+    "fastly"
   ]
 }

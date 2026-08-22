@@ -1,6 +1,7 @@
 {
   "detects": [
     "django",
-    "nginx"
+    "nginx",
+    "fastly"
   ]
 }

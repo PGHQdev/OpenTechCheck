@@ -1,5 +1,6 @@
 {
   "detects": [
-    "threejs"
+    "threejs",
+    "fastly"
   ]
 }
