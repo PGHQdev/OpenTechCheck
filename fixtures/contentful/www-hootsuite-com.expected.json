@@ -6,6 +6,7 @@
     "slick",
     "styled-components",
     "google-tag-manager",
-    "vercel"
+    "vercel",
+    "google-fonts"
   ]
 }

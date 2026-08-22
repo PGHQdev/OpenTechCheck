@@ -1,0 +1,8 @@
+name: Google Fonts
+slug: google-fonts
+category: other
+website: https://fonts.google.com
+detect:
+  html:
+    - pattern: 'href=["\x27](?:https?:)?//fonts\.googleapis\.com/css'
+      confidence: 90

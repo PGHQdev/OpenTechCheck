@@ -6,6 +6,7 @@
     "jquery",
     "fastly",
     "github-pages",
-    "varnish"
+    "varnish",
+    "google-fonts"
   ]
 }

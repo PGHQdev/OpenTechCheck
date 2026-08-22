@@ -6,6 +6,7 @@
     "fastly",
     "cdnjs",
     "github-pages",
-    "varnish"
+    "varnish",
+    "google-fonts"
   ]
 }
