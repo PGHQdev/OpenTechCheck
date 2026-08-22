@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "alpinejs",
+    "cloudflare",
+    "hotjar",
+    "swiper",
+    "tailwindcss"
+  ]
+}
