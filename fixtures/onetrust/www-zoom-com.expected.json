@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "onetrust",
+    "cloudflare",
+    "google-tag-manager",
+    "swiper"
+  ]
+}

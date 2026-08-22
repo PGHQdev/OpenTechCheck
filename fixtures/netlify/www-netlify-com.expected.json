@@ -4,6 +4,7 @@
     "google-analytics",
     "google-tag-manager",
     "hubspot",
-    "netlify"
+    "netlify",
+    "onetrust"
   ]
 }
