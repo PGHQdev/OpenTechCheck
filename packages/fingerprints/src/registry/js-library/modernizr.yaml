@@ -1,0 +1,16 @@
+name: Modernizr
+slug: modernizr
+category: js-library
+website: https://modernizr.com
+detect:
+  scripts:
+    - pattern: '/modernizr/([\d.]+)/modernizr(?:\.min)?\.js'
+      version: 1
+    - pattern: 'modernizr-([\d.]+)(?:\.min)?\.js'
+      version: 1
+    - pattern: '/modernizr[^/]*\.js'
+      confidence: 90
+  js:
+    Modernizr._version:
+      - pattern: '^([\d.]+)'
+        version: 1

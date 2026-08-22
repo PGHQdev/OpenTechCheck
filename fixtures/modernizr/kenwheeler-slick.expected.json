@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "modernizr",
+    "jquery"
+  ]
+}
