@@ -1,0 +1,8 @@
+{
+  "detects": [
+    "bigcommerce",
+    "cloudflare",
+    "google-analytics",
+    "jquery"
+  ]
+}

@@ -1,0 +1,16 @@
+name: BigCommerce
+slug: bigcommerce
+category: ecommerce
+website: https://www.bigcommerce.com
+detect:
+  html:
+    - pattern: 'cdn\d+\.bigcommerce\.com'
+    - pattern: 'microapps\.bigcommerce\.com'
+  scripts:
+    - pattern: 'cdn\d+\.bigcommerce\.com'
+    - pattern: 'microapps\.bigcommerce\.com'
+  cookies:
+    SHOP_SESSION_TOKEN:
+      - pattern: ''
+    fornax_anonymousId:
+      - pattern: ''
