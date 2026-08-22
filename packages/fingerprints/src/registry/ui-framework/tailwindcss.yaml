@@ -1,0 +1,12 @@
+name: Tailwind CSS
+slug: tailwindcss
+category: ui-framework
+website: https://tailwindcss.com
+detect:
+  scripts:
+    - pattern: 'cdn\.tailwindcss\.com'
+  html:
+    - pattern: '--tw-(?:translate|rotate|scale|ring|shadow|gradient)[a-z-]*:'
+      confidence: 90
+    - pattern: 'class="[^"]*\b(?:sm|md|lg|xl|2xl|dark|hover|focus):(?:flex|grid|hidden|block|inline|w-|h-|p[xylrtbse]?-|m[xylrtbse]?-|text-|bg-|border|gap-|grid-cols-|items-|justify-|rounded|shadow|underline|opacity-|translate-|scale-|top-|max-w-|not-)'
+      confidence: 90
