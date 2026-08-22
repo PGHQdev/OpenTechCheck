@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "cloudflare",
+    "jquery",
+    "klarna",
+    "microsoft-clarity",
+    "paypal",
+    "shopify",
+    "slick"
+  ]
+}
