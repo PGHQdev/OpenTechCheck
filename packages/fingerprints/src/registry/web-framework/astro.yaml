@@ -1,0 +1,15 @@
+name: Astro
+slug: astro
+category: web-framework
+website: https://astro.build
+detect:
+  html:
+    - pattern: '<astro-island\b'
+    - pattern: '\bdata-astro-cid-[a-z0-9]+'
+  scripts:
+    - pattern: '/_astro/'
+      confidence: 90
+  meta:
+    generator:
+      - pattern: '^Astro(?:\sv([\d.]+))?'
+        version: 1
