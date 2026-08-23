@@ -1,0 +1,12 @@
+{
+  "name": "opentechcheck-site",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "opentechcheck.com", "custom_domain": true },
+    { "pattern": "www.opentechcheck.com", "custom_domain": true }
+  ]
+}

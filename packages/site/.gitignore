@@ -1,0 +1,5 @@
+static/fonts/
+static/icons/
+static/favicon.png
+.svelte-kit/
+build/
