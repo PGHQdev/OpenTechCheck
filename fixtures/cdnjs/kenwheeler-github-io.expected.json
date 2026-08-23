@@ -1,12 +1,13 @@
 {
   "detects": [
     "cdnjs",
-    "slick",
-    "modernizr",
-    "jquery",
     "fastly",
     "github-pages",
-    "varnish",
-    "google-fonts"
+    "google-fonts",
+    "jquery",
+    "jsdelivr",
+    "modernizr",
+    "slick",
+    "varnish"
   ]
 }

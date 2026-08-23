@@ -1,6 +1,7 @@
 {
   "detects": [
     "htmx",
+    "jsdelivr",
     "netlify"
   ]
 }

@@ -2,10 +2,11 @@
   "detects": [
     "ant-design",
     "cloudflare",
-    "google-analytics",
-    "microsoft-clarity",
     "fastly",
+    "google-analytics",
     "jsdelivr",
+    "microsoft-clarity",
+    "unpkg",
     "varnish"
   ]
 }

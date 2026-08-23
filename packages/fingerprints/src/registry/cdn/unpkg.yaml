@@ -5,3 +5,7 @@ website: https://unpkg.com
 detect:
   scripts:
     - pattern: '//unpkg\.com/'
+  html:
+    # stylesheet links: the scripts source only sees <script src>
+    - pattern: 'href=["''](?:https?:)?//unpkg\.com/'
+      confidence: 90

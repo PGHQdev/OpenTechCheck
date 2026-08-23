@@ -1,12 +1,13 @@
 {
   "detects": [
+    "cdnjs",
+    "fastly",
+    "github-pages",
+    "google-fonts",
+    "jquery",
+    "jsdelivr",
     "modernizr",
     "slick",
-    "jquery",
-    "fastly",
-    "cdnjs",
-    "github-pages",
-    "varnish",
-    "google-fonts"
+    "varnish"
   ]
 }

@@ -1,9 +1,10 @@
 {
   "detects": [
     "bulma",
-    "font-awesome",
     "fastly",
+    "font-awesome",
     "github-pages",
+    "unpkg",
     "varnish"
   ]
 }

@@ -1,7 +1,8 @@
 {
   "detects": [
-    "cloudflare-turnstile",
+    "bootstrap",
+    "cdnjs",
     "cloudflare",
-    "bootstrap"
+    "cloudflare-turnstile"
   ]
 }
