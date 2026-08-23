@@ -3,3 +3,4 @@ dist/
 packages/extension/dist/
 *.log
 .superpowers/
+packages/extension/store/*.zip
