@@ -1,0 +1,10 @@
+name: Prismic
+slug: prismic
+category: cms
+website: https://prismic.io
+detect:
+  html:
+    - pattern: '(?:src|href)=["\x27](?:https?:)?//images\.prismic\.io/'
+      confidence: 90
+    - pattern: '(?:src|href)=["\x27](?:https?:)?//(?:[a-z0-9-]+\.)?cdn\.prismic\.io/'
+      confidence: 90

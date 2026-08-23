@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "prismic",
+    "nextjs",
+    "vercel",
+    "react",
+    "tailwindcss"
+  ]
+}
