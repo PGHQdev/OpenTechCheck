@@ -4,6 +4,16 @@ category: ui-framework
 website: https://get.foundation
 detect:
   html:
+    # Every other rule here needs a CDN path or a self-hosted filename, so a
+    # bundled build with neither leaves nothing to match. Foundation's JS
+    # plugins are named (Magellan, Dropdown Menu, ...) and their `data-*`
+    # init attributes have kept those names since Foundation 6; verified
+    # against the real markup captured in fixtures/foundation/get-foundation.
+    # (`data-off-canvas` was tried and dropped: Drupal core ships its own
+    # unrelated "Off-canvas" dialog library under the same attribute name,
+    # confirmed via fixtures/drupal/new-drupal-org.)
+    - pattern: 'data-magellan\b|data-dropdown-menu\b'
+      confidence: 85
     - pattern: 'jsdelivr\.net/npm/foundation-sites@([\d.]+)'
       version: 1
     - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/foundation/([\d.]+)'
