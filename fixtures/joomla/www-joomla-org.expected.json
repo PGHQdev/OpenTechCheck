@@ -1,5 +1,6 @@
 {
   "detects": [
+    "bootstrap",
     "cloudflare",
     "joomla",
     "google-tag-manager",

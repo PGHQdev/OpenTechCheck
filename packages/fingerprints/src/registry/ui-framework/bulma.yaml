@@ -4,6 +4,14 @@ category: ui-framework
 website: https://bulma.io
 detect:
   html:
+    # Every other rule here needs a CDN path or a self-hosted filename, so a
+    # bundled build with neither leaves nothing to match. Bulma's own
+    # component class names haven't changed shape across its history, so
+    # `navbar-burger`/`hero-body` are a version-independent anchor: the
+    # former is on bulma.io's own navbar, the latter is in the real markup
+    # captured in fixtures/bulma/bulmatemplates-github-io.
+    - pattern: 'navbar-burger|hero-body'
+      confidence: 85
     - pattern: 'jsdelivr\.net/npm/bulma@([\d.]+)'
       version: 1
     - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/bulma/([\d.]+)'

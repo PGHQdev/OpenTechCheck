@@ -1,5 +1,6 @@
 {
   "detects": [
+    "bootstrap",
     "bunny",
     "gatsby",
     "matomo",
