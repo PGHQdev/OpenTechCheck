@@ -4,7 +4,26 @@ category: other
 website: https://turbo.build/pack
 detect:
   scripts:
-    - pattern: '/_next/static/chunks/turbopack-[a-z0-9]+\.js'
+    # The build produces a `turbopack-<hash>.js` runtime chunk (and a
+    # `turbopack-worker-<hash>.js` worker-entry chunk); the `turbopack-`
+    # prefix is the stable part, the hash charset has changed across
+    # Next.js releases (vercel/next.js turbo-tasks-hash):
+    #   - through Next.js 16.1.x: 16-char hex (Xxh3Hash64Hex), e.g.
+    #     turbopack-01ca012029ca2e66.js
+    #   - Next.js 16.2.0 only (PR #91137, 2026-03-13): 13-char base40,
+    #     alphabet `0-9 a-z _ - ~ .`, e.g. turbopack-0c3o1svijj_~~.js
+    #     (reverted 12 days later for tripping WAF path-traversal rules
+    #     on `~`/`.` runs; see vercel/next.js#91678 and #91832)
+    #   - Next.js 16.2.1+ (current): 13-char base38, alphabet
+    #     `0-9 a-z _ -`, e.g. turbopack-2ii10o0zh6t1z.js (verified against
+    #     a real Turbopack build in fixtures/turbopack/www-levels-fyi)
+    # One widened class covers all three (hex and base38 are subsets of
+    # base40's alphabet).
+    - pattern: '/_next/static/chunks/turbopack-[a-z0-9_.~-]+\.js'
+    # Non-"turbopack-"-prefixed chunks (most of them: page/vendor chunks)
+    # are just a bare hash in the same alphabet, e.g. 2jwfjiv6o5q0d.js or
+    # 3bil_ibrp4ih6.js. That's indistinguishable from any other bundler's
+    # content-hashed chunk name, so no pattern is added for it.
   js:
     TURBOPACK:
       - pattern: ''

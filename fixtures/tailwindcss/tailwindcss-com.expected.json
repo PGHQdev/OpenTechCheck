@@ -1,6 +1,7 @@
 {
   "detects": [
     "tailwindcss",
+    "turbopack",
     "nextjs",
     "react",
     "cloudflare",
