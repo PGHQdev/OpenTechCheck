@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "turbopack",
+    "cloudfront",
+    "mui",
+    "nextjs",
+    "react",
+    "radix-ui"
+  ]
+}

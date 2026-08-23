@@ -5,6 +5,7 @@
     "vercel",
     "react",
     "tailwindcss",
-    "radix-ui"
+    "radix-ui",
+    "turbopack"
   ]
 }
