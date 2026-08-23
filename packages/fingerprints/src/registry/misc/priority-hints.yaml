@@ -1,0 +1,7 @@
+name: Priority Hints
+slug: priority-hints
+category: misc
+website: https://web.dev/articles/fetch-priority
+detect:
+  html:
+    - pattern: 'fetchpriority=["'']?(?:high|low|auto)'

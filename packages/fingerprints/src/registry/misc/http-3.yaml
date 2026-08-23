@@ -1,0 +1,8 @@
+name: HTTP/3
+slug: http-3
+category: misc
+website: https://developer.mozilla.org/docs/Glossary/HTTP_3
+detect:
+  headers:
+    alt-svc:
+      - pattern: '\bh3(?:-\d+)?='

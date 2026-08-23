@@ -1,0 +1,7 @@
+name: PWA
+slug: pwa
+category: misc
+website: https://web.dev/explore/progressive-web-apps
+detect:
+  html:
+    - pattern: '<link[^>]+rel=["'']?manifest["''\s>]'

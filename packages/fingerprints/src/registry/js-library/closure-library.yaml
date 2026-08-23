@@ -1,0 +1,13 @@
+name: Closure Library
+slug: closure-library
+category: js-library
+website: https://github.com/google/closure-library
+detect:
+  scripts:
+    - pattern: 'closure/goog/base\.js'
+  js:
+    'goog.basePath':
+      - pattern: ''
+    'goog.LOCALE':
+      - pattern: ''
+        confidence: 80

@@ -1,0 +1,12 @@
+name: Open Graph
+slug: open-graph
+category: misc
+website: https://ogp.me
+detect:
+  meta:
+    'og:title':
+      - pattern: ''
+    'og:type':
+      - pattern: ''
+    'og:image':
+      - pattern: ''

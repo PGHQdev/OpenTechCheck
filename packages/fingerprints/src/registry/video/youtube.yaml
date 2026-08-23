@@ -1,0 +1,12 @@
+name: YouTube
+slug: youtube
+category: video
+website: https://www.youtube.com
+detect:
+  html:
+    - pattern: '<iframe[^>]+src=[^>]*youtube(?:-nocookie)?\.com/embed/'
+  scripts:
+    - pattern: 'youtube\.com/(?:iframe_api|player_api)'
+  js:
+    'YT.Player':
+      - pattern: ''
