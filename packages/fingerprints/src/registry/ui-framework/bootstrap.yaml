@@ -4,6 +4,17 @@ category: ui-framework
 website: https://getbootstrap.com
 detect:
   html:
+    # Every other rule here needs a CDN path or a self-hosted filename, so a
+    # bundled/tree-shaken build with neither leaves nothing to match. Bootstrap
+    # 5's `data-bs-*` JS-plugin attributes (data-bs-toggle, data-bs-target,
+    # data-bs-dismiss, data-bs-theme, ...) are stable across the whole 5.x
+    # line regardless of hosting or filename: verified against the real
+    # markup captured in fixtures/bootstrap/getbootstrap-com. Bootstrap
+    # 3/4 used unprefixed `data-toggle` instead, which is too generic to
+    # match on its own; those versions still detect via the CDN/filename
+    # rules below.
+    - pattern: '\bdata-bs-[a-z-]+='
+      confidence: 85
     - pattern: 'cdn\.jsdelivr\.net/npm/bootstrap@([\d.]+)'
       version: 1
     - pattern: 'bootstrapcdn\.com/bootstrap/([\d.]+)'
