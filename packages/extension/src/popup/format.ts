@@ -4,8 +4,8 @@ import type { TabResult } from '../shared/protocol'
 
 export const CATEGORY_ORDER = [
   'js-framework', 'web-framework', 'ui-framework', 'js-library', 'cms', 'ecommerce',
-  'payment', 'analytics', 'tag-manager', 'marketing', 'security', 'hosting', 'cdn',
-  'server', 'database', 'other',
+  'payment', 'analytics', 'tag-manager', 'marketing', 'video', 'security', 'hosting', 'cdn',
+  'server', 'database', 'misc', 'other',
 ]
 
 export function grade(confidence: number): 'A' | 'B' | 'C' | 'D' {
