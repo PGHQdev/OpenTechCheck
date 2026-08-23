@@ -1,21 +1,45 @@
 <script lang="ts">
   import { ext } from '../shared/ext'
-  import { grade, groupByCategory, stackSummary, exportPayload, websiteOf } from './format'
+  import { grade, groupByCategory, stackSummary, exportPayload, websiteOf, codeOf, categoryShort, categoryLabel } from './format'
   import type { TabResult } from '../shared/protocol'
+  import { ICON_SLUGS } from 'virtual:lists'
 
-  let state = $state<'loading' | 'ready' | 'uninspectable'>('loading')
+  let state = $state<'scanning' | 'ready' | 'uninspectable'>('scanning')
   let result = $state<TabResult | null>(null)
+  let hostname = $state('')
   let expanded = $state<string | null>(null)
 
+  const icons = new Set(ICON_SLUGS)
+  // Deterministic tile color for technologies without a fetched favicon.
+  const MONO_COLORS = ['#2427f0', '#b04c22', '#1d6b2a', '#7952b3', '#0769ad', '#a21111']
+  const monoColor = (slug: string) => {
+    let h = 0
+    for (const c of slug) h = (h * 31 + c.charCodeAt(0)) | 0
+    return MONO_COLORS[Math.abs(h) % MONO_COLORS.length]
+  }
+  const monogram = (name: string) => name.replace(/[^A-Za-z0-9 ]/g, '').slice(0, 2)
+
+  const poll = async (attempt = 0) => {
+    result = (await ext.runtime.sendMessage({ type: 'get-result' })) as TabResult | null
+    // The background may still be assembling signals right after navigation;
+    // give it a moment before declaring the page empty.
+    if (!result && attempt < 4) { setTimeout(() => poll(attempt + 1), 700); return }
+    state = 'ready'
+  }
   const load = async () => {
     const [tab] = await ext.tabs.query({ active: true, currentWindow: true })
     if (!tab?.url || !/^https?:/.test(tab.url)) { state = 'uninspectable'; return }
-    result = (await ext.runtime.sendMessage({ type: 'get-result' })) as TabResult | null
-    state = 'ready'
+    hostname = new URL(tab.url).hostname
+    poll()
   }
   load()
 
-  const copyStack = () => navigator.clipboard.writeText(stackSummary(result?.detections ?? []))
+  const detections = $derived(result?.detections ?? [])
+  const groups = $derived(groupByCategory(detections))
+  // Continuous index numbers across the grouped list, keyed by slug.
+  const indexOf = $derived(new Map(groups.flatMap((g) => g.items).map((d, i) => [d.slug, String(i + 1).padStart(3, '0')])))
+
+  const copyStack = () => navigator.clipboard.writeText(stackSummary(detections))
   const exportJson = () => {
     if (!result) return
     const url = URL.createObjectURL(new Blob([exportPayload(result)], { type: 'application/json' }))
@@ -25,44 +49,86 @@
     a.click()
     URL.revokeObjectURL(url)
   }
+  const openSite = (slug: string, e: MouseEvent) => {
+    e.stopPropagation()
+    const url = websiteOf(slug)
+    if (url) ext.tabs.create({ url })
+  }
+  const isImplied = (slug: string) => detections.find((d) => d.slug === slug)?.evidence.every((e) => e.source === 'implied') ?? false
 </script>
 
-<main class="w-96 p-3 text-sm">
-  {#if state === 'loading'}
-    <p class="text-gray-500">Detecting…</p>
+<main>
+  <header>
+    <span class="logo">OTC</span>
+    <span class="brand">OpenTechCheck</span>
+    {#if state === 'ready' && hostname}<span class="hostname">{hostname}</span>{/if}
+    {#if state === 'ready' && detections.length > 0}<span class="count">{detections.length} FOUND</span>{/if}
+    <span class="tagline">LOCAL · NO REQUESTS</span>
+  </header>
+
+  {#if state === 'scanning'}
+    <div class="state">
+      <span class="host">{hostname}</span>
+      <div class="bars"><i class="on"></i><i class="on" style="animation-delay:.2s"></i><i></i><i></i><i></i></div>
+      <h2>Reading this page…</h2>
+      <p>Analyzing local signals</p>
+    </div>
   {:else if state === 'uninspectable'}
-    <p class="text-gray-500">This page cannot be inspected.</p>
-  {:else if !result || result.detections.length === 0}
-    <p class="text-gray-500">No technologies detected.</p>
+    <div class="state">
+      <span class="glyph">⌀</span>
+      <h2>This page can't be inspected.</h2>
+      <p>Browser pages and the extension store don't expose their signals. Open a regular website and try again.</p>
+    </div>
+  {:else if detections.length === 0}
+    <div class="state">
+      <span class="glyph">◎</span>
+      <h2>No technologies detected.</h2>
+      <p>This page may use technologies outside the current fingerprint registry.</p>
+      <a href="https://github.com/opentechcheck/opentechcheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute a fingerprint ↗</a>
+    </div>
   {:else}
-    {#each groupByCategory(result.detections) as group}
-      <section class="mb-3">
-        <h2 class="mb-1 font-semibold uppercase tracking-wide text-xs text-gray-400">{group.category}</h2>
-        {#each group.items as det}
-          <button
-            class="flex w-full items-center justify-between rounded px-1 py-0.5 text-left hover:bg-gray-100"
-            onclick={() => (expanded = expanded === det.slug ? null : det.slug)}
-          >
-            <span>
-              {det.name}
-              {#if det.version}<span class="text-gray-500">{det.version}</span>{/if}
-            </span>
-            <span class="rounded bg-gray-200 px-1 font-mono text-xs">{grade(det.confidence)}</span>
-          </button>
-          {#if expanded === det.slug}
-            <div class="mb-1 ml-2 border-l pl-2 text-xs text-gray-600">
-              {#each det.evidence as ev}
-                <div><span class="font-mono">{ev.source}{ev.key ? `:${ev.key}` : ''}</span> — {ev.match || ev.pattern}</div>
-              {/each}
-              <a class="text-blue-600" href={websiteOf(det.slug) ?? '#'} target="_blank" rel="noreferrer">website</a>
-            </div>
-          {/if}
+    <div class="results">
+      <div class="cols">
+        {#each groups as group}
+          <section>
+            <div class="cat">{categoryLabel(group.category)}{#if categoryShort(group.category) !== categoryLabel(group.category).toUpperCase()}<span class="code">{categoryShort(group.category)}</span>{/if}</div>
+            {#each group.items as det}
+              <button class="row" onclick={() => (expanded = expanded === det.slug ? null : det.slug)}>
+                {#if icons.has(det.slug)}
+                  <span class="tile"><img src={`icons/${det.slug}.png`} alt="" /></span>
+                {:else}
+                  <span class="tile mono" style={`background:${monoColor(det.slug)}`}>{monogram(det.name)}</span>
+                {/if}
+                <span class="no">{isImplied(det.slug) ? '–' : indexOf.get(det.slug)}</span>
+                <span class="rowmain">
+                  <span class="name">{det.name}</span>
+                  {#if det.version}<span class="version">{det.version}</span>{/if}
+                  {#if isImplied(det.slug)}
+                    <span class="chip implied">IMPLIED</span>
+                  {:else}
+                    <span class="chip {grade(det.confidence).toLowerCase()}">{grade(det.confidence)}</span>
+                  {/if}
+                  <span class="ext" role="link" tabindex="-1" title="Open website" onclick={(e) => openSite(det.slug, e)} onkeydown={() => {}}>↗</span>
+                </span>
+              </button>
+              {#if expanded === det.slug}
+                <div class="evidence">
+                  <div class="evhead"><span class="l">EVIDENCE · {codeOf(det.slug)}</span><span class="r">LOCAL</span></div>
+                  {#each det.evidence as ev}
+                    <div class="evline"><b>{ev.source}{ev.key ? ` · ${ev.key}` : ''}</b> {ev.match || ev.pattern || 'present'}</div>
+                  {/each}
+                </div>
+              {/if}
+            {/each}
+          </section>
         {/each}
-      </section>
-    {/each}
-    <footer class="flex gap-2 border-t pt-2">
-      <button class="rounded bg-gray-800 px-2 py-1 text-white" onclick={copyStack}>Copy stack</button>
-      <button class="rounded border px-2 py-1" onclick={exportJson}>Export JSON</button>
-    </footer>
+      </div>
+    </div>
   {/if}
+
+  <footer>
+    <button class="btn primary" onclick={copyStack} disabled={detections.length === 0}>Copy stack ⧉</button>
+    <button class="btn secondary" onclick={exportJson} disabled={detections.length === 0}>Export JSON ↓</button>
+    <span class="tagline">LOCAL · NO REQUESTS</span>
+  </footer>
 </main>

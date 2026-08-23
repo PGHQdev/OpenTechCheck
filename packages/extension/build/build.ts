@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync, readFileSync, existsSync, rmSync } from 'node:fs'
+import { mkdirSync, writeFileSync, readFileSync, existsSync, rmSync, cpSync } from 'node:fs'
 import { join } from 'node:path'
 import { build } from 'vite'
 import { mergeManifest } from './manifest'
@@ -24,6 +24,10 @@ for (const target of ['chrome', 'firefox'] as const) {
     html = html.replace(/(src|href)="(\.\.\/)+/g, '$1="')
     writeFileSync(join(outDir, 'popup.html'), html)
     rmSync(join(outDir, 'src'), { recursive: true, force: true })
+  }
+  cpSync(join(root, '..', 'fingerprints', 'icons'), join(outDir, 'icons'), { recursive: true })
+  for (const size of [16, 32, 48, 128]) {
+    cpSync(join(root, 'assets', `icon-${size}.png`), join(outDir, `icon-${size}.png`))
   }
   writeFileSync(
     join(outDir, 'manifest.json'),
