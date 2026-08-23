@@ -1,0 +1,12 @@
+name: Pusher
+slug: pusher
+category: other
+website: https://pusher.com
+detect:
+  scripts:
+    - pattern: 'js\.pusher\.com/([\d.]+)/pusher(?:\.min)?\.js'
+      version: 1
+  js:
+    'Pusher.VERSION':
+      - pattern: '^([\d.]+)'
+        version: 1

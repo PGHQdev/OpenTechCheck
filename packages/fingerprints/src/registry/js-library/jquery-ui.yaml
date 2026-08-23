@@ -1,0 +1,17 @@
+name: jQuery UI
+slug: jquery-ui
+category: js-library
+website: https://jqueryui.com
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'code\.jquery\.com/ui/([\d.]+)/'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/jqueryui/([\d.]+)'
+      version: 1
+    - pattern: '/jquery-ui(?:\.min)?\.js'
+      confidence: 80
+  js:
+    'jQuery.ui.version':
+      - pattern: '^([\d.]+)'
+        version: 1

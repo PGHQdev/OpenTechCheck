@@ -1,0 +1,16 @@
+name: TinyMCE
+slug: tinymce
+category: js-library
+website: https://www.tiny.cloud
+detect:
+  scripts:
+    - pattern: 'cdn\.tiny\.cloud/1/[^/]+/tinymce/([\d.]+)'
+      version: 1
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/tinymce/([\d.]+)'
+      version: 1
+    - pattern: '/tinymce(?:\.min)?\.js'
+      confidence: 80
+  js:
+    'tinymce.majorVersion':
+      - pattern: '^(\d+)'
+        version: 1
