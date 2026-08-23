@@ -59,7 +59,13 @@
 
 <main>
   <header>
-    <span class="logo">OTC</span>
+    <span class="logo">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="4.5" width="14" height="4" rx="2" fill="#fff" />
+        <rect x="7" y="10" width="14" height="4" rx="2" fill="#fff" opacity=".8" />
+        <rect x="3" y="15.5" width="14" height="4" rx="2" fill="#fff" opacity=".55" />
+      </svg>
+    </span>
     <span class="brand">OpenTechCheck</span>
     {#if state === 'ready' && hostname}<span class="hostname">{hostname}</span>{/if}
     {#if state === 'ready' && detections.length > 0}<span class="count">{detections.length} FOUND</span>{/if}

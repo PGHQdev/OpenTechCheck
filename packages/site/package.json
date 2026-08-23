@@ -1,0 +1,20 @@
+{
+  "name": "@opentechcheck/site",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync-assets": "bun run sync-assets.ts",
+    "dev": "bun run sync-assets && vite dev",
+    "build": "bun run sync-assets && vite build",
+    "deploy": "bun run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.8",
+    "@sveltejs/kit": "^2.22.0",
+    "@sveltejs/vite-plugin-svelte": "^5.1.0",
+    "svelte": "^5.35.0",
+    "vite": "^6.3.0",
+    "wrangler": "^4.26.0"
+  }
+}
