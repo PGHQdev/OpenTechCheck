@@ -2,6 +2,7 @@ name: Express
 slug: express
 category: web-framework
 website: https://expressjs.com
+implies: [nodejs]
 detect:
   headers:
     x-powered-by:

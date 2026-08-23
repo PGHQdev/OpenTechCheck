@@ -2,6 +2,7 @@ name: PrestaShop
 slug: prestashop
 category: ecommerce
 website: https://www.prestashop.com
+implies: [php]
 detect:
   html:
     - pattern: 'var prestashop\s*='

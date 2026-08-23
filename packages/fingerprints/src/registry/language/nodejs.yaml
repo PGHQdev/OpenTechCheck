@@ -1,0 +1,8 @@
+name: Node.js
+slug: nodejs
+category: language
+website: https://nodejs.org
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Node\.js'

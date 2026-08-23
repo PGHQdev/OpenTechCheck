@@ -2,6 +2,7 @@ name: Django
 slug: django
 category: web-framework
 website: https://www.djangoproject.com
+implies: [python]
 detect:
   html:
     - pattern: 'name="csrfmiddlewaretoken"'

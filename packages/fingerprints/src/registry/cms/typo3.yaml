@@ -2,6 +2,7 @@ name: TYPO3
 slug: typo3
 category: cms
 website: https://typo3.org
+implies: [php]
 detect:
   html:
     - pattern: '/typo3conf/'

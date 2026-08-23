@@ -2,6 +2,7 @@ name: Flask
 slug: flask
 category: web-framework
 website: https://flask.palletsprojects.com
+implies: [python]
 detect:
   headers:
     server:

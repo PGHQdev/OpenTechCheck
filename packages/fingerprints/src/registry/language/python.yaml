@@ -1,0 +1,8 @@
+name: Python
+slug: python
+category: language
+website: https://www.python.org
+detect:
+  headers:
+    server:
+      - pattern: '\bgunicorn\b|\buwsgi\b|\bhypercorn\b|\buvicorn\b'

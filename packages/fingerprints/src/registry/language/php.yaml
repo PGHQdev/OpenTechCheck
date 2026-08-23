@@ -1,0 +1,12 @@
+name: PHP
+slug: php
+category: language
+website: https://www.php.net
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^PHP(?:/([\d.]*\d))?'
+        version: 1
+  cookies:
+    PHPSESSID:
+      - pattern: ''
