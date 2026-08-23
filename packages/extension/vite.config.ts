@@ -1,3 +1,6 @@
+import { readdirSync } from 'node:fs'
+import { join, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import tailwindcss from '@tailwindcss/vite'
@@ -8,6 +11,15 @@ import type { Plugin } from 'vite'
 
 const fps = registry as unknown as Fingerprint[]
 
+function iconSlugs(): string[] {
+  // import.meta.url survives vite's config bundling; import.meta.dir does not.
+  const here = dirname(fileURLToPath(import.meta.url))
+  const dir = join(here, '..', 'fingerprints', 'icons')
+  const slugs = readdirSync(dir).filter((f) => f.endsWith('.png')).map((f) => f.slice(0, -4))
+  if (slugs.length === 0) throw new Error(`no icons found at ${dir} — run scripts/fetch-icons.ts`)
+  return slugs
+}
+
 export function listsPlugin(): Plugin {
   return {
     name: 'opentechcheck-lists',
@@ -15,7 +27,8 @@ export function listsPlugin(): Plugin {
     load: (id) =>
       id === '\0virtual:lists'
         ? `export const JS_PATHS = ${JSON.stringify(jsPaths(fps))};\n` +
-          `export const DOM_SELECTORS = ${JSON.stringify(domSelectors(fps))};`
+          `export const DOM_SELECTORS = ${JSON.stringify(domSelectors(fps))};\n` +
+          `export const ICON_SLUGS = ${JSON.stringify(iconSlugs())};`
         : undefined,
   }
 }
@@ -32,7 +45,12 @@ export default defineConfig(({ mode }) => {
         outDir, emptyOutDir: false,
         rollupOptions: {
           input: 'src/popup/popup.html',
-          output: { entryFileNames: 'popup.js', assetFileNames: 'popup[extname]' },
+          output: {
+            entryFileNames: 'popup.js',
+            // css keeps the flat popup.css name; fonts keep their own names
+            assetFileNames: (info) =>
+              info.names?.[0]?.endsWith('.css') ? 'popup[extname]' : '[name][extname]',
+          },
         },
       },
     }

@@ -59,3 +59,20 @@ export function exportPayload(result: TabResult): string {
 const sites = new Map((registry as Array<{ slug: string; website: string }>).map((f) => [f.slug, f.website]))
 
 export const websiteOf = (slug: string): string | undefined => sites.get(slug)
+
+// Stable catalog number: 1-based position in the slug-sorted registry.
+const codes = new Map(
+  (registry as Array<{ slug: string }>).map((f, i) => [f.slug, String(i + 1).padStart(3, '0')]),
+)
+
+const CATEGORY_SHORT: Record<string, string> = {
+  'js-framework': 'JS-FW', 'web-framework': 'WEB-FW', 'js-library': 'JS-LIB',
+  'ui-framework': 'UI-FW', cms: 'CMS', ecommerce: 'ECOM', payment: 'PAY',
+  analytics: 'AN', 'tag-manager': 'TAG', marketing: 'MKT', video: 'VID',
+  security: 'SEC', hosting: 'HOST', cdn: 'CDN', server: 'SRV', database: 'DB',
+  language: 'LANG', misc: 'MISC', other: 'OTHER',
+}
+
+export const codeOf = (slug: string): string => `OTC ${codes.get(slug) ?? '000'}`
+export const categoryShort = (category: string): string => CATEGORY_SHORT[category] ?? category.toUpperCase()
+export const categoryLabel = (category: string): string => category.replace(/-/g, ' ')
