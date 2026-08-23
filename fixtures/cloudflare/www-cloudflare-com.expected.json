@@ -4,6 +4,7 @@
     "cloudflare",
     "tailwindcss",
     "google-tag-manager",
-    "google-analytics"
+    "google-analytics",
+    "lucide"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "detects": [
+    "nextjs",
+    "react"
+  ]
+}

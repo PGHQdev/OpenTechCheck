@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "lucide",
+    "nextjs",
+    "vercel",
+    "react",
+    "tailwindcss"
+  ]
+}

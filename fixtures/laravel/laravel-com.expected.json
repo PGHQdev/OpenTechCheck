@@ -5,6 +5,8 @@
     "google-tag-manager",
     "hubspot",
     "laravel",
-    "tailwindcss"
+    "tailwindcss",
+    "radix-ui",
+    "react"
   ]
 }

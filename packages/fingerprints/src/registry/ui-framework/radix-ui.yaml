@@ -4,6 +4,9 @@ category: ui-framework
 website: https://www.radix-ui.com
 implies: [react]
 detect:
+  html:
+    - pattern: 'data-radix-'
+      confidence: 85
   dom:
     '[id^="radix-"]':
       - pattern: ''

@@ -1,0 +1,11 @@
+{
+  "detects": [
+    "prismic",
+    "nextjs",
+    "vercel",
+    "react",
+    "tailwindcss",
+    "radix-ui",
+    "turbopack"
+  ]
+}
