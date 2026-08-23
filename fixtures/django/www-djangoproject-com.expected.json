@@ -5,6 +5,7 @@
     "nginx",
     "stripe",
     "varnish",
-    "open-graph"
+    "open-graph",
+    "python"
   ]
 }

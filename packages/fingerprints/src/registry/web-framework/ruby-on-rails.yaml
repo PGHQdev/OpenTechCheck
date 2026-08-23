@@ -2,6 +2,7 @@ name: Ruby on Rails
 slug: ruby-on-rails
 category: web-framework
 website: https://rubyonrails.org
+implies: [ruby]
 detect:
   html:
     - pattern: 'name="authenticity_token"'

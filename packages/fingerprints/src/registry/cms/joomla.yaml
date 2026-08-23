@@ -2,6 +2,7 @@ name: Joomla
 slug: joomla
 category: cms
 website: https://www.joomla.org
+implies: [php]
 detect:
   html:
     - pattern: 'Joomla! - Open Source Content Management'

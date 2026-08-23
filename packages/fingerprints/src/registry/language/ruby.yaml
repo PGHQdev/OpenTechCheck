@@ -1,0 +1,8 @@
+name: Ruby
+slug: ruby
+category: language
+website: https://www.ruby-lang.org
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '\bmod_rack\b|\bmod_rails\b'

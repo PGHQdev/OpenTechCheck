@@ -1,9 +1,7 @@
 {
   "detects": [
     "ruby-on-rails",
-    "open-graph",
-    "priority-hints",
-    "pwa",
+    "phusion-passenger",
     "ruby"
   ]
 }

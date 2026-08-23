@@ -8,6 +8,7 @@
     "google-tag-manager",
     "open-graph",
     "priority-hints",
-    "font-awesome"
+    "font-awesome",
+    "php"
   ]
 }

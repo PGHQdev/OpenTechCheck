@@ -10,6 +10,7 @@
     "unpkg",
     "open-graph",
     "priority-hints",
-    "font-awesome"
+    "font-awesome",
+    "php"
   ]
 }

@@ -3,6 +3,7 @@
     "cloudflare",
     "magento",
     "google-tag-manager",
-    "open-graph"
+    "open-graph",
+    "php"
   ]
 }

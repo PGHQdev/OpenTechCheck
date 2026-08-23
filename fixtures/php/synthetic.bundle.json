@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-php",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": [],
+  "headers": {
+    "x-powered-by": ["PHP/8.2.12"]
+  },
+  "cookies": {
+    "PHPSESSID": "0123456789abcdef0123456789abcdef"
+  },
+  "meta": {}
+}

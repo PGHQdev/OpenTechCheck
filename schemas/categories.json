@@ -2,6 +2,6 @@
   "js-framework", "web-framework", "js-library", "ui-framework",
   "cms", "ecommerce", "analytics", "tag-manager",
   "cdn", "hosting", "payment", "security",
-  "marketing", "database", "server", "video",
+  "marketing", "database", "server", "language", "video",
   "misc", "other"
 ]

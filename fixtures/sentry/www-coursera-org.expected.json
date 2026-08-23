@@ -8,6 +8,7 @@
     "mui",
     "react",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "nodejs"
   ]
 }

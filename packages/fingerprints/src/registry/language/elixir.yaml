@@ -1,0 +1,6 @@
+name: Elixir
+slug: elixir
+category: language
+website: https://elixir-lang.org
+# No reliable direct signal; detected through implies (phoenix).
+detect: {}

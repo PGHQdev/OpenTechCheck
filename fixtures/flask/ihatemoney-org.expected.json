@@ -3,6 +3,7 @@
     "flask",
     "bootstrap",
     "jquery",
-    "font-awesome"
+    "font-awesome",
+    "python"
   ]
 }

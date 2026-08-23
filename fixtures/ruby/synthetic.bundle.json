@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-ruby",
+  "html": "<!doctype html><html><head><meta name=\"csrf-param\" content=\"authenticity_token\"></head><body><form><input type=\"hidden\" name=\"authenticity_token\" value=\"abc\"></form></body></html>",
+  "scripts": [],
+  "headers": {
+    "x-powered-by": ["Phusion Passenger (mod_rails/mod_rack) 4.0.10"]
+  },
+  "cookies": {},
+  "meta": {
+    "csrf-param": ["authenticity_token"]
+  }
+}

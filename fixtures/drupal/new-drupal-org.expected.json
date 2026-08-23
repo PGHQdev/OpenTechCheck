@@ -5,6 +5,7 @@
     "google-tag-manager",
     "fastly",
     "varnish",
-    "open-graph"
+    "open-graph",
+    "php"
   ]
 }

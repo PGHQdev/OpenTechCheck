@@ -1,0 +1,10 @@
+{
+  "url": "https://example.com/synthetic-python",
+  "html": "<!doctype html><html><head></head><body><form><input type=\"hidden\" name=\"csrfmiddlewaretoken\" value=\"abc\"></form></body></html>",
+  "scripts": [],
+  "headers": {
+    "server": ["gunicorn/20.1.0"]
+  },
+  "cookies": {},
+  "meta": {}
+}

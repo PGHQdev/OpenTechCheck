@@ -2,6 +2,7 @@ name: Phoenix
 slug: phoenix
 category: web-framework
 website: https://www.phoenixframework.org
+implies: [elixir]
 detect:
   html:
     - pattern: '\bdata-phx-main\b'

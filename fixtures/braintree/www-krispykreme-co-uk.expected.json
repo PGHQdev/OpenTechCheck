@@ -6,6 +6,7 @@
     "google-tag-manager",
     "hotjar",
     "magento",
-    "zendesk"
+    "zendesk",
+    "php"
   ]
 }

@@ -2,6 +2,7 @@ name: Laravel
 slug: laravel
 category: web-framework
 website: https://laravel.com
+implies: [php]
 detect:
   cookies:
     laravel_session:

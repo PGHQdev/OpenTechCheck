@@ -1,9 +1,6 @@
 {
   "detects": [
-    "angular",
     "express",
-    "nginx",
-    "cloudfront",
     "nodejs"
   ]
 }

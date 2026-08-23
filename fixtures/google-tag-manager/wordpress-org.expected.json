@@ -4,6 +4,7 @@
     "nginx",
     "wordpress",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "php"
   ]
 }

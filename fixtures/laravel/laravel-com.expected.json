@@ -9,6 +9,7 @@
     "radix-ui",
     "react",
     "open-graph",
-    "pwa"
+    "pwa",
+    "php"
   ]
 }

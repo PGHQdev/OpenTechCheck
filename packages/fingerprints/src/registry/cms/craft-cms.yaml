@@ -2,6 +2,7 @@ name: Craft CMS
 slug: craft-cms
 category: cms
 website: https://craftcms.com
+implies: [php]
 detect:
   headers:
     x-powered-by:

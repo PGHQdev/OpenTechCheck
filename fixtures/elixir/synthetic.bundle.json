@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/synthetic-elixir",
+  "html": "<!doctype html><html><head></head><body><div data-phx-main data-phx-session=\"abc\"></div></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {}
+}
