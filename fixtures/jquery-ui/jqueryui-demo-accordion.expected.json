@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "cloudflare",
+    "jquery",
+    "jquery-ui"
+  ]
+}

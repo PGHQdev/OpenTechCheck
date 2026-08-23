@@ -1,10 +1,11 @@
 {
   "detects": [
-    "chartjs",
     "cloudflare",
     "fastly",
+    "jsdelivr",
+    "select2",
     "varnish",
-    "http-3",
-    "font-awesome"
+    "google-fonts",
+    "jquery"
   ]
 }

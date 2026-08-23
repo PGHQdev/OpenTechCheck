@@ -3,6 +3,7 @@
     "amazon-s3",
     "cloudfront",
     "fathom",
-    "open-graph"
+    "open-graph",
+    "font-awesome"
   ]
 }

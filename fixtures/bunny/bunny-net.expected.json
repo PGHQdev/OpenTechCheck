@@ -8,6 +8,7 @@
     "react",
     "tailwindcss",
     "open-graph",
-    "pwa"
+    "pwa",
+    "font-awesome"
   ]
 }

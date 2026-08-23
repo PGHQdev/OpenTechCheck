@@ -1,0 +1,16 @@
+name: Select2
+slug: select2
+category: js-library
+website: https://select2.org
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/select2/([\d.]+)'
+      version: 1
+    - pattern: 'npm/select2@([\d.]+)'
+      version: 1
+    - pattern: '/select2(?:\.full)?(?:\.min)?\.js'
+      confidence: 80
+  js:
+    'jQuery.fn.select2.defaults':
+      - pattern: ''

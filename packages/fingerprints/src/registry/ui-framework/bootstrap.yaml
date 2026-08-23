@@ -28,3 +28,13 @@ detect:
       version: 1
     - pattern: '/bootstrap(?:\.bundle)?(?:\.min)?\.js'
       confidence: 70
+  js:
+    # Bundled builds (Rails asset pipeline, webpack) expose no path or markup
+    # signal; the runtime globals still carry the exact version. v5 bundle
+    # sets window.bootstrap; v3/v4 hang the version off the jQuery plugin.
+    'bootstrap.Tooltip.VERSION':
+      - pattern: '^([\d.]+)'
+        version: 1
+    'jQuery.fn.tooltip.Constructor.VERSION':
+      - pattern: '^([\d.]+)'
+        version: 1

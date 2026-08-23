@@ -9,6 +9,7 @@
     "jsdelivr",
     "unpkg",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "font-awesome"
   ]
 }

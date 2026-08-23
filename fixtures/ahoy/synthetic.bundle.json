@@ -1,0 +1,14 @@
+{
+  "url": "https://example.com/synthetic-ahoy",
+  "html": "<!doctype html><html><head><script src=\"/assets/ahoy.js\"></script></head><body></body></html>",
+  "scripts": ["/assets/ahoy.js"],
+  "headers": {},
+  "cookies": {
+    "ahoy_visitor": "0195c9a2-1f2e-4b6d-8f1f-3a9d2c4e5b6a",
+    "ahoy_visit": "0195c9a2-2a3b-4c5d-9e0f-1a2b3c4d5e6f"
+  },
+  "meta": {},
+  "js": {
+    "ahoy.trackView": "function trackView() { [native code] }"
+  }
+}

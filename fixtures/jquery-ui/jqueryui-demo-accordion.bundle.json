@@ -1,0 +1,55 @@
+{
+  "url": "https://jqueryui.com/resources/demos/accordion/default.html",
+  "html": "<!DOCTYPE html><html lang=\"en\"><head>\n\t<meta charset=\"utf-8\">\n\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\t<title>jQuery UI Accordion - Default functionality</title>\n\t<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css\">\n\t<link rel=\"stylesheet\" href=\"/resources/demos/style.css\">\n\t<script src=\"https://code.jquery.com/jquery-3.7.1.js\"></script>\n\t<script src=\"https://code.jquery.com/ui/1.14.2/jquery-ui.js\"></script>\n\t<script>\n\t$( function() {\n\t\t$( \"#accordion\" ).accordion();\n\t} );\n\t</script>\n</head>\n<body>\n\n<div id=\"accordion\">\n\t<h3>Section 1</h3>\n\t<div>\n\t\t<p>\n\t\tMauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer\n\t\tut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit\n\t\tamet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut\n\t\todio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.\n\t\t</p>\n\t</div>\n\t<h3>Section 2</h3>\n\t<div>\n\t\t<p>\n\t\tSed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet\n\t\tpurus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor\n\t\tvelit, faucibus interdum tellus libero ac justo. Vivamus non quam. In\n\t\tsuscipit faucibus urna.\n\t\t</p>\n\t</div>\n\t<h3>Section 3</h3>\n\t<div>\n\t\t<p>\n\t\tNam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.\n\t\tPhasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero\n\t\tac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis\n\t\tlacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.\n\t\t</p>\n\t\t<ul>\n\t\t\t<li>List item one</li>\n\t\t\t<li>List item two</li>\n\t\t\t<li>List item three</li>\n\t\t</ul>\n\t</div>\n\t<h3>Section 4</h3>\n\t<div>\n\t\t<p>\n\t\tCras dictum. Pellentesque habitant morbi tristique senectus et netus\n\t\tet malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in\n\t\tfaucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia\n\t\tmauris vel est.\n\t\t</p>\n\t\t<p>\n\t\tSuspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.\n\t\tClass aptent taciti sociosqu ad litora torquent per conubia nostra, per\n\t\tinceptos himenaeos.\n\t\t</p>\n\t</div>\n</div>\n\n\n\n\n</body></html>",
+  "scripts": [
+    "https://code.jquery.com/jquery-3.7.1.js",
+    "https://code.jquery.com/ui/1.14.2/jquery-ui.js"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width, initial-scale=1"
+    ]
+  },
+  "headers": {
+    "cache-control": [
+      "public, max-age=1800"
+    ],
+    "cf-cache-status": [
+      "REVALIDATED"
+    ],
+    "cf-ray": [
+      "a2f9b9a5bfd2fd4e-NRT"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-type": [
+      "text/html"
+    ],
+    "date": [
+      "Sun, 23 Aug 2026 11:19:57 GMT"
+    ],
+    "etag": [
+      "\"6a7a4dbd-886\""
+    ],
+    "expires": [
+      "Sun, 23 Aug 2026 11:49:57 GMT"
+    ],
+    "last-modified": [
+      "Mon, 10 Aug 2026 22:16:29 GMT"
+    ],
+    "server": [
+      "cloudflare"
+    ],
+    "transfer-encoding": [
+      "chunked"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ]
+  },
+  "cookies": {}
+}

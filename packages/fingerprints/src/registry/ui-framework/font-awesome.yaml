@@ -12,6 +12,12 @@ detect:
       version: 1
     - pattern: 'href="[^"]*/font-awesome(?:\.min)?\.css'
       confidence: 70
+    # Self-hosted/bundled builds leave only the icon markup. "fa fa-x" (v4),
+    # "fas fa-x" (v5), and "fa-solid fa-x" (v6) class pairs are FA-specific.
+    - pattern: 'class="[^"]*\bfa[srlbd]?\s+fa-[a-z0-9-]+'
+      confidence: 70
+    - pattern: 'class="[^"]*\bfa-(?:solid|regular|brands|light|duotone|thin|sharp)\b'
+      confidence: 70
   scripts:
     - pattern: 'kit\.fontawesome\.com/[0-9a-f]+\.js'
     - pattern: '(?:site-assets|use)\.fontawesome\.com/releases/v([\d.]+)'

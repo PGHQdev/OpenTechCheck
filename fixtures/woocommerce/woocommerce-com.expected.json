@@ -7,6 +7,7 @@
     "nginx",
     "google-tag-manager",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "font-awesome"
   ]
 }

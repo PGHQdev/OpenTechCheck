@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-pusher",
+  "html": "<!doctype html><html><head><script src=\"https://js.pusher.com/8.4.0/pusher.min.js\"></script></head><body></body></html>",
+  "scripts": ["https://js.pusher.com/8.4.0/pusher.min.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "Pusher.VERSION": "8.4.0"
+  }
+}

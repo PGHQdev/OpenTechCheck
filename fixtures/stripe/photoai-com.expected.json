@@ -8,6 +8,7 @@
     "stripe",
     "http-3",
     "open-graph",
-    "pwa"
+    "pwa",
+    "font-awesome"
   ]
 }

@@ -1,0 +1,16 @@
+name: Ahoy
+slug: ahoy
+category: analytics
+website: https://github.com/ankane/ahoy
+detect:
+  scripts:
+    - pattern: '/ahoy\.js'
+      confidence: 70
+  cookies:
+    ahoy_visitor:
+      - pattern: ''
+    ahoy_visit:
+      - pattern: ''
+  js:
+    'ahoy.trackView':
+      - pattern: ''

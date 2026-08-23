@@ -7,6 +7,7 @@
     "cloudfront",
     "http-3",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "font-awesome"
   ]
 }

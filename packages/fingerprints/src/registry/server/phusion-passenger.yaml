@@ -1,0 +1,11 @@
+name: Phusion Passenger
+slug: phusion-passenger
+category: server
+website: https://www.phusionpassenger.com
+detect:
+  headers:
+    server:
+      - pattern: 'Phusion[ _]Passenger(?:\(R\))?(?:\s+([\d.]+))?'
+        version: 1
+    x-powered-by:
+      - pattern: 'Phusion[ _]Passenger'

@@ -1,0 +1,9 @@
+{
+  "detects": [
+    "nginx",
+    "open-graph",
+    "phusion-passenger",
+    "ruby-on-rails",
+    "jquery"
+  ]
+}

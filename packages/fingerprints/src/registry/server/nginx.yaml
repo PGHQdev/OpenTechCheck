@@ -5,5 +5,7 @@ website: https://nginx.org
 detect:
   headers:
     server:
-      - pattern: '^nginx(?:/([\d.]+))?$'
+# Passenger appends to the token: "nginx/1.18.0 + Phusion Passenger(R) 6.0.20",
+# so the value must not be end-anchored.
+      - pattern: '^nginx(?:/([\d.]+))?(?:$|\s)'
         version: 1
