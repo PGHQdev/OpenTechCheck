@@ -1,0 +1,89 @@
+name: release-cws
+# Publishes the Chrome extension to the Chrome Web Store.
+# Trigger: push a tag like v0.2.0 (the tag version is injected into the
+# manifest), or run manually to republish the version already in-tree.
+#
+# Required repository secrets (Google Cloud OAuth client with the
+# chromewebstore scope; see https://developer.chrome.com/docs/webstore/using-api):
+#   CWS_CLIENT_ID, CWS_CLIENT_SECRET, CWS_REFRESH_TOKEN, CWS_EXTENSION_ID
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install --frozen-lockfile
+      - run: bun run compile
+      - run: bun run typecheck
+      - name: Tests
+        run: |
+          bun test packages/core packages/fingerprints packages/collect-http
+          cd packages/extension && bun test test/
+
+      - name: Inject tag version into manifest
+        if: github.ref_type == 'tag'
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          jq --arg v "$VERSION" '.version = $v' packages/extension/manifest/base.json > /tmp/base.json
+          mv /tmp/base.json packages/extension/manifest/base.json
+          echo "manifest version -> $VERSION"
+
+      - name: Build and zip
+        run: |
+          cd packages/extension && bun run build
+          cd dist/chrome && zip -qr ../../opentechcheck-chrome.zip .
+          unzip -l ../../opentechcheck-chrome.zip | tail -3
+
+      - name: Upload to Chrome Web Store
+        env:
+          CLIENT_ID: ${{ secrets.CWS_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CWS_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.CWS_REFRESH_TOKEN }}
+          EXTENSION_ID: ${{ secrets.CWS_EXTENSION_ID }}
+        run: |
+          TOKEN=$(curl -sf -X POST https://oauth2.googleapis.com/token \
+            -d client_id="$CLIENT_ID" \
+            -d client_secret="$CLIENT_SECRET" \
+            -d refresh_token="$REFRESH_TOKEN" \
+            -d grant_type=refresh_token | jq -r .access_token)
+          test -n "$TOKEN" && test "$TOKEN" != "null"
+
+          UPLOAD=$(curl -sf -X PUT \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "x-goog-api-version: 2" \
+            -T packages/extension/opentechcheck-chrome.zip \
+            "https://www.googleapis.com/upload/chromewebstore/v1.1/items/$EXTENSION_ID")
+          echo "$UPLOAD"
+          test "$(echo "$UPLOAD" | jq -r .uploadState)" = "SUCCESS"
+
+      - name: Publish
+        env:
+          CLIENT_ID: ${{ secrets.CWS_CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CWS_CLIENT_SECRET }}
+          REFRESH_TOKEN: ${{ secrets.CWS_REFRESH_TOKEN }}
+          EXTENSION_ID: ${{ secrets.CWS_EXTENSION_ID }}
+        run: |
+          TOKEN=$(curl -sf -X POST https://oauth2.googleapis.com/token \
+            -d client_id="$CLIENT_ID" \
+            -d client_secret="$CLIENT_SECRET" \
+            -d refresh_token="$REFRESH_TOKEN" \
+            -d grant_type=refresh_token | jq -r .access_token)
+          RESULT=$(curl -sf -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "x-goog-api-version: 2" \
+            -H "Content-Length: 0" \
+            "https://www.googleapis.com/chromewebstore/v1.1/items/$EXTENSION_ID/publish")
+          echo "$RESULT"
+          STATUS=$(echo "$RESULT" | jq -r '.status[0]')
+          test "$STATUS" = "OK" || test "$STATUS" = "ITEM_PENDING_REVIEW"
+
+      - name: Attach zip to workflow run
+        uses: actions/upload-artifact@v4
+        with:
+          name: opentechcheck-chrome
+          path: packages/extension/opentechcheck-chrome.zip
