@@ -1,0 +1,8 @@
+name: Lucide
+slug: lucide
+category: js-library
+website: https://lucide.dev
+detect:
+  html:
+    - pattern: 'class="lucide lucide-'
+      confidence: 90
