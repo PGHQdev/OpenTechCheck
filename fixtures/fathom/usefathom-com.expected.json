@@ -1,5 +1,6 @@
 {
   "detects": [
+    "bootstrap",
     "fathom",
     "vercel"
   ]

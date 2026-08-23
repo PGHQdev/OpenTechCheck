@@ -1,6 +1,7 @@
 {
   "detects": [
     "apache",
+    "bootstrap",
     "google-analytics",
     "prestashop",
     "swiper",
