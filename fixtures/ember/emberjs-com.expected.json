@@ -2,6 +2,8 @@
   "detects": [
     "ember",
     "tailwindcss",
-    "netlify"
+    "netlify",
+    "open-graph",
+    "pwa"
   ]
 }

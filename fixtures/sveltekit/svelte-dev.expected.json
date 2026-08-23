@@ -2,6 +2,9 @@
   "detects": [
     "svelte",
     "sveltekit",
-    "vercel"
+    "vercel",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

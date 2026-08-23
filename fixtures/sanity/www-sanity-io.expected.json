@@ -5,6 +5,8 @@
     "tailwindcss",
     "fathom",
     "google-tag-manager",
-    "vercel"
+    "vercel",
+    "open-graph",
+    "priority-hints"
   ]
 }

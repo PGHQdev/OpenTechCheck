@@ -5,6 +5,9 @@
     "nextjs",
     "react",
     "cloudflare",
-    "vercel"
+    "vercel",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

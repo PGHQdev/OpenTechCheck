@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/synthetic-pwa",
+  "html": "<!doctype html><html><head><link rel=\"manifest\" href=\"/manifest.webmanifest\"></head><body></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {}
+}

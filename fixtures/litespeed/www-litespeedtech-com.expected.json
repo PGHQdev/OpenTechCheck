@@ -1,6 +1,7 @@
 {
   "detects": [
     "litespeed",
-    "recaptcha"
+    "recaptcha",
+    "http-3"
   ]
 }

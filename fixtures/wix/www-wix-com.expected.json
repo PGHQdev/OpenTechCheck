@@ -2,6 +2,8 @@
   "detects": [
     "react",
     "wix",
-    "fastly"
+    "fastly",
+    "http-3",
+    "open-graph"
   ]
 }

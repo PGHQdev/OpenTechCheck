@@ -7,6 +7,8 @@
     "styled-components",
     "google-tag-manager",
     "vercel",
-    "google-fonts"
+    "google-fonts",
+    "open-graph",
+    "priority-hints"
   ]
 }

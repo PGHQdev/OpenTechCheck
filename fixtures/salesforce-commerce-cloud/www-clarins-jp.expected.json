@@ -1,6 +1,9 @@
 {
   "detects": [
     "cloudflare",
-    "salesforce-commerce-cloud"
+    "salesforce-commerce-cloud",
+    "http-3",
+    "open-graph",
+    "pwa"
   ]
 }

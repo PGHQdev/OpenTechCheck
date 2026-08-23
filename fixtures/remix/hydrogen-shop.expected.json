@@ -4,6 +4,8 @@
     "react",
     "remix",
     "shopify",
-    "tailwindcss"
+    "tailwindcss",
+    "http-3",
+    "open-graph"
   ]
 }

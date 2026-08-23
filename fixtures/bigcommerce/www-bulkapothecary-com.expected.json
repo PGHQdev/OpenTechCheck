@@ -6,6 +6,8 @@
     "google-tag-manager",
     "jquery",
     "klaviyo",
-    "google-fonts"
+    "google-fonts",
+    "http-3",
+    "priority-hints"
   ]
 }

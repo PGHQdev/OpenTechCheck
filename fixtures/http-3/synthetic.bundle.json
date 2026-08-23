@@ -1,0 +1,10 @@
+{
+  "url": "https://example.com/synthetic-http-3",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": [],
+  "headers": {
+    "alt-svc": ["h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"]
+  },
+  "cookies": {},
+  "meta": {}
+}

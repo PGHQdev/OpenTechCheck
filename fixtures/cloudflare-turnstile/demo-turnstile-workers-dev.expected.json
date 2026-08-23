@@ -3,6 +3,7 @@
     "bootstrap",
     "cdnjs",
     "cloudflare",
-    "cloudflare-turnstile"
+    "cloudflare-turnstile",
+    "http-3"
   ]
 }

@@ -3,6 +3,11 @@
     "cloudflare",
     "jquery",
     "mailchimp",
-    "wordpress"
+    "wordpress",
+    "http-3",
+    "open-graph",
+    "priority-hints",
+    "pwa",
+    "youtube"
   ]
 }

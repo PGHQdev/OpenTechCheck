@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-youtube",
+  "html": "<!doctype html><html><head></head><body><iframe src=\"https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ\"></iframe><script src=\"https://www.youtube.com/iframe_api\"></script></body></html>",
+  "scripts": ["https://www.youtube.com/iframe_api"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "YT.Player": true
+  }
+}

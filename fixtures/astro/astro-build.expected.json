@@ -3,6 +3,8 @@
     "astro",
     "cloudflare",
     "tailwindcss",
-    "fathom"
+    "fathom",
+    "open-graph",
+    "priority-hints"
   ]
 }

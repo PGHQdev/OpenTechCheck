@@ -7,6 +7,8 @@
     "laravel",
     "tailwindcss",
     "radix-ui",
-    "react"
+    "react",
+    "open-graph",
+    "pwa"
   ]
 }

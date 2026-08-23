@@ -6,6 +6,8 @@
     "matomo",
     "posthog",
     "react",
-    "tailwindcss"
+    "tailwindcss",
+    "open-graph",
+    "pwa"
   ]
 }

@@ -2,6 +2,9 @@
   "detects": [
     "cloudflare",
     "posthog",
-    "google-tag-manager"
+    "google-tag-manager",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

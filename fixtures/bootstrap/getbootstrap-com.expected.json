@@ -5,6 +5,9 @@
     "cloudflare",
     "fathom",
     "fastly",
-    "varnish"
+    "varnish",
+    "http-3",
+    "open-graph",
+    "pwa"
   ]
 }

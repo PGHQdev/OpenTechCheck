@@ -4,6 +4,8 @@
     "font-awesome",
     "google-analytics",
     "recaptcha",
-    "stripe"
+    "stripe",
+    "open-graph",
+    "pwa"
   ]
 }

@@ -2,6 +2,8 @@
   "detects": [
     "hcaptcha",
     "cloudflare",
-    "webflow"
+    "webflow",
+    "http-3",
+    "open-graph"
   ]
 }

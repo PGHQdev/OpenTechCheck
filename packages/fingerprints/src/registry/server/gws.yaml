@@ -1,0 +1,8 @@
+name: Google Web Server
+slug: gws
+category: server
+website: https://www.google.com
+detect:
+  headers:
+    server:
+      - pattern: '^gws$'

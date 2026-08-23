@@ -1,5 +1,7 @@
 {
   "detects": [
-    "squarespace"
+    "squarespace",
+    "open-graph",
+    "priority-hints"
   ]
 }

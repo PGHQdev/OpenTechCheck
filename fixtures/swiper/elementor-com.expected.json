@@ -7,6 +7,8 @@
     "cloudflare",
     "google-tag-manager",
     "jsdelivr",
-    "unpkg"
+    "unpkg",
+    "open-graph",
+    "priority-hints"
   ]
 }

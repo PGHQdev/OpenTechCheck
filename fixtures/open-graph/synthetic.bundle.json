@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-open-graph",
+  "html": "<!doctype html><html><head><meta property=\"og:title\" content=\"Example\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:image\" content=\"https://example.com/og.png\"></head><body></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {
+    "og:title": ["Example"],
+    "og:type": ["website"],
+    "og:image": ["https://example.com/og.png"]
+  }
+}

@@ -3,6 +3,7 @@
     "nuxt",
     "vue",
     "tailwindcss",
-    "vercel"
+    "vercel",
+    "open-graph"
   ]
 }

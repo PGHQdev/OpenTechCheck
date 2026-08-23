@@ -6,6 +6,8 @@
     "envoy",
     "express",
     "mui",
-    "react"
+    "react",
+    "open-graph",
+    "priority-hints"
   ]
 }

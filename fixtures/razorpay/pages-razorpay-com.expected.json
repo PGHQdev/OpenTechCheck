@@ -2,6 +2,8 @@
   "detects": [
     "cloudfront",
     "razorpay",
-    "google-fonts"
+    "google-fonts",
+    "http-3",
+    "open-graph"
   ]
 }

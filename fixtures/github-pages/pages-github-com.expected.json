@@ -3,6 +3,7 @@
     "github-pages",
     "fastly",
     "jquery",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

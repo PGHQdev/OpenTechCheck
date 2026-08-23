@@ -3,6 +3,9 @@
     "vercel",
     "nextjs",
     "react",
-    "tailwindcss"
+    "tailwindcss",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

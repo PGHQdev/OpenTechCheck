@@ -3,6 +3,7 @@
     "solid",
     "cloudflare",
     "tailwindcss",
-    "netlify"
+    "netlify",
+    "http-3"
   ]
 }

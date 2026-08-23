@@ -1,6 +1,8 @@
 {
   "detects": [
     "cloudflare",
-    "square"
+    "square",
+    "open-graph",
+    "pwa"
   ]
 }

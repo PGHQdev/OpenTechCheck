@@ -4,6 +4,9 @@
     "phoenix",
     "google-analytics",
     "google-tag-manager",
-    "tailwindcss"
+    "tailwindcss",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

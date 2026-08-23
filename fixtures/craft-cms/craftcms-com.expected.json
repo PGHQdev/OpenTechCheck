@@ -2,6 +2,9 @@
   "detects": [
     "cloudflare",
     "craft-cms",
-    "google-analytics"
+    "google-analytics",
+    "http-3",
+    "open-graph",
+    "pwa"
   ]
 }

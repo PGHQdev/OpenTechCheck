@@ -3,6 +3,7 @@
     "alpinejs",
     "plausible",
     "tailwindcss",
-    "bunny"
+    "bunny",
+    "open-graph"
   ]
 }

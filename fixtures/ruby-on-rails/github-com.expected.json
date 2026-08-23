@@ -1,5 +1,8 @@
 {
   "detects": [
-    "ruby-on-rails"
+    "ruby-on-rails",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

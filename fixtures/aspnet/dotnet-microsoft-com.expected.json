@@ -1,5 +1,7 @@
 {
   "detects": [
-    "aspnet"
+    "aspnet",
+    "open-graph",
+    "priority-hints"
   ]
 }

@@ -1,6 +1,7 @@
 {
   "detects": [
     "cloudfront",
-    "react"
+    "react",
+    "open-graph"
   ]
 }

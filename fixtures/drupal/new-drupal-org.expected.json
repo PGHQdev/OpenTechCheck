@@ -4,6 +4,7 @@
     "drupal",
     "google-tag-manager",
     "fastly",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

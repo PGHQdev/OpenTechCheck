@@ -1,0 +1,8 @@
+{
+  "url": "https://example.com/synthetic-priority-hints",
+  "html": "<!doctype html><html><head><link rel=\"preload\" as=\"image\" href=\"/hero.avif\" fetchpriority=\"high\"></head><body><img src=\"/hero.avif\" fetchpriority=\"high\"></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {}
+}

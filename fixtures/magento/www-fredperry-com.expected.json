@@ -2,6 +2,7 @@
   "detects": [
     "cloudflare",
     "magento",
-    "google-tag-manager"
+    "google-tag-manager",
+    "open-graph"
   ]
 }

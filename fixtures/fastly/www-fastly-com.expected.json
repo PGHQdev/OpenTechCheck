@@ -3,6 +3,8 @@
     "fastly",
     "gatsby",
     "react",
-    "radix-ui"
+    "radix-ui",
+    "http-3",
+    "open-graph"
   ]
 }

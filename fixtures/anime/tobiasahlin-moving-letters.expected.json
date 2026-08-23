@@ -4,6 +4,7 @@
     "fastly",
     "github-pages",
     "mailchimp",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

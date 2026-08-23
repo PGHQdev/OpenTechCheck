@@ -7,6 +7,9 @@
     "jsdelivr",
     "microsoft-clarity",
     "unpkg",
-    "varnish"
+    "varnish",
+    "http-3",
+    "open-graph",
+    "priority-hints"
   ]
 }

@@ -4,6 +4,8 @@
     "nextjs",
     "react",
     "tailwindcss",
-    "vercel"
+    "vercel",
+    "open-graph",
+    "pwa"
   ]
 }

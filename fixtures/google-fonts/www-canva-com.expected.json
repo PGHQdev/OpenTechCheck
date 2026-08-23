@@ -2,6 +2,7 @@
   "detects": [
     "google-fonts",
     "fastly",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

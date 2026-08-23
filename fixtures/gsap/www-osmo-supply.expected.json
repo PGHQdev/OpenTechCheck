@@ -5,6 +5,9 @@
     "cloudflare",
     "plausible",
     "webflow",
-    "jsdelivr"
+    "jsdelivr",
+    "http-3",
+    "open-graph",
+    "priority-hints"
   ]
 }

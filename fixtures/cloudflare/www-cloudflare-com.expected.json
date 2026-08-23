@@ -5,6 +5,9 @@
     "tailwindcss",
     "google-tag-manager",
     "google-analytics",
-    "lucide"
+    "lucide",
+    "http-3",
+    "open-graph",
+    "priority-hints"
   ]
 }

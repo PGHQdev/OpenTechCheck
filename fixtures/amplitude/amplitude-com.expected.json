@@ -7,6 +7,9 @@
     "sanity",
     "tailwindcss",
     "google-tag-manager",
-    "vercel"
+    "vercel",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

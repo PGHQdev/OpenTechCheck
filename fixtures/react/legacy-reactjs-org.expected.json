@@ -3,6 +3,8 @@
     "gatsby",
     "react",
     "unpkg",
-    "vercel"
+    "vercel",
+    "open-graph",
+    "pwa"
   ]
 }

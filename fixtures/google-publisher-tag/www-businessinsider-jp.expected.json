@@ -6,6 +6,8 @@
     "google-tag-manager",
     "nextjs",
     "react",
-    "swiper"
+    "swiper",
+    "open-graph",
+    "youtube"
   ]
 }

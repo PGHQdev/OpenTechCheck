@@ -6,6 +6,9 @@
     "react",
     "tailwindcss",
     "radix-ui",
-    "turbopack"
+    "turbopack",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

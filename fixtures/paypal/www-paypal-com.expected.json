@@ -4,6 +4,8 @@
     "google-tag-manager",
     "paypal",
     "tailwindcss",
-    "varnish"
+    "varnish",
+    "open-graph",
+    "priority-hints"
   ]
 }

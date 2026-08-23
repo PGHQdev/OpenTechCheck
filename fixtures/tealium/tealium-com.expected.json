@@ -5,6 +5,8 @@
     "tealium",
     "wordpress",
     "cloudfront",
-    "google-fonts"
+    "google-fonts",
+    "open-graph",
+    "pwa"
   ]
 }

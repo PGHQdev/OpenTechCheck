@@ -4,6 +4,9 @@
     "jquery",
     "matomo",
     "wordpress",
-    "cloudfront"
+    "cloudfront",
+    "http-3",
+    "open-graph",
+    "priority-hints"
   ]
 }

@@ -2,6 +2,8 @@
   "detects": [
     "google-tag-manager",
     "nginx",
-    "wordpress"
+    "wordpress",
+    "open-graph",
+    "priority-hints"
   ]
 }

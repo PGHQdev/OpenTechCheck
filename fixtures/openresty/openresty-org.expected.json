@@ -2,6 +2,7 @@
   "detects": [
     "openresty",
     "swiper",
-    "jquery"
+    "jquery",
+    "http-3"
   ]
 }

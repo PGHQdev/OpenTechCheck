@@ -5,6 +5,9 @@
     "google-tag-manager",
     "hubspot",
     "netlify",
-    "onetrust"
+    "onetrust",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

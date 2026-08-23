@@ -3,6 +3,7 @@
     "chartjs",
     "cloudflare",
     "fastly",
-    "varnish"
+    "varnish",
+    "http-3"
   ]
 }

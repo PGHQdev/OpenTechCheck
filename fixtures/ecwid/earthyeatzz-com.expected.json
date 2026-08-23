@@ -4,6 +4,9 @@
     "mailchimp",
     "nginx",
     "stripe",
-    "tailwindcss"
+    "tailwindcss",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

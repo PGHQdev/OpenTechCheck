@@ -2,6 +2,7 @@
   "detects": [
     "apache",
     "typo3",
-    "google-tag-manager"
+    "google-tag-manager",
+    "pwa"
   ]
 }

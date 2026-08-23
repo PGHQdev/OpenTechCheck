@@ -8,6 +8,7 @@
     "jsdelivr",
     "modernizr",
     "slick",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

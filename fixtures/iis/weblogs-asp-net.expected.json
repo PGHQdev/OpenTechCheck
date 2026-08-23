@@ -2,6 +2,7 @@
   "detects": [
     "iis",
     "aspnet",
-    "jquery"
+    "jquery",
+    "open-graph"
   ]
 }

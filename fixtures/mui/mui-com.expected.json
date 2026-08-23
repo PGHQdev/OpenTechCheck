@@ -4,6 +4,8 @@
     "react",
     "nextjs",
     "google-analytics",
-    "netlify"
+    "netlify",
+    "open-graph",
+    "pwa"
   ]
 }

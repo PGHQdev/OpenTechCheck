@@ -3,6 +3,8 @@
     "cloudflare",
     "contentful",
     "heap",
-    "hotjar"
+    "hotjar",
+    "http-3",
+    "open-graph"
   ]
 }

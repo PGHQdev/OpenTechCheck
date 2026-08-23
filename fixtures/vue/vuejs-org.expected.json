@@ -2,6 +2,7 @@
   "detects": [
     "vue",
     "fathom",
-    "netlify"
+    "netlify",
+    "open-graph"
   ]
 }

@@ -3,6 +3,8 @@
     "mixpanel",
     "nginx",
     "google-tag-manager",
-    "sentry"
+    "sentry",
+    "open-graph",
+    "priority-hints"
   ]
 }

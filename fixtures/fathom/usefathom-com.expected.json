@@ -2,6 +2,7 @@
   "detects": [
     "bootstrap",
     "fathom",
-    "vercel"
+    "vercel",
+    "open-graph"
   ]
 }

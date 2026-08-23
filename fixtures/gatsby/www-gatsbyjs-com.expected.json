@@ -4,6 +4,8 @@
     "gatsby",
     "react",
     "google-tag-manager",
-    "netlify"
+    "netlify",
+    "open-graph",
+    "pwa"
   ]
 }

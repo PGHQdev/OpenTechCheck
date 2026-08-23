@@ -7,6 +7,7 @@
     "font-awesome",
     "fastly",
     "github-pages",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

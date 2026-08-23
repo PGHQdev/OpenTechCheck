@@ -3,6 +3,9 @@
     "cloudflare",
     "crisp",
     "nuxt",
-    "vue"
+    "vue",
+    "http-3",
+    "open-graph",
+    "priority-hints"
   ]
 }

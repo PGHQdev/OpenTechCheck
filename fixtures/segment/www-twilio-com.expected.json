@@ -4,6 +4,8 @@
     "amazon-s3",
     "cloudfront",
     "google-tag-manager",
-    "segment"
+    "segment",
+    "open-graph",
+    "pwa"
   ]
 }

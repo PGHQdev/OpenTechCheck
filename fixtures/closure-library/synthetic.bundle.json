@@ -1,0 +1,12 @@
+{
+  "url": "https://example.com/synthetic-closure-library",
+  "html": "<!doctype html><html><head><script src=\"/js/closure/goog/base.js\"></script></head><body></body></html>",
+  "scripts": ["/js/closure/goog/base.js"],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "goog.basePath": "/js/closure/goog/",
+    "goog.LOCALE": "en"
+  }
+}

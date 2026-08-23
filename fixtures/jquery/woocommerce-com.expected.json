@@ -5,6 +5,8 @@
     "woocommerce",
     "wordpress",
     "nginx",
-    "google-tag-manager"
+    "google-tag-manager",
+    "open-graph",
+    "priority-hints"
   ]
 }

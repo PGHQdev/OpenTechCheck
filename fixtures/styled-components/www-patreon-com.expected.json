@@ -3,6 +3,8 @@
     "styled-components",
     "cloudflare",
     "nextjs",
-    "react"
+    "react",
+    "open-graph",
+    "pwa"
   ]
 }

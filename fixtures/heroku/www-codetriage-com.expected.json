@@ -2,6 +2,7 @@
   "detects": [
     "heroku",
     "cloudflare",
-    "ruby-on-rails"
+    "ruby-on-rails",
+    "http-3"
   ]
 }

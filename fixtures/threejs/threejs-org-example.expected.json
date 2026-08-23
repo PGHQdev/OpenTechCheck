@@ -3,6 +3,7 @@
     "threejs",
     "fastly",
     "github-pages",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

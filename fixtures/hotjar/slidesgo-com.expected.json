@@ -6,6 +6,10 @@
     "posthog",
     "swiper",
     "tailwindcss",
-    "google-tag-manager"
+    "google-tag-manager",
+    "http-3",
+    "open-graph",
+    "priority-hints",
+    "pwa"
   ]
 }

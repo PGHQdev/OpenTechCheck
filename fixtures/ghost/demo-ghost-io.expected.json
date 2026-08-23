@@ -4,6 +4,8 @@
     "openresty",
     "fastly",
     "jsdelivr",
-    "varnish"
+    "varnish",
+    "open-graph",
+    "priority-hints"
   ]
 }

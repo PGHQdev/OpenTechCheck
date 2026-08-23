@@ -8,6 +8,9 @@
     "microsoft-clarity",
     "paypal",
     "shopify",
-    "slick"
+    "slick",
+    "http-3",
+    "open-graph",
+    "priority-hints"
   ]
 }

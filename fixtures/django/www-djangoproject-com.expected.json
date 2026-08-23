@@ -4,6 +4,7 @@
     "fastly",
     "nginx",
     "stripe",
-    "varnish"
+    "varnish",
+    "open-graph"
   ]
 }

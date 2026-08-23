@@ -5,6 +5,9 @@
     "google-analytics",
     "google-tag-manager",
     "jquery",
-    "stripe"
+    "stripe",
+    "http-3",
+    "open-graph",
+    "pwa"
   ]
 }
