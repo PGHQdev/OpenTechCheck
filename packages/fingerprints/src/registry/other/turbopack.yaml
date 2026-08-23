@@ -1,0 +1,11 @@
+name: Turbopack
+slug: turbopack
+category: other
+website: https://turbo.build/pack
+detect:
+  scripts:
+    - pattern: '/_next/static/chunks/turbopack-[a-z0-9]+\.js'
+  js:
+    TURBOPACK:
+      - pattern: ''
+        confidence: 80
