@@ -4,6 +4,7 @@
     "nextjs",
     "vercel",
     "react",
-    "tailwindcss"
+    "tailwindcss",
+    "radix-ui"
   ]
 }

@@ -2,6 +2,7 @@
   "detects": [
     "fastly",
     "gatsby",
-    "react"
+    "react",
+    "radix-ui"
   ]
 }
