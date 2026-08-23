@@ -1,0 +1,11 @@
+{
+  "url": "https://example.com/synthetic-nextjs",
+  "html": "<!doctype html><html><head></head><body></body></html>",
+  "scripts": [],
+  "headers": {},
+  "cookies": {},
+  "meta": {},
+  "js": {
+    "next.version": "14.2.5"
+  }
+}

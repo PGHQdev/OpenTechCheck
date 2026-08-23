@@ -14,3 +14,8 @@ detect:
     x-powered-by:
       - pattern: 'Next\.js(?:\s([\d.]+))?'
         version: 1
+  js:
+    next.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 95
