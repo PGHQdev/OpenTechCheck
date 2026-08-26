@@ -46,7 +46,7 @@ USEFUL OUTPUT
 Copy the stack as plain text or export the full result — detections,
 versions, confidence, evidence — as JSON.
 
-Source: https://github.com/opentechcheck/opentechcheck
+Source: https://github.com/PGHQdev/OpenTechCheck
 Website: https://opentechcheck.com
 
 **Privacy policy URL:** https://opentechcheck.com/privacy

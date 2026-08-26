@@ -41,7 +41,7 @@
       </p>
       <div class="ctas">
         <a class="btn primary" href="https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab" target="_blank" rel="noreferrer">Add to Chrome</a>
-        <a class="btn secondary" href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">Read the source ↗</a>
+        <a class="btn secondary" href="https://github.com/PGHQdev/OpenTechCheck" target="_blank" rel="noreferrer">Read the source ↗</a>
       </div>
       <div class="mono trust">NO ACCOUNT · NO TRACKING · NO CLOUD</div>
     </div>
@@ -116,7 +116,7 @@
       {#each wall as slug}
         <span class="wtile" title={slug}><img src={`/icons/${slug}.png`} alt={slug} loading="lazy" /></span>
       {/each}
-      <a class="wtile more mono" href="https://github.com/opentechcheck/opentechcheck/tree/main/packages/fingerprints/src/registry" target="_blank" rel="noreferrer">+112</a>
+      <a class="wtile more mono" href="https://github.com/PGHQdev/OpenTechCheck/tree/main/packages/fingerprints/src/registry" target="_blank" rel="noreferrer">+112</a>
     </div>
   </div>
 </section>

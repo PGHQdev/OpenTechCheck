@@ -41,8 +41,8 @@
   <h2>Changes and contact</h2>
   <p>
     If this policy changes, the change lands as a public commit in the
-    <a href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">open-source repository</a>
+    <a href="https://github.com/PGHQdev/OpenTechCheck" target="_blank" rel="noreferrer">open-source repository</a>
     before it appears here. Questions or concerns:
-    <a href="https://github.com/opentechcheck/opentechcheck/issues" target="_blank" rel="noreferrer">open an issue</a>.
+    <a href="https://github.com/PGHQdev/OpenTechCheck/issues" target="_blank" rel="noreferrer">open an issue</a>.
   </p>
 </div>

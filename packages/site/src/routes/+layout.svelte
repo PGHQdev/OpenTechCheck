@@ -16,8 +16,8 @@
       <span class="brand">OpenTechCheck</span>
     </a>
     <div class="links">
-      <a href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="https://github.com/opentechcheck/opentechcheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute</a>
+      <a href="https://github.com/PGHQdev/OpenTechCheck" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/PGHQdev/OpenTechCheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute</a>
       <a class="cta" href="https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab" target="_blank" rel="noreferrer">Get the extension</a>
     </div>
   </div>
@@ -40,7 +40,7 @@
     <div class="fright mono small">
       <a href="/privacy">Privacy</a>
       <a href="/terms">Terms</a>
-      <a href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/PGHQdev/OpenTechCheck" target="_blank" rel="noreferrer">GitHub</a>
       <span>Apache-2.0</span>
     </div>
   </div>

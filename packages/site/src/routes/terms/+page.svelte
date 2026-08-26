@@ -12,7 +12,7 @@
   <p>
     OpenTechCheck — the browser extension, detection engine, and fingerprint
     registry — is open-source software licensed under the
-    <a href="https://github.com/opentechcheck/opentechcheck/blob/main/LICENSE" target="_blank" rel="noreferrer">Apache License 2.0</a>.
+    <a href="https://github.com/PGHQdev/OpenTechCheck/blob/main/LICENSE" target="_blank" rel="noreferrer">Apache License 2.0</a>.
     Your use of the software is governed by that license.
   </p>
 
@@ -43,7 +43,7 @@
   <h2>Changes and contact</h2>
   <p>
     Changes to these terms are versioned in the
-    <a href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">public repository</a>.
-    Questions: <a href="https://github.com/opentechcheck/opentechcheck/issues" target="_blank" rel="noreferrer">open an issue</a>.
+    <a href="https://github.com/PGHQdev/OpenTechCheck" target="_blank" rel="noreferrer">public repository</a>.
+    Questions: <a href="https://github.com/PGHQdev/OpenTechCheck/issues" target="_blank" rel="noreferrer">open an issue</a>.
   </p>
 </div>
