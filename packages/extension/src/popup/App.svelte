@@ -90,7 +90,7 @@
       <span class="glyph">◎</span>
       <h2>No technologies detected.</h2>
       <p>This page may use technologies outside the current fingerprint registry.</p>
-      <a href="https://github.com/opentechcheck/opentechcheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute a fingerprint ↗</a>
+      <a href="https://github.com/PGHQdev/OpenTechCheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute a fingerprint ↗</a>
     </div>
   {:else}
     <div class="results">
