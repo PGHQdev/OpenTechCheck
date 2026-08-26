@@ -5,6 +5,8 @@
 Detects the technologies behind a website — frameworks, CMS, analytics, CDN, and more —
 with confidence scores and the evidence for every detection.
 
+**[Install the Chrome extension](https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab)** · [opentechcheck.com](https://opentechcheck.com)
+
 ## Packages
 
 | Package | Purpose |
@@ -37,6 +39,8 @@ bun run compile   # validate + build the fingerprint registry
 ## Browser extension
 
 Local-only technology detection for the current page (Chrome ≥ 121, Firefox ≥ 128).
+
+Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab), or build from source:
 
     bun run compile          # refresh the fingerprint registry
     cd packages/extension

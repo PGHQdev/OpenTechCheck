@@ -18,7 +18,7 @@
     <div class="links">
       <a href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">GitHub</a>
       <a href="https://github.com/opentechcheck/opentechcheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute</a>
-      <a class="cta" href="https://github.com/opentechcheck/opentechcheck#browser-extension">Get the extension</a>
+      <a class="cta" href="https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab" target="_blank" rel="noreferrer">Get the extension</a>
     </div>
   </div>
 </nav>
