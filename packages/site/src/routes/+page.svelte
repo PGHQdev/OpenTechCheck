@@ -40,7 +40,7 @@
         computed entirely in your browser.
       </p>
       <div class="ctas">
-        <a class="btn primary" href="https://github.com/opentechcheck/opentechcheck#browser-extension">Add to your browser</a>
+        <a class="btn primary" href="https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab" target="_blank" rel="noreferrer">Add to Chrome</a>
         <a class="btn secondary" href="https://github.com/opentechcheck/opentechcheck" target="_blank" rel="noreferrer">Read the source ↗</a>
       </div>
       <div class="mono trust">NO ACCOUNT · NO TRACKING · NO CLOUD</div>
@@ -147,7 +147,7 @@
 <section class="final">
   <div class="wrap fin">
     <h2>What is <em>your</em> site made of?</h2>
-    <a class="btn primary" href="https://github.com/opentechcheck/opentechcheck#browser-extension">Add to your browser</a>
+    <a class="btn primary" href="https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab" target="_blank" rel="noreferrer">Add to Chrome</a>
   </div>
 </section>
 
