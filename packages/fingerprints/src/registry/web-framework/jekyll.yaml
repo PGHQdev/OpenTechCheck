@@ -1,0 +1,16 @@
+name: Jekyll
+slug: jekyll
+category: web-framework
+website: https://jekyllrb.com
+implies: [ruby]
+detect:
+  meta:
+    generator:
+      - pattern: '^Jekyll(?:\sv?([\d.]+))?'
+        version: 1
+  scripts:
+    - pattern: '/jekyll-search\.js'
+      confidence: 80
+  html:
+    - pattern: 'SimpleJekyllSearch'
+      confidence: 70

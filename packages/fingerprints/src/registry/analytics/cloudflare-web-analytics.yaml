@@ -1,0 +1,10 @@
+name: Cloudflare Web Analytics
+slug: cloudflare-web-analytics
+category: analytics
+website: https://www.cloudflare.com/web-analytics/
+detect:
+  scripts:
+    - pattern: 'static\.cloudflareinsights\.com/beacon(?:\.min)?\.js'
+  html:
+    - pattern: 'data-cf-beacon'
+      confidence: 90
