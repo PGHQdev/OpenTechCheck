@@ -52,6 +52,7 @@ jobs:
             -d refresh_token="$REFRESH_TOKEN" \
             -d grant_type=refresh_token | jq -r .access_token)
           test -n "$TOKEN" && test "$TOKEN" != "null"
+          curl -s "https://www.googleapis.com/oauth2/v3/tokeninfo?access_token=$TOKEN" | jq '{scope, expires_in}'
 
           UPLOAD=$(curl -s -X PUT \
             -H "Authorization: Bearer $TOKEN" \
