@@ -53,7 +53,7 @@ jobs:
             -d grant_type=refresh_token | jq -r .access_token)
           test -n "$TOKEN" && test "$TOKEN" != "null"
 
-          UPLOAD=$(curl -sf -X PUT \
+          UPLOAD=$(curl -s -X PUT \
             -H "Authorization: Bearer $TOKEN" \
             -H "x-goog-api-version: 2" \
             -T packages/extension/opentechcheck-chrome.zip \
@@ -73,7 +73,7 @@ jobs:
             -d client_secret="$CLIENT_SECRET" \
             -d refresh_token="$REFRESH_TOKEN" \
             -d grant_type=refresh_token | jq -r .access_token)
-          RESULT=$(curl -sf -X POST \
+          RESULT=$(curl -s -X POST \
             -H "Authorization: Bearer $TOKEN" \
             -H "x-goog-api-version: 2" \
             -H "Content-Length: 0" \
