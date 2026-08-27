@@ -1,10 +1,11 @@
 {
   "detects": [
-    "styled-components",
     "cloudflare",
+    "cloudflare-web-analytics",
     "nextjs",
-    "react",
     "open-graph",
-    "pwa"
+    "pwa",
+    "react",
+    "styled-components"
   ]
 }

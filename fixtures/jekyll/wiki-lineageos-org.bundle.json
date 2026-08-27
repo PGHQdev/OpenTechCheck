@@ -1,0 +1,72 @@
+{
+  "url": "https://wiki.lineageos.org/devices/sunfish/",
+  "html": "<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>\n    <meta http-equiv='X-UA-Compatible' content='IE=edge'>\n    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>\n\n    <title>Info about sunfish | LineageOS Wiki</title>\n    <link href=\"/assets/css/material-kit.css?v=1787835658\" rel=\"stylesheet\">\n    <link href=\"https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons\" rel=\"stylesheet\">\n\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js\" integrity=\"sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=\" crossorigin=\"anonymous\"></script>\n    <script src=\"/assets/js/main.min.js?v=1787835658\"></script>\n    <script src=\"/assets/js/theme.js\" type=\"text/javascript\"></script>\n    <script src=\"/assets/js/buttons.js\" type=\"text/javascript\"></script>\n    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js\" integrity=\"sha256-WofcoLT8gToeaSmVRe28qpnlFxdBJH1n4K6Bk3YowvU=\" crossorigin=\"anonymous\"></script>\n\n    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/images/favicons/apple-touch-icon.png\">\n    <link rel=\"icon\" type=\"image/png\" href=\"/images/favicons/favicon-32x32.png\" sizes=\"32x32\">\n    <link rel=\"icon\" type=\"image/png\" href=\"/images/favicons/favicon-16x16.png\" sizes=\"16x16\">\n    <link rel=\"manifest\" href=\"/images/favicons/manifest.json\">\n    <link rel=\"mask-icon\" href=\"/images/favicons/safari-pinned-tab.svg\" color=\"#167c80\">\n    <link rel=\"shortcut icon\" href=\"/images/favicons/favicon.ico\">\n    <meta name=\"msapplication-config\" content=\"/images/favicons/browserconfig.xml\">\n    <meta name=\"theme-color\" content=\"#ffffff\">\n  </head>\n  <body>\n\n    <nav class=\"navbar fixed-top navbar-expand-lg mb-0 rounded-0\">\n  <div class=\"container\">\n    <div class=\"navbar-translate\">\n      <a class=\"navbar-brand font-weight-bold\" href=\"/\">LineageOS Wiki</a>\n      <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"navbar-toggler-icon\"></span>\n        <span class=\"navbar-toggler-icon\"></span>\n        <span class=\"navbar-toggler-icon\"></span>\n      </button>\n      </div>\n\n      <div class=\"collapse navbar-collapse\">\n        <ul class=\"navbar-nav\">\n          \n          <li class=\"nav-item active\">\n            <a href=\"/devices/\" class=\"nav-link\" aria-current=\"page\">Devices</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"/contributing.html\" class=\"nav-link\">Contribute</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"/faq.html\" class=\"nav-link\">FAQ</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"/glossary/\" class=\"nav-link\">Glossary</a>\n          </li>\n          <li class=\"nav-item\">\n            <a href=\"https://lineageos.org\" class=\"nav-link\">\n              lineageos.org\n              <i class=\"material-icons\">open_in_new</i>\n            </a>\n          </li>\n        </ul>\n\n        <form class=\"form-inline\" autocomplete=\"off\">\n          <div id=\"search-container\" class=\"form-group no-border\">\n            <i class=\"material-icons\">search</i>\n            <input id=\"search-input\" type=\"text\" class=\"form-control\" placeholder=\"Search LineageOS Wiki\">\n            <ul id=\"results-container\"></ul>\n          </div>\n\n          <script src=\"/assets/js/search-ext.js\" type=\"text/javascript\"></script>\n          <script src=\"/assets/js/jekyll-search.js\" type=\"text/javascript\"></script>\n          <script type=\"text/javascript\">\n              window.simpleJekyllSearch = new SimpleJekyllSearch({\n                  searchInput: document.getElementById('search-input'),\n                  resultsContainer: document.getElementById('results-container'),\n                  json: '/search.json',\n                  searchResultTemplate: '<li><a href=\"{url}\">{title}</a></li>',\n                  noResultsText: '<li><a href=\"#\">No results found.</a></li>',\n                  limit: 10,\n              })\n          </script>\n        </form>\n\n        <div class=\"navbar-appearance-row\">\n          <button id=\"theme-toggle\" class=\"btn btn-sm theme-toggle-button p-2\" type=\"button\" aria-label=\"Toggle theme\" title=\"Toggle theme\">\n            <p class=\"navbar-appearance-label\">Use light theme</p>\n            <i class=\"material-icons theme-toggle-icon\" aria-hidden=\"true\">light_mode</i>\n          </button>\n        </div>\n      </div>\n    </div>\n  </nav>\n\n\n    <div class=\"main-content\">\n\n      \n\n<div class=\"container page\">\n    <div class=\"row\">\n      <div class=\"col-lg-8\">\n\n        <div class=\"post-header\">\n            <a href=\"/devices/\" class=\"back-link\"><span class=\"material-icons\">keyboard_arrow_left</span> Devices</a>\n\n            <h1 class=\"post-title-main\">Google Pixel 4a</h1>\n            <h3 class=\"codename\">codename: sunfish</span>\n        </div>\n\n        <div class=\"post-content\">\n\n          \n<h2 id=\"downloads\">Downloads</h2>\n<p><a href=\"https://download.lineageos.org/devices/sunfish\">Get the builds here</a></p>\n\n<h2 id=\"guides\">Guides</h2>\n\n<ul>\n  <li><a href=\"/devices/sunfish/install\">Installation</a></li>\n  <li><a href=\"/devices/sunfish/build\">Build for yourself</a></li>\n  <li><a href=\"/devices/sunfish/update\">Update to a newer build of the same LineageOS version</a></li>\n  <li><a href=\"/devices/sunfish/upgrade\">Upgrade to a higher version of LineageOS (e.g. lineage-22.1 -&gt; lineage-23.2)</a></li>\n</ul>\n\n<h2 id=\"special-boot-modes\">Special boot modes</h2>\n\n<ul>\n  <li><strong>Recovery</strong>: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>. Then use the menu to select <em>Recovery Mode</em>.</li>\n  <li><strong>Bootloader/Fastboot/Download</strong>: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.</li>\n</ul>\n\n<h2 id=\"known-quirks\">Known quirks</h2>\n\n<ul>\n  <li><a href=\"/quirks/snet/\">Device integrity</a></li>\n</ul>\n\n<h2 id=\"find-help-online\">Find help online</h2>\n\n<p>You can find assistance with LineageOS on <a href=\"https://reddit.com/r/LineageOS\">our subreddit</a>, on <a href=\"https://discord.gg/gD6DMtf\">our Discord server</a>, or in <a href=\"https://web.libera.chat/gamja/?channel=#lineageos\">#LineageOS on Libera.Chat</a>.</p>\n\n<h2 id=\"report-a-bug\">Report a bug</h2>\n\n<p>If you’d like to report a bug, follow the instructions <a href=\"/how-to/bugreport\">here</a>.</p>\n\n\n\n        </div>\n\n      </div>\n      <div class=\"col-lg-4\">\n\n        \n<table class=\"deviceinfo table\">\n  <tbody>\n\n    <tr class=\"image\">\n      <td colspan=\"2\" style=\"border-top: 0px;\">\n      <img src=\"/images/devices/sunfish.png\" />\n      <br/><br/>\n<b>Google Pixel 4a (sunfish)</b>\n      </td>\n    </tr>\n\n    <tr>\n      <th scope=\"row\">Released</th>\n      <td>\n          August 2020\n      </td>\n    </tr>\n\n    <tr>\n    </tr>\n\n    <tr>\n        <th scope=\"row\" colspan=\"2\">Specifications</th>\n    </tr>\n    <tr>\n        <th scope=\"row\">SoC</th>\n        <td>Qualcomm SM7150-AB Snapdragon 730G</td>\n    </tr>\n    <tr>\n        <th scope=\"row\">RAM</th>\n        <td>6 GB</td>\n    </tr>\n    <tr>\n        <th scope=\"row\">CPU</th>\n        <td>\n                    Octa-core\n                 Kryo 470<br>2 x 2.2 GHz + 6 x 1.8 GHz\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Architecture</th>\n        <td>arm64</td>\n    </tr>\n    <tr>\n        <th scope=\"row\">GPU</th>\n        <td>Qualcomm Adreno 618</td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Network</th>\n        <td>\n            <ul>\n                    <li>2G GSM</li>\n                    <li>3G UMTS</li>\n                    <li>3G CDMA2000</li>\n                    <li>4G LTE</li>\n            </ul>\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Storage</th>\n        <td>128 GB</td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Screen</th>\n        <td>\n5.81 in (147.57 mm)<br/>\n2340x1080 (443 PPI)<br/>\nAMOLED (max. 60 Hz)\n\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Bluetooth</th>\n        <td>\n            5.0 with A2DP + aptX HD\n            </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Wi-Fi</th>\n        <td>802.11 a/b/g/n/ac</td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Peripherals</th>\n        <td><ul>\n    <li>3.5mm jack</li>\n    <li>Accelerometer</li>\n    <li>Barometer</li>\n    <li>Compass</li>\n    <li>eSIM</li>\n    <li>Fingerprint reader</li>\n    <li>BeiDou</li>\n    <li>Galileo</li>\n    <li>GLONASS</li>\n    <li>GPS</li>\n    <li>Gyroscope</li>\n    <li>Light sensor</li>\n    <li>NFC</li>\n    <li>Proximity sensor</li>\n    <li>USB OTG</li>\n</ul>\n\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Cameras</th>\n        <td>2\n            <ul>\n                    <li>\n                        12.2 MP,\n                            LED flash\n                    </li>\n                    <li>\n                        8 MP,\n                            No flash\n                    </li>\n            </ul>\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Dimensions</th>\n        <td>\n144 mm (5.67 in) (h)<br/>\n69.4 mm (2.73 in) (w)<br/>\n8.2 mm (0.32 in) (d)\n\n        </td>\n    </tr>\n    \n    <tr>\n        <th scope=\"row\">Battery</th>\n        <td>\n                Non-removable&nbsp;Li-Po&nbsp;3140 mAh\n</td>\n    </tr>\n    <!-- lineage info -->\n    <tr>\n        <th scope=\"row\" colspan=\"2\">LineageOS info</th>\n    </tr>\n    <tr>\n        <th scope=\"row\">Maintainer</th>\n        <td>\n            <ul>\n                    <li>mikeioannina</li>\n            </ul>\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Current version</th>\n        <td>\n            <ul>\n                <li>23.2 (Android 16)</li>\n            </ul>\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Kernel version</th>\n        <td>\n            <ul>\n                <li>\n                    4.14\n                    (<a href=\"https://github.com/LineageOS/android_kernel_google_msm-4.14\">source code</a>)\n                </li>\n            </ul>\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Previously supported versions</th>\n        <td>\n            <ul>\n                    <li>18.1 (Android 11)</li>\n                    <li>19.1 (Android 12L)</li>\n                    <li>20 (Android 13)</li>\n                    <li>21 (Android 14)</li>\n                    <li>22.1 (Android 15)</li>\n                    <li>22.2 (Android 15)</li>\n                    <li>23.0 (Android 16)</li>\n            </ul>\n        </td>\n    </tr>\n    <tr>\n        <th scope=\"row\">Wiki metadata</th>\n        <td>\n            <ul>\n                <li><a href=\"https://github.com/LineageOS/lineage_wiki/blob/main/_data/devices/sunfish.yml\">sunfish.yml</a></li>\n            </ul>\n        </td>\n    </tr>\n  </tbody>\n</table>\n\n\n      </div>\n    </div>\n\n</div>\n\n\n    </div>\n\n    <footer class=\"footer mt-5 px-2 py-4 \">\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md text-center text-md-left\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 48 24\">\n          <path d=\"M40,12a4,4,0,0,0-3,1.33l-.23-.09A29.62,29.62,0,0,0,32,11.81h0a8,8,0,0,0-16,0l-.22,0a29.53,29.53,0,0,0-4.6,1.39l-.23.09a4,4,0,1,0,.93,1.78h0a27.62,27.62,0,0,1,4.29-1.29,8,8,0,0,0,15.57,0,27.55,27.55,0,0,1,4.29,1.28h0A4,4,0,1,0,40,12ZM8,18a2,2,0,1,1,2-2A2,2,0,0,1,8,18Zm16,0a6,6,0,1,1,6-6A6,6,0,0,1,24,18Zm16,0a2,2,0,1,1,2-2A2,2,0,0,1,40,18ZM27,12a3,3,0,1,1-3-3A3,3,0,0,1,27,12Z\"></path>\n        </svg>\n        <p class=\"text-muted my-0\"><b>&copy; 2016 - 2026 The LineageOS Project</b></p>\n      </div>\n      <div class=\"col-md\">\n        <p class=\"text-center text-md-right text-muted\">Licensed under <a href=\"https://creativecommons.org/licenses/by-sa/3.0/\">CC BY-SA 3.0</a>.<br />\n         Site last generated: Aug 27, 2026</p>\n      </div>\n    </div>\n  </div>\n</footer>\n\n\n    <script>anchors.add().remove('h1');</script>\n\n  </body>\n</html>\n",
+  "scripts": [
+    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js",
+    "/assets/js/main.min.js?v=1787835658",
+    "/assets/js/theme.js",
+    "/assets/js/buttons.js",
+    "https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js",
+    "/assets/js/search-ext.js",
+    "/assets/js/jekyll-search.js"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    ],
+    "msapplication-config": [
+      "/images/favicons/browserconfig.xml"
+    ],
+    "theme-color": [
+      "#ffffff"
+    ]
+  },
+  "headers": {
+    "access-control-allow-origin": [
+      "*"
+    ],
+    "cache-control": [
+      "public, max-age=0, must-revalidate"
+    ],
+    "cf-cache-status": [
+      "DYNAMIC"
+    ],
+    "cf-ray": [
+      "a31e7dce8de4e38c-NRT"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "br"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "date": [
+      "Thu, 27 Aug 2026 22:25:19 GMT"
+    ],
+    "nel": [
+      "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}"
+    ],
+    "referrer-policy": [
+      "strict-origin-when-cross-origin"
+    ],
+    "report-to": [
+      "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=UEMRVnuVXDuWAj8uPWMzD1Hm%2Br7D93yiV3uYk1pSwczrwIUVecpLxSdjAq8rS8REywoTNK%2BGBIaS575fi1%2F4Xu4kMI8sH2OwQnI2hmBe%2FVzj91LZgA%2FARFsPVuT22QgQQ0NjrqY%3D\"}]}"
+    ],
+    "server": [
+      "cloudflare"
+    ],
+    "transfer-encoding": [
+      "chunked"
+    ],
+    "vary": [
+      "accept-encoding"
+    ],
+    "x-content-type-options": [
+      "nosniff"
+    ]
+  },
+  "cookies": {}
+}

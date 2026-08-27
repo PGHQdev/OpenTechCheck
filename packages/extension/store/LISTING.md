@@ -9,8 +9,8 @@ Assets in this directory; the zip is rebuilt by `bun run build` + zipping
 **Name:** OpenTechCheck
 
 **Summary (132 max):**
-See what any website is built with — open-source, evidence-based technology
-detection that runs entirely in your browser.
+See what any website is built with. Free, open source, and 100% private —
+nothing you browse ever leaves your computer.
 
 **Category:** Developer Tools
 
@@ -18,35 +18,29 @@ detection that runs entirely in your browser.
 
 **Description:**
 
-OpenTechCheck shows you the technology stack behind any website: frameworks,
-CMS, e-commerce platforms, analytics, tag managers, CDNs, servers, and
-programming languages — grouped by category, with version numbers where
-detectable.
+Click the icon on any website to see what it's built with: the frameworks,
+shop systems, analytics tools, servers, and programming languages behind
+the page — with version numbers when they can be found.
 
-What makes it different:
+IT SHOWS ITS WORK
+Tap any result to see the exact clue that produced it, straight from the
+page itself. You never have to take the extension's word for anything.
 
-EVIDENCE FOR EVERY CLAIM
-Every detection shows the exact signal that produced it — a response header,
-a meta tag, a script URL, a JavaScript global. Expand any row to see the
-proof. Confidence grades (A–D) tell you how solid each detection is.
+IT'S COMPLETELY PRIVATE
+Everything happens on your computer. The extension sends nothing anywhere —
+no account, no tracking, no data collection of any kind.
 
-100% LOCAL
-Detection runs entirely inside your browser, against the page you already
-loaded. The extension makes zero network requests: fingerprints, icons, and
-fonts all ship in the package. No account, no tracking, no analytics, no
-cloud. Nothing about your browsing ever leaves your machine.
+IT'S FREE AND OPEN SOURCE
+Anyone can read the code, check how a detection works, or add support for
+a new technology. Fixes and additions ship to everyone.
 
-OPEN SOURCE
-The detection engine and all 152+ technology fingerprints are open source
-(Apache-2.0) and community-maintained. Every fingerprint is a readable YAML
-file, tested in CI against fixtures captured from real sites. Wrong or
-missing detection? One pull request fixes it for everyone.
+EASY TO SHARE
+Copy the list as plain text, or export everything as a JSON file.
 
-USEFUL OUTPUT
-Copy the stack as plain text or export the full result — detections,
-versions, confidence, evidence — as JSON.
+Detects WordPress, Shopify, React, Next.js, Vue, jQuery, Google Analytics,
+Cloudflare, Nginx, PHP, and 150+ more.
 
-Source: https://github.com/PGHQdev/OpenTechCheck
+Source code: https://github.com/PGHQdev/OpenTechCheck
 Website: https://opentechcheck.com
 
 **Privacy policy URL:** https://opentechcheck.com/privacy

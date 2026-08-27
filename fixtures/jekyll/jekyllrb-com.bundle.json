@@ -1,0 +1,128 @@
+{
+  "url": "https://jekyllrb.com/",
+  "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n  <link type=\"application/atom+xml\" rel=\"alternate\" href=\"https://jekyllrb.com/feed.xml\" title=\"Jekyll • Simple, blog-aware, static sites\" />\n  <link type=\"application/atom+xml\" rel=\"alternate\" href=\"/feed/release.xml\" title=\"Jekyll releases posts\" />\n  <link rel=\"alternate\" type=\"application/atom+xml\" title=\"Recent commits to Jekyll’s master branch\" href=\"https://github.com/jekyll/jekyll/commits/master.atom\">\n  <link rel=\"preload\" href=\"/fonts/lato-v14-latin-300.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\n  <link rel=\"preload\" href=\"/fonts/lato-v14-latin-700.woff2\" as=\"font\" type=\"font/woff2\" crossorigin />\n  <link rel=\"preload\" href=\"/css/screen.css\" as=\"style\">\n  <link rel=\"stylesheet\" href=\"/css/screen.css\">\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">\n  <!-- Begin Jekyll SEO tag v2.9.0 -->\n<title>Jekyll • Simple, blog-aware, static sites | Transform your plain text into static websites and blogs</title>\n<meta name=\"generator\" content=\"Jekyll v4.4.1\" />\n<meta property=\"og:title\" content=\"Jekyll • Simple, blog-aware, static sites\" />\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta name=\"description\" content=\"Transform your plain text into static websites and blogs\" />\n<meta name=\"twitter:description\" property=\"og:description\" content=\"Transform your plain text into static websites and blogs\" />\n<link rel=\"canonical\" href=\"https://jekyllrb.com/\" />\n<meta property=\"og:url\" content=\"https://jekyllrb.com/\" />\n<meta property=\"og:site_name\" content=\"Jekyll • Simple, blog-aware, static sites\" />\n<meta property=\"og:image\" content=\"https://jekyllrb.com/img/jekyll-og.png\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:image\" content=\"https://jekyllrb.com/img/jekyll-og.png\" />\n<meta name=\"twitter:title\" content=\"Jekyll • Simple, blog-aware, static sites\" />\n<meta name=\"twitter:site\" content=\"@jekyllrb\" />\n<meta name=\"google-site-verification\" content=\"onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY\" />\n<script type=\"application/ld+json\">\n{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"description\":\"Transform your plain text into static websites and blogs\",\"headline\":\"Jekyll • Simple, blog-aware, static sites\",\"image\":\"https://jekyllrb.com/img/jekyll-og.png\",\"name\":\"Jekyll • Simple, blog-aware, static sites\",\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://jekyllrb.com/img/logo-2x.png\"}},\"url\":\"https://jekyllrb.com/\"}</script>\n<!-- End Jekyll SEO tag -->\n\n  <!--[if lt IE 9]>\n  <script src=\"/js/html5shiv.min.js\"></script>\n  <script src=\"/js/respond.min.js\"></script>\n  <![endif]-->\n</head>\n<body class=\"wrap\"><header>\n  <div class=\"flexbox\">\n    <div class=\"center-on-mobiles\">\n      <h1>\n        <a href=\"/\" class=\"logo\">\n          <span class=\"sr-only\">Jekyll</span>\n          <img src=\"/img/logo-2x.png\" width=\"140\" height=\"65\" alt=\"Jekyll Logo\">\n        </a>\n      </h1>\n    </div>\n    <nav class=\"main-nav hide-on-mobiles\">\n      <ul>\n  <li class=\"current\"><a href=\"/\">Home</a></li>\n  <li><a href=\"/docs/\">Docs</a></li>\n  <li><a href=\"/resources/\">Resources</a></li>\n  <li><a href=\"/showcase/\">Showcase</a></li>\n  <li><a href=\"/news/\">News</a></li>\n  </ul>\n</nav>\n    <div class=\"search hide-on-mobiles\">\n      <input type=\"text\" id=\"docsearch-input\" placeholder=\"Search the docs…\" aria-label=\"Search\"></div>\n    <div class=\"meta hide-on-mobiles\">\n      <ul>\n        <li><a href=\"https://github.com/jekyll/jekyll/releases/tag/v4.4.1\">v4.4.1</a></li>\n        <li><a href=\"https://github.com/jekyll/jekyll\">GitHub</a></li>\n      </ul>\n    </div>\n  </div>\n  <nav class=\"mobile-nav show-on-mobiles\">\n    <ul>\n  <li class=\"current\" aria-current=\"page\" ><a href=\"/\">Home</a></li>\n    <li><a href=\"/docs/\">Docs</a></li>\n    <li><a href=\"/resources/\">Resources</a></li>\n    <li><a href=\"/news/\">News</a></li>\n    <li><a href=\"https://github.com/jekyll/jekyll\" target=\"_blank\" rel=\"noopener\">GitHub</a></li>\n</ul></nav>\n</header>\n<section class=\"intro\">\n  <div class=\"grid\">\n    <div class=\"unit whole center-on-mobiles\">\n      <p class=\"first\">Transform your plain text into static&nbsp;websites and&nbsp;blogs.</p>\n    </div>\n  </div>\n</section>\n<section class=\"features center-on-mobiles\">\n  <div class=\"grid\">\n    <div class=\"unit one-third\">\n      <h2>Simple</h2>\n      <p>\n        No more databases, comment moderation, or pesky updates to install—just <em>your content</em>.\n      </p>\n      <a href=\"/docs/usage/\">How Jekyll works &rarr;</a>\n    </div>\n    <div class=\"unit one-third\">\n      <h2>Static</h2>\n      <p><a href=\"https://daringfireball.net/projects/markdown/\">Markdown</a>, <a href=\"https://github.com/Shopify/liquid/wiki\">Liquid</a>, HTML <span class=\"amp\">&amp;</span> CSS go in. Static sites come out ready for deployment.</p>\n      <a href=\"/docs/templates/\">Jekyll template guide &rarr;</a>\n    </div>\n    <div class=\"unit one-third\">\n      <h2>Blog-aware</h2>\n      <p>\n        Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.\n      </p>\n      <a href=\"https://import.jekyllrb.com\">Migrate your blog &rarr;</a>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n</section>\n<section class=\"quickstart\">\n  <div class=\"grid\">\n    <div class=\"unit golden-small center-on-mobiles\">\n      <h3>Get up and running <em>in&nbsp;seconds</em>.</h3>\n    </div>\n    <div class=\"unit golden-large code\">\n      <p class=\"title\">Quick-start Instructions</p>\n      <div class=\"shell\">\n        <p class=\"line\">\n          <span class=\"path\">~</span>\n          <span class=\"prompt\">$</span>\n          <span class=\"command\">gem install bundler jekyll</span>\n        </p>\n        <p class=\"line\">\n          <span class=\"path\">~</span>\n          <span class=\"prompt\">$</span>\n          <span class=\"command\">jekyll new my-awesome-site</span>\n        </p>\n        <p class=\"line\">\n          <span class=\"path\">~</span>\n          <span class=\"prompt\">$</span>\n          <span class=\"command\">cd my-awesome-site</span>\n        </p>\n        <p class=\"line\">\n          <span class=\"path\">~/my-awesome-site</span>\n          <span class=\"prompt\">$</span>\n          <span class=\"command\">bundle exec jekyll serve</span>\n        </p>\n        <p class=\"line\">\n          <span class=\"output\"># => Now browse to http://localhost:4000</span>\n        </p>\n      </div>\n    </div>\n    <div class=\"clear\"></div>\n  </div>\n</section>\n<section class=\"free-hosting\">\n  <div class=\"grid\">\n    <div class=\"unit whole\">\n      <div class=\"grid pane\">\n        <div class=\"unit whole center-on-mobiles\">\n          <img src=\"/img/octojekyll.png\" width=\"300\" height=\"251\" alt=\"Free Jekyll hosting on GitHub Pages\">\n          <div class=\"pane-content\">\n            <h2 class=\"center-on-mobiles\"><strong>Free hosting</strong> with GitHub Pages</h2>\n            <p>Sick of dealing with hosting companies? <a href=\"https://pages.github.com/\">GitHub Pages</a> is <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href=\"https://help.github.com/articles/about-supported-custom-domains/\">custom domain name</a> and&nbsp;all.</p>\n            <a href=\"https://pages.github.com/\">Learn more about GitHub Pages &rarr;</a>\n          </div>\n        </div>\n        <div class=\"clear\"></div>\n      </div>\n    </div>\n  </div>\n</section>\n<footer>\n  <div class=\"grid\">\n    <div class=\"unit two-thirds center-on-mobiles\">\n      <p>Jekyll is lovingly maintained by the <a href=\"/team/\">core team</a> of volunteers. </p>\n      <p>The contents of this website are <br />&copy;&nbsp;2026 under the terms of the <a href=\"https://github.com/jekyll/jekyll/blob/master/LICENSE\">MIT License</a>.</p>\n    </div>\n    <div class=\"unit one-third align-right center-on-mobiles\">\n      <p>\n        Proudly hosted by\n        <a href=\"https://github.com\">\n          <img src=\"/img/footer-logo.png\" width=\"100\" height=\"30\" alt=\"GitHub • Social coding\">\n        </a>\n      </p>\n      <p>\n        Jekyll is funded thanks to its <a href=\"https://github.com/jekyll/jekyll#sponsors\">sponsors!</a>\n      </p>\n    </div>\n  </div>\n</footer>\n<script>\n/* Creates an anchor element with the given ID and link for the permalink*/\nconst anchorForId = (id) => {\n  const anchor = document.createElement(\"a\");\n  anchor.className = \"header-link\";\n  anchor.href = `#${id}`;\n  anchor.innerHTML = `<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\" aria-hidden=\"true\"></i>`;\n  anchor.title = \"Permalink\";\n  return anchor;\n};\n\n/* Finds all headers of the specified level within the given element, and adds a permalink to each header*/\nconst linkifyAnchors = (level, containingElement) => {\n  const headers = Array.from(containingElement.getElementsByTagName(`h${level}`));\n  headers.forEach((header) => {\n    if (header.id) {\n      header.appendChild(anchorForId(header.id));\n    }\n  });\n};\n\n/* Executes the function when the document is ready */\ndocument.onreadystatechange = () => {\n  if (document.readyState === \"complete\") {\n    const contentBlock = document.getElementsByClassName(\"docs\")[0]\n      ?? document.getElementsByClassName(\"news\")[0];\n    if (!contentBlock) { return; }\n    for (let level = 1; level <= 6; level++) {\n      linkifyAnchors(level, contentBlock);\n    }\n  }\n};\n</script>\n<!-- Google Analytics (https://www.google.com/analytics) -->\n  <script>\n    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){\n    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),\n    L=e.getElementsByTagName(k)[0],l.src='https://www.google-analytics.com/analytics.js',\n    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');\n\n    ga('create', 'UA-50755011-1', 'jekyllrb.com');\n    ga('send', 'pageview');\n  </script>\n<script src=\"https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js\"></script>\n<script> docsearch({\napiKey: '50fe39c839958dfad797000f33e2ec17',\nindexName: 'jekyllrb',\ninputSelector: '#docsearch-input',\nenhancedSearchInput: true,\ndebug: false // Set debug to true if you want to inspect the dropdown\n});\n</script>\n<script>\n  const navigateToUrl = (select) => {\n    const url = select.value;\n    url && (window.location.href = url);\n  };\n  </script>\n</body>\n</html>\n",
+  "scripts": [
+    "/js/html5shiv.min.js",
+    "/js/respond.min.js",
+    "https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
+  ],
+  "meta": {
+    "viewport": [
+      "width=device-width,initial-scale=1"
+    ],
+    "generator": [
+      "Jekyll v4.4.1"
+    ],
+    "og:title": [
+      "Jekyll • Simple, blog-aware, static sites"
+    ],
+    "og:locale": [
+      "en_US"
+    ],
+    "description": [
+      "Transform your plain text into static websites and blogs"
+    ],
+    "twitter:description": [
+      "Transform your plain text into static websites and blogs"
+    ],
+    "og:url": [
+      "https://jekyllrb.com/"
+    ],
+    "og:site_name": [
+      "Jekyll • Simple, blog-aware, static sites"
+    ],
+    "og:image": [
+      "https://jekyllrb.com/img/jekyll-og.png"
+    ],
+    "og:type": [
+      "website"
+    ],
+    "twitter:card": [
+      "summary_large_image"
+    ],
+    "twitter:image": [
+      "https://jekyllrb.com/img/jekyll-og.png"
+    ],
+    "twitter:title": [
+      "Jekyll • Simple, blog-aware, static sites"
+    ],
+    "twitter:site": [
+      "@jekyllrb"
+    ],
+    "google-site-verification": [
+      "onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY"
+    ]
+  },
+  "headers": {
+    "accept-ranges": [
+      "bytes"
+    ],
+    "access-control-allow-origin": [
+      "*"
+    ],
+    "age": [
+      "79"
+    ],
+    "cache-control": [
+      "max-age=600"
+    ],
+    "connection": [
+      "keep-alive"
+    ],
+    "content-encoding": [
+      "gzip"
+    ],
+    "content-length": [
+      "3449"
+    ],
+    "content-type": [
+      "text/html; charset=utf-8"
+    ],
+    "date": [
+      "Thu, 27 Aug 2026 22:27:57 GMT"
+    ],
+    "etag": [
+      "W/\"6a3960e0-2899\""
+    ],
+    "expires": [
+      "Thu, 27 Aug 2026 15:53:03 GMT"
+    ],
+    "last-modified": [
+      "Mon, 22 Jun 2026 16:20:48 GMT"
+    ],
+    "server": [
+      "GitHub.com"
+    ],
+    "vary": [
+      "Accept-Encoding"
+    ],
+    "via": [
+      "1.1 varnish"
+    ],
+    "x-cache": [
+      "HIT"
+    ],
+    "x-cache-hits": [
+      "0"
+    ],
+    "x-fastly-request-id": [
+      "f260f87fe8a4cbe496352e33e79309a697d538a7"
+    ],
+    "x-github-edge-region": [
+      "japaneast"
+    ],
+    "x-github-request-id": [
+      "7E90:147A24:11134F:124E26:6A905D5B"
+    ],
+    "x-proxy-cache": [
+      "HIT"
+    ],
+    "x-served-by": [
+      "cache-nrt-rjaa8190052-NRT"
+    ],
+    "x-timer": [
+      "S1787869678.997711,VS0,VE1"
+    ]
+  },
+  "cookies": {}
+}

@@ -1,9 +1,11 @@
 {
   "detects": [
     "alpinejs",
-    "plausible",
-    "tailwindcss",
     "bunny",
-    "open-graph"
+    "jekyll",
+    "open-graph",
+    "plausible",
+    "ruby",
+    "tailwindcss"
   ]
 }

@@ -1,9 +1,10 @@
 {
   "detects": [
     "fastly",
+    "font-awesome",
     "github-pages",
     "jekyll",
-    "jquery",
+    "jsdelivr",
     "open-graph",
     "ruby",
     "varnish"

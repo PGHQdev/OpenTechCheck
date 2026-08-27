@@ -1,0 +1,7 @@
+{
+  "detects": [
+    "cloudflare",
+    "cloudflare-web-analytics",
+    "http-3"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "detects": [
+    "cdnjs",
+    "cloudflare",
+    "google-fonts",
+    "jekyll",
+    "pwa",
+    "ruby"
+  ]
+}
