@@ -20,6 +20,7 @@ export interface TabResult {
 }
 
 export const MAIN_WORLD_SOURCE = 'opentechcheck-js-globals'
+export const MAIN_WORLD_REQUEST = 'opentechcheck-js-request'
 export interface MainWorldMessage {
   source: typeof MAIN_WORLD_SOURCE
   js: Record<string, unknown>
