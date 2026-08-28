@@ -2,7 +2,7 @@ name: SvelteKit
 slug: sveltekit
 category: web-framework
 website: https://svelte.dev/docs/kit
-implies: [svelte]
+implies: [svelte, vite]
 detect:
   html:
     - pattern: '\bdata-sveltekit-preload-data\b'

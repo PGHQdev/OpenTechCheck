@@ -2,6 +2,7 @@ name: Astro
 slug: astro
 category: web-framework
 website: https://astro.build
+implies: [vite]
 detect:
   html:
     - pattern: '<astro-island\b'
