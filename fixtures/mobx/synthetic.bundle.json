@@ -1,12 +1,9 @@
 {
-  "url": "https://example.com/synthetic-mobx",
-  "html": "<!doctype html><html><head></head><body></body></html>",
+  "url": "https://example.com/",
+  "html": "<!doctype html><html><body></body></html>",
   "scripts": [],
   "headers": {},
-  "cookies": {},
   "meta": {},
-  "js": {
-    "__mobxGlobals": true,
-    "__mobxInstanceCount": 1
-  }
+  "cookies": [],
+  "js": { "__mobxGlobals": "[object Object]" }
 }

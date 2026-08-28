@@ -1,5 +1,1 @@
-{
-  "detects": [
-    "mobx"
-  ]
-}
+{ "detects": ["mobx"] }

@@ -4,8 +4,5 @@ category: js-library
 website: https://github.com/zloirock/core-js
 detect:
   js:
-    '__core-js_shared__.versions':
+    __core-js_shared__:
       - pattern: ''
-    '__core-js_shared__':
-      - pattern: ''
-        confidence: 80

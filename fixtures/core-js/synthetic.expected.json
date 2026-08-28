@@ -1,5 +1,1 @@
-{
-  "detects": [
-    "core-js"
-  ]
-}
+{ "detects": ["core-js"] }
