@@ -1,0 +1,9 @@
+name: Vite
+slug: vite
+category: misc
+website: https://vite.dev
+detect:
+  scripts:
+    - pattern: '/@vite/client'
+  html:
+    - pattern: '<script type="module" src="/@vite/client">'

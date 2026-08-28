@@ -1,10 +1,11 @@
 {
   "detects": [
+    "open-graph",
+    "priority-hints",
+    "pwa",
     "svelte",
     "sveltekit",
     "vercel",
-    "open-graph",
-    "priority-hints",
-    "pwa"
+    "vite"
   ]
 }

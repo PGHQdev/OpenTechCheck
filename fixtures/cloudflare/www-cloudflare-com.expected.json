@@ -2,12 +2,13 @@
   "detects": [
     "astro",
     "cloudflare",
-    "tailwindcss",
-    "google-tag-manager",
     "google-analytics",
-    "lucide",
+    "google-tag-manager",
     "http-3",
+    "lucide",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "tailwindcss",
+    "vite"
   ]
 }

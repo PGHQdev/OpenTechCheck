@@ -8,6 +8,7 @@
     "onetrust",
     "open-graph",
     "priority-hints",
-    "pwa"
+    "pwa",
+    "vite"
   ]
 }

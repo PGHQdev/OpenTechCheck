@@ -1,13 +1,14 @@
 {
   "detects": [
-    "bootstrap",
     "astro",
+    "bootstrap",
     "cloudflare",
-    "fathom",
     "fastly",
-    "varnish",
+    "fathom",
     "http-3",
     "open-graph",
-    "pwa"
+    "pwa",
+    "varnish",
+    "vite"
   ]
 }

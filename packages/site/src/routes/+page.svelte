@@ -111,12 +111,12 @@
 <section class="wall">
   <div class="wrap">
     <div class="kicker">THE REGISTRY</div>
-    <h2>152 technologies, filed and fingerprinted.</h2>
+    <h2>155 technologies, filed and fingerprinted.</h2>
     <div class="wallgrid">
       {#each wall as slug}
         <span class="wtile" title={slug}><img src={`/icons/${slug}.png`} alt={slug} loading="lazy" /></span>
       {/each}
-      <a class="wtile more mono" href="https://github.com/PGHQdev/OpenTechCheck/tree/main/packages/fingerprints/src/registry" target="_blank" rel="noreferrer">+112</a>
+      <a class="wtile more mono" href="https://github.com/PGHQdev/OpenTechCheck/tree/main/packages/fingerprints/src/registry" target="_blank" rel="noreferrer">+115</a>
     </div>
   </div>
 </section>

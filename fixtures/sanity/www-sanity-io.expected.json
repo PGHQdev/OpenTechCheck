@@ -1,12 +1,13 @@
 {
   "detects": [
     "astro",
-    "sanity",
-    "tailwindcss",
     "fathom",
     "google-tag-manager",
-    "vercel",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "sanity",
+    "tailwindcss",
+    "vercel",
+    "vite"
   ]
 }
