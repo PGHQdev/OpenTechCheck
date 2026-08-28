@@ -1,14 +1,15 @@
 {
   "detects": [
-    "sentry",
     "cloudfront",
     "contentful",
+    "emotion",
     "envoy",
     "express",
     "mui",
-    "react",
+    "nodejs",
     "open-graph",
     "priority-hints",
-    "nodejs"
+    "react",
+    "sentry"
   ]
 }

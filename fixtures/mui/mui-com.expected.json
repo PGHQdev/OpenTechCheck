@@ -1,11 +1,12 @@
 {
   "detects": [
-    "mui",
-    "react",
-    "nextjs",
+    "emotion",
     "google-analytics",
+    "mui",
     "netlify",
+    "nextjs",
     "open-graph",
-    "pwa"
+    "pwa",
+    "react"
   ]
 }

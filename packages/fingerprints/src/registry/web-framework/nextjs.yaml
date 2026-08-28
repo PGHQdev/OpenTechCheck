@@ -6,6 +6,7 @@ implies: [react]
 detect:
   html:
     - pattern: '__NEXT_DATA__'
+    - pattern: 'self\.__next_f'
     - pattern: 'id="__next"'
       confidence: 60
   scripts:

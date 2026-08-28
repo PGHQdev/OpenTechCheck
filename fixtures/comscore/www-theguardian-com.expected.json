@@ -1,6 +1,7 @@
 {
   "detects": [
     "comscore",
+    "emotion",
     "fastly",
     "http-3",
     "pwa"

@@ -2,14 +2,15 @@
   "detects": [
     "ant-design",
     "cloudflare",
+    "emotion",
     "fastly",
     "google-analytics",
+    "http-3",
     "jsdelivr",
     "microsoft-clarity",
-    "unpkg",
-    "varnish",
-    "http-3",
     "open-graph",
-    "priority-hints"
+    "priority-hints",
+    "unpkg",
+    "varnish"
   ]
 }

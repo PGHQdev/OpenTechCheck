@@ -1,13 +1,14 @@
 {
   "detects": [
-    "turbopack",
     "cloudfront",
+    "emotion",
+    "font-awesome",
+    "http-3",
     "mui",
     "nextjs",
-    "react",
-    "radix-ui",
-    "http-3",
     "open-graph",
-    "font-awesome"
+    "radix-ui",
+    "react",
+    "turbopack"
   ]
 }

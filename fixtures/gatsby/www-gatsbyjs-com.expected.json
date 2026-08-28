@@ -1,11 +1,12 @@
 {
   "detects": [
     "contentful",
+    "emotion",
     "gatsby",
-    "react",
     "google-tag-manager",
     "netlify",
     "open-graph",
-    "pwa"
+    "pwa",
+    "react"
   ]
 }
