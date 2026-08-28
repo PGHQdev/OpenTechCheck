@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { count } from '../registry-count.json'
   const demo = [
     { cat: 'Web framework', items: [{ icon: 'ruby-on-rails', name: 'Ruby on Rails', grade: 'A', ev: 'meta · csrf-param' }] },
     { cat: 'UI framework', items: [
@@ -111,12 +112,12 @@
 <section class="wall">
   <div class="wrap">
     <div class="kicker">THE REGISTRY</div>
-    <h2>155 technologies, filed and fingerprinted.</h2>
+    <h2>{count} technologies, filed and fingerprinted.</h2>
     <div class="wallgrid">
       {#each wall as slug}
         <span class="wtile" title={slug}><img src={`/icons/${slug}.png`} alt={slug} loading="lazy" /></span>
       {/each}
-      <a class="wtile more mono" href="https://github.com/PGHQdev/OpenTechCheck/tree/main/packages/fingerprints/src/registry" target="_blank" rel="noreferrer">+115</a>
+      <a class="wtile more mono" href="https://github.com/PGHQdev/OpenTechCheck/tree/main/packages/fingerprints/src/registry" target="_blank" rel="noreferrer">+{count - wall.length}</a>
     </div>
   </div>
 </section>

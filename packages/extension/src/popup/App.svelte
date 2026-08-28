@@ -4,7 +4,7 @@
   import type { TabResult } from '../shared/protocol'
   import { ICON_SLUGS } from 'virtual:lists'
 
-  let state = $state<'scanning' | 'ready' | 'uninspectable'>('scanning')
+  let state = $state<'scanning' | 'ready' | 'uninspectable' | 'nodata'>('scanning')
   let result = $state<TabResult | null>(null)
   let hostname = $state('')
   let expanded = $state<string | null>(null)
@@ -24,7 +24,10 @@
     // The background may still be assembling signals right after navigation;
     // give it a moment before declaring the page empty.
     if (!result && attempt < 4) { setTimeout(() => poll(attempt + 1), 700); return }
-    state = 'ready'
+    // A null result after polling means the content script never ran on this
+    // tab (installed or updated after the page loaded) — distinct from a
+    // scanned page with zero detections.
+    state = result ? 'ready' : 'nodata'
   }
   const load = async () => {
     const [tab] = await ext.tabs.query({ active: true, currentWindow: true })
@@ -84,6 +87,12 @@
       <span class="glyph">⌀</span>
       <h2>This page can't be inspected.</h2>
       <p>Browser pages and the extension store don't expose their signals. Open a regular website and try again.</p>
+    </div>
+  {:else if state === 'nodata'}
+    <div class="state">
+      <span class="glyph">◌</span>
+      <h2>This page hasn't been scanned.</h2>
+      <p>It loaded before the extension could watch it. Reload the page, then open this popup again.</p>
     </div>
   {:else if detections.length === 0}
     <div class="state">

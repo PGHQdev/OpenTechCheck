@@ -3,3 +3,4 @@ static/icons/
 static/favicon.png
 .svelte-kit/
 build/
+src/registry-count.json

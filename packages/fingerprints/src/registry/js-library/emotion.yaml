@@ -1,0 +1,10 @@
+name: Emotion
+slug: emotion
+category: js-library
+website: https://emotion.sh
+detect:
+  html:
+    - pattern: '<style data-emotion'
+  dom:
+    'style[data-emotion]':
+      - pattern: ''
