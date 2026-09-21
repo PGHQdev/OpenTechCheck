@@ -1,10 +1,25 @@
 {
   "name": "opentechcheck-site",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-08-01",
   "assets": {
+    "binding": "ASSETS",
     "directory": "./build",
+    "run_worker_first": ["/api/*"],
     "not_found_handling": "404-page"
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "opentechcheck-api",
+      "database_id": "21413557-6bf6-4cca-99b2-c2324543418c",
+      "migrations_dir": "migrations",
+      "migrations_table": "site_report_migrations"
+    }
+  ],
+  "ratelimits": [
+    { "name": "REPORT_LIMITER", "namespace_id": "1003", "simple": { "limit": 5, "period": 60 } }
+  ],
   "routes": [
     { "pattern": "opentechcheck.com", "custom_domain": true },
     { "pattern": "www.opentechcheck.com", "custom_domain": true }

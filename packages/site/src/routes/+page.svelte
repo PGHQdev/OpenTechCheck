@@ -1,6 +1,6 @@
 <script lang="ts">
   import { count } from '../registry-count.json'
-  const demo = [
+  const demo: Array<{ cat: string; items: Array<{ icon: string; name: string; version?: string; grade?: string; ev?: string; implied?: boolean }> }> = [
     { cat: 'Web framework', items: [{ icon: 'ruby-on-rails', name: 'Ruby on Rails', grade: 'A', ev: 'meta · csrf-param' }] },
     { cat: 'UI framework', items: [
       { icon: 'bootstrap', name: 'Bootstrap', version: '3.4.1', grade: 'A' },
@@ -90,11 +90,11 @@
     </div>
     <div class="feat">
       <div class="fno mono">002</div>
-      <h3>Your browser. Full stop.</h3>
+      <h3>Detection stays local.</h3>
       <p>
-        Detection runs against the page you already loaded. No URL is sent
-        anywhere, no account exists, no analytics ride along. The extension
-        makes zero network requests — the fonts are bundled.
+        Detection runs in your browser against the page you already loaded.
+        No account required. Reports are optional, and automatic domain
+        reporting stays off unless you enable it.
       </p>
     </div>
     <div class="feat">

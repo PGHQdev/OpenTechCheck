@@ -48,7 +48,13 @@ Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/ope
 
 Load `dist/chrome` via chrome://extensions → "Load unpacked" (enable Developer mode),
 or `dist/firefox` via about:debugging → "Load Temporary Add-on". Detection runs
-entirely in your browser; no request ever leaves it.
+entirely in your browser. Optional reports open the website’s prefilled form;
+no report is sent until you submit it.
+
+An optional **Automatically report undetected websites** setting is off by default.
+When enabled, completed empty scans can submit only the website domain. Private
+browsing and local-network sites are excluded; submissions are deduplicated and capped.
+Detection rescans after loading, relevant page changes, and opening the popup.
 
 ## Contributing
 

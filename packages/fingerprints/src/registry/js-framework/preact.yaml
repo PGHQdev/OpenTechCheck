@@ -1,0 +1,9 @@
+name: Preact
+slug: preact
+category: js-framework
+website: https://preactjs.com
+detect:
+  js:
+    '$probe.preact':
+      - pattern: '^detected$'
+        confidence: 90

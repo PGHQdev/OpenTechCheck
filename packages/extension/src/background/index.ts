@@ -3,7 +3,9 @@ import registry from '@opentechcheck/fingerprints'
 import { toBundle, toCookieRecord, toHeaderTable } from './assemble'
 import { clearTab, clearTabResult, getTab, setTab } from './store'
 import { ext } from '../shared/ext'
-import type { PageSignals, TabResult, ToBackground, ToContent } from '../shared/protocol'
+import type { PageSignals, ScanState, TabResult, ToBackground, ToContent } from '../shared/protocol'
+import { createAutoReporter, eligibleForAutoReport, type PageConnection } from './auto-report'
+import { publicDomain } from '../../../reporting/domain'
 
 const fingerprints = registry as unknown as Fingerprint[]
 
@@ -20,46 +22,67 @@ export interface BackgroundApi {
   debounceMs: number
   setTimer(fn: () => void, ms: number): unknown
   clearTimer(t: unknown): void
+  reportEmpty?(tabId: number, result: TabResult): Promise<void>
 }
 
-async function detectAndStore(api: BackgroundApi, tabId: number, signals: PageSignals): Promise<void> {
+async function detectAndStore(api: BackgroundApi, tabId: number, signals: PageSignals, scan?: ScanState): Promise<TabResult> {
   const headers = await getTab<Record<string, string[]>>(api.session, 'headers', tabId)
   const cookies = toCookieRecord(await api.getCookies(signals.url))
   const bundle = toBundle(signals, headers ?? undefined, cookies)
   const detections = detect(bundle, fingerprints)
-  const result: TabResult = { url: signals.url, detections }
+  const result: TabResult = { url: signals.url, detections, ...(scan ? { scan } : {}) }
   await setTab(api.session, 'result', tabId, result)
   api.setBadge(tabId, detections.length > 0 ? String(detections.length) : '')
+  return result
 }
 
 export function createBackground(api: BackgroundApi): void {
   const timers = new Map<number, unknown>()
+  const queues = new Map<number, Promise<unknown>>()
+  const enqueue = <T>(tabId: number, task: () => Promise<T>): Promise<T> => {
+    const next = (queues.get(tabId) ?? Promise.resolve()).catch(() => {}).then(task)
+    queues.set(tabId, next)
+    void next.finally(() => { if (queues.get(tabId) === next) queues.delete(tabId) }).catch(() => {})
+    return next
+  }
 
   api.onHeaders((tabId, url, headers) => {
-    return (async () => {
+    return enqueue(tabId, async () => {
       await setTab(api.session, 'headers', tabId, toHeaderTable(headers))
       const signals = await getTab<PageSignals>(api.session, 'signals', tabId)
-      if (signals && signals.url === url) await detectAndStore(api, tabId, signals)
-    })().catch(console.warn)
+      const result = await getTab<TabResult>(api.session, 'result', tabId)
+      if (signals && signals.url.split('#')[0] === url.split('#')[0]) await detectAndStore(api, tabId, signals, result?.scan)
+    }).catch(() => {})
   })
 
   api.onMessage(async (msg: ToBackground, tabId) => {
     try {
       if (msg.type === 'signals' && tabId !== undefined) {
-        await setTab(api.session, 'signals', tabId, msg.signals)
-        await detectAndStore(api, tabId, msg.signals)
+        await enqueue(tabId, async () => {
+          const previous = await getTab<TabResult>(api.session, 'result', tabId)
+          if (msg.scan && previous?.scan?.document === msg.scan.document && previous.scan.sequence > msg.scan.sequence) return
+          await setTab(api.session, 'signals', tabId, msg.signals)
+          const result = await detectAndStore(api, tabId, msg.signals, msg.scan)
+          if (msg.scan?.completed && msg.scan.settled && result.detections.length === 0) {
+            // Do not block subsequent detections while reporting. The reporter
+            // rechecks tab, consent and scan identity immediately before sending.
+            void api.reportEmpty?.(tabId, result).catch(() => {})
+          }
+        })
         return
       }
       if (msg.type === 'get-result' && tabId !== undefined) {
-        return await getTab<TabResult>(api.session, 'result', tabId)
+        return await enqueue(tabId, () => getTab<TabResult>(api.session, 'result', tabId))
       }
       return null
-    } catch (err) { console.warn('opentechcheck:', err); return null }
+    } catch { return null }
   })
 
   api.onCommitted((tabId) => {
-    clearTabResult(api.session, tabId).catch(console.warn)
-    api.setBadge(tabId, '')
+    return enqueue(tabId, async () => {
+      await clearTabResult(api.session, tabId)
+      api.setBadge(tabId, '')
+    }).catch(() => {})
   })
 
   api.onHistoryUpdated((tabId) => {
@@ -71,11 +94,45 @@ export function createBackground(api: BackgroundApi): void {
     }, api.debounceMs))
   })
 
-  api.onTabRemoved((tabId) => { clearTab(api.session, tabId).catch(console.warn) })
+  api.onTabRemoved((tabId) => {
+    const timer = timers.get(tabId)
+    if (timer !== undefined) api.clearTimer(timer)
+    timers.delete(tabId)
+    return enqueue(tabId, () => clearTab(api.session, tabId)).catch(() => {})
+  })
 }
 
 function realApi(c: typeof chrome): BackgroundApi {
+  const reporter = createAutoReporter({
+    storage: c.storage.local,
+    now: () => Date.now(),
+    fetch: (url, init) => fetch(url, init),
+    eligible: async (tabId, scanId) => {
+      const tab = await c.tabs.get(tabId)
+      const result = await getTab<TabResult>(c.storage.session, 'result', tabId)
+      const connection = await getTab<PageConnection>(c.storage.session, 'connection', tabId)
+      return eligibleForAutoReport(tab, result, connection, scanId)
+    },
+  })
+  c.storage.onChanged.addListener((changes, area) => {
+    if (area === 'local' && changes.autoReportEnabled && changes.autoReportEnabled.newValue !== true) reporter.cancel()
+  })
+  // Require a successful public-network document response. Unknown/cached
+  // addresses are skipped rather than risking disclosure of an internal host.
+  c.webNavigation.onBeforeNavigate.addListener((d) => {
+    if (d.frameId === 0) c.storage.session.remove(`connection:${d.tabId}`).catch(() => {})
+  })
+  c.webRequest.onCompleted.addListener((d) => {
+    if (d.tabId >= 0) setTab(c.storage.session, 'connection', d.tabId, { url: d.url, ip: d.ip, status: d.statusCode }).catch(() => {})
+  }, { urls: ['<all_urls>'], types: ['main_frame'] })
+  c.webRequest.onErrorOccurred.addListener((d) => {
+    if (d.tabId >= 0) c.storage.session.remove(`connection:${d.tabId}`).catch(() => {})
+  }, { urls: ['<all_urls>'], types: ['main_frame'] })
   return {
+    reportEmpty: async (tabId, result) => {
+      const domain = publicDomain(new URL(result.url).hostname)
+      if (domain && result.scan) await reporter.report(domain, tabId, result.scan.id)
+    },
     session: {
       get: (k) => c.storage.session.get(k),
       set: (i) => c.storage.session.set(i),

@@ -149,3 +149,28 @@ test('same-tab navigation: headers for the new document do not mix with the old 
   expect(resultAfter.detections.map((d: any) => d.slug)).not.toContain('nginx')
   expect(calls.badge.length).toBe(badgeCallsBefore)
 })
+
+test('only completed settled empty scans become automatic reporting candidates', async () => {
+  const { api, handlers } = fakeApi()
+  const candidates: unknown[] = []
+  api.reportEmpty = async (_tabId, result) => { candidates.push(result) }
+  createBackground(api)
+  const empty = { ...signals, html: '', scripts: [] }
+  const scan = { id: 'scan', document: 'doc', sequence: 1, completed: false, settled: false }
+  await handlers.message({ type: 'signals', signals: empty, scan }, 1)
+  await handlers.message({ type: 'signals', signals: empty, scan: { ...scan, completed: true } }, 1)
+  expect(candidates).toHaveLength(0)
+  await handlers.message({ type: 'signals', signals: empty, scan: { ...scan, completed: true, settled: true } }, 1)
+  expect(candidates).toHaveLength(1)
+  await handlers.message({ type: 'signals', signals, scan: { ...scan, completed: true, settled: true } }, 1)
+  expect(candidates).toHaveLength(1)
+})
+
+test('an older scan cannot replace newer detections', async () => {
+  const { api, handlers, m } = fakeApi()
+  createBackground(api)
+  const scan = { id: 'new', document: 'doc', sequence: 2, completed: true, settled: true }
+  await handlers.message({ type: 'signals', signals, scan }, 1)
+  await handlers.message({ type: 'signals', signals: { ...signals, html: '', scripts: [] }, scan: { ...scan, sequence: 1 } }, 1)
+  expect((m.get('result:1') as any).detections.map((d: any) => d.slug)).toContain('nextjs')
+})

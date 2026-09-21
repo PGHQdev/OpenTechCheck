@@ -71,4 +71,10 @@
   .fright { display: flex; gap: 18px; }
   .fright a { text-decoration: none; }
   .fright a:hover { color: var(--blue); }
+  @media (max-width: 640px) {
+    .bar { flex-wrap: wrap; gap: 12px; }
+    .links { width: 100%; gap: 16px; flex-wrap: wrap; }
+    .links a { font-size: 13px; }
+    .fleft { flex-wrap: wrap; }
+  }
 </style>

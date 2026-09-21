@@ -10,13 +10,22 @@ export interface PageSignals {
 }
 
 export type ToBackground =
-  | { type: 'signals'; signals: PageSignals }
+  | { type: 'signals'; signals: PageSignals; scan?: ScanState }
   | { type: 'get-result' }
 export type ToContent = { type: 'recollect' }
 
 export interface TabResult {
   url: string
   detections: Detection[]
+  scan?: ScanState
+}
+
+export interface ScanState {
+  id: string
+  document: string
+  sequence: number
+  completed: boolean
+  settled: boolean
 }
 
 export const MAIN_WORLD_SOURCE = 'opentechcheck-js-globals'
@@ -24,6 +33,9 @@ export const MAIN_WORLD_REQUEST = 'opentechcheck-js-request'
 export interface MainWorldMessage {
   source: typeof MAIN_WORLD_SOURCE
   js: Record<string, unknown>
+  requestId?: string
+  probesComplete?: boolean
+  shadowChanged?: boolean
 }
 
 export const CAPS = { html: 500_000, scripts: 500, jsValue: 200 } as const

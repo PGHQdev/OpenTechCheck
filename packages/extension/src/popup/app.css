@@ -52,6 +52,14 @@ html, body {
 }
 
 main { display: flex; flex-direction: column; max-height: 580px; }
+.settings { border-top: 1px solid var(--line); padding: 10px 16px; flex: none; }
+.settings summary { cursor: pointer; font-size: 12px; color: var(--dim); }
+.setting { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0 4px; cursor: pointer; }
+.setting input { margin-top: 2px; accent-color: var(--blue); flex: none; }
+.setting strong { display: block; font-size: 12px; font-weight: 600; }
+.setting small { display: block; color: var(--dim); font-size: 11px; line-height: 1.5; margin-top: 5px; }
+.settings p { font-size: 11px; margin-top: 8px; color: var(--dim); }
+.settings summary:focus-visible, .setting input:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 
 /* ---------- header ---------- */
 header {
@@ -182,6 +190,10 @@ footer {
 .btn.secondary:hover { background: var(--gray-chip); }
 .btn:disabled { opacity: 0.4; cursor: default; }
 footer .tagline { margin-left: auto; }
+.report-link { margin-left: auto; max-width: 205px; border: 0; background: none; color: var(--blue); font: inherit; font-size: 11px; text-align: right; cursor: pointer; }
+.report-link:hover { text-decoration: underline; }
+.report-cta { margin: 10px 0 2px; }
+button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 
 /* ---------- empty / scanning / restricted ---------- */
 .state {

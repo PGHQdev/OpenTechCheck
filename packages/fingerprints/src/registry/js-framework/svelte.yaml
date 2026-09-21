@@ -11,3 +11,9 @@ detect:
   js:
     __svelte:
       - pattern: ''
+    '$probe.svelte':
+      - pattern: '^(\d+(?:\.\d+){0,3}(?:-[\w.-]+)?(?:\+[\w.-]+)?)$'
+        version: 1
+        confidence: 90
+      - pattern: '^detected$'
+        confidence: 85

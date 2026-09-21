@@ -1,13 +1,22 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
   import { ext } from '../shared/ext'
   import { grade, groupByCategory, stackSummary, exportPayload, websiteOf, codeOf, categoryShort, categoryLabel } from './format'
   import type { TabResult } from '../shared/protocol'
   import { ICON_SLUGS } from 'virtual:lists'
+  import { reportUrl } from './report'
 
   let state = $state<'scanning' | 'ready' | 'uninspectable' | 'nodata'>('scanning')
   let result = $state<TabResult | null>(null)
   let hostname = $state('')
   let expanded = $state<string | null>(null)
+  let tabId: number | undefined
+  let pollTimer: ReturnType<typeof setTimeout> | undefined
+  let autoReportEnabled = $state(false)
+  let settingsReady = $state(false)
+  let savingSetting = $state(false)
+  let settingError = $state('')
+  let privateWindow = $state(false)
 
   const icons = new Set(ICON_SLUGS)
   // Deterministic tile color for technologies without a fetched favicon.
@@ -23,7 +32,7 @@
     result = (await ext.runtime.sendMessage({ type: 'get-result' })) as TabResult | null
     // The background may still be assembling signals right after navigation;
     // give it a moment before declaring the page empty.
-    if (!result && attempt < 4) { setTimeout(() => poll(attempt + 1), 700); return }
+    if (!result && attempt < 4) { pollTimer = setTimeout(() => poll(attempt + 1), 700); return }
     // A null result after polling means the content script never ran on this
     // tab (installed or updated after the page loaded) — distinct from a
     // scanned page with zero detections.
@@ -31,11 +40,45 @@
   }
   const load = async () => {
     const [tab] = await ext.tabs.query({ active: true, currentWindow: true })
+    tabId = tab?.id
+    privateWindow = tab?.incognito ?? false
     if (!tab?.url || !/^https?:/.test(tab.url)) { state = 'uninspectable'; return }
     hostname = new URL(tab.url).hostname
+    if (tab.id !== undefined) await ext.tabs.sendMessage(tab.id, { type: 'recollect' }).catch(() => {})
     poll()
   }
-  load()
+  onMount(() => {
+    const changed = (changes: Record<string, chrome.storage.StorageChange>, area: string) => {
+      if (area === 'local' && changes.autoReportEnabled) autoReportEnabled = changes.autoReportEnabled.newValue === true
+      const update = changes[`result:${tabId}`]
+      if (area === 'session' && update?.newValue) {
+        result = update.newValue as TabResult
+        hostname = new URL(result.url).hostname
+        state = 'ready'
+      }
+    }
+    ext.storage.onChanged.addListener(changed)
+    ext.storage.local.get('autoReportEnabled').then((value) => {
+      autoReportEnabled = value.autoReportEnabled === true
+      settingsReady = true
+    }).catch(() => { settingError = 'Could not load this setting.' })
+    load().catch(() => { state = 'nodata' })
+    return () => { ext.storage.onChanged.removeListener(changed); clearTimeout(pollTimer) }
+  })
+
+  async function setAutomaticReporting(event: Event) {
+    const checkbox = event.currentTarget as HTMLInputElement
+    const enabled = checkbox.checked
+    settingError = ''; savingSetting = true
+    try {
+      await ext.storage.local.set({ autoReportEnabled: enabled })
+      autoReportEnabled = enabled
+      if (enabled && tabId !== undefined) await ext.tabs.sendMessage(tabId, { type: 'recollect' }).catch(() => {})
+    } catch {
+      checkbox.checked = autoReportEnabled
+      settingError = 'Could not save this setting. Please try again.'
+    } finally { savingSetting = false }
+  }
 
   const detections = $derived(result?.detections ?? [])
   const groups = $derived(groupByCategory(detections))
@@ -58,6 +101,10 @@
     if (url) ext.tabs.create({ url })
   }
   const isImplied = (slug: string) => detections.find((d) => d.slug === slug)?.evidence.every((e) => e.source === 'implied') ?? false
+  const openReport = () => {
+    if (!result) return
+    ext.tabs.create({ url: reportUrl(result.url, detections.length === 0 ? 'coverage-gap' : 'detection-issue', ext.runtime.getManifest().version) })
+  }
 </script>
 
 <main>
@@ -72,7 +119,7 @@
     <span class="brand">OpenTechCheck</span>
     {#if state === 'ready' && hostname}<span class="hostname">{hostname}</span>{/if}
     {#if state === 'ready' && detections.length > 0}<span class="count">{detections.length} FOUND</span>{/if}
-    <span class="tagline">LOCAL · NO REQUESTS</span>
+    <span class="tagline">LOCAL DETECTION</span>
   </header>
 
   {#if state === 'scanning'}
@@ -98,8 +145,9 @@
     <div class="state">
       <span class="glyph">◎</span>
       <h2>No technologies detected.</h2>
-      <p>This page may use technologies outside the current fingerprint registry.</p>
-      <a href="https://github.com/PGHQdev/OpenTechCheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute a fingerprint ↗</a>
+      <p>Help us improve coverage for this website.</p>
+      <button class="btn primary report-cta" onclick={openReport}>Help improve coverage ↗</button>
+      <p>One-click submission on the next page.</p>
     </div>
   {:else}
     <div class="results">
@@ -141,9 +189,23 @@
     </div>
   {/if}
 
+  <details class="settings">
+    <summary>Coverage settings</summary>
+    <label class="setting">
+      <input type="checkbox" checked={autoReportEnabled} onchange={setAutomaticReporting} disabled={!settingsReady || savingSetting || privateWindow} />
+      <span><strong>Automatically report undetected websites</strong><small>Help improve coverage by sharing only the website domain. No account required.</small></span>
+    </label>
+    {#if privateWindow}<p>Automatic reporting is off in private browsing.</p>{/if}
+    {#if settingError}<p role="alert">{settingError}</p>{/if}
+  </details>
+
   <footer>
     <button class="btn primary" onclick={copyStack} disabled={detections.length === 0}>Copy stack ⧉</button>
     <button class="btn secondary" onclick={exportJson} disabled={detections.length === 0}>Export JSON ↓</button>
-    <span class="tagline">LOCAL · NO REQUESTS</span>
+    {#if state === 'ready' && detections.length > 0}
+      <button class="report-link" onclick={openReport}>Report missing or incorrect technology ↗</button>
+    {:else}
+      <span class="tagline">LOCAL DETECTION</span>
+    {/if}
   </footer>
 </main>

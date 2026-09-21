@@ -12,3 +12,6 @@ detect:
   js:
     litElementVersions:
       - pattern: ''
+    '$probe.lit':
+      - pattern: '^detected$'
+        confidence: 90

@@ -15,3 +15,9 @@ detect:
     Alpine.version:
       - pattern: '^([\d.]+)'
         version: 1
+    '$probe.alpinejs':
+      - pattern: '^(\d+(?:\.\d+){0,3}(?:-[\w.-]+)?(?:\+[\w.-]+)?)$'
+        version: 1
+        confidence: 90
+      - pattern: '^detected$'
+        confidence: 90
