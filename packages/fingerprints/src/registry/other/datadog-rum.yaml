@@ -1,0 +1,12 @@
+name: Datadog RUM
+slug: datadog-rum
+category: other
+website: https://www.datadoghq.com/product/real-user-monitoring/
+detect:
+  scripts:
+    - pattern: 'datadoghq-browser-agent'
+      confidence: 90
+  js:
+    DD_RUM:
+      - pattern: ''
+        confidence: 95

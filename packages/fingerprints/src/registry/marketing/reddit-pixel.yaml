@@ -1,0 +1,12 @@
+name: Reddit Pixel
+slug: reddit-pixel
+category: marketing
+website: https://ads.reddit.com
+detect:
+  scripts:
+    - pattern: 'redditstatic\.com/ads/pixel'
+      confidence: 95
+  js:
+    rdt:
+      - pattern: ''
+        confidence: 90

@@ -1,0 +1,8 @@
+name: Brightcove
+slug: brightcove
+category: video
+website: https://www.brightcove.com
+detect:
+  scripts:
+    - pattern: 'players\.brightcove\.net'
+      confidence: 95

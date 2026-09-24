@@ -1,0 +1,9 @@
+name: Livewire
+slug: livewire
+category: web-framework
+website: https://livewire.laravel.com
+implies: [php]
+detect:
+  html:
+    - pattern: 'wire:id'
+      confidence: 95

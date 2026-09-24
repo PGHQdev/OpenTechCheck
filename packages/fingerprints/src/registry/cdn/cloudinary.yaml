@@ -1,0 +1,11 @@
+name: Cloudinary
+slug: cloudinary
+category: cdn
+website: https://cloudinary.com
+detect:
+  html:
+    - pattern: 'res\.cloudinary\.com'
+      confidence: 95
+  scripts:
+    - pattern: 'widget\.cloudinary\.com'
+      confidence: 90

@@ -1,0 +1,11 @@
+name: LogRocket
+slug: logrocket
+category: analytics
+website: https://logrocket.com
+detect:
+  scripts:
+    - pattern: 'cdn\.logrocket\.com'
+      confidence: 95
+  html:
+    - pattern: '_lr_env'
+      confidence: 85

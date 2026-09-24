@@ -1,0 +1,13 @@
+name: SystemJS
+slug: systemjs
+category: js-library
+website: https://github.com/systemjs/systemjs
+detect:
+  js:
+    System.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 95
+  scripts:
+    - pattern: 'systemjs'
+      confidence: 80

@@ -1,0 +1,15 @@
+name: Snowplow
+slug: snowplow
+category: analytics
+website: https://snowplow.io
+detect:
+  js:
+    GlobalSnowplowNamespace:
+      - pattern: ''
+        confidence: 95
+    snowplow:
+      - pattern: ''
+        confidence: 85
+  scripts:
+    - pattern: '(?:^|/)sp(?:\.min)?\.js$'
+      confidence: 60

@@ -1,0 +1,11 @@
+name: AOS
+slug: aos
+category: js-library
+website: https://michalsnik.github.io/aos/
+detect:
+  html:
+    - pattern: 'data-aos='
+      confidence: 95
+  scripts:
+    - pattern: '(?:^|/)aos(?:\.min)?\.js'
+      confidence: 70

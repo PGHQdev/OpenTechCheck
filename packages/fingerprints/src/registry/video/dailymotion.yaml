@@ -1,0 +1,11 @@
+name: Dailymotion
+slug: dailymotion
+category: video
+website: https://www.dailymotion.com
+detect:
+  scripts:
+    - pattern: 'dailymotion\.com'
+      confidence: 90
+  html:
+    - pattern: 'dailymotion\.com/embed'
+      confidence: 90

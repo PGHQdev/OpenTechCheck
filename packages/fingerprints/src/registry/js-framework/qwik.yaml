@@ -1,0 +1,11 @@
+name: Qwik
+slug: qwik
+category: js-framework
+website: https://qwik.dev
+detect:
+  scripts:
+    - pattern: 'qwikloader'
+      confidence: 95
+  html:
+    - pattern: 'q:container'
+      confidence: 90

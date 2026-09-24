@@ -1,0 +1,9 @@
+name: Kestrel
+slug: kestrel
+category: server
+website: https://learn.microsoft.com/aspnet/core/fundamentals/servers/kestrel
+detect:
+  headers:
+    server:
+      - pattern: '^kestrel'
+        confidence: 95

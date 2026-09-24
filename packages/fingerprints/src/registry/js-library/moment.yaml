@@ -1,0 +1,12 @@
+name: Moment.js
+slug: moment
+category: js-library
+website: https://momentjs.com
+detect:
+  js:
+    moment.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  scripts:
+    - pattern: '(?:^|/)moment(?:\.min)?\.js'
+      confidence: 70

@@ -1,0 +1,13 @@
+name: Leaflet
+slug: leaflet
+category: js-library
+website: https://leafletjs.com
+detect:
+  js:
+    L.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 90
+  scripts:
+    - pattern: 'leaflet'
+      confidence: 80

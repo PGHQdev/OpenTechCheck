@@ -1,0 +1,9 @@
+name: Apache Tomcat
+slug: tomcat
+category: server
+website: https://tomcat.apache.org
+detect:
+  headers:
+    server:
+      - pattern: 'apache-coyote'
+        confidence: 95

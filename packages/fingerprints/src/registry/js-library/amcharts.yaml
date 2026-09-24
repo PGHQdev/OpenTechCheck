@@ -1,0 +1,12 @@
+name: amCharts
+slug: amcharts
+category: js-library
+website: https://www.amcharts.com
+detect:
+  scripts:
+    - pattern: 'amcharts'
+      confidence: 85
+  js:
+    am4core:
+      - pattern: ''
+        confidence: 90

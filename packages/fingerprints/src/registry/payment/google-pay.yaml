@@ -1,0 +1,9 @@
+name: Google Pay
+slug: google-pay
+category: payment
+website: https://pay.google.com
+detect:
+  js:
+    google.payments.api.PaymentsClient:
+      - pattern: ''
+        confidence: 95

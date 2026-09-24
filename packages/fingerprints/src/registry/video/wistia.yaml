@@ -1,0 +1,12 @@
+name: Wistia
+slug: wistia
+category: video
+website: https://wistia.com
+detect:
+  scripts:
+    - pattern: 'fast\.wistia\.com'
+      confidence: 95
+  js:
+    Wistia:
+      - pattern: ''
+        confidence: 90

@@ -1,0 +1,12 @@
+name: Smartlook
+slug: smartlook
+category: analytics
+website: https://www.smartlook.com
+detect:
+  scripts:
+    - pattern: 'web\.smartlook\.com'
+      confidence: 95
+  js:
+    smartlook:
+      - pattern: ''
+        confidence: 90

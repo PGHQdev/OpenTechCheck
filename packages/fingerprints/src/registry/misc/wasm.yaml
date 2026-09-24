@@ -1,0 +1,11 @@
+name: WebAssembly
+slug: wasm
+category: misc
+website: https://webassembly.org
+detect:
+  scripts:
+    - pattern: '\.wasm'
+      confidence: 75
+  html:
+    - pattern: 'application/wasm'
+      confidence: 75

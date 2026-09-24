@@ -1,0 +1,9 @@
+name: Inferno
+slug: inferno
+category: js-framework
+website: https://www.infernojs.org
+detect:
+  js:
+    Inferno.version:
+      - pattern: '^([\d.]+)'
+        version: 1

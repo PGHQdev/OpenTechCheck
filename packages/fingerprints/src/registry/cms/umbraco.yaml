@@ -1,0 +1,8 @@
+name: Umbraco
+slug: umbraco
+category: cms
+website: https://umbraco.com
+detect:
+  html:
+    - pattern: '/umbraco/'
+      confidence: 85

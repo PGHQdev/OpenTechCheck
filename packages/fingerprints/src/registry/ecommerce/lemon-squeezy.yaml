@@ -1,0 +1,8 @@
+name: Lemon Squeezy
+slug: lemon-squeezy
+category: ecommerce
+website: https://www.lemonsqueezy.com
+detect:
+  scripts:
+    - pattern: 'lemonsqueezy\.com'
+      confidence: 90

@@ -1,0 +1,8 @@
+name: Chargebee
+slug: chargebee
+category: payment
+website: https://www.chargebee.com
+detect:
+  scripts:
+    - pattern: 'chargebee\.com'
+      confidence: 90

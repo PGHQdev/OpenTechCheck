@@ -1,0 +1,13 @@
+name: RequireJS
+slug: requirejs
+category: js-library
+website: https://requirejs.org
+detect:
+  js:
+    requirejs.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 95
+  scripts:
+    - pattern: '(?:^|/)require(?:\.min)?\.js'
+      confidence: 60

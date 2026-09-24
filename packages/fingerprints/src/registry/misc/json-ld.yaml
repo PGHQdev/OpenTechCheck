@@ -1,0 +1,8 @@
+name: JSON-LD
+slug: json-ld
+category: misc
+website: https://json-ld.org
+detect:
+  html:
+    - pattern: 'application/ld\+json'
+      confidence: 75

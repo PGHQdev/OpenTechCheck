@@ -1,0 +1,8 @@
+name: Omnisend
+slug: omnisend
+category: marketing
+website: https://www.omnisend.com
+detect:
+  scripts:
+    - pattern: 'omnisend\.com'
+      confidence: 90

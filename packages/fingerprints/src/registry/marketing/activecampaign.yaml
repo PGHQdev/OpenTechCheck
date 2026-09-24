@@ -1,0 +1,11 @@
+name: ActiveCampaign
+slug: activecampaign
+category: marketing
+website: https://www.activecampaign.com
+detect:
+  scripts:
+    - pattern: 'trackcmp\.net'
+      confidence: 90
+  html:
+    - pattern: 'activehosted\.com'
+      confidence: 85

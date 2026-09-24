@@ -1,0 +1,8 @@
+name: ImageKit
+slug: imagekit
+category: cdn
+website: https://imagekit.io
+detect:
+  html:
+    - pattern: 'ik\.imagekit\.io'
+      confidence: 95

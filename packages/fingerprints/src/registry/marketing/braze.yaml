@@ -1,0 +1,12 @@
+name: Braze
+slug: braze
+category: marketing
+website: https://www.braze.com
+detect:
+  scripts:
+    - pattern: 'js\.appboycdn\.com'
+      confidence: 95
+  js:
+    appboy:
+      - pattern: ''
+        confidence: 90

@@ -1,0 +1,12 @@
+name: Paddle
+slug: paddle
+category: payment
+website: https://www.paddle.com
+detect:
+  scripts:
+    - pattern: 'cdn\.paddle\.com'
+      confidence: 95
+  js:
+    Paddle:
+      - pattern: ''
+        confidence: 90

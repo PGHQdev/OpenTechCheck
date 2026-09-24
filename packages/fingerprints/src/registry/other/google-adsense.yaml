@@ -1,0 +1,11 @@
+name: Google AdSense
+slug: google-adsense
+category: other
+website: https://www.google.com/adsense
+detect:
+  scripts:
+    - pattern: 'googlesyndication\.com|adsbygoogle\.js'
+      confidence: 95
+  html:
+    - pattern: 'adsbygoogle'
+      confidence: 90

@@ -1,0 +1,8 @@
+name: Aurelia
+slug: aurelia
+category: js-framework
+website: https://aurelia.io
+detect:
+  html:
+    - pattern: 'aurelia-app'
+      confidence: 95

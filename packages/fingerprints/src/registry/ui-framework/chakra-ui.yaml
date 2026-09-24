@@ -1,0 +1,8 @@
+name: Chakra UI
+slug: chakra-ui
+category: ui-framework
+website: https://chakra-ui.com
+detect:
+  html:
+    - pattern: 'chakra-(?:button|input|flex|box|stack|heading|text|modal|menu|link)'
+      confidence: 90

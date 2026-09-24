@@ -1,0 +1,12 @@
+name: LiveChat
+slug: livechat
+category: marketing
+website: https://www.livechat.com
+detect:
+  scripts:
+    - pattern: 'cdn\.livechatinc\.com'
+      confidence: 95
+  js:
+    LC_API:
+      - pattern: ''
+        confidence: 90

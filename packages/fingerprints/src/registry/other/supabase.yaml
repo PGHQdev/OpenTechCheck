@@ -1,0 +1,11 @@
+name: Supabase
+slug: supabase
+category: other
+website: https://supabase.com
+detect:
+  html:
+    - pattern: '\.supabase\.co'
+      confidence: 90
+  scripts:
+    - pattern: 'supabase'
+      confidence: 80

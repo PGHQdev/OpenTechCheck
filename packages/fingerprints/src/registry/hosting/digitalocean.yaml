@@ -1,0 +1,8 @@
+name: DigitalOcean
+slug: digitalocean
+category: hosting
+website: https://www.digitalocean.com
+detect:
+  html:
+    - pattern: '\.ondigitalocean\.'
+      confidence: 90

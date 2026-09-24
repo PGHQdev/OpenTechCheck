@@ -1,0 +1,12 @@
+name: VTEX
+slug: vtex
+category: ecommerce
+website: https://www.vtex.com
+detect:
+  cookies:
+    VtexIdclientAutCookie:
+      - pattern: ''
+        confidence: 95
+  html:
+    - pattern: 'vtexassets'
+      confidence: 85

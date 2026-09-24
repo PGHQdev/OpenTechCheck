@@ -1,0 +1,11 @@
+name: Storyblok
+slug: storyblok
+category: cms
+website: https://www.storyblok.com
+detect:
+  html:
+    - pattern: 'storyblok\.com'
+      confidence: 90
+  scripts:
+    - pattern: 'storyblok'
+      confidence: 85

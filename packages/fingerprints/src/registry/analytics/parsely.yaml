@@ -1,0 +1,8 @@
+name: Parse.ly
+slug: parsely
+category: analytics
+website: https://www.parsely.com
+detect:
+  scripts:
+    - pattern: 'parsely\.com/keys/'
+      confidence: 95

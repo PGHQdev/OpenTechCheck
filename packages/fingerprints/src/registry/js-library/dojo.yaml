@@ -1,0 +1,10 @@
+name: Dojo
+slug: dojo
+category: js-library
+website: https://dojotoolkit.org
+detect:
+  js:
+    dojo.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 95

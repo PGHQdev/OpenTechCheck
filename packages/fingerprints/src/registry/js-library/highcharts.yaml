@@ -1,0 +1,12 @@
+name: Highcharts
+slug: highcharts
+category: js-library
+website: https://www.highcharts.com
+detect:
+  js:
+    Highcharts.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  scripts:
+    - pattern: 'highcharts'
+      confidence: 80

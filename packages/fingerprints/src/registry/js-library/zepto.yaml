@@ -1,0 +1,12 @@
+name: Zepto
+slug: zepto
+category: js-library
+website: https://zeptojs.com
+detect:
+  js:
+    Zepto:
+      - pattern: ''
+        confidence: 90
+  scripts:
+    - pattern: '(?:^|/)zepto(?:\.min)?\.js'
+      confidence: 80

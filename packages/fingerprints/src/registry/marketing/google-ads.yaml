@@ -1,0 +1,13 @@
+name: Google Ads
+slug: google-ads
+category: marketing
+website: https://ads.google.com
+detect:
+  scripts:
+    - pattern: 'googleadservices\.com'
+      confidence: 95
+    - pattern: 'doubleclick\.net'
+      confidence: 90
+  html:
+    - pattern: "gtag\\('event', ?'conversion'"
+      confidence: 95

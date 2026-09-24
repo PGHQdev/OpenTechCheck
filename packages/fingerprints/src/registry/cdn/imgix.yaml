@@ -1,0 +1,10 @@
+name: Imgix
+slug: imgix
+category: cdn
+website: https://imgix.com
+detect:
+  html:
+    - pattern: '\.imgix\.net'
+      confidence: 95
+    - pattern: '\.iximg\.net'
+      confidence: 95

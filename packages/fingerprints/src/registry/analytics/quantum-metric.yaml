@@ -1,0 +1,12 @@
+name: Quantum Metric
+slug: quantum-metric
+category: analytics
+website: https://www.quantummetric.com
+detect:
+  scripts:
+    - pattern: 'quantummetric\.com'
+      confidence: 95
+  js:
+    QuantumMetricAPI:
+      - pattern: ''
+        confidence: 90

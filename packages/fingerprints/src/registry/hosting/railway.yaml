@@ -1,0 +1,8 @@
+name: Railway
+slug: railway
+category: hosting
+website: https://railway.app
+detect:
+  html:
+    - pattern: '\.up\.railway\.app'
+      confidence: 90

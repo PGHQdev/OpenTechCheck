@@ -1,0 +1,12 @@
+name: TikTok Pixel
+slug: tiktok-pixel
+category: marketing
+website: https://ads.tiktok.com
+detect:
+  scripts:
+    - pattern: 'analytics\.tiktok\.com'
+      confidence: 95
+  js:
+    ttq:
+      - pattern: ''
+        confidence: 90

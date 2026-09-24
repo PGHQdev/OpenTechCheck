@@ -1,0 +1,13 @@
+name: DataDome
+slug: datadome
+category: security
+website: https://datadome.co
+detect:
+  headers:
+    x-datadome:
+      - pattern: ''
+        confidence: 95
+  cookies:
+    datadome:
+      - pattern: ''
+        confidence: 90

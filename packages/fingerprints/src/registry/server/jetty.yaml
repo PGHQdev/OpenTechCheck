@@ -1,0 +1,10 @@
+name: Eclipse Jetty
+slug: jetty
+category: server
+website: https://eclipse.dev/jetty/
+detect:
+  headers:
+    server:
+      - pattern: '^jetty\(([\w.]+)'
+        version: 1
+        confidence: 95

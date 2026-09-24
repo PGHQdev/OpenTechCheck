@@ -1,0 +1,9 @@
+name: Twitter Cards
+slug: twitter-cards
+category: misc
+website: https://developer.x.com/en/docs/x-for-websites/cards
+detect:
+  meta:
+    twitter:card:
+      - pattern: ''
+        confidence: 70

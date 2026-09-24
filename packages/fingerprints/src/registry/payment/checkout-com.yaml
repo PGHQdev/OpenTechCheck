@@ -1,0 +1,8 @@
+name: Checkout.com
+slug: checkout-com
+category: payment
+website: https://www.checkout.com
+detect:
+  scripts:
+    - pattern: 'cdn\.checkout\.com'
+      confidence: 95

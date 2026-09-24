@@ -1,0 +1,12 @@
+name: Video.js
+slug: videojs
+category: js-library
+website: https://videojs.com
+detect:
+  js:
+    videojs.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  scripts:
+    - pattern: '(?:^|/)video(?:\.min)?\.js'
+      confidence: 65

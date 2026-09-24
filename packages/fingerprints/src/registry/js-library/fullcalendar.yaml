@@ -1,0 +1,8 @@
+name: FullCalendar
+slug: fullcalendar
+category: js-library
+website: https://fullcalendar.io
+detect:
+  scripts:
+    - pattern: 'fullcalendar'
+      confidence: 85

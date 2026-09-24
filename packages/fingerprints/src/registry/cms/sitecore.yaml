@@ -1,0 +1,9 @@
+name: Sitecore
+slug: sitecore
+category: cms
+website: https://www.sitecore.com
+detect:
+  cookies:
+    SC_ANALYTICS_GLOBAL_COOKIE:
+      - pattern: ''
+        confidence: 90

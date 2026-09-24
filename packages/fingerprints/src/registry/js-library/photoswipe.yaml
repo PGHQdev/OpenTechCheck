@@ -1,0 +1,11 @@
+name: PhotoSwipe
+slug: photoswipe
+category: js-library
+website: https://photoswipe.com
+detect:
+  html:
+    - pattern: 'pswp__'
+      confidence: 90
+  scripts:
+    - pattern: 'photoswipe'
+      confidence: 85

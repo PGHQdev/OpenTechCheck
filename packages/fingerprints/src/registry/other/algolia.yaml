@@ -1,0 +1,12 @@
+name: Algolia
+slug: algolia
+category: other
+website: https://www.algolia.com
+detect:
+  js:
+    algoliasearch:
+      - pattern: ''
+        confidence: 90
+  scripts:
+    - pattern: 'algolia'
+      confidence: 75

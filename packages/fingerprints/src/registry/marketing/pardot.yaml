@@ -1,0 +1,8 @@
+name: Pardot
+slug: pardot
+category: marketing
+website: https://www.salesforce.com/marketing/pardot/
+detect:
+  scripts:
+    - pattern: 'pi\.pardot\.com'
+      confidence: 95

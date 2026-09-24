@@ -1,0 +1,8 @@
+name: Gumroad
+slug: gumroad
+category: ecommerce
+website: https://gumroad.com
+detect:
+  scripts:
+    - pattern: 'gumroad\.com/js'
+      confidence: 95

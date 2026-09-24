@@ -1,0 +1,11 @@
+name: UIkit
+slug: uikit
+category: ui-framework
+website: https://getuikit.com
+detect:
+  html:
+    - pattern: 'uk-(?:grid|navbar|container|button|flex|section|width)'
+      confidence: 80
+  scripts:
+    - pattern: '(?:^|/)uikit(?:\.min)?\.js'
+      confidence: 80

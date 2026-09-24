@@ -1,0 +1,12 @@
+name: Lucky Orange
+slug: lucky-orange
+category: analytics
+website: https://www.luckyorange.com
+detect:
+  scripts:
+    - pattern: 'luckyorange\.com'
+      confidence: 90
+  cookies:
+    __lo_uid:
+      - pattern: ''
+        confidence: 80

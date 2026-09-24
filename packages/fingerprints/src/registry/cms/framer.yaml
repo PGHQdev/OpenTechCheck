@@ -1,0 +1,10 @@
+name: Framer
+slug: framer
+category: cms
+website: https://www.framer.com
+detect:
+  html:
+    - pattern: '\.framer\.website'
+      confidence: 95
+    - pattern: 'sites\.framer\.app'
+      confidence: 90

@@ -1,0 +1,12 @@
+name: Freshworks
+slug: freshworks
+category: marketing
+website: https://www.freshworks.com
+detect:
+  scripts:
+    - pattern: '(?:freshdesk|freshchat)\.com'
+      confidence: 90
+  js:
+    fcWidget:
+      - pattern: ''
+        confidence: 90

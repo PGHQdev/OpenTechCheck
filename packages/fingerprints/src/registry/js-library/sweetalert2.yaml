@@ -1,0 +1,13 @@
+name: SweetAlert2
+slug: sweetalert2
+category: js-library
+website: https://sweetalert2.github.io
+detect:
+  js:
+    Swal.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 90
+  scripts:
+    - pattern: 'sweetalert2'
+      confidence: 80

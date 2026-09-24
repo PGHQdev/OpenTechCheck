@@ -1,0 +1,12 @@
+name: X Ads
+slug: twitter-pixel
+category: marketing
+website: https://ads.x.com
+detect:
+  scripts:
+    - pattern: 'ads-twitter\.com'
+      confidence: 95
+  js:
+    twq:
+      - pattern: ''
+        confidence: 90

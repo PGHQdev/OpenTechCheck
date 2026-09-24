@@ -1,0 +1,14 @@
+name: Pinterest Tag
+slug: pinterest-tag
+category: marketing
+website: https://ads.pinterest.com
+detect:
+  scripts:
+    - pattern: 'ct\.pinterest\.com'
+      confidence: 95
+    - pattern: 's\.pinimg\.com/ct'
+      confidence: 95
+  js:
+    pintrk:
+      - pattern: ''
+        confidence: 90

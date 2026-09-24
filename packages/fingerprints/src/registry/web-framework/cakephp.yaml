@@ -1,0 +1,10 @@
+name: CakePHP
+slug: cakephp
+category: web-framework
+website: https://cakephp.org
+implies: [php]
+detect:
+  cookies:
+    CAKEPHP:
+      - pattern: ''
+        confidence: 85

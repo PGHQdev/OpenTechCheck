@@ -1,0 +1,8 @@
+name: Authorize.Net
+slug: authorize-net
+category: payment
+website: https://www.authorize.net
+detect:
+  scripts:
+    - pattern: 'js\.authorize\.net'
+      confidence: 95

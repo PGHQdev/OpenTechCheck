@@ -1,0 +1,10 @@
+name: CodeIgniter
+slug: codeigniter
+category: web-framework
+website: https://codeigniter.com
+implies: [php]
+detect:
+  cookies:
+    ci_session:
+      - pattern: ''
+        confidence: 90

@@ -1,0 +1,11 @@
+name: Adobe Fonts
+slug: adobe-typekit
+category: misc
+website: https://fonts.adobe.com
+detect:
+  html:
+    - pattern: 'use\.typekit\.net'
+      confidence: 95
+  scripts:
+    - pattern: 'typekit\.net'
+      confidence: 90

@@ -1,0 +1,8 @@
+name: Contentstack
+slug: contentstack
+category: cms
+website: https://www.contentstack.com
+detect:
+  html:
+    - pattern: 'contentstack\.io'
+      confidence: 90

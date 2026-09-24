@@ -1,0 +1,9 @@
+name: KeyCDN
+slug: keycdn
+category: cdn
+website: https://www.keycdn.com
+detect:
+  headers:
+    x-cdn:
+      - pattern: '^keycdn$'
+        confidence: 95

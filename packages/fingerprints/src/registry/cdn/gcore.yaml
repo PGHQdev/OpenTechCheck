@@ -1,0 +1,12 @@
+name: Gcore CDN
+slug: gcore
+category: cdn
+website: https://gcore.com/cdn/
+detect:
+  html:
+    - pattern: '\.gcdn\.co'
+      confidence: 95
+  headers:
+    server:
+      - pattern: '^gcdn'
+        confidence: 90

@@ -1,0 +1,8 @@
+name: Optimizely CMS
+slug: optimizely-cms
+category: cms
+website: https://www.optimizely.com/products/content-management/
+detect:
+  html:
+    - pattern: '(?:^|/)episerver'
+      confidence: 85

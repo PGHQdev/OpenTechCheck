@@ -1,0 +1,9 @@
+name: Imperva
+slug: imperva
+category: security
+website: https://www.imperva.com
+detect:
+  headers:
+    x-iinfo:
+      - pattern: ''
+        confidence: 95

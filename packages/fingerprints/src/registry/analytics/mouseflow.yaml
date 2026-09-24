@@ -1,0 +1,11 @@
+name: Mouseflow
+slug: mouseflow
+category: analytics
+website: https://mouseflow.com
+detect:
+  scripts:
+    - pattern: 'mouseflow\.com'
+      confidence: 90
+  html:
+    - pattern: '_mfq'
+      confidence: 85

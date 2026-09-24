@@ -1,0 +1,8 @@
+name: Contentsquare
+slug: contentsquare
+category: analytics
+website: https://contentsquare.com
+detect:
+  scripts:
+    - pattern: 'contentsquare\.net'
+      confidence: 90

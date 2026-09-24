@@ -1,0 +1,13 @@
+name: Kong
+slug: kong
+category: server
+website: https://konghq.com
+detect:
+  headers:
+    x-kong-proxy-latency:
+      - pattern: ''
+        confidence: 95
+    via:
+      - pattern: '^kong/([\d.]+)'
+        version: 1
+        confidence: 90

@@ -1,0 +1,8 @@
+name: Mantine
+slug: mantine
+category: ui-framework
+website: https://mantine.dev
+detect:
+  html:
+    - pattern: 'mantine-[a-z0-9]+'
+      confidence: 85

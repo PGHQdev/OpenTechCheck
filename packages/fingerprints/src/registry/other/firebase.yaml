@@ -1,0 +1,16 @@
+name: Firebase
+slug: firebase
+category: other
+website: https://firebase.google.com
+detect:
+  html:
+    - pattern: '\.(?:web\.app|firebaseapp\.com)'
+      confidence: 90
+  scripts:
+    - pattern: 'firebase-app'
+      confidence: 85
+  js:
+    firebase.SDK_VERSION:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 95

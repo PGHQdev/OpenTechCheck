@@ -1,0 +1,8 @@
+name: Simple Analytics
+slug: simple-analytics
+category: analytics
+website: https://simpleanalytics.com
+detect:
+  scripts:
+    - pattern: 'scripts\.simpleanalyticscdn\.com'
+      confidence: 95

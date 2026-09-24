@@ -1,0 +1,8 @@
+name: Socket.IO
+slug: socket-io
+category: other
+website: https://socket.io
+detect:
+  scripts:
+    - pattern: 'socket\.io'
+      confidence: 85

@@ -1,0 +1,12 @@
+name: StackPath
+slug: stackpath
+category: cdn
+website: https://www.stackpath.com
+detect:
+  headers:
+    x-sp-edge:
+      - pattern: ''
+        confidence: 90
+  scripts:
+    - pattern: 'stackpathdns\.com'
+      confidence: 90

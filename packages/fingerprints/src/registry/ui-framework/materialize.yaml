@@ -1,0 +1,11 @@
+name: Materialize CSS
+slug: materialize
+category: ui-framework
+website: https://materializecss.com
+detect:
+  html:
+    - pattern: 'class="[^"]*\b(?:btn-floating|waves-effect|waves-light)'
+      confidence: 75
+  scripts:
+    - pattern: '(?:^|/)materialize(?:\.min)?\.js'
+      confidence: 70

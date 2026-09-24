@@ -1,0 +1,8 @@
+name: ShareThis
+slug: sharethis
+category: marketing
+website: https://sharethis.com
+detect:
+  scripts:
+    - pattern: 'sharethis\.com'
+      confidence: 80

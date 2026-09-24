@@ -1,0 +1,8 @@
+name: Mollie
+slug: mollie
+category: payment
+website: https://www.mollie.com
+detect:
+  scripts:
+    - pattern: 'js\.mollie\.com'
+      confidence: 95

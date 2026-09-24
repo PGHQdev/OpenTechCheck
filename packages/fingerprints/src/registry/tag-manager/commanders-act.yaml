@@ -1,0 +1,8 @@
+name: Commanders Act
+slug: commanders-act
+category: tag-manager
+website: https://www.commandersact.com
+detect:
+  scripts:
+    - pattern: '(?:commandersact|tagcommander)\.com'
+      confidence: 95

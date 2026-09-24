@@ -1,0 +1,9 @@
+name: Apple Pay
+slug: apple-pay
+category: payment
+website: https://www.apple.com/apple-pay/
+detect:
+  js:
+    ApplePaySession:
+      - pattern: ''
+        confidence: 95

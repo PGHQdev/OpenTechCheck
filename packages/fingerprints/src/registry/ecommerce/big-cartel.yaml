@@ -1,0 +1,8 @@
+name: Big Cartel
+slug: big-cartel
+category: ecommerce
+website: https://www.bigcartel.com
+detect:
+  html:
+    - pattern: 'bigcartel\.com'
+      confidence: 90

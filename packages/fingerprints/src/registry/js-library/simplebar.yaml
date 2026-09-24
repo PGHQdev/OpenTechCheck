@@ -1,0 +1,11 @@
+name: SimpleBar
+slug: simplebar
+category: js-library
+website: https://grsmto.github.io/simplebar/
+detect:
+  html:
+    - pattern: 'data-simplebar'
+      confidence: 95
+  scripts:
+    - pattern: 'simplebar'
+      confidence: 80

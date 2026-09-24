@@ -1,0 +1,12 @@
+name: Mapbox GL JS
+slug: mapbox-gl
+category: js-library
+website: https://docs.mapbox.com/mapbox-gl-js/
+detect:
+  js:
+    mapboxgl.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  scripts:
+    - pattern: 'mapbox-gl'
+      confidence: 85

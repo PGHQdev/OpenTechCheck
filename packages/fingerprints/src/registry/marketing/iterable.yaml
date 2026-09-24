@@ -1,0 +1,8 @@
+name: Iterable
+slug: iterable
+category: marketing
+website: https://iterable.com
+detect:
+  scripts:
+    - pattern: 'js\.iterable\.com'
+      confidence: 95

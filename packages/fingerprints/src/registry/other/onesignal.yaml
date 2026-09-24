@@ -1,0 +1,12 @@
+name: OneSignal
+slug: onesignal
+category: other
+website: https://onesignal.com
+detect:
+  scripts:
+    - pattern: 'cdn\.onesignal\.com'
+      confidence: 95
+  js:
+    OneSignal:
+      - pattern: ''
+        confidence: 90

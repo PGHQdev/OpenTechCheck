@@ -1,0 +1,11 @@
+name: Optimizely Web Experimentation
+slug: optimizely
+category: marketing
+website: https://www.optimizely.com/products/web-experimentation/
+detect:
+  scripts:
+    - pattern: 'cdn\.optimizely\.com'
+      confidence: 95
+  html:
+    - pattern: 'window\.optimizely'
+      confidence: 90

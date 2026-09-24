@@ -1,0 +1,12 @@
+name: Bugsnag
+slug: bugsnag
+category: other
+website: https://www.bugsnag.com
+detect:
+  scripts:
+    - pattern: 'bugsnag'
+      confidence: 85
+  js:
+    Bugsnag:
+      - pattern: ''
+        confidence: 90

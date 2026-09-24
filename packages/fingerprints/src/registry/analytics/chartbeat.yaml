@@ -1,0 +1,11 @@
+name: Chartbeat
+slug: chartbeat
+category: analytics
+website: https://chartbeat.com
+detect:
+  scripts:
+    - pattern: 'static\.chartbeat\.com/js/chartbeat'
+      confidence: 95
+  html:
+    - pattern: '_sf_async_config'
+      confidence: 90

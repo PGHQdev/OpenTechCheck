@@ -1,0 +1,12 @@
+name: Eloqua
+slug: eloqua
+category: marketing
+website: https://www.oracle.com/cx/marketing/
+detect:
+  scripts:
+    - pattern: 'en25\.com'
+      confidence: 90
+  js:
+    _elqQ:
+      - pattern: ''
+        confidence: 90

@@ -1,0 +1,12 @@
+name: Shopware
+slug: shopware
+category: ecommerce
+website: https://www.shopware.com
+implies: [php]
+detect:
+  html:
+    - pattern: '(?:^|/)bundles/storefront/'
+      confidence: 95
+  scripts:
+    - pattern: 'shopware'
+      confidence: 85

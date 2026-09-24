@@ -1,0 +1,8 @@
+name: Blazor
+slug: blazor
+category: web-framework
+website: https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor
+detect:
+  scripts:
+    - pattern: '_framework/blazor'
+      confidence: 95

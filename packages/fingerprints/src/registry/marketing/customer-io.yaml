@@ -1,0 +1,12 @@
+name: Customer.io
+slug: customer-io
+category: marketing
+website: https://customer.io
+detect:
+  scripts:
+    - pattern: 'assets\.customer\.io'
+      confidence: 95
+  js:
+    _cio:
+      - pattern: ''
+        confidence: 90

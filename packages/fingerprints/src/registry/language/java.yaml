@@ -1,0 +1,13 @@
+name: Java
+slug: java
+category: language
+website: https://www.java.com
+detect:
+  cookies:
+    JSESSIONID:
+      - pattern: ''
+        confidence: 90
+  headers:
+    x-powered-by:
+      - pattern: '\b(?:jsp|servlet|java)\b'
+        confidence: 70

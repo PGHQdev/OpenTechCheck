@@ -1,0 +1,8 @@
+name: Pantheon
+slug: pantheon
+category: hosting
+website: https://pantheon.io
+detect:
+  html:
+    - pattern: 'pantheonsite\.io'
+      confidence: 90

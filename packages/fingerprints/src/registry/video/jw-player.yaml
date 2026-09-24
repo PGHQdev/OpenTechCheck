@@ -1,0 +1,12 @@
+name: JW Player
+slug: jw-player
+category: video
+website: https://www.jwplayer.com
+detect:
+  scripts:
+    - pattern: 'jwplayer'
+      confidence: 80
+  js:
+    jwplayer:
+      - pattern: ''
+        confidence: 85

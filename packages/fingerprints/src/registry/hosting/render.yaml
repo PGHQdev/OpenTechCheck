@@ -1,0 +1,8 @@
+name: Render
+slug: render
+category: hosting
+website: https://render.com
+detect:
+  html:
+    - pattern: '\.onrender\.com'
+      confidence: 90

@@ -1,0 +1,8 @@
+name: Adyen
+slug: adyen
+category: payment
+website: https://www.adyen.com
+detect:
+  scripts:
+    - pattern: 'checkoutshopper'
+      confidence: 95

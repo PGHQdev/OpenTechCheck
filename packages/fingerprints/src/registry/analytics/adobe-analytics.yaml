@@ -1,0 +1,18 @@
+name: Adobe Analytics
+slug: adobe-analytics
+category: analytics
+website: https://business.adobe.com/products/adobe-analytics.html
+detect:
+  scripts:
+    - pattern: 'omtrdc\.net'
+      confidence: 90
+    - pattern: '(?:^|/)s_code(?:\.min)?\.js'
+      confidence: 80
+  cookies:
+    s_vi:
+      - pattern: '^\[CS\]v1'
+        confidence: 80
+  js:
+    s.account:
+      - pattern: ''
+        confidence: 80

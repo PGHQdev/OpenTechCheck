@@ -1,0 +1,8 @@
+name: Ensighten
+slug: ensighten
+category: tag-manager
+website: https://www.ensighten.com
+detect:
+  scripts:
+    - pattern: 'ensighten\.com'
+      confidence: 95

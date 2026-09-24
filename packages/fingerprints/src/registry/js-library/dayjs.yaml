@@ -1,0 +1,12 @@
+name: Day.js
+slug: dayjs
+category: js-library
+website: https://day.js.org
+detect:
+  js:
+    dayjs:
+      - pattern: ''
+        confidence: 90
+  scripts:
+    - pattern: '(?:^|/)dayjs(?:\.min)?\.js'
+      confidence: 80

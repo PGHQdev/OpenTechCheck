@@ -1,0 +1,9 @@
+name: Vuetify
+slug: vuetify
+category: ui-framework
+website: https://vuetifyjs.com
+implies: [vue]
+detect:
+  html:
+    - pattern: 'v-application'
+      confidence: 90

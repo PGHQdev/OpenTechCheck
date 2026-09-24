@@ -1,0 +1,11 @@
+name: Semantic UI
+slug: semantic-ui
+category: ui-framework
+website: https://semantic-ui.com
+detect:
+  html:
+    - pattern: 'class="[^"]*\bui (?:stackable )?(?:grid|menu|container|segment|button|card|form)'
+      confidence: 80
+  scripts:
+    - pattern: '(?:^|/)semantic(?:\.min)?\.js'
+      confidence: 70

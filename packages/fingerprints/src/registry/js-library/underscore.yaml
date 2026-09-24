@@ -1,0 +1,8 @@
+name: Underscore.js
+slug: underscore
+category: js-library
+website: https://underscorejs.org
+detect:
+  scripts:
+    - pattern: '(?:^|/)underscore(?:[-.]min)?\.js'
+      confidence: 80

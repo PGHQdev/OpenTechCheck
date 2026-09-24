@@ -1,0 +1,11 @@
+name: petite-vue
+slug: petite-vue
+category: js-framework
+website: https://github.com/vuejs/petite-vue
+detect:
+  html:
+    - pattern: 'v-scope'
+      confidence: 90
+  scripts:
+    - pattern: 'petite-vue'
+      confidence: 95

@@ -1,0 +1,8 @@
+name: ConvertKit
+slug: convertkit
+category: marketing
+website: https://convertkit.com
+detect:
+  scripts:
+    - pattern: 'f\.convertkit\.com'
+      confidence: 95

@@ -1,0 +1,11 @@
+name: Vimeo
+slug: vimeo
+category: video
+website: https://vimeo.com
+detect:
+  scripts:
+    - pattern: 'player\.vimeo\.com'
+      confidence: 95
+  html:
+    - pattern: 'vimeo\.com/video/'
+      confidence: 85

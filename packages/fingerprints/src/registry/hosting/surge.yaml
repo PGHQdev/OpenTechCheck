@@ -1,0 +1,8 @@
+name: Surge
+slug: surge
+category: hosting
+website: https://surge.sh
+detect:
+  html:
+    - pattern: '\.surge\.sh'
+      confidence: 90

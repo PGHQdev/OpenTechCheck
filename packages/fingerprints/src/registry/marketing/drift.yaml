@@ -1,0 +1,12 @@
+name: Drift
+slug: drift
+category: marketing
+website: https://www.drift.com
+detect:
+  scripts:
+    - pattern: 'js\.drift\.com'
+      confidence: 95
+  js:
+    driftt:
+      - pattern: ''
+        confidence: 90

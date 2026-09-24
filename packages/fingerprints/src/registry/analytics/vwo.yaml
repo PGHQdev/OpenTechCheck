@@ -1,0 +1,15 @@
+name: VWO
+slug: vwo
+category: analytics
+website: https://vwo.com
+detect:
+  scripts:
+    - pattern: 'visualwebsiteoptimizer\.com'
+      confidence: 95
+  cookies:
+    _vwo_uuid:
+      - pattern: ''
+        confidence: 85
+  html:
+    - pattern: '_vis_opt'
+      confidence: 85

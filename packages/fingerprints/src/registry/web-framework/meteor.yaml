@@ -1,0 +1,9 @@
+name: Meteor
+slug: meteor
+category: web-framework
+website: https://www.meteor.com
+implies: [nodejs]
+detect:
+  html:
+    - pattern: '__meteor_runtime_config__'
+      confidence: 95

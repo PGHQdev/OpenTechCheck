@@ -1,0 +1,9 @@
+name: Grav
+slug: grav
+category: cms
+website: https://getgrav.org
+detect:
+  meta:
+    generator:
+      - pattern: 'grav'
+        confidence: 90

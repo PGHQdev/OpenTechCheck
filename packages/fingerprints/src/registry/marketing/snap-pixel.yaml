@@ -1,0 +1,12 @@
+name: Snap Pixel
+slug: snap-pixel
+category: marketing
+website: https://forbusiness.snapchat.com
+detect:
+  scripts:
+    - pattern: 'sc-static\.net'
+      confidence: 95
+  js:
+    snaptr:
+      - pattern: ''
+        confidence: 90

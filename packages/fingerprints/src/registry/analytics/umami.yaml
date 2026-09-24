@@ -1,0 +1,11 @@
+name: Umami
+slug: umami
+category: analytics
+website: https://umami.is
+detect:
+  html:
+    - pattern: 'data-website-id'
+      confidence: 90
+  scripts:
+    - pattern: '(?:^|/)umami(?:\.js|\.iife\.js)'
+      confidence: 70

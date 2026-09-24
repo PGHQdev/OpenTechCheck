@@ -1,0 +1,12 @@
+name: Apache ECharts
+slug: echarts
+category: js-library
+website: https://echarts.apache.org
+detect:
+  js:
+    echarts.version:
+      - pattern: '^([\d.]+)'
+        version: 1
+  scripts:
+    - pattern: 'echarts'
+      confidence: 80

@@ -1,0 +1,13 @@
+name: PixiJS
+slug: pixijs
+category: js-library
+website: https://pixijs.com
+detect:
+  js:
+    PIXI.VERSION:
+      - pattern: '^([\d.]+)'
+        version: 1
+        confidence: 95
+  scripts:
+    - pattern: '(?:^|/)pixi(?:\.min)?\.js'
+      confidence: 75

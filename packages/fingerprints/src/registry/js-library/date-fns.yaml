@@ -1,0 +1,8 @@
+name: date-fns
+slug: date-fns
+category: js-library
+website: https://date-fns.org
+detect:
+  scripts:
+    - pattern: 'date-fns'
+      confidence: 80

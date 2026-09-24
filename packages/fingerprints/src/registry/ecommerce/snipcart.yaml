@@ -1,0 +1,12 @@
+name: Snipcart
+slug: snipcart
+category: ecommerce
+website: https://snipcart.com
+detect:
+  scripts:
+    - pattern: 'cdn\.snipcart\.com'
+      confidence: 95
+  js:
+    Snipcart:
+      - pattern: ''
+        confidence: 90

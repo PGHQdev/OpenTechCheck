@@ -1,0 +1,11 @@
+name: Builder.io
+slug: builder-io
+category: cms
+website: https://www.builder.io
+detect:
+  scripts:
+    - pattern: 'cdn\.builder\.io'
+      confidence: 95
+  html:
+    - pattern: 'builder\.io/api/v[12]/'
+      confidence: 90

@@ -1,0 +1,11 @@
+name: Fancybox
+slug: fancybox
+category: js-library
+website: https://fancyapps.com/fancybox/
+detect:
+  html:
+    - pattern: 'data-fancybox'
+      confidence: 95
+  scripts:
+    - pattern: 'fancybox'
+      confidence: 80
