@@ -1,6 +1,6 @@
 {
   "name": "@opentechcheck/collect-http",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "type": "module",
   "license": "Apache-2.0",
   "main": "src/index.ts",

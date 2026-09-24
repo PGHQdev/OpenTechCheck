@@ -17,3 +17,15 @@ Rules:
 - Prefer high-precision patterns; a fingerprint that matches unrelated
   sites will be rejected by the fixture suite.
 - Version captures use `version: <group index>`.
+
+## Releasing
+
+Package versions track the git release tag. When cutting a release:
+
+1. Bump `"version"` in every versioned package (`core`, `fingerprints`,
+   `collect-http`, `site`) and in `packages/extension/manifest/base.json`
+   to the new tag number.
+2. Commit, tag (`vX.Y.Z`, annotated), and push.
+
+`extension` and `reporting` are not published; only the extension
+manifest version is bumped.
