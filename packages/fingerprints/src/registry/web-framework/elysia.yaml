@@ -1,0 +1,12 @@
+name: Elysia
+slug: elysia
+category: web-framework
+website: https://elysiajs.com
+detect:
+  headers:
+    # Elysia does not emit this header automatically. Applications can opt in
+    # with `set.headers['x-powered-by'] = 'Elysia'`; keep the value exact.
+    # Do not infer Elysia from Bun, generic JSON, or proxy/server headers.
+    x-powered-by:
+      - pattern: '^Elysia$'
+        confidence: 95
