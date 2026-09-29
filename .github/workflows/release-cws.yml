@@ -25,6 +25,8 @@ jobs:
         run: |
           bun test packages/core packages/fingerprints packages/collect-http
           cd packages/extension && bun test test/
+        env:
+          OTC_FIXTURES: fixtures
 
       - name: Inject tag version into manifest
         run: |

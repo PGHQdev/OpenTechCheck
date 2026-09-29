@@ -14,6 +14,8 @@ jobs:
       - run: bun run typecheck
       - name: Unit tests (core, fingerprints, collect-http)
         run: bun test packages/core packages/fingerprints packages/collect-http
+        env:
+          OTC_FIXTURES: fixtures
       - name: Extension unit tests
         run: cd packages/extension && bun test test/
       - name: Extension build
