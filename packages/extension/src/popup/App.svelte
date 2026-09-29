@@ -5,6 +5,11 @@
   import type { TabResult } from '../shared/protocol'
   import { ICON_SLUGS } from 'virtual:lists'
   import { reportUrl } from './report'
+  import { THEME_STORAGE_KEY, resolveTheme, systemTheme, type Theme } from './theme'
+
+  const preferredTheme = systemTheme(
+    typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches,
+  )
 
   let state = $state<'scanning' | 'ready' | 'uninspectable' | 'nodata'>('scanning')
   let result = $state<TabResult | null>(null)
@@ -17,6 +22,7 @@
   let savingSetting = $state(false)
   let settingError = $state('')
   let privateWindow = $state(false)
+  let theme = $state<Theme>(preferredTheme)
 
   const icons = new Set(ICON_SLUGS)
   // Deterministic tile color for technologies without a fetched favicon.
@@ -48,8 +54,15 @@
     poll()
   }
   onMount(() => {
+    const applyTheme = (value: Theme) => { document.documentElement.dataset.theme = value }
     const changed = (changes: Record<string, chrome.storage.StorageChange>, area: string) => {
-      if (area === 'local' && changes.autoReportEnabled) autoReportEnabled = changes.autoReportEnabled.newValue === true
+      if (area === 'local') {
+        if (changes.autoReportEnabled) autoReportEnabled = changes.autoReportEnabled.newValue === true
+        if (changes[THEME_STORAGE_KEY]) {
+          theme = resolveTheme(changes[THEME_STORAGE_KEY].newValue, preferredTheme)
+          applyTheme(theme)
+        }
+      }
       const update = changes[`result:${tabId}`]
       if (area === 'session' && update?.newValue) {
         result = update.newValue as TabResult
@@ -57,9 +70,12 @@
         state = 'ready'
       }
     }
+    applyTheme(theme)
     ext.storage.onChanged.addListener(changed)
-    ext.storage.local.get('autoReportEnabled').then((value) => {
+    ext.storage.local.get(['autoReportEnabled', THEME_STORAGE_KEY]).then((value) => {
       autoReportEnabled = value.autoReportEnabled === true
+      theme = resolveTheme(value[THEME_STORAGE_KEY], preferredTheme)
+      applyTheme(theme)
       settingsReady = true
     }).catch(() => { settingError = 'Could not load this setting.' })
     load().catch(() => { state = 'nodata' })
@@ -76,6 +92,23 @@
       if (enabled && tabId !== undefined) await ext.tabs.sendMessage(tabId, { type: 'recollect' }).catch(() => {})
     } catch {
       checkbox.checked = autoReportEnabled
+      settingError = 'Could not save this setting. Please try again.'
+    } finally { savingSetting = false }
+  }
+
+  async function setDarkMode(event: Event) {
+    const checkbox = event.currentTarget as HTMLInputElement
+    const previous = theme
+    const next: Theme = checkbox.checked ? 'dark' : 'light'
+    theme = next
+    document.documentElement.dataset.theme = next
+    settingError = ''; savingSetting = true
+    try {
+      await ext.storage.local.set({ [THEME_STORAGE_KEY]: next })
+    } catch {
+      checkbox.checked = previous === 'dark'
+      theme = previous
+      document.documentElement.dataset.theme = previous
       settingError = 'Could not save this setting. Please try again.'
     } finally { savingSetting = false }
   }
@@ -111,9 +144,9 @@
   <header>
     <span class="logo">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="3" y="4.5" width="14" height="4" rx="2" fill="#fff" />
-        <rect x="7" y="10" width="14" height="4" rx="2" fill="#fff" opacity=".8" />
-        <rect x="3" y="15.5" width="14" height="4" rx="2" fill="#fff" opacity=".55" />
+        <rect x="3" y="4.5" width="14" height="4" rx="2" fill="currentColor" />
+        <rect x="7" y="10" width="14" height="4" rx="2" fill="currentColor" opacity=".8" />
+        <rect x="3" y="15.5" width="14" height="4" rx="2" fill="currentColor" opacity=".55" />
       </svg>
     </span>
     <span class="brand">OpenTechCheck</span>
@@ -192,7 +225,11 @@
   <details class="settings">
     <summary>Coverage settings</summary>
     <label class="setting">
-      <input type="checkbox" checked={autoReportEnabled} onchange={setAutomaticReporting} disabled={!settingsReady || savingSetting || privateWindow} />
+      <input name="theme" type="checkbox" checked={theme === 'dark'} onchange={setDarkMode} disabled={!settingsReady || savingSetting} />
+      <span><strong>Use dark mode</strong><small>Use a darker palette for the popup. Defaults to your system preference.</small></span>
+    </label>
+    <label class="setting">
+      <input name="autoReportEnabled" type="checkbox" checked={autoReportEnabled} onchange={setAutomaticReporting} disabled={!settingsReady || savingSetting || privateWindow} />
       <span><strong>Automatically report undetected websites</strong><small>Help improve coverage by sharing only the website domain. No account required.</small></span>
     </label>
     {#if privateWindow}<p>Automatic reporting is off in private browsing.</p>{/if}

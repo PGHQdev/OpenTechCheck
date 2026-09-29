@@ -36,9 +36,50 @@
   --amber: #faecc8;
   --amber-ink: #8a6410;
   --gray-chip: #eeece4;
+  --tile: #ffffff;
+  --blue-contrast: #ffffff;
   --display: 'Bricolage Grotesque', 'Archivo', sans-serif;
   --text: 'Archivo', sans-serif;
   --mono: 'Spline Sans Mono', ui-monospace, monospace;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --paper: #15161a;
+  --card: #22242b;
+  --ink: #f4f2eb;
+  --dim: #aaa8a0;
+  --line: #40424b;
+  --blue: #9298ff;
+  --blue-soft: #30345b;
+  --green: #1d4b31;
+  --green-ink: #abe5bd;
+  --amber: #4d3d18;
+  --amber-ink: #f4d36b;
+  --gray-chip: #383a43;
+  --tile: #2b2d35;
+  --blue-contrast: #151629;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --paper: #15161a;
+    --card: #22242b;
+    --ink: #f4f2eb;
+    --dim: #aaa8a0;
+    --line: #40424b;
+    --blue: #9298ff;
+    --blue-soft: #30345b;
+    --green: #1d4b31;
+    --green-ink: #abe5bd;
+    --amber: #4d3d18;
+    --amber-ink: #f4d36b;
+    --gray-chip: #383a43;
+    --tile: #2b2d35;
+    --blue-contrast: #151629;
+    color-scheme: dark;
+  }
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -70,7 +111,7 @@ header {
 }
 .logo {
   width: 28px; height: 28px; border-radius: 6px;
-  background: var(--blue); color: #fff;
+  background: var(--blue); color: var(--blue-contrast);
   font-family: var(--mono); font-size: 10px; font-weight: 600;
   display: flex; align-items: center; justify-content: center;
   flex: none;
@@ -83,7 +124,7 @@ header {
 }
 .count {
   font-family: var(--mono); font-size: 11px; font-weight: 600;
-  background: var(--blue); color: #fff;
+  background: var(--blue); color: var(--blue-contrast);
   padding: 3px 9px; border-radius: 4px; flex: none;
 }
 .tagline { font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em; color: var(--dim); flex: none; }
@@ -117,7 +158,7 @@ section { break-inside: avoid; padding-top: 12px; }
   width: 42px; flex: none;
   display: flex; align-items: center; justify-content: center;
   border-right: 1px solid var(--ink);
-  background: #fff;
+  background: var(--tile);
 }
 .tile img { width: 24px; height: 24px; object-fit: contain; }
 .tile.mono {
@@ -184,7 +225,7 @@ footer {
   padding: 9px 16px; border-radius: 6px; cursor: pointer;
   display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
 }
-.btn.primary { background: var(--blue); color: #fff; border: 1px solid var(--blue); }
+.btn.primary { background: var(--blue); color: var(--blue-contrast); border: 1px solid var(--blue); }
 .btn.primary:hover { filter: brightness(1.1); }
 .btn.secondary { background: var(--card); color: var(--ink); border: 1px solid var(--ink); }
 .btn.secondary:hover { background: var(--gray-chip); }
