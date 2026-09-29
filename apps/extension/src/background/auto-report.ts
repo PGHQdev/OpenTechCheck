@@ -1,4 +1,4 @@
-import { publicAddress, publicDomain } from '../../../reporting/domain'
+import { publicAddress, publicDomain } from '../../../../packages/reporting/domain'
 import type { TabResult } from '../shared/protocol'
 
 export interface PageConnection { url: string; ip?: string; status: number }

@@ -21,7 +21,7 @@ Rules:
 Package versions track the git release tag. When cutting a release:
 
 1. Bump `"version"` in every versioned package (`core`, `fingerprints`,
-   `collect-http`, `site`) and in `packages/extension/manifest/base.json`
+   `collect-http`, `site`) and in `apps/extension/manifest/base.json`
    to the new tag number.
 2. Commit, tag (`vX.Y.Z`, annotated), and push.
 

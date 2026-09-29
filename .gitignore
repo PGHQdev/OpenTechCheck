@@ -1,6 +1,6 @@
 node_modules/
 dist/
-packages/extension/dist/
+apps/extension/dist/
 *.log
 .superpowers/
-packages/extension/store/*.zip
+apps/extension/store/*.zip

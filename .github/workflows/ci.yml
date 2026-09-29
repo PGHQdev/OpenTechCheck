@@ -37,8 +37,8 @@ jobs:
         env:
           OTC_FIXTURES: harness/fixtures
       - name: Extension unit tests
-        run: cd packages/extension && bun test test/
+        run: cd apps/extension && bun test test/
       - name: Extension build
-        run: cd packages/extension && bun run build
+        run: cd apps/extension && bun run build
       - name: Extension e2e
-        run: cd packages/extension && bun test e2e/
+        run: cd apps/extension && bun test e2e/

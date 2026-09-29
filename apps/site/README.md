@@ -21,7 +21,7 @@ bunx wrangler dev
 ```
 
 Vite alone serves the form but does not run the report API. Use Wrangler for the
-complete flow. Tests from the repo root: `bun test packages/site/test`.
+complete flow. Tests from the repo root: `bun test apps/site/test`.
 
 ## Release
 

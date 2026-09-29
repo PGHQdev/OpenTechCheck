@@ -1,5 +1,5 @@
 import { parseReport } from '../src/lib/report'
-import { publicDomain } from '../../reporting/domain'
+import { publicDomain } from '../../../packages/reporting/domain'
 
 // Structural binding types keep this handler testable with SQLite locally.
 export interface Env {

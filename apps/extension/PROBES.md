@@ -50,11 +50,11 @@ invocation of their getters or application methods.
 
 ## Verification
 
-`bun test packages/extension/test/probes.test.ts packages/extension/test/probe-queue.test.ts`
+`bun test apps/extension/test/probes.test.ts apps/extension/test/probe-queue.test.ts`
 checks deep DOM, nested open shadows, shaped markers and lookalikes, mixed frameworks,
 versions, getters, yielding, timeout, and request/navigation ordering.
 
-`bun test packages/extension/e2e` also bundles the pinned development dependencies
+`bun test apps/extension/e2e` also bundles the pinned development dependencies
 Preact 10.29.8, Lit 3.3.3, Alpine 3.17.4, and the installed Svelte disclosure module
 into a minified browser fixture. Mounts sit after 6,000 unrelated elements, with Lit
 inside nested shadow DOM and public version arrays removed. These libraries are test

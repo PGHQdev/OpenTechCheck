@@ -2,10 +2,10 @@
   "name": "opentechcheck-monorepo",
   "private": true,
   "type": "module",
-  "workspaces": ["packages/*"],
+  "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "test": "bun test",
-    "typecheck": "bunx tsc --noEmit -p packages/core && bunx tsc --noEmit -p packages/fingerprints && bunx tsc --noEmit -p packages/collect-http && bunx tsc --noEmit -p packages/extension",
+    "typecheck": "bunx tsc --noEmit -p packages/core && bunx tsc --noEmit -p packages/fingerprints && bunx tsc --noEmit -p packages/collect-http && bunx tsc --noEmit -p apps/extension",
     "compile": "cd packages/fingerprints && bun run compile"
   },
   "devDependencies": {

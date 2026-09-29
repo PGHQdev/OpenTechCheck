@@ -5,7 +5,7 @@ import { clearTab, clearTabResult, getTab, setTab } from './store'
 import { ext } from '../shared/ext'
 import type { PageSignals, ScanState, TabResult, ToBackground, ToContent } from '../shared/protocol'
 import { createAutoReporter, eligibleForAutoReport, type PageConnection } from './auto-report'
-import { publicDomain } from '../../../reporting/domain'
+import { publicDomain } from '../../../../packages/reporting/domain'
 
 const fingerprints = registry as unknown as Fingerprint[]
 

@@ -1,6 +1,6 @@
 import { expect, test } from 'bun:test'
 import { createAutoReporter, eligibleForAutoReport, type AutoReportApi } from '../src/background/auto-report'
-import { publicDomain, publicAddress } from '../../reporting/domain'
+import { publicDomain, publicAddress } from '../../../packages/reporting/domain'
 
 function setup() {
   const state: Record<string, unknown> = {}

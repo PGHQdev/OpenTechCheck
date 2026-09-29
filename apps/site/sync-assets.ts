@@ -8,10 +8,10 @@ const here = import.meta.dir
 const ext = join(here, '..', 'extension')
 mkdirSync(join(here, 'static', 'fonts'), { recursive: true })
 cpSync(join(ext, 'src', 'popup', 'fonts'), join(here, 'static', 'fonts'), { recursive: true })
-cpSync(join(here, '..', 'fingerprints', 'icons'), join(here, 'static', 'icons'), { recursive: true })
+cpSync(join(here, '..', '..', 'packages', 'fingerprints', 'icons'), join(here, 'static', 'icons'), { recursive: true })
 cpSync(join(ext, 'assets', 'icon-128.png'), join(here, 'static', 'favicon.png'))
 
-const registry = join(here, '..', 'fingerprints', 'src', 'registry')
+const registry = join(here, '..', '..', 'packages', 'fingerprints', 'src', 'registry')
 const count = [...new Glob('**/*.yaml').scanSync(registry)].length
 writeFileSync(join(here, 'src', 'registry-count.json'), JSON.stringify({ count }) + '\n')
 console.log(`assets synced, ${count} fingerprints`)
