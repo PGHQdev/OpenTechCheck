@@ -4,9 +4,6 @@
   "workspaces": {
     "": {
       "name": "opentechcheck-monorepo",
-      "dependencies": {
-        "@opentechcheck/collect-http": "workspace:*",
-      },
       "devDependencies": {
         "bun-types": "^1.4.0",
         "typescript": "^5.6.0",
@@ -14,14 +11,14 @@
     },
     "packages/collect-http": {
       "name": "@opentechcheck/collect-http",
-      "version": "0.0.1",
+      "version": "0.3.0",
       "dependencies": {
         "@opentechcheck/core": "workspace:*",
       },
     },
     "packages/core": {
       "name": "@opentechcheck/core",
-      "version": "0.0.1",
+      "version": "0.3.0",
     },
     "packages/extension": {
       "name": "@opentechcheck/extension",
@@ -45,7 +42,7 @@
     },
     "packages/fingerprints": {
       "name": "@opentechcheck/fingerprints",
-      "version": "0.0.1",
+      "version": "0.3.0",
       "dependencies": {
         "@opentechcheck/core": "workspace:*",
         "yaml": "^2.5.0",
@@ -56,7 +53,7 @@
     },
     "packages/site": {
       "name": "@opentechcheck/site",
-      "version": "0.0.1",
+      "version": "0.3.0",
       "devDependencies": {
         "@sveltejs/adapter-static": "^3.0.8",
         "@sveltejs/kit": "^2.22.0",

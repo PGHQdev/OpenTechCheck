@@ -5,7 +5,7 @@ name: release-cws
 #
 # Required repository secrets (Google Cloud OAuth client with the
 # chromewebstore scope; see https://developer.chrome.com/docs/webstore/using-api):
-#   CWS_CLIENT_ID, CWS_CLIENT_SECRET, CWS_REFRESH_TOKEN
+#   CWS_CLIENT_ID, CWS_CLIENT_SECRET, CWS_REFRESH_TOKEN, HARNESS_DEPLOY_KEY
 on:
   push:
     tags: ['v*.*.*']
@@ -21,12 +21,19 @@ jobs:
       - run: bun install --frozen-lockfile
       - run: bun run compile
       - run: bun run typecheck
+      - name: Check out private fixtures
+        uses: actions/checkout@v4
+        with:
+          repository: opentechcheck/harness
+          ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
+          path: harness
+          sparse-checkout: fixtures
       - name: Tests
         run: |
           bun test packages/core packages/fingerprints packages/collect-http
           cd packages/extension && bun test test/
         env:
-          OTC_FIXTURES: fixtures
+          OTC_FIXTURES: harness/fixtures
 
       - name: Inject tag version into manifest
         run: |

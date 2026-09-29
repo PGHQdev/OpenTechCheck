@@ -6,6 +6,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      # Secrets cannot appear in step `if:`; expose presence as a flag. Fork PRs get no secrets.
+      HAS_HARNESS_KEY: ${{ secrets.HARNESS_DEPLOY_KEY != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
@@ -14,8 +17,24 @@ jobs:
       - run: bun run typecheck
       - name: Unit tests (core, fingerprints, collect-http)
         run: bun test packages/core packages/fingerprints packages/collect-http
+      - name: Require fixture access on main
+        if: github.event_name == 'push' && env.HAS_HARNESS_KEY != 'true'
+        run: |
+          echo "::error::HARNESS_DEPLOY_KEY is missing; the fixture suite cannot run"
+          exit 1
+      - name: Check out private fixtures
+        if: env.HAS_HARNESS_KEY == 'true'
+        uses: actions/checkout@v4
+        with:
+          repository: opentechcheck/harness
+          ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
+          path: harness
+          sparse-checkout: fixtures
+      - name: Fixture suite
+        if: env.HAS_HARNESS_KEY == 'true'
+        run: bun test packages/fingerprints/test/fixtures.test.ts
         env:
-          OTC_FIXTURES: fixtures
+          OTC_FIXTURES: harness/fixtures
       - name: Extension unit tests
         run: cd packages/extension && bun test test/
       - name: Extension build

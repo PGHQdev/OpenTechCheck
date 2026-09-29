@@ -58,7 +58,7 @@ Detection rescans after loading, relevant page changes, and opening the popup.
 
 ## Contributing
 
-Add a technology in one YAML file plus one fixture — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Add a technology in one YAML file — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
