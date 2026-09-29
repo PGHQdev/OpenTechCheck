@@ -24,7 +24,7 @@ jobs:
       - name: Check out private fixtures
         uses: actions/checkout@v4
         with:
-          repository: opentechcheck/harness
+          repository: PGHQdev/OpenTechCheckHarness
           ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
           persist-credentials: false
           path: harness
