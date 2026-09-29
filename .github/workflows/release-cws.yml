@@ -26,6 +26,7 @@ jobs:
         with:
           repository: opentechcheck/harness
           ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
+          persist-credentials: false
           path: harness
           sparse-checkout: fixtures
       - name: Tests
