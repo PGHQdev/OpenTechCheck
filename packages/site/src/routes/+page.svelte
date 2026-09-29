@@ -170,12 +170,12 @@
   @media (max-width: 880px) { .popupmock { justify-self: start; } }
   .pm-head { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; border-bottom: 1.5px solid var(--ink); }
   .pm-site { font-size: 11px; color: var(--dim); }
-  .pm-count { font-size: 10.5px; font-weight: 600; background: var(--blue); color: #fff; padding: 3px 8px; border-radius: 4px; }
+  .pm-count { font-size: 10.5px; font-weight: 600; background: var(--blue-action); color: var(--on-accent); padding: 3px 8px; border-radius: 4px; }
   .pm-body { padding: 4px 16px 14px; }
   .pm-cat { font-size: 9px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dim); padding: 10px 0 5px; display: flex; align-items: center; gap: 8px; }
   .pm-cat::after { content: ''; flex: 1; height: 1px; background: var(--line); }
   .pm-row { display: flex; align-items: center; gap: 9px; padding: 5px 0; }
-  .pm-tile { width: 26px; height: 26px; border: 1px solid var(--line); border-radius: 5px; display: flex; align-items: center; justify-content: center; background: #fff; flex: none; }
+  .pm-tile { width: 26px; height: 26px; border: 1px solid var(--line); border-radius: 5px; display: flex; align-items: center; justify-content: center; background: var(--card); flex: none; }
   .pm-tile img { width: 16px; height: 16px; object-fit: contain; }
   .pm-name { font-family: var(--display); font-weight: 700; font-size: 13.5px; }
   .pm-ver { font-size: 10.5px; color: var(--dim); margin-left: auto; }

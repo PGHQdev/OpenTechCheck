@@ -116,9 +116,9 @@
   .intro { color: var(--dim); margin-bottom: 30px; }
   form { background: var(--card); border: 1px solid var(--ink); border-radius: 10px; padding: 28px; }
   label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; }
-  input:not([type="hidden"]), textarea { display: block; width: 100%; border: 1px solid #aaa69a; border-radius: 6px; padding: 11px 12px; font: inherit; color: var(--ink); background: var(--card); }
+  input:not([type="hidden"]), textarea { display: block; width: 100%; border: 1px solid var(--input-line); border-radius: 6px; padding: 11px 12px; font: inherit; color: var(--ink); background: var(--card); }
   textarea { resize: vertical; margin-bottom: 18px; }
-  input:focus-visible, textarea:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+  input:focus-visible, textarea:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
   .hint { font-size: 12px; color: var(--dim); margin: 8px 0 20px; }
   input.version { font-family: var(--mono); font-size: 13px; background: var(--paper); }
   details { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 16px 0; margin: 24px 0; }
@@ -129,7 +129,7 @@
   .assurance strong { display: block; margin-bottom: 6px; }
   .assurance p { color: var(--dim); line-height: 1.65; }
   .assurance a { display: inline-block; margin-top: 8px; color: var(--blue); }
-  .error { color: #9b241c; margin-bottom: 16px; }
+  .error { color: var(--error); margin-bottom: 16px; }
   button:disabled { opacity: .6; cursor: wait; }
   @media (max-width: 520px) { .report-page { padding-top: 36px; } form { padding: 20px; } .btn { width: 100%; justify-content: center; } }
 </style>
