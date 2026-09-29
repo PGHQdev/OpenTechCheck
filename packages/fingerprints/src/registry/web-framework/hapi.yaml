@@ -1,0 +1,20 @@
+name: Hapi
+slug: hapi
+category: web-framework
+website: https://hapi.dev
+implies: [nodejs]
+detect:
+  cookies:
+    # @hapi/yar defaults to "session" and @hapi/cookie defaults to "sid".
+    # Both use @hapi/iron's eight-component Fe26.2 seal format. The exact
+    # cookie names and complete format keep a bare Fe26.2 prefix from matching.
+    # Fe26.2 is an Hapi ecosystem signal, not a framework-exclusive marker;
+    # keep confidence conservative because Iron can be used independently.
+    session:
+      - pattern: '^Fe26\.2\*\w*\*[a-f0-9]{64}\*[A-Za-z0-9_-]+\*[A-Za-z0-9_-]+\*\d*\*[a-f0-9]{64}\*[A-Za-z0-9_-]+$'
+        confidence: 70
+    sid:
+      - pattern: '^Fe26\.2\*\w*\*[a-f0-9]{64}\*[A-Za-z0-9_-]+\*[A-Za-z0-9_-]+\*\d*\*[a-f0-9]{64}\*[A-Za-z0-9_-]+$'
+        confidence: 70
+    # Applications may rename either cookie (for example, cyltfr_session);
+    # custom names are intentionally omitted because cookie keys are exact.
