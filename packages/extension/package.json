@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bun run build/build.ts",
+    "build": "bun run ../fingerprints/src/compile.ts && bun run build/build.ts",
     "test": "bun test test/"
   },
   "dependencies": {
