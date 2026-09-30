@@ -1,0 +1,31 @@
+name: Fresh
+slug: fresh
+category: web-framework
+website: https://fresh.deno.dev
+detect:
+  html:
+    - pattern: '<!--frsh:(?:island|partial|slot)'
+      confidence: 95
+    - pattern: '/_fresh/js/[a-z0-9]+/fresh-runtime\.js'
+      confidence: 95
+    - pattern: '/_frsh/js/[a-z0-9]+/main\.js'
+      confidence: 95
+    - pattern: '\bfresh-island__[a-z0-9_.-]+\.js'
+      confidence: 90
+    - pattern: '__FRSH_STATE_[a-z0-9-]+'
+      confidence: 95
+  scripts:
+    - pattern: '/_fresh/js/[a-z0-9]+/fresh-runtime\.js'
+      confidence: 95
+    - pattern: '/_frsh/js/[a-z0-9]+/main\.js'
+      confidence: 95
+  dom:
+    '[data-frsh-key]':
+      - pattern: ''
+        confidence: 85
+    '[data-fresh-key]':
+      - pattern: ''
+        confidence: 85
+    '[id^="__FRSH_STATE_"]':
+      - pattern: ''
+        confidence: 90
