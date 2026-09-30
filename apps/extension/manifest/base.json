@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "OpenTechCheck",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Detect the technologies a page uses. Local detection. Optional private reports help improve coverage.",
   "permissions": ["webRequest", "cookies", "storage", "webNavigation"],
   "host_permissions": ["<all_urls>"],

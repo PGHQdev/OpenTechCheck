@@ -31,7 +31,7 @@
     },
     "apps/site": {
       "name": "@opentechcheck/site",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "devDependencies": {
         "@sveltejs/adapter-static": "^3.0.8",
         "@sveltejs/kit": "^2.22.0",
@@ -43,18 +43,18 @@
     },
     "packages/collect-http": {
       "name": "@opentechcheck/collect-http",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "dependencies": {
         "@opentechcheck/core": "workspace:*",
       },
     },
     "packages/core": {
       "name": "@opentechcheck/core",
-      "version": "0.3.0",
+      "version": "0.4.0",
     },
     "packages/fingerprints": {
       "name": "@opentechcheck/fingerprints",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "dependencies": {
         "@opentechcheck/core": "workspace:*",
         "yaml": "^2.5.0",
