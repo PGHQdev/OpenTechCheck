@@ -1,0 +1,9 @@
+name: TanStack Start
+slug: tanstack-start
+category: web-framework
+website: https://tanstack.com/start
+detect:
+  html:
+    - pattern: '\$_TSR\b'
+    - pattern: '\$R\["tsr"\]'
+    - pattern: '\$tsr-stream-barrier'

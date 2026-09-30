@@ -3,7 +3,8 @@
   "version": "0.3.0",
   "type": "module",
   "license": "Apache-2.0",
-  "main": "dist/fingerprints.json",
+  "main": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
   "scripts": { "compile": "bun run src/compile.ts" },
   "dependencies": { "@opentechcheck/core": "workspace:*", "yaml": "^2.5.0" },
   "devDependencies": { "ajv": "^8.17.0" }

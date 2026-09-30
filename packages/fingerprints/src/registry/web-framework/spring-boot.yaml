@@ -1,0 +1,7 @@
+name: Spring Boot
+slug: spring-boot
+category: web-framework
+website: https://spring.io/projects/spring-boot
+detect:
+  html:
+    - pattern: 'Whitelabel Error Page[\s\S]*This application has no explicit mapping for /error, so you are seeing this as a fallback\.'

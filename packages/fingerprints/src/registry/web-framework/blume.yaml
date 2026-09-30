@@ -1,0 +1,11 @@
+name: Blume
+slug: blume
+category: web-framework
+website: https://useblume.dev
+implies: [astro]
+detect:
+  html:
+    - pattern: '<blume-search\b'
+    - pattern: 'data-blume-search-dialog'
+    - pattern: 'blume-theme'
+    - pattern: 'href="#blume-content"'
