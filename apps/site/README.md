@@ -1,7 +1,7 @@
 # Website reports
 
 The static SvelteKit site and `worker/index.ts` deploy together as the existing
-`opentechcheck-site` Worker. `/report` is the form; `POST /api/reports` stores reports
+`opentechcheck` Worker. `/report` is the form; `POST /api/reports` stores reports
 in the existing `opentechcheck-api` D1 database. No public report-list endpoint exists.
 
 The extension passes the sanitized website, automatic category, and version in a

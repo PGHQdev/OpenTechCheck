@@ -1,5 +1,5 @@
 {
-  "name": "opentechcheck-site",
+  "name": "opentechcheck",
   "main": "worker/index.ts",
   "compatibility_date": "2026-08-01",
   "assets": {
