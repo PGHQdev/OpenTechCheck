@@ -1,0 +1,12 @@
+name: AdonisJS
+slug: adonisjs
+category: web-framework
+website: https://adonisjs.com
+implies: [nodejs]
+detect:
+  # Optional: @adonisjs/session enables this cookie by default, but applications
+  # can disable sessions or change the configured cookieName.
+  cookies:
+    adonis-session:
+      - pattern: ''
+        confidence: 90
