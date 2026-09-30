@@ -25,7 +25,7 @@ for (const target of ['chrome', 'firefox'] as const) {
     writeFileSync(join(outDir, 'popup.html'), html)
     rmSync(join(outDir, 'src'), { recursive: true, force: true })
   }
-  cpSync(join(root, '..', 'fingerprints', 'icons'), join(outDir, 'icons'), { recursive: true })
+  cpSync(join(root, '..', '..', 'packages', 'fingerprints', 'icons'), join(outDir, 'icons'), { recursive: true })
   for (const size of [16, 32, 48, 128]) {
     cpSync(join(root, 'assets', `icon-${size}.png`), join(outDir, `icon-${size}.png`))
   }

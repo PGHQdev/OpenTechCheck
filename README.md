@@ -43,7 +43,7 @@ Local-only technology detection for the current page (Chrome ≥ 121, Firefox �
 Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab), or build from source:
 
     bun run compile          # refresh the fingerprint registry
-    cd packages/extension
+    cd apps/extension
     bun run build            # emits dist/chrome and dist/firefox
 
 Load `dist/chrome` via chrome://extensions → "Load unpacked" (enable Developer mode),

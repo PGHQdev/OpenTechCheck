@@ -14,7 +14,7 @@ const fps = registry as unknown as Fingerprint[]
 function iconSlugs(): string[] {
   // import.meta.url survives vite's config bundling; import.meta.dir does not.
   const here = dirname(fileURLToPath(import.meta.url))
-  const dir = join(here, '..', 'fingerprints', 'icons')
+  const dir = join(here, '..', '..', 'packages', 'fingerprints', 'icons')
   const slugs = readdirSync(dir).filter((f) => f.endsWith('.png')).map((f) => f.slice(0, -4))
   if (slugs.length === 0) throw new Error(`no icons found at ${dir} — run scripts/fetch-icons.ts`)
   return slugs

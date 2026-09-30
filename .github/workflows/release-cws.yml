@@ -32,20 +32,20 @@ jobs:
       - name: Tests
         run: |
           bun test packages/core packages/fingerprints packages/collect-http
-          cd packages/extension && bun test test/
+          cd apps/extension && bun test test/
         env:
           OTC_FIXTURES: harness/fixtures
 
       - name: Inject tag version into manifest
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          jq --arg v "$VERSION" '.version = $v' packages/extension/manifest/base.json > /tmp/base.json
-          mv /tmp/base.json packages/extension/manifest/base.json
+          jq --arg v "$VERSION" '.version = $v' apps/extension/manifest/base.json > /tmp/base.json
+          mv /tmp/base.json apps/extension/manifest/base.json
           echo "manifest version -> $VERSION"
 
       - name: Build and zip
         run: |
-          cd packages/extension && bun run build
+          cd apps/extension && bun run build
           cd dist/chrome && zip -qr ../../../../opentechcheck-chrome-${GITHUB_REF_NAME}.zip .
           unzip -l ../../../../opentechcheck-chrome-${GITHUB_REF_NAME}.zip | tail -3
 
