@@ -1,0 +1,9 @@
+name: Hono
+slug: hono
+category: web-framework
+website: https://hono.dev
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Hono$'
+        confidence: 95
