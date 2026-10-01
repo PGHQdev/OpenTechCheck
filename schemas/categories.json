@@ -3,5 +3,6 @@
   "cms", "ecommerce", "analytics", "tag-manager",
   "cdn", "hosting", "payment", "security",
   "marketing", "database", "server", "language", "video",
-  "misc", "other"
+  "misc", "other",
+  "live-chat", "crm", "plugin", "booking", "consent"
 ]

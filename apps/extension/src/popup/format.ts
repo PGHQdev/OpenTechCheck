@@ -3,9 +3,10 @@ import registry from '@opentechcheck/fingerprints'
 import type { TabResult } from '../shared/protocol'
 
 export const CATEGORY_ORDER = [
-  'js-framework', 'web-framework', 'ui-framework', 'js-library', 'cms', 'ecommerce',
-  'payment', 'analytics', 'tag-manager', 'marketing', 'video', 'security', 'hosting', 'cdn',
-  'server', 'database', 'language', 'misc', 'other',
+  'js-framework', 'web-framework', 'ui-framework', 'js-library', 'cms', 'plugin', 'ecommerce',
+  'booking', 'payment', 'analytics', 'tag-manager', 'marketing', 'live-chat', 'crm',
+  'video', 'security', 'consent', 'hosting', 'cdn', 'server', 'database',
+  'language', 'misc', 'other',
 ]
 
 export function grade(confidence: number): 'A' | 'B' | 'C' | 'D' {
@@ -61,8 +62,9 @@ const sites = new Map((registry as Array<{ slug: string; website: string }>).map
 export const websiteOf = (slug: string): string | undefined => sites.get(slug)
 
 // Stable catalog number: 1-based position in the slug-sorted registry.
+const CODE_WIDTH = Math.max(3, String(registry.length).length)
 const codes = new Map(
-  (registry as Array<{ slug: string }>).map((f, i) => [f.slug, String(i + 1).padStart(3, '0')]),
+  (registry as Array<{ slug: string }>).map((f, i) => [f.slug, String(i + 1).padStart(CODE_WIDTH, '0')]),
 )
 
 const CATEGORY_SHORT: Record<string, string> = {
@@ -71,8 +73,9 @@ const CATEGORY_SHORT: Record<string, string> = {
   analytics: 'AN', 'tag-manager': 'TAG', marketing: 'MKT', video: 'VID',
   security: 'SEC', hosting: 'HOST', cdn: 'CDN', server: 'SRV', database: 'DB',
   language: 'LANG', misc: 'MISC', other: 'OTHER',
+  'live-chat': 'CHAT', crm: 'CRM', plugin: 'PLUG', booking: 'BOOK', consent: 'COOKIE',
 }
 
-export const codeOf = (slug: string): string => `OTC ${codes.get(slug) ?? '000'}`
+export const codeOf = (slug: string): string => `OTC ${codes.get(slug) ?? '0'.repeat(CODE_WIDTH)}`
 export const categoryShort = (category: string): string => CATEGORY_SHORT[category] ?? category.toUpperCase()
 export const categoryLabel = (category: string): string => category.replace(/-/g, ' ')
