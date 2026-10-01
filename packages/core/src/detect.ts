@@ -69,8 +69,13 @@ export function collectHits(
   for (const [key, rules] of Object.entries(d.dom ?? {})) {
     if (!bundle.dom?.includes(key)) continue
     for (const rule of rules) {
-      const h = runRule(rule, 'dom', '', key, options.onWarning)
-      if (h) hits.push(h)
+      const values = rule.attr !== undefined ? bundle.domAttrs?.[key]?.[rule.attr]
+        : rule.text ? bundle.domText?.[key]
+        : ['']
+      for (const value of values ?? []) {
+        const h = runRule(rule, 'dom', value, key, options.onWarning)
+        if (h) { hits.push(h); break }
+      }
     }
   }
   return hits
