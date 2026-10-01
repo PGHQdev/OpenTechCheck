@@ -1,6 +1,6 @@
 import { runRule, type RuleHit } from './match'
 import { pageText } from './text'
-import type { Detection, DetectOptions, Fingerprint, SignalBundle } from './types'
+import type { Detection, DetectOptions, Fingerprint, SignalBundle, Within } from './types'
 
 export function collectHits(
   fp: Fingerprint, bundle: SignalBundle, options: DetectOptions, text: () => string | undefined,
@@ -106,6 +106,27 @@ export function toDetection(fp: Fingerprint, hits: RuleHit[]): Detection {
   }
 }
 
+interface Context { techs: Set<string>; categories: Set<string> }
+
+// Detected techs plus everything they imply (excludes do not apply yet).
+function contextOf(found: Map<string, Detection>, bySlug: Map<string, Fingerprint>): Context {
+  const techs = new Set(found.keys())
+  const queue = [...techs]
+  while (queue.length > 0) {
+    for (const slug of bySlug.get(queue.pop()!)?.implies ?? []) {
+      if (techs.has(slug) || !bySlug.has(slug)) continue
+      techs.add(slug)
+      queue.push(slug)
+    }
+  }
+  const categories = new Set([...techs].map((slug) => bySlug.get(slug)!.category))
+  return { techs, categories }
+}
+
+const opens = (within: Within, context: Context) =>
+  (within.techs ?? []).some((t) => context.techs.has(t)) ||
+  (within.categories ?? []).some((c) => context.categories.has(c))
+
 export function detect(
   bundle: SignalBundle, fingerprints: Fingerprint[], options: DetectOptions = {},
 ): Detection[] {
@@ -114,9 +135,24 @@ export function detect(
   // Derived on first use, at most once per call.
   let derived: string | undefined
   const text = () => (bundle.html === undefined ? undefined : (derived ??= pageText(bundle.html)))
+  const gated: Fingerprint[] = []
   for (const fp of fingerprints) {
+    if (fp.within) { gated.push(fp); continue }
     const hits = collectHits(fp, bundle, options, text)
     if (hits.length > 0) found.set(fp.slug, toDetection(fp, hits))
+  }
+  // A gated fingerprint runs once, when its gate first opens; new hits can open more gates.
+  let waiting = gated
+  while (waiting.length > 0) {
+    const context = contextOf(found, bySlug)
+    const closed = waiting.filter((fp) => !opens(fp.within!, context))
+    if (closed.length === waiting.length) break
+    for (const fp of waiting) {
+      if (closed.includes(fp)) continue
+      const hits = collectHits(fp, bundle, options, text)
+      if (hits.length > 0) found.set(fp.slug, toDetection(fp, hits))
+    }
+    waiting = closed
   }
   // excludes: fingerprint list order; mutual excludes resolve to the earlier one
   const excluded = new Set<string>()
