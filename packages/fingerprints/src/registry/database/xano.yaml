@@ -1,0 +1,12 @@
+name: Xano
+slug: xano
+category: database
+website: https://www.xano.com
+detect:
+  js:
+    XanoBaseStorage:
+      - pattern: ''
+    XanoClient:
+      - pattern: ''
+    XanoCookieStorage:
+      - pattern: ''

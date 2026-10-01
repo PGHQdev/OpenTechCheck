@@ -1,0 +1,12 @@
+name: Dimensions AI
+slug: dimensions-ai
+category: database
+website: https://www.dimensions.ai
+detect:
+  scripts:
+    - pattern: '\.dimensions\.ai'
+  js:
+    __dimensions_badge_config_loaded__:
+      - pattern: ''
+    __dimensions_badge_server:
+      - pattern: ''

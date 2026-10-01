@@ -1,0 +1,20 @@
+name: Adminer
+slug: adminer
+category: database
+website: https://www.adminer.org
+implies: [php]
+detect:
+  html:
+    - pattern: 'Adminer</a> <span class="version">([\d.]+)</span>'
+      version: 1
+    - pattern: 'onclick="bodyClick\(event\);" onload="verifyVersion\(''([\d.]+)''\);">'
+      version: 1
+  headers:
+    composed-by:
+      - pattern: 'adminer\((\d\.)+\)'
+        version: 1
+  cookies:
+    adminer_key:
+      - pattern: ''
+    adminer_sid:
+      - pattern: ''

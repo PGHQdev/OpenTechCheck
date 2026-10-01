@@ -1,0 +1,15 @@
+name: Knack
+slug: knack
+category: database
+website: https://www.knack.com
+detect:
+  html:
+    - pattern: 'knack formatting'
+    - pattern: 'class="[^"]*\bkn-table\b'
+    - pattern: '\bkn-details\b'
+    - pattern: '\bkn-label-left\b'
+  scripts:
+    - pattern: 'loader\.knack\.com/'
+  js:
+    Knack:
+      - pattern: ''

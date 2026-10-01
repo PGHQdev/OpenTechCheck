@@ -1,0 +1,20 @@
+name: phpMyAdmin
+slug: phpmyadmin
+category: database
+website: https://www.phpmyadmin.net
+implies: [php]
+detect:
+  html:
+    - pattern: '!\[CDATA\[[^<]*PMA_VERSION:\"([\d.]+)'
+      version: 1
+    - pattern: '(?: \| phpMyAdmin ([\d.]+)<\/title>|PMA_sendHeaderLocation\(|<link [^>]*href="[^"]*phpmyadmin\.css\.php)'
+      version: 1
+  headers:
+    set-cookie:
+      - pattern: 'phpMyAdmin_https'
+  js:
+    pma_absolute_uri:
+      - pattern: ''
+  dom:
+    link[href*='phpmyadmin.css.php']:
+      - pattern: ''

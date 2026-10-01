@@ -1,0 +1,16 @@
+name: Virtuoso
+slug: virtuoso
+category: database
+website: https://virtuoso.openlinksw.com/
+detect:
+  url:
+    - pattern: '/sparql'
+  headers:
+    server:
+      - pattern: 'Virtuoso/?([0-9.]+)?'
+        version: 1
+  meta:
+    copyright:
+      - pattern: '^Copyright &copy; \d{4} OpenLink Software'
+    keywords:
+      - pattern: '^OpenLink Virtuoso Sparql'
