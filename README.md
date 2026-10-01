@@ -38,7 +38,7 @@ bun run compile   # validate + build the fingerprint registry
 
 ## Browser extension
 
-Local-only technology detection for the current page (Chrome ≥ 125, Firefox ≥ 128).
+Local-only technology detection for the current page (Chrome ≥ 125, Firefox ≥ 132).
 
 Install from the [Chrome Web Store](https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab), or build from source:
 
