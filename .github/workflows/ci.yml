@@ -30,10 +30,10 @@ jobs:
           ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
           persist-credentials: false
           path: harness
+          # Cone mode: a non-cone checkout fetches file contents after the SSH key is gone.
           sparse-checkout: |
             fixtures
-            scripts/fixtures-store.ts
-          sparse-checkout-cone-mode: false
+            scripts
       - name: Pull fixture bundles from R2
         if: env.HAS_HARNESS_KEY == 'true'
         run: bun harness/scripts/fixtures-store.ts pull --dir harness/fixtures
