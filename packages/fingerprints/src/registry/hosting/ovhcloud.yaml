@@ -1,0 +1,8 @@
+name: OVHcloud
+slug: ovhcloud
+category: hosting
+website: https://www.ovhcloud.com
+detect:
+  headers:
+    x-iplb-request-id:
+      - pattern: ''

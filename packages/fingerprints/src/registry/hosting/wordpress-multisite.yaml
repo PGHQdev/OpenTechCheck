@@ -1,0 +1,19 @@
+name: WordPress Multisite
+slug: wordpress-multisite
+category: hosting
+website: https://wordpress.org/documentation/article/create-a-network/
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    figure[style*='wp-content/uploads']:
+      - attr: style
+        pattern: 'wp-content/uploads/sites/\d+'
+    img[src*='wp-content/uploads'], img[srcset*='wp-content/uploads'], source[srcset*='wp-content/uploads']:
+      - attr: src
+        pattern: 'wp-content/uploads/sites/\d+'
+      - attr: srcset
+        pattern: 'wp-content/uploads/sites/\d+'
+    style:
+      - text: true
+        pattern: 'wp-content/uploads/sites/\d+'

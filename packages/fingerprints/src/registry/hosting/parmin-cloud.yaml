@@ -1,0 +1,8 @@
+name: Parmin Cloud
+slug: parmin-cloud
+category: hosting
+website: https://parmin.cloud
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^ParminCloud$'

@@ -1,0 +1,7 @@
+name: Verisign
+slug: verisign
+category: hosting
+website: https://www.verisign.com
+detect:
+  scripts:
+    - pattern: 'seal\.verisign\.com/'

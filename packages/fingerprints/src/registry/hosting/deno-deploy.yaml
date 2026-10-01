@@ -1,0 +1,9 @@
+name: Deno Deploy
+slug: deno-deploy
+category: hosting
+website: https://deno.land/
+implies: [deno]
+detect:
+  headers:
+    server:
+      - pattern: '^deno/*'

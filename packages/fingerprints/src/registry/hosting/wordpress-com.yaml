@@ -1,0 +1,12 @@
+name: WordPress.com
+slug: wordpress-com
+category: hosting
+website: https://wordpress.com
+implies: [wordpress]
+detect:
+  headers:
+    host-header:
+      - pattern: 'WordPress\.com'
+  js:
+    WordPressPopularPosts:
+      - pattern: ''

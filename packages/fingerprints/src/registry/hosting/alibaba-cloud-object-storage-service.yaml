@@ -1,0 +1,12 @@
+name: Alibaba Cloud Object Storage Service
+slug: alibaba-cloud-object-storage-service
+category: hosting
+website: https://www.alibabacloud.com/product/object-storage-service
+detect:
+  headers:
+    x-oss-object-type:
+      - pattern: ''
+    x-oss-request-id:
+      - pattern: ''
+    x-oss-storage-class:
+      - pattern: ''

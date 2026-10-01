@@ -1,0 +1,8 @@
+name: Zeabur
+slug: zeabur
+category: hosting
+website: https://zeabur.com
+detect:
+  headers:
+    x-zeabur-request-id:
+      - pattern: ''

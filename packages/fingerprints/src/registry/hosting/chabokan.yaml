@@ -1,0 +1,8 @@
+name: Chabokan
+slug: chabokan
+category: hosting
+website: https://chabokan.net
+detect:
+  headers:
+    ch-powered-by:
+      - pattern: 'Chabokan\s\(chabokan\.net\)'

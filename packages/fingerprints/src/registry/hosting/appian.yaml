@@ -1,0 +1,21 @@
+name: Appian
+slug: appian
+category: hosting
+website: https://www.appian.com
+detect:
+  scripts:
+    - pattern: 'tempo/ui/sail-client/embeddedBootstrap\.nocache\.js'
+  headers:
+    reporting-endpoints:
+      - pattern: '/suite/rest/a/logging/latest/csp/report'
+    set-cookie:
+      - pattern: 'JSESSIONID=[^;]*;[^|]*Path=/suite'
+  js:
+    APPIAN:
+      - pattern: ''
+    Appian:
+      - pattern: ''
+    _APPIAN_PROXIES_INITIALIZED:
+      - pattern: ''
+    webpackJsonpAppian:
+      - pattern: ''

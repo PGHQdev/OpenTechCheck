@@ -1,0 +1,8 @@
+name: Creoline
+slug: creoline
+category: hosting
+website: https://www.creoline.com
+detect:
+  dom:
+    link[href*='.cstatic.io/']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Hostinger
+slug: hostinger
+category: hosting
+website: https://www.hostinger.com
+detect:
+  headers:
+    platform:
+      - pattern: 'hostinger'

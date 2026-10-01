@@ -1,0 +1,21 @@
+name: Drupal Multisite
+slug: drupal-multisite
+category: hosting
+website: https://www.drupal.org/docs/multisite-drupal
+within:
+  techs: [drupal]
+detect:
+  scripts:
+    - pattern: '/sites/(?!(?:default|all)/).*/(?:files|themes|modules)/'
+  dom:
+    figure[style*='/sites/']:
+      - attr: style
+        pattern: '/sites/(?!(?:default|all)/).*/(?:files|themes|modules)/'
+    img[src*='/sites/'], img[srcset*='/sites/'], source[srcset*='/sites/']:
+      - attr: src
+        pattern: '/sites/(?!(?:default|all)/).*/(?:files|themes|modules)/'
+      - attr: srcset
+        pattern: '/sites/(?!(?:default|all)/).*/(?:files|themes|modules)/'
+    style:
+      - text: true
+        pattern: '/sites/(?!(?:default|all)/).*/(?:files|themes|modules)/'

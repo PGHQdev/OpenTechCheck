@@ -1,0 +1,8 @@
+name: TCAdmin
+slug: tcadmin
+category: hosting
+website: https://www.tcadmin.com
+detect:
+  js:
+    TCAdmin:
+      - pattern: ''

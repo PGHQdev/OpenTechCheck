@@ -1,0 +1,8 @@
+name: Acquia Cloud Platform
+slug: acquia-cloud-platform
+category: hosting
+website: https://www.acquia.com/products/drupal-cloud/cloud-platform
+detect:
+  headers:
+    x-ah-environment:
+      - pattern: '^(next)?.*$'

@@ -1,0 +1,10 @@
+name: Brimble
+slug: brimble
+category: hosting
+website: https://brimble.io
+detect:
+  headers:
+    server:
+      - pattern: '^Brimble$'
+    x-brimble-id:
+      - pattern: ''

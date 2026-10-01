@@ -1,0 +1,11 @@
+name: Akamai Connected Cloud
+slug: akamai-connected-cloud
+category: hosting
+website: https://www.akamai.com/solutions/cloud-computing
+implies: [akamai]
+detect:
+  headers:
+    server:
+      - pattern: '^volt-adc$'
+    x-volterra-location:
+      - pattern: ''

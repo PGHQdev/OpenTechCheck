@@ -1,0 +1,8 @@
+name: F5 Distributed Cloud Services
+slug: f5-distributed-cloud-services
+category: hosting
+website: https://www.f5.com/products/distributed-cloud-services
+detect:
+  headers:
+    x-volterra-location:
+      - pattern: ''

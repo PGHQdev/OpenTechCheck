@@ -1,0 +1,8 @@
+name: Newspack by Automattic
+slug: newspack-by-automattic
+category: hosting
+website: https://newspack.pub/
+detect:
+  headers:
+    host-header:
+      - pattern: 'Newspack'

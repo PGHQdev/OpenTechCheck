@@ -1,0 +1,17 @@
+name: Acquia Cloud Site Factory
+slug: acquia-cloud-site-factory
+category: hosting
+website: https://www.acquia.com/products/drupal-cloud/site-factory
+implies: [acquia-cloud-platform, drupal-multisite]
+detect:
+  scripts:
+    - pattern: 'sites\/g\/files'
+  dom:
+    script[src*='sites/g/files']:
+      - pattern: ''
+    img[src*='sites/g/files']:
+      - pattern: ''
+    img[data-src*='sites/g/files']:
+      - pattern: ''
+    link[href*='sites/g/files']:
+      - pattern: ''

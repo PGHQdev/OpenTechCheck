@@ -1,0 +1,8 @@
+name: Bluehost
+slug: bluehost
+category: hosting
+website: https://www.bluehost.com
+detect:
+  headers:
+    host-header:
+      - pattern: 'c2hhcmVkLmJsdWVob3N0LmNvbQ=='

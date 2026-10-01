@@ -1,0 +1,14 @@
+name: Platform.sh
+slug: platform-sh
+category: hosting
+website: https://platform.sh
+detect:
+  headers:
+    x-platform-cluster:
+      - pattern: ''
+    x-platform-processor:
+      - pattern: ''
+    x-platform-router:
+      - pattern: ''
+    x-platform-server:
+      - pattern: ''

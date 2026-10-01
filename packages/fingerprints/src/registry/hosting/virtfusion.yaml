@@ -1,0 +1,8 @@
+name: VirtFusion
+slug: virtfusion
+category: hosting
+website: https://virtfusion.com
+detect:
+  cookies:
+    virtfusion_session:
+      - pattern: ''

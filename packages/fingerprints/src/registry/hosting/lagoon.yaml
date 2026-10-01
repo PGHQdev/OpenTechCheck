@@ -1,0 +1,8 @@
+name: Lagoon
+slug: lagoon
+category: hosting
+website: https://lagoon.sh/
+detect:
+  headers:
+    x-lagoon:
+      - pattern: ''

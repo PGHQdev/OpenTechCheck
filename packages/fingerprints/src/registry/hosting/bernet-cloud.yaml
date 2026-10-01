@@ -1,0 +1,8 @@
+name: Bernet Cloud
+slug: bernet-cloud
+category: hosting
+website: https://bernet.cloud
+detect:
+  headers:
+    bc-powered-by:
+      - pattern: 'bernet\.cloud'

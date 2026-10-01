@@ -1,0 +1,10 @@
+name: BILLmanager
+slug: billmanager
+category: hosting
+website: https://www.ispsystem.ru/billmanager-host
+detect:
+  js:
+    binary:
+      - pattern: '/manager/billmgr'
+    pageInfo.binary:
+      - pattern: '/billmgr'

@@ -1,0 +1,9 @@
+name: Pagely
+slug: pagely
+category: hosting
+website: https://pagely.com/
+implies: [wordpress]
+detect:
+  headers:
+    server:
+      - pattern: '^Pagely'

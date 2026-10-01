@@ -1,0 +1,8 @@
+name: Rosti
+slug: rosti
+category: hosting
+website: https://rosti.cz
+detect:
+  headers:
+    x-rosti:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Amazon ECS
+slug: amazon-ecs
+category: hosting
+website: https://aws.amazon.com/ecs/
+detect:
+  headers:
+    server:
+      - pattern: '^ECS'

@@ -1,0 +1,10 @@
+name: Hetzner
+slug: hetzner
+category: hosting
+website: https://www.hetzner.com
+detect:
+  headers:
+    server:
+      - pattern: 'HeRay'
+    x-powered-by:
+      - pattern: 'Hetzner'

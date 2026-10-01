@@ -1,0 +1,15 @@
+name: WP Engine
+slug: wp-engine
+category: hosting
+website: https://wpengine.com
+implies: [wordpress]
+detect:
+  headers:
+    x-pass-why:
+      - pattern: ''
+    x-powered-by:
+      - pattern: 'WP Engine'
+    x-wpe-loopback-upstream-addr:
+      - pattern: ''
+    wpe-backend:
+      - pattern: ''

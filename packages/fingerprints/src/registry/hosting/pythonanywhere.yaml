@@ -1,0 +1,9 @@
+name: PythonAnywhere
+slug: pythonanywhere
+category: hosting
+website: https://www.pythonanywhere.com
+implies: [python]
+detect:
+  headers:
+    server:
+      - pattern: '^PythonAnywhere$'

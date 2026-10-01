@@ -1,0 +1,9 @@
+name: Elementor Cloud
+slug: elementor-cloud
+category: hosting
+website: https://elementor.com
+implies: [wordpress]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Elementor Cloud'

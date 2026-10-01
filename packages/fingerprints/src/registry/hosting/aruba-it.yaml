@@ -1,0 +1,8 @@
+name: Aruba.it
+slug: aruba-it
+category: hosting
+website: https://www.aruba.it
+detect:
+  headers:
+    x-servername:
+      - pattern: '\.aruba\.it'

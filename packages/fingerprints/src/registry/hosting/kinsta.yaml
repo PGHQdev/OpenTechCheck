@@ -1,0 +1,9 @@
+name: Kinsta
+slug: kinsta
+category: hosting
+website: https://kinsta.com
+implies: [wordpress]
+detect:
+  headers:
+    x-kinsta-cache:
+      - pattern: ''

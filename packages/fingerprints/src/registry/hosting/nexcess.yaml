@@ -1,0 +1,8 @@
+name: Nexcess
+slug: nexcess
+category: hosting
+website: https://www.nexcess.net
+detect:
+  headers:
+    x-hostname:
+      - pattern: 'nxcli\.net$'

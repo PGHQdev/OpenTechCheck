@@ -1,0 +1,8 @@
+name: Nestify
+slug: nestify
+category: hosting
+website: https://nestify.io
+detect:
+  headers:
+    x-nestify-cache:
+      - pattern: ''

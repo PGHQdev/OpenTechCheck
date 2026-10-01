@@ -1,0 +1,9 @@
+name: Pterodactyl Panel
+slug: pterodactyl-panel
+category: hosting
+website: https://pterodactyl.io
+implies: [go, php, react, laravel]
+detect:
+  cookies:
+    pterodactyl_session:
+      - pattern: ''

@@ -1,0 +1,5 @@
+name: Deno
+slug: deno
+category: server
+website: https://deno.land
+detect: {}

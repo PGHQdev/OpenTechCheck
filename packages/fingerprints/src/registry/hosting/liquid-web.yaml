@@ -1,0 +1,8 @@
+name: Liquid Web
+slug: liquid-web
+category: hosting
+website: https://www.liquidweb.com
+detect:
+  headers:
+    x-lw-cache:
+      - pattern: ''

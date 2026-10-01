@@ -1,0 +1,8 @@
+name: Cloudways
+slug: cloudways
+category: hosting
+website: https://www.cloudways.com
+detect:
+  headers:
+    cache-provider:
+      - pattern: 'CLOUDWAYS-CACHE-DE'
