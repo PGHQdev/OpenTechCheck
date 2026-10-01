@@ -1,14 +1,20 @@
 import { runRule, type RuleHit } from './match'
+import { LiteralSet, requiredLiterals } from './prefilter'
 import { pageText } from './text'
-import type { Detection, DetectOptions, Fingerprint, SignalBundle, Within } from './types'
+import type { Detection, DetectOptions, Fingerprint, Rule, SignalBundle, Within } from './types'
 
-export function collectHits(
-  fp: Fingerprint, bundle: SignalBundle, options: DetectOptions, text: () => string | undefined,
-): RuleHit[] {
+// Per-call page state that every fingerprint shares.
+export interface Page {
+  text: () => string | undefined
+  mayMatch: (rule: Rule, source: 'html' | 'text') => boolean
+}
+
+export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: DetectOptions, page: Page): RuleHit[] {
   const hits: RuleHit[] = []
   const d = fp.detect
   if (bundle.html !== undefined) {
     for (const rule of d.html ?? []) {
+      if (!page.mayMatch(rule, 'html')) continue
       const h = runRule(rule, 'html', bundle.html, undefined, options.onWarning)
       if (h) hits.push(h)
     }
@@ -18,9 +24,10 @@ export function collectHits(
     if (h) hits.push(h)
   }
   if (d.text) {
-    const value = text()
+    const value = page.text()
     if (value !== undefined) {
       for (const rule of d.text) {
+        if (!page.mayMatch(rule, 'text')) continue
         const h = runRule(rule, 'text', value, undefined, options.onWarning)
         if (h) hits.push(h)
       }
@@ -106,6 +113,31 @@ export function toDetection(fp: Fingerprint, hits: RuleHit[]): Detection {
   }
 }
 
+interface Prefilter { literals: LiteralSet; clauses: WeakMap<Rule, number[][]> }
+const prefilters = new WeakMap<Fingerprint[], Prefilter>()
+
+// Built once per registry array: callers pass the same array on every call.
+// html and text rules with no required literal are not in clauses and always run.
+function prefilterOf(fingerprints: Fingerprint[]): Prefilter {
+  let prefilter = prefilters.get(fingerprints)
+  if (prefilter) return prefilter
+  const idOf = new Map<string, number>()
+  const clauses = new WeakMap<Rule, number[][]>()
+  for (const fp of fingerprints) {
+    for (const rule of [...(fp.detect.html ?? []), ...(fp.detect.text ?? [])]) {
+      const required = rule.pattern === '' ? null : requiredLiterals(rule.pattern)
+      if (required === null) continue
+      clauses.set(rule, required.map((clause) => clause.map((literal) => {
+        if (!idOf.has(literal)) idOf.set(literal, idOf.size)
+        return idOf.get(literal)!
+      })))
+    }
+  }
+  prefilter = { literals: new LiteralSet([...idOf.keys()]), clauses }
+  prefilters.set(fingerprints, prefilter)
+  return prefilter
+}
+
 interface Context { techs: Set<string>; categories: Set<string> }
 
 // Detected techs plus everything they imply (excludes do not apply yet).
@@ -132,13 +164,26 @@ export function detect(
 ): Detection[] {
   const bySlug = new Map(fingerprints.map((f) => [f.slug, f]))
   const found = new Map<string, Detection>()
-  // Derived on first use, at most once per call.
+  const prefilter = prefilterOf(fingerprints)
+  // Derived and scanned on first use, at most once per call.
   let derived: string | undefined
-  const text = () => (bundle.html === undefined ? undefined : (derived ??= pageText(bundle.html)))
+  let inHtml: Uint8Array | undefined
+  let inText: Uint8Array | undefined
+  const page: Page = {
+    text: () => (bundle.html === undefined ? undefined : (derived ??= pageText(bundle.html))),
+    mayMatch: (rule, source) => {
+      const required = prefilter.clauses.get(rule)
+      if (required === undefined) return true
+      const present = source === 'html'
+        ? (inHtml ??= prefilter.literals.scan(bundle.html ?? ''))
+        : (inText ??= prefilter.literals.scan(page.text() ?? ''))
+      return required.every((clause) => clause.some((id) => present[id] === 1))
+    },
+  }
   const gated: Fingerprint[] = []
   for (const fp of fingerprints) {
     if (fp.within) { gated.push(fp); continue }
-    const hits = collectHits(fp, bundle, options, text)
+    const hits = collectHits(fp, bundle, options, page)
     if (hits.length > 0) found.set(fp.slug, toDetection(fp, hits))
   }
   // A gated fingerprint runs once, when its gate first opens; new hits can open more gates.
@@ -149,7 +194,7 @@ export function detect(
     if (closed.length === waiting.length) break
     for (const fp of waiting) {
       if (closed.includes(fp)) continue
-      const hits = collectHits(fp, bundle, options, text)
+      const hits = collectHits(fp, bundle, options, page)
       if (hits.length > 0) found.set(fp.slug, toDetection(fp, hits))
     }
     waiting = closed

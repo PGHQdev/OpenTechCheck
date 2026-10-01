@@ -33,7 +33,7 @@ jobs:
           sparse-checkout: fixtures
       - name: Fixture suite
         if: env.HAS_HARNESS_KEY == 'true'
-        run: bun test packages/fingerprints/test/fixtures.test.ts
+        run: bun test packages/fingerprints/test/fixtures.test.ts packages/fingerprints/test/prefilter.test.ts
         env:
           OTC_FIXTURES: harness/fixtures
       - name: Extension unit tests
