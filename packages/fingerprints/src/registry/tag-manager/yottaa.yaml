@@ -1,0 +1,12 @@
+name: Yottaa
+slug: yottaa
+category: tag-manager
+website: https://www.yottaa.com
+detect:
+  scripts:
+    - pattern: 'cdn\.yottaa\.\w+/'
+  meta:
+    x-yottaa-metrics:
+      - pattern: ''
+    x-yottaa-optimizations:
+      - pattern: ''

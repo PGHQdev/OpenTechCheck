@@ -1,0 +1,8 @@
+name: Matomo Tag Manager
+slug: matomo-tag-manager
+category: tag-manager
+website: https://developer.matomo.org/guides/tagmanager/introduction
+detect:
+  js:
+    MatomoTagManager:
+      - pattern: ''
