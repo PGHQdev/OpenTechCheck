@@ -1,7 +1,10 @@
 import { runRule, type RuleHit } from './match'
+import { pageText } from './text'
 import type { Detection, DetectOptions, Fingerprint, SignalBundle } from './types'
 
-export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: DetectOptions): RuleHit[] {
+export function collectHits(
+  fp: Fingerprint, bundle: SignalBundle, options: DetectOptions, text: () => string | undefined,
+): RuleHit[] {
   const hits: RuleHit[] = []
   const d = fp.detect
   if (bundle.html !== undefined) {
@@ -13,6 +16,15 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
   for (const rule of d.url ?? []) {
     const h = runRule(rule, 'url', bundle.url, undefined, options.onWarning)
     if (h) hits.push(h)
+  }
+  if (d.text) {
+    const value = text()
+    if (value !== undefined) {
+      for (const rule of d.text) {
+        const h = runRule(rule, 'text', value, undefined, options.onWarning)
+        if (h) hits.push(h)
+      }
+    }
   }
   for (const rule of d.scripts ?? []) {
     for (const src of bundle.scripts ?? []) {
@@ -94,8 +106,11 @@ export function detect(
 ): Detection[] {
   const bySlug = new Map(fingerprints.map((f) => [f.slug, f]))
   const found = new Map<string, Detection>()
+  // Derived on first use, at most once per call.
+  let derived: string | undefined
+  const text = () => (bundle.html === undefined ? undefined : (derived ??= pageText(bundle.html)))
   for (const fp of fingerprints) {
-    const hits = collectHits(fp, bundle, options)
+    const hits = collectHits(fp, bundle, options, text)
     if (hits.length > 0) found.set(fp.slug, toDetection(fp, hits))
   }
   // excludes: fingerprint list order; mutual excludes resolve to the earlier one
