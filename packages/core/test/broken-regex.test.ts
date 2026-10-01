@@ -19,3 +19,12 @@ test('broken pattern is skipped, other rules still run', () => {
 test('no onWarning provided: scan still completes silently', () => {
   expect(detect({ url: 'u', html: 'works' }, [broken])).toHaveLength(1)
 })
+
+test('a broken pattern warns once across detect() calls', () => {
+  const fp: Fingerprint = { ...broken, detect: { html: [{ pattern: '([' }] } }
+  const warnings: string[] = []
+  const options = { onWarning: (m: string) => warnings.push(m) }
+  detect({ url: 'u', html: 'x' }, [fp], options)
+  detect({ url: 'u', html: 'x' }, [fp], options)
+  expect(warnings).toHaveLength(1)
+})
