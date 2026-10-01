@@ -6,3 +6,8 @@ detect:
   scripts:
     - pattern: 'fullcalendar'
       confidence: 85
+    - pattern: '/fullcalendar\.min\.js'
+  js:
+    FullCalendar.version:
+      - pattern: '^([\d\.\-\w]+)$'
+        version: 1

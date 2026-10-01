@@ -6,7 +6,12 @@ detect:
   scripts:
     - pattern: 'sc-static\.net'
       confidence: 95
+    - pattern: 'intg\.snapchat\.com/'
   js:
     snaptr:
       - pattern: ''
         confidence: 90
+    __SnapPixel:
+      - pattern: ''
+    snaptr.pixelIdList:
+      - pattern: ''

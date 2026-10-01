@@ -6,7 +6,12 @@ detect:
   scripts:
     - pattern: 'fast\.wistia\.com'
       confidence: 95
+    - pattern: '\.wistia\.com'
   js:
     Wistia:
       - pattern: ''
         confidence: 90
+    wistiaEmbeds:
+      - pattern: ''
+    wistiaUtils:
+      - pattern: ''

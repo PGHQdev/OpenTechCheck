@@ -6,6 +6,15 @@ detect:
   html:
     - pattern: 'use\.typekit\.net'
       confidence: 95
+    - pattern: '<link [^>]*href="[^"]+use\.typekit\.(?:net|com)'
   scripts:
     - pattern: 'typekit\.net'
       confidence: 90
+    - pattern: 'use\.typekit\.com'
+  js:
+    Typekit.config.js:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    link[href*='use.typekit.net'], link[href*='use.typekit.com']:
+      - pattern: ''

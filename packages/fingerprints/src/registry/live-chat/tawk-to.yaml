@@ -1,6 +1,6 @@
 name: Tawk.to
 slug: tawk-to
-category: marketing
+category: live-chat
 website: https://www.tawk.to
 detect:
   html:
@@ -9,3 +9,7 @@ detect:
       confidence: 85
   scripts:
     - pattern: 'embed\.tawk\.to/[0-9a-f]+/'
+    - pattern: '//embed\.tawk\.to'
+  cookies:
+    TawkConnectionTime:
+      - pattern: ''

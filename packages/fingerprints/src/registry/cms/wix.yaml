@@ -7,16 +7,27 @@ detect:
     - pattern: 'static\.parastorage\.com'
     - pattern: 'wix-first-paint'
       confidence: 80
-  meta:
-    generator:
-      - pattern: 'Wix\.com Website Builder'
+  scripts:
+    - pattern: 'static\.parastorage\.com'
   headers:
     x-wix-request-id:
       - pattern: ''
     server:
       - pattern: '^Pepyaka$'
+    x-wix-renderer-server:
+      - pattern: ''
+    x-wix-server-artifact-id:
+      - pattern: ''
+  meta:
+    generator:
+      - pattern: 'Wix\.com Website Builder'
   cookies:
     _wix_browser_sess:
       - pattern: ''
-  scripts:
-    - pattern: 'static\.parastorage\.com'
+    Domain:
+      - pattern: '\.wix\.com'
+  js:
+    wixBiSession:
+      - pattern: ''
+    wixPerformanceMeasurements:
+      - pattern: ''

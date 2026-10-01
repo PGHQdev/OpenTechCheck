@@ -3,6 +3,13 @@ slug: mobx
 category: js-library
 website: https://mobx.js.org
 detect:
+  scripts:
+    - pattern: '(?:/([\d\.]+))?/mobx(?:\.[a-z]+){0,2}\.js(?:$|\?)'
+      version: 1
   js:
     __mobxGlobals:
+      - pattern: ''
+    __mobxGlobal:
+      - pattern: ''
+    __mobxInstanceCount:
       - pattern: ''

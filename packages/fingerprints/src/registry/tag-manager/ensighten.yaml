@@ -6,3 +6,4 @@ detect:
   scripts:
     - pattern: 'ensighten\.com'
       confidence: 95
+    - pattern: '//nexus\.ensighten\.com/'

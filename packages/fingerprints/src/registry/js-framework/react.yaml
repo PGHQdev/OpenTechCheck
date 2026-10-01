@@ -7,16 +7,42 @@ detect:
     - pattern: 'data-reactroot'
     - pattern: '\breact(?:\.production)?(?:\.min)?\.js'
       confidence: 70
+    - pattern: '<[^>]+data-react'
+  scripts:
+    - pattern: 'react(?:-with-addons)?[.-](\d+(?:\.\d+){1,9})[^/]*\.js'
+      version: 1
+    - pattern: '/([\d\.]+)/react(?:\.min)?\.js'
+      version: 1
+    - pattern: '^react\b.*\.js'
+  meta:
+    description:
+      - pattern: '^Web site created using create-react-app$'
+    og:image:
+      - pattern: '%REACT_APP_SEO_IMAGE_URL%'
   js:
     React.version:
       - pattern: '^([\d.]+)'
         version: 1
-    '$probe.react':
+    $probe.react:
       - pattern: '^([\d.]+)$'
         version: 1
         confidence: 90
       - pattern: ''
         confidence: 85
+    ReactOnRails:
+      - pattern: ''
+    __REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__:
+      - pattern: ''
+    __isReactFizzContext:
+      - pattern: ''
   dom:
     '[data-reactroot]':
+      - pattern: ''
+    div[id*='appReactRoot']:
+      - pattern: ''
+    div[id*='react-root']:
+      - pattern: ''
+    span[id*='react-']:
+      - pattern: ''
+    style[id*='react-tooltip-core-styles']:
       - pattern: ''

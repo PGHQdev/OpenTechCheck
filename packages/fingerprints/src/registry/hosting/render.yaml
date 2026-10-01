@@ -6,3 +6,6 @@ detect:
   html:
     - pattern: '\.onrender\.com'
       confidence: 90
+  headers:
+    x-render-origin-server:
+      - pattern: 'Render'

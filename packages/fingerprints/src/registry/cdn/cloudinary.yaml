@@ -9,3 +9,9 @@ detect:
   scripts:
     - pattern: 'widget\.cloudinary\.com'
       confidence: 90
+  js:
+    _cloudinary:
+      - pattern: ''
+  dom:
+    img[src*='.cloudinary.com/'], img[data-src*='.cloudinary.com/'], link[href*='.cloudinary.com/']:
+      - pattern: ''

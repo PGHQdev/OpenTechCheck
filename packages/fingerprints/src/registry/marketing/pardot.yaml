@@ -6,3 +6,24 @@ detect:
   scripts:
     - pattern: 'pi\.pardot\.com'
       confidence: 95
+  headers:
+    x-pardot-lb:
+      - pattern: ''
+    x-pardot-route:
+      - pattern: ''
+    x-pardot-rsp:
+      - pattern: ''
+  js:
+    piAId:
+      - pattern: ''
+    piCId:
+      - pattern: ''
+    piHostname:
+      - pattern: ''
+    piProtocol:
+      - pattern: ''
+    piTracker:
+      - pattern: ''
+  dom:
+    iframe[scr*='.pardot.com/']:
+      - pattern: ''

@@ -3,9 +3,12 @@ slug: cdnjs
 category: cdn
 website: https://cdnjs.com
 detect:
-  scripts:
-    - pattern: '//cdnjs\.cloudflare\.com/ajax/libs/'
   html:
-    # stylesheet links: the scripts source only sees <script src>
     - pattern: 'href=["''](?:https?:)?//cdnjs\.cloudflare\.com/ajax/libs/'
       confidence: 90
+  scripts:
+    - pattern: '//cdnjs\.cloudflare\.com/ajax/libs/'
+    - pattern: 'cdnjs\.cloudflare\.com'
+  dom:
+    link[href*='cdnjs.cloudflare.com/']:
+      - pattern: ''

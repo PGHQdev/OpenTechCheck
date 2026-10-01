@@ -3,10 +3,14 @@ slug: mapbox-gl
 category: js-library
 website: https://docs.mapbox.com/mapbox-gl-js/
 detect:
+  scripts:
+    - pattern: 'mapbox-gl'
+      confidence: 85
+    - pattern: 'mapbox-gl\.js'
   js:
     mapboxgl.version:
       - pattern: '^([\d.]+)'
         version: 1
-  scripts:
-    - pattern: 'mapbox-gl'
-      confidence: 85
+  dom:
+    link[href*='mapbox-gl.css'], div.mapboxgl-map, div.mapboxgl-canvas-container, canvas.mapboxgl-canvas:
+      - pattern: ''

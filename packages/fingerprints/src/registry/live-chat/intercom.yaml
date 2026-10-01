@@ -1,0 +1,22 @@
+name: Intercom
+slug: intercom
+category: live-chat
+website: https://www.intercom.com
+detect:
+  html:
+    - pattern: 'widget\.intercom\.io/widget/'
+    - pattern: 'window\.intercomSettings'
+      confidence: 90
+  scripts:
+    - pattern: 'widget\.intercom\.io/widget/'
+    - pattern: '(?:api\.intercom\.io/api|static\.intercomcdn\.com/intercom\.v1)'
+  js:
+    Intercom:
+      - pattern: ''
+  dom:
+    link[href^='https://widget.intercom.io']:
+      - pattern: ''
+    div.live-chat-loader-placeholder:
+      - pattern: ''
+    iframe#intercom-frame:
+      - pattern: ''

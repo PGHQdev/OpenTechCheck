@@ -6,3 +6,12 @@ detect:
   scripts:
     - pattern: '(?:^|/)underscore(?:[-.]min)?\.js'
       confidence: 80
+    - pattern: 'underscore.*\.js(?:\?ver=([\d.]+))?'
+      version: 1
+  js:
+    _.VERSION:
+      - pattern: '^(.+)$'
+        confidence: 0
+        version: 1
+    _.restArguments:
+      - pattern: ''

@@ -4,7 +4,15 @@ category: web-framework
 website: https://cakephp.org
 implies: [php]
 detect:
+  meta:
+    application-name:
+      - pattern: 'CakePHP'
   cookies:
     CAKEPHP:
       - pattern: ''
         confidence: 85
+    cakephp:
+      - pattern: ''
+  js:
+    __cakeDebugBlockInit:
+      - pattern: ''

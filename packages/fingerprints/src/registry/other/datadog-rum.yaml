@@ -6,7 +6,11 @@ detect:
   scripts:
     - pattern: 'datadoghq-browser-agent'
       confidence: 90
+    - pattern: 'www\.datadoghq-browser-agent\.com'
   js:
     DD_RUM:
       - pattern: ''
         confidence: 95
+    DD_LOGS:
+      - pattern: ''
+        confidence: 1

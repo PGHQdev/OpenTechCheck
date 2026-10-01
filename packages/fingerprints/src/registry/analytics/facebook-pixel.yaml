@@ -5,6 +5,16 @@ website: https://www.facebook.com/business/tools/meta-pixel
 detect:
   scripts:
     - pattern: 'connect\.facebook\.net/[^/"]+/fbevents\.js'
+    - pattern: 'connect\.facebook.\w+/signals/config/\d+\?v=([\d\.]+)'
+      version: 1
+    - pattern: 'connect\.facebook\.\w+/.+/fbevents\.js'
   js:
     fbq:
+      - pattern: ''
+    _fbp:
+      - pattern: ''
+    _fbq:
+      - pattern: ''
+  dom:
+    img[src*='facebook.com/tr']:
       - pattern: ''

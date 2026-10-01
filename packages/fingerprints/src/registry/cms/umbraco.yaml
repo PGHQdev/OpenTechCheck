@@ -6,3 +6,37 @@ detect:
   html:
     - pattern: '/umbraco/'
       confidence: 85
+  url:
+    - pattern: '/umbraco/login\.aspx(?:$|\?)'
+  headers:
+    x-umbraco-version:
+      - pattern: '^(.+)$'
+        version: 1
+  meta:
+    generator:
+      - pattern: 'umbraco'
+  cookies:
+    merchello:
+      - pattern: ''
+  js:
+    ITEM_INFO_SERVICE:
+      - pattern: ''
+    UC_IMAGE_SERVICE:
+      - pattern: ''
+    UC_ITEM_INFO_SERVICE:
+      - pattern: ''
+    UC_SETTINGS:
+      - pattern: ''
+    Umbraco:
+      - pattern: ''
+  dom:
+    script[src*='/UmbracoForms/']:
+      - pattern: ''
+    a[data-udi^='umb://']:
+      - pattern: ''
+    form[action^='/umbraco/Surface/']:
+      - pattern: ''
+    a[href^='/umbraco/Surface/']:
+      - pattern: ''
+    fieldset.umbraco-forms-fieldset:
+      - pattern: ''

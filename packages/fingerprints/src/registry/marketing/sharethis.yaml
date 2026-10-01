@@ -6,3 +6,9 @@ detect:
   scripts:
     - pattern: 'sharethis\.com'
       confidence: 80
+    - pattern: '\.sharethis\.com/'
+  js:
+    SHARETHIS:
+      - pattern: ''
+    __sharethis__docReady:
+      - pattern: ''

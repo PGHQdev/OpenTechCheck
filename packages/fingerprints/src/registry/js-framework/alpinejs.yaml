@@ -6,18 +6,25 @@ detect:
   html:
     - pattern: '<[a-z][^>]*\sx-data(?:=|\s|>)'
       confidence: 90
+    - pattern: '<[^>]+[^\w-]x-data[^\w-][^<]+'
+      confidence: 75
   scripts:
     - pattern: '(?:cdn\.jsdelivr\.net/npm|unpkg\.com)/alpinejs@([\dx.]+)'
       version: 1
     - pattern: '\balpine(?:\.min)?\.js'
       confidence: 70
+    - pattern: '/alpine(?:\.min)?\.js'
   js:
     Alpine.version:
       - pattern: '^([\d.]+)'
         version: 1
-    '$probe.alpinejs':
+    $probe.alpinejs:
       - pattern: '^(\d+(?:\.\d+){0,3}(?:-[\w.-]+)?(?:\+[\w.-]+)?)$'
         version: 1
         confidence: 90
       - pattern: '^detected$'
         confidence: 90
+    Alpine:
+      - pattern: ''
+    deferLoadingAlpine:
+      - pattern: ''

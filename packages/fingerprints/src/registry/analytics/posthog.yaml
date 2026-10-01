@@ -10,3 +10,9 @@ detect:
   scripts:
     - pattern: '[a-z-]\.i\.posthog\.com'
     - pattern: 'app\.posthog\.com/static/array\.js'
+    - pattern: 'app\.posthog\.com/'
+  js:
+    __PosthogExtensions__:
+      - pattern: ''
+    posthog:
+      - pattern: ''

@@ -6,3 +6,7 @@ detect:
   scripts:
     - pattern: 'js\.iterable\.com'
       confidence: 95
+    - pattern: 'js\.iterable\.com'
+  js:
+    iterableAnalytics:
+      - pattern: ''

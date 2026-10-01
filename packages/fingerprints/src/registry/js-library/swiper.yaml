@@ -11,6 +11,22 @@ detect:
       version: 1
     - pattern: '/swiper(?:-bundle)?(?:\.min)?\.js(?:\?ver=([\d.]+))?'
       version: 1
+    - pattern: 'swiper(?:\.min)?\.js'
   js:
     Swiper.prototype:
+      - pattern: ''
+    Swiper:
+      - pattern: ''
+  dom:
+    div[data-swiper-slide-index]:
+      - pattern: ''
+    swiper-container:
+      - pattern: ''
+    swiper-slide:
+      - pattern: ''
+    div.swiper-wrapper:
+      - pattern: ''
+    div.swiper-initialized:
+      - pattern: ''
+    div.swiper-vertical:
       - pattern: ''

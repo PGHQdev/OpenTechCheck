@@ -6,7 +6,10 @@ detect:
   scripts:
     - pattern: 'ads-twitter\.com'
       confidence: 95
+    - pattern: 'static\.ads-twitter\.com/uwt\.js'
   js:
     twq:
       - pattern: ''
         confidence: 90
+    twttr:
+      - pattern: ''

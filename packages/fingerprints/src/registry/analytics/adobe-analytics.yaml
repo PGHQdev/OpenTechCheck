@@ -16,3 +16,27 @@ detect:
     s.account:
       - pattern: ''
         confidence: 80
+    s_c_il.0._c:
+      - pattern: 's_c'
+    s_c_il.0.constructor.name:
+      - pattern: 'AppMeasurement'
+    s_c_il.1._c:
+      - pattern: 's_c'
+    s_c_il.1.constructor.name:
+      - pattern: 'AppMeasurement'
+    s_c_il.2._c:
+      - pattern: 's_c'
+    s_c_il.2.constructor.name:
+      - pattern: 'AppMeasurement'
+    s_c_il.3._c:
+      - pattern: 's_c'
+    s_c_il.3.constructor.name:
+      - pattern: 'AppMeasurement'
+    s_c_il.4._c:
+      - pattern: 's_c'
+    s_c_il.4.constructor.name:
+      - pattern: 'AppMeasurement'
+    s_c_il.5._c:
+      - pattern: 's_c'
+    s_c_il.5.constructor.name:
+      - pattern: 'AppMeasurement'

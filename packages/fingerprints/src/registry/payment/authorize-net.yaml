@@ -3,6 +3,13 @@ slug: authorize-net
 category: payment
 website: https://www.authorize.net
 detect:
+  html:
+    - pattern: 'authorizenet\\?/directpost_payment'
+    - pattern: 'js\.authorize\.net'
   scripts:
     - pattern: 'js\.authorize\.net'
       confidence: 95
+    - pattern: '\.authorize\.net/'
+  js:
+    config.authorizenet_public_client_key:
+      - pattern: ''

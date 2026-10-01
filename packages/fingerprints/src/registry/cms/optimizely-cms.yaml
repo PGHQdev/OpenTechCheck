@@ -6,3 +6,23 @@ detect:
   html:
     - pattern: '(?:^|/)episerver'
       confidence: 85
+  scripts:
+    - pattern: '\.episerver.net/'
+  meta:
+    generator:
+      - pattern: 'EPiServer'
+  cookies:
+    EPi:StateMarker:
+      - pattern: ''
+    EPiServer:
+      - pattern: ''
+    EPiSessionId:
+      - pattern: ''
+    EPiTrace:
+      - pattern: ''
+  js:
+    epi.EPiServer:
+      - pattern: ''
+  dom:
+    link[href*='/EPiServer.Forms/']:
+      - pattern: ''

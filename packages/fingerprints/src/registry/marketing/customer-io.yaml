@@ -6,6 +6,7 @@ detect:
   scripts:
     - pattern: 'assets\.customer\.io'
       confidence: 95
+    - pattern: 'assets\.customer\.io'
   js:
     _cio:
       - pattern: ''

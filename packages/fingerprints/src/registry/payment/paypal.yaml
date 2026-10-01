@@ -9,3 +9,30 @@ detect:
     - pattern: 'paypal\.com/sdk/js'
     - pattern: 'paypalobjects\.com/'
       confidence: 70
+    - pattern: 'paypalobjects\.com'
+  meta:
+    id:
+      - pattern: 'in-context-paypal-metadata'
+  js:
+    PAYPAL:
+      - pattern: ''
+    __paypal_global__:
+      - pattern: ''
+    checkout.enabledpayments.paypal:
+      - pattern: '^true$'
+    enablePaypal:
+      - pattern: ''
+    paypal:
+      - pattern: ''
+    paypalClientId:
+      - pattern: ''
+    paypalJs:
+      - pattern: ''
+    wc_ga_pro.available_gateways.paypal:
+      - pattern: ''
+  dom:
+    button:
+      - text: true
+        pattern: 'PayPal'
+    iframe[src*='paypal.com'], img[src*='paypal.com'], img[src*='paypalobjects.com'], [aria-labelledby='pi-paypal'], [data-paypal-v4], [data-paypal-commerce-button], [data-paypal-smart-button-version], img[alt*='PayPal']:
+      - pattern: ''

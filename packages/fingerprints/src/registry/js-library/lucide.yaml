@@ -6,3 +6,6 @@ detect:
   html:
     - pattern: 'class="lucide lucide-'
       confidence: 90
+  dom:
+    svg.lucide:
+      - pattern: ''

@@ -3,7 +3,19 @@ slug: vite
 category: misc
 website: https://vite.dev
 detect:
-  scripts:
-    - pattern: '/@vite/client'
   html:
     - pattern: '<script type="module" src="/@vite/client">'
+  scripts:
+    - pattern: '/@vite/client'
+  js:
+    __vite_is_modern_browser:
+      - pattern: ''
+  dom:
+    script#vite-legacy-polyfill:
+      - pattern: ''
+    script#vite-legacy-entry:
+      - pattern: ''
+    link[href*='vite.svg'][rel='icon']:
+      - pattern: ''
+    script[id^='vite-plugin-']:
+      - pattern: ''

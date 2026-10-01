@@ -9,3 +9,12 @@ detect:
       confidence: 85
   scripts:
     - pattern: 'tags\.tiqcdn\.com/utag/'
+    - pattern: '^(?:https?:)?//tags\.tiqcdn\.com/'
+    - pattern: '/tealium/utag\.js$'
+  js:
+    TEALIUMENABLED:
+      - pattern: ''
+    TealiumUtils:
+      - pattern: ''
+    __tealium_twc_switch:
+      - pattern: ''

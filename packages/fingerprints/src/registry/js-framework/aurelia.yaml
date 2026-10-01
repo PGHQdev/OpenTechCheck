@@ -6,3 +6,13 @@ detect:
   html:
     - pattern: 'aurelia-app'
       confidence: 95
+  scripts:
+    - pattern: '/aurelia[\d\w\-\.]+\.js'
+  js:
+    _aureliaConfigureModuleLoader:
+      - pattern: ''
+    localAurelia:
+      - pattern: ''
+  dom:
+    div[aurelia-app], body[aurelia-app], a[au-target-id]:
+      - pattern: ''

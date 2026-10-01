@@ -5,6 +5,16 @@ website: https://lottiefiles.com
 detect:
   scripts:
     - pattern: '@lottiefiles/lottie-player|lottie-player\.js'
+    - pattern: '/dist/lottie-player\.js'
+    - pattern: '/dist/tgs-player\.js'
+  js:
+    dotlottie-player:
+      - pattern: ''
+    lottie.version:
+      - pattern: '^(.+)$'
+        version: 1
   dom:
-    'lottie-player':
+    lottie-player:
+      - pattern: ''
+    lottie-player, div[data-animation-type='lottie'], div[data-testid='lottie-player'], clipPath[id*='__lottie_element_']:
       - pattern: ''

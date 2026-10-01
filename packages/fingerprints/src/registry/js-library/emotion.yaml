@@ -6,5 +6,7 @@ detect:
   html:
     - pattern: '<style data-emotion'
   dom:
-    'style[data-emotion]':
+    style[data-emotion]:
+      - pattern: ''
+    style[data-emotion], style[data-emotion-css]:
       - pattern: ''

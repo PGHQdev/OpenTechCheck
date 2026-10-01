@@ -6,3 +6,6 @@ detect:
   scripts:
     - pattern: 'players\.brightcove\.net'
       confidence: 95
+  dom:
+    iframe[src*='players.brightcove.'], link[href*='players.brightcove.']:
+      - pattern: ''

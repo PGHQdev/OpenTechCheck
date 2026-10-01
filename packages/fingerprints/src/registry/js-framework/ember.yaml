@@ -14,3 +14,7 @@ detect:
     Ember.VERSION:
       - pattern: '^([\d.]+)'
         version: 1
+    Ember:
+      - pattern: ''
+    EmberENV:
+      - pattern: ''

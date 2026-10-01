@@ -5,6 +5,14 @@ website: https://about.ads.microsoft.com
 detect:
   scripts:
     - pattern: 'bat\.bing\.com/bat\.js'
+  cookies:
+    _uetsid:
+      - pattern: '\w'
+    _uetvid:
+      - pattern: '\w'
   js:
     UET:
+      - pattern: ''
+  dom:
+    link[href*='.bing.com']:
       - pattern: ''

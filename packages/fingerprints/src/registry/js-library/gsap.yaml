@@ -12,7 +12,16 @@ detect:
       confidence: 80
     - pattern: '/TweenMax(?:\.min)?\.js'
       confidence: 90
+    - pattern: 'TweenMax(?:\.min)?\.js'
   js:
     gsap.version:
       - pattern: '^([\d.]+)'
         version: 1
+    TweenLite.version:
+      - pattern: '([\d.]+)'
+        version: 1
+    TweenMax.version:
+      - pattern: '([\d.]+)'
+        version: 1
+    gsapVersions:
+      - pattern: ''

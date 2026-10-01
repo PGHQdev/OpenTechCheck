@@ -6,3 +6,6 @@ detect:
   html:
     - pattern: 'mantine-[a-z0-9]+'
       confidence: 85
+  dom:
+    style[data-emotion='mantine-global'], style[data-emotion='mantine'], html[data-mantine-color-scheme]:
+      - pattern: ''

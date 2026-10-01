@@ -10,3 +10,5 @@ detect:
   dom:
     '[id^="radix-"]':
       - pattern: ''
+    a[data-radix-collection-item], button[data-radix-collection-item]:
+      - pattern: ''

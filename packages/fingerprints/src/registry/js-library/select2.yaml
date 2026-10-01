@@ -11,6 +11,9 @@ detect:
       version: 1
     - pattern: '/select2(?:\.full)?(?:\.min)?\.js'
       confidence: 80
+    - pattern: 'select2(?:\.min|\.full)?\.js'
   js:
-    'jQuery.fn.select2.defaults':
+    jQuery.fn.select2.defaults:
+      - pattern: ''
+    jQuery.fn.select2:
       - pattern: ''

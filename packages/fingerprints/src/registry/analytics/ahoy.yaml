@@ -11,6 +11,10 @@ detect:
       - pattern: ''
     ahoy_visit:
       - pattern: ''
+    ahoy_track:
+      - pattern: ''
   js:
-    'ahoy.trackView':
+    ahoy.trackView:
+      - pattern: ''
+    ahoy:
       - pattern: ''

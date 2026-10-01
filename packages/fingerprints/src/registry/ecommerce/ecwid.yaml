@@ -6,8 +6,15 @@ detect:
   html:
     - pattern: 'app\.ecwid\.com(?::\d+)?/script\.js'
     - pattern: 'xProductBrowser'
+  scripts:
+    - pattern: 'app\.ecwid\.com(?::\d+)?/script\.js'
+    - pattern: 'https://app\.multiscreenstore\.com/script\.js'
+    - pattern: 'https://app\.ecwid\.com/script\.js'
   meta:
     generator:
       - pattern: '^ec-instant-site$'
-  scripts:
-    - pattern: 'app\.ecwid\.com(?::\d+)?/script\.js'
+  js:
+    Ecwid:
+      - pattern: ''
+    EcwidCart:
+      - pattern: ''

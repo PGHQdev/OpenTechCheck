@@ -3,9 +3,21 @@ slug: optimizely
 category: marketing
 website: https://www.optimizely.com/products/web-experimentation/
 detect:
-  scripts:
-    - pattern: 'cdn\.optimizely\.com'
-      confidence: 95
   html:
     - pattern: 'window\.optimizely'
       confidence: 90
+  scripts:
+    - pattern: 'cdn\.optimizely\.com'
+      confidence: 95
+    - pattern: 'optimizely\.com.*\.js'
+  cookies:
+    optimizelyEndUserId:
+      - pattern: ''
+  js:
+    optimizely:
+      - pattern: ''
+    optimizelyClient.clientVersion:
+      - pattern: '([\d\.]+)'
+        version: 1
+    optimizelySdk:
+      - pattern: ''

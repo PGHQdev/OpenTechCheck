@@ -7,5 +7,17 @@ detect:
   html:
     - pattern: '__NUXT__'
     - pattern: 'id="__nuxt"'
+    - pattern: '<div [^>]*id="__nuxt"'
+    - pattern: '<script [^>]*>window\.__NUXT__'
   scripts:
     - pattern: '/_nuxt/'
+  js:
+    $nuxt:
+      - pattern: ''
+    __NUXT__:
+      - pattern: ''
+    useNuxtApp:
+      - pattern: ''
+  dom:
+    div[id^='__nuxt']:
+      - pattern: ''

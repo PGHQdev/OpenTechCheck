@@ -6,8 +6,12 @@ detect:
   scripts:
     - pattern: 'closure/goog/base\.js'
   js:
-    'goog.basePath':
+    goog.basePath:
       - pattern: ''
-    'goog.LOCALE':
+    goog.LOCALE:
       - pattern: ''
         confidence: 80
+  dom:
+    script:
+      - text: true
+        pattern: 'Copyright\sThe\sClosure\sLibrary\sAuthors'

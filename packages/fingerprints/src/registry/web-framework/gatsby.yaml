@@ -12,3 +12,6 @@ detect:
     generator:
       - pattern: '^Gatsby(?:\s([\d.]+))?'
         version: 1
+  dom:
+    div#___gatsby, style#gatsby-inlined-css:
+      - pattern: ''

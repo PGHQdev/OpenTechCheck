@@ -11,3 +11,7 @@ detect:
     - pattern: 'plausible\.io/js/'
     - pattern: '/js/plausible\.js'
       confidence: 80
+    - pattern: 'plausible\.io/js/plausible\.js'
+  js:
+    plausible:
+      - pattern: ''

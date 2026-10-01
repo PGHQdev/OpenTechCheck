@@ -6,6 +6,8 @@ detect:
   html:
     - pattern: 'uk-(?:grid|navbar|container|button|flex|section|width)'
       confidence: 80
+    - pattern: '<[^>]+class="[^"]*(?:uk-container|uk-section)'
   scripts:
     - pattern: '(?:^|/)uikit(?:\.min)?\.js'
       confidence: 80
+    - pattern: 'uikit.*\.js'

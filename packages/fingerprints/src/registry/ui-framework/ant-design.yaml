@@ -7,8 +7,24 @@ detect:
     - pattern: 'class="(?:[^"]* )?ant-(?:btn|layout|menu|row|col|card|typography|input|form|table|modal|select|dropdown|tabs|tag|badge|avatar|tooltip|drawer|space|divider|breadcrumb|pagination|spin|alert|affix|anchor|carousel)(?:[ "-]|$)'
     - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/antd/([\d.]+)'
       version: 1
+    - pattern: '<[^>]*class="ant-(?:btn|col|row|layout|breadcrumb|menu|pagination|steps|select|cascader|checkbox|calendar|form|input-number|input|mention|rate|radio|slider|switch|tree-select|time-picker|transfer|upload|avatar|badge|card|carousel|collapse|list|popover|tooltip|table|tabs|tag|timeline|tree|alert|modal|message|notification|progress|popconfirm|spin|anchor|back-top|divider|drawer)'
+    - pattern: '<i class="anticon anticon-'
   scripts:
     - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/antd/([\d.]+)'
       version: 1
     - pattern: 'unpkg\.com/antd@([\d.]+)'
       version: 1
+  js:
+    __ANTD_STYLE_CACHE_MANAGER_FOR_SSR__:
+      - pattern: ''
+    antd.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+  dom:
+    div[class*='ant-collapse']:
+      - attr: class
+        pattern: 'ant-collapse'
+    link[href*='antd']:
+      - attr: href
+        pattern: 'antd(?:@|/)?([\d\.]+)?(?:.+|)?\.css'
+        version: 1

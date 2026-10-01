@@ -7,8 +7,17 @@ detect:
   html:
     - pattern: '/typo3conf/'
     - pattern: '/typo3temp/'
+  url:
+    - pattern: '/typo3/'
+  scripts:
+    - pattern: '/typo3(?:conf|temp)/'
+    - pattern: '^/?typo3(?:conf|temp)/'
   meta:
     generator:
       - pattern: 'TYPO3(?:\sCMS)?'
-  scripts:
-    - pattern: '/typo3(?:conf|temp)/'
+  js:
+    webpackChunkTYPO3Webpack:
+      - pattern: ''
+  dom:
+    link[href*='typo3conf'], link[href*='typo3temp'], img[src*='typo3conf'], img[src*='typo3temp']:
+      - pattern: ''

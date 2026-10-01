@@ -6,7 +6,17 @@ detect:
   scripts:
     - pattern: 'cdn\.snipcart\.com'
       confidence: 95
+    - pattern: 'cdn\.snipcart\.com/themes/v([\w.]+)/default/snipcart\.js'
+      version: 1
+  cookies:
+    snipcart-cart:
+      - pattern: ''
   js:
     Snipcart:
       - pattern: ''
         confidence: 90
+  dom:
+    div[id^='snipcart']:
+      - pattern: ''
+    link[href*='snipcart.css']:
+      - pattern: ''

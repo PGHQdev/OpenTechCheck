@@ -5,13 +5,40 @@ website: https://vuejs.org
 detect:
   html:
     - pattern: '\bdata-v-[0-9a-f]{7,8}\b'
+    - pattern: '<(?!svg)[^>]+\sdata-v(?:ue)?-'
+  scripts:
+    - pattern: 'vue[.-]([\d.]*\d)[^/]*\.js'
+      version: 1
+    - pattern: '(?:/([\d.]+))?/vue(?:\.min)?\.js'
+      version: 1
   js:
     Vue.version:
       - pattern: '^([\d.]+)'
         version: 1
-    '$probe.vue':
+    $probe.vue:
       - pattern: '^([\d.]+)$'
         version: 1
         confidence: 90
       - pattern: ''
         confidence: 85
+    Vue:
+      - pattern: ''
+    VueRoot:
+      - pattern: ''
+    __VUE_HOT_MAP__:
+      - pattern: ''
+    __VUE__:
+      - pattern: ''
+    vueDLL:
+      - pattern: ''
+  dom:
+    .vue-app:
+      - pattern: ''
+    link[href*='docsify/themes/vue.css']:
+      - pattern: ''
+    meta[data-vue-meta]:
+      - pattern: ''
+    div[class*='vue-scroll-picker-group'] > div[class*='vue-scroll-picker']:
+      - pattern: ''
+    div[class*='Vue-Toastification__container']:
+      - pattern: ''

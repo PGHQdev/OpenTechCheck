@@ -6,3 +6,6 @@ detect:
   html:
     - pattern: '\.up\.railway\.app'
       confidence: 90
+  headers:
+    server:
+      - pattern: '^railway$'

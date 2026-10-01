@@ -3,11 +3,31 @@ slug: sentry
 category: other
 website: https://sentry.io
 detect:
+  html:
+    - pattern: '<script[^>]*>\s*Raven\.config\(''[^'']*'', \{\s+release: ''([0-9\.]+)'''
+      version: 1
+    - pattern: '<script[^>]*src="[^"]*browser\.sentry\-cdn\.com/([0-9.]+)/bundle(?:\.tracing)?(?:\.min)?\.js'
+      version: 1
   scripts:
     - pattern: 'browser\.sentry-cdn\.com'
     - pattern: 'js\.sentry-cdn\.com'
+    - pattern: 'browser\.sentry\-cdn\.com/([0-9.]+)/bundle(?:\.tracing)?(?:\.min)?\.js'
+      version: 1
+    - pattern: '\.sentry-cdn\.com/'
+  headers:
+    sentry-trace:
+      - pattern: ''
   js:
     Sentry:
       - pattern: ''
     __SENTRY__:
+      - pattern: ''
+    Raven.config:
+      - pattern: ''
+    SENTRY_SDK_SOURCE:
+      - pattern: ''
+    Sentry.SDK_VERSION:
+      - pattern: '(.+)'
+        version: 1
+    ravenOptions.whitelistUrls:
       - pattern: ''

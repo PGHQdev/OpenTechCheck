@@ -8,10 +8,27 @@ detect:
     - pattern: 'Joomla! - Open Source Content Management'
     - pattern: '/media/system/js/'
       confidence: 70
+    - pattern: '(?:<div[^>]+id="wrapper_r"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class="pill)'
+      confidence: 50
+  url:
+    - pattern: 'option=com_'
+  scripts:
+    - pattern: '/media/system/js/core(?:\.min)?\.js'
+    - pattern: '/media/jui/js/'
+    - pattern: '(?:^|/)(feed/com_|components/com_)'
+  headers:
+    x-content-encoded-by:
+      - pattern: 'Joomla! ([\d.]+)'
+        version: 1
   meta:
     generator:
       - pattern: 'Joomla!(?:\s([\d.]+))?'
         version: 1
-  scripts:
-    - pattern: '/media/system/js/core(?:\.min)?\.js'
-    - pattern: '/media/jui/js/'
+  js:
+    Joomla:
+      - pattern: ''
+    jcomments:
+      - pattern: ''
+  dom:
+    div[id*='wrapper_r'], link[href*='feed/com_'], link[href*='components/com_'], table[class*='pill']:
+      - pattern: ''

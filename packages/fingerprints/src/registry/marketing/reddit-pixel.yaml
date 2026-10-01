@@ -6,6 +6,7 @@ detect:
   scripts:
     - pattern: 'redditstatic\.com/ads/pixel'
       confidence: 95
+    - pattern: 'www\.redditstatic\.com'
   js:
     rdt:
       - pattern: ''

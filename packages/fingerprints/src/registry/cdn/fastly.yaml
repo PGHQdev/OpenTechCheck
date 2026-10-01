@@ -11,3 +11,13 @@ detect:
     x-timer:
       - pattern: '^S\d+\.\d+,VS\d'
         confidence: 80
+    fastly-debug-digest:
+      - pattern: ''
+    vary:
+      - pattern: 'Fastly-SSL'
+    server:
+      - pattern: 'Fastly'
+    x-fastly-origin:
+      - pattern: ''
+    x-via-fastly:
+      - pattern: ''

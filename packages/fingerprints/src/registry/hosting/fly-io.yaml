@@ -10,3 +10,6 @@ detect:
       - pattern: '^Fly/'
     via:
       - pattern: '\bfly\.io\b'
+  cookies:
+    _fly:
+      - pattern: ''

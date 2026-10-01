@@ -3,9 +3,26 @@ slug: google-adsense
 category: other
 website: https://www.google.com/adsense
 detect:
-  scripts:
-    - pattern: 'googlesyndication\.com|adsbygoogle\.js'
-      confidence: 95
   html:
     - pattern: 'adsbygoogle'
       confidence: 90
+  scripts:
+    - pattern: 'googlesyndication\.com|adsbygoogle\.js'
+      confidence: 95
+    - pattern: 'googlesyndication\.com/'
+    - pattern: 'ad\.ca\.doubleclick\.net'
+    - pattern: '2mdn\.net'
+  js:
+    Goog_AdSense_:
+      - pattern: ''
+    Goog_AdSense_OsdAdapter:
+      - pattern: ''
+    __google_ad_urls:
+      - pattern: ''
+    adsbygoogle:
+      - pattern: ''
+    google_ad_:
+      - pattern: ''
+  dom:
+    amp-ad[type='adsense']:
+      - pattern: ''

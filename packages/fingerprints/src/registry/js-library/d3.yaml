@@ -12,6 +12,7 @@ detect:
       version: 1
     - pattern: '/d3(?:\.min)?\.js'
       confidence: 70
+    - pattern: '/d3(?:\.v\d+)?(?:\.min)?\.js'
   js:
     d3.version:
       - pattern: '^([\d.]+)'

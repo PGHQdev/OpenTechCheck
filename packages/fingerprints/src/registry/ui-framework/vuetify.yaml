@@ -7,3 +7,6 @@ detect:
   html:
     - pattern: 'v-application'
       confidence: 90
+  dom:
+    style#vuetify-theme-stylesheet:
+      - pattern: ''

@@ -3,6 +3,9 @@ slug: bunny
 category: cdn
 website: https://bunny.net
 detect:
+  scripts:
+    - pattern: '\.b-cdn\.net/'
+      confidence: 90
   headers:
     server:
       - pattern: '^BunnyCDN\b'
@@ -12,6 +15,6 @@ detect:
     cdn-requestid:
       - pattern: ''
         confidence: 90
-  scripts:
-    - pattern: '\.b-cdn\.net/'
-      confidence: 90
+  dom:
+    "[src*='.b-cdn.net'],[data-src*='.b-cdn.net']":
+      - pattern: ''

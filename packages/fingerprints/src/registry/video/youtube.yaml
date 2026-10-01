@@ -5,8 +5,13 @@ website: https://www.youtube.com
 detect:
   html:
     - pattern: '<iframe[^>]+src=[^>]*youtube(?:-nocookie)?\.com/embed/'
+    - pattern: '<(?:param|embed|iframe)[^>]+youtube(?:-nocookie)?\.com/(?:v|embed)'
   scripts:
     - pattern: 'youtube\.com/(?:iframe_api|player_api)'
+    - pattern: '\.youtube\.com/'
   js:
-    'YT.Player':
+    YT.Player:
+      - pattern: ''
+  dom:
+    embed[src*='youtube.com'], embed[src*='youtube-nocookie.com'], iframe[src*='youtube.com'], iframe[src*='youtube-nocookie.com'], param[value*='youtube.com'], param[value*='youtube-nocookie.com']:
       - pattern: ''

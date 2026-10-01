@@ -6,3 +6,12 @@ detect:
   html:
     - pattern: 'cdn\.sanity\.io'
     - pattern: '\.apicdn\.sanity\.io'
+  headers:
+    x-sanity-shard:
+      - pattern: ''
+  dom:
+    img[src*='cdn.sanity.io'],img[srcset*='cdn.sanity.io'],video[src*='cdn.sanity.io'],source[src*='cdn.sanity.io'],source[srcset*='cdn.sanity.io'],track[src*='cdn.sanity.io']:
+      - attr: src
+        pattern: ''
+      - attr: srcset
+        pattern: ''

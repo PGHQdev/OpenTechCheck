@@ -6,7 +6,27 @@ detect:
   scripts:
     - pattern: 'en25\.com'
       confidence: 90
+    - pattern: 'elqCfg\.js'
+  cookies:
+    ELOQUA:
+      - pattern: ''
   js:
     _elqQ:
       - pattern: ''
         confidence: 90
+    _elq:
+      - pattern: ''
+    eloqContactData:
+      - pattern: ''
+    eloquaActionSettings:
+      - pattern: ''
+    elqCookieValue:
+      - pattern: ''
+    elqCurESite:
+      - pattern: ''
+    elqLoad:
+      - pattern: ''
+    elqSiteID:
+      - pattern: ''
+    elq_global:
+      - pattern: ''

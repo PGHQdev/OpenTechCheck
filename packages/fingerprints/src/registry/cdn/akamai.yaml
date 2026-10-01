@@ -14,3 +14,7 @@ detect:
     server-timing:
       - pattern: '\bak_p;'
         confidence: 90
+    x-edgeconnect-midmile-rtt:
+      - pattern: ''
+    x-edgeconnect-origin-mex-latency:
+      - pattern: ''

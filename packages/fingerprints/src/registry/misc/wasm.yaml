@@ -3,9 +3,18 @@ slug: wasm
 category: misc
 website: https://webassembly.org
 detect:
-  scripts:
-    - pattern: '\.wasm'
-      confidence: 75
   html:
     - pattern: 'application/wasm'
       confidence: 75
+  scripts:
+    - pattern: '\.wasm'
+      confidence: 75
+    - pattern: '/wasm_exec\.js'
+  headers:
+    content-type:
+      - pattern: 'application/wasm'
+  js:
+    wasmBinary:
+      - pattern: ''
+    wasmBinaryFile:
+      - pattern: ''

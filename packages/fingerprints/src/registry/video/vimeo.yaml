@@ -3,9 +3,17 @@ slug: vimeo
 category: video
 website: https://vimeo.com
 detect:
-  scripts:
-    - pattern: 'player\.vimeo\.com'
-      confidence: 95
   html:
     - pattern: 'vimeo\.com/video/'
       confidence: 85
+  scripts:
+    - pattern: 'player\.vimeo\.com'
+      confidence: 95
+  js:
+    Vimeo.Player:
+      - pattern: ''
+    VimeoPlayer:
+      - pattern: ''
+  dom:
+    iframe[src*='vimeo.com'],embed[src*='vimeo.com']:
+      - pattern: ''

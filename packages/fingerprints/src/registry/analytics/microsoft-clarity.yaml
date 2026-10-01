@@ -9,3 +9,8 @@ detect:
       confidence: 90
   scripts:
     - pattern: 'clarity\.ms/tag/'
+    - pattern: 'www\.clarity\.ms/.+/([\d.]+)/clarity\.js'
+      version: 1
+  js:
+    clarity:
+      - pattern: ''

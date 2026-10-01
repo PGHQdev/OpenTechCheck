@@ -6,7 +6,12 @@ detect:
   scripts:
     - pattern: 'cdn\.paddle\.com'
       confidence: 95
+    - pattern: 'cdn\.paddle\.com/paddle/paddle\.js'
   js:
     Paddle:
       - pattern: ''
         confidence: 90
+    Paddle.Checkout:
+      - pattern: ''
+    PaddleScriptLocation:
+      - pattern: ''

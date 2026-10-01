@@ -3,9 +3,14 @@ slug: glide-js
 category: js-library
 website: https://glidejs.com
 detect:
+  scripts:
+    - pattern: '/@glidejs/glide(?:@([\d\.]+))?'
+      version: 1
   js:
     Glide:
       - pattern: ''
   dom:
-    '.glide__track':
+    .glide__track:
+      - pattern: ''
+    div[data-glide-el]:
       - pattern: ''

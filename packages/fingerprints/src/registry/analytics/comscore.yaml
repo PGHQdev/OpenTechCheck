@@ -3,11 +3,19 @@ slug: comscore
 category: analytics
 website: https://www.comscore.com
 detect:
-  scripts:
-    - pattern: 'sb\.scorecardresearch\.com/'
   html:
     - pattern: 'scorecardresearch\.com/p\?'
       confidence: 80
+  scripts:
+    - pattern: 'sb\.scorecardresearch\.com/'
+    - pattern: '\.scorecardresearch\.com/beacon\.js|COMSCORE\.beacon'
   js:
     _comscore:
+      - pattern: ''
+    COMSCORE:
+      - pattern: ''
+    _COMSCORE:
+      - pattern: ''
+  dom:
+    iframe[src*='.scorecardresearch.com/beacon'], iframe#comscore, iframe[src*='COMSCORE.beacon']:
       - pattern: ''

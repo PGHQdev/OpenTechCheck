@@ -12,8 +12,6 @@ detect:
       version: 1
     - pattern: 'href="[^"]*/font-awesome(?:\.min)?\.css'
       confidence: 70
-    # Self-hosted/bundled builds leave only the icon markup. "fa fa-x" (v4),
-    # "fas fa-x" (v5), and "fa-solid fa-x" (v6) class pairs are FA-specific.
     - pattern: 'class="[^"]*\bfa[srlbd]?\s+fa-[a-z0-9-]+'
       confidence: 70
     - pattern: 'class="[^"]*\bfa-(?:solid|regular|brands|light|duotone|thin|sharp)\b'
@@ -24,3 +22,32 @@ detect:
       version: 1
     - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/font-awesome/([\d.]+)'
       version: 1
+    - pattern: '(?:F|f)o(?:n|r)t-?(?:A|a)wesome(?:.*?([0-9a-fA-F]{7,40}|[\d]+(?:.[\d]+(?:.[\d]+)?)?)|)'
+    - pattern: '\.fontawesome\.com/([0-9a-z]+).js'
+  js:
+    FontAwesomeCdnConfig:
+      - pattern: ''
+    FontAwesomeKitConfig.asyncLoading:
+      - pattern: ''
+    ___FONT_AWESOME___:
+      - pattern: ''
+  dom:
+    "[class*='fa']":
+      - attr: class
+        pattern: '(?:^|\s)fa(?:-[a-z0-9-]+)?(?:\s|$)'
+    link[href*='awesome']:
+      - attr: href
+        pattern: '(?:([\d\.]+)/)?(?:css/)?font-awesome(?:\.min)?\.css'
+        version: 1
+    link[href*='font-awesome']:
+      - attr: href
+        pattern: '/font-awesome/([\d\.]+)/css/'
+        version: 1
+    link[href*='fontawesome-free']:
+      - attr: href
+        pattern: '/fontawesome-free(?:/|-)([\d\.]+)?'
+        version: 1
+    link[href*='kit-pro.fontawesome.com']:
+      - attr: href
+        pattern: '/kit-pro\.fontawesome\.com/releases/v([\d\.]+)/'
+        version: 1

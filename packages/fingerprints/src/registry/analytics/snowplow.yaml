@@ -3,6 +3,22 @@ slug: snowplow
 category: analytics
 website: https://snowplow.io
 detect:
+  scripts:
+    - pattern: '(?:^|/)sp(?:\.min)?\.js$'
+      confidence: 60
+    - pattern: 'sp\.js'
+      confidence: 50
+    - pattern: 'd1fc8wv8zag5ca\.cloudfront\.net/.+/sp\.js'
+    - pattern: 'cdn\.jsdelivr\.net/gh/snowplow/sp-js-assets@(?:.+)/sp\.js'
+    - pattern: 'cdnjs\.cloudflare\.com/ajax/libs/snowplow/(?:.+)/sp.*\.js'
+    - pattern: 'unpkg.com/@snowplow/javascript-tracker@(?:.+)/dist/sp.*\.js'
+    - pattern: 'cdn\.jsdelivr\.net/npm/@snowplow/javascript-tracker@(?:.+)/dist/sp\.js'
+  cookies:
+    _sp_id:
+      - pattern: ''
+    sp:
+      - pattern: ''
+        confidence: 50
   js:
     GlobalSnowplowNamespace:
       - pattern: ''
@@ -10,6 +26,5 @@ detect:
     snowplow:
       - pattern: ''
         confidence: 85
-  scripts:
-    - pattern: '(?:^|/)sp(?:\.min)?\.js$'
-      confidence: 60
+    Snowplow:
+      - pattern: ''

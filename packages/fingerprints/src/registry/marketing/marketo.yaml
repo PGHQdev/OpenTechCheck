@@ -6,6 +6,11 @@ detect:
   scripts:
     - pattern: 'munchkin\.marketo\.net'
       confidence: 95
+    - pattern: 'munchkin\.marketo\.\w+/(?:([\d.]+)/)?munchkin\.js'
+      version: 1
+  cookies:
+    _mkto_trk:
+      - pattern: ''
   js:
     Munchkin:
       - pattern: ''

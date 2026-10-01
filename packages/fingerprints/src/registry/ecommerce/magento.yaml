@@ -11,3 +11,33 @@ detect:
   scripts:
     - pattern: '/static/version[\d.]+/frontend/'
     - pattern: 'mage/requirejs/'
+    - pattern: 'js/mage'
+    - pattern: 'skin/frontend/(?:default|(enterprise))'
+    - pattern: 'skin/frontend/'
+      confidence: 50
+    - pattern: 'static/_requirejs'
+      confidence: 50
+  cookies:
+    X-Magento-Vary:
+      - pattern: ''
+    frontend:
+      - pattern: ''
+        confidence: 50
+    mage-cache-storage:
+      - pattern: ''
+    mage-cache-storage-section-invalidation:
+      - pattern: ''
+    mage-translation-file-version:
+      - pattern: ''
+    mage-translation-storage:
+      - pattern: ''
+  js:
+    Mage:
+      - pattern: ''
+    VarienForm:
+      - pattern: ''
+  dom:
+    script[data-requiremodule*='mage/'], script[data-requiremodule*='Magento_'], html[data-image-optimizing-origin]:
+      - pattern: ''
+    script[type='text/x-magento-init']:
+      - pattern: ''

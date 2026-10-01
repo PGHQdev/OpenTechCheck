@@ -9,8 +9,18 @@ detect:
   scripts:
     - pattern: 'firebase-app'
       confidence: 85
+    - pattern: '/(?:([\d.]+)/)?firebase(?:\.min)?\.js'
+      version: 1
+    - pattern: '/firebasejs/([\d.]+)/firebase'
+      version: 1
+  headers:
+    vary:
+      - pattern: 'x-fh-requested-host'
   js:
     firebase.SDK_VERSION:
       - pattern: '^([\d.]+)'
         version: 1
         confidence: 95
+  dom:
+    iframe[src*='.firebaseapp.com/']:
+      - pattern: ''

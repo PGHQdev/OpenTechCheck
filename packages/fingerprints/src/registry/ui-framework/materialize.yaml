@@ -9,3 +9,8 @@ detect:
   scripts:
     - pattern: '(?:^|/)materialize(?:\.min)?\.js'
       confidence: 70
+    - pattern: '([\d\.]+)/.*/materialize\.min\.js'
+      version: 1
+  dom:
+    link[href*='/materialize.min.css']:
+      - pattern: ''

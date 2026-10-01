@@ -10,7 +10,13 @@ detect:
       version: 1
     - pattern: '/tinymce(?:\.min)?\.js'
       confidence: 80
+    - pattern: '/tiny_?mce(?:\.min)?\.js'
   js:
-    'tinymce.majorVersion':
+    tinymce.majorVersion:
       - pattern: '^(\d+)'
         version: 1
+    tinyMCE.majorVersion:
+      - pattern: '([\d.]+)'
+        version: 1
+    tinymce:
+      - pattern: ''

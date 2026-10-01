@@ -8,3 +8,11 @@ detect:
       - pattern: '\bvarnish\b'
     x-varnish:
       - pattern: ''
+    x-varnish-action:
+      - pattern: ''
+    x-varnish-age:
+      - pattern: ''
+    x-varnish-cache:
+      - pattern: ''
+    x-varnish-hostname:
+      - pattern: ''

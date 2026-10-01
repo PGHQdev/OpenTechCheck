@@ -6,6 +6,13 @@ detect:
   html:
     - pattern: '<style id="_goober"'
       confidence: 90
+  js:
+    goober:
+      - pattern: ''
+    gooberGlobal:
+      - pattern: ''
+    gooberPrefixer:
+      - pattern: ''
   dom:
-    'style#_goober':
+    style#_goober:
       - pattern: ''

@@ -9,3 +9,15 @@ detect:
   scripts:
     - pattern: 'fancybox'
       confidence: 80
+    - pattern: 'jquery\.fancybox(?:\.pack|\.min)?\.js(?:\?v=([\d.]+))?$'
+      version: 1
+  js:
+    $.fancybox.version:
+      - pattern: '^(.+)$'
+        version: 1
+    Fancybox.version:
+      - pattern: '^(.+)$'
+        version: 1
+    jQuery.fancybox.version:
+      - pattern: '^(.+)$'
+        version: 1

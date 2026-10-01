@@ -3,9 +3,14 @@ slug: qwik
 category: js-framework
 website: https://qwik.dev
 detect:
-  scripts:
-    - pattern: 'qwikloader'
-      confidence: 95
   html:
     - pattern: 'q:container'
       confidence: 90
+  scripts:
+    - pattern: 'qwikloader'
+      confidence: 95
+  dom:
+    '*':
+      - attr: q:version
+        pattern: '^([\d\.]+(?:-\d+)?)'
+        version: 1

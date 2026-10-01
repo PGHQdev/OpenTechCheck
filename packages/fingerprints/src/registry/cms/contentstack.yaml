@@ -6,3 +6,7 @@ detect:
   html:
     - pattern: 'contentstack\.io'
       confidence: 90
+  dom:
+    img[src*='contentstack']:
+      - attr: src
+        pattern: '\.contentstack\.(?:io|com)/'

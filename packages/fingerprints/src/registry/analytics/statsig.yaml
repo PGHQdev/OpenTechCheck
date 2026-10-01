@@ -3,6 +3,18 @@ slug: statsig
 category: analytics
 website: https://statsig.com
 detect:
+  headers:
+    x-statsig-region:
+      - pattern: ''
   js:
     __STATSIG__:
+      - pattern: ''
+    __STATSIG__.SDK_VERSION:
+      - pattern: '([\d\.]+)$'
+        version: 1
+    statsig:
+      - pattern: ''
+    statsigInitialized:
+      - pattern: ''
+    statsigWWW:
       - pattern: ''

@@ -6,3 +6,9 @@ detect:
   scripts:
     - pattern: '_framework/blazor'
       confidence: 95
+    - pattern: 'blazor\.server\.js'
+    - pattern: 'blazor\.host\.min\.js'
+    - pattern: 'blazor\.webassembly\.js'
+  js:
+    Blazor:
+      - pattern: ''

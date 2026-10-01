@@ -3,10 +3,16 @@ slug: highcharts
 category: js-library
 website: https://www.highcharts.com
 detect:
+  html:
+    - pattern: '<svg[^>]*><desc>Created with Highcharts ([\d.]*)'
+      version: 1
+  scripts:
+    - pattern: 'highcharts'
+      confidence: 80
+    - pattern: 'highcharts.*\.js'
   js:
     Highcharts.version:
       - pattern: '^([\d.]+)'
         version: 1
-  scripts:
-    - pattern: 'highcharts'
-      confidence: 80
+    Highcharts:
+      - pattern: ''

@@ -3,10 +3,35 @@ slug: algolia
 category: other
 website: https://www.algolia.com
 detect:
+  scripts:
+    - pattern: 'algolia'
+      confidence: 75
+  cookies:
+    _ALGOLIA:
+      - pattern: ''
+    didomiVendorsConsent:
+      - pattern: '\balgolia\b'
   js:
     algoliasearch:
       - pattern: ''
         confidence: 90
-  scripts:
-    - pattern: 'algolia'
-      confidence: 75
+    ALGOLIA_INSIGHTS_SRC:
+      - pattern: ''
+    AlgoliaSearch:
+      - pattern: ''
+    __GLOBAL__.algolia:
+      - pattern: ''
+    __NEXT_DATA__.props.pageProps.appSettings.ALGOLIA_APP_ID:
+      - pattern: ''
+    __algolia:
+      - pattern: ''
+    __algolia.algoliasearch.version:
+      - pattern: '^(.+)$'
+        version: 1
+    _didomi_vendors_consent:
+      - pattern: '\balgolia\b'
+    algoliasearch.version:
+      - pattern: '^(.+)$'
+        version: 1
+    didomiState.didomiVendorsConsent:
+      - pattern: '\balgolia\b'

@@ -13,7 +13,13 @@ detect:
       version: 1
     - pattern: '/lodash(?:\.core|\.fp)?(?:\.min)?\.js'
       confidence: 80
+    - pattern: 'lodash.*\.js'
   js:
     _.VERSION:
       - pattern: '^([\d.]+)'
+        version: 1
+    _.differenceBy:
+      - pattern: ''
+    _.templateSettings.imports._.templateSettings.imports._.VERSION:
+      - pattern: '^(.+)$'
         version: 1

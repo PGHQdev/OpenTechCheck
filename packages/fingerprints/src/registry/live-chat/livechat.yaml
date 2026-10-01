@@ -1,12 +1,15 @@
 name: LiveChat
 slug: livechat
-category: marketing
+category: live-chat
 website: https://www.livechat.com
 detect:
   scripts:
     - pattern: 'cdn\.livechatinc\.com'
       confidence: 95
+    - pattern: 'cdn\.livechatinc\.com/.*tracking\.js'
   js:
     LC_API:
       - pattern: ''
         confidence: 90
+    LiveChatWidget:
+      - pattern: ''

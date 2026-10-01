@@ -3,10 +3,17 @@ slug: echarts
 category: js-library
 website: https://echarts.apache.org
 detect:
+  scripts:
+    - pattern: 'echarts'
+      confidence: 80
+    - pattern: '/echarts\.min\.[a-zA-Z0-9]*\.js'
+    - pattern: '/echarts(?:\.simple)?(?:\.esm)?(?:\.common)?(?:\.min)?\.js'
+    - pattern: 'cdn\.jsdelivr\.net/(?:npm|gh/apache)/echarts@([\d.]+(?:-[^/]+)?|latest)/dist/echarts.*\.js'
+      version: 1
   js:
     echarts.version:
       - pattern: '^([\d.]+)'
         version: 1
-  scripts:
-    - pattern: 'echarts'
-      confidence: 80
+  dom:
+    div[_echarts_instance_]:
+      - pattern: ''

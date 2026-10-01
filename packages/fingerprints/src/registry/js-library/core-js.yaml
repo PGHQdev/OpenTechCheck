@@ -6,3 +6,13 @@ detect:
   js:
     __core-js_shared__:
       - pattern: ''
+    __core-js_shared__.versions.0.version:
+      - pattern: '^(.+)$'
+        version: 1
+    _babelPolyfill:
+      - pattern: ''
+    core:
+      - pattern: ''
+    core.version:
+      - pattern: '^(.+)$'
+        version: 1

@@ -6,3 +6,6 @@ detect:
   html:
     - pattern: 'bigcartel\.com'
       confidence: 90
+  meta:
+    generator:
+      - pattern: 'Big Cartel'

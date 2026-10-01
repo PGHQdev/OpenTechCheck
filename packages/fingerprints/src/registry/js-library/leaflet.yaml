@@ -3,11 +3,20 @@ slug: leaflet
 category: js-library
 website: https://leafletjs.com
 detect:
+  scripts:
+    - pattern: 'leaflet'
+      confidence: 80
+    - pattern: '(?:(?:dist\/)?)?leaflet[\w\-\.]{0,32}\.js(?:\?v(?:er)?=((?:\d+\.){1,9}\d+))?(?!.+shopify)'
+      version: 1
+    - pattern: '(?:((?:\d+\.){1,9}\d+)\/(?:dist\/)?)?leaflet[\w\-\.]{0,32}\.js(?!.+shopify)'
+      version: 1
+    - pattern: 'leaflet.{0,32}\.js(?!.+shopify)'
   js:
     L.version:
       - pattern: '^([\d.]+)'
         version: 1
         confidence: 90
-  scripts:
-    - pattern: 'leaflet'
-      confidence: 80
+    L.DistanceGrid:
+      - pattern: ''
+    L.PosAnimation:
+      - pattern: ''

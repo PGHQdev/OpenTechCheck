@@ -3,11 +3,15 @@ slug: fullstory
 category: analytics
 website: https://www.fullstory.com
 detect:
+  html:
+    - pattern: '_fs_host'
+      confidence: 90
   scripts:
     - pattern: 'fullstory\.com/s/fs\.js'
       confidence: 95
     - pattern: 'edge\.fullstory\.com'
       confidence: 95
-  html:
-    - pattern: '_fs_host'
-      confidence: 90
+    - pattern: '\.fullstory\.com/'
+  js:
+    FS.clearUserCookie:
+      - pattern: ''

@@ -5,6 +5,14 @@ website: https://business.linkedin.com/marketing-solutions/insight-tag
 detect:
   scripts:
     - pattern: 'snap\.licdn\.com'
+    - pattern: 'snap\.licdn\.com/li\.lms-analytics/insight\.min\.js'
+    - pattern: 'cdn\.oribi\.io'
   js:
     _linkedin_data_partner_ids:
+      - pattern: ''
+    ORIBI:
+      - pattern: ''
+    _linkedin_data_partner_id:
+      - pattern: ''
+    _linkedin_partner_id:
       - pattern: ''

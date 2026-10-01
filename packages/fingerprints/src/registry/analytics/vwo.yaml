@@ -3,13 +3,25 @@ slug: vwo
 category: analytics
 website: https://vwo.com
 detect:
+  html:
+    - pattern: '_vis_opt'
+      confidence: 85
   scripts:
     - pattern: 'visualwebsiteoptimizer\.com'
       confidence: 95
+    - pattern: 'dev\.visualwebsiteoptimizer\.com/'
+    - pattern: '/visual-website-optimizer/([\d\.])'
+      version: 1
   cookies:
     _vwo_uuid:
       - pattern: ''
         confidence: 85
-  html:
-    - pattern: '_vis_opt'
-      confidence: 85
+  js:
+    VWO:
+      - pattern: ''
+    __vwo:
+      - pattern: ''
+    _vwo_code:
+      - pattern: ''
+    _vwo_settings_timer:
+      - pattern: ''

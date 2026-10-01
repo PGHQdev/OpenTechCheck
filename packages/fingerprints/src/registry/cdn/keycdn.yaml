@@ -7,3 +7,5 @@ detect:
     x-cdn:
       - pattern: '^keycdn$'
         confidence: 95
+    server:
+      - pattern: '^keycdn-engine$'

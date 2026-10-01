@@ -4,6 +4,9 @@ category: js-library
 website: https://reactrouter.com
 implies: [react]
 detect:
+  scripts:
+    - pattern: '(?:/react-router(@|/)([\d.]+)(?:/[a-z]+)?)?/react-router(?:\.min)?\.js'
+      version: 2
   js:
     __reactRouterVersion:
       - pattern: '^([\d.]+)'

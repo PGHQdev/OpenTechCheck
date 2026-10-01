@@ -12,6 +12,9 @@ detect:
   js:
     litElementVersions:
       - pattern: ''
-    '$probe.lit':
+    $probe.lit:
       - pattern: '^detected$'
         confidence: 90
+    litElementVersions.0:
+      - pattern: '([\d\.]+)'
+        version: 1

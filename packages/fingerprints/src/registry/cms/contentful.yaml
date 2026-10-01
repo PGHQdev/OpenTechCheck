@@ -6,3 +6,9 @@ detect:
   html:
     - pattern: '(?:images|assets|downloads|videos)\.ctfassets\.net'
     - pattern: 'cdn\.contentful\.com'
+    - pattern: '<[^>]+(?:assets|downloads|images|videos)\.(?:ct?fassets\.net|contentful\.com)'
+  headers:
+    server:
+      - pattern: '^Contentful Images API$'
+    x-contentful-request-id:
+      - pattern: ''

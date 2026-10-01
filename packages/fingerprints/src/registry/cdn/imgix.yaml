@@ -8,3 +8,6 @@ detect:
       confidence: 95
     - pattern: '\.iximg\.net'
       confidence: 95
+  dom:
+    img[src*='.imgix.net/'], img[data-src*='.imgix.net/'], img[srcset*='.imgix.net/'], source[src*='.imgix.net/'], source[data-src*='.imgix.net/']:
+      - pattern: ''

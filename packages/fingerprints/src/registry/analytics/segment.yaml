@@ -7,6 +7,12 @@ detect:
     - pattern: 'cdn\.segment\.com/analytics\.js'
   scripts:
     - pattern: 'cdn\.segment\.com/analytics\.js'
+    - pattern: '/segment-wrapper\.min\.js'
   js:
     analytics.SNIPPET_VERSION:
       - pattern: ''
+    __SEGMENT_INSPECTOR__:
+      - pattern: ''
+    analytics.VERSION:
+      - pattern: '(.+)'
+        version: 1

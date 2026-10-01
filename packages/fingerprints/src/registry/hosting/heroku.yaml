@@ -3,6 +3,8 @@ slug: heroku
 category: hosting
 website: https://www.heroku.com
 detect:
+  url:
+    - pattern: '\.herokuapp\.com'
   headers:
     via:
       - pattern: '\bvegur\b'

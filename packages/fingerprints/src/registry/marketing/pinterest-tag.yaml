@@ -12,3 +12,6 @@ detect:
     pintrk:
       - pattern: ''
         confidence: 90
+  dom:
+    img[src*='ct.pinterest.com/v3/?tid']:
+      - pattern: ''

@@ -3,11 +3,23 @@ slug: pixijs
 category: js-library
 website: https://pixijs.com
 detect:
+  url:
+    - pattern: '.\.pixijs\.com'
+  scripts:
+    - pattern: '(?:^|/)pixi(?:\.min)?\.js'
+      confidence: 75
+    - pattern: 'pixi(?:\.min|-legacy)?\.js$'
   js:
     PIXI.VERSION:
       - pattern: '^([\d.]+)'
         version: 1
         confidence: 95
-  scripts:
-    - pattern: '(?:^|/)pixi(?:\.min)?\.js'
-      confidence: 75
+    PIXI:
+      - pattern: ''
+    PIXI_WEBWORKER_URL:
+      - pattern: ''
+    webpackChunkpixi_docusaurus:
+      - pattern: ''
+  dom:
+    div[class*='pixi-hitbox']:
+      - pattern: ''

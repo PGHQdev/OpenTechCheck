@@ -3,11 +3,13 @@ slug: apexcharts
 category: js-library
 website: https://apexcharts.com
 detect:
+  scripts:
+    - pattern: 'apexcharts'
+      confidence: 80
   js:
     ApexCharts.version:
       - pattern: '^([\d.]+)'
         version: 1
         confidence: 95
-  scripts:
-    - pattern: 'apexcharts'
-      confidence: 80
+    ApexCharts:
+      - pattern: ''

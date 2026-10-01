@@ -3,9 +3,20 @@ slug: disqus
 category: other
 website: https://disqus.com
 detect:
-  scripts:
-    - pattern: 'disqus\.com/embed'
-      confidence: 95
   html:
     - pattern: 'disqus_thread'
       confidence: 90
+  scripts:
+    - pattern: 'disqus\.com/embed'
+      confidence: 95
+    - pattern: 'disqus_url'
+  js:
+    DISQUS:
+      - pattern: ''
+    disqus_shortname:
+      - pattern: ''
+    disqus_url:
+      - pattern: ''
+  dom:
+    div#disqus_thread:
+      - pattern: ''

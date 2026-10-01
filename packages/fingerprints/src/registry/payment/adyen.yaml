@@ -6,3 +6,7 @@ detect:
   scripts:
     - pattern: 'checkoutshopper'
       confidence: 95
+  js:
+    adyen.encrypt.version:
+      - pattern: '^(.+)$'
+        version: 1

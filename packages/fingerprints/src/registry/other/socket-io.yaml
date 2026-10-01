@@ -6,3 +6,10 @@ detect:
   scripts:
     - pattern: 'socket\.io'
       confidence: 85
+    - pattern: 'socket\.io.*\.js'
+  js:
+    io.Socket:
+      - pattern: ''
+    io.version:
+      - pattern: '^(.+)$'
+        version: 1

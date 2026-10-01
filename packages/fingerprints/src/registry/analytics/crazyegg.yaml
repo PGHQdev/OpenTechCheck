@@ -5,3 +5,7 @@ website: https://www.crazyegg.com
 detect:
   scripts:
     - pattern: 'script\.crazyegg\.com'
+    - pattern: 'script\.crazyegg\.com/pages/scripts/\d+/\d+\.js'
+  js:
+    CE2:
+      - pattern: ''

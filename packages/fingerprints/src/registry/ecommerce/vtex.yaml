@@ -3,10 +3,29 @@ slug: vtex
 category: ecommerce
 website: https://www.vtex.com
 detect:
+  html:
+    - pattern: 'vtexassets'
+      confidence: 85
+  headers:
+    server:
+      - pattern: '^VTEX IO$'
+    powered:
+      - pattern: 'vtex'
   cookies:
     VtexIdclientAutCookie:
       - pattern: ''
         confidence: 95
-  html:
-    - pattern: 'vtexassets'
-      confidence: 85
+    VtexFingerPrint:
+      - pattern: ''
+    VtexStoreVersion:
+      - pattern: ''
+    VtexWorkspace:
+      - pattern: ''
+    vtex_session:
+      - pattern: ''
+  js:
+    vtex:
+      - pattern: ''
+  dom:
+    link[href*='.vteximg.com.br'], source[srcset*='.vteximg.com.br']:
+      - pattern: ''

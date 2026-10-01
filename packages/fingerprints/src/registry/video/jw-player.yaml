@@ -6,7 +6,20 @@ detect:
   scripts:
     - pattern: 'jwplayer'
       confidence: 80
+    - pattern: '\.jwplayer\.com'
+    - pattern: '\.jwpcdn\.com'
   js:
     jwplayer:
       - pattern: ''
         confidence: 85
+    jwDefaults:
+      - pattern: ''
+    jwplayerApiUrl:
+      - pattern: ''
+    webpackJsonpjwplayer:
+      - pattern: ''
+  dom:
+    div[data-video-provider*=jwplayer]:
+      - pattern: ''
+    div[class^='jwplayer']:
+      - pattern: ''

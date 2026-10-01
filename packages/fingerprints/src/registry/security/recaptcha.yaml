@@ -3,9 +3,20 @@ slug: recaptcha
 category: security
 website: https://developers.google.com/recaptcha
 detect:
-  scripts:
-    - pattern: 'google\.com/recaptcha/(?:api|enterprise)\.js'
-    - pattern: 'recaptcha\.net/recaptcha/'
   html:
     - pattern: 'class="[^"]*\bg-recaptcha\b'
       confidence: 80
+  scripts:
+    - pattern: 'google\.com/recaptcha/(?:api|enterprise)\.js'
+    - pattern: 'recaptcha\.net/recaptcha/'
+    - pattern: 'api-secure\.recaptcha\.net'
+    - pattern: 'recaptcha_ajax\.js'
+    - pattern: '/recaptcha/(?:api|enterprise)\.js'
+  js:
+    Recaptcha:
+      - pattern: ''
+    recaptcha:
+      - pattern: ''
+  dom:
+    "#recaptcha_image, iframe[src*='.google.com/recaptcha/'], div.g-recaptcha":
+      - pattern: ''

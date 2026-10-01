@@ -7,3 +7,5 @@ detect:
     Inferno.version:
       - pattern: '^([\d.]+)'
         version: 1
+    Inferno:
+      - pattern: ''

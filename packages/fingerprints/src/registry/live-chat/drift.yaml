@@ -1,6 +1,6 @@
 name: Drift
 slug: drift
-category: marketing
+category: live-chat
 website: https://www.drift.com
 detect:
   scripts:
@@ -10,3 +10,5 @@ detect:
     driftt:
       - pattern: ''
         confidence: 90
+    drift:
+      - pattern: ''

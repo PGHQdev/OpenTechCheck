@@ -3,8 +3,11 @@ slug: cloudflare-turnstile
 category: security
 website: https://www.cloudflare.com/products/turnstile/
 detect:
-  scripts:
-    - pattern: 'challenges\.cloudflare\.com/turnstile/v0/api\.js'
   html:
     - pattern: 'class="[^"]*\bcf-turnstile\b'
       confidence: 80
+  scripts:
+    - pattern: 'challenges\.cloudflare\.com/turnstile/v0/api\.js'
+  js:
+    turnstile:
+      - pattern: ''

@@ -7,6 +7,11 @@ detect:
     - pattern: 'window\._\$HY'
     - pattern: '\bdata-hk="[0-9-]+"'
       confidence: 80
+  scripts:
+    - pattern: 'www\.solidjs\.com'
   js:
     Solid$$:
+      - pattern: ''
+  dom:
+    '[data-hk]':
       - pattern: ''

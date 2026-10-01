@@ -3,10 +3,16 @@ slug: amcharts
 category: js-library
 website: https://www.amcharts.com
 detect:
+  html:
+    - pattern: '<svg[^>]*><desc>JavaScript chart by amCharts ([\d.]*)'
+      version: 1
   scripts:
     - pattern: 'amcharts'
       confidence: 85
+    - pattern: 'amcharts.*\.js'
   js:
     am4core:
       - pattern: ''
         confidence: 90
+    AmCharts:
+      - pattern: ''

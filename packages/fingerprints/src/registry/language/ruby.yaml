@@ -6,3 +6,6 @@ detect:
   headers:
     x-powered-by:
       - pattern: '\bmod_rack\b|\bmod_rails\b'
+    server:
+      - pattern: '(?:Mongrel|Ruby(?:/([\d\.]+))?)'
+        version: 1

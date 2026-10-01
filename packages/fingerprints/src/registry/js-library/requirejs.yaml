@@ -3,11 +3,12 @@ slug: requirejs
 category: js-library
 website: https://requirejs.org
 detect:
+  scripts:
+    - pattern: '(?:^|/)require(?:\.min)?\.js'
+      confidence: 60
+    - pattern: 'require.*\.js'
   js:
     requirejs.version:
       - pattern: '^([\d.]+)'
         version: 1
         confidence: 95
-  scripts:
-    - pattern: '(?:^|/)require(?:\.min)?\.js'
-      confidence: 60

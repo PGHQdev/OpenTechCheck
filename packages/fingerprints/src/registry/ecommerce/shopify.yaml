@@ -6,11 +6,51 @@ detect:
   html:
     - pattern: 'Shopify\.theme'
     - pattern: 'cdn\.shopify\.com'
+  url:
+    - pattern: '^https?//.+\.myshopify\.com'
   scripts:
     - pattern: 'cdn\.shopify\.com'
+    - pattern: 'sdks\.shopifycdn\.com'
   headers:
     x-shopify-stage:
+      - pattern: ''
+    x-shopid:
+      - pattern: ''
+        confidence: 50
+  meta:
+    shopify-checkout-api-token:
+      - pattern: ''
+    shopify-digital-wallet:
       - pattern: ''
   cookies:
     _shopify_s:
       - pattern: ''
+    _shopify_essential_:
+      - pattern: ''
+    _shopify_sa_p:
+      - pattern: ''
+    _shopify_sa_t:
+      - pattern: ''
+    _shopify_y:
+      - pattern: ''
+  js:
+    SHOPIFY_API_BASE_URL:
+      - pattern: ''
+    Shopify:
+      - pattern: ''
+        confidence: 25
+    ShopifyAPI:
+      - pattern: ''
+    ShopifyAnalytics:
+      - pattern: ''
+    ShopifyCustomer:
+      - pattern: ''
+    goaffproShopifyStVariableFix:
+      - pattern: ''
+    shopifyAccessUrl:
+      - pattern: ''
+  dom:
+    link[href*='shopify.com']:
+      - attr: href
+        pattern: '(?:cdn\.|\.my)shopify\.com'
+        confidence: 50

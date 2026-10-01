@@ -6,3 +6,7 @@ detect:
   scripts:
     - pattern: 'f\.convertkit\.com'
       confidence: 95
+    - pattern: '\.convertkit\.com'
+  dom:
+    form[action*='.convertkit.com'], link[href*='.convertkit.com']:
+      - pattern: ''

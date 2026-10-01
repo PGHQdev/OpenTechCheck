@@ -1,12 +1,16 @@
 name: Pusher
 slug: pusher
-category: other
+category: live-chat
 website: https://pusher.com
 detect:
   scripts:
     - pattern: 'js\.pusher\.com/([\d.]+)/pusher(?:\.min)?\.js'
       version: 1
   js:
-    'Pusher.VERSION':
+    Pusher.VERSION:
       - pattern: '^([\d.]+)'
         version: 1
+    PUSHER_APP_ID:
+      - pattern: ''
+    Pusher.Runtime:
+      - pattern: ''

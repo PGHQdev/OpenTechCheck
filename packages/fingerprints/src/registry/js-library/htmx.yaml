@@ -10,7 +10,14 @@ detect:
     - pattern: 'htmx\.org@([\d.]+)'
       version: 1
     - pattern: '/htmx(?:\.min)?\.js'
+    - pattern: '/htmx\.org@([\d\.]+)'
+      version: 1
   js:
     htmx.version:
       - pattern: '^([\d.]+)'
         version: 1
+    htmx:
+      - pattern: ''
+  dom:
+    script[data-src*='/dist/htmx.min.js']:
+      - pattern: ''

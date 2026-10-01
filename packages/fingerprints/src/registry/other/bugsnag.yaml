@@ -6,7 +6,12 @@ detect:
   scripts:
     - pattern: 'bugsnag'
       confidence: 85
+    - pattern: '/bugsnag.*\.js'
   js:
     Bugsnag:
       - pattern: ''
         confidence: 90
+    bugsnag:
+      - pattern: ''
+    bugsnagClient:
+      - pattern: ''

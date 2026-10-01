@@ -10,3 +10,5 @@ detect:
   js:
     webpackJsonp:
       - pattern: ''
+    webpackChunk:
+      - pattern: ''

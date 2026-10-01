@@ -4,13 +4,19 @@ category: web-framework
 website: https://jekyllrb.com
 implies: [ruby]
 detect:
+  html:
+    - pattern: 'SimpleJekyllSearch'
+      confidence: 70
+    - pattern: 'Powered by <a href="https?://jekyllrb\.com"[^>]*>Jekyll</'
+    - pattern: '<!-- Created with Jekyll Now -'
+    - pattern: '<!-- Begin Jekyll SEO tag'
+  scripts:
+    - pattern: '/jekyll-search\.js'
+      confidence: 80
   meta:
     generator:
       - pattern: '^Jekyll(?:\sv?([\d.]+))?'
         version: 1
-  scripts:
-    - pattern: '/jekyll-search\.js'
-      confidence: 80
-  html:
-    - pattern: 'SimpleJekyllSearch'
-      confidence: 70
+  js:
+    SimpleJekyllSearch:
+      - pattern: ''

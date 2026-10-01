@@ -10,3 +10,9 @@ detect:
   scripts:
     - pattern: 'static\.klaviyo\.com/onsite/js/'
     - pattern: 'static-tracking\.klaviyo\.com/'
+    - pattern: 'klaviyo\.com'
+  js:
+    KlaviyoSubscribe:
+      - pattern: ''
+    klaviyo:
+      - pattern: ''

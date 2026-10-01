@@ -8,3 +8,5 @@ detect:
       - pattern: '^LiteSpeed$'
     x-litespeed-cache:
       - pattern: ''
+    x-turbo-charged-by:
+      - pattern: '^LiteSpeed$'

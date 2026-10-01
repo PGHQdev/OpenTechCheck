@@ -3,9 +3,19 @@ slug: activecampaign
 category: marketing
 website: https://www.activecampaign.com
 detect:
-  scripts:
-    - pattern: 'trackcmp\.net'
-      confidence: 90
   html:
     - pattern: 'activehosted\.com'
       confidence: 85
+  url:
+    - pattern: '\.activehosted\.com'
+    - pattern: '\.ac-page\.com'
+  scripts:
+    - pattern: 'trackcmp\.net'
+      confidence: 90
+    - pattern: 'plugins/activecampaign-subscription-forms/site_tracking\.js'
+    - pattern: '\.activehosted\.com'
+    - pattern: '\.app-us1\.com'
+    - pattern: '\.ac-page\.com'
+  js:
+    acEnableTracking:
+      - pattern: ''

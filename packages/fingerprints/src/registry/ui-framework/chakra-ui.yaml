@@ -6,3 +6,8 @@ detect:
   html:
     - pattern: 'chakra-(?:button|input|flex|box|stack|heading|text|modal|menu|link)'
       confidence: 90
+  scripts:
+    - pattern: '\.chakra-ui\.'
+  dom:
+    html[style*='chakra-ui-color-mode'], body.chakra-ui-dark, body.chakra-ui-light, div.chakra-portal, div.chakra-container:
+      - pattern: ''

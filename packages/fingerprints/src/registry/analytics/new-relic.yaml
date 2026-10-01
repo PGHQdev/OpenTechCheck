@@ -10,3 +10,6 @@ detect:
       - pattern: ''
     newrelic:
       - pattern: ''
+  dom:
+    link[href*='.newrelic.com']:
+      - pattern: ''

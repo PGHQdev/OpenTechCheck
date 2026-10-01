@@ -6,7 +6,14 @@ detect:
   scripts:
     - pattern: 'luckyorange\.com'
       confidence: 90
+    - pattern: '\.luckyorange\.com/'
   cookies:
     __lo_uid:
       - pattern: ''
         confidence: 80
+  js:
+    __wtw_lucky_site_id:
+      - pattern: ''
+  dom:
+    link[href*='.luckyorange.com']:
+      - pattern: ''

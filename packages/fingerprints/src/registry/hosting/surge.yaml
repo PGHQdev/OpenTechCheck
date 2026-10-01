@@ -6,3 +6,10 @@ detect:
   html:
     - pattern: '\.surge\.sh'
       confidence: 90
+  url:
+    - pattern: 'surge\.sh'
+  scripts:
+    - pattern: 'surge\.sh(?:\/[-\w]{0,40})?\.js'
+  dom:
+    link[href*='.surge.sh/']:
+      - pattern: ''

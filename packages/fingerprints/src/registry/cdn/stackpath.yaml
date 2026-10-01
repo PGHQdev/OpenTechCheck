@@ -3,10 +3,15 @@ slug: stackpath
 category: cdn
 website: https://www.stackpath.com
 detect:
+  scripts:
+    - pattern: 'stackpathdns\.com'
+      confidence: 90
   headers:
     x-sp-edge:
       - pattern: ''
         confidence: 90
-  scripts:
-    - pattern: 'stackpathdns\.com'
-      confidence: 90
+    x-backend-server:
+      - pattern: 'hosting\.stackcp\.net$'
+    x-provided-by:
+      - pattern: '^StackCDN(?: ([\d.]+))?'
+        version: 1

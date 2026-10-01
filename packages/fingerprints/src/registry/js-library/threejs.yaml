@@ -13,7 +13,14 @@ detect:
       version: 1
     - pattern: '/three(?:\.module)?(?:\.min)?\.js'
       confidence: 80
+    - pattern: 'three(?:\.min)?\.js'
   js:
     THREE.REVISION:
       - pattern: '^(\d+)'
         version: 1
+    __THREE__:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    canvas[data-engine*='three.js']:
+      - pattern: ''

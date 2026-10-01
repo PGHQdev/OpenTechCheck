@@ -10,3 +10,6 @@ detect:
     XSRF-TOKEN:
       - pattern: '^eyJpdiI6'
         confidence: 90
+  js:
+    Laravel:
+      - pattern: ''

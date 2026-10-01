@@ -6,7 +6,10 @@ detect:
   scripts:
     - pattern: 'cdn\.onesignal\.com'
       confidence: 95
+    - pattern: 'cdn\.onesignal\.com'
   js:
     OneSignal:
       - pattern: ''
         confidence: 90
+    __oneSignalSdkLoadCount:
+      - pattern: ''

@@ -9,3 +9,14 @@ detect:
   scripts:
     - pattern: 'storyblok'
       confidence: 85
+  headers:
+    x-frame-options:
+      - pattern: 'app\.storyblok\.com'
+  js:
+    StoryblokBridge:
+      - pattern: ''
+    storyblokRegisterEvent:
+      - pattern: ''
+  dom:
+    img[src*='//a.storyblok.com/'], img[srcset*='a.storyblok.com']:
+      - pattern: ''

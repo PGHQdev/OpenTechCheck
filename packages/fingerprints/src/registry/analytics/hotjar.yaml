@@ -9,3 +9,11 @@ detect:
       confidence: 90
   scripts:
     - pattern: 'static\.hotjar\.com/c/hotjar-'
+    - pattern: '//static\.hotjar\.com/'
+  js:
+    HotLeadfactory:
+      - pattern: ''
+    HotleadController:
+      - pattern: ''
+    hj.apiUrlBase:
+      - pattern: ''

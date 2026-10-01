@@ -7,3 +7,6 @@ detect:
     server:
       - pattern: 'apache-coyote'
         confidence: 95
+    x-powered-by:
+      - pattern: '\bTomcat\b(?:-([\d.]+))?'
+        version: 1

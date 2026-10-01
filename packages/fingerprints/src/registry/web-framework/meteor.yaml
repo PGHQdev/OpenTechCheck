@@ -7,3 +7,13 @@ detect:
   html:
     - pattern: '__meteor_runtime_config__'
       confidence: 95
+    - pattern: '<link[^>]+__meteor-css__'
+  js:
+    Meteor:
+      - pattern: ''
+    Meteor.release:
+      - pattern: '^METEOR@([\d.]+)'
+        version: 1
+  dom:
+    link.__meteor-css__:
+      - pattern: ''

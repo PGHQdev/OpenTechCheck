@@ -6,9 +6,15 @@ detect:
   html:
     - pattern: 'Static\.SQUARESPACE_CONTEXT'
     - pattern: 'static1\.squarespace\.com'
-  headers:
-    server:
-      - pattern: '^Squarespace$'
   scripts:
     - pattern: 'static1\.squarespace\.com'
     - pattern: 'assets\.squarespace\.com'
+  headers:
+    server:
+      - pattern: '^Squarespace$'
+  js:
+    Squarespace:
+      - pattern: ''
+    Static.SQUARESPACE_CONTEXT.templateVersion:
+      - pattern: '^(\d(?:\.\d)?)$'
+        version: 1

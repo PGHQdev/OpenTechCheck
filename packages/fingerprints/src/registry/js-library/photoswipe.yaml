@@ -9,3 +9,12 @@ detect:
   scripts:
     - pattern: 'photoswipe'
       confidence: 85
+    - pattern: 'photoswipe/([\d\.]+)/photoswipe\.min\.js'
+      version: 1
+  js:
+    PhotoSwipe:
+      - pattern: ''
+    PhotoSwipeUI_Default:
+      - pattern: ''
+    photoswipeParseHash:
+      - pattern: ''

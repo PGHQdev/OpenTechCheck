@@ -6,3 +6,8 @@ detect:
   scripts:
     - pattern: 'lemonsqueezy\.com'
       confidence: 90
+  js:
+    LemonSqueezy:
+      - pattern: ''
+    lemonSqueezyAffiliateConfig:
+      - pattern: ''

@@ -6,11 +6,25 @@ detect:
   html:
     - pattern: 'cdn\d+\.bigcommerce\.com'
     - pattern: 'microapps\.bigcommerce\.com'
+  url:
+    - pattern: 'mybigcommerce\.com'
   scripts:
     - pattern: 'cdn\d+\.bigcommerce\.com'
     - pattern: 'microapps\.bigcommerce\.com'
+    - pattern: '(?:\.|plugins/)?bigcommerce(?:\.com)?/(?:assets)?'
+  meta:
+    platform:
+      - pattern: '^bigcommerce'
   cookies:
     SHOP_SESSION_TOKEN:
       - pattern: ''
     fornax_anonymousId:
+      - pattern: ''
+  js:
+    bigcommerce_config:
+      - pattern: ''
+    bigcommerce_i18n:
+      - pattern: ''
+  dom:
+    img[data-src*='.bigcommerce.com'], img[src*='.bigcommerce.com'], link[href*='.bigcommerce.com']:
       - pattern: ''

@@ -6,6 +6,12 @@ detect:
   html:
     - pattern: 'class="[^"]*\bui (?:stackable )?(?:grid|menu|container|segment|button|card|form)'
       confidence: 80
+    - pattern: '<link[^>]+semantic(?:\.min)\.css"'
   scripts:
     - pattern: '(?:^|/)semantic(?:\.min)?\.js'
       confidence: 70
+    - pattern: '/semantic(?:-([\d.]+))?(?:\.min)?\.js'
+      version: 1
+  dom:
+    link[href*='/semantic.min.css']:
+      - pattern: ''

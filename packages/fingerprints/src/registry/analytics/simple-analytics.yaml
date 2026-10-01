@@ -6,3 +6,16 @@ detect:
   scripts:
     - pattern: 'scripts\.simpleanalyticscdn\.com'
       confidence: 95
+    - pattern: 'simpleanalyticscdn\.com'
+    - pattern: 'simpleanalytics\.io'
+    - pattern: 'simpleanalytics\.com'
+  js:
+    sa_event:
+      - pattern: ''
+        confidence: 25
+    sa_event_loaded:
+      - pattern: ''
+        confidence: 50
+    sa_loaded:
+      - pattern: ''
+        confidence: 25

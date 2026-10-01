@@ -6,3 +6,9 @@ detect:
   html:
     - pattern: 'ik\.imagekit\.io'
       confidence: 95
+  headers:
+    x-server:
+      - pattern: 'imagekit\.io'
+  dom:
+    link[href*='ik.imagekit.io/']:
+      - pattern: ''

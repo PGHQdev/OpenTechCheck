@@ -9,3 +9,7 @@ detect:
     - pattern: 'checkout\.razorpay\.com/v1/'
     - pattern: 'cdn\.razorpay\.com/static/'
       confidence: 90
+    - pattern: 'checkout\.razorpay\.com'
+  js:
+    Razorpay:
+      - pattern: ''

@@ -10,3 +10,9 @@ detect:
     ttq:
       - pattern: ''
         confidence: 90
+    TiktokAnalyticsObject:
+      - pattern: ''
+  dom:
+    script[data-hid='tiktok']:
+      - attr: data-hid
+        pattern: ''

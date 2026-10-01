@@ -3,10 +3,18 @@ slug: php
 category: language
 website: https://www.php.net
 detect:
+  url:
+    - pattern: '\.php(?:$|\?)'
   headers:
     x-powered-by:
       - pattern: '^PHP(?:/([\d.]*\d))?'
         version: 1
+    server:
+      - pattern: 'php/?([\d.]+)?'
+        version: 1
   cookies:
     PHPSESSID:
+      - pattern: ''
+  dom:
+    form[action*='login_process.php'], form[action*='assets/mail.php']:
       - pattern: ''

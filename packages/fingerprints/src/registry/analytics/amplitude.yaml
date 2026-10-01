@@ -9,3 +9,11 @@ detect:
       confidence: 85
   scripts:
     - pattern: 'cdn\.amplitude\.com/'
+    - pattern: 'cdn\.(?:segment.+)?amplitude(?:\.com|-plugins)'
+  js:
+    AMPLITUDE_KEY:
+      - pattern: ''
+    __AMPLITUDE__:
+      - pattern: ''
+    amplitudeClient:
+      - pattern: ''

@@ -14,3 +14,18 @@ detect:
     generator:
       - pattern: '^Astro(?:\sv([\d.]+))?'
         version: 1
+  js:
+    Astro:
+      - pattern: ''
+  dom:
+    "[class^='astro-']":
+      - attr: class
+        pattern: 'astro-[\d\w]{8,}'
+    astro-root:
+      - attr: uid
+        pattern: ''
+    link[href*='/_astro/']:
+      - attr: href
+        pattern: '/_astro/(?:[\W\w]+)(?:-|\.)[\d\w]+\.css'
+    link[href*='/_astro/'][href$='.css']:
+      - pattern: ''

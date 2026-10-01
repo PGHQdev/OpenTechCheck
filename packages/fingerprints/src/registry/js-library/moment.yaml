@@ -3,10 +3,13 @@ slug: moment
 category: js-library
 website: https://momentjs.com
 detect:
+  scripts:
+    - pattern: '(?:^|/)moment(?:\.min)?\.js'
+      confidence: 70
+    - pattern: 'moment(?:\.min)?\.js'
   js:
     moment.version:
       - pattern: '^([\d.]+)'
         version: 1
-  scripts:
-    - pattern: '(?:^|/)moment(?:\.min)?\.js'
-      confidence: 70
+    moment:
+      - pattern: ''

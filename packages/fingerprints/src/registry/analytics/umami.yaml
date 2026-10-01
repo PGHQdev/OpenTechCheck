@@ -9,3 +9,7 @@ detect:
   scripts:
     - pattern: '(?:^|/)umami(?:\.js|\.iife\.js)'
       confidence: 70
+    - pattern: 'umami\.js'
+  js:
+    umami:
+      - pattern: ''

@@ -6,7 +6,15 @@ detect:
   scripts:
     - pattern: 'js\.appboycdn\.com'
       confidence: 95
+    - pattern: 'js\.appboycdn\.com/web-sdk/([\d.]+)'
+      version: 1
   js:
     appboy:
       - pattern: ''
         confidence: 90
+    appboyQueue:
+      - pattern: ''
+    braze.BrazeSdkMetadata:
+      - pattern: ''
+    brazeQueue:
+      - pattern: ''

@@ -5,3 +5,12 @@ website: https://www.typeform.com
 detect:
   scripts:
     - pattern: 'embed\.typeform\.com'
+    - pattern: 'embed\.typeform\.com/'
+  js:
+    tf.createPopover:
+      - pattern: ''
+    tf.createWidget:
+      - pattern: ''
+  dom:
+    link[href*='.typeform.com/']:
+      - pattern: ''

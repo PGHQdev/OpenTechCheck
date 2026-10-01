@@ -9,3 +9,10 @@ detect:
       confidence: 90
   scripts:
     - pattern: 'js\.braintreegateway\.com/'
+    - pattern: 'js\.braintreegateway\.com'
+  js:
+    Braintree:
+      - pattern: ''
+    Braintree.version:
+      - pattern: '^(.+)$'
+        version: 1

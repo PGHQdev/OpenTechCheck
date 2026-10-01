@@ -3,10 +3,11 @@ slug: plotly
 category: js-library
 website: https://plotly.com/javascript/
 detect:
+  scripts:
+    - pattern: 'plotly'
+      confidence: 80
+    - pattern: 'https?://cdn\.plot\.ly/plotly'
   js:
     Plotly.version:
       - pattern: '^([\d.]+)'
         version: 1
-  scripts:
-    - pattern: 'plotly'
-      confidence: 80

@@ -3,10 +3,11 @@ slug: zepto
 category: js-library
 website: https://zeptojs.com
 detect:
+  scripts:
+    - pattern: '(?:^|/)zepto(?:\.min)?\.js'
+      confidence: 80
+    - pattern: 'zepto.*\.js'
   js:
     Zepto:
       - pattern: ''
         confidence: 90
-  scripts:
-    - pattern: '(?:^|/)zepto(?:\.min)?\.js'
-      confidence: 80

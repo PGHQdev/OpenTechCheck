@@ -7,9 +7,39 @@ detect:
   html:
     - pattern: '/wp-content/'
     - pattern: '/wp-includes/'
+    - pattern: '<link rel=["'']stylesheet["''] [^>]+/wp-(?:content|includes)/'
+    - pattern: '<link[^>]+s\d+\.wp\.com'
+  scripts:
+    - pattern: '/wp-includes/'
+    - pattern: '/wp-(?:content|includes)/'
+    - pattern: 'wp-embed\.min\.js'
+    - pattern: 'wp-static\.assets\.sh/'
+  headers:
+    x-pingback:
+      - pattern: '/xmlrpc\.php$'
+    link:
+      - pattern: 'rel="https://api\.w\.org/"'
   meta:
     generator:
       - pattern: 'WordPress(?:\s([\d.]+))?'
         version: 1
-  scripts:
-    - pattern: '/wp-includes/'
+    shareaholic:wp_version:
+      - pattern: ''
+  js:
+    wp.ajax:
+      - pattern: ''
+    wp.receiveEmbedMessage:
+      - pattern: ''
+    wp_username:
+      - pattern: ''
+    wpb_prepare_tab_content:
+      - pattern: ''
+  dom:
+    div[class*='wp-block-group'] > div[class*='wp-block-']:
+      - pattern: ''
+    link[rel=stylesheet][href*='/wp-content/']:
+      - pattern: ''
+    link[rel=stylesheet][href*='/wp-includes/']:
+      - pattern: ''
+    link[href*='.wp.com']:
+      - pattern: ''

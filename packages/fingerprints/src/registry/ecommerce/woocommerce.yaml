@@ -6,9 +6,23 @@ implies: [wordpress]
 detect:
   html:
     - pattern: 'class="[^"]*woocommerce[^"]*"'
+  scripts:
+    - pattern: '/plugins/woocommerce/'
+    - pattern: '^(?!.*?/wp-content/plugins/[^/]+/js/integrations/woocommerce\.js(?:\?ver=[\d.]+)?$).*woocommerce'
+    - pattern: '^(?!.*?/wp-content/plugins/[^/]+/js/integrations/woocommerce\.js(?:\?ver=[\d.]+)?$).*/woocommerce(?:\.min)?\.js(?:\?ver=([0-9.]+))?'
+      version: 1
   meta:
     generator:
       - pattern: 'WooCommerce\s([\d.]+)'
         version: 1
-  scripts:
-    - pattern: '/plugins/woocommerce/'
+  cookies:
+    woocommerce_recently_viewed:
+      - pattern: ''
+  js:
+    wc_add_to_cart_params:
+      - pattern: ''
+    woocommerce_params:
+      - pattern: ''
+  dom:
+    .woocommerce, .woocommerce-no-js, link[rel*='woocommerce']:
+      - pattern: ''

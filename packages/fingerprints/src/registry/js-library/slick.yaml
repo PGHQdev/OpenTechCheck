@@ -6,12 +6,19 @@ detect:
   html:
     - pattern: 'class="[^"]*\bslick-(?:slider|track|slide|prev|next)\b'
       confidence: 90
+    - pattern: '<link [^>]+(?:/([\d.]+)/)?slick-theme\.css'
+      version: 1
   scripts:
     - pattern: 'slick-carousel[@/]([\d.]+)?'
       version: 1
     - pattern: '/slick/slick(?:\.min)?\.js'
     - pattern: '/slick\.min\.js'
       confidence: 70
+    - pattern: '(?:/([\d.]+))?/slick(?:\.min)?\.js'
+      version: 1
   js:
     jQuery.fn.slick:
+      - pattern: ''
+  dom:
+    link[href*='slick-theme.css']:
       - pattern: ''

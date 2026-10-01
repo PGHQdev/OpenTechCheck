@@ -4,7 +4,18 @@ category: web-framework
 website: https://codeigniter.com
 implies: [php]
 detect:
+  html:
+    - pattern: '<input[^>]+name="ci_csrf_token"'
   cookies:
     ci_session:
       - pattern: ''
         confidence: 90
+    ci_csrf_token:
+      - pattern: '^(.+)$'
+    exp_last_activity:
+      - pattern: ''
+    exp_tracker:
+      - pattern: ''
+  dom:
+    input[name*='ci_csrf_token']:
+      - pattern: ''

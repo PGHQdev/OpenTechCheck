@@ -3,10 +3,32 @@ slug: tailwindcss
 category: ui-framework
 website: https://tailwindcss.com
 detect:
-  scripts:
-    - pattern: 'cdn\.tailwindcss\.com'
   html:
     - pattern: '--tw-(?:translate|rotate|scale|ring|shadow|gradient)[a-z-]*:'
       confidence: 90
     - pattern: 'class="[^"]*\b(?:sm|md|lg|xl|2xl|dark|hover|focus):(?:flex|grid|hidden|block|inline|w-|h-|p[xylrtbse]?-|m[xylrtbse]?-|text-|bg-|border|gap-|grid-cols-|items-|justify-|rounded|shadow|underline|opacity-|translate-|scale-|top-|max-w-|not-)'
       confidence: 90
+  scripts:
+    - pattern: 'cdn\.tailwindcss\.com'
+    - pattern: '\.tailwindcss(?:tailwind-config-cdn)?\.(?:com|js)|/npm/@tailwindcss/browser'
+  meta:
+    application-name:
+      - pattern: '^Tailwind CSS$'
+  js:
+    hexToTailwindColorVar:
+      - pattern: ''
+    tailwind:
+      - pattern: ''
+  dom:
+    link[rel='stylesheet'][href*='.css']:
+      - attr: href
+        pattern: 'assets.*index\.v(\d+\.\d+\.\d+)\.css'
+        version: 1
+    link[rel='stylesheet'][href*='tailwind']:
+      - attr: href
+        pattern: 'tailwindcss[@|/](?:\^)?([\d.]+)(?:/[a-z]+)?/(?:tailwind|base|components|utilities)(?:\.min)?\.css'
+        version: 1
+    style:
+      - text: true
+        pattern: '/\/\*! tailwindcss v([\d.]+) \| MIT License \| https:\/\/tailwindcss\.com\*\/'
+        version: 1

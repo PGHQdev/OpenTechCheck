@@ -10,3 +10,7 @@ detect:
     server:
       - pattern: '^gcdn'
         confidence: 90
+    x-id:
+      - pattern: '^[\w-]+-gc\d{2}$'
+    x-id-fe:
+      - pattern: '^[\w-]+-gc\d{2}$'

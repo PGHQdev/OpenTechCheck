@@ -9,3 +9,6 @@ detect:
       confidence: 85
   scripts:
     - pattern: 'assets\.adobedtm\.com/'
+  js:
+    _satellite.buildInfo:
+      - pattern: ''

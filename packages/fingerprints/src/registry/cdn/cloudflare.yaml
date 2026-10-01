@@ -8,3 +8,17 @@ detect:
       - pattern: '^cloudflare$'
     cf-ray:
       - pattern: ''
+    cf-cache-status:
+      - pattern: ''
+  meta:
+    image:
+      - pattern: '//cdn\.cloudflare'
+  cookies:
+    __cfduid:
+      - pattern: ''
+  js:
+    CloudFlare:
+      - pattern: ''
+  dom:
+    img[src*='//cdn.cloudflare']:
+      - pattern: ''

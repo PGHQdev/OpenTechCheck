@@ -9,3 +9,6 @@ detect:
     - pattern: '\bdata-phx-session='
     - pattern: '\bphx-track-static\b'
       confidence: 90
+  meta:
+    generator:
+      - pattern: '^phoenix'

@@ -8,3 +8,10 @@ detect:
     - pattern: '__remixContext'
     - pattern: '__remixManifest'
     - pattern: '__remixRouteModules'
+  js:
+    __remixContext:
+      - pattern: ''
+    __remixRouteModules:
+      - pattern: ''
+    __remixRouter:
+      - pattern: ''

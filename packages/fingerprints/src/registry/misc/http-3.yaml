@@ -6,3 +6,5 @@ detect:
   headers:
     alt-svc:
       - pattern: '\bh3(?:-\d+)?='
+    x-firefox-http3:
+      - pattern: 'h3'

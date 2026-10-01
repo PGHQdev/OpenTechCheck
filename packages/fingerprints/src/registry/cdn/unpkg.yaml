@@ -3,9 +3,12 @@ slug: unpkg
 category: cdn
 website: https://unpkg.com
 detect:
-  scripts:
-    - pattern: '//unpkg\.com/'
   html:
-    # stylesheet links: the scripts source only sees <script src>
     - pattern: 'href=["''](?:https?:)?//unpkg\.com/'
       confidence: 90
+  scripts:
+    - pattern: '//unpkg\.com/'
+    - pattern: 'unpkg\.com/'
+  dom:
+    link[href*='unpkg.com']:
+      - pattern: ''

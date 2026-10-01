@@ -10,7 +10,12 @@ detect:
       version: 1
     - pattern: '/anime(?:\.min|\.esm|\.iife)?\.js'
       confidence: 80
+  headers:
+    access-control-allow-origin:
+      - pattern: 'animejs\.com'
   js:
     anime.version:
       - pattern: '^([\d.]+)'
         version: 1
+    AnimeJS:
+      - pattern: ''

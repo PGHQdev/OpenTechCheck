@@ -8,3 +8,16 @@ detect:
       confidence: 95
     - pattern: 'sites\.framer\.app'
       confidence: 90
+  scripts:
+    - pattern: 'framerusercontent\.com'
+  js:
+    Framer:
+      - pattern: ''
+    Framer.Animatable:
+      - pattern: ''
+    Framer.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+        confidence: 0
+    __framer_importFromPackage:
+      - pattern: ''

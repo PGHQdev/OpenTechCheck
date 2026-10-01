@@ -6,3 +6,13 @@ detect:
   scripts:
     - pattern: 'omnisend\.com'
       confidence: 90
+    - pattern: 'omnisrc\.com'
+  meta:
+    omnisend-site-verification:
+      - pattern: ''
+  cookies:
+    omnisendSessionID:
+      - pattern: ''
+  js:
+    _omnisend:
+      - pattern: ''

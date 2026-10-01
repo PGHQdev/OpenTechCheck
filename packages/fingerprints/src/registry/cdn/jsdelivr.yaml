@@ -3,9 +3,12 @@ slug: jsdelivr
 category: cdn
 website: https://www.jsdelivr.com
 detect:
-  scripts:
-    - pattern: '//(?:cdn|fastly|gcore|testingcf)\.jsdelivr\.net/'
   html:
-    # stylesheet links: the scripts source only sees <script src>
     - pattern: 'href=["''](?:https?:)?//(?:cdn|fastly|gcore|testingcf)\.jsdelivr\.net/'
       confidence: 90
+  scripts:
+    - pattern: '//(?:cdn|fastly|gcore|testingcf)\.jsdelivr\.net/'
+    - pattern: 'cdn\.jsdelivr\.net'
+  dom:
+    link[href*='cdn.jsdelivr.net']:
+      - pattern: ''

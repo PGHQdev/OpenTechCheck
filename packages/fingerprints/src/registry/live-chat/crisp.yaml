@@ -1,6 +1,6 @@
 name: Crisp
 slug: crisp
-category: marketing
+category: live-chat
 website: https://crisp.chat
 detect:
   html:
@@ -9,3 +9,11 @@ detect:
       confidence: 90
   scripts:
     - pattern: 'client\.crisp\.chat'
+    - pattern: 'client\.crisp\.chat/'
+  js:
+    $__CRISP_INCLUDED:
+      - pattern: ''
+    $crisp:
+      - pattern: ''
+    CRISP_WEBSITE_ID:
+      - pattern: ''

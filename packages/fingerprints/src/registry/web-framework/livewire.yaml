@@ -7,3 +7,11 @@ detect:
   html:
     - pattern: 'wire:id'
       confidence: 95
+    - pattern: '<[^>]{1,512}\bwire:'
+  scripts:
+    - pattern: 'livewire(?:\.min)?\.js'
+  js:
+    livewire:
+      - pattern: ''
+    livewireScriptConfig:
+      - pattern: ''

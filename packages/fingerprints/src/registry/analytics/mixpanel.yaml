@@ -9,3 +9,12 @@ detect:
       confidence: 90
   scripts:
     - pattern: 'cdn\.mxpnl\.com'
+    - pattern: 'cdn\.mxpnl\.com/libs/mixpanel\-([0-9.]+)\.min\.js'
+      version: 1
+    - pattern: 'api\.mixpanel\.com/track'
+  js:
+    mixpanel:
+      - pattern: ''
+  dom:
+    meta[http-equiv='Content-Security-Policy'][content*='api.mixpanel.com']:
+      - pattern: ''

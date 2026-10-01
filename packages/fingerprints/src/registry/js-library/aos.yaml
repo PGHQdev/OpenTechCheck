@@ -9,3 +9,20 @@ detect:
   scripts:
     - pattern: '(?:^|/)aos(?:\.min)?\.js'
       confidence: 70
+    - pattern: 'unpkg\.com/aos@([\d\.]+)/dist/aos\.js'
+      version: 1
+    - pattern: '/typo3conf/ext/udem_vendor/Resources/Public/aos-([\d\.]+)'
+      version: 1
+  headers:
+    x-powered-by:
+      - pattern: '^AdministerAOS'
+  js:
+    AOS.init:
+      - pattern: ''
+    AOS.refresh:
+      - pattern: ''
+    AOS.refreshHard:
+      - pattern: ''
+  dom:
+    ' body[data-aos-easing]':
+      - pattern: ''

@@ -7,3 +7,7 @@ detect:
     - pattern: 'cdn\.usefathom\.com/'
   scripts:
     - pattern: '\.usefathom\.com/'
+    - pattern: 'cdn\.usefathom\.com/'
+  js:
+    fathom.blockTrackingForMe:
+      - pattern: ''

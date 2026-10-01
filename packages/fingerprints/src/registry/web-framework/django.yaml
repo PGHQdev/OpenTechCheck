@@ -6,7 +6,19 @@ implies: [python]
 detect:
   html:
     - pattern: 'name="csrfmiddlewaretoken"'
+    - pattern: '(?:powered by <a[^>]+>Django ?([\d.]+)?<\/a>|<input[^>]*name=["'']csrfmiddlewaretoken["''][^>]*>)'
+      version: 1
   cookies:
     csrftoken:
       - pattern: '^[A-Za-z0-9]{32,64}$'
         confidence: 85
+    django_language:
+      - pattern: ''
+  js:
+    __admin_media_prefix__:
+      - pattern: ''
+    django:
+      - pattern: ''
+  dom:
+    input[name='csrfmiddlewaretoken']:
+      - pattern: ''

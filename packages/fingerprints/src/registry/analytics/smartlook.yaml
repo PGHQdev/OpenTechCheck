@@ -6,7 +6,11 @@ detect:
   scripts:
     - pattern: 'web\.smartlook\.com'
       confidence: 95
+    - pattern: '\.smartlook\.com/'
   js:
     smartlook:
       - pattern: ''
         confidence: 90
+    smartlook_key:
+      - pattern: ''
+        confidence: 50

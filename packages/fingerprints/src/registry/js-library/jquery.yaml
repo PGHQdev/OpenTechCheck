@@ -4,16 +4,24 @@ category: js-library
 website: https://jquery.com
 detect:
   scripts:
-    # Version must contain a dot and end on a digit: "jquery-4.0.0.min.js"
-    # must not capture the ".min" dot, and Rails digest names like
-    # "jquery-00eb7c3e….js" must not capture hash digits as a version.
     - pattern: 'jquery[/.-](\d+\.[\d.]*\d)[^/]*\.js'
       version: 1
     - pattern: 'jquery(?:\.min)?\.js'
       confidence: 80
     - pattern: 'jquery-[0-9a-f]{12,}(?:\.min)?\.js'
       confidence: 70
+    - pattern: '(?:^|/)jquery(?:-(\d+\.[\d.]*\d))?(?:\.min|\.slim|\.slim\.min|\.core|\.migrate)?\.js'
+    - pattern: '/jquery(?:-(\d+\.\d+\.\d+))[/.-]'
+      version: 1
+    - pattern: '/(\d+\.\d+\.\d+)/jquery(?!\.popupoverlay\.js|(?:\.[\w-]*){0,9}fancybox)[/.-][^u]'
+      version: 1
   js:
     jQuery.fn.jquery:
       - pattern: '^([\d.]+)'
+        version: 1
+    $.fn.jquery:
+      - pattern: '([\d.]+)'
+        version: 1
+    jQuery.prototype.jquery:
+      - pattern: '([\d.]+)'
         version: 1

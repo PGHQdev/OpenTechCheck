@@ -3,11 +3,21 @@ slug: datadome
 category: security
 website: https://datadome.co
 detect:
+  scripts:
+    - pattern: '^https://ct\.datadome\.co/[a-z]\.js$'
   headers:
     x-datadome:
       - pattern: ''
         confidence: 95
+    server:
+      - pattern: '^DataDome$'
+    x-datadome-cid:
+      - pattern: ''
   cookies:
     datadome:
       - pattern: ''
         confidence: 90
+    datadome-_zldp:
+      - pattern: ''
+    datadome-_zldt:
+      - pattern: ''

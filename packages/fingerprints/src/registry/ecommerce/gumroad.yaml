@@ -6,3 +6,19 @@ detect:
   scripts:
     - pattern: 'gumroad\.com/js'
       confidence: 95
+    - pattern: 'gumroad\.com/js/gumroad\.js'
+    - pattern: 'gumroad\.com/js/gumroad-embed\.js'
+    - pattern: 'gumroad\.com/packs/js/'
+  cookies:
+    _gumroad_app_session:
+      - pattern: ''
+    _gumroad_guid:
+      - pattern: ''
+  js:
+    GumroadOverlay:
+      - pattern: ''
+    createGumroadOverlay:
+      - pattern: ''
+  dom:
+    iframe[src^='https://gumroad.com/l/']:
+      - pattern: ''

@@ -1,0 +1,22 @@
+name: OneTrust
+slug: onetrust
+category: consent
+website: https://www.onetrust.com
+detect:
+  html:
+    - pattern: 'id="onetrust-consent-sdk"'
+      confidence: 90
+  scripts:
+    - pattern: 'cdn\.cookielaw\.org/scripttemplates/otSDKStub\.js'
+    - pattern: 'cdn\.cookielaw\.org/'
+    - pattern: 'cdn\.cookielaw\.org'
+    - pattern: 'optanon\.blob\.core\.windows\.net'
+    - pattern: 'otSDKStub\.js'
+  cookies:
+    OptanonConsent:
+      - pattern: ''
+  js:
+    OneTrust:
+      - pattern: ''
+    OnetrustActiveGroups:
+      - pattern: ''

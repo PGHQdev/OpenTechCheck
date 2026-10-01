@@ -8,3 +8,10 @@ detect:
       confidence: 90
     - pattern: '(?:src|href)=["\x27](?:https?:)?//(?:[a-z0-9-]+\.)?cdn\.prismic\.io/'
       confidence: 90
+  scripts:
+    - pattern: '\.prismic\.io/'
+  dom:
+    img[src*='images.prismic.io']:
+      - pattern: ''
+    div[id*='prismic-root']:
+      - pattern: ''

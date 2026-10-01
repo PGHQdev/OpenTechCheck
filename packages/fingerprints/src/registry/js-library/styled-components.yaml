@@ -7,6 +7,19 @@ detect:
   html:
     - pattern: '<style data-styled='
       confidence: 90
-  dom:
-    'style[data-styled]':
+  js:
+    styled:
       - pattern: ''
+  dom:
+    style[data-styled]:
+      - pattern: ''
+    '[sc-component-id]':
+      - text: true
+        pattern: ''
+    style[data-styled-version]:
+      - attr: data-styled-version
+        pattern: '(^.+$)'
+        version: 1
+    style[data-styled], style[data-styled-components], [sc-component-id]:
+      - text: true
+        pattern: ''

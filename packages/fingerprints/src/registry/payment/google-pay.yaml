@@ -3,7 +3,12 @@ slug: google-pay
 category: payment
 website: https://pay.google.com
 detect:
+  scripts:
+    - pattern: 'pay\.google\.com/([a-z/]+)/pay\.js'
   js:
     google.payments.api.PaymentsClient:
       - pattern: ''
         confidence: 95
+  dom:
+    "[aria-labelledby='pi-google_pay'], ul[data-shopify-buttoncontainer] li":
+      - pattern: ''

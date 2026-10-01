@@ -7,10 +7,19 @@ detect:
     - pattern: 'data-wf-site='
     - pattern: 'data-wf-page='
     - pattern: '\.website-files\.com'
-  meta:
-    generator:
-      - pattern: '^Webflow$'
   scripts:
     - pattern: '\.website-files\.com'
     - pattern: '/js/webflow\.[0-9a-f][0-9a-f.]*\.js'
       confidence: 80
+  meta:
+    generator:
+      - pattern: '^Webflow$'
+  js:
+    Webflow:
+      - pattern: ''
+    Webflow._.VERSION:
+      - pattern: '([\d.]+)'
+        version: 1
+  dom:
+    html[data-wf-site]:
+      - pattern: ''

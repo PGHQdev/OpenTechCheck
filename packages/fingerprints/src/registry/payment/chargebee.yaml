@@ -6,3 +6,10 @@ detect:
   scripts:
     - pattern: 'chargebee\.com'
       confidence: 90
+    - pattern: 'js\.chargebee\.com/v([\d.]+)'
+      version: 1
+  js:
+    Chargebee:
+      - pattern: ''
+    chargebeeTrackFunc:
+      - pattern: ''

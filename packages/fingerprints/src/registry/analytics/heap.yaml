@@ -10,3 +10,9 @@ detect:
   scripts:
     - pattern: 'cdn\.heapanalytics\.com/js/heap-'
     - pattern: 'heap-api\.com/js/heap-'
+    - pattern: 'cdn\.heapanalytics\.com'
+    - pattern: 'heap-\d+\.js'
+  js:
+    heap.version.heapJsVersion:
+      - pattern: '([\d.]+)'
+        version: 1

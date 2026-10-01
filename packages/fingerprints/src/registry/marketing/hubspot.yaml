@@ -7,8 +7,15 @@ detect:
     - pattern: 'js\.hs-scripts\.com/\d+\.js'
     - pattern: '_hsq\.push'
       confidence: 85
+    - pattern: '<!-- Start of Async HubSpot'
   scripts:
     - pattern: 'js\.hs-scripts\.com/\d+\.js'
     - pattern: 'js\.hs-analytics\.net/analytics/'
     - pattern: 'js\.hsforms\.net/forms/'
     - pattern: 'js\.hs-banner\.com/'
+    - pattern: '\.hs-scripts\.com/'
+  js:
+    _hsq:
+      - pattern: ''
+    hubspot:
+      - pattern: ''

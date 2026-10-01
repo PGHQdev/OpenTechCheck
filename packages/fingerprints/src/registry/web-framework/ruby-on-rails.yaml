@@ -7,10 +7,26 @@ detect:
   html:
     - pattern: 'name="authenticity_token"'
       confidence: 95
-  meta:
-    csrf-param:
-      - pattern: '^authenticity_token$'
+  scripts:
+    - pattern: '/assets/application-[a-z\d]{32}/\.js'
+      confidence: 50
   headers:
     x-powered-by:
       - pattern: 'Phusion Passenger'
         confidence: 70
+    server:
+      - pattern: 'mod_(?:rails|rack)'
+  meta:
+    csrf-param:
+      - pattern: '^authenticity_token$'
+  cookies:
+    _session_id:
+      - pattern: ''
+        confidence: 75
+  js:
+    ReactOnRails:
+      - pattern: ''
+    __REACT_ON_RAILS_EVENT_HANDLERS_RAN_ONCE__:
+      - pattern: ''
+    _rails_loaded:
+      - pattern: ''

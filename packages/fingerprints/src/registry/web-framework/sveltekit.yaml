@@ -10,3 +10,14 @@ detect:
   scripts:
     - pattern: '/_app/immutable/'
       confidence: 90
+  meta:
+    generator:
+      - pattern: 'SvelteKit'
+  dom:
+    '#svelte-announcer':
+      - pattern: ''
+    a,body:
+      - attr: data-sveltekit-preload-data
+        pattern: ''
+      - attr: sveltekit:prefetch
+        pattern: ''

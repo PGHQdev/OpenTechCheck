@@ -7,3 +7,19 @@ detect:
     SC_ANALYTICS_GLOBAL_COOKIE:
       - pattern: ''
         confidence: 90
+    SC_OS_SessionId:
+      - pattern: ''
+    sc_expview:
+      - pattern: ''
+    sxa_site:
+      - pattern: ''
+  js:
+    SitecoreUtilities:
+      - pattern: ''
+  dom:
+    link[href*='/_sitecore/']:
+      - pattern: ''
+    img[src^='/-/media/']:
+      - pattern: ''
+    img[src*='/~/media/.+\.ashx']:
+      - pattern: ''

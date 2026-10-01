@@ -6,3 +6,7 @@ detect:
   scripts:
     - pattern: 'js\.mollie\.com'
       confidence: 95
+    - pattern: '/wp-content/plugins/mollie-payments-for-woocommerce/'
+  js:
+    Mollie:
+      - pattern: ''

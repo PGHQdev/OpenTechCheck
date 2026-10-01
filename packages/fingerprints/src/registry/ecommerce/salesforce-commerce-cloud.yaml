@@ -9,6 +9,15 @@ detect:
   scripts:
     - pattern: 'demandware\.static'
     - pattern: 'dwanalytics'
+    - pattern: '/demandware\.static/'
+  headers:
+    server:
+      - pattern: 'Demandware eCommerce Server'
   cookies:
     dwsid:
+      - pattern: ''
+    dw_dnt:
+      - pattern: ''
+  js:
+    dwAnalytics:
       - pattern: ''

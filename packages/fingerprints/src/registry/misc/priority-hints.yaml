@@ -5,3 +5,6 @@ website: https://web.dev/articles/fetch-priority
 detect:
   html:
     - pattern: 'fetchpriority=["'']?(?:high|low|auto)'
+  dom:
+    iframe[fetchpriority], img[fetchpriority], script[fetchpriority], link[fetchpriority]:
+      - pattern: ''

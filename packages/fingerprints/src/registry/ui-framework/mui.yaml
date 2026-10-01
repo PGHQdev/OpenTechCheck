@@ -8,3 +8,6 @@ detect:
     - pattern: 'class="(?:[^"]* )?Mui[A-Za-z]+-root'
     - pattern: '<style[^>]*data-emotion="css[^"]*"[^>]*>[^<]*\.Mui[A-Za-z]+-'
       confidence: 90
+  dom:
+    style[data-meta='MuiPaper'], div.MuiBox-root, div.MuiPaper-root, style[data-meta='MuiButton'], input.MuiInputBase-input, div.MuiContainer-root, .MuiButton-root:
+      - pattern: ''

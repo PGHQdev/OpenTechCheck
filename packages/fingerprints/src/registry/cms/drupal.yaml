@@ -7,15 +7,25 @@ detect:
   html:
     - pattern: 'data-drupal-selector'
     - pattern: 'data-drupal-link-system-path'
-  meta:
-    generator:
-      - pattern: 'Drupal(?:\s([\d.]+))?'
-        version: 1
+    - pattern: '<(?:link|style)[^>]+"/sites/(?:default|all)/(?:themes|modules)/'
+  scripts:
+    - pattern: '/core/misc/drupal\.js'
+    - pattern: 'drupal\.js'
   headers:
     x-generator:
       - pattern: 'Drupal(?:\s([\d.]+))?'
         version: 1
     x-drupal-cache:
       - pattern: ''
-  scripts:
-    - pattern: '/core/misc/drupal\.js'
+    expires:
+      - pattern: '19 Nov 1978'
+  meta:
+    generator:
+      - pattern: 'Drupal(?:\s([\d.]+))?'
+        version: 1
+  js:
+    Drupal:
+      - pattern: ''
+  dom:
+    link[href*='/sites/default/themes/'], link[href*='/sites/all/themes/'], link[href*='/sites/default/modules/'], link[href*='/sites/all/modules/'], style[href*='/sites/default/themes/'], style[href*='/sites/all/themes/'], style[href*='/sites/default/modules/'], style[href*='/sites/all/modules/']:
+      - pattern: ''

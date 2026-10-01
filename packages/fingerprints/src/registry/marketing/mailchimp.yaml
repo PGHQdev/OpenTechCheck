@@ -6,6 +6,23 @@ detect:
   html:
     - pattern: 'list-manage\.com/subscribe'
     - pattern: 'chimpstatic\.com/mcjs-connected/'
+    - pattern: '<input [^>]*id="mc-email"'
+      confidence: 20
+    - pattern: '<!-- Begin MailChimp Signup Form -->'
+  url:
+    - pattern: '^https?://(?:www\.)?mailchi\.mp'
   scripts:
     - pattern: 'chimpstatic\.com/mcjs-connected/'
     - pattern: 'downloads\.mailchimp\.com/js/mc-validate\.js'
+    - pattern: 's3\.amazonaws\.com/downloads\.mailchimp\.com/js/mc-validate\.js'
+    - pattern: 'cdn-images\.mailchimp\.com/[^>]*\.css'
+    - pattern: 'chimpstatic\.com/mcjs-connected'
+  dom:
+    form#mc-embedded-subscribe-form:
+      - pattern: ''
+    form[name*='mc-embedded-subscribe-form']:
+      - pattern: ''
+    form[class*='mailchimp-ext-']:
+      - pattern: ''
+    input#mc-email:
+      - pattern: ''

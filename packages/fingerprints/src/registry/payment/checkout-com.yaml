@@ -6,3 +6,5 @@ detect:
   scripts:
     - pattern: 'cdn\.checkout\.com'
       confidence: 95
+    - pattern: 'cdn\.checkout\.com/js/.+js(?:\?ver=)?([\d\.]+)?'
+      version: 1

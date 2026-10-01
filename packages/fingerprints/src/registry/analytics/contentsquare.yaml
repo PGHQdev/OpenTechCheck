@@ -6,3 +6,7 @@ detect:
   scripts:
     - pattern: 'contentsquare\.net'
       confidence: 90
+    - pattern: '\.contentsquare\.net/'
+  js:
+    CS_CONF.trackerDomain:
+      - pattern: ''

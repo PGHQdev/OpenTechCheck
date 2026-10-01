@@ -29,3 +29,11 @@ detect:
     '[id^="__FRSH_STATE_"]':
       - pattern: ''
         confidence: 90
+    style[id='__FRSH_TWIND']:
+      - pattern: ''
+    style[id='__FRSH_STYLE']:
+      - pattern: ''
+    script[id='__FRSH_STATE']:
+      - pattern: ''
+    link[href*='?__frsh_c=']:
+      - pattern: ''

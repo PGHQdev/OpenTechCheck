@@ -3,6 +3,8 @@ slug: netlify
 category: hosting
 website: https://www.netlify.com
 detect:
+  url:
+    - pattern: '^https?://[^/]+\.netlify\.(?:com|app)/'
   headers:
     x-nf-request-id:
       - pattern: ''

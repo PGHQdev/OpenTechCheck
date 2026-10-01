@@ -10,6 +10,10 @@ detect:
       version: 1
     - pattern: '/modernizr[^/]*\.js'
       confidence: 90
+    - pattern: 'modernizr(?:\.([\d.]+))?.*\.js'
+      version: 1
+    - pattern: '([\d.]+)?/modernizr.*\.js'
+      version: 1
   js:
     Modernizr._version:
       - pattern: '^([\d.]+)'

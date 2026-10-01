@@ -9,3 +9,17 @@ detect:
       confidence: 90
   scripts:
     - pattern: 'static\.zdassets\.com/ekr/snippet\.js'
+    - pattern: 'static\.zdassets\.com'
+  headers:
+    x-zendesk-user-id:
+      - pattern: ''
+  cookies:
+    _help_center_session:
+      - pattern: ''
+    _zendesk_cookie:
+      - pattern: ''
+    _zendesk_shared_session:
+      - pattern: ''
+  js:
+    Zendesk:
+      - pattern: ''

@@ -3,7 +3,12 @@ slug: imperva
 category: security
 website: https://www.imperva.com
 detect:
+  scripts:
+    - pattern: '/_Incapsula_Resource'
   headers:
     x-iinfo:
       - pattern: ''
         confidence: 95
+    x-cdn:
+      - pattern: 'Incapsula'
+      - pattern: '^Imperva'

@@ -3,10 +3,23 @@ slug: videojs
 category: js-library
 website: https://videojs.com
 detect:
+  scripts:
+    - pattern: '(?:^|/)video(?:\.min)?\.js'
+      confidence: 65
+    - pattern: 'zencdn\.net/c/video\.js'
+    - pattern: 'cdnjs\.cloudflare\.com\/ajax\/libs\/video\.js\/([\d\.]+)\/'
+      version: 1
   js:
     videojs.version:
       - pattern: '^([\d.]+)'
         version: 1
-  scripts:
-    - pattern: '(?:^|/)video(?:\.min)?\.js'
-      confidence: 65
+    VideoJS:
+      - pattern: ''
+    videojs:
+      - pattern: ''
+    videojs.VERSION:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    div.video-js:
+      - pattern: ''

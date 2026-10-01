@@ -7,6 +7,36 @@ detect:
   html:
     - pattern: '(?:^|/)bundles/storefront/'
       confidence: 95
+    - pattern: '<title>Shopware ([\d\.]+) [^<]+'
+      version: 1
   scripts:
     - pattern: 'shopware'
       confidence: 85
+    - pattern: '(?:(shopware)|/web/cache/[0-9]{10}_.+)\.js'
+    - pattern: '/jquery\.shopware\.min\.js'
+    - pattern: '/engine/Shopware/'
+  headers:
+    sw-context-token:
+      - pattern: '^[\w]{32}$'
+    sw-invalidation-states:
+      - pattern: ''
+    sw-language-id:
+      - pattern: '^[a-fA-F0-9]{32}$'
+    sw-version-id:
+      - pattern: ''
+  meta:
+    application-name:
+      - pattern: 'Shopware'
+  js:
+    _shopwareAnalytics:
+      - pattern: ''
+    mollie_javascript_use_shopware:
+      - pattern: ''
+    shopStudioGoogleTagManagerCloudGtagCallback:
+      - pattern: ''
+        confidence: 50
+    shopwareAnalytics:
+      - pattern: ''
+  dom:
+    input[name*='shopware_'], script[data-plugin-version^='Shopware']:
+      - pattern: ''

@@ -10,3 +10,23 @@ detect:
     - pattern: '/matomo\.js'
     - pattern: 'cdn\.matomo\.cloud/'
     - pattern: '/piwik\.js'
+    - pattern: 'piwik\.js|piwik\.php'
+  meta:
+    apple-itunes-app:
+      - pattern: 'app-id=737216887'
+    generator:
+      - pattern: '(?:Matomo|Piwik) - Open Source Web Analytics'
+    google-play-app:
+      - pattern: 'app-id=org\.piwik\.mobile2'
+  cookies:
+    PIWIK_SESSID:
+      - pattern: ''
+  js:
+    Matomo:
+      - pattern: ''
+    Piwik:
+      - pattern: ''
+    matomoSitesIDS:
+      - pattern: ''
+    matomoTrackPage:
+      - pattern: ''

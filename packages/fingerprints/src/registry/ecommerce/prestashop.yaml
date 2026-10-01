@@ -7,9 +7,36 @@ detect:
   html:
     - pattern: 'var prestashop\s*='
     - pattern: 'Powered by PrestaShop'
-  meta:
-    generator:
-      - pattern: '^PrestaShop$'
+    - pattern: 'Powered by <a\s+[^>]+>PrestaShop'
+    - pattern: '<!-- /Block [a-z ]+ module (?:HEADER|TOP)?\s?-->'
+    - pattern: '<!-- /Module Block [a-z ]+ -->'
+  scripts:
+    - pattern: '/modules/ps_[a-z]+/'
   headers:
     powered-by:
       - pattern: '^PrestaShop$'
+  meta:
+    generator:
+      - pattern: '^PrestaShop$'
+  cookies:
+    PrestaShop:
+      - pattern: ''
+  js:
+    freeProductTranslation:
+      - pattern: ''
+        confidence: 40
+    prestashop:
+      - pattern: ''
+    priceDisplayMethod:
+      - pattern: ''
+        confidence: 40
+    priceDisplayPrecision:
+      - pattern: ''
+        confidence: 40
+    rcAnalyticsEvents.eventPrestashopCheckout:
+      - pattern: ''
+  dom:
+    img[src*='/modules/prestablog/themes/'], img[data-src*='/modules/prestablog/themes/']:
+      - pattern: ''
+    link[href*='/modules/ps_']:
+      - pattern: ''

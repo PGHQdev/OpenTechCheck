@@ -12,9 +12,22 @@ detect:
     ng.version.full:
       - pattern: '^([\d.]+)'
         version: 1
-    '$probe.angular':
+    $probe.angular:
       - pattern: '^(\d+(?:\.\d+){0,3}(?:-[\w.-]+)?(?:\+[\w.-]+)?)$'
         version: 1
         confidence: 90
       - pattern: '^detected$'
         confidence: 90
+    getAllAngularRootElements:
+      - pattern: ''
+    getAngularTestability:
+      - pattern: ''
+    ng.coreTokens:
+      - pattern: ''
+    ng.probe:
+      - pattern: ''
+  dom:
+    '[ng-version]':
+      - attr: ng-version
+        pattern: '^([\d\.]+)'
+        version: 1

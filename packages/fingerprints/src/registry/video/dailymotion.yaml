@@ -3,9 +3,15 @@ slug: dailymotion
 category: video
 website: https://www.dailymotion.com
 detect:
-  scripts:
-    - pattern: 'dailymotion\.com'
-      confidence: 90
   html:
     - pattern: 'dailymotion\.com/embed'
       confidence: 90
+  scripts:
+    - pattern: 'dailymotion\.com'
+      confidence: 90
+  meta:
+    name:
+      - pattern: 'dailymotion-domain-verification'
+  dom:
+    img[data-src*='.dailymotion.com/'], iframe[scr*='.dailymotion.com/']:
+      - pattern: ''

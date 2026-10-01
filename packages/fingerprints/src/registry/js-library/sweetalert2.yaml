@@ -3,11 +3,22 @@ slug: sweetalert2
 category: js-library
 website: https://sweetalert2.github.io
 detect:
+  scripts:
+    - pattern: 'sweetalert2'
+      confidence: 80
+    - pattern: 'sweetalert2(?:\.all)?(?:\.min)?\.js'
+    - pattern: '/npm/sweetalert2@([\d.]+)'
+      version: 1
+    - pattern: 'sweetalert2@([\d.]+)/dist/sweetalert2(?:\.all)(?:\.min)\.js'
+    - pattern: 'limonte-sweetalert2/([\d.]+)/sweetalert2(?:\.all)(?:\.min)\.js'
   js:
     Swal.version:
       - pattern: '^([\d.]+)'
         version: 1
         confidence: 90
-  scripts:
-    - pattern: 'sweetalert2'
-      confidence: 80
+    Sweetalert2:
+      - pattern: ''
+  dom:
+    link[href*='sweetalert2']:
+      - attr: href
+        pattern: 'sweetalert2(?:\.min)?\.css'

@@ -5,12 +5,22 @@ website: https://dotnet.microsoft.com/apps/aspnet
 detect:
   html:
     - pattern: 'name="__VIEWSTATE"'
+    - pattern: '<input[^>]+name="__VIEWSTATE'
+  url:
+    - pattern: '\.aspx?(?:$|\?)'
   headers:
     x-powered-by:
       - pattern: '^ASP\.NET$'
     x-aspnet-version:
       - pattern: '^([\d.]+)'
         version: 1
+    set-cookie:
+      - pattern: '\.AspNetCore'
   cookies:
     ASP.NET_SessionId:
+      - pattern: ''
+    ASPSESSION:
+      - pattern: ''
+  dom:
+    input[name*='__VIEWSTATE']:
       - pattern: ''

@@ -4,12 +4,25 @@ category: analytics
 website: https://marketingplatform.google.com/about/analytics/
 detect:
   html:
-    - pattern: "gtag\\('config'"
+    - pattern: 'gtag\(''config'''
       confidence: 80
   scripts:
     - pattern: 'googletagmanager\.com/gtag/js'
     - pattern: 'google-analytics\.com/analytics\.js'
+    - pattern: 'google-analytics\.com/(?:ga|urchin|analytics)\.js'
   cookies:
     _ga:
       - pattern: '^GA1\.'
         confidence: 85
+    __utma:
+      - pattern: ''
+    _gat:
+      - pattern: ''
+  js:
+    GoogleAnalyticsObject:
+      - pattern: ''
+    gaGlobal:
+      - pattern: ''
+  dom:
+    amp-analytics[type*=googleanalytics]:
+      - pattern: ''

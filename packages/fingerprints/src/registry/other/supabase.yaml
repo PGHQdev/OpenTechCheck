@@ -9,3 +9,18 @@ detect:
   scripts:
     - pattern: 'supabase'
       confidence: 80
+    - pattern: 'cdn\.supabase\.com'
+  js:
+    __NUXT__.config.public.SUPABASE_URL:
+      - pattern: ''
+    __NUXT__.config.public.supabase:
+      - pattern: ''
+    createClient:
+      - pattern: 'supabase\.'
+    supabase.AuthAdminApi:
+      - pattern: ''
+    supabase.storageKey:
+      - pattern: ''
+  dom:
+    a[href*='supabase.com'] > img[src*='/supabase-logo-wordmark\-\-dark.png']:
+      - pattern: ''

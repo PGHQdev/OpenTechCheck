@@ -10,3 +10,5 @@ detect:
       - pattern: ''
     server:
       - pattern: '^Vercel$'
+    x-now-trace:
+      - pattern: ''

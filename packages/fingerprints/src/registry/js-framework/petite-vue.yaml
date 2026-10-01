@@ -9,3 +9,4 @@ detect:
   scripts:
     - pattern: 'petite-vue'
       confidence: 95
+    - pattern: '/petite-vue'

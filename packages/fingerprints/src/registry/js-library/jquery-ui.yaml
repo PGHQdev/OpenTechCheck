@@ -11,7 +11,12 @@ detect:
       version: 1
     - pattern: '/jquery-ui(?:\.min)?\.js'
       confidence: 80
+    - pattern: 'jquery-ui[.-]([\d.]*\d)[^/]*\.js'
+      version: 1
+    - pattern: '([\d.]+)/jquery-ui(?:\.min)?\.js'
+      version: 1
+    - pattern: 'jquery-ui.*\.js'
   js:
-    'jQuery.ui.version':
+    jQuery.ui.version:
       - pattern: '^([\d.]+)'
         version: 1

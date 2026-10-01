@@ -14,3 +14,11 @@ detect:
     - pattern: 'js\.squareup\.com/v2/paymentform'
     - pattern: 'cdn\d\.editmysite\.com/app/checkout/'
       confidence: 85
+    - pattern: 'js\.squareup\.com'
+  js:
+    SqPaymentForm:
+      - pattern: ''
+    Square.Analytics:
+      - pattern: ''
+    __BOOTSTRAP_STATE__.storeInfo.square_application_id:
+      - pattern: ''

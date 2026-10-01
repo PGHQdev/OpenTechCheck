@@ -6,3 +6,6 @@ detect:
   headers:
     x-powered-by:
       - pattern: '^Node\.js'
+  dom:
+    div.appVersion i.icon-nodejs:
+      - pattern: ''

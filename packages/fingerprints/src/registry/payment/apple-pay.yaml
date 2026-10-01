@@ -7,3 +7,24 @@ detect:
     ApplePaySession:
       - pattern: ''
         confidence: 95
+    ApplePay:
+      - pattern: ''
+    applePayButtonClicked:
+      - pattern: ''
+    braintree.applePay:
+      - pattern: ''
+    checkout.enabledpayments.applepay:
+      - pattern: '^true$'
+    dw.applepay:
+      - pattern: ''
+    enableApplePay:
+      - pattern: ''
+  dom:
+    "[aria-labelledby='pi-apple_pay']":
+      - pattern: ''
+    script#apple-pay:
+      - pattern: ''
+    script#apple-pay-shop-capabilities:
+      - pattern: ''
+    input#applePayMerchantId:
+      - pattern: ''

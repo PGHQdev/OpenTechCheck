@@ -6,6 +6,7 @@ detect:
   scripts:
     - pattern: 'quantummetric\.com'
       confidence: 95
+    - pattern: 'cdn\.quantummetric\.com'
   js:
     QuantumMetricAPI:
       - pattern: ''

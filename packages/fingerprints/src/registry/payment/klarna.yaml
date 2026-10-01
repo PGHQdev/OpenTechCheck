@@ -10,3 +10,17 @@ detect:
     - pattern: 'klarnaservices\.com/lib\.js'
     - pattern: 'x\.klarnacdn\.net/kp/lib/'
     - pattern: 'js\.klarna\.com/web-sdk/'
+    - pattern: '\.klarnaservices\.com/lib\.js'
+  cookies:
+    ku1-sid:
+      - pattern: ''
+    ku1-vid:
+      - pattern: ''
+  js:
+    KlarnaOnsiteService:
+      - pattern: ''
+    _klarnaCheckout:
+      - pattern: ''
+  dom:
+    "[aria-labelledby='pi-klarna']":
+      - pattern: ''

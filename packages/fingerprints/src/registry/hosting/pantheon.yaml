@@ -6,3 +6,10 @@ detect:
   html:
     - pattern: 'pantheonsite\.io'
       confidence: 90
+  headers:
+    server:
+      - pattern: '^Pantheon'
+    x-pantheon-styx-hostname:
+      - pattern: ''
+    x-styx-req-id:
+      - pattern: ''

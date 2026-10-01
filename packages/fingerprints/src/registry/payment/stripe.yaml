@@ -5,8 +5,29 @@ website: https://stripe.com
 detect:
   html:
     - pattern: 'js\.stripe\.com/v3'
+    - pattern: '<input[^>]+data-stripe'
   scripts:
     - pattern: 'js\.stripe\.com/'
+    - pattern: 'js\.stripe\.com'
   cookies:
     __stripe_mid:
+      - pattern: ''
+    __stripe_sid:
+      - pattern: ''
+  js:
+    Stripe.version:
+      - pattern: '^(.+)$'
+        version: 1
+    __NEXT_DATA__.props.pageProps.appSettings.STRIPE_API_PUBLIC_KEY:
+      - pattern: ''
+    checkout.enabledpayments.stripe:
+      - pattern: '^true$'
+    stripePublicKey:
+      - pattern: ''
+  dom:
+    a[href*='billing.stripe.com']:
+      - pattern: ''
+    a[href*='checkout.stripe.com']:
+      - pattern: ''
+    input[data-stripe]:
       - pattern: ''

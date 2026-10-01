@@ -6,3 +6,6 @@ detect:
   scripts:
     - pattern: 'parsely\.com/keys/'
       confidence: 95
+  js:
+    PARSELY:
+      - pattern: ''
