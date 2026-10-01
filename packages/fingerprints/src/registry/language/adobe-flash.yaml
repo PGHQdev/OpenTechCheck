@@ -1,0 +1,10 @@
+name: Adobe Flash
+slug: adobe-flash
+category: language
+website: https://www.adobe.com/products/flashplayer
+detect:
+  dom:
+    object[type='application/x-shockwave-flash']:
+      - pattern: ''
+    param[value*='.swf']:
+      - pattern: ''

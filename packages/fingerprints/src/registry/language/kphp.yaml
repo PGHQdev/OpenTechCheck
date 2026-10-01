@@ -1,0 +1,10 @@
+name: KPHP
+slug: kphp
+category: language
+website: https://vkcom.github.io/kphp
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^KPHP/([\d\.]+)$'
+        version: 1

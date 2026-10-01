@@ -1,0 +1,9 @@
+name: Lua
+slug: lua
+category: language
+website: https://www.lua.org
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '\bLua(?: ([\d.]+))?'
+        version: 1

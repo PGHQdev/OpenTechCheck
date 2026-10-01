@@ -1,0 +1,17 @@
+name: Dart
+slug: dart
+category: language
+website: https://dart.dev
+detect:
+  scripts:
+    - pattern: '/(?:\.)?(?:dart)(?:\.js)?/'
+  cookies:
+    DARTSESSID:
+      - pattern: ''
+  js:
+    $__dart_deferred_initializers__:
+      - pattern: ''
+    ___dart__$dart_dartObject_ZxYxX_0_:
+      - pattern: ''
+    ___dart_dispatch_record_ZxYxX_0_:
+      - pattern: ''

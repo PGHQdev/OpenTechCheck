@@ -1,0 +1,13 @@
+name: Imba
+slug: imba
+category: language
+website: https://imba.io
+detect:
+  js:
+    Imba:
+      - pattern: ''
+    Imba.VERSION:
+      - pattern: '([\d\.]+)'
+        version: 1
+    imba:
+      - pattern: ''

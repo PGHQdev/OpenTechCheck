@@ -1,0 +1,17 @@
+name: GeneXus
+slug: genexus
+category: language
+website: https://www.genexus.com/
+detect:
+  html:
+    - pattern: '<link[^>]+?id="gxtheme_css_reference"'
+  scripts:
+    - pattern: '/static/gxgral\.js'
+    - pattern: '/static/gxtimezone\.js'
+  js:
+    gx.gxVersion:
+      - pattern: '^(.+)-.*$'
+        version: 1
+  dom:
+    link[id^='gxtheme_css_reference']:
+      - pattern: ''

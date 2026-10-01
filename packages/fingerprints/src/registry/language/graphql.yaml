@@ -1,0 +1,11 @@
+name: GraphQL
+slug: graphql
+category: language
+website: https://graphql.org
+detect:
+  meta:
+    store-config:
+      - pattern: 'graphqlMethod'
+  js:
+    __APOLLO_CLIENT__:
+      - pattern: ''
