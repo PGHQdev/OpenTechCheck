@@ -1,0 +1,8 @@
+name: Artplayer.js
+slug: artplayer-js
+category: video
+website: https://artplayer.org
+detect:
+  js:
+    Artplayer:
+      - pattern: ''

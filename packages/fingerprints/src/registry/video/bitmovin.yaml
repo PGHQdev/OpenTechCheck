@@ -1,0 +1,8 @@
+name: Bitmovin
+slug: bitmovin
+category: video
+website: https://bitmovin.com
+detect:
+  js:
+    bitmovin.player:
+      - pattern: ''

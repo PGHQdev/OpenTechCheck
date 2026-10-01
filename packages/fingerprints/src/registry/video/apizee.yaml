@@ -1,0 +1,10 @@
+name: Apizee
+slug: apizee
+category: video
+website: https://www.apizee.com
+detect:
+  js:
+    Apizee:
+      - pattern: ''
+    apizee:
+      - pattern: ''

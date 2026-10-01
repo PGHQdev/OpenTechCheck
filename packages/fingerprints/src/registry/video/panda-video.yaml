@@ -1,0 +1,17 @@
+name: Panda Video
+slug: panda-video
+category: video
+website: https://pandavideo.com
+detect:
+  html:
+    - pattern: 'player\.pandavideo\.com\.br/api\.v2\.js'
+  scripts:
+    - pattern: 'player\.pandavideo\.com\.br/api\.v2\.js'
+  js:
+    pandaLoad:
+      - pattern: ''
+    pandatag:
+      - pattern: ''
+  dom:
+    iframe[src*='tv.pandavideo.com']:
+      - pattern: ''

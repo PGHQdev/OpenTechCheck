@@ -1,0 +1,13 @@
+name: Viloud
+slug: viloud
+category: video
+website: https://viloud.tv
+detect:
+  html:
+    - pattern: '(?:app|player)\.viloud\.tv\/(?:player\/)?embed\/(?:video|live)'
+    - pattern: 'player\.viloud\.tv'
+  scripts:
+    - pattern: 'viloud\.tv'
+  dom:
+    iframe[src*='app.viloud.tv/']:
+      - pattern: ''

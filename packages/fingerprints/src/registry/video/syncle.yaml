@@ -1,0 +1,10 @@
+name: Syncle
+slug: syncle
+category: video
+website: https://syncle.com
+detect:
+  scripts:
+    - pattern: 'api\.videoly\.co/'
+  js:
+    VideolyWidget:
+      - pattern: ''

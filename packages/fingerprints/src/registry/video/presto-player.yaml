@@ -1,0 +1,15 @@
+name: Presto Player
+slug: presto-player
+category: video
+website: https://prestoplayer.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    prestoComponents:
+      - pattern: ''
+    prestoPlayer:
+      - pattern: ''
+    prestoPlayer.proVersion:
+      - pattern: '^(.+)$'
+        version: 1

@@ -1,0 +1,9 @@
+name: Confer With
+slug: confer-with
+category: video
+website: https://conferwith.io
+within:
+  categories: [ecommerce]
+detect:
+  scripts:
+    - pattern: '\.conferwith\.io/'

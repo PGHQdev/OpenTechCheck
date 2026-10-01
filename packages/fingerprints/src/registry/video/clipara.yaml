@@ -1,0 +1,12 @@
+name: Clipara
+slug: clipara
+category: video
+website: https://www.getclipara.com
+detect:
+  scripts:
+    - pattern: '\.getclipara\.com'
+  js:
+    __clipara:
+      - pattern: ''
+    cliparaCurrentUrl:
+      - pattern: ''

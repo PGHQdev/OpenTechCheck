@@ -1,0 +1,8 @@
+name: Viqeo
+slug: viqeo
+category: video
+website: https://viqeo.tv
+detect:
+  js:
+    VIQEO:
+      - pattern: ''

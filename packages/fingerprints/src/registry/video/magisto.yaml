@@ -1,0 +1,12 @@
+name: Magisto
+slug: magisto
+category: video
+website: https://www.magisto.com
+detect:
+  scripts:
+    - pattern: '\.magisto\.com/'
+  js:
+    MagistoPlayerFrame:
+      - pattern: ''
+    magisto_server:
+      - pattern: ''

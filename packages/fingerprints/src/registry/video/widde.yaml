@@ -1,0 +1,7 @@
+name: Widde
+slug: widde
+category: video
+website: https://widde.io
+detect:
+  scripts:
+    - pattern: 'cdn\.widde\.io'

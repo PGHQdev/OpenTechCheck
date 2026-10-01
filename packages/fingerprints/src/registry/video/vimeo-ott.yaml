@@ -1,0 +1,11 @@
+name: Vimeo OTT
+slug: vimeo-ott
+category: video
+website: https://vimeo.com/ott
+implies: [vimeo]
+detect:
+  js:
+    VHX.config:
+      - pattern: ''
+    _vhx:
+      - pattern: ''

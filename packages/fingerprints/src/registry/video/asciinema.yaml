@@ -1,0 +1,19 @@
+name: Asciinema
+slug: asciinema
+category: video
+website: https://asciinema.org/
+detect:
+  html:
+    - pattern: '<asciinema-player'
+  scripts:
+    - pattern: 'asciinema\.org/'
+  js:
+    AsciinemaPlayer:
+      - pattern: ''
+    asciinema:
+      - pattern: ''
+  dom:
+    div.asciinema-player-wrapper:
+      - pattern: ''
+    div.asciinema-player:
+      - pattern: ''

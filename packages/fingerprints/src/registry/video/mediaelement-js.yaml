@@ -1,0 +1,11 @@
+name: MediaElement.js
+slug: mediaelement-js
+category: video
+website: https://www.mediaelementjs.com
+detect:
+  js:
+    mejs:
+      - pattern: ''
+    mejs.version:
+      - pattern: '^(.+)$'
+        version: 1

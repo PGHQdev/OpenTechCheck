@@ -1,0 +1,21 @@
+name: Fleeq
+slug: fleeq
+category: video
+website: https://www.fleeq.io
+detect:
+  cookies:
+    __FLEEQ:
+      - pattern: ''
+  js:
+    FleeqSDK:
+      - pattern: ''
+    FleeqSDKLight:
+      - pattern: ''
+    _fleeqBarSettings:
+      - pattern: ''
+    _fleeqData:
+      - pattern: ''
+    _fleeqWiki:
+      - pattern: ''
+    fleeqBarConfig:
+      - pattern: ''

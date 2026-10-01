@@ -1,0 +1,12 @@
+name: Uscreen
+slug: uscreen
+category: video
+website: https://uscreen.tv/
+detect:
+  js:
+    analyticsHost:
+      - pattern: 'stats\.uscreen\.io'
+  dom:
+    .powered-by-uscreen:
+      - text: true
+        pattern: ''

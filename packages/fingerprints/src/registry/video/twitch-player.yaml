@@ -1,0 +1,13 @@
+name: Twitch Player
+slug: twitch-player
+category: video
+website: https://dev.twitch.tv/docs/embed/video-and-clips/
+detect:
+  js:
+    Twitch.Embed:
+      - pattern: ''
+    twitchPlayer:
+      - pattern: ''
+  dom:
+    iframe[src*='player\.twitch\.tv']:
+      - pattern: ''

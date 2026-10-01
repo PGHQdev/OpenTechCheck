@@ -1,0 +1,12 @@
+name: Fluid Player
+slug: fluid-player
+category: video
+website: https://www.fluidplayer.com
+detect:
+  scripts:
+    - pattern: 'cdn\.fluidplayer\.com'
+  js:
+    fluidPlayer:
+      - pattern: ''
+    webpackChunkfluid_player:
+      - pattern: ''

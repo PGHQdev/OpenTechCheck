@@ -1,0 +1,12 @@
+name: Remotion
+slug: remotion
+category: video
+website: https://remotion.dev
+implies: [react]
+detect:
+  js:
+    remotion_imported:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+    remotion_renderReady:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: DPlayer
+slug: dplayer
+category: video
+website: https://dplayer.js.org
+detect:
+  scripts:
+    - pattern: '/dplayer\.js'
+  js:
+    DPlayer:
+      - pattern: ''
+    DPlayer.version:
+      - pattern: '([\d\.]+)'
+        version: 1

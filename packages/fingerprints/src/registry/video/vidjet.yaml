@@ -1,0 +1,8 @@
+name: Vidjet
+slug: vidjet
+category: video
+website: https://www.vidjet.com
+detect:
+  js:
+    Vidjet.init:
+      - pattern: ''

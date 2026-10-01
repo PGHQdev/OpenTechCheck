@@ -1,0 +1,11 @@
+name: Flowplayer
+slug: flowplayer
+category: video
+website: https://flowplayer.com
+detect:
+  js:
+    flowplayer:
+      - pattern: ''
+    flowplayer.version:
+      - pattern: '([\d\.]+)'
+        version: 1

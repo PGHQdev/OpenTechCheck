@@ -1,0 +1,7 @@
+name: Ocular
+slug: ocular
+category: video
+website: https://ocularsolution.com/
+detect:
+  scripts:
+    - pattern: 'widget\.ocularsolution\.com/'

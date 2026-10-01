@@ -1,0 +1,13 @@
+name: Conviva
+slug: conviva
+category: video
+website: https://www.conviva.com
+detect:
+  js:
+    Conviva:
+      - pattern: ''
+    Conviva.Client:
+      - pattern: ''
+    Conviva.Client.version:
+      - pattern: '^([0-9\.]+)$'
+        version: 1

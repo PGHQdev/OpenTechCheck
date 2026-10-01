@@ -1,0 +1,12 @@
+name: Firework
+slug: firework
+category: video
+website: https://firework.com
+detect:
+  js:
+    _fwn:
+      - pattern: ''
+    _fwnPerformance:
+      - pattern: ''
+    fwnPolyfillPromise:
+      - pattern: ''

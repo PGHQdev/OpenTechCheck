@@ -1,0 +1,12 @@
+name: Bambuser
+slug: bambuser
+category: video
+website: https://bambuser.com
+detect:
+  scripts:
+    - pattern: '\.bambuser\.com/'
+  js:
+    BambuserLiveShopping:
+      - pattern: ''
+    _bambuser:
+      - pattern: ''

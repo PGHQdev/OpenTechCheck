@@ -1,0 +1,12 @@
+name: jPlayer
+slug: jplayer
+category: video
+website: https://jplayer.org
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: '/jquery\.jplayer\.min\.js'
+    - pattern: 'jquery\.jplayer'
+  js:
+    jPlayerPlaylist:
+      - pattern: ''

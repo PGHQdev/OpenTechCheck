@@ -1,0 +1,11 @@
+name: Aniview Video Ad Player
+slug: aniview-video-ad-player
+category: video
+website: https://aniview.com/video-ad-player/
+detect:
+  scripts:
+    - pattern: 'player\.aniview\.com/script/([\d\.]+)/'
+      version: 1
+  dom:
+    link[href*='player.aniview.com']:
+      - pattern: ''

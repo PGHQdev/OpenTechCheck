@@ -1,0 +1,10 @@
+name: Wowza Video Player
+slug: wowza-video-player
+category: video
+website: https://www.wowza.com/video/player
+detect:
+  js:
+    WowzaPlayer:
+      - pattern: ''
+    WowzaPlayer.jsplayer:
+      - pattern: ''

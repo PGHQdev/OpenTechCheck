@@ -1,0 +1,10 @@
+name: Klarna Virtual Shopping
+slug: klarna-virtual-shopping
+category: video
+website: https://www.klarna.com/us/business/marketing-solutions/
+detect:
+  scripts:
+    - pattern: 'cdn\.usehero\.com'
+  js:
+    HeroWebPluginSettings:
+      - pattern: ''
