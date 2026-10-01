@@ -6,7 +6,7 @@ detect:
   html:
     - pattern: 'posthog\.init\('
       confidence: 90
-    - pattern: '[a-z-]+\.i\.posthog\.com'
+    - pattern: '[a-z-]\.i\.posthog\.com'
   scripts:
-    - pattern: '[a-z-]+\.i\.posthog\.com'
+    - pattern: '[a-z-]\.i\.posthog\.com'
     - pattern: 'app\.posthog\.com/static/array\.js'
