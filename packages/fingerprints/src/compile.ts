@@ -15,7 +15,7 @@ function* yamlFiles(dir: string): Generator<string> {
 
 function* allRules(fp: Fingerprint): Generator<Rule> {
   const d = fp.detect
-  for (const list of [d.html ?? [], d.scripts ?? []]) yield* list
+  for (const list of [d.html ?? [], d.url ?? [], d.text ?? [], d.scripts ?? []]) yield* list
   for (const table of [d.headers, d.meta, d.cookies, d.js, d.dom]) {
     for (const list of Object.values(table ?? {})) yield* list
   }
@@ -51,6 +51,10 @@ export function compile(srcDir: string): { fingerprints: Fingerprint[]; errors: 
   for (const fp of fingerprints) {
     for (const ref of [...(fp.implies ?? []), ...(fp.excludes ?? [])]) {
       if (!slugs.has(ref)) errors.push(`${fp.slug}: references unknown slug "${ref}"`)
+    }
+    for (const ref of fp.within?.techs ?? []) {
+      if (ref === fp.slug) errors.push(`${fp.slug}: within references itself`)
+      else if (!slugs.has(ref)) errors.push(`${fp.slug}: within references unknown slug "${ref}"`)
     }
   }
   fingerprints.sort((a, b) => a.slug.localeCompare(b.slug))

@@ -11,9 +11,12 @@ export function validateFingerprint(doc: unknown): string[] {
     for (const e of validateSchema.errors ?? []) errors.push(`${e.instancePath} ${e.message}`)
     return errors
   }
-  const fp = doc as { category: string; detect: Record<string, unknown> }
+  const fp = doc as { category: string; within?: { categories?: string[] }; detect: Record<string, unknown> }
   if (!categories.includes(fp.category)) {
     errors.push(`unknown category "${fp.category}" (see schemas/categories.json)`)
+  }
+  for (const category of fp.within?.categories ?? []) {
+    if (!categories.includes(category)) errors.push(`unknown within category "${category}" (see schemas/categories.json)`)
   }
   for (const source of ['headers', 'meta'] as const) {
     const table = fp.detect[source] as Record<string, unknown> | undefined

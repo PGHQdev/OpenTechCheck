@@ -44,3 +44,27 @@ test('lint errors are reported with file path', () => {
   const dir = tempRegistry({ 'cms/wordpress.yaml': WP.replace('wp-content', "'(a+)+b'") })
   expect(compile(dir).errors[0]).toContain('wordpress.yaml')
 })
+
+test('within must reference a known slug', () => {
+  const dir = tempRegistry({ 'cms/wordpress.yaml': WP.replace('detect:', 'within:\n  techs: [ghost-slug]\ndetect:') })
+  expect(compile(dir).errors[0]).toContain('ghost-slug')
+})
+
+test('within must not reference itself', () => {
+  const dir = tempRegistry({ 'cms/wordpress.yaml': WP.replace('detect:', 'within:\n  techs: [wordpress]\ndetect:') })
+  expect(compile(dir).errors[0]).toContain('itself')
+})
+
+test('url and text patterns are linted', () => {
+  const url = WP.replace('  html:\n    - pattern: wp-content', "  url:\n    - pattern: '(a+)+b'")
+  const text = WP.replace('  html:\n    - pattern: wp-content', "  text:\n    - pattern: '(a+)+b'")
+  expect(compile(tempRegistry({ 'cms/wordpress.yaml': url })).errors[0]).toContain('nested quantifier')
+  expect(compile(tempRegistry({ 'cms/wordpress.yaml': text })).errors[0]).toContain('nested quantifier')
+})
+
+test('a valid within compiles', () => {
+  const woo = WP.replaceAll('WordPress', 'WooCommerce').replaceAll('wordpress', 'woocommerce')
+    .replace('detect:', 'within:\n  techs: [wordpress]\n  categories: [cms]\ndetect:')
+  const { errors } = compile(tempRegistry({ 'cms/wordpress.yaml': WP, 'ecommerce/woocommerce.yaml': woo }))
+  expect(errors).toEqual([])
+})

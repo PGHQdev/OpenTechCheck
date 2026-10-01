@@ -10,17 +10,28 @@
     "website": { "type": "string", "pattern": "^https?://" },
     "implies": { "type": "array", "items": { "type": "string" }, "default": [] },
     "excludes": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "within": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "techs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "categories": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+      }
+    },
     "detect": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "html": { "$ref": "#/$defs/ruleList" },
+        "url": { "$ref": "#/$defs/ruleList" },
+        "text": { "$ref": "#/$defs/ruleList" },
         "scripts": { "$ref": "#/$defs/ruleList" },
         "headers": { "$ref": "#/$defs/keyedRules" },
         "meta": { "$ref": "#/$defs/keyedRules" },
         "cookies": { "$ref": "#/$defs/keyedRules" },
         "js": { "$ref": "#/$defs/keyedRules" },
-        "dom": { "$ref": "#/$defs/keyedRules" }
+        "dom": { "$ref": "#/$defs/domRules" }
       }
     }
   },
@@ -39,6 +50,23 @@
     "keyedRules": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/ruleList" }
+    },
+    "domRule": {
+      "type": "object",
+      "required": ["pattern"],
+      "additionalProperties": false,
+      "not": { "required": ["attr", "text"] },
+      "properties": {
+        "pattern": { "type": "string" },
+        "version": { "type": "integer", "minimum": 1 },
+        "confidence": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "attr": { "type": "string", "minLength": 1 },
+        "text": { "const": true }
+      }
+    },
+    "domRules": {
+      "type": "object",
+      "additionalProperties": { "type": "array", "items": { "$ref": "#/$defs/domRule" } }
     }
   }
 }
