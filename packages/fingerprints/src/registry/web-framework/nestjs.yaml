@@ -1,0 +1,12 @@
+name: NestJS
+slug: nestjs
+category: web-framework
+website: https://nestjs.com
+implies: [nodejs]
+detect:
+  html:
+    # Nest's default unmatched-route handler returns this JSON shape. Keep the
+    # fields together so Express/Fastify responses and custom 404 pages do not match.
+    # Custom exception filters, adapters, and reverse proxies can remove or alter it.
+    - pattern: '^\s*\{(?=[\s\S]*"message"\s*:\s*"Cannot\s+GET\s+\/[^\"]*")(?=[\s\S]*"error"\s*:\s*"Not Found")(?=[\s\S]*"statusCode"\s*:\s*404)[\s\S]*\}\s*$'
+      confidence: 90
