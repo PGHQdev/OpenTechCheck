@@ -2,7 +2,7 @@ import { collectSignals, sanitizeJsPayload } from './collect'
 import { createScanScheduler } from './scan-scheduler'
 import { ext } from '../shared/ext'
 import { CAPS, MAIN_WORLD_REQUEST, MAIN_WORLD_SOURCE, type MainWorldMessage, type ScanState, type ToContent } from '../shared/protocol'
-import { DOM_SELECTORS, JS_PATHS } from 'virtual:lists'
+import { DOM_READS, DOM_SELECTORS, JS_PATHS } from 'virtual:lists'
 
 // getRandomValues also works on ordinary HTTP pages, unlike randomUUID.
 const token = () => Array.from(crypto.getRandomValues(new Uint32Array(4)), (n) => n.toString(16)).join('-')
@@ -14,7 +14,7 @@ let jsGlobals: Record<string, unknown> = {}
 let pending: { url: string; scan: ScanState } | null = null
 
 function send(scan: ScanState) {
-  const signals = { ...collectSignals(document, location.href, DOM_SELECTORS), js: jsGlobals }
+  const signals = { ...collectSignals(document, location.href, DOM_SELECTORS, DOM_READS), js: jsGlobals }
   ext.runtime.sendMessage({ type: 'signals', signals, scan }).catch(() => {})
 }
 

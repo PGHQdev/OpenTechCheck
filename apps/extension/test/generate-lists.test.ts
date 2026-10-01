@@ -1,5 +1,5 @@
 import { expect, test } from 'bun:test'
-import { jsPaths, domSelectors } from '../build/generate-lists'
+import { jsPaths, domSelectors, domReads } from '../build/generate-lists'
 import type { Fingerprint } from '@opentechcheck/core'
 import registry from '@opentechcheck/fingerprints'
 
@@ -21,4 +21,19 @@ test('collects sorted unique dom selectors', () => {
 test('runs over the real registry without throwing', () => {
   expect(Array.isArray(jsPaths(registry as Fingerprint[]))).toBe(true)
   expect(Array.isArray(domSelectors(registry as Fingerprint[]))).toBe(true)
+})
+
+test('domReads lists selectors with attr or text rules', () => {
+  const withReads: Fingerprint[] = [
+    ...fps,
+    { name: 'C', slug: 'c', category: 'other', website: 'https://c.dev',
+      detect: { dom: { 'meta[name="x"]': [{ attr: 'content', pattern: '' }], footer: [{ text: true, pattern: 'x' }] } } },
+    { name: 'D', slug: 'd', category: 'other', website: 'https://d.dev',
+      detect: { dom: { 'meta[name="x"]': [{ attr: 'value', pattern: '' }, { attr: 'content', pattern: 'y' }] } } },
+  ]
+  expect(domReads(withReads)).toEqual({
+    footer: { attrs: [], text: true },
+    'meta[name="x"]': { attrs: ['content', 'value'], text: false },
+  })
+  expect(domReads(fps)).toEqual({})
 })

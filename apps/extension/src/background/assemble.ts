@@ -24,6 +24,6 @@ export function toBundle(
 ): SignalBundle {
   return {
     url: signals.url, html: signals.html, meta: signals.meta, scripts: signals.scripts,
-    dom: signals.dom, js: signals.js, headers, cookies,
+    dom: signals.dom, domAttrs: signals.domAttrs, domText: signals.domText, js: signals.js, headers, cookies,
   }
 }

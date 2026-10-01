@@ -6,8 +6,13 @@ export interface PageSignals {
   meta: Record<string, string[]>       // lowercase name/property -> contents
   scripts: string[]
   dom: string[]                        // selectors that matched
+  domAttrs?: Record<string, Record<string, string[]>>  // selector -> attribute -> distinct values
+  domText?: Record<string, string[]>                     // selector -> distinct collapsed texts
   js: Record<string, unknown>          // dotted path -> capped string value
 }
+
+// Selectors whose element values the collector reads (built from dom attr/text rules).
+export type DomReads = Record<string, { attrs: string[]; text: boolean }>
 
 export type ToBackground =
   | { type: 'signals'; signals: PageSignals; scan?: ScanState }
@@ -38,4 +43,7 @@ export interface MainWorldMessage {
   shadowChanged?: boolean
 }
 
-export const CAPS = { html: 500_000, scripts: 500, jsValue: 200 } as const
+export const CAPS = {
+  html: 500_000, scripts: 500, jsValue: 200,
+  domMatches: 50, domValue: 10_000, domTotal: 500_000,
+} as const

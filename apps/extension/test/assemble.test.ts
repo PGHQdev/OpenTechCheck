@@ -31,3 +31,12 @@ test('undefined headers stay undefined so header rules skip', () => {
   const b = toBundle({ url: 'u', html: '', meta: {}, scripts: [], dom: [], js: {} }, undefined, {})
   expect(b.headers).toBeUndefined()
 })
+
+test('toBundle passes dom values through', () => {
+  const b = toBundle(
+    { url: 'u', html: '', meta: {}, scripts: [], dom: ['f'], js: {}, domAttrs: { f: { id: ['a'] } }, domText: { f: ['t'] } },
+    undefined, {},
+  )
+  expect(b.domAttrs).toEqual({ f: { id: ['a'] } })
+  expect(b.domText).toEqual({ f: ['t'] })
+})

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
 import tailwindcss from '@tailwindcss/vite'
-import { jsPaths, domSelectors } from './build/generate-lists'
+import { jsPaths, domSelectors, domReads } from './build/generate-lists'
 import type { Fingerprint } from '@opentechcheck/core'
 import registry from '@opentechcheck/fingerprints'
 import type { Plugin } from 'vite'
@@ -28,6 +28,7 @@ export function listsPlugin(): Plugin {
       id === '\0virtual:lists'
         ? `export const JS_PATHS = ${JSON.stringify(jsPaths(fps))};\n` +
           `export const DOM_SELECTORS = ${JSON.stringify(domSelectors(fps))};\n` +
+          `export const DOM_READS = ${JSON.stringify(domReads(fps))};\n` +
           `export const ICON_SLUGS = ${JSON.stringify(iconSlugs())};`
         : undefined,
   }
