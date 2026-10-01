@@ -10,6 +10,10 @@ export function collectHits(fp: Fingerprint, bundle: SignalBundle, options: Dete
       if (h) hits.push(h)
     }
   }
+  for (const rule of d.url ?? []) {
+    const h = runRule(rule, 'url', bundle.url, undefined, options.onWarning)
+    if (h) hits.push(h)
+  }
   for (const rule of d.scripts ?? []) {
     for (const src of bundle.scripts ?? []) {
       const h = runRule(rule, 'scripts', src, undefined, options.onWarning)
