@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # Secrets cannot appear in step `if:`; expose presence as a flag. Fork PRs get no secrets.
-      HAS_HARNESS_KEY: ${{ secrets.HARNESS_DEPLOY_KEY != '' }}
+      HAS_HARNESS_KEY: ${{ secrets.HARNESS_DEPLOY_KEY != '' && secrets.R2_ACCESS_KEY_ID != '' }}
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
@@ -20,7 +20,7 @@ jobs:
       - name: Require fixture access on main
         if: github.event_name == 'push' && env.HAS_HARNESS_KEY != 'true'
         run: |
-          echo "::error::HARNESS_DEPLOY_KEY is missing; the fixture suite cannot run"
+          echo "::error::HARNESS_DEPLOY_KEY or the R2 secrets are missing; the fixture suite cannot run"
           exit 1
       - name: Check out private fixtures
         if: env.HAS_HARNESS_KEY == 'true'
@@ -30,7 +30,17 @@ jobs:
           ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
           persist-credentials: false
           path: harness
-          sparse-checkout: fixtures
+          sparse-checkout: |
+            fixtures
+            scripts/fixtures-store.ts
+          sparse-checkout-cone-mode: false
+      - name: Pull fixture bundles from R2
+        if: env.HAS_HARNESS_KEY == 'true'
+        run: bun harness/scripts/fixtures-store.ts pull --dir harness/fixtures
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       - name: Fixture suite
         if: env.HAS_HARNESS_KEY == 'true'
         run: bun test packages/fingerprints/test/fixtures.test.ts packages/fingerprints/test/prefilter.test.ts

@@ -5,7 +5,8 @@ name: release-cws
 #
 # Required repository secrets (Google Cloud OAuth client with the
 # chromewebstore scope; see https://developer.chrome.com/docs/webstore/using-api):
-#   CWS_CLIENT_ID, CWS_CLIENT_SECRET, CWS_REFRESH_TOKEN, HARNESS_DEPLOY_KEY
+#   CWS_CLIENT_ID, CWS_CLIENT_SECRET, CWS_REFRESH_TOKEN, HARNESS_DEPLOY_KEY,
+#   R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY (read-only, fixture bundles)
 on:
   push:
     tags: ['v*.*.*']
@@ -28,7 +29,16 @@ jobs:
           ssh-key: ${{ secrets.HARNESS_DEPLOY_KEY }}
           persist-credentials: false
           path: harness
-          sparse-checkout: fixtures
+          sparse-checkout: |
+            fixtures
+            scripts/fixtures-store.ts
+          sparse-checkout-cone-mode: false
+      - name: Pull fixture bundles from R2
+        run: bun harness/scripts/fixtures-store.ts pull --dir harness/fixtures
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
       - name: Tests
         run: |
           bun test packages/core packages/fingerprints packages/collect-http
