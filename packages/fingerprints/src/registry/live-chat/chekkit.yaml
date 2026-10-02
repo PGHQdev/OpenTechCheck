@@ -1,0 +1,8 @@
+name: Chekkit
+slug: chekkit
+category: live-chat
+website: https://www.chekkit.io
+detect:
+  js:
+    chekkitSettings.toggleChat:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Landbot
+slug: landbot
+category: live-chat
+website: https://landbot.io
+detect:
+  scripts:
+    - pattern: '\.landbot\.io/.*-([\d\.]+)\.js'
+  js:
+    LandbotLivechat:
+      - pattern: ''
+    initLandbot:
+      - pattern: ''

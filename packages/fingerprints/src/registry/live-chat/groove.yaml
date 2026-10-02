@@ -1,0 +1,12 @@
+name: Groove
+slug: groove
+category: live-chat
+website: https://www.groovehq.com
+detect:
+  scripts:
+    - pattern: '\.groovehq\.com/'
+  js:
+    Groove:
+      - pattern: ''
+    GrooveWidget:
+      - pattern: ''

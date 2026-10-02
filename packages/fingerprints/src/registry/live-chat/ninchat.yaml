@@ -1,0 +1,14 @@
+name: Ninchat
+slug: ninchat
+category: live-chat
+website: https://ninchat.com
+detect:
+  scripts:
+    - pattern: 'api\.ninchat\.com'
+  js:
+    Ninchat.ERROR:
+      - pattern: ''
+    NinchatAntics:
+      - pattern: ''
+    NinchatAsyncInit:
+      - pattern: ''

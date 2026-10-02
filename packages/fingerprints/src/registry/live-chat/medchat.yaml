@@ -1,0 +1,12 @@
+name: Medchat
+slug: medchat
+category: live-chat
+website: https://medchatapp.com
+detect:
+  scripts:
+    - pattern: 'widget-ui\.medchatapp\.com/'
+  js:
+    MedChat:
+      - pattern: ''
+    MedChatApp:
+      - pattern: ''

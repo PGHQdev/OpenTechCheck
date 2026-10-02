@@ -1,0 +1,8 @@
+name: DoubleTick
+slug: doubletick
+category: live-chat
+website: https://doubletick.io
+detect:
+  js:
+    dt.resetConfig:
+      - pattern: ''

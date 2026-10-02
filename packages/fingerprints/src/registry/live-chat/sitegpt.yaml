@@ -1,0 +1,12 @@
+name: SiteGPT
+slug: sitegpt
+category: live-chat
+website: https://sitegpt.ai
+detect:
+  scripts:
+    - pattern: '//sitegpt\.ai/widget/'
+  js:
+    $sitegpt.push:
+      - pattern: ''
+    $sitegpt_widget:
+      - pattern: ''

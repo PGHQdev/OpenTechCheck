@@ -1,0 +1,14 @@
+name: MoinAI
+slug: moinai
+category: live-chat
+website: https://www.moin.ai
+detect:
+  scripts:
+    - pattern: '\.moin\.ai'
+  js:
+    ___moinloader:
+      - pattern: ''
+    __moinrpc:
+      - pattern: ''
+    moin.addContext:
+      - pattern: ''

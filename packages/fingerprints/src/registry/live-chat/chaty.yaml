@@ -1,0 +1,12 @@
+name: Chaty
+slug: chaty
+category: live-chat
+website: https://chaty.app/
+detect:
+  scripts:
+    - pattern: 'cdn\.chaty\.app/'
+  js:
+    close_chaty:
+      - pattern: ''
+    launch_chaty:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: ArtiBot
+slug: artibot
+category: live-chat
+website: https://www.artibot.ai
+detect:
+  js:
+    ArtiBot:
+      - pattern: ''
+    _artibotLauncherInitializer:
+      - pattern: ''
+    artibotApi:
+      - pattern: ''

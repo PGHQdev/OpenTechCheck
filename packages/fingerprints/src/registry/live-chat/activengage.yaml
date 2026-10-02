@@ -1,0 +1,10 @@
+name: ActivEngage
+slug: activengage
+category: live-chat
+website: https://www.activengage.com
+detect:
+  scripts:
+    - pattern: 'pageview\.activengage\.com'
+  js:
+    ActivEngage:
+      - pattern: ''

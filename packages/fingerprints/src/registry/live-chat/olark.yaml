@@ -1,0 +1,12 @@
+name: Olark
+slug: olark
+category: live-chat
+website: https://www.olark.com
+detect:
+  scripts:
+    - pattern: '\.olark\.com/'
+  js:
+    olark:
+      - pattern: ''
+    olarkUserData:
+      - pattern: ''

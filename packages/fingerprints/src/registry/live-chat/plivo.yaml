@@ -1,0 +1,7 @@
+name: Plivo
+slug: plivo
+category: live-chat
+website: https://www.plivo.com
+detect:
+  scripts:
+    - pattern: 'cdn\.plivo\.com/'

@@ -1,0 +1,10 @@
+name: SnapCall
+slug: snapcall
+category: live-chat
+website: https://www.snapcall.io
+detect:
+  js:
+    sc_api:
+      - pattern: 'api\.snapcall\.io'
+    snapcallAPI:
+      - pattern: ''

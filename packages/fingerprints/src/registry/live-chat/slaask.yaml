@@ -1,0 +1,12 @@
+name: Slaask
+slug: slaask
+category: live-chat
+website: https://get.slaask.com
+detect:
+  scripts:
+    - pattern: 'cdn\.slaask\.com/'
+  js:
+    _slaaskLoader:
+      - pattern: ''
+    _slaaskSettings:
+      - pattern: ''

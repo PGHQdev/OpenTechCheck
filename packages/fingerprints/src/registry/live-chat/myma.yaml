@@ -1,0 +1,7 @@
+name: Myma
+slug: myma
+category: live-chat
+website: https://www.myma.ai
+detect:
+  scripts:
+    - pattern: 'messenger\.myma\.ai/'

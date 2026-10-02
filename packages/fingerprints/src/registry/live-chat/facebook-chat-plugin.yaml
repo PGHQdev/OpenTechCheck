@@ -1,0 +1,15 @@
+name: Facebook Chat Plugin
+slug: facebook-chat-plugin
+category: live-chat
+website: https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/
+detect:
+  scripts:
+    - pattern: 'connect\.facebook\.net/.+\.customerchat\.js'
+  js:
+    facebookChatSettings:
+      - pattern: ''
+  dom:
+    iframe[src*='.facebook.com/']:
+      - attr: src
+        pattern: '\.facebook\.com/v([\d\.]+)/plugins/customerchat'
+        version: 1

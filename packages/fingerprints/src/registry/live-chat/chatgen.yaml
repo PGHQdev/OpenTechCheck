@@ -1,0 +1,12 @@
+name: ChatGen
+slug: chatgen
+category: live-chat
+website: https://chatgen.ai
+detect:
+  scripts:
+    - pattern: '\.chatgen\.ai/'
+  js:
+    ChatGen:
+      - pattern: ''
+    loadChatgen:
+      - pattern: ''

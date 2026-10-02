@@ -1,0 +1,10 @@
+name: ChatStack
+slug: chatstack
+category: live-chat
+website: https://www.chatstack.com
+detect:
+  js:
+    Chatstack.chatState:
+      - pattern: ''
+    Chatstack.server:
+      - pattern: ''

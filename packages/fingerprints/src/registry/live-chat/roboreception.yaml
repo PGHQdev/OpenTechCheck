@@ -1,0 +1,7 @@
+name: RoboReception
+slug: roboreception
+category: live-chat
+website: https://www.roboreception.co.uk
+detect:
+  scripts:
+    - pattern: '\.bot\.roboreception\.co\.uk'

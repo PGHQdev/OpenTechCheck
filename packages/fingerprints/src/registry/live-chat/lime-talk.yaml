@@ -1,0 +1,12 @@
+name: Lime Talk
+slug: lime-talk
+category: live-chat
+website: https://www.limetalk.com
+detect:
+  scripts:
+    - pattern: '\.limetalk\.com/'
+  js:
+    limetalk:
+      - pattern: ''
+    limetalkLoader:
+      - pattern: ''

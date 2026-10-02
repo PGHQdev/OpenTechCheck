@@ -1,0 +1,12 @@
+name: Czater
+slug: czater
+category: live-chat
+website: https://www.czater.pl
+detect:
+  scripts:
+    - pattern: '\.czater\.pl'
+  js:
+    $czater:
+      - pattern: ''
+    $czaterMethods:
+      - pattern: ''

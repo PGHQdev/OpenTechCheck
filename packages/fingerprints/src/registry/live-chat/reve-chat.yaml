@@ -1,0 +1,10 @@
+name: REVE Chat
+slug: reve-chat
+category: live-chat
+website: https://www.revechat.com
+detect:
+  scripts:
+    - pattern: 'static\.revechat\.com'
+  js:
+    $REVECHAT_MEDIA_GALLERY:
+      - pattern: ''

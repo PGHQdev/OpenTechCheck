@@ -1,0 +1,16 @@
+name: Goftino
+slug: goftino
+category: live-chat
+website: https://www.goftino.com
+detect:
+  scripts:
+    - pattern: '\.goftino\.com/'
+  js:
+    Goftino.setWidget:
+      - pattern: ''
+    goftinoRemoveLoad:
+      - pattern: ''
+    goftino_1:
+      - pattern: ''
+    goftino_getUrl:
+      - pattern: ''

@@ -1,0 +1,17 @@
+name: Desku
+slug: desku
+category: live-chat
+website: https://desku.io
+detect:
+  scripts:
+    - pattern: 'widget\.desku\.io/chat-widget\.js'
+    - pattern: 'livechat\.desku\.io/cdn/widget\.js'
+  js:
+    Desku:
+      - pattern: ''
+    isDeskuManagerRunning:
+      - pattern: ''
+    isDeskuWidgetAuthSetup:
+      - pattern: ''
+    isdeskuManagerRunning:
+      - pattern: ''

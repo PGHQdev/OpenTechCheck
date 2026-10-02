@@ -1,0 +1,15 @@
+name: LiveZilla
+slug: livezilla
+category: live-chat
+website: https://www.livezilla.net
+detect:
+  js:
+    lz_chat_execute:
+      - pattern: ''
+    lz_code_id:
+      - pattern: '(?:[\w\d]+)'
+    lz_tracking_set_widget_visibility:
+      - pattern: ''
+  dom:
+    '#lz_overlay_chat':
+      - pattern: ''

@@ -1,0 +1,11 @@
+name: Muchat
+slug: muchat
+category: live-chat
+website: https://mu.chat
+detect:
+  js:
+    Muchat:
+      - pattern: ''
+  dom:
+    div[class^='muchat-chatbox'], style[data-emotion*='muchat-chatbox-bubble']:
+      - pattern: ''

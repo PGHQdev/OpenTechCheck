@@ -1,0 +1,10 @@
+name: Front Chat
+slug: front-chat
+category: live-chat
+website: https://front.com
+detect:
+  scripts:
+    - pattern: '//chat-assets\.frontapp\.com/'
+  js:
+    FrontChat:
+      - pattern: ''

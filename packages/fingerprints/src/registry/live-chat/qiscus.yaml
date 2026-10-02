@@ -1,0 +1,19 @@
+name: Qiscus
+slug: qiscus
+category: live-chat
+website: https://www.qiscus.com
+detect:
+  html:
+    - pattern: 'qiscus\.io/api/v[1-4]'
+    - pattern: 'VITE_API_BASE_URL_V1":"https://[^"]*qiscus\.(io|com)'
+  url:
+    - pattern: 'qiscus\.io'
+  scripts:
+    - pattern: '\.qiscus\.com/js/qiscus-sdk\.([\d\.]+)\.js\?v=([\d\.]+)'
+      version: 1
+    - pattern: 'qiscus\.io'
+  js:
+    QiscusSDK:
+      - pattern: ''
+    qiscusWidgetshowBadge:
+      - pattern: ''

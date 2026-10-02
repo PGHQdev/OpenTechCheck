@@ -1,0 +1,10 @@
+name: BirdSeed
+slug: birdseed
+category: live-chat
+website: https://birdseed.io
+detect:
+  scripts:
+    - pattern: '\.birdseed\.io/'
+  js:
+    birdseed_widget_controller:
+      - pattern: ''

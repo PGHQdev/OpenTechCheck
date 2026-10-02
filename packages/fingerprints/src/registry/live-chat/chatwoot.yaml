@@ -1,0 +1,10 @@
+name: Chatwoot
+slug: chatwoot
+category: live-chat
+website: https://www.chatwoot.com
+detect:
+  js:
+    $chatwoot:
+      - pattern: ''
+    chatwootSDK:
+      - pattern: ''

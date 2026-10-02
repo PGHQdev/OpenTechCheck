@@ -1,0 +1,15 @@
+name: Floatbot
+slug: floatbot
+category: live-chat
+website: https://floatbot.ai
+detect:
+  scripts:
+    - pattern: '\.floatbot\.ai/'
+  js:
+    flb.base_url:
+      - pattern: '\.floatbot\.ai/'
+    flb.botId:
+      - pattern: ''
+  dom:
+    '#flb-widget-handle':
+      - pattern: ''

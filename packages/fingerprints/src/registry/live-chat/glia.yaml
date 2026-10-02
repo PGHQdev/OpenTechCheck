@@ -1,0 +1,7 @@
+name: Glia
+slug: glia
+category: live-chat
+website: https://www.glia.com
+detect:
+  scripts:
+    - pattern: 'api\.glia\.com/'

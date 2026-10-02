@@ -1,0 +1,12 @@
+name: Chatlio
+slug: chatlio
+category: live-chat
+website: https://chatlio.com
+detect:
+  scripts:
+    - pattern: 'w\.chatlio\.com/'
+  js:
+    ChatlioReact:
+      - pattern: ''
+    ChatlioReactDOM:
+      - pattern: ''

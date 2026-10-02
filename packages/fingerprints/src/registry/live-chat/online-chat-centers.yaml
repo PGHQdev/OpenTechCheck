@@ -1,0 +1,8 @@
+name: Online Chat Centers
+slug: online-chat-centers
+category: live-chat
+website: https://www.onlinechatcenters.com
+detect:
+  js:
+    occEmbedClick:
+      - pattern: ''

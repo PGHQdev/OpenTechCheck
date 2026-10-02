@@ -1,0 +1,10 @@
+name: CoRover
+slug: corover
+category: live-chat
+website: https://corover.ai
+detect:
+  scripts:
+    - pattern: '\.corover\.mobi/'
+  js:
+    CoRover_tag:
+      - pattern: ''

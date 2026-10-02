@@ -1,0 +1,11 @@
+name: MyLiveChat
+slug: mylivechat
+category: live-chat
+website: https://mylivechat.com
+detect:
+  scripts:
+    - pattern: 'mylivechat\.com/'
+  js:
+    MyLiveChat.Version:
+      - pattern: '(.+)$'
+        version: 1

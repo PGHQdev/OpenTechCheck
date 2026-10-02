@@ -1,0 +1,7 @@
+name: DevRev
+slug: devrev
+category: live-chat
+website: https://devrev.ai/plug-observability
+detect:
+  scripts:
+    - pattern: 'plug-platform\.devrev\.ai/'

@@ -1,0 +1,15 @@
+name: Oct8ne
+slug: oct8ne
+category: live-chat
+website: https://oct8ne.com
+detect:
+  scripts:
+    - pattern: '\.oct8ne\.com/'
+  js:
+    oct8ne.agentsAvailable:
+      - pattern: ''
+    oct8neApi:
+      - pattern: ''
+    oct8neVars.pluginVersion:
+      - pattern: '([\d\.]+)'
+        version: 1

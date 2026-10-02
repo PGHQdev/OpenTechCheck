@@ -1,0 +1,12 @@
+name: Lovi
+slug: lovi
+category: live-chat
+website: https://lovi.ai
+detect:
+  scripts:
+    - pattern: 'widget\.lovi\.ai/'
+  js:
+    __loviMsgHandler:
+      - pattern: ''
+    __loviWidgetClicksBound:
+      - pattern: ''

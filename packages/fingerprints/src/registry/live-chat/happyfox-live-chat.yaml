@@ -1,0 +1,10 @@
+name: HappyFox Live Chat
+slug: happyfox-live-chat
+category: live-chat
+website: https://www.happyfox.com/live-chat
+detect:
+  scripts:
+    - pattern: '\.happyfoxchat\.com/'
+  js:
+    HappyFoxChatObject:
+      - pattern: ''

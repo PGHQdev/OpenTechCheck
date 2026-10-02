@@ -1,0 +1,16 @@
+name: ChatPlus
+slug: chatplus
+category: live-chat
+website: https://chatplus.jp
+detect:
+  js:
+    ChatplusAction.addAgentTag:
+      - pattern: ''
+    ChatplusAppScript.getLead:
+      - pattern: ''
+    ChatplusScript.focusPrompt:
+      - pattern: ''
+    jpChatplusOnComplete:
+      - pattern: ''
+    jp_chatplus_app_accessTime:
+      - pattern: ''

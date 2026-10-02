@@ -1,0 +1,10 @@
+name: Botmind
+slug: botmind
+category: live-chat
+website: https://www.botmind.io
+detect:
+  scripts:
+    - pattern: '\.botmind\.io/'
+  js:
+    botmindWidget:
+      - pattern: ''

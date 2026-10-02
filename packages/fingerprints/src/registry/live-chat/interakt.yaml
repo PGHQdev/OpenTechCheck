@@ -1,0 +1,7 @@
+name: Interakt
+slug: interakt
+category: live-chat
+website: https://www.interakt.shop
+detect:
+  scripts:
+    - pattern: 'app\.interakt\.ai/'

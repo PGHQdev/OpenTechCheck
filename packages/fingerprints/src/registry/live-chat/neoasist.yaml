@@ -1,0 +1,10 @@
+name: NeoAsist
+slug: neoasist
+category: live-chat
+website: https://neoassist.com
+detect:
+  scripts:
+    - pattern: '\.neoassist\.com'
+  js:
+    NeoAssistTag:
+      - pattern: ''

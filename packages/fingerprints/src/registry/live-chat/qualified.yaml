@@ -1,0 +1,12 @@
+name: Qualified
+slug: qualified
+category: live-chat
+website: https://www.qualified.com
+detect:
+  scripts:
+    - pattern: '\.qualified\.com/'
+  js:
+    QualifiedObject:
+      - pattern: '^qualified$'
+    qualified:
+      - pattern: ''

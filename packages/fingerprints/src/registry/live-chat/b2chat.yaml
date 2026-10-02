@@ -1,0 +1,10 @@
+name: B2Chat
+slug: b2chat
+category: live-chat
+website: https://www.b2chat.io
+detect:
+  scripts:
+    - pattern: 'app\.b2chat\.io'
+  js:
+    b2chat_livechat_setup:
+      - pattern: ''

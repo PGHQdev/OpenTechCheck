@@ -1,0 +1,13 @@
+name: Kapture CRM
+slug: kapture-crm
+category: live-chat
+website: https://www.kapturecrm.com
+detect:
+  scripts:
+    - pattern: '\.kapturecrm\.com/.+\?ver=([\d\.]+)'
+      version: 1
+  js:
+    Kapchat:
+      - pattern: ''
+    kap_chat_js:
+      - pattern: ''

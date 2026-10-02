@@ -1,0 +1,12 @@
+name: AINIRO
+slug: ainiro
+category: live-chat
+website: https://ainiro.io
+detect:
+  scripts:
+    - pattern: '\.ainiro\.io'
+  js:
+    ainiro.init:
+      - pattern: ''
+    ainiro_faq_question:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Smallchat
+slug: smallchat
+category: live-chat
+website: https://small.chat
+detect:
+  js:
+    Smallchat:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Joinchat
+slug: joinchat
+category: live-chat
+website: https://join.chat
+detect:
+  scripts:
+    - pattern: '/js/joinchat\.min\.js'
+  js:
+    joinchat_obj:
+      - pattern: ''

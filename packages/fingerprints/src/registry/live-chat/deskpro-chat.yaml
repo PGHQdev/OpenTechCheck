@@ -1,0 +1,8 @@
+name: DeskPro Chat
+slug: deskpro-chat
+category: live-chat
+website: https://www.deskpro.com/product/chat
+detect:
+  js:
+    DESKPRO_WIDGET_OPTIONS.chat:
+      - pattern: ''

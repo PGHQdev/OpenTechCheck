@@ -1,0 +1,10 @@
+name: Mava
+slug: mava
+category: live-chat
+website: https://www.mava.app
+detect:
+  js:
+    Mava.identify:
+      - pattern: ''
+    MavaWebChatToggle:
+      - pattern: ''

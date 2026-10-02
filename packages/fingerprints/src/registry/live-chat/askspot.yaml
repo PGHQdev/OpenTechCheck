@@ -1,0 +1,13 @@
+name: AskSpot
+slug: askspot
+category: live-chat
+website: https://askspot.ai
+detect:
+  html:
+    - pattern: 'askspot-livechat'
+    - pattern: 'chat\.askspot\.io/api/v1/(integration|chat-widget)'
+  scripts:
+    - pattern: 'chat\.askspot\.io'
+  js:
+    askspot.Chatbot:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: JivoChat
+slug: jivochat
+category: live-chat
+website: https://www.jivosite.com
+detect:
+  scripts:
+    - pattern: '\.jivosite\.com'
+  js:
+    jivo_api:
+      - pattern: ''
+    jivo_version:
+      - pattern: '([\d.]+)'
+        version: 1

@@ -1,0 +1,10 @@
+name: Ruby Chat
+slug: ruby-chat
+category: live-chat
+website: https://www.ruby.com/solutions/live-chat
+detect:
+  scripts:
+    - pattern: 'chatwidget\.ruby\.com/'
+  js:
+    rubyChatLoading:
+      - pattern: ''

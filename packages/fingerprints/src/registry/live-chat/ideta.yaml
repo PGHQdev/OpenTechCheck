@@ -1,0 +1,10 @@
+name: Ideta
+slug: ideta
+category: live-chat
+website: https://www.ideta.io
+detect:
+  scripts:
+    - pattern: 'ideta-prod\.appspot\.com'
+  js:
+    webpackChunkideta_platoon:
+      - pattern: ''

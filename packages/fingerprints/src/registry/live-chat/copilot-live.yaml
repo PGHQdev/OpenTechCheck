@@ -1,0 +1,7 @@
+name: Copilot.Live
+slug: copilot-live
+category: live-chat
+website: https://www.copilot.live
+detect:
+  scripts:
+    - pattern: 'script\.copilot\.live'

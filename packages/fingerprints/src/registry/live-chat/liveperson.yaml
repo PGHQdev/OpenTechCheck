@@ -1,0 +1,10 @@
+name: LivePerson
+slug: liveperson
+category: live-chat
+website: https://www.liveperson.com
+detect:
+  scripts:
+    - pattern: '\.(?:liveperson|contactatonce)?\.(?:com|net|co\.uk)/'
+  js:
+    lpTag.Chronos:
+      - pattern: ''

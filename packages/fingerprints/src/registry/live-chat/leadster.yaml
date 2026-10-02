@@ -1,0 +1,12 @@
+name: Leadster
+slug: leadster
+category: live-chat
+website: https://leadster.com.br
+detect:
+  js:
+    neurolead.convoScript:
+      - pattern: ''
+    neurolead.elChatbot:
+      - pattern: ''
+    neuroleadLanguage:
+      - pattern: ''

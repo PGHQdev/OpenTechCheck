@@ -1,0 +1,15 @@
+name: Gravity
+slug: gravity
+category: live-chat
+website: https://gravi.org
+detect:
+  scripts:
+    - pattern: '\.gravi\.org/'
+  js:
+    gravi_api.chatMode:
+      - pattern: ''
+    gravi_init:
+      - pattern: ''
+    gravi_version:
+      - pattern: '^([\d\.]+[a-z]?)$'
+        version: 1

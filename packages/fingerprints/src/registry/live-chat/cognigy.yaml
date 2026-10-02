@@ -1,0 +1,12 @@
+name: Cognigy
+slug: cognigy
+category: live-chat
+website: https://www.cognigy.com
+detect:
+  js:
+    __COGNIGY_WEBCHAT:
+      - pattern: ''
+    cognigyWebchatInputPlugins:
+      - pattern: ''
+    cognigyWebchatMessagePlugins:
+      - pattern: ''

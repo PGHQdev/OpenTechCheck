@@ -1,0 +1,7 @@
+name: Mainstay
+slug: mainstay
+category: live-chat
+website: https://mainstay.com
+detect:
+  scripts:
+    - pattern: 'webbot\.mainstay\.com/'

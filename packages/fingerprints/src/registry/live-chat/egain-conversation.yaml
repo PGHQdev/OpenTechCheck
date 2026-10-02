@@ -1,0 +1,10 @@
+name: eGain Conversation
+slug: egain-conversation
+category: live-chat
+website: https://www.egain.com
+detect:
+  scripts:
+    - pattern: '\.analytics-egain\.com/'
+  js:
+    egainDockChat:
+      - pattern: ''

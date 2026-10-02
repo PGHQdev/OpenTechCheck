@@ -1,0 +1,15 @@
+name: Apple Business Chat
+slug: apple-business-chat
+category: live-chat
+website: https://developer.apple.com/documentation/businesschat
+detect:
+  scripts:
+    - pattern: '/apple_business_chat_commerce/.+/apple_message_button_v([\d\.]+)\.js'
+      version: 1
+  js:
+    appleBusinessChat.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+  dom:
+    a[href*='bcrw.apple.com/business/api']:
+      - pattern: ''

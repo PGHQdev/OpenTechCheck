@@ -1,0 +1,10 @@
+name: Klara
+slug: klara
+category: live-chat
+website: https://www.klara.com
+detect:
+  scripts:
+    - pattern: '\.klara\.com/'
+  js:
+    klaraWidget:
+      - pattern: ''

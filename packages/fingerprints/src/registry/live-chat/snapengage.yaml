@@ -1,0 +1,14 @@
+name: SnapEngage
+slug: snapengage
+category: live-chat
+website: https://snapengage.com/
+detect:
+  html:
+    - pattern: '<!-- begin SnapEngage'
+  js:
+    SnapEngage:
+      - pattern: ''
+    SnapEngageChat:
+      - pattern: ''
+    snapengage_mobile:
+      - pattern: ''

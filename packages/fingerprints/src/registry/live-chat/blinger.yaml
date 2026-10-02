@@ -1,0 +1,12 @@
+name: Blinger
+slug: blinger
+category: live-chat
+website: https://blinger.io
+detect:
+  scripts:
+    - pattern: 'app\.blinger\.io/'
+  js:
+    Blinger:
+      - pattern: ''
+    blingerInit:
+      - pattern: ''

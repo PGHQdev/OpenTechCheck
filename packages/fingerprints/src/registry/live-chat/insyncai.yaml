@@ -1,0 +1,8 @@
+name: InSyncai
+slug: insyncai
+category: live-chat
+website: https://www.insyncai.com
+detect:
+  dom:
+    iframe[src*='insync_iframe_webchat_js_prod'], iframe#insync-iframe:
+      - pattern: ''

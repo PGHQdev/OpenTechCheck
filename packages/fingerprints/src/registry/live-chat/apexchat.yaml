@@ -1,0 +1,10 @@
+name: ApexChat
+slug: apexchat
+category: live-chat
+website: https://www.apexchat.com
+detect:
+  js:
+    ApexChat:
+      - pattern: ''
+    apexchat_dompopup_chatwindow_client:
+      - pattern: ''

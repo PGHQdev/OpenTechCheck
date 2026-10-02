@@ -1,0 +1,8 @@
+name: Channel.io
+slug: channel-io
+category: live-chat
+website: https://channel.io
+detect:
+  js:
+    ChannelIO:
+      - pattern: ''

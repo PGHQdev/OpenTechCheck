@@ -1,0 +1,12 @@
+name: HelpCrunch
+slug: helpcrunch
+category: live-chat
+website: https://helpcrunch.com
+detect:
+  scripts:
+    - pattern: '\.helpcrunch\.com/'
+  js:
+    HelpCrunch:
+      - pattern: ''
+    helpcrunchDebug:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: ChatBot
+slug: chatbot
+category: live-chat
+website: https://www.chatbot.com
+detect:
+  scripts:
+    - pattern: 'cdn\.chatbot\.com/'

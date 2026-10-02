@@ -1,0 +1,10 @@
+name: Qpien
+slug: qpien
+category: live-chat
+website: https://qpien.com
+detect:
+  js:
+    QpienWidget:
+      - pattern: ''
+    qpienIframeAction:
+      - pattern: ''

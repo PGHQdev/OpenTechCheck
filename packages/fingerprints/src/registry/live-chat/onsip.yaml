@@ -1,0 +1,10 @@
+name: OnSip
+slug: onsip
+category: live-chat
+website: https://www.onsip.com
+detect:
+  scripts:
+    - pattern: 'js\.onsip\.com'
+  js:
+    Onsip:
+      - pattern: ''

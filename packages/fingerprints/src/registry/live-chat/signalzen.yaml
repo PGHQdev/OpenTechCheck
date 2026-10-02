@@ -1,0 +1,7 @@
+name: SignalZen
+slug: signalzen
+category: live-chat
+website: https://www.signalzen.com
+detect:
+  scripts:
+    - pattern: 'cdn\.signalzen\.com'

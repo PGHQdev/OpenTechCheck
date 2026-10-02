@@ -1,0 +1,10 @@
+name: Gleen
+slug: gleen
+category: live-chat
+website: https://gleen.ai
+detect:
+  scripts:
+    - pattern: 'app\.gleen\.ai/'
+  js:
+    gleenWidget:
+      - pattern: ''

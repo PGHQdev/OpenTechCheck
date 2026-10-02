@@ -1,0 +1,10 @@
+name: Ikeono
+slug: ikeono
+category: live-chat
+website: https://www.ikeono.com
+detect:
+  scripts:
+    - pattern: 'widget\.ikeono\.com'
+  js:
+    ikeono:
+      - pattern: ''

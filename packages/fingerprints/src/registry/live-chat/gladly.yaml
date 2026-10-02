@@ -1,0 +1,10 @@
+name: Gladly
+slug: gladly
+category: live-chat
+website: https://www.gladly.com
+detect:
+  scripts:
+    - pattern: 'cdn\.gladly\.com'
+  js:
+    Gladly:
+      - pattern: ''

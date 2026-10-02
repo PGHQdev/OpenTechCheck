@@ -1,0 +1,8 @@
+name: Gleap
+slug: gleap
+category: live-chat
+website: https://www.gleap.io
+detect:
+  js:
+    Gleap:
+      - pattern: ''

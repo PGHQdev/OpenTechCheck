@@ -1,0 +1,7 @@
+name: QuickCEP
+slug: quickcep
+category: live-chat
+website: https://www.quickcep.com
+detect:
+  scripts:
+    - pattern: '\.quickcep\.com/'

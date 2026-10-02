@@ -1,0 +1,8 @@
+name: Glassix
+slug: glassix
+category: live-chat
+website: https://glassix.co.il
+detect:
+  js:
+    GlassixWidgetClient:
+      - pattern: ''

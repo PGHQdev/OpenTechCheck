@@ -1,0 +1,7 @@
+name: Provide Support
+slug: provide-support
+category: live-chat
+website: https://www.providesupport.com
+detect:
+  scripts:
+    - pattern: '\.providesupport\.com'

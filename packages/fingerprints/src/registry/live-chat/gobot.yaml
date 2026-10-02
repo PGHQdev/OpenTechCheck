@@ -1,0 +1,13 @@
+name: Gobot
+slug: gobot
+category: live-chat
+website: https://www.getgobot.com
+detect:
+  scripts:
+    - pattern: '\.getgobot\.com/'
+  cookies:
+    _gobot:
+      - pattern: ''
+  js:
+    gobot:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: ChatWith.io
+slug: chatwith-io
+category: live-chat
+website: https://chatwith.io
+detect:
+  scripts:
+    - pattern: 'widget\.tochat\.be/'
+  dom:
+    a[href*='//chatwith.io/'][target='_self']:
+      - pattern: ''

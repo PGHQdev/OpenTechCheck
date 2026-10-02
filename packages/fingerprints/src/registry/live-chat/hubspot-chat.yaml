@@ -1,0 +1,10 @@
+name: HubSpot Chat
+slug: hubspot-chat
+category: live-chat
+website: https://www.hubspot.com/products/crm/live-chat
+detect:
+  scripts:
+    - pattern: 'js\.usemessages\.com'
+  js:
+    HubSpotConversations:
+      - pattern: ''

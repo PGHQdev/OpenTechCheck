@@ -1,0 +1,10 @@
+name: Huggy
+slug: huggy
+category: live-chat
+website: https://www.huggy.io
+detect:
+  scripts:
+    - pattern: '\.huggy\.io/'
+  js:
+    Huggy.closeBox:
+      - pattern: ''

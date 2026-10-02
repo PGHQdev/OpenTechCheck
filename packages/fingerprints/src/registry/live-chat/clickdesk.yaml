@@ -1,0 +1,12 @@
+name: ClickDesk
+slug: clickdesk
+category: live-chat
+website: https://www.clickdesk.com
+detect:
+  js:
+    CLICKDESK_CHAT_WINDOW_UI:
+      - pattern: ''
+    CLICKDESK_LIVECHAT:
+      - pattern: ''
+    CLICKDESK_Live_Chat:
+      - pattern: ''

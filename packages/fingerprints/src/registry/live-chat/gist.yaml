@@ -1,0 +1,11 @@
+name: Gist
+slug: gist
+category: live-chat
+website: https://getgist.com/live-chat
+detect:
+  scripts:
+    - pattern: '\.getgist\.com'
+  js:
+    gist.options.versionNumber:
+      - pattern: '^(.+)$'
+        version: 1

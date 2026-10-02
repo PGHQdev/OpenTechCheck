@@ -1,0 +1,10 @@
+name: Aivo
+slug: aivo
+category: live-chat
+website: https://www.aivo.co
+detect:
+  js:
+    $aivo:
+      - pattern: ''
+    aivoStorage:
+      - pattern: ''

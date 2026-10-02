@@ -1,0 +1,10 @@
+name: Infoset
+slug: infoset
+category: live-chat
+website: https://infoset.app
+detect:
+  js:
+    InfosetChat:
+      - pattern: ''
+    InfosetRoot:
+      - pattern: ''

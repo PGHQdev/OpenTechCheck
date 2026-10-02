@@ -1,0 +1,12 @@
+name: Froged
+slug: froged
+category: live-chat
+website: https://froged.com
+detect:
+  scripts:
+    - pattern: 'sdk\.froged\.com'
+  js:
+    Froged:
+      - pattern: ''
+    frogedAutoClick:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: ArrowChat
+slug: arrowchat
+category: live-chat
+website: https://www.arrowchat.com
+detect:
+  scripts:
+    - pattern: '/arrowchat/.*/jquery\.js'

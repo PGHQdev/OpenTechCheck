@@ -1,0 +1,12 @@
+name: Hoory
+slug: hoory
+category: live-chat
+website: https://www.hoory.com
+detect:
+  js:
+    $hoory:
+      - pattern: ''
+    hoorySDK.reRun:
+      - pattern: ''
+    hoorySettings:
+      - pattern: ''

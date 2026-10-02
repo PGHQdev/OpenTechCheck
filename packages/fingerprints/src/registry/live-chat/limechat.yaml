@@ -1,0 +1,7 @@
+name: LimeChat
+slug: limechat
+category: live-chat
+website: https://www.limechat.ai
+detect:
+  scripts:
+    - pattern: '\.limechat\.ai/'

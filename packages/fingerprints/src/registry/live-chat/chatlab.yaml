@@ -1,0 +1,7 @@
+name: ChatLab
+slug: chatlab
+category: live-chat
+website: https://www.chatlab.com
+detect:
+  scripts:
+    - pattern: 'script\.chatlab\.com'

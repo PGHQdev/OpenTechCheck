@@ -1,0 +1,11 @@
+name: Forethought AI
+slug: forethought-ai
+category: live-chat
+website: https://forethought.ai
+detect:
+  js:
+    Forethought:
+      - pattern: ''
+  dom:
+    iframe#forethought-chat:
+      - pattern: ''

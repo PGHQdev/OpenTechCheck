@@ -1,0 +1,12 @@
+name: Envolve Tech
+slug: envolve-tech
+category: live-chat
+website: https://envolvetech.com
+detect:
+  scripts:
+    - pattern: '\.envolvetech\.com'
+  js:
+    envolveChatInitialized:
+      - pattern: ''
+    envolveJsonp:
+      - pattern: ''

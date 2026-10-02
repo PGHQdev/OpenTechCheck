@@ -1,0 +1,8 @@
+name: Screets
+slug: screets
+category: live-chat
+website: https://screets.com
+detect:
+  js:
+    screetsxi.appid:
+      - pattern: ''

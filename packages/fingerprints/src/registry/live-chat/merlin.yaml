@@ -1,0 +1,10 @@
+name: Merlin
+slug: merlin
+category: live-chat
+website: https://gomerlin.com.br
+detect:
+  scripts:
+    - pattern: 'scripts\.gomerlin\.com\.br'
+  js:
+    Merlin.Chat:
+      - pattern: ''

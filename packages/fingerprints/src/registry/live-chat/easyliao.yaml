@@ -1,0 +1,12 @@
+name: EasyLiao
+slug: easyliao
+category: live-chat
+website: https://easyliao.com
+detect:
+  scripts:
+    - pattern: '\.easyliao\.com'
+  js:
+    easyliaoIsPC:
+      - pattern: ''
+    easyliao_design_init:
+      - pattern: ''

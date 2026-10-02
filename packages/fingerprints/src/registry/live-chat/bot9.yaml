@@ -1,0 +1,12 @@
+name: Bot9
+slug: bot9
+category: live-chat
+website: https://bot9.ai
+detect:
+  js:
+    BOT9_DATA.bot9Id:
+      - pattern: ''
+    Bot9ChatbotInstance:
+      - pattern: ''
+    bot9CopyCodeToClipboard:
+      - pattern: ''

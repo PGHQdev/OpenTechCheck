@@ -1,0 +1,10 @@
+name: Joonbot
+slug: joonbot
+category: live-chat
+website: https://joonbot.com
+detect:
+  js:
+    JOONBOT_WIDGET_ID:
+      - pattern: ''
+    joonbot.hide:
+      - pattern: ''

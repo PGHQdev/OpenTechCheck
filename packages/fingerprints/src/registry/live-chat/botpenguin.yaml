@@ -1,0 +1,12 @@
+name: BotPenguin
+slug: botpenguin
+category: live-chat
+website: https://botpenguin.com
+detect:
+  scripts:
+    - pattern: 'cdn\.botpenguin\.com/'
+  js:
+    BotPenguin:
+      - pattern: ''
+    BotPenguinWindow:
+      - pattern: ''

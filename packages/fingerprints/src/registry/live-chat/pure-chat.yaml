@@ -1,0 +1,12 @@
+name: Pure Chat
+slug: pure-chat
+category: live-chat
+website: https://www.purechat.com
+detect:
+  scripts:
+    - pattern: 'app\.purechat\.com'
+  js:
+    PCWidget:
+      - pattern: ''
+    purechatApi:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Chatra
+slug: chatra
+category: live-chat
+website: https://chatra.com
+detect:
+  scripts:
+    - pattern: 'call\.chatra\.io/chatra\.js'
+  js:
+    ChatraID:
+      - pattern: ''
+    ChatraSetup:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: Coax
+slug: coax
+category: live-chat
+website: https://coax.com.au
+detect:
+  scripts:
+    - pattern: 'app\.coax\.com\.au'
+  js:
+    coaxAppStorage:
+      - pattern: ''
+    coaxCurrentWebDomain:
+      - pattern: ''
+    openCoaxWidget:
+      - pattern: ''

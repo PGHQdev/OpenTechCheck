@@ -1,0 +1,11 @@
+name: Brevo
+slug: brevo
+category: live-chat
+website: https://www.brevo.com
+detect:
+  js:
+    BrevoConversations:
+      - pattern: ''
+  dom:
+    iframe[src*='meet.brevo.com']:
+      - pattern: ''

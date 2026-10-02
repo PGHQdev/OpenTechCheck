@@ -1,0 +1,10 @@
+name: Cliengo
+slug: cliengo
+category: live-chat
+website: https://www.cliengo.com
+detect:
+  scripts:
+    - pattern: 's\.cliengo\.com/'
+  js:
+    Cliengo.chatConfig:
+      - pattern: ''

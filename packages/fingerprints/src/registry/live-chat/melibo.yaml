@@ -1,0 +1,10 @@
+name: Melibo
+slug: melibo
+category: live-chat
+website: https://www.melibo.de
+detect:
+  scripts:
+    - pattern: '\.melibo\.de/'
+  js:
+    melibo.openWidget:
+      - pattern: ''

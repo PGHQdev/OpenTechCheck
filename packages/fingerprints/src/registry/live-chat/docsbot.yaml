@@ -1,0 +1,12 @@
+name: DocsBot
+slug: docsbot
+category: live-chat
+website: https://docsbot.ai
+detect:
+  html:
+    - pattern: 'widget\.docsbot\.ai/chat\.js'
+  scripts:
+    - pattern: 'widget\.docsbot\.ai'
+  js:
+    DocsBotAI.el:
+      - pattern: ''

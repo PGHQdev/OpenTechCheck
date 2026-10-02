@@ -1,0 +1,12 @@
+name: Raychat
+slug: raychat
+category: live-chat
+website: https://raychat.io
+detect:
+  scripts:
+    - pattern: 'app\.raychat\.io/scripts/js'
+    - pattern: 'widget-react\.raychat\.io/install/widget\.js'
+    - pattern: 'raychat\.io/install/widget\.js'
+  js:
+    Raychat:
+      - pattern: ''

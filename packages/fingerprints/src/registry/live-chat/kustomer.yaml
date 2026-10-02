@@ -1,0 +1,10 @@
+name: Kustomer
+slug: kustomer
+category: live-chat
+website: https://www.kustomer.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.kustomerapp\.com'
+  js:
+    Kustomer:
+      - pattern: ''

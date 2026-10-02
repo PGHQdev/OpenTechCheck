@@ -1,0 +1,10 @@
+name: Botsify
+slug: botsify
+category: live-chat
+website: https://botsify.com
+detect:
+  js:
+    botsify.load:
+      - pattern: ''
+    setbotsifyIcon:
+      - pattern: ''

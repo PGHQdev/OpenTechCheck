@@ -1,0 +1,12 @@
+name: BotStar
+slug: botstar
+category: live-chat
+website: https://botstar.com
+detect:
+  js:
+    BotStar.appId:
+      - pattern: ''
+    BotStarApi:
+      - pattern: ''
+    BotStarUp:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Genesys Chat
+slug: genesys-chat
+category: live-chat
+website: https://www.genesys.com/capabilities/live-chat-software
+detect:
+  html:
+    - pattern: 'id="genesys-chat-container"'
+    - pattern: 'app-genesys-'
+    - pattern: 'iframe-postchat-genesys'
+    - pattern: 'genesys-container'
+  scripts:
+    - pattern: '\.boldchat\.com/'

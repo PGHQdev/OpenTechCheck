@@ -1,0 +1,13 @@
+name: Smartsupp
+slug: smartsupp
+category: live-chat
+website: https://www.smartsupp.com
+detect:
+  scripts:
+    - pattern: '\.smartsuppchat\.com'
+  js:
+    $smartsupp.options.widgetVersion:
+      - pattern: '([\d.]+)'
+        version: 1
+    smartsupp:
+      - pattern: ''

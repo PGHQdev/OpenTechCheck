@@ -1,0 +1,8 @@
+name: Pipedrive
+slug: pipedrive
+category: live-chat
+website: https://www.pipedrive.com/
+detect:
+  js:
+    LeadBooster:
+      - pattern: ''

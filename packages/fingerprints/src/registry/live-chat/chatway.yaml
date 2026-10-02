@@ -1,0 +1,10 @@
+name: Chatway
+slug: chatway
+category: live-chat
+website: https://chatway.app
+detect:
+  scripts:
+    - pattern: 'cdn\.chatway\.app/'
+  js:
+    $chatway:
+      - pattern: ''

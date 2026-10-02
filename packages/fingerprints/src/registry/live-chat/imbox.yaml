@@ -1,0 +1,16 @@
+name: ImBox
+slug: imbox
+category: live-chat
+website: https://imbox.se
+detect:
+  js:
+    __IMBOX_GLOBAL__:
+      - pattern: ''
+    __IMBOX_INITIALIZED__:
+      - pattern: ''
+    _imbox:
+      - pattern: ''
+    imboxBuilt:
+      - pattern: ''
+    imboxManager:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: ChatNode
+slug: chatnode
+category: live-chat
+website: https://www.chatnode.ai
+detect:
+  scripts:
+    - pattern: 'embed\.chatnode\.ai/'

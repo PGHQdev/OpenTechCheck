@@ -1,0 +1,12 @@
+name: Collect.chat
+slug: collect-chat
+category: live-chat
+website: https://collect.chat
+detect:
+  scripts:
+    - pattern: 'collectorcdn\.com/launcher\.js'
+  js:
+    CollectAlwaysOpen:
+      - pattern: ''
+    CollectChatLauncher:
+      - pattern: ''

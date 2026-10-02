@@ -1,0 +1,14 @@
+name: Alive5
+slug: alive5
+category: live-chat
+website: https://www.alive5.com
+detect:
+  html:
+    - pattern: 'id="a5widget"'
+    - pattern: 'data-widget_code_id'
+  scripts:
+    - pattern: '\.websitealive\.com/'
+    - pattern: 'alive5\.com/js/'
+  js:
+    alive5_environment:
+      - pattern: ''

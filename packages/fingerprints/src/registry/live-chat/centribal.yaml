@@ -1,0 +1,10 @@
+name: Centribal
+slug: centribal
+category: live-chat
+website: https://centribal.com
+detect:
+  scripts:
+    - pattern: '\.centribal\.com/'
+  js:
+    centribot_services:
+      - pattern: ''

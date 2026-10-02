@@ -1,0 +1,12 @@
+name: Callbell
+slug: callbell
+category: live-chat
+website: https://www.callbell.eu
+detect:
+  scripts:
+    - pattern: '\.callbell\.eu/'
+  js:
+    Callbell:
+      - pattern: ''
+    callbellSettings:
+      - pattern: ''

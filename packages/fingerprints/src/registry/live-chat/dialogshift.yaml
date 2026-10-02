@@ -1,0 +1,10 @@
+name: DialogShift
+slug: dialogshift
+category: live-chat
+website: https://www.dialogshift.com
+detect:
+  scripts:
+    - pattern: 'assets\.dialogshift\.com'
+  js:
+    Dialogshift.instance:
+      - pattern: ''

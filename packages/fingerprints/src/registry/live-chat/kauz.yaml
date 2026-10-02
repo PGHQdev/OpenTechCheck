@@ -1,0 +1,7 @@
+name: Kauz
+slug: kauz
+category: live-chat
+website: https://kauz.ai
+detect:
+  scripts:
+    - pattern: '\.kauz\.ai'

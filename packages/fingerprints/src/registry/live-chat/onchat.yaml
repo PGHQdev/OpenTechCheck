@@ -1,0 +1,12 @@
+name: OnChat
+slug: onchat
+category: live-chat
+website: https://onchat.ai
+detect:
+  scripts:
+    - pattern: 'onchat\.ai/onchat\.js'
+  js:
+    extractOnchatClickFromHref:
+      - pattern: ''
+    getOnchatClickFromURL:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Callgear
+slug: callgear
+category: live-chat
+website: https://callgear.com
+detect:
+  scripts:
+    - pattern: 'app\.callgear\.com'
+  js:
+    CallGear.Captcha:
+      - pattern: ''

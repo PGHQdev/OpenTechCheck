@@ -1,0 +1,10 @@
+name: Qualva
+slug: qualva
+category: live-chat
+website: https://qualva.com
+detect:
+  scripts:
+    - pattern: 'form\.qualva\.com'
+  js:
+    qualva.Widget:
+      - pattern: ''

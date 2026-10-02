@@ -1,0 +1,12 @@
+name: botBrains
+slug: botbrains
+category: live-chat
+website: https://www.botbrains.io
+detect:
+  scripts:
+    - pattern: 'chat\.botbrains\.io'
+  js:
+    $botbrains:
+      - pattern: ''
+    botbrainsCleanup:
+      - pattern: ''

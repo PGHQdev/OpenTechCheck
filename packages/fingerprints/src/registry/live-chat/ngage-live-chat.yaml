@@ -1,0 +1,12 @@
+name: Ngage Live Chat
+slug: ngage-live-chat
+category: live-chat
+website: https://www.ngagelive.com
+detect:
+  scripts:
+    - pattern: 'messenger\.ngageics\.com'
+  js:
+    NgageKillScript:
+      - pattern: ''
+    StartNgageChat:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Posh
+slug: posh
+category: live-chat
+website: https://www.posh.ai
+detect:
+  scripts:
+    - pattern: 'js\.poshdevelopment\.com'
+  js:
+    posh.close:
+      - pattern: ''
+    poshie.close:
+      - pattern: ''

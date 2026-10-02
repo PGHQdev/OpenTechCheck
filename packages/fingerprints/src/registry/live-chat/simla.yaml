@@ -1,0 +1,7 @@
+name: Simla
+slug: simla
+category: live-chat
+website: https://www.simla.com
+detect:
+  scripts:
+    - pattern: '\.retailcrm\.tech/'

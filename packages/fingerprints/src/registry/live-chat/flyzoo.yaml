@@ -1,0 +1,10 @@
+name: Flyzoo
+slug: flyzoo
+category: live-chat
+website: https://flyzoo.co
+detect:
+  scripts:
+    - pattern: '\.flyzoo\.co/'
+  js:
+    Flyzoo.AT:
+      - pattern: ''

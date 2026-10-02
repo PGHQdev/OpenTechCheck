@@ -1,0 +1,13 @@
+name: Intaker
+slug: intaker
+category: live-chat
+website: https://intaker.com
+detect:
+  js:
+    Intaker:
+      - pattern: ''
+  dom:
+    link[href*='chat-api.intaker.com/api/']:
+      - attr: href
+        pattern: 'api/v([\d]+)'
+        version: 1

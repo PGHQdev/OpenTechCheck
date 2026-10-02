@@ -1,0 +1,8 @@
+name: LiveHelp
+slug: livehelp
+category: live-chat
+website: https://www.livehelp.it
+detect:
+  js:
+    LHready:
+      - pattern: ''

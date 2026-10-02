@@ -1,0 +1,12 @@
+name: Botpress
+slug: botpress
+category: live-chat
+website: https://botpress.com
+detect:
+  html:
+    - pattern: 'cdn\.botpress\.cloud/webchat/'
+  scripts:
+    - pattern: 'cdn\.botpress\.cloud/webchat/'
+  js:
+    botpressWebChat.init:
+      - pattern: ''

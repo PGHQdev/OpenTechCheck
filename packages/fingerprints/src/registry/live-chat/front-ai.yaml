@@ -1,0 +1,10 @@
+name: Front AI
+slug: front-ai
+category: live-chat
+website: https://front.ai
+detect:
+  scripts:
+    - pattern: '\.front\.ai/'
+  js:
+    FrontCFcreateCookie:
+      - pattern: ''

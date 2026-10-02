@@ -1,0 +1,8 @@
+name: Moveo.AI
+slug: moveo-ai
+category: live-chat
+website: https://moveo.ai
+detect:
+  js:
+    MoveoAI:
+      - pattern: ''

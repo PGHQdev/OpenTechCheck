@@ -1,0 +1,11 @@
+name: Re:amaze
+slug: re-amaze
+category: live-chat
+website: https://www.reamaze.com
+detect:
+  scripts:
+    - pattern: '\.reamaze\.com/'
+  js:
+    reamaze.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1

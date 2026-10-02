@@ -1,0 +1,10 @@
+name: iAdvize
+slug: iadvize
+category: live-chat
+website: https://www.iadvize.com
+detect:
+  scripts:
+    - pattern: '\.iadvize\.com/'
+  dom:
+    link[href*='.iadvize.com']:
+      - pattern: ''

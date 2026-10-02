@@ -1,0 +1,8 @@
+name: Giosg
+slug: giosg
+category: live-chat
+website: https://www.giosg.com
+detect:
+  js:
+    giosgWebpackJsonp:
+      - pattern: ''

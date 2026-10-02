@@ -1,0 +1,14 @@
+name: Chative
+slug: chative
+category: live-chat
+website: https://chative.io
+detect:
+  scripts:
+    - pattern: '\.chative\.io/'
+  js:
+    Chative.app_id:
+      - pattern: ''
+    ChativeApi:
+      - pattern: ''
+    ChativeEvents:
+      - pattern: ''

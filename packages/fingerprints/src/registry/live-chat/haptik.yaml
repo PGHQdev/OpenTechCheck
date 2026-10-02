@@ -1,0 +1,14 @@
+name: Haptik
+slug: haptik
+category: live-chat
+website: https://www.haptik.ai
+detect:
+  scripts:
+    - pattern: '\.haptikapi\.com/'
+  js:
+    HaptikSDK:
+      - pattern: ''
+    haptik:
+      - pattern: ''
+    haptikInitSettings:
+      - pattern: ''

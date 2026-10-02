@@ -1,0 +1,7 @@
+name: Jitsi
+slug: jitsi
+category: live-chat
+website: https://jitsi.org
+detect:
+  scripts:
+    - pattern: 'lib-jitsi-meet.*\.js'

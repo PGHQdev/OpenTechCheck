@@ -1,0 +1,13 @@
+name: Respond.io
+slug: respond-io
+category: live-chat
+website: https://www.respond.io
+detect:
+  js:
+    $__respond:
+      - pattern: ''
+    $respond:
+      - pattern: ''
+  dom:
+    script#respondio__growth_tool:
+      - pattern: ''

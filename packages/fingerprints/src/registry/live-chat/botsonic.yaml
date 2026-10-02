@@ -1,0 +1,14 @@
+name: Botsonic
+slug: botsonic
+category: live-chat
+website: https://botsonic.com
+detect:
+  js:
+    Botsonic:
+      - pattern: ''
+    botsonicConfig-Botsonic:
+      - pattern: ''
+    botsonic_widget:
+      - pattern: ''
+    loaded-Botsonic:
+      - pattern: ''

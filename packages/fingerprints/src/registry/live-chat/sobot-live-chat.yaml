@@ -1,0 +1,7 @@
+name: Sobot Live Chat
+slug: sobot-live-chat
+category: live-chat
+website: https://www.sobot.io
+detect:
+  scripts:
+    - pattern: '\.sobot\.com/'

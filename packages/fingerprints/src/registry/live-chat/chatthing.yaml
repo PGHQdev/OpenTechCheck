@@ -1,0 +1,10 @@
+name: ChatThing
+slug: chatthing
+category: live-chat
+website: https://chatthing.ai
+detect:
+  js:
+    chatThing.chatFrame:
+      - pattern: ''
+    chatThingConfig:
+      - pattern: ''

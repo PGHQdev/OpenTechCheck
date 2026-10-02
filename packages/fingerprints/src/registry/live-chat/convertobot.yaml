@@ -1,0 +1,10 @@
+name: ConvertoBot
+slug: convertobot
+category: live-chat
+website: https://convertobot.com
+detect:
+  scripts:
+    - pattern: 'app\.convertobot\.com/'
+  js:
+    botUrl:
+      - pattern: 'app\.convertobot\.com'

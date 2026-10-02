@@ -1,0 +1,16 @@
+name: AnyChat
+slug: anychat
+category: live-chat
+website: https://anychat.one
+detect:
+  html:
+    - pattern: 'api\.anychat\.one/widget2/load'
+    - pattern: 'href="https://api\.anychat\.one'
+    - pattern: 'href="https://w\.anychat\.one'
+  scripts:
+    - pattern: 'api\.anychat\.one'
+  js:
+    anychat.CHATBOX_FRAME:
+      - pattern: ''
+    anychatWidget:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Gitter
+slug: gitter
+category: live-chat
+website: https://gitter.im
+detect:
+  js:
+    gitter.chat:
+      - pattern: ''

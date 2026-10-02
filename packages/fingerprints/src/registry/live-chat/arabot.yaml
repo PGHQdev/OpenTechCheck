@@ -1,0 +1,12 @@
+name: Arabot
+slug: arabot
+category: live-chat
+website: https://arabot.io
+detect:
+  js:
+    arabotChatScript:
+      - pattern: ''
+    arabotSelector:
+      - pattern: ''
+    injectArabotScript:
+      - pattern: ''

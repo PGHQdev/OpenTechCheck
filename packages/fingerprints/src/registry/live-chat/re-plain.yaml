@@ -1,0 +1,10 @@
+name: Re:plain
+slug: re-plain
+category: live-chat
+website: https://replain.cc
+detect:
+  scripts:
+    - pattern: '\.replain\.cc/'
+  js:
+    replainInitialized:
+      - pattern: ''

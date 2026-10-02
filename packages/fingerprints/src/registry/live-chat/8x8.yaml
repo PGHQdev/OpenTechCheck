@@ -1,0 +1,10 @@
+name: 8x8
+slug: 8x8
+category: live-chat
+website: https://www.8x8.com
+detect:
+  js:
+    Chat8x8:
+      - pattern: ''
+    __8x8Chat:
+      - pattern: ''

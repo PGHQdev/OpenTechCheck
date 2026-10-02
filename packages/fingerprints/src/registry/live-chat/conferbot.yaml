@@ -1,0 +1,10 @@
+name: Conferbot
+slug: conferbot
+category: live-chat
+website: https://www.conferbot.com
+detect:
+  scripts:
+    - pattern: 'conferbot\.defaults.*\.min\.js'
+  js:
+    ConferbotWidget:
+      - pattern: ''
