@@ -1,0 +1,13 @@
+name: Croogo
+slug: croogo
+category: cms
+website: https://croogo.org
+within:
+  techs: [php]
+detect:
+  meta:
+    generator:
+      - pattern: '^Croogo'
+  js:
+    Croogo.basePath:
+      - pattern: ''

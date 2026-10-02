@@ -1,0 +1,9 @@
+name: DM Polopoly
+slug: dm-polopoly
+category: cms
+website: https://www.atex.com/products/dm-polopoly
+implies: [java]
+detect:
+  dom:
+    img[data-src*='/polopoly_fs/'], link[href*='/polopoly_fs/'], img[src*='/polopoly_fs/']:
+      - pattern: ''

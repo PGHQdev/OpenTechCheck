@@ -1,0 +1,8 @@
+name: immediaCMS
+slug: immediacms
+category: cms
+website: https://immediac.com/content-management-system
+detect:
+  js:
+    simpleCmsMetadata:
+      - pattern: ''

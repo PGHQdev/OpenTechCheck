@@ -1,0 +1,8 @@
+name: Croct
+slug: croct
+category: cms
+website: https://croct.com
+detect:
+  js:
+    croct.initialize:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: ButterCMS
+slug: buttercms
+category: cms
+website: https://buttercms.com
+detect:
+  dom:
+    div[data-bg*='cdn.buttercms.com/'], img[src*='cdn.buttercms.com/'], link[href*='cdn.buttercms.com'], a[href*='cdn.buttercms.com/']:
+      - pattern: ''

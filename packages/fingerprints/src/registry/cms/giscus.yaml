@@ -1,0 +1,8 @@
+name: Giscus
+slug: giscus
+category: cms
+website: https://giscus.app
+detect:
+  dom:
+    link[href*='giscus.app'], div[class^='giscus-container']:
+      - pattern: ''

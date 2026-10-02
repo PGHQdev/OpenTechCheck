@@ -1,0 +1,7 @@
+name: Hatena Blog
+slug: hatena-blog
+category: cms
+website: https://hatenablog.com
+detect:
+  scripts:
+    - pattern: 'cdn\.blog\.st-hatena\.com/'

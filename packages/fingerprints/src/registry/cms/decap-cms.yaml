@@ -1,0 +1,12 @@
+name: Decap CMS
+slug: decap-cms
+category: cms
+website: https://decapcms.org
+detect:
+  js:
+    DecapCms.getBackend:
+      - pattern: ''
+    DecapCmsApp.getBackend:
+      - pattern: ''
+    webpackChunkdecap_website:
+      - pattern: ''

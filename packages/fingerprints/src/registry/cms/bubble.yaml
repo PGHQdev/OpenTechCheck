@@ -1,0 +1,22 @@
+name: Bubble
+slug: bubble
+category: cms
+website: https://bubble.io
+implies: [nodejs]
+detect:
+  headers:
+    x-bubble-capacity-limit:
+      - pattern: ''
+    x-bubble-capacity-used:
+      - pattern: ''
+    x-bubble-perf:
+      - pattern: ''
+  js:
+    _bubble_page_load_data:
+      - pattern: ''
+    bubble_environment:
+      - pattern: ''
+    bubble_hostname_modifier:
+      - pattern: ''
+    bubble_version:
+      - pattern: ''

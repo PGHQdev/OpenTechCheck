@@ -1,0 +1,11 @@
+name: FluxBB
+slug: fluxbb
+category: cms
+website: https://fluxbb.org
+implies: [php]
+detect:
+  html:
+    - pattern: '<p id="poweredby">[^<]+<a href="https?://fluxbb\.org/">'
+  dom:
+    p#poweredby > a[href*='//fluxbb.org/']:
+      - pattern: ''

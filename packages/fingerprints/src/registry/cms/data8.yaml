@@ -1,0 +1,8 @@
+name: Data8
+slug: data8
+category: cms
+website: https://www.data-8.co.uk
+detect:
+  js:
+    data8:
+      - pattern: ''

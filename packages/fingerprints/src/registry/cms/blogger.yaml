@@ -1,0 +1,11 @@
+name: Blogger
+slug: blogger
+category: cms
+website: https://www.blogger.com
+implies: [python]
+detect:
+  url:
+    - pattern: '^https?://[^/]+\.(?:blogspot|blogger)\.com'
+  meta:
+    generator:
+      - pattern: '^Blogger$'

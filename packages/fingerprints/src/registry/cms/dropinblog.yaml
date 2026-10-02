@@ -1,0 +1,10 @@
+name: DropInBlog
+slug: dropinblog
+category: cms
+website: https://dropinblog.com
+detect:
+  scripts:
+    - pattern: '\.dropinblog\.com/'
+  dom:
+    link[href*='.dropinblog.com/']:
+      - pattern: ''

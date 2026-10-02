@@ -1,0 +1,11 @@
+name: Amplience
+slug: amplience
+category: cms
+website: https://amplience.com
+detect:
+  js:
+    amplianceTemplates:
+      - pattern: ''
+  dom:
+    link[href*='.amplience.net'], img[src*='.amplience.net']:
+      - pattern: ''

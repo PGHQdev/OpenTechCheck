@@ -1,0 +1,22 @@
+name: Gnuboard
+slug: gnuboard
+category: cms
+website: https://github.com/gnuboard
+implies: [php, mysql]
+detect:
+  js:
+    g4_bbs_img:
+      - pattern: ''
+    g4_is_admin:
+      - pattern: ''
+    g5_is_admin:
+      - pattern: ''
+    g5_js_ver:
+      - pattern: ''
+  dom:
+    a[href*='board.php']:
+      - attr: href
+        pattern: '(?:gnuboard/)?bbs/(?:gnu)?board\.php'
+    link[href*='/gnuboard/style.css']:
+      - attr: href
+        pattern: ''

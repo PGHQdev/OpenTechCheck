@@ -1,0 +1,13 @@
+name: DocFX
+slug: docfx
+category: cms
+website: https://github.com/dotnet/docfx
+detect:
+  meta:
+    docfx:navrel:
+      - pattern: 'toc.html'
+    docfx:tocrel:
+      - pattern: 'toc.html'
+    generator:
+      - pattern: 'docfx\s([\d\.]+)'
+        version: 1

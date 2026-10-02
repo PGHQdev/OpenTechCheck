@@ -1,0 +1,10 @@
+name: Halo
+slug: halo
+category: cms
+website: https://halo.run
+implies: [java]
+detect:
+  meta:
+    generator:
+      - pattern: 'Halo ([\d.]+)?'
+        version: 1

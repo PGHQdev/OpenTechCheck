@@ -1,0 +1,13 @@
+name: DESTOON
+slug: destoon
+category: cms
+website: https://destoon.com
+detect:
+  meta:
+    generator:
+      - pattern: '^DESTOON B2B - www\.destoon\.com$'
+  js:
+    destoon_cart:
+      - pattern: ''
+    destoon_chat:
+      - pattern: ''

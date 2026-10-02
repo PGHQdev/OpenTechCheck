@@ -1,0 +1,14 @@
+name: Dokeos
+slug: dokeos
+category: cms
+website: https://dokeos.com
+implies: [php, xajax, jquery]
+detect:
+  html:
+    - pattern: '(?:Portal <a[^>]+>Dokeos|@import "[^"]+dokeos_blue)'
+  headers:
+    x-powered-by:
+      - pattern: 'Dokeos'
+  meta:
+    generator:
+      - pattern: 'Dokeos'

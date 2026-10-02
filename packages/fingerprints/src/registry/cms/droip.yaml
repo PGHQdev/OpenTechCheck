@@ -1,0 +1,14 @@
+name: Droip
+slug: droip
+category: cms
+website: https://droip.com/
+within:
+  techs: [wordpress]
+detect:
+  js:
+    droipViewports:
+      - pattern: ''
+    showDroipPopup:
+      - pattern: ''
+    wp_droip:
+      - pattern: ''

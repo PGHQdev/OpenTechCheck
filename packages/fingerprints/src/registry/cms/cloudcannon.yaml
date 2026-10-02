@@ -1,0 +1,11 @@
+name: CloudCannon
+slug: cloudcannon
+category: cms
+website: https://cloudcannon.com
+detect:
+  headers:
+    cc-build-id:
+      - pattern: '\d'
+  dom:
+    "[data-cms-editor-link*='cloudcannon:'], a[href*='cloudcannon:']":
+      - pattern: ''

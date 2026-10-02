@@ -1,0 +1,8 @@
+name: Celum
+slug: celum
+category: cms
+website: https://www.celum.com
+detect:
+  dom:
+    img[src*='/celum/'], img[src*='/celum_assets/']:
+      - pattern: ''

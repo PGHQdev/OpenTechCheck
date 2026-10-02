@@ -1,0 +1,12 @@
+name: Cove
+slug: cove
+category: cms
+website: https://www.coveo.com
+detect:
+  scripts:
+    - pattern: 'cdn\.cove\.chat'
+  js:
+    coveAction:
+      - pattern: ''
+    coveCommentCount:
+      - pattern: ''

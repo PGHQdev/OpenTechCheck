@@ -1,0 +1,12 @@
+name: DataLife Engine
+slug: datalife-engine
+category: cms
+website: https://dle-news.ru
+implies: [php]
+detect:
+  meta:
+    generator:
+      - pattern: 'DataLife Engine'
+  js:
+    dle_root:
+      - pattern: ''

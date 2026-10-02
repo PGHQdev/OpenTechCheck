@@ -1,0 +1,20 @@
+name: DokuWiki
+slug: dokuwiki
+category: cms
+website: https://www.dokuwiki.org
+implies: [php]
+detect:
+  meta:
+    generator:
+      - pattern: '^DokuWiki( Release [\d-]+)?'
+        version: 1
+  cookies:
+    DokuWiki:
+      - pattern: ''
+  js:
+    DOKU_TPL:
+      - pattern: ''
+        confidence: 50
+    doku_edit_text_content:
+      - pattern: ''
+        confidence: 50

@@ -1,0 +1,12 @@
+name: Bynder
+slug: bynder
+category: cms
+website: https://www.bynder.com
+detect:
+  cookies:
+    bynder:
+      - pattern: '^[\dA-Z]+-[\dA-Z]+-[\dA-Z]+-[\dA-Z]+$'
+  js:
+    Bynder.cloudfront:
+      - pattern: '\.cloudfront\.net/frontend/([\d\.]+)/'
+        version: 1

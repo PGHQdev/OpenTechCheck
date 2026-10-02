@@ -1,0 +1,6 @@
+name: Solr
+slug: solr
+category: database
+website: https://lucene.apache.org/solr/
+implies: [lucene]
+detect: {}

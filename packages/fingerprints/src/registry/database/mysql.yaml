@@ -1,0 +1,5 @@
+name: MySQL
+slug: mysql
+category: database
+website: https://mysql.com
+detect: {}

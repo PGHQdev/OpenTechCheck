@@ -1,0 +1,11 @@
+name: Frontify
+slug: frontify
+category: cms
+website: https://www.frontify.com
+detect:
+  headers:
+    server:
+      - pattern: '^frontify$'
+  dom:
+    a[href*='.frontify.com/'], img[src*='.frontify.com/'], link[href*='.frontify.com/']:
+      - pattern: ''

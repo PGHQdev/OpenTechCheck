@@ -1,0 +1,34 @@
+name: Elementor
+slug: elementor
+category: cms
+website: https://elementor.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/elementor(?:-pro)?/.+frontend-modules\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  meta:
+    generator:
+      - pattern: '^Elementor\s([\d\.]+)'
+        version: 1
+  cookies:
+    elementor_pro_login:
+      - pattern: ''
+  js:
+    ElementorProFrontendConfig:
+      - pattern: ''
+    ElementsKit_Helper.ajaxLoading:
+      - pattern: ''
+    elementorFrontend.getElements:
+      - pattern: ''
+    elementorFrontendConfig.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+    elementorModules:
+      - pattern: ''
+    elementorProFrontend:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/elementor/']:
+      - pattern: ''

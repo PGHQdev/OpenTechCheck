@@ -1,0 +1,13 @@
+name: Circle
+slug: circle
+category: cms
+website: https://circle.so
+detect:
+  cookies:
+    '_circle_session:':
+      - pattern: ''
+        confidence: 50
+  js:
+    circleUser:
+      - pattern: ''
+        confidence: 50

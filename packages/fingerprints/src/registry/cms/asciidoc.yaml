@@ -1,0 +1,12 @@
+name: AsciiDoc
+slug: asciidoc
+category: cms
+website: https://www.methods.co.nz/asciidoc
+detect:
+  meta:
+    generator:
+      - pattern: '^AsciiDoc ([\d.]+)'
+        version: 1
+  js:
+    asciidoc:
+      - pattern: ''

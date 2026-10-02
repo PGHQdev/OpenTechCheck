@@ -1,0 +1,11 @@
+name: Docsify
+slug: docsify
+category: cms
+website: https://docsify.js.org
+detect:
+  js:
+    Docsify.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+    DocsifyCompiler:
+      - pattern: ''

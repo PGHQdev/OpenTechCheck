@@ -1,0 +1,23 @@
+name: Huddle
+slug: huddle
+category: cms
+website: https://www.thehuddle.nl
+detect:
+  html:
+    - pattern: 'cdn\.thehuddle-aws\.com'
+  scripts:
+    - pattern: 'cdn-thehuddle\.com'
+  headers:
+    report-to:
+      - pattern: 'api\.thehuddle\.nl'
+  cookies:
+    huddle_session:
+      - pattern: ''
+  js:
+    HuddleEvent:
+      - pattern: ''
+    HuddleUser:
+      - pattern: ''
+  dom:
+    link[href*='.thehuddle.nl/']:
+      - pattern: ''

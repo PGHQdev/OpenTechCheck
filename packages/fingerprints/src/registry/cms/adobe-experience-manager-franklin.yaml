@@ -1,0 +1,11 @@
+name: Adobe Experience Manager Franklin
+slug: adobe-experience-manager-franklin
+category: cms
+website: https://www.hlx.live
+excludes: [adobe-experience-manager]
+detect:
+  scripts:
+    - pattern: '^.+/scripts/lib-franklin\.js$'
+  js:
+    hlx.RUM_MANUAL_ENHANCE:
+      - pattern: ''

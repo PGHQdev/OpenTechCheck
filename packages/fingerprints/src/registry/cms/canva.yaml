@@ -1,0 +1,10 @@
+name: Canva
+slug: canva
+category: cms
+website: https://www.canva.com
+detect:
+  js:
+    canva_debounceResize:
+      - pattern: ''
+    canva_scriptExecutor:
+      - pattern: ''

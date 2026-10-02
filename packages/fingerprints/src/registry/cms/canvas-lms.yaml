@@ -1,0 +1,12 @@
+name: Canvas LMS
+slug: canvas-lms
+category: cms
+website: https://www.instructure.com/canvas
+implies: [ruby-on-rails, react]
+detect:
+  headers:
+    x-canvas-meta:
+      - pattern: 'login/canvas'
+  js:
+    webpackChunkcanvas_lms:
+      - pattern: ''

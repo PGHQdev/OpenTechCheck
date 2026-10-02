@@ -1,0 +1,13 @@
+name: Aegea
+slug: aegea
+category: cms
+website: https://blogengine.ru
+implies: [php, jquery]
+detect:
+  html:
+    - pattern: '(?:href|src)=["'']?(?:\/\/[\w.-]+)?\/aegea\/(?:i\/)?'
+    - pattern: '\/aegea\/i\/'
+  headers:
+    x-powered-by:
+      - pattern: '^(?:E2\s)?Aegea\s(?:v)?([\d\.]+)'
+        version: 1

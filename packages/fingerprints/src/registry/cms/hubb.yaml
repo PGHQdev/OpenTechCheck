@@ -1,0 +1,17 @@
+name: Hubb
+slug: hubb
+category: cms
+website: https://www.hubb.church
+detect:
+  js:
+    EndisDialog:
+      - pattern: ''
+    EndisForm:
+      - pattern: ''
+    IsHubbPage:
+      - pattern: ''
+    SubmitEndisForm:
+      - pattern: ''
+  dom:
+    div.endis-jquery-ui:
+      - pattern: ''

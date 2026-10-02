@@ -1,0 +1,11 @@
+name: DedeCMS
+slug: dedecms
+category: cms
+website: https://dedecms.com
+implies: [php]
+detect:
+  scripts:
+    - pattern: 'dedeajax'
+  js:
+    DedeContainer:
+      - pattern: ''

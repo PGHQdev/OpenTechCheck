@@ -1,0 +1,13 @@
+name: Edwiser Bridge
+slug: edwiser-bridge
+category: cms
+website: https://edwiser.org
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/edwiser-bridge(?:-sso|-pro)?/public/assets/js/.+\.js\?ver=(\d+(?:\.\d+){1,9})'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/edwiser-bridge']:
+      - pattern: ''

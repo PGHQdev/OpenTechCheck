@@ -1,0 +1,12 @@
+name: Breakdance
+slug: breakdance
+category: cms
+website: https://breakdance.com
+detect:
+  js:
+    BreakdanceFrontend:
+      - pattern: ''
+    BreakdanceHeaderBuilder:
+      - pattern: ''
+    BreakdanceSwiper:
+      - pattern: ''

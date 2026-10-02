@@ -1,0 +1,12 @@
+name: GoDaddy Website Builder
+slug: godaddy-website-builder
+category: cms
+website: https://www.godaddy.com/websites/website-builder
+detect:
+  meta:
+    generator:
+      - pattern: 'Go Daddy Website Builder (.+)'
+        version: 1
+  cookies:
+    dps_site_id:
+      - pattern: ''

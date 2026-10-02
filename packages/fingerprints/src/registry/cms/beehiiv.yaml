@@ -1,0 +1,8 @@
+name: Beehiiv
+slug: beehiiv
+category: cms
+website: https://www.beehiiv.com
+detect:
+  dom:
+    link[href*='media.beehiiv.com/']:
+      - pattern: ''

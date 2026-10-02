@@ -1,0 +1,8 @@
+name: DatoCMS
+slug: datocms
+category: cms
+website: https://www.datocms.com
+detect:
+  dom:
+    link[href*='datocms-assets.com'], img[src*='datocms-assets.com'], source[src*='datocms-assets.com'], div[style*='datocms-assets.com']:
+      - pattern: ''

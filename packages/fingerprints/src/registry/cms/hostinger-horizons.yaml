@@ -1,0 +1,11 @@
+name: Hostinger Horizons
+slug: hostinger-horizons
+category: cms
+website: https://www.hostinger.com/horizons
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Hostinger Horizons$'
+  meta:
+    generator:
+      - pattern: '^Hostinger Horizons$'

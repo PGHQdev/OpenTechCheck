@@ -1,0 +1,8 @@
+name: ApexPages
+slug: apexpages
+category: cms
+website: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_intro.htm
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Salesforce\.com ApexPages'

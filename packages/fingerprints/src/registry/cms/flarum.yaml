@@ -1,0 +1,16 @@
+name: Flarum
+slug: flarum
+category: cms
+website: https://flarum.org/
+implies: [php, mysql]
+detect:
+  html:
+    - pattern: '<div id="flarum-loading"'
+  js:
+    app.cache.discussionList:
+      - pattern: ''
+    app.forum.freshness:
+      - pattern: ''
+  dom:
+    div[id*='flarum-loading']:
+      - pattern: ''

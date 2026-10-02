@@ -1,0 +1,17 @@
+name: HelpDocs
+slug: helpdocs
+category: cms
+website: https://www.helpdocs.io
+detect:
+  scripts:
+    - pattern: 'cdn\.helpdocs\.io'
+  js:
+    HDAnalytics:
+      - pattern: ''
+        confidence: 25
+    HDUtils:
+      - pattern: ''
+        confidence: 25
+    hd_instant_search:
+      - pattern: ''
+        confidence: 50

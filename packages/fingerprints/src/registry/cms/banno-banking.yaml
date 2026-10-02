@@ -1,0 +1,10 @@
+name: Banno Banking
+slug: banno-banking
+category: cms
+website: https://banno.com/digital-banking
+detect:
+  js:
+    banno.site:
+      - pattern: ''
+    com.banno:
+      - pattern: ''

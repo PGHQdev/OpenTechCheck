@@ -1,0 +1,10 @@
+name: Contensis
+slug: contensis
+category: cms
+website: https://zengenti.com/en-gb/products/contensis
+implies: [java]
+detect:
+  meta:
+    generator:
+      - pattern: 'Contensis CMS Version ([\d.]+)'
+        version: 1

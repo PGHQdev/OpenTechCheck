@@ -1,0 +1,8 @@
+name: Adobe Dynamic Media Classic
+slug: adobe-dynamic-media-classic
+category: cms
+website: https://business.adobe.com/uk/products/experience-manager/scene7-login.html
+detect:
+  dom:
+    source[srcset*='.scene7.com/'], link[href*='.scene7.com']:
+      - pattern: ''

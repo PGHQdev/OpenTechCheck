@@ -1,0 +1,15 @@
+name: 6Valley eCommerce CMS
+slug: 6valley-ecommerce-cms
+category: cms
+website: https://6valley.app
+detect:
+  html:
+    - pattern: '6valley CMS Online Shopping'
+  meta:
+    og:site_name:
+      - pattern: '6valley CMS'
+  cookies:
+    6valley_session:
+      - pattern: ''
+    6valley_default_session:
+      - pattern: ''

@@ -1,0 +1,35 @@
+name: DNN
+slug: dnn
+category: cms
+website: https://www.dnnsoftware.com/
+implies: [aspnet]
+detect:
+  html:
+    - pattern: '<!-- by DotNetNuke Corporation'
+    - pattern: '<!-- DNN Platform'
+  scripts:
+    - pattern: '/js/dnncore\.js'
+    - pattern: '/js/dnn\.js'
+  headers:
+    cookie:
+      - pattern: 'dnn_IsMobile='
+    dnnoutputcache:
+      - pattern: ''
+    x-compressed-by:
+      - pattern: 'DotNetNuke'
+  meta:
+    generator:
+      - pattern: 'DotNetNuke'
+  cookies:
+    DotNetNukeAnonymous:
+      - pattern: ''
+  js:
+    DotNetNuke:
+      - pattern: ''
+    __dnncore:
+      - pattern: ''
+    dnn.apiversion:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+    dnnJscriptVersion:
+      - pattern: ''

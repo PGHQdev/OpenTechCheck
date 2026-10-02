@@ -1,0 +1,7 @@
+name: Crowdin
+slug: crowdin
+category: cms
+website: https://crowdin.com
+detect:
+  scripts:
+    - pattern: '\.app\.crowdin\.net'

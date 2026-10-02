@@ -1,0 +1,15 @@
+name: Ckan
+slug: ckan
+category: cms
+website: https://ckan.org/
+implies: [python, solr, java, postgresql]
+detect:
+  headers:
+    access-control-allow-headers:
+      - pattern: 'X-CKAN-API-KEY'
+    link:
+      - pattern: '<http://ckan\.org/>; rel=shortlink'
+  meta:
+    generator:
+      - pattern: '^ckan ?([0-9.]+)$'
+        version: 1

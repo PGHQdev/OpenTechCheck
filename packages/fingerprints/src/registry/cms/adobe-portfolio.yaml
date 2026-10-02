@@ -1,0 +1,8 @@
+name: Adobe Portfolio
+slug: adobe-portfolio
+category: cms
+website: https://portfolio.adobe.com
+detect:
+  meta:
+    twitter:site:
+      - pattern: '@AdobePortfolio'

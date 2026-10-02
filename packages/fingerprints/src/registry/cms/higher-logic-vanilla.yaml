@@ -1,0 +1,20 @@
+name: Higher Logic Vanilla
+slug: higher-logic-vanilla
+category: cms
+website: https://vanilla.higherlogic.com
+implies: [php]
+detect:
+  headers:
+    x-vanilla-version:
+      - pattern: '([\d\.]+)'
+        version: 1
+    x-powered-by:
+      - pattern: 'Vanilla'
+  js:
+    Vanilla:
+      - pattern: ''
+    __VANILLA_GLOBALS__:
+      - pattern: ''
+  dom:
+    body#DiscussionsPage, body#vanilla:
+      - pattern: ''

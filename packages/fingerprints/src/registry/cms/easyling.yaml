@@ -1,0 +1,7 @@
+name: Easyling
+slug: easyling
+category: cms
+website: https://www.easyling.com
+detect:
+  scripts:
+    - pattern: 'app\.easyling\.com'

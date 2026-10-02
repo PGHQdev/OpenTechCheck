@@ -1,0 +1,11 @@
+name: Absorb
+slug: absorb
+category: cms
+website: https://www.absorblms.com
+detect:
+  cookies:
+    _absorb_ui_session:
+      - pattern: ''
+  js:
+    AbsorbLMS:
+      - pattern: ''

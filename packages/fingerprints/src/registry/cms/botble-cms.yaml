@@ -1,0 +1,14 @@
+name: Botble CMS
+slug: botble-cms
+category: cms
+website: https://botble.com
+implies: [laravel]
+detect:
+  headers:
+    cms-version:
+      - pattern: '^(.+)$'
+        version: 1
+        confidence: 0
+  cookies:
+    botble_session:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Aryeo
+slug: aryeo
+category: cms
+website: https://www.aryeo.com
+detect:
+  html:
+    - pattern: 'estate-shutter-portal\.aryeo\.com'
+  js:
+    ARYEO_COMPANY_API_V1_BASE_URL:
+      - pattern: ''
+    ARYEO_ENVIRONMENT:
+      - pattern: ''

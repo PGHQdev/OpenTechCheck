@@ -1,0 +1,22 @@
+name: Concrete CMS
+slug: concrete-cms
+category: cms
+website: https://www.concretecms.com/
+implies: [php]
+detect:
+  meta:
+    generator:
+      - pattern: '^concrete5(?: - ([\d.]+)$)?'
+        version: 1
+  cookies:
+    CONCRETE5:
+      - pattern: ''
+  js:
+    CCM_IMAGE_PATH:
+      - pattern: ''
+    Concrete:
+      - pattern: ''
+    ConcreteAlert:
+      - pattern: ''
+    ConcreteEvent:
+      - pattern: ''

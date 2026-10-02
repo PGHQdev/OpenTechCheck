@@ -1,0 +1,17 @@
+name: Adobe Experience Manager
+slug: adobe-experience-manager
+category: cms
+website: https://www.adobe.com/marketing/experience-manager.html
+implies: [java]
+detect:
+  html:
+    - pattern: '<div class="[^"]*parbase'
+    - pattern: '<div[^>]+data-component-path="[^"+]jcr:'
+    - pattern: '<div class="[^"]*aem-Grid'
+  scripts:
+    - pattern: '/etc/designs/'
+    - pattern: '/etc/clientlibs/'
+    - pattern: '/etc\.clientlibs/(?!globalnav/)'
+  dom:
+    div[class*='parbase'], div[data-component-path*='jcr:'], div[class*='aem-Grid']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Bentobox
+slug: bentobox
+category: cms
+website: https://getbento.com
+detect:
+  scripts:
+    - pattern: '\.getbento\.com/'
+  js:
+    BentoAnalytics:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Banshee
+slug: banshee
+category: cms
+website: https://www.banshee-php.org
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Banshee PHP framework v([\d\.]+)'
+        version: 1
+  meta:
+    generator:
+      - pattern: 'Banshee PHP'

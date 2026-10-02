@@ -1,0 +1,10 @@
+name: Agility CMS
+slug: agility-cms
+category: cms
+website: https://agilitycms.com
+detect:
+  scripts:
+    - pattern: 'cdn\.agilitycms\.com/'
+  meta:
+    generator:
+      - pattern: '^Agility CMS$'

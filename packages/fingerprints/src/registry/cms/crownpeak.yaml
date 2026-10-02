@@ -1,0 +1,12 @@
+name: CrownPeak
+slug: crownpeak
+category: cms
+website: https://www.crownpeak.com
+detect:
+  scripts:
+    - pattern: 'js/crownpeak\.'
+  js:
+    CrownPeakAutocomplete:
+      - pattern: ''
+    CrownPeakSearch:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: CPG Dragonfly
+slug: cpg-dragonfly
+category: cms
+website: https://dragonflycms.org
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Dragonfly CMS'
+  meta:
+    generator:
+      - pattern: 'CPG Dragonfly'

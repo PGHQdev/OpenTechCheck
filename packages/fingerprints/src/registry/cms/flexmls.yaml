@@ -1,0 +1,10 @@
+name: Flexmls
+slug: flexmls
+category: cms
+website: https://flexmls.com
+detect:
+  scripts:
+    - pattern: '/plugins/flexmls-idx/'
+  js:
+    flexmls_connect:
+      - pattern: ''

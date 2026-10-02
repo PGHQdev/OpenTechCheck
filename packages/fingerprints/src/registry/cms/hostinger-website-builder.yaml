@@ -1,0 +1,11 @@
+name: Hostinger Website Builder
+slug: hostinger-website-builder
+category: cms
+website: https://www.hostinger.com
+implies: [vue]
+detect:
+  scripts:
+    - pattern: 'userapp\.zyrosite\.com/'
+  meta:
+    generator:
+      - pattern: 'Hostinger Website Builder'

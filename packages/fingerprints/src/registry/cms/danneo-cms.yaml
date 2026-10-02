@@ -1,0 +1,14 @@
+name: Danneo CMS
+slug: danneo-cms
+category: cms
+website: https://danneo.ru/
+implies: [apache, php, mysql]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'CMS Danneo ([\d.]+)'
+        version: 1
+  meta:
+    generator:
+      - pattern: 'Danneo CMS ([\d.]+)'
+        version: 1

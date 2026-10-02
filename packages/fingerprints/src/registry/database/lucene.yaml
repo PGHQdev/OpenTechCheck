@@ -1,0 +1,6 @@
+name: Lucene
+slug: lucene
+category: database
+website: https://lucene.apache.org/core/
+implies: [java]
+detect: {}

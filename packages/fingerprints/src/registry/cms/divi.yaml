@@ -1,0 +1,26 @@
+name: Divi
+slug: divi
+category: cms
+website: https://www.elegantthemes.com/gallery/divi
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'Divi/js/custom\.(?:min|unified)\.js\?ver=([\d.]+)'
+      version: 1
+  meta:
+    generator:
+      - pattern: 'Divi(?:\sv\.([\d\.]+))?'
+        version: 1
+  js:
+    DIVI:
+      - pattern: ''
+    DiviArea:
+      - pattern: ''
+    DiviAreaConfig:
+      - pattern: ''
+  dom:
+    style#divi-style-parent-inline-inline-css:
+      - text: true
+        pattern: 'Version\:\s([\d\.]+)'
+        version: 1

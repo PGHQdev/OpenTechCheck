@@ -1,0 +1,8 @@
+name: Graphy
+slug: graphy
+category: cms
+website: https://graphy.com
+detect:
+  js:
+    getGraphyCookie:
+      - pattern: ''

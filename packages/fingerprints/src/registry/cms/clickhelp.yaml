@@ -1,0 +1,14 @@
+name: ClickHelp
+slug: clickhelp
+category: cms
+website: https://clickhelp.com
+implies: [aspnet]
+detect:
+  cookies:
+    ch_lang:
+      - pattern: ''
+    ch_uid:
+      - pattern: ''
+  dom:
+    script#dxss_CI_301868994:
+      - pattern: ''

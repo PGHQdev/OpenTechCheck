@@ -1,0 +1,12 @@
+name: CometD
+slug: cometd
+category: cms
+website: https://cometd.org
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '/cometd/jquery\.cometd\.js'
+  js:
+    cometMsgReceived:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Behzi
+slug: behzi
+category: cms
+website: https://behzi.com
+detect:
+  meta:
+    generator:
+      - pattern: '^Behzi$'

@@ -1,0 +1,14 @@
+name: DSpace
+slug: dspace
+category: cms
+website: https://dspace.org/
+detect:
+  meta:
+    generator:
+      - pattern: 'DSpace ([\d.]+)'
+        version: 1
+  js:
+    DSpaceChoiceLookup:
+      - pattern: ''
+    DSpaceChoicesSetup:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: B12
+slug: b12
+category: cms
+website: https://www.b12.io
+detect:
+  js:
+    b12.banner:
+      - pattern: ''

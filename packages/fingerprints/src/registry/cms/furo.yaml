@@ -1,0 +1,7 @@
+name: Furo
+slug: furo
+category: cms
+website: https://pradyunsg.me/furo
+detect:
+  scripts:
+    - pattern: 'static/scripts/furo\.js'

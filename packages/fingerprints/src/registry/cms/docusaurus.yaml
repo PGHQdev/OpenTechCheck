@@ -1,0 +1,21 @@
+name: Docusaurus
+slug: docusaurus
+category: cms
+website: https://docusaurus.io/
+implies: [react, webpack]
+detect:
+  meta:
+    docusaurus_locale:
+      - pattern: ''
+    docusaurus_tag:
+      - pattern: ''
+    generator:
+      - pattern: '^Docusaurus(?: v(.+))?$'
+        version: 1
+  js:
+    __DOCUSAURUS_INSERT_BASEURL_BANNER:
+      - pattern: ''
+    docusaurus:
+      - pattern: ''
+    search.indexName:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Evolve Media
+slug: evolve-media
+category: cms
+website: https://www.evolvemediallc.com
+detect:
+  js:
+    EvolveGtagId:
+      - pattern: ''
+    EvolveMediaMainSettings:
+      - pattern: ''

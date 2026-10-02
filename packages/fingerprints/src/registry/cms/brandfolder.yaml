@@ -1,0 +1,10 @@
+name: Brandfolder
+slug: brandfolder
+category: cms
+website: https://brandfolder.com
+detect:
+  scripts:
+    - pattern: 'cdn\.brandfolder\.com/'
+  js:
+    Brandfolder.account:
+      - pattern: ''

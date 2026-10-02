@@ -1,0 +1,8 @@
+name: DeskPro
+slug: deskpro
+category: cms
+website: https://www.deskpro.com
+detect:
+  meta:
+    generator:
+      - pattern: '^DeskPRO.+$'

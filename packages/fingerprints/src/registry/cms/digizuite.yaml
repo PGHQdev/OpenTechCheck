@@ -1,0 +1,8 @@
+name: Digizuite
+slug: digizuite
+category: cms
+website: https://www.digizuite.com
+detect:
+  dom:
+    img[src^='/globalassets/digizuite/'], source[srcset^='/globalassets/digizuite/'], video[src^='/globalassets/digizuite/']:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Beae
+slug: beae
+category: cms
+website: https://beae.com
+detect:
+  scripts:
+    - pattern: 'beae\.base\.min\.js'
+  js:
+    BEAEBASE:
+      - pattern: ''
+    BEAEVIDEO:
+      - pattern: ''

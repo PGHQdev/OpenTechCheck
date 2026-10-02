@@ -1,0 +1,11 @@
+name: Aprimo
+slug: aprimo
+category: cms
+website: https://www.aprimo.com
+detect:
+  js:
+    Aprimo:
+      - pattern: ''
+  dom:
+    source[data-srcset*='/media/aprimo'], img[data-src*='/media/Aprimo'], img[src*='aprimo']:
+      - pattern: ''

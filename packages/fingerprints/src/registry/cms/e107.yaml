@@ -1,0 +1,14 @@
+name: e107
+slug: e107
+category: cms
+website: https://e107.org
+implies: [php]
+detect:
+  scripts:
+    - pattern: '[^a-z\d]e107\.js'
+  headers:
+    x-powered-by:
+      - pattern: 'e107'
+  cookies:
+    e107_tz:
+      - pattern: ''

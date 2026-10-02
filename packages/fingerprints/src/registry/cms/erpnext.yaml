@@ -1,0 +1,10 @@
+name: ERPNext
+slug: erpnext
+category: cms
+website: https://erpnext.com
+detect:
+  js:
+    erpnext.shopping_cart:
+      - pattern: ''
+    erpnext.subscribe_to_newsletter:
+      - pattern: ''

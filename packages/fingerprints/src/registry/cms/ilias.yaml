@@ -1,0 +1,12 @@
+name: Ilias
+slug: ilias
+category: cms
+website: https://www.ilias.de
+detect:
+  js:
+    il.Accordion:
+      - pattern: ''
+    ilAccordionsInits:
+      - pattern: ''
+    ilTagging:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Directorist
+slug: directorist
+category: cms
+website: https://directorist.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    directorist:
+      - pattern: ''
+    directoristCustomRangeSlider:
+      - pattern: ''

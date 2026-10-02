@@ -1,0 +1,9 @@
+name: GrapesJS
+slug: grapesjs
+category: cms
+website: https://grapesjs.com
+detect:
+  js:
+    grapesjs.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1

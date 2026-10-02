@@ -1,0 +1,9 @@
+name: Bolt CMS
+slug: bolt-cms
+category: cms
+website: https://bolt.cm
+implies: [php]
+detect:
+  meta:
+    generator:
+      - pattern: 'Bolt'

@@ -1,0 +1,13 @@
+name: ExpressionEngine
+slug: expressionengine
+category: cms
+website: https://expressionengine.com/
+implies: [php]
+detect:
+  cookies:
+    exp_csrf_token:
+      - pattern: ''
+    exp_last_activity:
+      - pattern: ''
+    exp_tracker:
+      - pattern: ''

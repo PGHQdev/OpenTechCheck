@@ -1,0 +1,10 @@
+name: bbPress
+slug: bbpress
+category: cms
+website: https://bbpress.org
+within:
+  techs: [wordpress]
+detect:
+  js:
+    gdbbPressAttachmentsInit:
+      - pattern: ''

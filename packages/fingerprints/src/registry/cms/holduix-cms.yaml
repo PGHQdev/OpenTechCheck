@@ -1,0 +1,11 @@
+name: Holduix CMS
+slug: holduix-cms
+category: cms
+website: https://www.holduix.dev
+detect:
+  meta:
+    author:
+      - pattern: '^Holduix$'
+  js:
+    HolduixConfig.baseURL:
+      - pattern: ''

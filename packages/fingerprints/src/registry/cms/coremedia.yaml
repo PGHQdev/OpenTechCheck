@@ -1,0 +1,15 @@
+name: CoreMedia
+slug: coremedia
+category: cms
+website: https://www.coremedia.com
+detect:
+  scripts:
+    - pattern: '\.coremedia\.cloud/'
+  meta:
+    coremedia_content_id:
+      - pattern: ''
+    generator:
+      - pattern: '^CoreMedia C(?:ontent Cloud|MS)$'
+  js:
+    coremedia.blueprint:
+      - pattern: ''

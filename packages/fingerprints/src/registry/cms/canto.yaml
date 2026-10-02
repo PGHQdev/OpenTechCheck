@@ -1,0 +1,8 @@
+name: Canto
+slug: canto
+category: cms
+website: https://www.canto.com
+detect:
+  dom:
+    link[href*='.canto.com/'], a[href*='.canto.com/'], img[src*='.canto.com/']:
+      - pattern: ''

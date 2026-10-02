@@ -1,0 +1,11 @@
+name: Arc XP
+slug: arc-xp
+category: cms
+website: https://www.arcxp.com
+detect:
+  js:
+    Fusion.arcSite:
+      - pattern: ''
+  dom:
+    '#pb-root':
+      - pattern: ''

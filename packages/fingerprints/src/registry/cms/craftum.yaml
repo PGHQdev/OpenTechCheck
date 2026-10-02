@@ -1,0 +1,8 @@
+name: Craftum
+slug: craftum
+category: cms
+website: https://craftum.com
+detect:
+  meta:
+    generator:
+      - pattern: '^Craftum CMS$'

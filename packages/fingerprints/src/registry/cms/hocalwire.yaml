@@ -1,0 +1,13 @@
+name: Hocalwire
+slug: hocalwire
+category: cms
+website: https://www.hocalwire.com
+detect:
+  js:
+    Hocalwire:
+      - pattern: ''
+    hocalApiEndPoints:
+      - pattern: ''
+  dom:
+    link[href*='//hocalwire.com']:
+      - pattern: ''

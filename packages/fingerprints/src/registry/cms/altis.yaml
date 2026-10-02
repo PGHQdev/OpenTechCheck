@@ -1,0 +1,14 @@
+name: Altis
+slug: altis
+category: cms
+website: https://www.altis-dxp.com
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    generator:
+      - pattern: '^Altis ?([\d.]+)?'
+        version: 1
+  js:
+    Altis:
+      - pattern: ''

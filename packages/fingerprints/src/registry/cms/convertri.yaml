@@ -1,0 +1,14 @@
+name: Convertri
+slug: convertri
+category: cms
+website: https://www.convertri.com
+detect:
+  scripts:
+    - pattern: 'cdn\.convertri\.com/'
+  js:
+    CONVERTRI_CONSTANTS:
+      - pattern: ''
+    ConvertriAnalytics:
+      - pattern: ''
+    convertriParameters:
+      - pattern: ''

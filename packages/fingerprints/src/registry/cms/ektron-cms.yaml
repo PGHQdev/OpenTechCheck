@@ -1,0 +1,11 @@
+name: Ektron CMS
+slug: ektron-cms
+category: cms
+website: https://www.optimizely.com/ektron-cms
+implies: [aspnet]
+detect:
+  scripts:
+    - pattern: '/ektron\.javascript\.ashx'
+  js:
+    Ektron:
+      - pattern: ''

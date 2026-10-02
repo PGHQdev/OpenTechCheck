@@ -1,0 +1,5 @@
+name: PostgreSQL
+slug: postgresql
+category: database
+website: https://www.postgresql.org/
+detect: {}

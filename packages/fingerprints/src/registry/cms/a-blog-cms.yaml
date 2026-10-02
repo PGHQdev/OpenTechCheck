@@ -1,0 +1,9 @@
+name: a-blog cms
+slug: a-blog-cms
+category: cms
+website: https://www.a-blogcms.jp
+implies: [php]
+detect:
+  meta:
+    generator:
+      - pattern: 'a-blog cms'

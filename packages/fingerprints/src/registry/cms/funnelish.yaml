@@ -1,0 +1,8 @@
+name: Funnelish
+slug: funnelish
+category: cms
+website: https://funnelish.com
+detect:
+  js:
+    funnelish:
+      - pattern: ''

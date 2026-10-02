@@ -1,0 +1,10 @@
+name: Disciple
+slug: disciple
+category: cms
+website: https://www.disciple.community
+detect:
+  scripts:
+    - pattern: 'pwa\.disciplemedia\.com'
+  js:
+    discipleFlashMessages:
+      - pattern: ''

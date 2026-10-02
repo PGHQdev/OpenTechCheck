@@ -1,0 +1,11 @@
+name: Acquia Site Studio
+slug: acquia-site-studio
+category: cms
+website: https://www.acquia.com/products/drupal-cloud/site-studio
+implies: [acquia-cloud-platform]
+detect:
+  scripts:
+    - pattern: 'sites/\w*/files/cohesion'
+  dom:
+    div[class*='coh-component coh-component-instance']:
+      - pattern: ''

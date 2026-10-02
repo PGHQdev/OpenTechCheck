@@ -1,0 +1,10 @@
+name: Clicksign
+slug: clicksign
+category: cms
+website: https://www.clicksign.com
+detect:
+  js:
+    Clicksign:
+      - pattern: ''
+    endpointClickSign:
+      - pattern: ''

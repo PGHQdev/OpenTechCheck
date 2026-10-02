@@ -1,0 +1,14 @@
+name: imperia CMS
+slug: imperia-cms
+category: cms
+website: https://www.pirobase-imperia.com/de/solutions/imperia-cms
+detect:
+  meta:
+    generator:
+      - pattern: '^IMPERIA\s([\d\.\_]+)'
+        version: 1
+    x-imperia-live-info:
+      - pattern: ''
+  dom:
+    source[srcset*='.de/imperia/md/images/']:
+      - pattern: ''

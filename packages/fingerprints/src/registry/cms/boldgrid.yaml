@@ -1,0 +1,16 @@
+name: BoldGrid
+slug: boldgrid
+category: cms
+website: https://boldgrid.com
+within:
+  techs: [wordpress]
+detect:
+  html:
+    - pattern: '<link rel=["'']stylesheet["''] [^>]+boldgrid'
+    - pattern: '<link rel=["'']stylesheet["''] [^>]+post-and-page-builder'
+    - pattern: '<link[^>]+s\d+\.boldgrid\.com'
+  scripts:
+    - pattern: '/wp-content/plugins/post-and-page-builder'
+  dom:
+    link[rel='stylesheet'][href*='boldgrid'], link[rel='stylesheet'][href*='post-and-page-builder'], link[href*='.boldgrid.com']:
+      - pattern: ''

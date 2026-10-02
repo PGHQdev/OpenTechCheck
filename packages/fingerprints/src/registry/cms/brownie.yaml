@@ -1,0 +1,14 @@
+name: Brownie
+slug: brownie
+category: cms
+website: https://www.browniesuite.com
+implies: [php, mysql, bootstrap, jquery]
+detect:
+  scripts:
+    - pattern: 'assets\.youthsrl\.com/brownie'
+  headers:
+    x-powered-by:
+      - pattern: 'Brownie'
+  dom:
+    a[href*='browniesuite.com'][target='_blank'] img[src*='brownie']:
+      - pattern: ''

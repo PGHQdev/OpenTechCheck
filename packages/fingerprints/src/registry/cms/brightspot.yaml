@@ -1,0 +1,14 @@
+name: Brightspot
+slug: brightspot
+category: cms
+website: https://www.brightspot.com
+implies: [java]
+detect:
+  scripts:
+    - pattern: '\.brightspotcdn\.com'
+  headers:
+    x-powered-by:
+      - pattern: '^Brightspot$'
+  js:
+    wpJsonpBrightspot:
+      - pattern: ''

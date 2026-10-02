@@ -1,0 +1,8 @@
+name: Cosmic
+slug: cosmic
+category: cms
+website: https://www.cosmicjs.com
+detect:
+  dom:
+    link[href*='.cosmicjs.com/'], img[src*='.cosmicjs.com/'], img[data-src*='.cosmicjs.com/']:
+      - pattern: ''

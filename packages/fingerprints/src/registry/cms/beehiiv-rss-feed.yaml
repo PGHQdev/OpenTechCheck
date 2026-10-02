@@ -1,0 +1,8 @@
+name: Beehiiv RSS feed
+slug: beehiiv-rss-feed
+category: cms
+website: https://www.beehiiv.com
+detect:
+  dom:
+    iframe[src*='embeds.beehiiv.com/']:
+      - pattern: ''

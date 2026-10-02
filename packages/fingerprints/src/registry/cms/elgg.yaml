@@ -1,0 +1,10 @@
+name: Elgg
+slug: elgg
+category: cms
+website: https://elgg.org/
+detect:
+  scripts:
+    - pattern: 'elgg(?:_dataTables)?(?:\/Ajax)?(?:\/Plugin)?(?:\/require_config)?(?:\/spinner)?(?:\/dev)?(?:\.\w{0,10})?\.js'
+  js:
+    elgg:
+      - pattern: ''

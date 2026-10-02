@@ -1,0 +1,9 @@
+name: BookStack
+slug: bookstack
+category: cms
+website: https://www.bookstackapp.com
+implies: [php, mysql, laravel]
+detect:
+  cookies:
+    bookstack_session:
+      - pattern: ''

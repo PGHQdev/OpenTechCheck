@@ -1,0 +1,9 @@
+name: CppCMS
+slug: cppcms
+category: cms
+website: https://cppcms.com
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^CppCMS/([\d.]+)$'
+        version: 1

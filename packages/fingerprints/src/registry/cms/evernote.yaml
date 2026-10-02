@@ -1,0 +1,10 @@
+name: Evernote
+slug: evernote
+category: cms
+website: https://evernote.com
+detect:
+  scripts:
+    - pattern: 'static\.evernote\.com'
+  js:
+    Evernote.Ajax:
+      - pattern: ''

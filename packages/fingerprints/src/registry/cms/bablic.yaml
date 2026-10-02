@@ -1,0 +1,8 @@
+name: Bablic
+slug: bablic
+category: cms
+website: https://www.bablic.com
+detect:
+  js:
+    bablic:
+      - pattern: ''

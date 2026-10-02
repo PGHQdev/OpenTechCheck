@@ -1,0 +1,18 @@
+name: i-motor
+slug: i-motor
+category: cms
+website: https://www.i-motor.com.au
+detect:
+  html:
+    - pattern: 'cdn\.cms-uploads\.i-motor\.me'
+    - pattern: 'assets\.cdn\.imotor\.com\.au'
+    - pattern: 'cdn\.cms\.i-motor\.me'
+  headers:
+    x-powered-by:
+      - pattern: '^iMotor$'
+  meta:
+    x-powered-by:
+      - pattern: '^iMotor$'
+  dom:
+    link[href*='.i-motor.com.au/']:
+      - pattern: ''

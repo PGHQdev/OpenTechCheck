@@ -1,0 +1,7 @@
+name: GreatPages
+slug: greatpages
+category: cms
+website: https://www.greatpages.com.br
+detect:
+  scripts:
+    - pattern: '\.greatpages\.com\.br/'

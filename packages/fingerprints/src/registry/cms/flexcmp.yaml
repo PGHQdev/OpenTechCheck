@@ -1,0 +1,17 @@
+name: FlexCMP
+slug: flexcmp
+category: cms
+website: https://www.flexcmp.com/cms/home
+detect:
+  html:
+    - pattern: '<!--[^>]+FlexCMP[^>v]+v\. ([\d.]+)'
+      version: 1
+  headers:
+    x-flex-lang:
+      - pattern: ''
+    x-powered-by:
+      - pattern: 'FlexCMP.+\[v\. ([\d.]+)'
+        version: 1
+  meta:
+    generator:
+      - pattern: '^FlexCMP'

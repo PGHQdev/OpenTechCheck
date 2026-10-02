@@ -1,0 +1,20 @@
+name: 1C-Bitrix
+slug: 1c-bitrix
+category: cms
+website: https://www.1c-bitrix.ru
+implies: [php]
+detect:
+  scripts:
+    - pattern: 'bitrix(?:\.info/|/js/main/core)'
+  headers:
+    set-cookie:
+      - pattern: 'BITRIX_'
+    x-powered-cms:
+      - pattern: 'Bitrix Site Manager'
+  cookies:
+    BITRIX_SM_GUEST_ID:
+      - pattern: ''
+    BITRIX_SM_LAST_IP:
+      - pattern: ''
+    BITRIX_SM_SALE_UID:
+      - pattern: ''

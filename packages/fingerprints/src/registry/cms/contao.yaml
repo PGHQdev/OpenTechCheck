@@ -1,0 +1,12 @@
+name: Contao
+slug: contao
+category: cms
+website: https://contao.org
+implies: [php]
+detect:
+  meta:
+    generator:
+      - pattern: '^Contao Open Source CMS$'
+  dom:
+    link[href*='/typolight.css'], link[href*='/contao.css']:
+      - pattern: ''

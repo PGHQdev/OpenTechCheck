@@ -1,0 +1,10 @@
+name: eDirectory
+slug: edirectory
+category: cms
+website: https://www.edirectory.com
+detect:
+  scripts:
+    - pattern: '\.edirectory\.com'
+  js:
+    eDirectory.Search:
+      - pattern: ''

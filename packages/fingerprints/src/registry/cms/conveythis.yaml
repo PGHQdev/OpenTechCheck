@@ -1,0 +1,7 @@
+name: ConveyThis
+slug: conveythis
+category: cms
+website: https://www.conveythis.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.conveythis\.com'

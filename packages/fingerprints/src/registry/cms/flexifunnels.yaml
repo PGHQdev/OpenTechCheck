@@ -1,0 +1,7 @@
+name: FlexiFunnels
+slug: flexifunnels
+category: cms
+website: https://flexifunnels.com
+detect:
+  scripts:
+    - pattern: '\.flexifunnels\.com'

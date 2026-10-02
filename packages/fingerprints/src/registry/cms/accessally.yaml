@@ -1,0 +1,10 @@
+name: AccessAlly
+slug: accessally
+category: cms
+website: https://accessally.com
+detect:
+  js:
+    accessally_order_form_data_is_during_restore:
+      - pattern: ''
+    accessally_script_object:
+      - pattern: ''

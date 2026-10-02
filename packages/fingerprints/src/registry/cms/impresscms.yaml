@@ -1,0 +1,16 @@
+name: ImpressCMS
+slug: impresscms
+category: cms
+website: https://www.impresscms.org
+implies: [php]
+detect:
+  scripts:
+    - pattern: 'include/linkexternal\.js'
+  meta:
+    generator:
+      - pattern: 'ImpressCMS'
+  cookies:
+    ICMSSession:
+      - pattern: ''
+    ImpressCMS:
+      - pattern: ''

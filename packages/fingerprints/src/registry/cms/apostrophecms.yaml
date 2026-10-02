@@ -1,0 +1,11 @@
+name: ApostropheCMS
+slug: apostrophecms
+category: cms
+website: https://apostrophecms.com
+implies: [nodejs]
+detect:
+  js:
+    APOS_DIALOGS.dialogAttributes:
+      - pattern: ''
+    apos.csrfCookieName:
+      - pattern: ''

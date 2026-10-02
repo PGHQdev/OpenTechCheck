@@ -1,0 +1,18 @@
+name: GitBook
+slug: gitbook
+category: cms
+website: https://www.gitbook.com
+detect:
+  url:
+    - pattern: '^https?://[^/]+\.gitbook\.com/'
+  meta:
+    generator:
+      - pattern: 'GitBook ([\d.]+)?'
+        version: 1
+  js:
+    __GITBOOK_INITIAL_PROPS__:
+      - pattern: ''
+    __GITBOOK_INITIAL_STATE__:
+      - pattern: ''
+    __GITBOOK_LAZY_MODULES__:
+      - pattern: ''

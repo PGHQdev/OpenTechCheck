@@ -1,0 +1,7 @@
+name: Emergent
+slug: emergent
+category: cms
+website: https://app.emergent.sh/
+detect:
+  scripts:
+    - pattern: 'assets\.emergent\.sh'

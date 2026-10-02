@@ -1,0 +1,12 @@
+name: Flazio
+slug: flazio
+category: cms
+website: https://flazio.com
+detect:
+  scripts:
+    - pattern: '//flazio\.org/'
+  js:
+    _exaudiflazio:
+      - pattern: ''
+    flazio_global_conversion:
+      - pattern: ''

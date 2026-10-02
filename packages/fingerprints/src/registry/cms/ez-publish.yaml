@@ -1,0 +1,15 @@
+name: eZ Publish
+slug: ez-publish
+category: cms
+website: https://github.com/ezsystems/ezpublish-legacy
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^eZ Publish'
+  meta:
+    generator:
+      - pattern: 'eZ Publish'
+  cookies:
+    eZSESSID:
+      - pattern: ''

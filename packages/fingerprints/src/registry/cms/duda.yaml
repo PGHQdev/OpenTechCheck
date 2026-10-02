@@ -1,0 +1,14 @@
+name: Duda
+slug: duda
+category: cms
+website: https://www.duda.co
+detect:
+  scripts:
+    - pattern: 'dd-cdn\.multiscreensite\.com/'
+  js:
+    SystemID:
+      - pattern: '^.*DIRECT.*$'
+    d_version:
+      - pattern: '^(.*)$'
+        version: 1
+        confidence: 0

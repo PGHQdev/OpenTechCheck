@@ -1,0 +1,11 @@
+name: BaseKit
+slug: basekit
+category: cms
+website: https://www.basekit.com/
+detect:
+  meta:
+    generator:
+      - pattern: '^BaseKit$'
+  js:
+    BaseKit:
+      - pattern: ''

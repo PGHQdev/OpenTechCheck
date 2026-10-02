@@ -1,0 +1,9 @@
+name: EverWeb
+slug: everweb
+category: cms
+website: https://www.everwebapp.com
+detect:
+  meta:
+    generator:
+      - pattern: 'EverWeb ([\d.]+)'
+        version: 1

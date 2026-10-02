@@ -1,0 +1,12 @@
+name: Cackle
+slug: cackle
+category: cms
+website: https://cackle.me
+detect:
+  scripts:
+    - pattern: 'k\.cackle\.me/'
+  js:
+    Cackle.CommentCount:
+      - pattern: ''
+    cackle_widget:
+      - pattern: ''

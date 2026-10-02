@@ -1,0 +1,10 @@
+name: HumHub
+slug: humhub
+category: cms
+website: https://www.humhub.com
+detect:
+  js:
+    HumHubMentionProvider:
+      - pattern: ''
+    humhub.config:
+      - pattern: ''

@@ -1,0 +1,11 @@
+name: Demio
+slug: demio
+category: cms
+website: https://www.demio.com
+detect:
+  js:
+    DEMIO_API_URI:
+      - pattern: ''
+  dom:
+    script#demio-js:
+      - pattern: ''

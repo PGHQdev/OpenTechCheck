@@ -1,0 +1,10 @@
+name: Blendle
+slug: blendle
+category: cms
+website: https://www.blendle.com
+detect:
+  js:
+    asyncBlendleButtonInit:
+      - pattern: ''
+    blendleButtonInit.locale:
+      - pattern: ''

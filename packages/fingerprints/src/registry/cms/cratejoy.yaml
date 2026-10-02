@@ -1,0 +1,13 @@
+name: Cratejoy
+slug: cratejoy
+category: cms
+website: https://www.cratejoy.com
+detect:
+  cookies:
+    cratejoy_muffin42:
+      - pattern: ''
+    statjoy_metrics:
+      - pattern: ''
+  js:
+    statjoyServer:
+      - pattern: 'stats\.cratejoy\.com'

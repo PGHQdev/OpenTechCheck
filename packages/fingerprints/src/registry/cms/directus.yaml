@@ -1,0 +1,9 @@
+name: Directus
+slug: directus
+category: cms
+website: https://directus.io
+implies: [vue, tinymce, core-js]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Directus$'

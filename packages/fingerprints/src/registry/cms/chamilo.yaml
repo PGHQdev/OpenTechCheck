@@ -1,0 +1,17 @@
+name: Chamilo
+slug: chamilo
+category: cms
+website: https://www.chamilo.org
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Chamilo ([\d.]+)'
+        version: 1
+  meta:
+    generator:
+      - pattern: 'Chamilo ([\d.]+)'
+        version: 1
+  dom:
+    link[href*='chamilo.org/']:
+      - pattern: ''

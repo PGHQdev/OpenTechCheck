@@ -1,0 +1,10 @@
+name: Asciidoctor
+slug: asciidoctor
+category: cms
+website: https://github.com/asciidoctor/asciidoctor
+implies: [ruby]
+detect:
+  meta:
+    generator:
+      - pattern: '^Asciidoctor\s([\d\.]+)$'
+        version: 1

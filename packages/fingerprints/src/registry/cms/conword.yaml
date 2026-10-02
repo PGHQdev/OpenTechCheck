@@ -1,0 +1,11 @@
+name: Conword
+slug: conword
+category: cms
+website: https://conword.io
+detect:
+  html:
+    - pattern: 'data-conword-initialized'
+    - pattern: 'js-conword-on'
+    - pattern: 'data-conword-sync-lang'
+  scripts:
+    - pattern: 'static\.conword\.io'

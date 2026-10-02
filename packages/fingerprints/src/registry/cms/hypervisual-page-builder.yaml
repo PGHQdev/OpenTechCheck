@@ -1,0 +1,12 @@
+name: Hypervisual Page Builder
+slug: hypervisual-page-builder
+category: cms
+website: https://gethypervisual.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.gethypervisual\.com/'
+  js:
+    hypervisualPreflight:
+      - pattern: ''

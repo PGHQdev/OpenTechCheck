@@ -1,0 +1,11 @@
+name: ikiwiki
+slug: ikiwiki
+category: cms
+website: https://ikiwiki.info
+detect:
+  html:
+    - pattern: '<link rel="alternate" type="application/x-wiki" title="Edit this page" href="[^"]*/ikiwiki\.cgi'
+    - pattern: '<a href="/(?:cgi-bin/)?ikiwiki\.cgi\?do='
+  dom:
+    link[rel='alternate'][type='application/x-wiki'][title='Edit this page'][href*='/ikiwiki.cgi']:
+      - pattern: ''

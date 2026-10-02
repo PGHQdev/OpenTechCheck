@@ -1,0 +1,11 @@
+name: Carbonmade
+slug: carbonmade
+category: cms
+website: https://carbonmade.com
+detect:
+  js:
+    Carbon.ActionKit:
+      - pattern: ''
+  dom:
+    link[href*='carbon-media.accelerator.net/']:
+      - pattern: ''

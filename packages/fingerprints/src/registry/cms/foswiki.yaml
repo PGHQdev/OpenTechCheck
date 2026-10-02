@@ -1,0 +1,28 @@
+name: Foswiki
+slug: foswiki
+category: cms
+website: https://foswiki.org
+detect:
+  html:
+    - pattern: '<div class="foswiki(?:Copyright|Page|Main)">'
+  headers:
+    x-foswikiaction:
+      - pattern: ''
+    x-foswikiuri:
+      - pattern: ''
+  meta:
+    foswiki.servertime:
+      - pattern: ''
+    foswiki.wikiname:
+      - pattern: ''
+  cookies:
+    FOSWIKISTRIKEONE:
+      - pattern: ''
+    SFOSWIKISID:
+      - pattern: ''
+  js:
+    foswiki:
+      - pattern: ''
+  dom:
+    div.foswikiCopyright, div.foswikiPage, div.foswikiMain:
+      - pattern: ''

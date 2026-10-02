@@ -1,0 +1,13 @@
+name: Discourse
+slug: discourse
+category: cms
+website: https://discourse.org
+implies: [ruby-on-rails]
+detect:
+  meta:
+    generator:
+      - pattern: 'Discourse(?: ?/?([\d.]+\d))?'
+        version: 1
+  js:
+    Discourse:
+      - pattern: ''

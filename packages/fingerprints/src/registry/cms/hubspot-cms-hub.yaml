@@ -1,0 +1,14 @@
+name: HubSpot CMS Hub
+slug: hubspot-cms-hub
+category: cms
+website: https://www.hubspot.com/products/cms
+implies: [hubspot]
+detect:
+  headers:
+    x-hs-hub-id:
+      - pattern: ''
+    x-powered-by:
+      - pattern: 'HubSpot'
+  meta:
+    generator:
+      - pattern: 'HubSpot'

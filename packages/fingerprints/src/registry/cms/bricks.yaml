@@ -1,0 +1,9 @@
+name: Bricks
+slug: bricks
+category: cms
+website: https://bricksbuilder.io
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/bricks/assets/'

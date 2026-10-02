@@ -1,0 +1,13 @@
+name: Citizen Space
+slug: citizen-space
+category: cms
+website: https://www.delib.net/citizen_space
+detect:
+  scripts:
+    - pattern: '/static/vendor/dlb-admin-ui/'
+  js:
+    cs_embedded_content:
+      - pattern: ''
+  dom:
+    a[href='https://www.delib.net/citizen_space']:
+      - pattern: ''

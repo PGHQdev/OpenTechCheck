@@ -1,0 +1,21 @@
+name: Cargo
+slug: cargo
+category: cms
+website: https://cargo.site
+implies: [php]
+detect:
+  scripts:
+    - pattern: '(?<!elo\.io)/cargo\.'
+  meta:
+    cargo_title:
+      - pattern: ''
+  js:
+    Cargo.Config:
+      - pattern: ''
+    CargoEditor:
+      - pattern: ''
+    __cargo_js_ver__:
+      - pattern: ''
+  dom:
+    link[href*='build.cargo.site/']:
+      - pattern: ''

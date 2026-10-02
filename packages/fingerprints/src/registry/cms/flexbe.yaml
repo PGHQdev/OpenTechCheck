@@ -1,0 +1,8 @@
+name: Flexbe
+slug: flexbe
+category: cms
+website: https://flexbe.com
+detect:
+  js:
+    flexbe_cli.adaptive:
+      - pattern: ''

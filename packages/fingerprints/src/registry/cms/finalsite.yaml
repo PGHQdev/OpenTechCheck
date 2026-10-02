@@ -1,0 +1,8 @@
+name: Finalsite
+slug: finalsite
+category: cms
+website: https://www.finalsite.com/school-websites
+detect:
+  dom:
+    div[id*='fsPoweredByFinalsite']:
+      - pattern: ''
