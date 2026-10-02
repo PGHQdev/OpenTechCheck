@@ -1,0 +1,10 @@
+name: Clicky
+slug: clicky
+category: analytics
+website: https://getclicky.com
+detect:
+  scripts:
+    - pattern: 'static\.getclicky\.com'
+  js:
+    clicky:
+      - pattern: ''

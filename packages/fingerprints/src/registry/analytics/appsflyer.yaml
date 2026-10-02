@@ -1,0 +1,10 @@
+name: Appsflyer
+slug: appsflyer
+category: analytics
+website: https://www.appsflyer.com/
+detect:
+  scripts:
+    - pattern: 'websdk\.appsflyer\.com'
+  js:
+    AppsFlyerSdkObject:
+      - pattern: ''

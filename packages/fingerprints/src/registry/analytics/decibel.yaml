@@ -1,0 +1,12 @@
+name: Decibel
+slug: decibel
+category: analytics
+website: https://decibel.com
+detect:
+  scripts:
+    - pattern: 'cdn\.decibelinsight\.net'
+  js:
+    decibelInsight:
+      - pattern: ''
+    decibelInsightLayer:
+      - pattern: ''

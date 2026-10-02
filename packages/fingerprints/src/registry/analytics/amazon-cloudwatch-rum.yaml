@@ -1,0 +1,15 @@
+name: Amazon CloudWatch RUM
+slug: amazon-cloudwatch-rum
+category: analytics
+website: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html
+detect:
+  js:
+    AwsRum:
+      - pattern: ''
+    AwsRumClient:
+      - pattern: ''
+    AwsRumClient.v:
+      - pattern: '([\d\.]+)'
+        version: 1
+    AwsRumConfig:
+      - pattern: ''

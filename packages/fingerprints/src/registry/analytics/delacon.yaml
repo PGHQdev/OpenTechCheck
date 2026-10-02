@@ -1,0 +1,10 @@
+name: Delacon
+slug: delacon
+category: analytics
+website: https://www.delacon.com.au
+detect:
+  js:
+    dela_247_call:
+      - pattern: ''
+    delaconphonenums:
+      - pattern: ''

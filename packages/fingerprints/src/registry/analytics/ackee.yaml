@@ -1,0 +1,11 @@
+name: Ackee
+slug: ackee
+category: analytics
+website: https://ackee.electerious.com
+detect:
+  js:
+    ackeeTracker:
+      - pattern: ''
+  dom:
+    '[data-ackee-domain-id], [data-ackee-server]':
+      - pattern: ''

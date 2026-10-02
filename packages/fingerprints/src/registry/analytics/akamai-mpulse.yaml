@@ -1,0 +1,14 @@
+name: Akamai mPulse
+slug: akamai-mpulse
+category: analytics
+website: https://developer.akamai.com/akamai-mpulse-real-user-monitoring-solution
+implies: [boomerang]
+detect:
+  html:
+    - pattern: '<script>[\s\S]*?go-mpulse\.net\/boomerang[\s\S]*?</script>'
+  js:
+    BOOMR_API_key:
+      - pattern: ''
+  dom:
+    script#boomr-if-as, script#boomr-scr-as, link[href*='s.go-mpulse.net/boomerang/'][rel='preload']:
+      - pattern: ''

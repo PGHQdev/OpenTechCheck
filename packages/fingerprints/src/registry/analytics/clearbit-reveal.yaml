@@ -1,0 +1,7 @@
+name: Clearbit Reveal
+slug: clearbit-reveal
+category: analytics
+website: https://clearbit.com/#reveal
+detect:
+  scripts:
+    - pattern: 'reveal\.clearbit\.com/v[(0-9)]/'

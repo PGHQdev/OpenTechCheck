@@ -1,0 +1,15 @@
+name: Growform
+slug: growform
+category: analytics
+website: https://www.growform.co
+detect:
+  html:
+    - pattern: 'window\.growform'
+    - pattern: 'growform_loaded'
+  js:
+    embedGrowform:
+      - pattern: ''
+    growform.setHiddenField:
+      - pattern: ''
+    growform:
+      - pattern: ''

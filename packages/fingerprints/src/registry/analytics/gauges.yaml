@@ -1,0 +1,11 @@
+name: Gauges
+slug: gauges
+category: analytics
+website: https://get.gaug.es
+detect:
+  cookies:
+    _gauges_:
+      - pattern: ''
+  js:
+    _gauges:
+      - pattern: ''

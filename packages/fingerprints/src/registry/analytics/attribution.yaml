@@ -1,0 +1,15 @@
+name: Attribution
+slug: attribution
+category: analytics
+website: https://www.attributionapp.com
+detect:
+  scripts:
+    - pattern: '\.attributionapp\.com/'
+  js:
+    Attribution.VERSION:
+      - pattern: '([\d\.]+)'
+        version: 1
+        confidence: 50
+    Attribution._options:
+      - pattern: ''
+        confidence: 50

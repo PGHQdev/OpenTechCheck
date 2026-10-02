@@ -1,0 +1,11 @@
+name: Insider
+slug: insider
+category: analytics
+website: https://useinsider.com
+detect:
+  scripts:
+    - pattern: 'api\.useinsider\.\w+/'
+  js:
+    Insider:
+      - pattern: ''
+        confidence: 20

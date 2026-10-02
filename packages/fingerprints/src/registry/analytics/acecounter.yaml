@@ -1,0 +1,10 @@
+name: Acecounter
+slug: acecounter
+category: analytics
+website: https://www.home.acecounter.com
+detect:
+  scripts:
+    - pattern: '\.acecounter\.com/'
+  js:
+    _AceCounter:
+      - pattern: ''

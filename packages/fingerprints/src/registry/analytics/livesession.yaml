@@ -1,0 +1,7 @@
+name: LiveSession
+slug: livesession
+category: analytics
+website: https://livesession.io/
+detect:
+  scripts:
+    - pattern: 'cdn\.livesession\.io'

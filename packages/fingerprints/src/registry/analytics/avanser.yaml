@@ -1,0 +1,12 @@
+name: Avanser
+slug: avanser
+category: analytics
+website: https://www.avanser.com
+detect:
+  js:
+    AVANSERjs:
+      - pattern: ''
+    AvanserCore:
+      - pattern: ''
+    AvanserOptions:
+      - pattern: ''

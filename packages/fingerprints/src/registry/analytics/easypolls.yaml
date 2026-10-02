@@ -1,0 +1,7 @@
+name: EasyPolls
+slug: easypolls
+category: analytics
+website: https://easypolls.net
+detect:
+  scripts:
+    - pattern: '\.easypolls\.net'

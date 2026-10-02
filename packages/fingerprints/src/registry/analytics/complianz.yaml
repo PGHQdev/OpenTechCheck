@@ -1,0 +1,13 @@
+name: Complianz
+slug: complianz
+category: analytics
+website: https://complianz.io
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'wp-content/plugins/complianz-gdpr-premium'
+  js:
+    complianz.version:
+      - pattern: '([\d.]+)'
+        version: 1

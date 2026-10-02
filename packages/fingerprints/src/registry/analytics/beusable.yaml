@@ -1,0 +1,10 @@
+name: Beusable
+slug: beusable
+category: analytics
+website: https://www.beusable.net
+detect:
+  scripts:
+    - pattern: '\.beusable\.net/'
+  js:
+    __beusablerumclient__:
+      - pattern: ''

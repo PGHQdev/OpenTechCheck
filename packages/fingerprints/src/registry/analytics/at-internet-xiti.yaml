@@ -1,0 +1,10 @@
+name: AT Internet XiTi
+slug: at-internet-xiti
+category: analytics
+website: https://atinternet.com/en
+detect:
+  scripts:
+    - pattern: 'xiti\.com/hit\.xiti'
+  js:
+    xt_click:
+      - pattern: ''

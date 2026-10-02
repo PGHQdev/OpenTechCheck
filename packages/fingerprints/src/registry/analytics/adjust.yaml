@@ -1,0 +1,11 @@
+name: Adjust
+slug: adjust
+category: analytics
+website: https://www.adjust.com
+detect:
+  js:
+    Adjust.initSdk:
+      - pattern: ''
+  dom:
+    div[data-adjust*='app.adjust.com/'], a[href*='app.adjust.com/'], a[href*='.adj.st/'], form[action*='app.adjust.com/']:
+      - pattern: ''

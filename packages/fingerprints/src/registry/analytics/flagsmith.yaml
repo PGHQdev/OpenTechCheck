@@ -1,0 +1,10 @@
+name: FlagSmith
+slug: flagsmith
+category: analytics
+website: https://flagsmith.com
+detect:
+  scripts:
+    - pattern: 'cdn\.flagsmith\.com/'
+  js:
+    flagsmith:
+      - pattern: ''

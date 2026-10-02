@@ -1,0 +1,16 @@
+name: ClickTale
+slug: clicktale
+category: analytics
+website: https://www.clicktale.com
+detect:
+  scripts:
+    - pattern: '\.clicktale\.net'
+  js:
+    ClickTale:
+      - pattern: ''
+    ClickTaleEvent:
+      - pattern: ''
+    ClickTaleGlobal:
+      - pattern: ''
+    clickTaleStartEventSignal:
+      - pattern: ''

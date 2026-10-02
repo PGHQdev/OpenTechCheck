@@ -1,0 +1,26 @@
+name: Mapp
+slug: mapp
+category: analytics
+website: https://mapp.com
+detect:
+  js:
+    WebtrekkV3:
+      - pattern: ''
+    webtrekk:
+      - pattern: ''
+    webtrekkConfig:
+      - pattern: ''
+    webtrekkHeatmapObjects:
+      - pattern: ''
+    webtrekkLinktrackObjects:
+      - pattern: ''
+    webtrekkUnloadObjects:
+      - pattern: ''
+    webtrekkV3:
+      - pattern: ''
+    wtSmart:
+      - pattern: ''
+    wt_tt:
+      - pattern: ''
+    wt_ttv2:
+      - pattern: ''

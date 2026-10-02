@@ -1,0 +1,10 @@
+name: ConvertFlow
+slug: convertflow
+category: analytics
+website: https://www.convertflow.com
+detect:
+  scripts:
+    - pattern: '(?:app|js)\.convertflow\.co'
+  js:
+    convertflow:
+      - pattern: ''

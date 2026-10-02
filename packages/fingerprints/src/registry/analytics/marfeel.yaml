@@ -1,0 +1,11 @@
+name: Marfeel
+slug: marfeel
+category: analytics
+website: https://www.marfeel.com
+detect:
+  scripts:
+    - pattern: '\.marfeel\.com/'
+    - pattern: '\.mrf\.io/'
+  js:
+    marfeel:
+      - pattern: ''

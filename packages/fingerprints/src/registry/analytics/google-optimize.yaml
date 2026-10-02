@@ -1,0 +1,10 @@
+name: Google Optimize
+slug: google-optimize
+category: analytics
+website: https://optimize.google.com
+detect:
+  scripts:
+    - pattern: 'googleoptimize\.com/optimize\.js'
+  js:
+    google_optimize:
+      - pattern: ''

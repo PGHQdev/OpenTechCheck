@@ -1,0 +1,8 @@
+name: Blesta
+slug: blesta
+category: analytics
+website: https://www.blesta.com
+detect:
+  cookies:
+    blesta_sid:
+      - pattern: ''

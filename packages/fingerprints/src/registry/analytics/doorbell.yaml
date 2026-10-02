@@ -1,0 +1,10 @@
+name: Doorbell
+slug: doorbell
+category: analytics
+website: https://doorbell.io
+detect:
+  scripts:
+    - pattern: 'embed\.doorbell\.io/'
+  js:
+    Doorbell:
+      - pattern: ''

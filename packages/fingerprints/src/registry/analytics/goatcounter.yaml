@@ -1,0 +1,7 @@
+name: GoatCounter
+slug: goatcounter
+category: analytics
+website: https://www.goatcounter.com/
+detect:
+  scripts:
+    - pattern: 'gc\.zgo\.at/count\.js'

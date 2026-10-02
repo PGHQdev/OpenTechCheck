@@ -1,0 +1,14 @@
+name: Basin
+slug: basin
+category: analytics
+website: https://usebasin.com
+detect:
+  scripts:
+    - pattern: 'js\.usebasin\.com/v([\d\.]+)\.min\.js'
+      version: 1
+  js:
+    onloadBasinCallback:
+      - pattern: ''
+  dom:
+    form[action*='usebasin.com/']:
+      - pattern: ''

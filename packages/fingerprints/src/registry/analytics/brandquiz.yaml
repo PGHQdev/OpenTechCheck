@@ -1,0 +1,10 @@
+name: Brandquiz
+slug: brandquiz
+category: analytics
+website: https://www.brandquiz.io
+detect:
+  scripts:
+    - pattern: 'app\.brandquiz\.io'
+  js:
+    brandquizEmbed:
+      - pattern: ''

@@ -1,0 +1,19 @@
+name: GoSquared
+slug: gosquared
+category: analytics
+website: https://www.gosquared.com
+detect:
+  html:
+    - pattern: '_gs\(["'']GSN-'
+  scripts:
+    - pattern: 'd1l6p2sc9645hc\.cloudfront\.net/gosquared\.js'
+  cookies:
+    gs_v_GSN-:
+      - pattern: ''
+    gs_u_GSN-:
+      - pattern: ''
+  js:
+    GoSquared:
+      - pattern: ''
+    _gs:
+      - pattern: ''

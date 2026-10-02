@@ -1,0 +1,12 @@
+name: FormAssembly
+slug: formassembly
+category: analytics
+website: https://www.formassembly.com
+detect:
+  js:
+    wFORMS.VERSION:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    form[action*='tfaforms.net'], iframe[src*='tfaforms.net']:
+      - pattern: ''

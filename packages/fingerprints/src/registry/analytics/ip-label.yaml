@@ -1,0 +1,10 @@
+name: ip-label
+slug: ip-label
+category: analytics
+website: https://www.ip-label.com
+detect:
+  scripts:
+    - pattern: 'clobs\.js'
+  js:
+    clobs:
+      - pattern: ''

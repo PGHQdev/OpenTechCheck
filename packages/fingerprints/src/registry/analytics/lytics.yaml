@@ -1,0 +1,11 @@
+name: Lytics
+slug: lytics
+category: analytics
+website: https://www.lytics.com
+detect:
+  scripts:
+    - pattern: '\.lytics\.io/'
+  js:
+    __lytics__jstag__.version:
+      - pattern: '(.+)'
+        version: 1

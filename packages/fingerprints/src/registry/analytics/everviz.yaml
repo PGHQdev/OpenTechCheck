@@ -1,0 +1,12 @@
+name: Everviz
+slug: everviz
+category: analytics
+website: https://www.everviz.com
+detect:
+  html:
+    - pattern: '\\"everviz\\":\{'
+  scripts:
+    - pattern: 'app\.everviz\.com/'
+  js:
+    everviz.beforePrint:
+      - pattern: ''

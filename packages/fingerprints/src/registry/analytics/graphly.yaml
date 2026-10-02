@@ -1,0 +1,8 @@
+name: Graphly
+slug: graphly
+category: analytics
+website: https://graphly.io
+detect:
+  js:
+    GraphlyTracking:
+      - pattern: ''

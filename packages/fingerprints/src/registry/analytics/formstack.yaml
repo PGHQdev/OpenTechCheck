@@ -1,0 +1,13 @@
+name: Formstack
+slug: formstack
+category: analytics
+website: https://www.formstack.com
+detect:
+  js:
+    Formstack:
+      - pattern: ''
+    loadFormstack:
+      - pattern: ''
+  dom:
+    form[action*='.formstack.com/forms']:
+      - pattern: ''

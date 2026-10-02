@@ -1,0 +1,7 @@
+name: 52Degrees
+slug: 52degrees
+category: analytics
+website: https://51degrees.com
+detect:
+  scripts:
+    - pattern: 'api\.handsetdetection\.com'

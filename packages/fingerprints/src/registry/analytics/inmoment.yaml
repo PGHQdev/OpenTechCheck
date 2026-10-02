@@ -1,0 +1,7 @@
+name: InMoment
+slug: inmoment
+category: analytics
+website: https://inmoment.com
+detect:
+  scripts:
+    - pattern: '\.inmoment\.com(?:\.\w+)?/'

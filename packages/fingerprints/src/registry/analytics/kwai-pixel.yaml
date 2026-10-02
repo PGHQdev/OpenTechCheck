@@ -1,0 +1,10 @@
+name: Kwai pixel
+slug: kwai-pixel
+category: analytics
+website: https://www.kwai.com
+detect:
+  js:
+    KwaiAnalyticsObject:
+      - pattern: ''
+    kwaiq:
+      - pattern: ''

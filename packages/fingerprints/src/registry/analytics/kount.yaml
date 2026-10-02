@@ -1,0 +1,12 @@
+name: Kount
+slug: kount
+category: analytics
+website: https://kount.com
+detect:
+  scripts:
+    - pattern: 'shopify\.kount\.net/js'
+  js:
+    ka.ClientSDK:
+      - pattern: ''
+    ka.collectData:
+      - pattern: ''

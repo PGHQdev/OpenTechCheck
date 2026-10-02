@@ -1,0 +1,8 @@
+name: Browsee
+slug: browsee
+category: analytics
+website: https://browsee.io
+detect:
+  js:
+    _browsee.apiKey:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Alpharank
+slug: alpharank
+category: analytics
+website: https://www.alpharank.ai
+detect:
+  scripts:
+    - pattern: 'api\.alpharank\.io/'

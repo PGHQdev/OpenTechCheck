@@ -1,0 +1,12 @@
+name: Form.io
+slug: form-io
+category: analytics
+website: https://form.io
+detect:
+  scripts:
+    - pattern: 'cdn\.form\.io'
+  js:
+    Formio.Form:
+      - pattern: ''
+    FormioUtils:
+      - pattern: ''

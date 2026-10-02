@@ -1,0 +1,8 @@
+name: Fillout
+slug: fillout
+category: analytics
+website: https://www.fillout.com/
+detect:
+  scripts:
+    - pattern: '^https://server\.fillout\.com/embed/v(\d)/'
+      version: 1

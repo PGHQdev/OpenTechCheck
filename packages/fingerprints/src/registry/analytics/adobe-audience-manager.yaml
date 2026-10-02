@@ -1,0 +1,10 @@
+name: Adobe Audience Manager
+slug: adobe-audience-manager
+category: analytics
+website: https://business.adobe.com/products/audience-manager/adobe-audience-manager.html
+detect:
+  cookies:
+    Demdex:
+      - pattern: ''
+    aam_uuid:
+      - pattern: ''

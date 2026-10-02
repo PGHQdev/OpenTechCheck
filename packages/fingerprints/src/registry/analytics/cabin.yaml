@@ -1,0 +1,10 @@
+name: Cabin
+slug: cabin
+category: analytics
+website: https://withcabin.com
+detect:
+  scripts:
+    - pattern: '\.withcabin\.com/'
+  js:
+    cabin:
+      - pattern: ''

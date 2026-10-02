@@ -1,0 +1,12 @@
+name: Highlight.io
+slug: highlight-io
+category: analytics
+website: https://www.highlight.io/
+detect:
+  scripts:
+    - pattern: 'unpkg\.com/highlight\.run'
+  js:
+    _highlightFetchPatch:
+      - pattern: ''
+    _highlightWebSocketEventCallback:
+      - pattern: ''

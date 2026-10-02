@@ -1,0 +1,9 @@
+name: Inputflow
+slug: inputflow
+category: analytics
+website: https://inputflow.com
+within:
+  techs: [webflow]
+detect:
+  scripts:
+    - pattern: 'script\.inputflow\.io'

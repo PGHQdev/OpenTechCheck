@@ -1,0 +1,10 @@
+name: Intellimize
+slug: intellimize
+category: analytics
+website: https://www.intellimize.com
+detect:
+  scripts:
+    - pattern: '\.intellimize\.co/'
+  js:
+    intellimize:
+      - pattern: ''

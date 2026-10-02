@@ -1,0 +1,11 @@
+name: Atatus
+slug: atatus
+category: analytics
+website: https://www.atatus.com
+detect:
+  scripts:
+    - pattern: '/atatus\.js'
+  js:
+    atatus.VERSION:
+      - pattern: '([\d\.]+)'
+        version: 1

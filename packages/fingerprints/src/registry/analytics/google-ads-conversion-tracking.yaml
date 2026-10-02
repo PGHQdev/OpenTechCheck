@@ -1,0 +1,11 @@
+name: Google Ads Conversion Tracking
+slug: google-ads-conversion-tracking
+category: analytics
+website: https://support.google.com/google-ads/answer/1722022
+implies: [google-ads]
+detect:
+  scripts:
+    - pattern: '\.googleadservices\.com/pagead/conversion_async\.js'
+  js:
+    google_trackConversion:
+      - pattern: ''

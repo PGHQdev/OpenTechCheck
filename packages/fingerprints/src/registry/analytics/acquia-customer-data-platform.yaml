@@ -1,0 +1,18 @@
+name: Acquia Customer Data Platform
+slug: acquia-customer-data-platform
+category: analytics
+website: https://www.acquia.com/products/marketing-cloud/customer-data-platform
+detect:
+  scripts:
+    - pattern: '^https?:\/\/.+\.agilone\.com'
+    - pattern: '^https?:\/\/scripts\.agilone\.com\/latest\/a1.js'
+  js:
+    $A1:
+      - pattern: ''
+    $A1Config:
+      - pattern: ''
+    agiloneObject:
+      - pattern: ''
+  dom:
+    "[data-function*='Agilone']":
+      - pattern: ''

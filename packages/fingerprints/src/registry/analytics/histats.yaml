@@ -1,0 +1,12 @@
+name: Histats
+slug: histats
+category: analytics
+website: https://www.histats.com
+detect:
+  js:
+    Histats.ver:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+  dom:
+    img[src*='.histats.com/']:
+      - pattern: ''

@@ -1,0 +1,18 @@
+name: Adobe Experience Platform Identity Service
+slug: adobe-experience-platform-identity-service
+category: analytics
+website: https://docs.adobe.com/content/help/en/id-service/using/home.html
+detect:
+  js:
+    s_c_il.0._c:
+      - pattern: 'Visitor'
+    s_c_il.1._c:
+      - pattern: 'Visitor'
+    s_c_il.2._c:
+      - pattern: 'Visitor'
+    s_c_il.3._c:
+      - pattern: 'Visitor'
+    s_c_il.4._c:
+      - pattern: 'Visitor'
+    s_c_il.5._c:
+      - pattern: 'Visitor'

@@ -1,0 +1,11 @@
+name: Dynatrace
+slug: dynatrace
+category: analytics
+website: https://www.dynatrace.com
+detect:
+  cookies:
+    dtCookie1:
+      - pattern: ''
+  js:
+    dtrum:
+      - pattern: ''

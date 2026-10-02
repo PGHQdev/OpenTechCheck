@@ -1,0 +1,14 @@
+name: AB Tasty
+slug: ab-tasty
+category: analytics
+website: https://www.abtasty.com
+detect:
+  scripts:
+    - pattern: 'try\.abtasty\.com'
+  js:
+    ABTasty:
+      - pattern: ''
+    _abtasty:
+      - pattern: ''
+    loadABTasty:
+      - pattern: ''

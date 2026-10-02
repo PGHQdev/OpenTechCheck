@@ -1,0 +1,10 @@
+name: CNZZ
+slug: cnzz
+category: analytics
+website: https://web.umeng.com/
+detect:
+  scripts:
+    - pattern: '//[^./]+\.cnzz\.com/(?:z_stat.php|core)\?'
+  js:
+    cnzz_protocol:
+      - pattern: ''

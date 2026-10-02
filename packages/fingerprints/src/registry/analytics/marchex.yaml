@@ -1,0 +1,10 @@
+name: Marchex
+slug: marchex
+category: analytics
+website: https://www.marchex.com
+detect:
+  scripts:
+    - pattern: '\.marchex\.io/'
+  dom:
+    link[href*='.marchex.io']:
+      - pattern: ''

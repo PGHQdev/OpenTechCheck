@@ -1,0 +1,10 @@
+name: Econda
+slug: econda
+category: analytics
+website: https://www.econda.de
+detect:
+  js:
+    econda:
+      - pattern: ''
+    econdaActive:
+      - pattern: ''

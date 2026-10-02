@@ -1,0 +1,7 @@
+name: Baidu Analytics (百度统计)
+slug: baidu-analytics
+category: analytics
+website: https://tongji.baidu.com/
+detect:
+  scripts:
+    - pattern: 'hm\.baidu\.com/hm?\.js'

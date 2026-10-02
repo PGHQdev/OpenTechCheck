@@ -1,0 +1,10 @@
+name: Instana
+slug: instana
+category: analytics
+website: https://www.instana.com
+detect:
+  scripts:
+    - pattern: 'eum\.instana\.io'
+  js:
+    ineum:
+      - pattern: ''

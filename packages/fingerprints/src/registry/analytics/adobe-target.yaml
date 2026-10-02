@@ -1,0 +1,11 @@
+name: Adobe Target
+slug: adobe-target
+category: analytics
+website: https://www.adobe.com/marketing/target.html
+detect:
+  js:
+    adobe.target:
+      - pattern: ''
+    adobe.target.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

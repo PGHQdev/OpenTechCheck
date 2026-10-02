@@ -1,0 +1,10 @@
+name: HockeyStack
+slug: hockeystack
+category: analytics
+website: https://hockeystack.com
+detect:
+  js:
+    HockeyStack:
+      - pattern: ''
+    hsscript:
+      - pattern: ''

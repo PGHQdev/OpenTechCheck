@@ -1,0 +1,12 @@
+name: CaliberMind
+slug: calibermind
+category: analytics
+website: https://calibermind.com
+detect:
+  scripts:
+    - pattern: 'cdn\.calibermind\.com'
+  js:
+    calibermindAddFormListener:
+      - pattern: ''
+    calibermindCaptureSubmit:
+      - pattern: ''

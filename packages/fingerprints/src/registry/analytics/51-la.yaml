@@ -1,0 +1,8 @@
+name: 51.LA
+slug: 51-la
+category: analytics
+website: https://www.51.la
+detect:
+  js:
+    LA.config.ck:
+      - pattern: ''

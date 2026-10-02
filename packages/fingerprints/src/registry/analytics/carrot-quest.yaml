@@ -1,0 +1,8 @@
+name: Carrot quest
+slug: carrot-quest
+category: analytics
+website: https://www.carrotquest.io
+detect:
+  js:
+    carrotquest:
+      - pattern: ''

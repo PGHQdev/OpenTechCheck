@@ -1,0 +1,10 @@
+name: Koala
+slug: koala
+category: analytics
+website: https://getkoala.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.getkoala\.com/'
+  js:
+    KoalaSDK:
+      - pattern: ''

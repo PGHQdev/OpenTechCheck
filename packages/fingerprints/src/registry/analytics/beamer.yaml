@@ -1,0 +1,10 @@
+name: Beamer
+slug: beamer
+category: analytics
+website: https://www.getbeamer.com
+detect:
+  js:
+    Beamer.enabled:
+      - pattern: 'true'
+    _BEAMER_URL:
+      - pattern: '//app\.getbeamer\.com/'

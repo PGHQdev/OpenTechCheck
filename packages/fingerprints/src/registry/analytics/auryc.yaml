@@ -1,0 +1,11 @@
+name: Auryc
+slug: auryc
+category: analytics
+website: https://www.auryc.com
+detect:
+  scripts:
+    - pattern: 'cdn\.auryc\.com/'
+  js:
+    aurycJsLibConfig.base.code_version:
+      - pattern: '([\d\.]+)'
+        version: 1

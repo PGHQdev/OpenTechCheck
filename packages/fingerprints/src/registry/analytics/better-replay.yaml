@@ -1,0 +1,7 @@
+name: Better Replay
+slug: better-replay
+category: analytics
+website: https://www.better-replay.com
+detect:
+  scripts:
+    - pattern: '.api\.better-replay\.com/'

@@ -1,0 +1,8 @@
+name: LiveBy
+slug: liveby
+category: analytics
+website: https://liveby.com
+detect:
+  js:
+    liveby.autoInitialize:
+      - pattern: ''

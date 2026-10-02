@@ -1,0 +1,11 @@
+name: AppDynamics
+slug: appdynamics
+category: analytics
+website: https://appdynamics.com
+detect:
+  scripts:
+    - pattern: 'adrum'
+  js:
+    ADRUM.conf.agentVer:
+      - pattern: '^(.+)$'
+        version: 1

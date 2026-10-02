@@ -1,0 +1,14 @@
+name: Konget
+slug: konget
+category: analytics
+website: https://konget.ru
+detect:
+  html:
+    - pattern: 'app\.konget\.ru/inject\?token='
+  scripts:
+    - pattern: '\.konget\.ru/'
+    - pattern: 'konget\.ru/'
+  js:
+    __KONGET_PUBLIC__:
+      - pattern: ''
+      - pattern: ''

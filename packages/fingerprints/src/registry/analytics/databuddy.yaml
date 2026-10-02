@@ -1,0 +1,15 @@
+name: Databuddy
+slug: databuddy
+category: analytics
+website: https://www.databuddy.cc
+detect:
+  html:
+    - pattern: 'cdn\.databuddy\.cc/databuddy\.js'
+    - pattern: 'data-client-id="[^"]*"[^>]*data-track-errors'
+  scripts:
+    - pattern: 'cdn\.databuddy\.cc/databuddy\.js'
+  meta:
+    creator:
+      - pattern: '^Databuddy$'
+    publisher:
+      - pattern: '^Databuddy$'

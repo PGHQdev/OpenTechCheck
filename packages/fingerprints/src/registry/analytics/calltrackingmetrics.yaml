@@ -1,0 +1,10 @@
+name: CallTrackingMetrics
+slug: calltrackingmetrics
+category: analytics
+website: https://www.calltrackingmetrics.com
+detect:
+  js:
+    __ctm.numbers:
+      - pattern: ''
+    __ctm_tracked_numbers:
+      - pattern: ''

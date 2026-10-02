@@ -1,0 +1,10 @@
+name: FullContact
+slug: fullcontact
+category: analytics
+website: https://www.fullcontact.com
+detect:
+  scripts:
+    - pattern: 'tags\.fullcontact\.com/'
+  js:
+    Fullcontact:
+      - pattern: ''

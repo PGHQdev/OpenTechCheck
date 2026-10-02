@@ -1,0 +1,12 @@
+name: Dexter
+slug: dexter
+category: analytics
+website: https://www.thedexterapp.com
+within:
+  techs: [shopify]
+detect:
+  js:
+    dexterLiquidVariables:
+      - pattern: ''
+    dexterProduct:
+      - pattern: ''

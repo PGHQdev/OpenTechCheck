@@ -1,0 +1,8 @@
+name: Dynatrace RUM
+slug: dynatrace-rum
+category: analytics
+website: https://www.dynatrace.com/platform/real-user-monitoring
+implies: [dynatrace]
+detect:
+  scripts:
+    - pattern: '/ruxitagentjs_(?:.+)_(?:.+)\.js'

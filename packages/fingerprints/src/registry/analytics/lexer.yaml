@@ -1,0 +1,10 @@
+name: Lexer
+slug: lexer
+category: analytics
+website: https://www.lexer.io
+detect:
+  scripts:
+    - pattern: 'tag\.lexer\.io'
+  js:
+    ___lexer_tag:
+      - pattern: ''

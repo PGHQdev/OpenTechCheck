@@ -1,0 +1,11 @@
+name: ClickHeat
+slug: clickheat
+category: analytics
+website: https://www.labsmedia.com/clickheat/index.html
+implies: [php]
+detect:
+  scripts:
+    - pattern: 'clickheat.*\.js'
+  js:
+    clickHeatServer:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Featurebase
+slug: featurebase
+category: analytics
+website: https://www.featurebase.app
+detect:
+  dom:
+    meta[http-equiv*='Content-Security-Policy'][content*='//featurebase.app']:
+      - pattern: ''

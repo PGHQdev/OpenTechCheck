@@ -1,0 +1,15 @@
+name: Bazo
+slug: bazo
+category: analytics
+website: https://bazo.io
+detect:
+  scripts:
+    - pattern: '\.bazo\.io/'
+  js:
+    _bazoq:
+      - pattern: ''
+    _bazou:
+      - pattern: '\.bazo\.io/'
+    _bazov:
+      - pattern: '([\d\.]+)'
+        version: 1

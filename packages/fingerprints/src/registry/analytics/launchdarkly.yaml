@@ -1,0 +1,13 @@
+name: LaunchDarkly
+slug: launchdarkly
+category: analytics
+website: https://launchdarkly.com
+detect:
+  scripts:
+    - pattern: '(?:\.|\-)launchdarkly(?:\.com/|\-sdk\.)'
+  js:
+    launchDarkly:
+      - pattern: ''
+  dom:
+    link[href*='.launchdarkly.com']:
+      - pattern: ''

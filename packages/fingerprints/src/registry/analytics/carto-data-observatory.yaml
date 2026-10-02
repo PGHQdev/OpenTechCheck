@@ -1,0 +1,10 @@
+name: CARTO Data Observatory
+slug: carto-data-observatory
+category: analytics
+website: https://carto.com/data-observatory
+detect:
+  js:
+    CartoDbLib:
+      - pattern: ''
+    cartodb.$:
+      - pattern: ''

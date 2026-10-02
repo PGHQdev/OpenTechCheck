@@ -1,0 +1,10 @@
+name: GreenStory
+slug: greenstory
+category: analytics
+website: https://www.greenstory.io
+detect:
+  scripts:
+    - pattern: '\.greenstory\.ca/'
+  js:
+    webpackJsonpGreenStoryWidgets:
+      - pattern: ''

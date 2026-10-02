@@ -1,0 +1,10 @@
+name: Etracker
+slug: etracker
+category: analytics
+website: https://www.etracker.com
+detect:
+  scripts:
+    - pattern: '\.etracker\.com'
+  js:
+    _etracker:
+      - pattern: ''

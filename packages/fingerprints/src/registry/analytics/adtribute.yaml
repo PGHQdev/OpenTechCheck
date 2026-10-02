@@ -1,0 +1,8 @@
+name: Adtribute
+slug: adtribute
+category: analytics
+website: https://www.adtribute.io
+detect:
+  js:
+    adbq.0.referrer_url:
+      - pattern: ''

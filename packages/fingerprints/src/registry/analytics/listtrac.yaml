@@ -1,0 +1,13 @@
+name: ListTrac
+slug: listtrac
+category: analytics
+website: https://listtrac.com
+detect:
+  html:
+    - pattern: 'code\.listtrac\.com/monitor\.ashx'
+    - pattern: '"webTracker":\s*\{\s*"type":"ListTrac"'
+  scripts:
+    - pattern: '\.listtrac\.com'
+  js:
+    listTrac.doEvent:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Elastic APM
+slug: elastic-apm
+category: analytics
+website: https://www.elastic.co/apm
+detect:
+  js:
+    elasticApm:
+      - pattern: ''

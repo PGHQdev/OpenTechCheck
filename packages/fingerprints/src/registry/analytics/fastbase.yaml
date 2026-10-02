@@ -1,0 +1,7 @@
+name: Fastbase
+slug: fastbase
+category: analytics
+website: https://www.fastbase.com
+detect:
+  scripts:
+    - pattern: 'fastbase\.com/'

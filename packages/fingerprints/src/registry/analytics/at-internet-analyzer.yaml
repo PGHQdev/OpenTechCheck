@@ -1,0 +1,10 @@
+name: AT Internet Analyzer
+slug: at-internet-analyzer
+category: analytics
+website: https://atinternet.com/en
+detect:
+  js:
+    ATInternet:
+      - pattern: ''
+    xtsite:
+      - pattern: ''

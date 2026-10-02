@@ -1,0 +1,7 @@
+name: Able CDP
+slug: able-cdp
+category: analytics
+website: https://www.ablecdp.com
+detect:
+  scripts:
+    - pattern: 'app\.ablecdp\.com'

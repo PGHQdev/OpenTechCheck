@@ -1,0 +1,7 @@
+name: Humblytics
+slug: humblytics
+category: analytics
+website: https://www.humblytics.com
+detect:
+  scripts:
+    - pattern: 'app\.humblytics\.com/'

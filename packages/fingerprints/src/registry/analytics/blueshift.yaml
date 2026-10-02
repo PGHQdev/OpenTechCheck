@@ -1,0 +1,7 @@
+name: Blueshift
+slug: blueshift
+category: analytics
+website: https://blueshift.com
+detect:
+  scripts:
+    - pattern: 'cdn.getblueshift.com/'

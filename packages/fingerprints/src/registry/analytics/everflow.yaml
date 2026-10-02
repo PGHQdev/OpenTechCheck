@@ -1,0 +1,7 @@
+name: Everflow
+slug: everflow
+category: analytics
+website: https://www.everflow.io
+detect:
+  scripts:
+    - pattern: 'everflow\.js'

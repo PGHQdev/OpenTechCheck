@@ -1,0 +1,16 @@
+name: Acquia Personalization
+slug: acquia-personalization
+category: analytics
+website: https://www.acquia.com/products/marketing-cloud/personalization
+implies: [acquia-cloud-platform]
+detect:
+  scripts:
+    - pattern: 'lift\.acquia\.com'
+  js:
+    AcquiaLift:
+      - pattern: ''
+    _tcaq:
+      - pattern: ''
+  dom:
+    '[data-lift-slot]':
+      - pattern: ''

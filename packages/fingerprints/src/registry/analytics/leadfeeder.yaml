@@ -1,0 +1,10 @@
+name: Leadfeeder
+slug: leadfeeder
+category: analytics
+website: https://www.leadfeeder.com
+detect:
+  scripts:
+    - pattern: '\.leadfeeder\.com/'
+  js:
+    ldfdr.getTracker:
+      - pattern: ''

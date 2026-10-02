@@ -1,0 +1,11 @@
+name: LinkMink
+slug: linkmink
+category: analytics
+website: https://linkmink.com
+detect:
+  scripts:
+    - pattern: 'cdn\.linkmink\.com/lm-js/([\d\.]+)/'
+      version: 1
+  js:
+    LinkMink:
+      - pattern: ''

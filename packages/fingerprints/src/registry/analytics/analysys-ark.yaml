@@ -1,0 +1,14 @@
+name: Analysys Ark
+slug: analysys-ark
+category: analytics
+website: https://ark.analysys.cn
+detect:
+  scripts:
+    - pattern: 'AnalysysFangzhou_JS_SDK\.min\.js\?v=([\d.]+)'
+      version: 1
+  cookies:
+    ARK_ID:
+      - pattern: ''
+  js:
+    AnalysysAgent:
+      - pattern: ''

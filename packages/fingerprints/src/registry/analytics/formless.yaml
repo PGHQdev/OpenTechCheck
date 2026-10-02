@@ -1,0 +1,10 @@
+name: Formless
+slug: formless
+category: analytics
+website: https://formless.ai
+detect:
+  js:
+    __formless_cleanup_signals:
+      - pattern: ''
+    __formless_init:
+      - pattern: ''

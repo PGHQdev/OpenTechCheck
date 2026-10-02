@@ -1,0 +1,8 @@
+name: Countly
+slug: countly
+category: analytics
+website: https://count.ly
+detect:
+  js:
+    Countly:
+      - pattern: ''

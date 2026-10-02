@@ -1,0 +1,11 @@
+name: Albacross
+slug: albacross
+category: analytics
+website: https://albacross.com
+detect:
+  scripts:
+    - pattern: '\.albacross\.com'
+  js:
+    _nQsv:
+      - pattern: '^([\d.])$'
+        version: 1

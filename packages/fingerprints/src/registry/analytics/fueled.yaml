@@ -1,0 +1,7 @@
+name: Fueled
+slug: fueled
+category: analytics
+website: https://fueled.io
+detect:
+  scripts:
+    - pattern: 'mb-cdn\.fueled\.io'

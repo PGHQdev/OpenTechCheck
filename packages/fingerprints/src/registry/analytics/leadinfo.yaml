@@ -1,0 +1,14 @@
+name: Leadinfo
+slug: leadinfo
+category: analytics
+website: https://www.leadinfo.com
+detect:
+  scripts:
+    - pattern: 'cdn\.leadinfo\.net'
+  js:
+    GlobalLeadinfoNamespace:
+      - pattern: ''
+        confidence: 50
+    leadinfo:
+      - pattern: ''
+        confidence: 50

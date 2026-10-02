@@ -1,0 +1,13 @@
+name: Gravito
+slug: gravito
+category: analytics
+website: https://www.gravito.net
+detect:
+  cookies:
+    gravitoSync:
+      - pattern: ''
+  js:
+    gravito.init:
+      - pattern: ''
+    gravitoCMP:
+      - pattern: ''

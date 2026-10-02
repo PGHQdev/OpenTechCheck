@@ -1,0 +1,16 @@
+name: GrowthBook
+slug: growthbook
+category: analytics
+website: https://www.growthbook.io
+detect:
+  js:
+    _growthbook.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+    _siteSetting.growthBookApiHost:
+      - pattern: ''
+    growthbook:
+      - pattern: ''
+  dom:
+    link[href*='cdn.growthbook.io']:
+      - pattern: ''

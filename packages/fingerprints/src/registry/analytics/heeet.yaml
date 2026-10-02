@@ -1,0 +1,14 @@
+name: Heeet
+slug: heeet
+category: analytics
+website: https://www.heeet.io
+detect:
+  js:
+    heeet:
+      - pattern: ''
+    heeetJourneyParams:
+      - pattern: ''
+    heeetParams:
+      - pattern: ''
+    heeetSaveJourney:
+      - pattern: ''

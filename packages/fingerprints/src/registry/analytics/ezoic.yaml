@@ -1,0 +1,14 @@
+name: Ezoic
+slug: ezoic
+category: analytics
+website: https://www.ezoic.com
+detect:
+  scripts:
+    - pattern: '\.ezo(?:js|ic|dn)\.(?:com|net)'
+  js:
+    EzoicA:
+      - pattern: ''
+    EzoicBanger:
+      - pattern: ''
+    ezoicTestActive:
+      - pattern: ''

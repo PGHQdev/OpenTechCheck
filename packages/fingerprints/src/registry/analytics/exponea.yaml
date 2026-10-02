@@ -1,0 +1,11 @@
+name: Exponea
+slug: exponea
+category: analytics
+website: https://go.exponea.com
+detect:
+  scripts:
+    - pattern: '(?:\.exponea\.com)?/js/exponea\.min\.js'
+  js:
+    exponea.version:
+      - pattern: '^v([\d.]+)$'
+        version: 1

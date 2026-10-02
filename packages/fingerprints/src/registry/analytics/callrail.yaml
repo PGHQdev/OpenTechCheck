@@ -1,0 +1,13 @@
+name: CallRail
+slug: callrail
+category: analytics
+website: https://www.callrail.com
+detect:
+  js:
+    CallTrk:
+      - pattern: ''
+    CallTrkSwap:
+      - pattern: ''
+    crwpVer:
+      - pattern: '^([\d\.]+)$'
+        version: 1

@@ -1,0 +1,7 @@
+name: Convert
+slug: convert
+category: analytics
+website: https://www.convert.com
+detect:
+  scripts:
+    - pattern: '\.convertexperiments\.com/js'

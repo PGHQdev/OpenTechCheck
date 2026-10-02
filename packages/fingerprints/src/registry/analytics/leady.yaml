@@ -1,0 +1,12 @@
+name: Leady
+slug: leady
+category: analytics
+website: https://leady.cz
+detect:
+  scripts:
+    - pattern: '\.leady\.com/'
+  js:
+    _leady.push:
+      - pattern: ''
+    leady_track_key:
+      - pattern: ''

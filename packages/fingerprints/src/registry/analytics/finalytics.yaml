@@ -1,0 +1,14 @@
+name: Finalytics
+slug: finalytics
+category: analytics
+website: https://finalytics.ai
+detect:
+  html:
+    - pattern: 'finalyticsdata\.com'
+    - pattern: 'finalytics-function_div\.css'
+  scripts:
+    - pattern: 'cloudfront\.net/v3/finalytics\.js'
+    - pattern: 'cloudfront\.net/v3/finalytics-function\.js'
+  js:
+    finalytics.accountSummaryParser:
+      - pattern: ''

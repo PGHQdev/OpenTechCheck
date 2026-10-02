@@ -1,0 +1,10 @@
+name: Formrun
+slug: formrun
+category: analytics
+website: https://form.run
+detect:
+  scripts:
+    - pattern: 'sdk\.form\.run'
+  js:
+    Formrun.init:
+      - pattern: ''

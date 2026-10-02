@@ -1,0 +1,7 @@
+name: BizSpring
+slug: bizspring
+category: analytics
+website: https://bizspring.co.kr
+detect:
+  scripts:
+    - pattern: 'fs\.bizspring\.net'

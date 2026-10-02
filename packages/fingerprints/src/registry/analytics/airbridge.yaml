@@ -1,0 +1,13 @@
+name: Airbridge
+slug: airbridge
+category: analytics
+website: https://www.airbridge.io
+detect:
+  scripts:
+    - pattern: 'static\.airbridge\.io'
+  js:
+    airBridgeSentData:
+      - pattern: ''
+    airbridge.version:
+      - pattern: '^(.+)$'
+        version: 1

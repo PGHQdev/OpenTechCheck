@@ -1,0 +1,7 @@
+name: Analyzz
+slug: analyzz
+category: analytics
+website: https://analyzz.com
+detect:
+  scripts:
+    - pattern: 'app\.analyzz\.com'

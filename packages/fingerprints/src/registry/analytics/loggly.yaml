@@ -1,0 +1,13 @@
+name: Loggly
+slug: loggly
+category: analytics
+website: https://www.loggly.com
+detect:
+  scripts:
+    - pattern: '\.loggly\.com/'
+  js:
+    LogglyTracker:
+      - pattern: ''
+  dom:
+    link[href*='.loggly.com']:
+      - pattern: ''

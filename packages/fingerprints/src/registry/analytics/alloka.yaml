@@ -1,0 +1,12 @@
+name: Alloka
+slug: alloka
+category: analytics
+website: https://alloka.ru
+detect:
+  scripts:
+    - pattern: 'analytics\.alloka\.ru'
+  js:
+    AllokaId:
+      - pattern: ''
+    allokaAddEvent:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Informizely
+slug: informizely
+category: analytics
+website: https://www.informizely.com
+detect:
+  dom:
+    script[id*='_informizely_script_tag']:
+      - pattern: ''

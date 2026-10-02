@@ -1,0 +1,12 @@
+name: Elevar
+slug: elevar
+category: analytics
+website: https://www.getelevar.com
+detect:
+  js:
+    ElevarGtmSuite:
+      - pattern: ''
+    elevar_gtm_errors:
+      - pattern: ''
+    webpackChunkelevar_gtm_suite_scripts:
+      - pattern: ''

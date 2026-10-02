@@ -1,0 +1,14 @@
+name: Demandbase
+slug: demandbase
+category: analytics
+website: https://www.demandbase.com
+detect:
+  scripts:
+    - pattern: '\.engagio\.com/'
+    - pattern: '\.demandbase\.com/'
+  js:
+    Demandbase:
+      - pattern: ''
+    Demandbase.version:
+      - pattern: '^(.+)$'
+        version: 1

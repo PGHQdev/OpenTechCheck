@@ -1,0 +1,14 @@
+name: Jotform
+slug: jotform
+category: analytics
+website: https://www.jotform.com
+detect:
+  scripts:
+    - pattern: '\.jotform\.com/'
+  js:
+    JOTFORM_ENV:
+      - pattern: ''
+    JotForm.FBCollectInformation:
+      - pattern: ''
+    JotFormActions:
+      - pattern: ''

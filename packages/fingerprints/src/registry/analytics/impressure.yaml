@@ -1,0 +1,8 @@
+name: Impressure
+slug: impressure
+category: analytics
+website: https://impressure.io
+detect:
+  js:
+    Impressure.commands:
+      - pattern: ''

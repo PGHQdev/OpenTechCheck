@@ -1,0 +1,10 @@
+name: Intelligems
+slug: intelligems
+category: analytics
+website: https://intelligems.io
+detect:
+  scripts:
+    - pattern: 'cdn\.intelligems\.io/[\w]+\.js'
+  js:
+    webpackChunk_intelligems_shopify_plugin:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: INFOnline
+slug: infonline
+category: analytics
+website: https://www.infonline.de
+detect:
+  scripts:
+    - pattern: '^https?://(?:[^/]+\.)?i(?:oam|v)wbox\.de/'
+  js:
+    iam_data:
+      - pattern: ''
+    szmvars:
+      - pattern: ''

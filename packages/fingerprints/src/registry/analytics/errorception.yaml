@@ -1,0 +1,8 @@
+name: Errorception
+slug: errorception
+category: analytics
+website: https://errorception.com
+detect:
+  js:
+    _errs:
+      - pattern: ''

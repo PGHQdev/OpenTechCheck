@@ -1,0 +1,22 @@
+name: Gemius
+slug: gemius
+category: analytics
+website: https://www.gemius.com
+detect:
+  html:
+    - pattern: '<a [^>]*onclick="gemius_hit'
+  scripts:
+    - pattern: 'hit\.gemius\.pl/xgemius\.js'
+    - pattern: 'hit\.gemius\.pl'
+      confidence: 80
+    - pattern: 'xgemius\.js'
+      confidence: 30
+  js:
+    gemius_hit:
+      - pattern: ''
+    gemius_init:
+      - pattern: ''
+    gemius_pending:
+      - pattern: ''
+    pp_gemius_hit:
+      - pattern: ''

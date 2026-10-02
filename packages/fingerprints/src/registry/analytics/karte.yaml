@@ -1,0 +1,14 @@
+name: Karte
+slug: karte
+category: analytics
+website: https://karte.io
+detect:
+  js:
+    __KARTE_REWRITE_ADMIN_CONFIG:
+      - pattern: ''
+    __karte_live:
+      - pattern: ''
+    __karte_loaded:
+      - pattern: ''
+    __karte_tracker:
+      - pattern: ''

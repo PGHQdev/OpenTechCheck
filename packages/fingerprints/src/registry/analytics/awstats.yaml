@@ -1,0 +1,11 @@
+name: AWStats
+slug: awstats
+category: analytics
+website: https://awstats.sourceforge.net
+detect:
+  scripts:
+    - pattern: '(?:^|/)awstats_misc_tracker\.js(?:\?|$)'
+  meta:
+    generator:
+      - pattern: 'AWStats ([\d.]+(?: \(build [\d.]+\))?)'
+        version: 1

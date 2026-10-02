@@ -1,0 +1,8 @@
+name: HulkApps Form Builder
+slug: hulkapps-form-builder
+category: analytics
+website: https://www.hulkapps.com/products/form-builder-shopify
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'formbuilder\.hulkapps\.com/'

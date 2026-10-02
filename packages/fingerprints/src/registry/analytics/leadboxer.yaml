@@ -1,0 +1,7 @@
+name: LeadBoxer
+slug: leadboxer
+category: analytics
+website: https://www.leadboxer.com
+detect:
+  scripts:
+    - pattern: 'ip\.leadboxer\.com'

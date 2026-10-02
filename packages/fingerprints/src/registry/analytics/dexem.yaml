@@ -1,0 +1,7 @@
+name: Dexem
+slug: dexem
+category: analytics
+website: https://www.dexem.com
+detect:
+  scripts:
+    - pattern: 'cdn\.dexem\.net/'

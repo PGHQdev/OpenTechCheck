@@ -1,0 +1,7 @@
+name: Antsomi CDP 365
+slug: antsomi-cdp-365
+category: analytics
+website: https://www.antsomi.com
+detect:
+  scripts:
+    - pattern: '\.cdp\.asia/'

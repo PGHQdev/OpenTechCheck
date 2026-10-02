@@ -1,0 +1,10 @@
+name: Asapp
+slug: asapp
+category: analytics
+website: https://www.asapp.com
+detect:
+  scripts:
+    - pattern: 'sdk\.asapp\.com/'
+  js:
+    ASAPP.Host:
+      - pattern: ''

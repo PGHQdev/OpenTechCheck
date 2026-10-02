@@ -1,0 +1,7 @@
+name: Baremetrics
+slug: baremetrics
+category: analytics
+website: https://baremetrics.com
+detect:
+  scripts:
+    - pattern: '\.baremetrics\.com/'

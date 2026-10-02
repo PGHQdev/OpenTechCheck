@@ -1,0 +1,9 @@
+name: Air360
+slug: air360
+category: analytics
+website: https://www.air360.io
+detect:
+  js:
+    Air360.SDK_Version:
+      - pattern: '^([\d\.]+)$'
+        version: 1

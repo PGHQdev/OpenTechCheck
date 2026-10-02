@@ -1,0 +1,13 @@
+name: GrowingIO
+slug: growingio
+category: analytics
+website: https://www.growingio.com/
+detect:
+  scripts:
+    - pattern: 'assets\.growingio\.com/([\d.]+)/gio\.js'
+      version: 1
+  cookies:
+    gr_user_id:
+      - pattern: ''
+    grwng_uid:
+      - pattern: ''

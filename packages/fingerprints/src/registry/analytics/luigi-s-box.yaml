@@ -1,0 +1,10 @@
+name: Luigi’s Box
+slug: luigi-s-box
+category: analytics
+website: https://www.luigisbox.com
+detect:
+  js:
+    Luigis:
+      - pattern: ''
+    LuigisBox:
+      - pattern: ''

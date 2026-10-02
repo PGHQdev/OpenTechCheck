@@ -1,0 +1,23 @@
+name: Kameleoon
+slug: kameleoon
+category: analytics
+website: https://kameleoon.com/
+detect:
+  scripts:
+    - pattern: '\.kameleoon\.\w+/kameleoon\.js'
+  cookies:
+    kameleoonVisitorCode:
+      - pattern: ''
+  js:
+    Kameleoon.Gatherer.SCRIPT_VERSION:
+      - pattern: '(.+)'
+        version: 1
+    kameleoonEndLoadTime:
+      - pattern: ''
+    kameleoonIframeURL:
+      - pattern: ''
+    kameleoonS:
+      - pattern: ''
+  dom:
+    link[href*='.kameleoon.eu/kameleoon.js']:
+      - pattern: ''

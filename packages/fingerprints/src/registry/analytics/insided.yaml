@@ -1,0 +1,10 @@
+name: inSided
+slug: insided
+category: analytics
+website: https://www.insided.com
+detect:
+  js:
+    inSidedData:
+      - pattern: ''
+    insided:
+      - pattern: ''

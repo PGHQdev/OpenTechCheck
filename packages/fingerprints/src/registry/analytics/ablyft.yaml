@@ -1,0 +1,14 @@
+name: ABLyft
+slug: ablyft
+category: analytics
+website: https://ablyft.com
+detect:
+  js:
+    ablyft.get:
+      - pattern: ''
+    ablyftClickListener:
+      - pattern: ''
+    ablyftEventQueueInterv:
+      - pattern: ''
+    ablyftStopQueue:
+      - pattern: ''

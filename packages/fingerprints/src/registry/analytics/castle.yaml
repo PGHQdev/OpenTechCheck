@@ -1,0 +1,11 @@
+name: Castle
+slug: castle
+category: analytics
+website: https://castle.io
+detect:
+  js:
+    _castle:
+      - pattern: ''
+  dom:
+    link[href*='t.castle.io']:
+      - pattern: ''

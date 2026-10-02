@@ -1,0 +1,10 @@
+name: Bread & Butter
+slug: bread-butter
+category: analytics
+website: https://breadbutter.io
+detect:
+  scripts:
+    - pattern: 'api\.breadbutter\.io'
+  js:
+    BreadButter.breadbutter:
+      - pattern: ''

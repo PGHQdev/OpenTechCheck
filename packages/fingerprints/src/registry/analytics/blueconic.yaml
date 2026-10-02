@@ -1,0 +1,14 @@
+name: BlueConic
+slug: blueconic
+category: analytics
+website: https://www.blueconic.com
+detect:
+  js:
+    BlueConicEngagement:
+      - pattern: ''
+    blueConicClient:
+      - pattern: ''
+    blueConicPreListeners:
+      - pattern: ''
+    loadValuesFromBlueConic:
+      - pattern: ''

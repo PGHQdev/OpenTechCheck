@@ -1,0 +1,8 @@
+name: Gator
+slug: gator
+category: analytics
+website: https://gator.io
+detect:
+  js:
+    GatorLegacy:
+      - pattern: ''

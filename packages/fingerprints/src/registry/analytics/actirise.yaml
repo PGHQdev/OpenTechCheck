@@ -1,0 +1,14 @@
+name: Actirise
+slug: actirise
+category: analytics
+website: https://corporate.actirise.com
+detect:
+  js:
+    ActiriseSafeFrame:
+      - pattern: ''
+    actirisePlugin.version:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    div[data-actirise]:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Lead Forensics
+slug: lead-forensics
+category: analytics
+website: https://www.leadforensics.com
+detect:
+  scripts:
+    - pattern: '\.leadforensics\.com/'

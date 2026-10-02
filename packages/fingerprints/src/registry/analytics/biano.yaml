@@ -1,0 +1,10 @@
+name: Biano
+slug: biano
+category: analytics
+website: https://www.biano.ro
+detect:
+  scripts:
+    - pattern: 'pixel\.biano\.ro/'
+  js:
+    bianoTrack:
+      - pattern: ''
