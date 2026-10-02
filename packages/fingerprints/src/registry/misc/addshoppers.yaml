@@ -1,0 +1,7 @@
+name: AddShoppers
+slug: addshoppers
+category: misc
+website: https://www.addshoppers.com
+detect:
+  scripts:
+    - pattern: '(?:cdn\.)?shop\.pe/widget/'

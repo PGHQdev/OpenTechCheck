@@ -1,0 +1,8 @@
+name: Gitiles
+slug: gitiles
+category: misc
+website: https://gerrit.googlesource.com/gitiles/
+implies: [java]
+detect:
+  html:
+    - pattern: 'Powered by <a href="https://gerrit\.googlesource\.com/gitiles/">Gitiles<'

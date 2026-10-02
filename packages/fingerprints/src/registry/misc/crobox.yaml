@@ -1,0 +1,10 @@
+name: Crobox
+slug: crobox
+category: misc
+website: https://crobox.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.crobox\.com'
+  js:
+    crobox:
+      - pattern: ''

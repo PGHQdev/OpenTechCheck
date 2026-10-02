@@ -1,0 +1,9 @@
+name: cgit
+slug: cgit
+category: misc
+website: https://git.zx2c4.com/cgit
+detect:
+  meta:
+    generator:
+      - pattern: '^cgit v([\d.a-z-]+)$'
+        version: 1

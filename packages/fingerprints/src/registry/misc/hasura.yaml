@@ -1,0 +1,8 @@
+name: Hasura
+slug: hasura
+category: misc
+website: https://hasura.io
+implies: [graphql]
+detect:
+  scripts:
+    - pattern: '\.hasura\.io/'

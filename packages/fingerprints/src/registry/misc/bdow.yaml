@@ -1,0 +1,12 @@
+name: BDOW
+slug: bdow
+category: misc
+website: https://bdow.com/
+detect:
+  scripts:
+    - pattern: '\.sumo(?:me)?\.com/'
+  js:
+    sumo:
+      - pattern: ''
+    sumome:
+      - pattern: ''

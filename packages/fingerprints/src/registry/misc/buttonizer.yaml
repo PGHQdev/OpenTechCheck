@@ -1,0 +1,11 @@
+name: Buttonizer
+slug: buttonizer
+category: misc
+website: https://buttonizer.pro
+detect:
+  scripts:
+    - pattern: 'wp-content/plugins/buttonizer-multifunctional-button/'
+    - pattern: 'cdn\.buttonizer\.io/'
+  js:
+    Buttonizer:
+      - pattern: ''

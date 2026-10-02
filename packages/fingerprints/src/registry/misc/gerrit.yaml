@@ -1,0 +1,20 @@
+name: Gerrit
+slug: gerrit
+category: misc
+website: https://www.gerritcodereview.com
+implies: [java]
+detect:
+  html:
+    - pattern: '>Gerrit Code Review</a>\s*"\s*\(([0-9.]+)\)'
+      version: 1
+    - pattern: '<(?:div|style) id="gerrit_'
+  scripts:
+    - pattern: '^gerrit_ui/gerrit_ui'
+  meta:
+    title:
+      - pattern: '^Gerrit Code Review$'
+  js:
+    Gerrit:
+      - pattern: ''
+    gerrit_ui:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Findbar
+slug: findbar
+category: misc
+website: https://findbar.io
+detect:
+  js:
+    Findbar:
+      - pattern: ''
+    findbarScriptLoaded:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Canyon
+slug: canyon
+category: misc
+website: https://docs.canyonjs.io
+detect:
+  js:
+    __coverage__:
+      - pattern: ''
+    canyonShowDecorations:
+      - pattern: ''

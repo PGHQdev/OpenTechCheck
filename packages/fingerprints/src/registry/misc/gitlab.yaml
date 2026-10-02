@@ -1,0 +1,18 @@
+name: GitLab
+slug: gitlab
+category: misc
+website: https://about.gitlab.com
+implies: [ruby-on-rails, vue]
+detect:
+  html:
+    - pattern: '<meta content="https?://[^/]+/assets/gitlab_logo-'
+    - pattern: '<header class="navbar navbar-fixed-top navbar-gitlab with-horizontal-nav">'
+  meta:
+    og:site_name:
+      - pattern: '^GitLab$'
+  cookies:
+    _gitlab_session:
+      - pattern: ''
+  js:
+    gl.dashboardOptions:
+      - pattern: ''

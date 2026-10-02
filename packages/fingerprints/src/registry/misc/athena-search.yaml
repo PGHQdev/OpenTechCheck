@@ -1,0 +1,10 @@
+name: Athena Search
+slug: athena-search
+category: misc
+website: https://www.athenasearch.io
+detect:
+  scripts:
+    - pattern: 'wp-content/plugins/athena-search'
+  dom:
+    link[href*='athena/autocomplete/css/autocomplete.css']:
+      - pattern: ''

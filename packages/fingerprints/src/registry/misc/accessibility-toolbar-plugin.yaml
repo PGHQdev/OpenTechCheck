@@ -1,0 +1,8 @@
+name: Accessibility Toolbar Plugin
+slug: accessibility-toolbar-plugin
+category: misc
+website: https://webworks.ga/acc_toolbar
+detect:
+  js:
+    MicAccessTool.prototype.openCloseBoxKeyboard:
+      - pattern: ''

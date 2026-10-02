@@ -1,0 +1,11 @@
+name: Instatus
+slug: instatus
+category: misc
+website: https://instatus.com
+detect:
+  dom:
+    a.footer__link:
+      - text: true
+        pattern: 'Powered by Instatus'
+    a[href*='instatus.com'][target='_blank'], iframe[src*='.instatus.com']:
+      - pattern: ''

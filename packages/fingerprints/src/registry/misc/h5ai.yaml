@@ -1,0 +1,8 @@
+name: h5ai
+slug: h5ai
+category: misc
+website: https://github.com/lrsjng/h5ai
+implies: [php]
+detect:
+  scripts:
+    - pattern: '/_h5ai/(?:public|client)/js/scripts\.js'

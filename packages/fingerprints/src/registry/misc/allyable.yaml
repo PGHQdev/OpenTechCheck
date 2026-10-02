@@ -1,0 +1,8 @@
+name: Allyable
+slug: allyable
+category: misc
+website: https://allyable.com
+detect:
+  scripts:
+    - pattern: 'mk-sense\.com/aweb\?license'
+    - pattern: 'portal\.allyable\.com/'

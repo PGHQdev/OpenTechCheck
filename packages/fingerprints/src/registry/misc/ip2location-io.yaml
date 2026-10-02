@@ -1,0 +1,8 @@
+name: IP2Location.io
+slug: ip2location-io
+category: misc
+website: https://www.ip2location.io
+detect:
+  cookies:
+    ip2location_redirection_first_visit:
+      - pattern: ''

@@ -1,0 +1,17 @@
+name: Greenhouse
+slug: greenhouse
+category: misc
+website: https://www.greenhouse.io
+detect:
+  html:
+    - pattern: 'cmg-greenhouse'
+    - pattern: '#grnhse_app'
+  scripts:
+    - pattern: '\.greenhouse\.io/'
+    - pattern: 'cmg-greenhouse'
+  js:
+    populateGreenhouseJobs:
+      - pattern: ''
+  dom:
+    link[href*='cdn\.greenhouse\.io/']:
+      - pattern: ''

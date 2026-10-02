@@ -1,0 +1,10 @@
+name: Infinity
+slug: infinity
+category: misc
+website: https://startinfinity.com
+detect:
+  html:
+    - pattern: 'app\.startinfinity\.com/form/'
+  dom:
+    iframe[src*='app.startinfinity.com/']:
+      - pattern: ''

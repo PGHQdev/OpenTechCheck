@@ -1,0 +1,10 @@
+name: Hexia
+slug: hexia
+category: misc
+website: https://sdk.hexia.io
+detect:
+  scripts:
+    - pattern: 'sdk\.hexia\.io'
+  js:
+    hexia.address:
+      - pattern: ''

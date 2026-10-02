@@ -1,0 +1,7 @@
+name: Grain Harvest
+slug: grain-harvest
+category: misc
+website: https://graindata.com
+detect:
+  scripts:
+    - pattern: 'cdn\.harvest\.graindata\.com'

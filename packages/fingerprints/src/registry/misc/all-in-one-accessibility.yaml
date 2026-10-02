@@ -1,0 +1,12 @@
+name: All in One Accessibility
+slug: all-in-one-accessibility
+category: misc
+website: https://www.skynettechnologies.com/all-in-one-accessibility
+detect:
+  scripts:
+    - pattern: '\.skynettechnologies\.com/accessibility/'
+  js:
+    aiao_modal_footer_height:
+      - pattern: ''
+    aioa_accessibility_profiles_STATUS:
+      - pattern: ''

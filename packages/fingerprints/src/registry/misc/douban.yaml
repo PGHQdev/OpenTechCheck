@@ -1,0 +1,21 @@
+name: Douban
+slug: douban
+category: misc
+website: https://m.douban.com
+detect:
+  url:
+    - pattern: 'douban\.com'
+  scripts:
+    - pattern: 'doubanio\.com'
+    - pattern: '/js/douban\.js'
+  headers:
+    x-douban-newbid:
+      - pattern: ''
+    x-dae-app:
+      - pattern: ''
+  cookies:
+    bid:
+      - pattern: ''
+  js:
+    doubanmovie:
+      - pattern: ''

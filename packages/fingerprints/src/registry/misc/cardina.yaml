@@ -1,0 +1,10 @@
+name: Cardina
+slug: cardina
+category: misc
+website: https://cardina.com
+detect:
+  scripts:
+    - pattern: 'static\.cohere\.so'
+  js:
+    Cohere.addCallStatusListener:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Flockler
+slug: flockler
+category: misc
+website: https://flockler.com
+detect:
+  scripts:
+    - pattern: '\.flockler\.com/'
+  js:
+    FLOCKLER_EMBEDS:
+      - pattern: ''
+    _flocklerOverride:
+      - pattern: ''

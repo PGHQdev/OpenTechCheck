@@ -1,0 +1,8 @@
+name: Atlassian Jira Issue Collector
+slug: atlassian-jira-issue-collector
+category: misc
+website: https://www.atlassian.com/software/jira/overview/
+detect:
+  scripts:
+    - pattern: 'jira-issue-collector-plugin'
+    - pattern: 'atlassian\.jira\.collector\.plugin'

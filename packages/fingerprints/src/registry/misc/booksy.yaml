@@ -1,0 +1,10 @@
+name: Booksy
+slug: booksy
+category: misc
+website: https://booksy.com/
+detect:
+  scripts:
+    - pattern: 'booksy\.com/widget/code\.js'
+  js:
+    booksy:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Accessibly
+slug: accessibly
+category: misc
+website: https://www.onthemapmarketing.com/accessibly/
+detect:
+  scripts:
+    - pattern: 'accessibly\.onthemapmarketing\.com'
+  js:
+    accessibilityWidget.name:
+      - pattern: 'bound'

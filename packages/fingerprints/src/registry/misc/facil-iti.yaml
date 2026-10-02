@@ -1,0 +1,11 @@
+name: Facil-iti
+slug: facil-iti
+category: misc
+website: https://www.facil-iti.com/
+detect:
+  html:
+    - pattern: 'faciliti-tag\.min\.js" data-application-identifier'
+    - pattern: 'cdn\.facil-iti\.app'
+  scripts:
+    - pattern: 'ws\.facil-iti\.com/tag/faciliti-tag\.min\.js'
+    - pattern: 'cdn\.facil-iti\.app/tags/faciliti-tag\.min\.js'

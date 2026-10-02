@@ -1,0 +1,12 @@
+name: HawkSearch
+slug: hawksearch
+category: misc
+website: https://www.hawksearch.com
+detect:
+  js:
+    HawkCompare.addImage:
+      - pattern: ''
+    HawkSearch.BaseUrl:
+      - pattern: ''
+    hawkIntervalSearch:
+      - pattern: ''

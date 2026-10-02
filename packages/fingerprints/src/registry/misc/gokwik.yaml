@@ -1,0 +1,14 @@
+name: GoKwik
+slug: gokwik
+category: misc
+website: https://www.gokwik.co
+within:
+  categories: [ecommerce]
+detect:
+  js:
+    gokwikBuyNow:
+      - pattern: ''
+    gokwikCheckoutApp:
+      - pattern: ''
+    gokwikSdk:
+      - pattern: ''

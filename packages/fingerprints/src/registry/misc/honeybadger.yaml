@@ -1,0 +1,10 @@
+name: Honeybadger
+slug: honeybadger
+category: misc
+website: https://www.honeybadger.io
+detect:
+  js:
+    Honeybadger:
+      - pattern: ''
+    initHoneyBadger:
+      - pattern: ''

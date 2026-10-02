@@ -1,0 +1,20 @@
+name: Employment Hero
+slug: employment-hero
+category: misc
+website: https://employmenthero.com
+detect:
+  html:
+    - pattern: 'window\.kp\s*='
+    - pattern: 'keypay-prod-public\.s3\.amazonaws\.com'
+  url:
+    - pattern: 'employmenthero\.yourpayroll\.'
+  scripts:
+    - pattern: 'cdn\.keypay\.yourpayroll\.io'
+  headers:
+    access-control-allow-origin:
+      - pattern: 'employmenthero\.com'
+  js:
+    emhTheme.siteSlug:
+      - pattern: ''
+    emhTracking.token:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: FAST ESP
+slug: fast-esp
+category: misc
+website: https://microsoft.com/enterprisesearch
+detect:
+  html:
+    - pattern: '<form[^>]+id="fastsearch"'
+  dom:
+    form[id^='fastsearch']:
+      - pattern: ''

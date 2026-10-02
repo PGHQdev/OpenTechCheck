@@ -1,0 +1,12 @@
+name: FareHarbor
+slug: fareharbor
+category: misc
+website: https://fareharbor.com
+detect:
+  html:
+    - pattern: '<iframe[^>]+fareharbor'
+  scripts:
+    - pattern: 'fareharbor\.com/embeds/api/'
+  dom:
+    iframe[src*='fareharbor']:
+      - pattern: ''

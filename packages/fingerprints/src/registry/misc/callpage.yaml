@@ -1,0 +1,12 @@
+name: CallPage
+slug: callpage
+category: misc
+website: https://www.callpage.io
+detect:
+  js:
+    callpage.__cp:
+      - pattern: ''
+    callpage.__cp.version:
+      - pattern: ''
+    callpageWebpackJsonp:
+      - pattern: ''

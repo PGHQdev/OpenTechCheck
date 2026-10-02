@@ -1,0 +1,8 @@
+name: AirRobe
+slug: airrobe
+category: misc
+website: https://airrobe.com
+detect:
+  js:
+    airrobe.app_id:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Gravitec
+slug: gravitec
+category: misc
+website: https://gravitec.net
+detect:
+  scripts:
+    - pattern: '(?:cdn|id)\.gravitec\.(?:media|net)'
+  js:
+    Gravitec:
+      - pattern: ''
+    gravitecWebpackJsonp:
+      - pattern: ''

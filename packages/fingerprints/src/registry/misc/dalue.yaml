@@ -1,0 +1,10 @@
+name: Dalue
+slug: dalue
+category: misc
+website: https://dalue.io/dalue
+detect:
+  scripts:
+    - pattern: 'api\.dalue\.io'
+  js:
+    DalueSearch.Consts:
+      - pattern: ''

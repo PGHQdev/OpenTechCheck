@@ -1,0 +1,8 @@
+name: Admiral
+slug: admiral
+category: misc
+website: https://www.getadmiral.com
+detect:
+  js:
+    admiral:
+      - pattern: ''

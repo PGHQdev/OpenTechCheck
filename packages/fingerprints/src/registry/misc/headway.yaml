@@ -1,0 +1,8 @@
+name: Headway
+slug: headway
+category: misc
+website: https://headwayapp.co
+detect:
+  headers:
+    x-hello:
+      - pattern: '^headway$'

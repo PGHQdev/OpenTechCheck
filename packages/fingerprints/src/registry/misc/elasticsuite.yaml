@@ -1,0 +1,20 @@
+name: ElasticSuite
+slug: elasticsuite
+category: misc
+website: https://elasticsuite.io
+implies: [php]
+within:
+  techs: [magento]
+detect:
+  scripts:
+    - pattern: '/Smile_ElasticsuiteTracker/'
+  cookies:
+    STUID:
+      - pattern: ''
+        confidence: 50
+    STVID:
+      - pattern: ''
+        confidence: 50
+  js:
+    smileTracker:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: EPrints
+slug: eprints
+category: misc
+website: https://www.eprints.org
+detect:
+  meta:
+    generator:
+      - pattern: 'EPrints ([\d.]+)'
+        version: 1
+  js:
+    EPJS_menu_template:
+      - pattern: ''
+    EPrints:
+      - pattern: ''

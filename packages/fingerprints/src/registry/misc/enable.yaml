@@ -1,0 +1,10 @@
+name: Enable
+slug: enable
+category: misc
+website: https://www.enable.co.il
+detect:
+  scripts:
+    - pattern: 'cdn\.enable\.co\.il/'
+  js:
+    enable_toolbar.is_premium:
+      - pattern: ''

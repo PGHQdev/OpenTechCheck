@@ -1,0 +1,12 @@
+name: Faveo
+slug: faveo
+category: misc
+website: https://faveohelpdesk.com
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '/lb-faveo/js/'
+  dom:
+    link[href*='/lb-faveo/']:
+      - pattern: ''

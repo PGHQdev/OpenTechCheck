@@ -1,0 +1,8 @@
+name: History
+slug: history
+category: misc
+website: https://github.com/ReactTraining/history
+detect:
+  scripts:
+    - pattern: '/history(@|/)([\d.]+)(?:/[a-z]+)?/history(?:(.production|.development))?(?:.min)?\.js'
+      version: 2

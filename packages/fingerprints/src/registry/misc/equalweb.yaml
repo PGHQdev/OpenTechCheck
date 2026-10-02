@@ -1,0 +1,7 @@
+name: EqualWeb
+slug: equalweb
+category: misc
+website: https://www.equalweb.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.equalweb\.com.*\.js'

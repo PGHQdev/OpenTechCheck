@@ -1,0 +1,12 @@
+name: EmbedSocial
+slug: embedsocial
+category: misc
+website: https://embedsocial.com
+detect:
+  scripts:
+    - pattern: 'embedsocial\.com/'
+  js:
+    EMBEDSOCIALHASHTAG:
+      - pattern: ''
+    EmbedSocialIframeLightbox:
+      - pattern: ''

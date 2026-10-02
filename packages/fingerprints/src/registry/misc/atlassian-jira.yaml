@@ -1,0 +1,22 @@
+name: Atlassian Jira
+slug: atlassian-jira
+category: misc
+website: https://www.atlassian.com/software/jira
+implies: [java]
+detect:
+  url:
+    - pattern: '[?&]application=jira\b'
+    - pattern: 'ari%3Acloud%3Ajira'
+  meta:
+    application-name:
+      - pattern: 'JIRA'
+    data-version:
+      - pattern: '([\d.]+)'
+        version: 1
+        confidence: 0
+  js:
+    jira.id:
+      - pattern: ''
+  dom:
+    '#jira':
+      - pattern: ''

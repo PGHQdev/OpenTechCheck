@@ -1,0 +1,7 @@
+name: Getsitecontrol
+slug: getsitecontrol
+category: misc
+website: https://getsitecontrol.com
+detect:
+  scripts:
+    - pattern: '\.getsitecontrol\.com/'

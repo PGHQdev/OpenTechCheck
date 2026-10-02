@@ -1,0 +1,10 @@
+name: Hund.io
+slug: hund-io
+category: misc
+website: https://hund.io
+detect:
+  scripts:
+    - pattern: '\.hund\.io/'
+  dom:
+    link[href*='hund-client-logos']:
+      - pattern: ''

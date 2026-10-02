@@ -1,0 +1,12 @@
+name: Hello Bar
+slug: hello-bar
+category: misc
+website: https://hellobar.com
+detect:
+  scripts:
+    - pattern: '\.?hellobar\.(?:com|js)'
+  js:
+    HelloBar:
+      - pattern: ''
+    hellobarSiteSettings:
+      - pattern: ''

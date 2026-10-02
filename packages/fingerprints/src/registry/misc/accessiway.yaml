@@ -1,0 +1,8 @@
+name: AccessiWay
+slug: accessiway
+category: misc
+website: https://www.accessiway.com
+detect:
+  js:
+    accessWidget.config.footerHtml:
+      - pattern: 'accessiway'

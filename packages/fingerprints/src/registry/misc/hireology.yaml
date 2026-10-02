@@ -1,0 +1,10 @@
+name: Hireology
+slug: hireology
+category: misc
+website: https://hireology.com
+detect:
+  url:
+    - pattern: 'sites\.hireology\.com/'
+  dom:
+    a[href*='sites.hireology.com/']:
+      - pattern: ''

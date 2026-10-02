@@ -1,0 +1,27 @@
+name: Bugzilla
+slug: bugzilla
+category: misc
+website: https://www.bugzilla.org
+detect:
+  html:
+    - pattern: 'href="enter_bug\.cgi">'
+    - pattern: '<main id="bugzilla-body"'
+    - pattern: '<a href="https?://www\.bugzilla\.org/docs/([0-9.]+)/[^>]+>Help<'
+      version: 1
+    - pattern: '<span id="information" class="header_addl_info">version ([\d.]+)<'
+      version: 1
+  meta:
+    generator:
+      - pattern: 'Bugzilla ?([\d.]+)?'
+        version: 1
+  cookies:
+    Bugzilla_login_request_cookie:
+      - pattern: ''
+  js:
+    BUGZILLA:
+      - pattern: ''
+  dom:
+    main[id*='bugzilla-body']:
+      - pattern: ''
+    span[id*='information'][class*='header_addl_info']:
+      - pattern: ''

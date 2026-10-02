@@ -1,0 +1,10 @@
+name: ExpertRec
+slug: expertrec
+category: misc
+website: https://www.expertrec.com/
+detect:
+  scripts:
+    - pattern: 'expertrec\.com/api/js/ci_common\.js\?id=.*'
+  js:
+    _er_config:
+      - pattern: ''

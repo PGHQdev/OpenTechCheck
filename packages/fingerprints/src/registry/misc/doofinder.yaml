@@ -1,0 +1,11 @@
+name: Doofinder
+slug: doofinder
+category: misc
+website: https://www.doofinder.com
+detect:
+  scripts:
+    - pattern: 'cdn\.doofinder\.com/'
+  js:
+    doofinder.classic.version:
+      - pattern: '(.+)'
+        version: 1

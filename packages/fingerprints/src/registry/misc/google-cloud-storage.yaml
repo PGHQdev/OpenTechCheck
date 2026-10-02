@@ -1,0 +1,9 @@
+name: Google Cloud Storage
+slug: google-cloud-storage
+category: misc
+website: https://cloud.google.com/storage
+implies: [google-cloud]
+detect:
+  headers:
+    x-goog-storage-class:
+      - pattern: '^\w+$'

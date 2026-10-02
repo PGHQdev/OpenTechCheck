@@ -1,0 +1,12 @@
+name: AnswerDash
+slug: answerdash
+category: misc
+website: https://www.answerdash.com
+detect:
+  scripts:
+    - pattern: '\.answerdash\.com/'
+  js:
+    AnswerDash:
+      - pattern: ''
+    AnswerDash.__plugin:
+      - pattern: ''

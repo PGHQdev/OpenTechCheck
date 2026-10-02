@@ -1,0 +1,14 @@
+name: Cludo
+slug: cludo
+category: misc
+website: https://www.cludo.com
+detect:
+  scripts:
+    - pattern: 'customer\.cludo\.com/'
+  js:
+    Cludo.getPublicSettings:
+      - pattern: ''
+    CludoSearch:
+      - pattern: ''
+    CludoSearchInstances:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Forethought Solve
+slug: forethought-solve
+category: misc
+website: https://forethought.ai/platform/solve/
+detect:
+  scripts:
+    - pattern: 'solve-widget\.forethought\.ai/'

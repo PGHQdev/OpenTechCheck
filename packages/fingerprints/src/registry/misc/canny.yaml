@@ -1,0 +1,8 @@
+name: Canny
+slug: canny
+category: misc
+website: https://canny.io
+detect:
+  js:
+    Canny:
+      - pattern: ''

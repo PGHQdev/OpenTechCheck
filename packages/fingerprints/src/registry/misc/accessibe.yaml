@@ -1,0 +1,14 @@
+name: AccessiBe
+slug: accessibe
+category: misc
+website: https://accessibe.com
+detect:
+  scripts:
+    - pattern: 'acsbapp?\.com/.*/acsb\.js'
+  js:
+    acsb:
+      - pattern: ''
+        confidence: 50
+    acsbJS:
+      - pattern: ''
+        confidence: 50

@@ -1,0 +1,12 @@
+name: Atlassian Statuspage
+slug: atlassian-statuspage
+category: misc
+website: https://www.atlassian.com/software/statuspage
+detect:
+  html:
+    - pattern: '<a[^>]*href="https?://(?:www\.)?statuspage\.io/powered-by[^>]+>'
+  headers:
+    x-statuspage-skip-logging:
+      - pattern: ''
+    x-statuspage-version:
+      - pattern: ''

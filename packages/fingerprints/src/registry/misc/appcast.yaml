@@ -1,0 +1,7 @@
+name: Appcast
+slug: appcast
+category: misc
+website: https://www.appcast.io
+detect:
+  scripts:
+    - pattern: 'click\.appcast\.io/'

@@ -1,0 +1,19 @@
+name: Fact Finder
+slug: fact-finder
+category: misc
+website: https://fact-finder.com
+detect:
+  html:
+    - pattern: '<!-- Factfinder'
+  url:
+    - pattern: '(?:/ViewParametricSearch|ffsuggest\.[a-z]htm)'
+  scripts:
+    - pattern: 'Suggest\.ff'
+  js:
+    FactFinderInit:
+      - pattern: ''
+    factfinder:
+      - pattern: ''
+    factfinder.version:
+      - pattern: '^([\d\.])$'
+        version: 1

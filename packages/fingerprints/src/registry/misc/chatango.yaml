@@ -1,0 +1,10 @@
+name: Chatango
+slug: chatango
+category: misc
+website: https://chatango.com
+detect:
+  scripts:
+    - pattern: 'st\.chatango\.com'
+  dom:
+    iframe[src*='st.chatango.com']:
+      - pattern: ''

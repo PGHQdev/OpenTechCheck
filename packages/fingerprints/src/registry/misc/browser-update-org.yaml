@@ -1,0 +1,11 @@
+name: Browser-Update.org
+slug: browser-update-org
+category: misc
+website: https://browser-update.org
+detect:
+  js:
+    $bu_.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+    $bu_getBrowser:
+      - pattern: ''

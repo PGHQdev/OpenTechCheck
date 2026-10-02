@@ -1,0 +1,12 @@
+name: GlitchTip
+slug: glitchtip
+category: misc
+website: https://glitchtip.com
+detect:
+  html:
+    - pattern: 'glitchtip-logo'
+    - pattern: '<gt-root'
+  text:
+    - pattern: 'GlitchTip requires JavaScript'
+  scripts:
+    - pattern: 'app\.glitchtip\.com'

@@ -1,0 +1,7 @@
+name: Apisearch
+slug: apisearch
+category: misc
+website: https://apisearch.io
+detect:
+  scripts:
+    - pattern: 'static\.apisearch\.cloud'

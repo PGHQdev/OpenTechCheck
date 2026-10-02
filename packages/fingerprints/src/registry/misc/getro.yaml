@@ -1,0 +1,7 @@
+name: Getro
+slug: getro
+category: misc
+website: https://www.getro.com
+detect:
+  scripts:
+    - pattern: 'an\.getro\.com/'

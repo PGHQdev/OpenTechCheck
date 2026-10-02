@@ -1,0 +1,7 @@
+name: Geo Targetly
+slug: geo-targetly
+category: misc
+website: https://geotargetly.com
+detect:
+  scripts:
+    - pattern: 'geotargetly\.co/'

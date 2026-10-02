@@ -1,0 +1,10 @@
+name: Comeet
+slug: comeet
+category: misc
+website: https://www.comeet.com
+detect:
+  js:
+    COMEET:
+      - pattern: ''
+    comeetInit:
+      - pattern: ''

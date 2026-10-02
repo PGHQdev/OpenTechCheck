@@ -1,0 +1,14 @@
+name: genezio
+slug: genezio
+category: misc
+website: https://genez.io
+detect:
+  html:
+    - pattern: 'genezio-theme'
+    - pattern: 'Genezio AI Visibility platform'
+    - pattern: 'hello@genezio\.ai'
+  url:
+    - pattern: '^https?://[^/]*genezio\.(ai|io|com)'
+  headers:
+    x-powered-by:
+      - pattern: '^genezio$'

@@ -1,0 +1,15 @@
+name: Captivate.fm
+slug: captivate-fm
+category: misc
+website: https://www.captivate.fm
+detect:
+  html:
+    - pattern: 'captivate-podcast-markup'
+    - pattern: '"vendorName":"captivate"'
+    - pattern: 'vendor-name":"captivate'
+  js:
+    CAPTIVATE_PLAYER_APP_URL:
+      - pattern: ''
+  dom:
+    iframe[src*='player.captivate.fm/']:
+      - pattern: ''

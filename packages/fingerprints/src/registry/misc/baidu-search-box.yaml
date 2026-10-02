@@ -1,0 +1,8 @@
+name: Baidu Search Box
+slug: baidu-search-box
+category: misc
+website: https://www.baidu.com/search/sug/sugcode.html
+detect:
+  dom:
+    input[value='baidu'][name='tn']:
+      - pattern: ''

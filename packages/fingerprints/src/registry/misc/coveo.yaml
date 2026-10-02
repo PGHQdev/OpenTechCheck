@@ -1,0 +1,14 @@
+name: Coveo
+slug: coveo
+category: misc
+website: https://www.coveo.com
+detect:
+  scripts:
+    - pattern: 'static\.(?:cloud\.coveo|goqubit)\.com'
+  js:
+    Coveo:
+      - pattern: ''
+    __qubit:
+      - pattern: ''
+    onQubitReady:
+      - pattern: ''

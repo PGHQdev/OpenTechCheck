@@ -1,0 +1,10 @@
+name: Avature
+slug: avature
+category: misc
+website: https://www.avature.net
+detect:
+  meta:
+    avature.portal.id:
+      - pattern: ''
+    avature.portal.name:
+      - pattern: ''

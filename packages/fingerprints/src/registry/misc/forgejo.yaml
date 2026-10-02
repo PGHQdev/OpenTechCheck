@@ -1,0 +1,16 @@
+name: Forgejo
+slug: forgejo
+category: misc
+website: https://forgejo.org
+implies: [go, jquery, pwa]
+detect:
+  meta:
+    author:
+      - pattern: 'Forgejo – Beyond coding\. We forge\.'
+  js:
+    window.config.assetVersionEncoded:
+      - pattern: '([\d.]+).+gitea-[\d.]+'
+        version: 1
+  dom:
+    link[href*='/theme-forgejo-auto.css']:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Elfsight
+slug: elfsight
+category: misc
+website: https://elfsight.com
+detect:
+  scripts:
+    - pattern: '\.elfsight\.com/'

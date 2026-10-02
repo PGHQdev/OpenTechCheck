@@ -1,0 +1,13 @@
+name: Findify
+slug: findify
+category: misc
+website: https://www.findify.io
+detect:
+  scripts:
+    - pattern: '@findify/bundle@([\d.]+)/dist/.+\.js'
+      version: 1
+  js:
+    FindifyAnalytics:
+      - pattern: ''
+    findify:
+      - pattern: ''

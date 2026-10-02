@@ -1,0 +1,11 @@
+name: Godot
+slug: godot
+category: misc
+website: https://godotengine.org
+implies: [wasm]
+detect:
+  js:
+    GODOT_CONFIG:
+      - pattern: ''
+    Godot:
+      - pattern: ''

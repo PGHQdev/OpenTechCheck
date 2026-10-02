@@ -1,0 +1,10 @@
+name: Gravatar
+slug: gravatar
+category: misc
+website: https://gravatar.com
+detect:
+  html:
+    - pattern: '<[^>]+gravatar\.com/avatar/'
+  js:
+    Gravatar:
+      - pattern: ''

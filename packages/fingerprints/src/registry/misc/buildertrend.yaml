@@ -1,0 +1,8 @@
+name: Buildertrend
+slug: buildertrend
+category: misc
+website: https://buildertrend.com
+detect:
+  dom:
+    iframe[src*='buildertrend.net'], script[src*='buildertrend.net']:
+      - pattern: ''

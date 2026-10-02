@@ -1,0 +1,7 @@
+name: HikeOrders
+slug: hikeorders
+category: misc
+website: https://hikeorders.com
+detect:
+  scripts:
+    - pattern: 'hikeorders\.com/main/assets/js/hko-accessibility\.min\.js'

@@ -1,0 +1,7 @@
+name: digi·access
+slug: digi-access
+category: misc
+website: https://www.digiaccess.org
+detect:
+  scripts:
+    - pattern: 'download\.digiaccess\.org'

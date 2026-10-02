@@ -1,0 +1,13 @@
+name: Answerbase
+slug: answerbase
+category: misc
+website: https://answerbase.com
+detect:
+  html:
+    - pattern: 'services\.answerbase\.com'
+  scripts:
+    - pattern: 'services\.answerbase\.com/javascript/widget/'
+    - pattern: 'services\.answerbase\.com'
+  js:
+    loadAnswerbaseCTAWidget:
+      - pattern: ''

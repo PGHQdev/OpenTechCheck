@@ -1,0 +1,12 @@
+name: CheerPJ
+slug: cheerpj
+category: misc
+website: https://cheerpj.com
+detect:
+  js:
+    CheerpJDataFolder:
+      - pattern: ''
+    CheerpJDevFolder:
+      - pattern: ''
+    CheerpJWebFolder:
+      - pattern: ''

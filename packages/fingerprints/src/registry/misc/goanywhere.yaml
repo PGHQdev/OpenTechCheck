@@ -1,0 +1,11 @@
+name: GoAnywhere
+slug: goanywhere
+category: misc
+website: https://www.goanywhere.com/
+detect:
+  headers:
+    server:
+      - pattern: 'goanywhere'
+  js:
+    appContainer:
+      - pattern: 'GoAnywhereWebClientContainer'

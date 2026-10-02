@@ -1,0 +1,8 @@
+name: Jade
+slug: jade
+category: misc
+website: https://jade-lang.com
+detect:
+  js:
+    JADE.components:
+      - pattern: ''

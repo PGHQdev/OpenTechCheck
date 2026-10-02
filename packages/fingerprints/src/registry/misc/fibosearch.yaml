@@ -1,0 +1,10 @@
+name: FiboSearch
+slug: fibosearch
+category: misc
+website: https://fibosearch.com
+within:
+  techs: [woocommerce]
+detect:
+  js:
+    dgwt_wcas.ajax_search_endpoint:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Beamery
+slug: beamery
+category: misc
+website: https://beamery.com
+detect:
+  html:
+    - pattern: 'flows\.beamery\.com'
+  scripts:
+    - pattern: 'beamery\.com'
+  headers:
+    access-control-allow-headers:
+      - pattern: '^X-BEAMERY'

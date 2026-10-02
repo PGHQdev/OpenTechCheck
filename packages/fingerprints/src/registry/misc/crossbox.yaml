@@ -1,0 +1,8 @@
+name: CrossBox
+slug: crossbox
+category: misc
+website: https://crossbox.io
+detect:
+  headers:
+    server:
+      - pattern: 'CBX-WS'

@@ -1,0 +1,10 @@
+name: Combodo iTop
+slug: combodo-itop
+category: misc
+website: https://www.combodo.com/itop-193
+detect:
+  dom:
+    a[href*='combodo.com/itop'] > img:
+      - attr: title
+        pattern: 'iTop\sVersion\s([\d\.]+)'
+        version: 1

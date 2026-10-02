@@ -1,0 +1,10 @@
+name: Feednami
+slug: feednami
+category: misc
+website: https://toolkit.sekando.com/docs/en/feednami
+detect:
+  js:
+    feednami.load:
+      - pattern: ''
+    feednami.promiseLoaded:
+      - pattern: ''

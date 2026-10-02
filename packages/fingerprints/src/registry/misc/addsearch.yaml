@@ -1,0 +1,12 @@
+name: Addsearch
+slug: addsearch
+category: misc
+website: https://www.addsearch.com/
+detect:
+  scripts:
+    - pattern: '//addsearch\.com/js/'
+  js:
+    AddSearchClient:
+      - pattern: ''
+    AddSearchUI:
+      - pattern: ''

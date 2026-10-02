@@ -1,0 +1,10 @@
+name: Feedback Fish
+slug: feedback-fish
+category: misc
+website: https://feedback.fish
+detect:
+  html:
+    - pattern: 'FEEDBACK_FISH_PROJECT_ID'
+  scripts:
+    - pattern: '^https://feedback\.fish/ff\.js'
+    - pattern: '^https://widget\.feedbackhere\.co/fh\.js'

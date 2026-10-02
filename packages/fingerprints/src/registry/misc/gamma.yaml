@@ -1,0 +1,13 @@
+name: Gamma
+slug: gamma
+category: misc
+website: https://gamma.app
+detect:
+  cookies:
+    gamma_visitor_id:
+      - pattern: ''
+  js:
+    gammaSiteAnimationsInitialized:
+      - pattern: ''
+    gammaTiming:
+      - pattern: ''

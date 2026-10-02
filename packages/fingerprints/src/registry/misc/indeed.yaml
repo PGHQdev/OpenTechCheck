@@ -1,0 +1,10 @@
+name: Indeed
+slug: indeed
+category: misc
+website: https://www.indeed.com
+detect:
+  scripts:
+    - pattern: '\.indeed\.com'
+  js:
+    indeed_clk:
+      - pattern: ''

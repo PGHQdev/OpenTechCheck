@@ -1,0 +1,13 @@
+name: GoCertify
+slug: gocertify
+category: misc
+website: https://www.gocertify.me
+detect:
+  scripts:
+    - pattern: 'assets\.gocertify\.me/'
+  cookies:
+    _gocertify_session:
+      - pattern: ''
+  dom:
+    a[href*='secure.gocertify.me']:
+      - pattern: ''

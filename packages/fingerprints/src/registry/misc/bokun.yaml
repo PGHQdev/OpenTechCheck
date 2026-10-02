@@ -1,0 +1,20 @@
+name: Bokun
+slug: bokun
+category: misc
+website: https://www.bokun.io
+detect:
+  js:
+    BokunWidgetEmbedder:
+      - pattern: ''
+    BokunWidgets:
+      - pattern: ''
+    __BokunWidgetsLoader:
+      - pattern: ''
+    __bokunWidgets:
+      - pattern: ''
+    bokunBookingChannelUUID:
+      - pattern: ''
+    bokunPolyfillReady:
+      - pattern: ''
+    bokunSessionId:
+      - pattern: ''

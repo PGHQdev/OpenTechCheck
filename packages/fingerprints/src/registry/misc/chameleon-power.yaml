@@ -1,0 +1,10 @@
+name: Chameleon Power
+slug: chameleon-power
+category: misc
+website: https://chameleonpower.com
+detect:
+  scripts:
+    - pattern: '\.chameleonpower\.com/'
+  js:
+    ChamStats.addEvent:
+      - pattern: ''

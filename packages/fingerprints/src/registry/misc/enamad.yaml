@@ -1,0 +1,11 @@
+name: eNamad
+slug: enamad
+category: misc
+website: https://enamad.ir/
+detect:
+  meta:
+    enamad:
+      - pattern: '^\d+$'
+  dom:
+    a[href*='.enamad.ir/'][target='_blank'], div.e-namad-widget-wrapper, img[src*='.enamad.ir/']:
+      - pattern: ''

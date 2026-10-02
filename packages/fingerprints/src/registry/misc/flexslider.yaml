@@ -1,0 +1,8 @@
+name: FlexSlider
+slug: flexslider
+category: misc
+website: https://woocommerce.com/flexslider/
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'jquery\.flexslider(?:\.min)?\.js$'

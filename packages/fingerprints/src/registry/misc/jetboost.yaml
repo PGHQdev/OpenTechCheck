@@ -1,0 +1,12 @@
+name: Jetboost
+slug: jetboost
+category: misc
+website: https://www.jetboost.io
+within:
+  techs: [webflow]
+detect:
+  js:
+    JETBOOST_SITE_ID:
+      - pattern: ''
+    Jetboost.loaded:
+      - pattern: ''

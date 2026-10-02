@@ -1,0 +1,8 @@
+name: Babel
+slug: babel
+category: misc
+website: https://babeljs.io
+detect:
+  js:
+    _babelPolyfill:
+      - pattern: '^(?!false$|0$|null$|undefined$).+'

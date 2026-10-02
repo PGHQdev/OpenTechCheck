@@ -1,0 +1,14 @@
+name: Bloomreach Discovery
+slug: bloomreach-discovery
+category: misc
+website: https://www.bloomreach.com/en/products/discovery
+detect:
+  scripts:
+    - pattern: '\.brsrvr\.com/'
+    - pattern: '\.brcdn\.com/'
+  js:
+    BrTrk.scriptVersion:
+      - pattern: '([\d\.]+)'
+        version: 1
+    br_data.acct_id:
+      - pattern: ''

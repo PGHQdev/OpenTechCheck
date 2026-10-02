@@ -1,0 +1,11 @@
+name: Eploy
+slug: eploy
+category: misc
+website: https://www.eploy.co.uk
+detect:
+  cookies:
+    Eploy.Session:
+      - pattern: ''
+  js:
+    $Eploy:
+      - pattern: ''

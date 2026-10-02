@@ -1,0 +1,10 @@
+name: Buy with Prime
+slug: buy-with-prime
+category: misc
+website: https://buywithprime.amazon.com
+detect:
+  scripts:
+    - pattern: 'code\.buywithprime\.amazon\.com/'
+  js:
+    bwp.sku:
+      - pattern: ''

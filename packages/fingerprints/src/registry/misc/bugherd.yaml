@@ -1,0 +1,10 @@
+name: BugHerd
+slug: bugherd
+category: misc
+website: https://bugherd.com
+detect:
+  scripts:
+    - pattern: '\.bugherd\.com/'
+  js:
+    BugHerdConfig:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Better Stack
+slug: better-stack
+category: misc
+website: https://betterstack.com/uptime
+detect:
+  scripts:
+    - pattern: '//(?:uptime\.)?(?:betteruptime|betterstack)\.com/'

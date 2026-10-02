@@ -1,0 +1,14 @@
+name: Acquire Cobrowse
+slug: acquire-cobrowse
+category: misc
+website: https://acquire.io/co-browsing
+detect:
+  scripts:
+    - pattern: '\.acquire\.io/cobrowse/'
+  js:
+    acquireCobrowseRTC:
+      - pattern: ''
+    acquireCobrowseSettings:
+      - pattern: ''
+    acquireConfigNodeServer:
+      - pattern: ''

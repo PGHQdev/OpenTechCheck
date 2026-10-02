@@ -1,0 +1,14 @@
+name: Citrix
+slug: citrix
+category: misc
+website: https://www.citrix.com
+detect:
+  scripts:
+    - pattern: '/ctxs\.core\.min\.js'
+  js:
+    AddHeaderAndBarForCitrix:
+      - pattern: ''
+    CTXS.AccessGateway:
+      - pattern: ''
+    CTXS.WebApiClient:
+      - pattern: ''

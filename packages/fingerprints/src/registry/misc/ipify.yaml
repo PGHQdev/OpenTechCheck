@@ -1,0 +1,7 @@
+name: ipify
+slug: ipify
+category: misc
+website: https://ipify.org
+detect:
+  scripts:
+    - pattern: '\.ipify\.org'

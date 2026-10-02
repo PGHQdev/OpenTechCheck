@@ -1,0 +1,12 @@
+name: Boost Commerce
+slug: boost-commerce
+category: misc
+website: https://boostcommerce.net
+within:
+  techs: [shopify]
+detect:
+  js:
+    bcSfFilterConfig.api.filterUrl:
+      - pattern: 'services\.mybcapps\.com/'
+    boostPFSAppConfig.api.filterUrl:
+      - pattern: 'services\.mybcapps\.com/'

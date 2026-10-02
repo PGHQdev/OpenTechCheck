@@ -1,0 +1,10 @@
+name: HetrixTools
+slug: hetrixtools
+category: misc
+website: https://hetrixtools.com
+detect:
+  scripts:
+    - pattern: '\.hetrixtools\.com/'
+  js:
+    htoolz:
+      - pattern: ''

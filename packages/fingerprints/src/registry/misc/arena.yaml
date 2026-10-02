@@ -1,0 +1,18 @@
+name: Arena
+slug: arena
+category: misc
+website: https://arena.im
+detect:
+  html:
+    - pattern: 'arena-liveblog'
+    - pattern: 'm-em-liveblog'
+  js:
+    arenaHub.arenaIdentify:
+      - pattern: ''
+    arenaLiveblog:
+      - pattern: ''
+    arenaim.initializeLiveblog:
+      - pattern: ''
+  dom:
+    iframe[scr*='//go.arena.im/']:
+      - pattern: ''

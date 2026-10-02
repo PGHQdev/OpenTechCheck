@@ -1,0 +1,8 @@
+name: Convermax
+slug: convermax
+category: misc
+website: https://convermax.com
+detect:
+  js:
+    Convermax.addProductsHistory:
+      - pattern: ''

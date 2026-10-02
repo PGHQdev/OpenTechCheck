@@ -1,0 +1,12 @@
+name: Interact
+slug: interact
+category: misc
+website: https://www.tryinteract.com
+detect:
+  scripts:
+    - pattern: '\.tryinteract\.com/'
+  js:
+    InteractApp.name:
+      - pattern: 'InteractApp'
+    InteractPromotionObject:
+      - pattern: ''

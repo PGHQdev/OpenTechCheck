@@ -1,0 +1,16 @@
+name: AudioEye
+slug: audioeye
+category: misc
+website: https://www.audioeye.com
+detect:
+  scripts:
+    - pattern: '(?:\.)?audioeye\.com/(?:ae\.js)?'
+  js:
+    $ae.attrHooks:
+      - pattern: ''
+    window.AudioEye.version:
+      - pattern: '^([\d.]+)-\d+$'
+        version: 1
+  dom:
+    iframe[scr*='.audioeye.com/']:
+      - pattern: ''

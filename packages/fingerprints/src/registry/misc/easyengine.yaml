@@ -1,0 +1,9 @@
+name: EasyEngine
+slug: easyengine
+category: misc
+website: https://easyengine.io
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^EasyEngine (.*)$'
+        version: 1

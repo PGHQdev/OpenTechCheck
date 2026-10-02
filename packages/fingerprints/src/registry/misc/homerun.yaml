@@ -1,0 +1,10 @@
+name: Homerun
+slug: homerun
+category: misc
+website: https://www.homerun.co
+detect:
+  js:
+    homerunI18n:
+      - pattern: ''
+    homerunPrivacySettings:
+      - pattern: ''

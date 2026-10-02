@@ -1,0 +1,9 @@
+name: Cachet
+slug: cachet
+category: misc
+website: https://cachethq.io
+implies: [php]
+detect:
+  js:
+    Cachet.Notifier:
+      - pattern: ''

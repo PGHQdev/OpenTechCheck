@@ -1,0 +1,10 @@
+name: Freshteam
+slug: freshteam
+category: misc
+website: https://www.freshworks.com/hrms/
+detect:
+  scripts:
+    - pattern: 'assets\.freshteam\.com/'
+  dom:
+    a[href*='.freshteam.com/jobs']:
+      - pattern: ''

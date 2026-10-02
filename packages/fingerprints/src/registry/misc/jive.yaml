@@ -1,0 +1,16 @@
+name: Jive
+slug: jive
+category: misc
+website: https://www.jivesoftware.com
+detect:
+  headers:
+    x-jive-user-id:
+      - pattern: ''
+    x-jsl:
+      - pattern: ''
+    x-jive-flow-id:
+      - pattern: ''
+    x-jive-request-id:
+      - pattern: ''
+    x-jive-chrome-wrapped:
+      - pattern: ''

@@ -1,0 +1,19 @@
+name: Gitea
+slug: gitea
+category: misc
+website: https://gitea.io
+implies: [go]
+detect:
+  html:
+    - pattern: '<div class="ui left">\n\s+© Gitea Version: ([\d.]+)'
+      version: 1
+  meta:
+    keywords:
+      - pattern: '^go,git,self-hosted,gitea$'
+  cookies:
+    i_like_gitea:
+      - pattern: ''
+  js:
+    window.config.assetVersionEncoded:
+      - pattern: '.-gitea-([\d\.]+)'
+        version: 1

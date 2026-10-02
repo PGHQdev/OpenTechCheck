@@ -1,0 +1,8 @@
+name: Google Code Prettify
+slug: google-code-prettify
+category: misc
+website: https://code.google.com/p/google-code-prettify
+detect:
+  js:
+    prettyPrint:
+      - pattern: ''

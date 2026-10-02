@@ -1,0 +1,7 @@
+name: GetButton
+slug: getbutton
+category: misc
+website: https://getbutton.io
+detect:
+  scripts:
+    - pattern: '\.getbutton\.io/'

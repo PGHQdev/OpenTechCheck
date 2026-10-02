@@ -1,0 +1,10 @@
+name: AddToAny
+slug: addtoany
+category: misc
+website: https://www.addtoany.com
+detect:
+  scripts:
+    - pattern: 'addtoany\.com/menu/page\.js'
+  js:
+    a2apage_init:
+      - pattern: ''

@@ -1,0 +1,27 @@
+name: Athos Commerce
+slug: athos-commerce
+category: misc
+website: https://athoscommerce.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.searchspring\.net'
+    - pattern: 'js\.klevu\.\w+/klevu-js-v([\d.]+)'
+      version: 1
+  js:
+    SearchSpring:
+      - pattern: ''
+    SearchSpringConf:
+      - pattern: ''
+    SearchSpringInit:
+      - pattern: ''
+    klevu.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+    klevu_apiKey:
+      - pattern: ''
+    klevu_layout:
+      - pattern: ''
+    klevu_sessionId:
+      - pattern: ''
+    sendKlevuAnalytics:
+      - pattern: ''

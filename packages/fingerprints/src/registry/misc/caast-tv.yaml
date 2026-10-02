@@ -1,0 +1,12 @@
+name: Caast.tv
+slug: caast-tv
+category: misc
+website: https://en.caast.tv
+detect:
+  scripts:
+    - pattern: 'cdn\.caast\.tv/'
+  js:
+    caast.open:
+      - pattern: ''
+    caastInstance:
+      - pattern: ''

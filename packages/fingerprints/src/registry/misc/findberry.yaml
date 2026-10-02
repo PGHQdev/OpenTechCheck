@@ -1,0 +1,12 @@
+name: Findberry
+slug: findberry
+category: misc
+website: https://www.findberry.com
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '\.findberry\.com/'
+  js:
+    jQuery_Findberry:
+      - pattern: ''

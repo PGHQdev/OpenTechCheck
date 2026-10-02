@@ -1,0 +1,12 @@
+name: JBoard
+slug: jboard
+category: misc
+website: https://jboard.io
+detect:
+  scripts:
+    - pattern: 'app\.jboard\.io'
+  js:
+    $JBoardAPI:
+      - pattern: ''
+    $jBoard.adminUserToken:
+      - pattern: ''

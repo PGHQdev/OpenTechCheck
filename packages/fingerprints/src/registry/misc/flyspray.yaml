@@ -1,0 +1,14 @@
+name: Flyspray
+slug: flyspray
+category: misc
+website: https://flyspray.org
+implies: [php]
+detect:
+  html:
+    - pattern: '(?:<a[^>]+>Powered by Flyspray|<map id="projectsearchform)'
+  cookies:
+    flyspray_project:
+      - pattern: ''
+  dom:
+    map#projectsearchform:
+      - pattern: ''

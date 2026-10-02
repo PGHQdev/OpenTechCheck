@@ -1,0 +1,10 @@
+name: Firefish Software
+slug: firefish-software
+category: misc
+website: https://www.firefishsoftware.com
+detect:
+  js:
+    ffControlSystem:
+      - pattern: ''
+    firefish:
+      - pattern: ''

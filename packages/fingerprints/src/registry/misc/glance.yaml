@@ -1,0 +1,7 @@
+name: Glance
+slug: glance
+category: misc
+website: https://www.glance.cx
+detect:
+  scripts:
+    - pattern: 'www\.glancecdn\.net'
