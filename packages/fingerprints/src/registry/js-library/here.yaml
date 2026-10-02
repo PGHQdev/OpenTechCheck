@@ -1,0 +1,17 @@
+name: Here
+slug: here
+category: js-library
+website: https://www.here.com
+detect:
+  js:
+    H.buildInfo:
+      - pattern: ''
+    H.geo:
+      - pattern: ''
+        confidence: 50
+    H.util:
+      - pattern: ''
+        confidence: 50
+  dom:
+    link[href*='//js\.api\.here\.com/']:
+      - pattern: ''

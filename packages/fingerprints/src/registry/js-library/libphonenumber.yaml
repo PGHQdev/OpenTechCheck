@@ -1,0 +1,13 @@
+name: libphonenumber
+slug: libphonenumber
+category: js-library
+website: https://github.com/google/libphonenumber
+detect:
+  scripts:
+    - pattern: '(?:/([\d\.]+))?/libphonenumber(?:-js\.min)?\.js'
+      version: 1
+  js:
+    libphonenumber.AsYouType:
+      - pattern: ''
+    libphonenumber.DIGITS:
+      - pattern: ''

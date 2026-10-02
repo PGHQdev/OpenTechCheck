@@ -1,0 +1,11 @@
+name: Mapplic
+slug: mapplic
+category: js-library
+website: https://mapplic.com
+detect:
+  scripts:
+    - pattern: 'wp-content/plugins/mapplic/'
+    - pattern: '/include/mapplic/mapplic\.js'
+  dom:
+    div.mapplic-layer > div.mapplic-map-image:
+      - pattern: ''

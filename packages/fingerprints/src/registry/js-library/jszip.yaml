@@ -1,0 +1,11 @@
+name: JSZip
+slug: jszip
+category: js-library
+website: https://stuk.github.io/jszip/
+detect:
+  scripts:
+    - pattern: '/jszip\.min\.js'
+  js:
+    JSZip.version:
+      - pattern: '([\d\.]+)'
+        version: 1

@@ -1,0 +1,13 @@
+name: Bootstrap Table
+slug: bootstrap-table
+category: js-library
+website: https://bootstrap-table.wenzhixin.net.cn/
+implies: [bootstrap, jquery]
+detect:
+  html:
+    - pattern: '<link[^>]+href="[^>]*bootstrap-table(?:\.min)?\.css'
+  scripts:
+    - pattern: 'bootstrap-table(?:\.min)?\.js'
+  dom:
+    link[href*='bootstrap-table.min.css']:
+      - pattern: ''

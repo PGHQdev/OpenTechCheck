@@ -1,0 +1,10 @@
+name: Glyphicons
+slug: glyphicons
+category: js-library
+website: https://glyphicons.com
+detect:
+  html:
+    - pattern: '(?:<link[^>]* href=[^>]+glyphicons(?:\.min)?\.css|<img[^>]* src=[^>]+glyphicons)'
+  dom:
+    link[href*='glyphicons.css'], link[href*='glyphicons.min.css']:
+      - pattern: ''

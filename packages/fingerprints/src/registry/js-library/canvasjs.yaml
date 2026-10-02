@@ -1,0 +1,11 @@
+name: CanvasJS
+slug: canvasjs
+category: js-library
+website: https://canvasjs.com
+detect:
+  js:
+    CanvasJS.Chart:
+      - pattern: ''
+    CanvasJS.Chart.version:
+      - pattern: '^v(.+)$'
+        version: 1

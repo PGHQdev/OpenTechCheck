@@ -1,0 +1,10 @@
+name: Mapme
+slug: mapme
+category: js-library
+website: https://mapme.com
+detect:
+  html:
+    - pattern: 'viewer\.mapme\.com/'
+  dom:
+    iframe[src*='viewer.mapme.com/']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Ocuco FitMix
+slug: ocuco-fitmix
+category: js-library
+website: https://www.ocuco.com/fitmix
+detect:
+  js:
+    FitMix.WIDGET_BASE_URL:
+      - pattern: 'static\.fittingbox\.com'

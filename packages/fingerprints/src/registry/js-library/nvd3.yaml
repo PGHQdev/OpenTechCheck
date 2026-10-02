@@ -1,0 +1,20 @@
+name: NVD3
+slug: nvd3
+category: js-library
+website: https://nvd3.org
+implies: [d3]
+detect:
+  html:
+    - pattern: '<link[^>]* href=[^>]+nv\.d3(?:\.min)?\.css'
+  scripts:
+    - pattern: 'nv\.d3(?:\.min)?\.js'
+  js:
+    nv.addGraph:
+      - pattern: ''
+    nv.version:
+      - pattern: '^(.+)$'
+        confidence: 0
+        version: 1
+  dom:
+    link[href*='nv.d3.css'], link[href*='nv.d3.min.css']:
+      - pattern: ''

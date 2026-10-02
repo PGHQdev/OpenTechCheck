@@ -1,0 +1,10 @@
+name: InstantClick
+slug: instantclick
+category: js-library
+website: https://instantclick.io/
+detect:
+  scripts:
+    - pattern: 'instantclick\.min\.js'
+  js:
+    InstantClick:
+      - pattern: ''

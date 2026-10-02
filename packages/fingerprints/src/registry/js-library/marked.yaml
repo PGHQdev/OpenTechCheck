@@ -1,0 +1,10 @@
+name: Marked
+slug: marked
+category: js-library
+website: https://marked.js.org
+detect:
+  scripts:
+    - pattern: '/marked(?:\.min)?\.js'
+  js:
+    marked:
+      - pattern: ''

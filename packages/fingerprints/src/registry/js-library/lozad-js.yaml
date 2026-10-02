@@ -1,0 +1,8 @@
+name: Lozad.js
+slug: lozad-js
+category: js-library
+website: https://apoorv.pro/lozad.js/
+detect:
+  js:
+    lozad:
+      - pattern: ''

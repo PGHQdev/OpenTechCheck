@@ -1,0 +1,11 @@
+name: Loadable-Components
+slug: loadable-components
+category: js-library
+website: https://github.com/gregberge/loadable-components
+detect:
+  js:
+    __LOADABLE_LOADED_CHUNKS__:
+      - pattern: ''
+  dom:
+    script#__LOADABLE_REQUIRED_CHUNKS__:
+      - pattern: ''

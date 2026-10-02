@@ -1,0 +1,17 @@
+name: Levar
+slug: levar
+category: js-library
+website: https://levar.io
+detect:
+  html:
+    - pattern: 'levar-viewer\.js'
+  scripts:
+    - pattern: 'levar-viewer\.js'
+    - pattern: 'cloudfront\.net/req/levar'
+  js:
+    levARActivationHelper:
+      - pattern: ''
+    levar.session_info:
+      - pattern: ''
+    levar_onload_variant_id:
+      - pattern: ''

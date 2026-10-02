@@ -1,0 +1,7 @@
+name: Ramda
+slug: ramda
+category: js-library
+website: https://ramdajs.com
+detect:
+  scripts:
+    - pattern: 'ramda.*\.js'

@@ -1,0 +1,8 @@
+name: autoComplete.js
+slug: autocomplete-js
+category: js-library
+website: https://tarekraafat.github.io/autoComplete.js
+detect:
+  scripts:
+    - pattern: '@tarekraafat/autocomplete\.js@([\d\.]+)/'
+      version: 1

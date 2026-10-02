@@ -1,0 +1,8 @@
+name: Hoefler&Co
+slug: hoefler-co
+category: js-library
+website: https://www.typography.com
+detect:
+  dom:
+    link[href*='cloud.typography.com/']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Polyfill
+slug: polyfill
+category: js-library
+website: https://polyfill.io
+detect:
+  scripts:
+    - pattern: 'polyfill\.io/v([\d\.]+)'
+      version: 1

@@ -1,0 +1,10 @@
+name: LazySizes
+slug: lazysizes
+category: js-library
+website: https://github.com/aFarkas/lazysizes
+detect:
+  js:
+    lazySizes:
+      - pattern: ''
+    lazySizesConfig:
+      - pattern: ''

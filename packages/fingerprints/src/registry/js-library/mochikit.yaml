@@ -1,0 +1,13 @@
+name: MochiKit
+slug: mochikit
+category: js-library
+website: https://mochi.github.io/mochikit/
+detect:
+  scripts:
+    - pattern: 'MochiKit(?:\.min)?\.js'
+  js:
+    MochiKit:
+      - pattern: ''
+    MochiKit.MochiKit.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

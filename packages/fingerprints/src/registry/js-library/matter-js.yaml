@@ -1,0 +1,12 @@
+name: Matter.js
+slug: matter-js
+category: js-library
+website: https://brm.io/matter-js
+detect:
+  scripts:
+    - pattern: '(?:^|\/)matter(?:-wrap)?(?:\/demo\/js\/lib(?:\/matter-tools\/jquery)?(?:\/decomp)?)?(?:\/?-?((?:\d+\.){1,9}\d+))?(?:\.min)?\.js'
+      version: 1
+  js:
+    Matter.version:
+      - pattern: '^(.+)$'
+        version: 1

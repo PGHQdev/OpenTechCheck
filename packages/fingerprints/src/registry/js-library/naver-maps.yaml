@@ -1,0 +1,11 @@
+name: Naver Maps
+slug: naver-maps
+category: js-library
+website: https://www.ncloud.com/product/applicationService/maps
+detect:
+  scripts:
+    - pattern: 'openapi\.map\.naver\.com/openapi/v([\d\.]+)'
+      version: 1
+  js:
+    naver.maps:
+      - pattern: ''

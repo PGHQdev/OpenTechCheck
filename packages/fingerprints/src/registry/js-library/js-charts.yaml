@@ -1,0 +1,10 @@
+name: JS Charts
+slug: js-charts
+category: js-library
+website: https://www.jscharts.com
+detect:
+  scripts:
+    - pattern: 'jscharts.{0,32}\.js'
+  js:
+    JSChart:
+      - pattern: ''

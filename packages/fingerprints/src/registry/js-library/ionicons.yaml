@@ -1,0 +1,8 @@
+name: Ionicons
+slug: ionicons
+category: js-library
+website: https://ionicons.com
+detect:
+  dom:
+    link[href*='/ionicons.min.css'], link[href*='/ionicons.css']:
+      - pattern: ''

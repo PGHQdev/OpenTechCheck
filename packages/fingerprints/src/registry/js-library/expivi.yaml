@@ -1,0 +1,15 @@
+name: Expivi
+slug: expivi
+category: js-library
+website: https://www.expivi.com
+detect:
+  scripts:
+    - pattern: '\.expivi\.(?:com|net)/'
+  js:
+    ExpiviComponent:
+      - pattern: ''
+    expivi:
+      - pattern: ''
+  dom:
+    iframe[src*='.expivi.net/']:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: LazySizes unveilhooks plugin
+slug: lazysizes-unveilhooks-plugin
+category: js-library
+website: https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/unveilhooks
+detect:
+  scripts:
+    - pattern: 'ls\.unveilhooks(?:\.min)?\.js'

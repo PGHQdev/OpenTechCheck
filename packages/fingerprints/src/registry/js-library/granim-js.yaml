@@ -1,0 +1,8 @@
+name: Granim.js
+slug: granim-js
+category: js-library
+website: https://sarcadass.github.io/granim.js
+detect:
+  js:
+    Granim:
+      - pattern: ''

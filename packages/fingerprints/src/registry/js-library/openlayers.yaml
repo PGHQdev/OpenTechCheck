@@ -1,0 +1,15 @@
+name: OpenLayers
+slug: openlayers
+category: js-library
+website: https://openlayers.org
+detect:
+  scripts:
+    - pattern: 'openlayers'
+  js:
+    OpenLayers.VERSION_NUMBER:
+      - pattern: '([\d.]+)'
+        version: 1
+    ol.AssertionError:
+      - pattern: ''
+    ol.CanvasMap:
+      - pattern: ''

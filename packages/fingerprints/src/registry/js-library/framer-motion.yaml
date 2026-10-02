@@ -1,0 +1,8 @@
+name: Framer Motion
+slug: framer-motion
+category: js-library
+website: https://motion.dev
+detect:
+  js:
+    MotionIsMounted:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Instant.Page
+slug: instant-page
+category: js-library
+website: https://instant.page/
+detect:
+  scripts:
+    - pattern: 'instant\.page'

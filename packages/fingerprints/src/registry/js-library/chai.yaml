@@ -1,0 +1,11 @@
+name: Chai
+slug: chai
+category: js-library
+website: https://www.chaijs.com
+detect:
+  js:
+    chai:
+      - pattern: ''
+    chai.version:
+      - pattern: '^(.+)$'
+        version: 1

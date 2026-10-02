@@ -1,0 +1,14 @@
+name: KineticJS
+slug: kineticjs
+category: js-library
+website: https://github.com/ericdrowell/KineticJS/
+detect:
+  scripts:
+    - pattern: 'kinetic(?:-v?([\d.]+))?(?:\.min)?\.js'
+      version: 1
+  js:
+    Kinetic:
+      - pattern: ''
+    Kinetic.version:
+      - pattern: '^(.+)$'
+        version: 1

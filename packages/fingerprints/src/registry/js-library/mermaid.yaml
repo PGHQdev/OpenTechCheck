@@ -1,0 +1,16 @@
+name: Mermaid
+slug: mermaid
+category: js-library
+website: https://mermaidjs.github.io/
+detect:
+  html:
+    - pattern: '<div [^>]*class=["'']mermaid["'']>'
+      confidence: 90
+  scripts:
+    - pattern: '/mermaid(?:\.min)?\.js'
+  js:
+    mermaid:
+      - pattern: ''
+  dom:
+    div[class*='mermaid']:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Howler.js
+slug: howler-js
+category: js-library
+website: https://howlerjs.com
+detect:
+  scripts:
+    - pattern: 'howler@([\d.]+)/dist/howler\.min\.js'
+      version: 1
+    - pattern: 'howler/([\d.]+)/howler(?:\.core)?\.min\.js'
+      version: 1
+  js:
+    Howler:
+      - pattern: ''
+    HowlerGlobal:
+      - pattern: ''

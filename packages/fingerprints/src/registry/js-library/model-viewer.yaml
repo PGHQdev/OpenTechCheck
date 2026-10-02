@@ -1,0 +1,10 @@
+name: <model-viewer>
+slug: model-viewer
+category: js-library
+website: https://modelviewer.dev
+detect:
+  scripts:
+    - pattern: '/model-viewer/dist/model-viewer\.min\.js'
+  dom:
+    model-viewer:
+      - pattern: ''

@@ -1,0 +1,17 @@
+name: A-Frame
+slug: a-frame
+category: js-library
+website: https://aframe.io
+implies: [threejs]
+detect:
+  html:
+    - pattern: '<a-scene[^<>]*>'
+  scripts:
+    - pattern: '/?([\d.]+)?/aframe(?:\.min)?\.js'
+      version: 1
+  js:
+    AFRAME.version:
+      - pattern: '^(.+)$'
+        version: 1
+    aframeStats:
+      - pattern: ''

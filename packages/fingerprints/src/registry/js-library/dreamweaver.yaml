@@ -1,0 +1,19 @@
+name: DreamWeaver
+slug: dreamweaver
+category: js-library
+website: https://www.adobe.com/products/dreamweaver.html
+detect:
+  html:
+    - pattern: '<!--[^>]*(?:InstanceBeginEditable|Dreamweaver([^>]+)target|DWLayoutDefaultTable)'
+      version: 1
+    - pattern: '<!-- #BeginTemplate\s"[\d_\w/]+\.dwt'
+  meta:
+    generator:
+      - pattern: '^Adobe dreamweaver$'
+  js:
+    MM_preloadImages:
+      - pattern: ''
+    MM_showHideLayers:
+      - pattern: ''
+    MM_showMenu:
+      - pattern: ''

@@ -1,0 +1,11 @@
+name: Master Slider
+slug: master-slider
+category: js-library
+website: https://www.masterslider.com
+detect:
+  js:
+    MasterSlider:
+      - pattern: ''
+    MasterSlider.version:
+      - pattern: '^([0-9\.]+)$'
+        version: 1

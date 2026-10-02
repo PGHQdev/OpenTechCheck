@@ -1,0 +1,9 @@
+name: jQuery BlockUI
+slug: jquery-blockui
+category: js-library
+website: https://jquery.malsup.com/block
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '/jquery\.blockUI\.js'

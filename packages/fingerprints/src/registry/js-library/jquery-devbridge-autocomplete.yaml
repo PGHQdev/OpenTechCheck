@@ -1,0 +1,15 @@
+name: jQuery DevBridge Autocomplete
+slug: jquery-devbridge-autocomplete
+category: js-library
+website: https://www.devbridge.com/sourcery/components/jquery-autocomplete/
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: '/devbridgeAutocomplete(?:-min)?\.js'
+    - pattern: '/jquery\.devbridge-autocomplete/([0-9.]+)/jquery\.autocomplete(?:.min)?\.js'
+      version: 1
+  js:
+    $.devbridgeAutocomplete:
+      - pattern: ''
+    jQuery.devbridgeAutocomplete:
+      - pattern: ''

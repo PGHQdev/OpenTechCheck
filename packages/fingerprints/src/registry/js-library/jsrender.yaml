@@ -1,0 +1,8 @@
+name: JsRender
+slug: jsrender
+category: js-library
+website: https://www.jsviews.com/#jsrender
+detect:
+  scripts:
+    - pattern: '([\d\.]+)?/jsrender(?:\.min)?\.js'
+      version: 1

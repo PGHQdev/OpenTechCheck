@@ -1,0 +1,10 @@
+name: Popmotion
+slug: popmotion
+category: js-library
+website: https://popmotion.io
+detect:
+  scripts:
+    - pattern: 'popmotion\.global\.min\.js(?:\?ver=\d+\.\d+)?'
+  js:
+    popmotion:
+      - pattern: ''

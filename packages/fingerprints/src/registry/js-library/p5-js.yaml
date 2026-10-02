@@ -1,0 +1,13 @@
+name: p5.js
+slug: p5-js
+category: js-library
+website: https://p5js.org
+detect:
+  scripts:
+    - pattern: '(?:\/|^)(?:((?:\d+\.){1,9}\d+)\/(?:addons\/)?)?p5(?:\.sound|\.dom)?(?:\.min)?\.js'
+      version: 1
+  js:
+    p5.Camera:
+      - pattern: ''
+    p5.ColorConversion:
+      - pattern: ''

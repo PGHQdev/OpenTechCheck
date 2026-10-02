@@ -1,0 +1,7 @@
+name: Develic Omnium Maps
+slug: develic-omnium-maps
+category: js-library
+website: https://www.develic.com
+detect:
+  scripts:
+    - pattern: 'maps\.develic\.com'

@@ -1,0 +1,9 @@
+name: Barba.js
+slug: barba-js
+category: js-library
+website: https://barba.js.org
+detect:
+  js:
+    barba.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1

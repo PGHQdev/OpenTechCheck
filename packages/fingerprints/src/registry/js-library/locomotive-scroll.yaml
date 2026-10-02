@@ -1,0 +1,17 @@
+name: Locomotive Scroll
+slug: locomotive-scroll
+category: js-library
+website: https://github.com/locomotivemtl/locomotive-scroll
+implies: [lenis]
+detect:
+  scripts:
+    - pattern: 'locomotive-scroll(?:\.min)?\.js'
+  js:
+    LocomotiveScroll:
+      - pattern: ''
+    locomotiveScrollVersion:
+      - pattern: '([\d\.]+)'
+        version: 1
+  dom:
+    div[data-scroll-section]:
+      - pattern: ''

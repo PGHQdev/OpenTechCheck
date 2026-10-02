@@ -1,0 +1,10 @@
+name: Isotope
+slug: isotope
+category: js-library
+website: https://isotope.metafizzy.co
+detect:
+  js:
+    Isotope:
+      - pattern: ''
+    init_isotope:
+      - pattern: ''

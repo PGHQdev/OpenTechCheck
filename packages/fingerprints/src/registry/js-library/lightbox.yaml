@@ -1,0 +1,16 @@
+name: Lightbox
+slug: lightbox
+category: js-library
+website: https://lokeshdhakar.com/projects/lightbox2/
+detect:
+  scripts:
+    - pattern: '(?:lightbox2|lightbox-plus-jquery|/lightbox/(?:dist|js|src))/[^"'']*lightbox(?:-plus-jquery)?(?:\.min)?\.js'
+  js:
+    Lightbox.activeImage:
+      - pattern: ''
+    lightbox.$lightbox:
+      - pattern: ''
+  dom:
+    link[href*='lightbox']:
+      - attr: href
+        pattern: '/(?:lightbox2|dist/css/lightbox(?:\.min)?)\.css'

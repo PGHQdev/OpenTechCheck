@@ -1,0 +1,19 @@
+name: jQuery Migrate
+slug: jquery-migrate
+category: js-library
+website: https://github.com/jquery/jquery-migrate
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'jquery-migrate(?:\.min)?(?:-)?(?:\.min)?\.js(?:\?v(?:er)?=((?:\d+\.){1,9}\d+))?'
+      version: 1
+    - pattern: 'jquery-migrate(?:\.min)?(?:-?((?:\d+\.){1,9}\d+))?(?:\.min)?\.js'
+      version: 1
+  js:
+    jQuery.migrateVersion:
+      - pattern: '([\d.]+)'
+        version: 1
+    jQuery.migrateWarnings:
+      - pattern: ''
+    jqueryMigrate:
+      - pattern: ''

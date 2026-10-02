@@ -1,0 +1,15 @@
+name: Chevereto
+slug: chevereto
+category: js-library
+website: https://chevereto.com
+implies: [php]
+detect:
+  scripts:
+    - pattern: '/chevereto\.js'
+  meta:
+    generator:
+      - pattern: 'Chevereto\s(?:[\d\.]+)'
+  js:
+    CHEVERETO.version:
+      - pattern: '([\d\.]+)'
+        version: 1

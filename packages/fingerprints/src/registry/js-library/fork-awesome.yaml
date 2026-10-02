@@ -1,0 +1,14 @@
+name: Fork Awesome
+slug: fork-awesome
+category: js-library
+website: https://forkaweso.me
+detect:
+  dom:
+    link[href*='fork-awesome.min.css']:
+      - attr: href
+        pattern: '.fork-awesome\.min\.css(?:\?ver=([\d.]+))?'
+        version: 1
+    link[href*='npm/fork-awesome']:
+      - attr: href
+        pattern: '/npm/fork-awesome@([\d.]+)/css/fork-awesome\.min\.css'
+        version: 1

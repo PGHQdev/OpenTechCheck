@@ -1,0 +1,8 @@
+name: Morphext
+slug: morphext
+category: js-library
+website: https://morphext.fyianlai.com/
+detect:
+  scripts:
+    - pattern: 'morphext(?:\.min)?\.js(?:\?ver=((?:\d+\.){1,9}\d+))?'
+      version: 1

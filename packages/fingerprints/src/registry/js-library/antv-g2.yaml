@@ -1,0 +1,14 @@
+name: AntV G2
+slug: antv-g2
+category: js-library
+website: https://g2plot.antv.vision
+detect:
+  js:
+    G2.Chart:
+      - pattern: ''
+    G2.VERSION:
+      - pattern: '([\d\.]+)'
+        version: 1
+  dom:
+    div.g2-tooltip:
+      - pattern: ''

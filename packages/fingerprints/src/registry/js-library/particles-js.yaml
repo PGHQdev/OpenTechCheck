@@ -1,0 +1,13 @@
+name: particles.js
+slug: particles-js
+category: js-library
+website: https://github.com/VincentGarreau/particles.js
+detect:
+  scripts:
+    - pattern: '/particles(?:\.min)?\.js'
+  js:
+    particlesJS:
+      - pattern: ''
+  dom:
+    div#particles-js:
+      - pattern: ''

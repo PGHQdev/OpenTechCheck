@@ -1,0 +1,12 @@
+name: Highlight.js
+slug: highlight-js
+category: js-library
+website: https://highlightjs.org/
+detect:
+  scripts:
+    - pattern: 'highlightjs[^/]*|highlight\.js(?:\.min)?\.js|cdnjs[^/]*highlight|hljs[^/]*\.js'
+  js:
+    hljs.highlightBlock:
+      - pattern: ''
+    hljs.listLanguages:
+      - pattern: ''

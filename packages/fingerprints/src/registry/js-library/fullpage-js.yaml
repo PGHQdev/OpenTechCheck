@@ -1,0 +1,13 @@
+name: fullPage.js
+slug: fullpage-js
+category: js-library
+website: https://github.com/alvarotrigo/fullpage.js
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: '/fullPage\.js(?:/([\d\.]+)/)?'
+      version: 1
+  js:
+    fullpage_api.version:
+      - pattern: '([\d\.]+)'
+        version: 1

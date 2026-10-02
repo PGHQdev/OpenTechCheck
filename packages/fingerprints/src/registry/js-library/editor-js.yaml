@@ -1,0 +1,8 @@
+name: Editor.js
+slug: editor-js
+category: js-library
+website: https://editorjs.io
+detect:
+  js:
+    EditorJS:
+      - pattern: ''

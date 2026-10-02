@@ -1,0 +1,12 @@
+name: Baidu Maps
+slug: baidu-maps
+category: js-library
+website: https://map.baidu.com
+detect:
+  js:
+    BMAP_API_VERSION:
+      - pattern: '(.+)'
+        version: 1
+    bmap.version:
+      - pattern: '(.+)'
+        version: 1

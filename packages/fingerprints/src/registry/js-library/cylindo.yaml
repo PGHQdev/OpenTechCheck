@@ -1,0 +1,7 @@
+name: Cylindo
+slug: cylindo
+category: js-library
+website: https://www.cylindo.com
+detect:
+  scripts:
+    - pattern: 'viewer-cdn\.cylindo\.com/'

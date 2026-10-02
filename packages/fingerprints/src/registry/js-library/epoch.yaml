@@ -1,0 +1,15 @@
+name: Epoch
+slug: epoch
+category: js-library
+website: https://fastly.github.io/epoch
+implies: [d3]
+detect:
+  html:
+    - pattern: '<link[^>]+?href="[^"]+epoch(?:\.min)?\.css'
+  scripts:
+    - pattern: 'epoch(?:\.min)?\.js'
+  dom:
+    link[href*='epoch.css']:
+      - pattern: ''
+    link[href*='epoch.min.css']:
+      - pattern: ''

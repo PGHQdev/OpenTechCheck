@@ -1,0 +1,9 @@
+name: Edit-in-Place
+slug: edit-in-place
+category: js-library
+website: https://24ways.org/2005/edit-in-place-with-ajax
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '/jquery\.editinplace\.js'

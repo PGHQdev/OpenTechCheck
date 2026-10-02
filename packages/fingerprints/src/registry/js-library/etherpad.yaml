@@ -1,0 +1,21 @@
+name: Etherpad
+slug: etherpad
+category: js-library
+website: https://etherpad.org
+implies: [nodejs]
+detect:
+  html:
+    - pattern: 'href="http://etherpad\.org"'
+    - pattern: 'This is an <a href="http://etherpad\.org">etherpad</a>'
+  scripts:
+    - pattern: '/ep_etherpad-lite/'
+    - pattern: '/static/js/html10n\.js'
+    - pattern: '/static/js/l10n\.js'
+  headers:
+    server:
+      - pattern: '^Etherpad'
+  js:
+    padeditbar:
+      - pattern: ''
+    padimpexp:
+      - pattern: ''

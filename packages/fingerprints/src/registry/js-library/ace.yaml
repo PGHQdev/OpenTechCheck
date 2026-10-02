@@ -1,0 +1,13 @@
+name: Ace
+slug: ace
+category: js-library
+website: https://github.com/ajaxorg/ace
+detect:
+  js:
+    ace.EditSession:
+      - pattern: ''
+    ace.Editor:
+      - pattern: ''
+    ace.version:
+      - pattern: '([\d\.]+)'
+        version: 1

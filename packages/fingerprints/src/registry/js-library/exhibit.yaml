@@ -1,0 +1,13 @@
+name: Exhibit
+slug: exhibit
+category: js-library
+website: https://simile-widgets.org/exhibit/
+detect:
+  scripts:
+    - pattern: 'exhibit.*\.js'
+  js:
+    Exhibit:
+      - pattern: ''
+    Exhibit.version:
+      - pattern: '^(.+)$'
+        version: 1

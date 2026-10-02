@@ -1,0 +1,9 @@
+name: lite-youtube-embed
+slug: lite-youtube-embed
+category: js-library
+website: https://github.com/paulirish/lite-youtube-embed
+implies: [youtube]
+detect:
+  dom:
+    lite-youtube:
+      - pattern: ''

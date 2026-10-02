@@ -1,0 +1,13 @@
+name: Hammer.js
+slug: hammer-js
+category: js-library
+website: https://hammerjs.github.io
+detect:
+  scripts:
+    - pattern: 'hammer(?:\.min)?\.js'
+  js:
+    Hammer:
+      - pattern: ''
+    Hammer.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

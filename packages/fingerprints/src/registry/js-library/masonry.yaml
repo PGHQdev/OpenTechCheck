@@ -1,0 +1,8 @@
+name: Masonry
+slug: masonry
+category: js-library
+website: https://masonry.desandro.com
+detect:
+  js:
+    Masonry.Item:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Gijgo
+slug: gijgo
+category: js-library
+website: https://gijgo.com
+detect:
+  scripts:
+    - pattern: '/gijgo@([\d\.]+)/js/gijgo\.min\.js'
+      version: 1

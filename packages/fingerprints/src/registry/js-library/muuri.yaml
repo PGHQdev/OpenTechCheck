@@ -1,0 +1,8 @@
+name: Muuri
+slug: muuri
+category: js-library
+website: https://muuri.dev
+detect:
+  js:
+    Muuri:
+      - pattern: ''

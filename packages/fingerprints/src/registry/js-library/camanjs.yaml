@@ -1,0 +1,11 @@
+name: CamanJS
+slug: camanjs
+category: js-library
+website: https://github.com/meltingice/CamanJS
+detect:
+  js:
+    Caman:
+      - pattern: ''
+    Caman.version.release:
+      - pattern: '([\d\.]+)'
+        version: 1

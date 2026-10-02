@@ -1,0 +1,9 @@
+name: React Native for Web
+slug: react-native-for-web
+category: js-library
+website: https://necolas.github.io/react-native-web/
+implies: [react]
+detect:
+  dom:
+    style#react-native-stylesheet:
+      - pattern: ''

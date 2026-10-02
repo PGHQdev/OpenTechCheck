@@ -1,0 +1,9 @@
+name: Cart.js
+slug: cart-js
+category: js-library
+website: https://cartjs.org
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '(?:shopify-cartjs/([\d\.]+)|assets)/rivets-cart\.min\.js'
+      version: 1

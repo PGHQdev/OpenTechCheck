@@ -1,0 +1,22 @@
+name: prettyPhoto
+slug: prettyphoto
+category: js-library
+website: https://github.com/scaron/prettyphoto
+implies: [jquery]
+detect:
+  html:
+    - pattern: '(?:<link [^>]*href="[^"]*prettyPhoto(?:\.min)?\.css|<a [^>]*rel="prettyPhoto)'
+  scripts:
+    - pattern: 'jquery\.prettyPhoto\.js'
+  js:
+    pp_alreadyInitialized:
+      - pattern: ''
+    pp_descriptions:
+      - pattern: ''
+    pp_images:
+      - pattern: ''
+    pp_titles:
+      - pattern: ''
+  dom:
+    link[href*='prettyPhoto.css'], link[href*='prettyPhoto.min.css'], a[rel='prettyPhoto']:
+      - pattern: ''

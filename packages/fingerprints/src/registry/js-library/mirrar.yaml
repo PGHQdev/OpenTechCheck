@@ -1,0 +1,10 @@
+name: mirrAR
+slug: mirrar
+category: js-library
+website: https://www.mirrar.com
+detect:
+  js:
+    initMirrarUI:
+      - pattern: ''
+    loadmirrAR:
+      - pattern: ''

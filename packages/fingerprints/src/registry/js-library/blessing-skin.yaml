@@ -1,0 +1,10 @@
+name: Blessing Skin
+slug: blessing-skin
+category: js-library
+website: https://github.com/bs-community/blessing-skin-server
+implies: [laravel]
+detect:
+  js:
+    blessing.version:
+      - pattern: '^(.+)$'
+        version: 1

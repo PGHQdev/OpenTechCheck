@@ -1,0 +1,8 @@
+name: Clipboard.js
+slug: clipboard-js
+category: js-library
+website: https://clipboardjs.com/
+detect:
+  scripts:
+    - pattern: 'clipboard(?:\.js)?/dist/clipboard(?:-([\d.]+))?(?:\.min)?\.js'
+      version: 1

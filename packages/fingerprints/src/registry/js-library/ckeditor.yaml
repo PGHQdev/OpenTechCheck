@@ -1,0 +1,20 @@
+name: CKEditor
+slug: ckeditor
+category: js-library
+website: https://ckeditor.com
+detect:
+  js:
+    CKEDITOR:
+      - pattern: ''
+    CKEDITOR.version:
+      - pattern: '^([\d\.])$'
+        version: 1
+    CKEDITOR_BASEPATH:
+      - pattern: ''
+    CKEDITOR_VERSION:
+      - pattern: '^([\d\.])$'
+    apex.libVersions.ckeditor5:
+      - pattern: '^([\d\.])$'
+  dom:
+    style[data-cke]:
+      - pattern: ''

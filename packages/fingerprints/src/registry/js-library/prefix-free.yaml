@@ -1,0 +1,10 @@
+name: Prefix-Free
+slug: prefix-free
+category: js-library
+website: https://leaverou.github.io/prefixfree/
+detect:
+  scripts:
+    - pattern: 'prefixfree\.js'
+  js:
+    PrefixFree:
+      - pattern: ''

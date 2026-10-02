@@ -1,0 +1,13 @@
+name: ClientJS
+slug: clientjs
+category: js-library
+website: https://clientjs.org
+detect:
+  scripts:
+    - pattern: '/clientjs@(\d.*?)/'
+      version: 1
+    - pattern: '/ClientJS/(?:(\d.*?)/)?'
+      version: 1
+  js:
+    ClientJS:
+      - pattern: ''

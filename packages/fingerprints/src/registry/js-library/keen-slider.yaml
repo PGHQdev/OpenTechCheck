@@ -1,0 +1,11 @@
+name: Keen-Slider
+slug: keen-slider
+category: js-library
+website: https://keen-slider.io
+detect:
+  js:
+    KeenSlider:
+      - pattern: ''
+  dom:
+    div.keen-slider, div.keen-slider__slide:
+      - pattern: ''

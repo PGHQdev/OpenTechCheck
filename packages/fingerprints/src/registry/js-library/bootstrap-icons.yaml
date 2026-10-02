@@ -1,0 +1,10 @@
+name: Bootstrap Icons
+slug: bootstrap-icons
+category: js-library
+website: https://icons.getbootstrap.com
+detect:
+  dom:
+    link[href*='bootstrap-icons']:
+      - attr: href
+        pattern: 'bootstrap-icons(?:@|/)?([\d\.]+)?'
+        version: 1

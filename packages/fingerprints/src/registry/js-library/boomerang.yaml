@@ -1,0 +1,12 @@
+name: Boomerang
+slug: boomerang
+category: js-library
+website: https://akamai.github.io/boomerang
+detect:
+  js:
+    BOOMR:
+      - pattern: ''
+    BOOMR_lstart:
+      - pattern: ''
+    BOOMR_mq:
+      - pattern: ''

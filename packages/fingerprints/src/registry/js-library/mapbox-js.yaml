@@ -1,0 +1,14 @@
+name: Mapbox.js
+slug: mapbox-js
+category: js-library
+website: https://github.com/mapbox/mapbox.js
+implies: [leaflet]
+detect:
+  html:
+    - pattern: 'api\.mapbox\.com/mapbox\.js/v[\d.]+/mapbox'
+  scripts:
+    - pattern: 'api\.mapbox\.com/mapbox\.js/v([\d\.]+)/'
+      version: 1
+  dom:
+    link[href*='api.mapbox.com/']:
+      - pattern: ''

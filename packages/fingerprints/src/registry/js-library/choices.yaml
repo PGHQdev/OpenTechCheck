@@ -1,0 +1,12 @@
+name: Choices
+slug: choices
+category: js-library
+website: https://github.com/Choices-js/Choices
+detect:
+  scripts:
+    - pattern: 'choices\.js(?:@|/)?([\d\.]+)?.+choices\.min\.js'
+      version: 1
+    - pattern: '/modules/choices/js/choices\.js'
+  js:
+    Choices:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: crypto-js
+slug: crypto-js
+category: js-library
+website: https://github.com/brix/crypto-js
+detect:
+  scripts:
+    - pattern: '(?:/([\d\.-]+))?/crypto-js(?:\.min)?\.js'
+      version: 1
+  js:
+    CryptoJS.Rabbit:
+      - pattern: ''
+    CryptoJS.algo:
+      - pattern: ''

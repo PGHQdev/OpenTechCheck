@@ -1,0 +1,14 @@
+name: Flourish
+slug: flourish
+category: js-library
+website: https://flourish.studio
+detect:
+  js:
+    Flourish.environment:
+      - pattern: ''
+    FlourishConfig:
+      - pattern: ''
+    FlourishLoaded:
+      - pattern: ''
+    _Flourish_template_id:
+      - pattern: ''

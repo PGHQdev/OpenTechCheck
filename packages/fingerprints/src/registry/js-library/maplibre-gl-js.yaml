@@ -1,0 +1,16 @@
+name: MapLibre GL JS
+slug: maplibre-gl-js
+category: js-library
+website: https://github.com/maplibre/maplibre-gl-js
+detect:
+  scripts:
+    - pattern: 'maplibre-gl@([\d\.]+)/dist/maplibre-gl\.js'
+      version: 1
+  js:
+    apex.libVersions.maplibre:
+      - pattern: '([\d\.]+)'
+        version: 1
+    maplibregl:
+      - pattern: ''
+    rmap2.maplibreglCompare:
+      - pattern: ''

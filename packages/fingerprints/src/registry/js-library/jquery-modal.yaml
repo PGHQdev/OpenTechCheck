@@ -1,0 +1,12 @@
+name: jQuery Modal
+slug: jquery-modal
+category: js-library
+website: https://jquerymodal.com
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'jquery-modal/([\d\.]+)/jquery\.modal\.min\.js'
+      version: 1
+  dom:
+    link[href*='jquery.modal.min.css']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Notie
+slug: notie
+category: js-library
+website: https://github.com/jaredreich/notie
+detect:
+  js:
+    notie:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: ArcGIS API for JavaScript
+slug: arcgis-api-for-javascript
+category: js-library
+website: https://developers.arcgis.com/javascript/
+detect:
+  scripts:
+    - pattern: 'js\.arcgis\.com'
+    - pattern: 'basemaps\.arcgis\.com'

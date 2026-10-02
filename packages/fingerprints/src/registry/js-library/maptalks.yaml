@@ -1,0 +1,13 @@
+name: Maptalks
+slug: maptalks
+category: js-library
+website: https://maptalks.org
+detect:
+  js:
+    map._eventMap:
+      - pattern: ''
+    maptalks.GeoJSON:
+      - pattern: ''
+  dom:
+    div.maptalks-wrapper:
+      - pattern: ''

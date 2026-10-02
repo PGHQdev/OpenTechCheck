@@ -1,0 +1,11 @@
+name: Mavo
+slug: mavo
+category: js-library
+website: https://mavo.io
+detect:
+  js:
+    Mavo:
+      - pattern: ''
+    Mavo.version:
+      - pattern: 'v([\d\.]+)'
+        version: 1

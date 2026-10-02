@@ -1,0 +1,8 @@
+name: Glider.js
+slug: glider-js
+category: js-library
+website: https://nickpiscitelli.github.io/Glider.js
+detect:
+  scripts:
+    - pattern: '(?:/|@)?([\d\.]{2,})?/glider\.min\.js'
+      version: 1

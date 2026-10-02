@@ -1,0 +1,13 @@
+name: Peity
+slug: peity
+category: js-library
+website: https://benpickles.github.io/peity/
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '(?:jquery\.)?peity(?:-demo)?(?:\.min)?\.js(?:\?v(?:er)?=((?:\d+\.){1,9}\d+))?'
+      version: 1
+  js:
+    peity:
+      - pattern: ''

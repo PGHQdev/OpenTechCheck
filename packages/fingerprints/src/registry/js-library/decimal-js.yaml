@@ -1,0 +1,15 @@
+name: decimal.js
+slug: decimal-js
+category: js-library
+website: https://mikemcl.github.io/decimal.js/
+detect:
+  scripts:
+    - pattern: 'decimal[.-]([\d.]*\d+)(?:\.min)?\.js'
+      version: 1
+    - pattern: '/([\d.]*\d+)/decimal(?:\.min)?\.js'
+      version: 1
+    - pattern: 'decimal(?:\.min)?\.js(?:\?ver(?:sion)?=([\d.]*\d+))?'
+      version: 1
+  js:
+    Decimal.ROUND_HALF_FLOOR:
+      - pattern: ''

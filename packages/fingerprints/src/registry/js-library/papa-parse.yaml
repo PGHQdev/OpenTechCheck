@@ -1,0 +1,10 @@
+name: Papa Parse
+slug: papa-parse
+category: js-library
+website: https://www.papaparse.com
+detect:
+  js:
+    Papa.Parser:
+      - pattern: ''
+    Papa.parse:
+      - pattern: ''

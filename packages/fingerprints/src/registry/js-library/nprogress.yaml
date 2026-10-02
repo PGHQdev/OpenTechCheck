@@ -1,0 +1,11 @@
+name: NProgress
+slug: nprogress
+category: js-library
+website: https://ricostacruz.com/nprogress/
+detect:
+  scripts:
+    - pattern: '/nprogress\.min\.js'
+  js:
+    NProgress.version:
+      - pattern: '([\d.]+)'
+        version: 1

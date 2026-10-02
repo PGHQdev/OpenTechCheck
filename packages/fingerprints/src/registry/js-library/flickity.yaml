@@ -1,0 +1,14 @@
+name: Flickity
+slug: flickity
+category: js-library
+website: https://flickity.metafizzy.co
+detect:
+  scripts:
+    - pattern: 'flickity(?:/|@)([\d\.]+).+flickity(?:\.pkgd)?(?:\.min)?\.js'
+      version: 1
+  js:
+    Flickity:
+      - pattern: ''
+  dom:
+    style[data-context='foundation-flickity-css'], div.flickity-enabled:
+      - pattern: ''

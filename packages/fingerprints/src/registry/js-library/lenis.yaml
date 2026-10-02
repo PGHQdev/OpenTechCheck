@@ -1,0 +1,11 @@
+name: Lenis
+slug: lenis
+category: js-library
+website: http://lenis.darkroom.engineering
+detect:
+  js:
+    Lenis:
+      - pattern: ''
+    lenisVersion:
+      - pattern: '([\d\.]+)'
+        version: 1

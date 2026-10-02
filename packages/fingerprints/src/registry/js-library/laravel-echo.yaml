@@ -1,0 +1,11 @@
+name: Laravel Echo
+slug: laravel-echo
+category: js-library
+website: https://laravel.com/docs/broadcasting#client-side-installation
+implies: [laravel]
+detect:
+  js:
+    Echo.connector:
+      - pattern: ''
+    echo.connector:
+      - pattern: ''

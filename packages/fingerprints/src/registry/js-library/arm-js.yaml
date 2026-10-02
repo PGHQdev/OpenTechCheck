@@ -1,0 +1,8 @@
+name: ARM JS
+slug: arm-js
+category: js-library
+website: https://github.com/michaeljymsgutierrez/arm-js-library
+detect:
+  js:
+    ARM.aliases:
+      - pattern: ''

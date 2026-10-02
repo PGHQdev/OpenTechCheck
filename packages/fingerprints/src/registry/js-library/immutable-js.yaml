@@ -1,0 +1,13 @@
+name: Immutable.js
+slug: immutable-js
+category: js-library
+website: https://facebook.github.io/immutable-js/
+detect:
+  scripts:
+    - pattern: '^immutable\.(?:min\.)?js$'
+  js:
+    Immutable:
+      - pattern: ''
+    Immutable.version:
+      - pattern: '^(.+)$'
+        version: 1

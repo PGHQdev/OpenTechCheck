@@ -1,0 +1,16 @@
+name: Google Maps
+slug: google-maps
+category: js-library
+website: https://maps.google.com
+detect:
+  scripts:
+    - pattern: '(?:maps\.google\.com/maps\?file=api(?:&v=([\d.]+))?|maps\.google\.com/maps/api/staticmap)'
+    - pattern: '//maps\.google(?:apis)?\.com/maps/api/js'
+  js:
+    GoogleMap:
+      - pattern: ''
+    googleMapsConfig:
+      - pattern: ''
+  dom:
+    iframe[src*='google.com/maps']:
+      - pattern: ''

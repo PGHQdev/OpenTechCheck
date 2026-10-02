@@ -1,0 +1,11 @@
+name: AntV G6
+slug: antv-g6
+category: js-library
+website: https://g6.antv.vision
+detect:
+  js:
+    g6.Graph:
+      - pattern: ''
+    g6.version:
+      - pattern: '([\d\.]+)'
+        version: 1

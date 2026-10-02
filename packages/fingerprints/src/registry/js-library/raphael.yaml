@@ -1,0 +1,12 @@
+name: Raphael
+slug: raphael
+category: js-library
+website: https://dmitrybaranovskiy.github.io/raphael/
+detect:
+  scripts:
+    - pattern: 'raphael(?:-([\d.]+))?(?:\.min)?\.js'
+      version: 1
+  js:
+    Raphael.version:
+      - pattern: '^(.+)$'
+        version: 1

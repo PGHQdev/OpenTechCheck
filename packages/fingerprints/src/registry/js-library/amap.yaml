@@ -1,0 +1,10 @@
+name: Amap
+slug: amap
+category: js-library
+website: https://amap.com
+detect:
+  scripts:
+    - pattern: 'webapi\.amap\.com'
+  js:
+    AMap.ArrayBounds:
+      - pattern: ''

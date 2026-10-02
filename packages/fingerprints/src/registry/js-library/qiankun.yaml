@@ -1,0 +1,15 @@
+name: qiankun
+slug: qiankun
+category: js-library
+website: https://qiankun.umijs.org
+detect:
+  html:
+    - pattern: '__POWERED_BY_QIANKUN__'
+  js:
+    __POWERED_BY_QIANKUN__:
+      - pattern: ''
+  dom:
+    div[id^='__qiankun_']:
+      - attr: data-version
+        pattern: '([\d\.]+)'
+        version: 1

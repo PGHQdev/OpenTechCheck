@@ -1,0 +1,8 @@
+name: PeerJS
+slug: peerjs
+category: js-library
+website: https://peerjs.com
+detect:
+  js:
+    Peer.DEFAULT_KEY:
+      - pattern: ''

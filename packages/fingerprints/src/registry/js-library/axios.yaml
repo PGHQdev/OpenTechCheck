@@ -1,0 +1,11 @@
+name: Axios
+slug: axios
+category: js-library
+website: https://github.com/axios/axios
+detect:
+  scripts:
+    - pattern: '/axios(@|/)([\d.]+)(?:/[a-z]+)?/axios(?:.min)?\.js'
+      version: 2
+  js:
+    axios.get:
+      - pattern: ''

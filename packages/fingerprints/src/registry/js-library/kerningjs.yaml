@@ -1,0 +1,10 @@
+name: KerningJS
+slug: kerningjs
+category: js-library
+website: https://webupon.com/blog/what-is-kerning
+detect:
+  scripts:
+    - pattern: 'jquery\.FLAutoKerning\.js'
+  js:
+    FLAutoKerning:
+      - pattern: ''

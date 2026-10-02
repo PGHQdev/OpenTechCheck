@@ -1,0 +1,10 @@
+name: jsPDF
+slug: jspdf
+category: js-library
+website: https://parall.ax/products/jspdf
+detect:
+  scripts:
+    - pattern: '/jspdf\.min\.js'
+  js:
+    jsPDF.API:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: FooTable
+slug: footable
+category: js-library
+website: https://fooplugins.github.io/FooTable/index.html
+within:
+  techs: [jquery]
+detect:
+  js:
+    $FOOTABLE.init:
+      - pattern: ''
+    footable.plugins:
+      - pattern: ''

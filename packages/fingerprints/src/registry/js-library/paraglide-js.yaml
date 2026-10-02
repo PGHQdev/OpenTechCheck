@@ -1,0 +1,8 @@
+name: Paraglide JS
+slug: paraglide-js
+category: js-library
+website: https://inlang.com/m/gerre34r/library-inlang-paraglideJs
+detect:
+  js:
+    __paraglide:
+      - pattern: ''

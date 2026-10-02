@@ -1,0 +1,11 @@
+name: Babylon.js
+slug: babylon-js
+category: js-library
+website: https://www.babylonjs.com/
+detect:
+  js:
+    BABYLON.AddressMode:
+      - pattern: ''
+  dom:
+    canvas[data-engine*='Babylon.js']:
+      - pattern: ''

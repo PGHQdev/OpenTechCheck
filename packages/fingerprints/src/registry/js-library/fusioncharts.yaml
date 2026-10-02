@@ -1,0 +1,12 @@
+name: FusionCharts
+slug: fusioncharts
+category: js-library
+website: https://www.fusioncharts.com/charts
+detect:
+  js:
+    FusionCharts:
+      - pattern: ''
+    FusionChartsDataFormats:
+      - pattern: ''
+    FusionMaps:
+      - pattern: ''

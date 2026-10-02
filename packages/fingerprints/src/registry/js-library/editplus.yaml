@@ -1,0 +1,8 @@
+name: EditPlus
+slug: editplus
+category: js-library
+website: https://www.editplus.com
+detect:
+  meta:
+    generator:
+      - pattern: '^EditPlus$'

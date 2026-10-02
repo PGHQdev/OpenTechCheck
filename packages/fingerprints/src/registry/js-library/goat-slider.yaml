@@ -1,0 +1,10 @@
+name: Goat Slider
+slug: goat-slider
+category: js-library
+website: https://goatslider.com
+detect:
+  js:
+    GoatSliderCarousel:
+      - pattern: ''
+    GoatSliderSlider:
+      - pattern: ''

@@ -1,0 +1,11 @@
+name: Darkmode.js
+slug: darkmode-js
+category: js-library
+website: https://github.com/sandoche/Darkmode.js
+detect:
+  scripts:
+    - pattern: 'darkmode-js@([\d\.]+)/lib/darkmode-js\.min\.js'
+      version: 1
+  js:
+    Darkmode:
+      - pattern: ''

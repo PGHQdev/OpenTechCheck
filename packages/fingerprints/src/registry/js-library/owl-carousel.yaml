@@ -1,0 +1,13 @@
+name: OWL Carousel
+slug: owl-carousel
+category: js-library
+website: https://owlcarousel2.github.io/OwlCarousel2/
+implies: [jquery]
+detect:
+  html:
+    - pattern: '<link [^>]*href="[^"]+owl\.carousel(?:\.min)?\.css'
+  scripts:
+    - pattern: 'owl\.carousel.*\.js'
+  dom:
+    link[href*='owl.carousel.css'], link[href*='owl.carousel.min.css']:
+      - pattern: ''

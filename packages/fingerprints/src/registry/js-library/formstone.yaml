@@ -1,0 +1,9 @@
+name: Formstone
+slug: formstone
+category: js-library
+website: https://formstone.it
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: 'jquery\.formstone\.min\.js'

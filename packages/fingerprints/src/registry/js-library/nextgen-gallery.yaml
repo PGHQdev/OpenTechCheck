@@ -1,0 +1,19 @@
+name: NextGEN Gallery
+slug: nextgen-gallery
+category: js-library
+website: https://www.imagely.com/wordpress-gallery-plugin
+within:
+  techs: [wordpress]
+detect:
+  html:
+    - pattern: '<!-- <meta name="NextGEN" version="([\d.]+)" /> -->'
+      version: 1
+  scripts:
+    - pattern: '/nextgen-gallery/js/'
+  meta:
+    nextgen:
+      - pattern: '^([\d.]+)'
+        version: 1
+  js:
+    nextgen_lightbox_settings.static_path:
+      - pattern: '/wp-content/plugins/nextgen-gallery/'

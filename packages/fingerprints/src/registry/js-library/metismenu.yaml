@@ -1,0 +1,14 @@
+name: metisMenu
+slug: metismenu
+category: js-library
+website: https://github.com/onokumus/metismenu
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: '(?:/|\.)metisMenu(?:js)?(?:\.min)?\.js(?:\?([\d\.]+))?'
+      version: 1
+  js:
+    MetisMenu:
+      - pattern: ''
+    metisMenu:
+      - pattern: ''

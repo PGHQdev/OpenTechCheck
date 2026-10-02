@@ -1,0 +1,12 @@
+name: HeadJS
+slug: headjs
+category: js-library
+website: https://headjs.github.io
+detect:
+  html:
+    - pattern: '<[^>]*data-headjs-load'
+  scripts:
+    - pattern: 'head\.(?:core|load)(?:\.min)?\.js'
+  js:
+    head.browser.name:
+      - pattern: ''

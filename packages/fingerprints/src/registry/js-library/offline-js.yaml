@@ -1,0 +1,12 @@
+name: Offline.js
+slug: offline-js
+category: js-library
+website: https://github.hubspot.com/offline/docs/welcome
+detect:
+  scripts:
+    - pattern: '/(?:bundles/[^/]+|assets/javascripts|js)/offline\.min\.js'
+  js:
+    Offline.confirmDown:
+      - pattern: ''
+    Offline.state:
+      - pattern: ''

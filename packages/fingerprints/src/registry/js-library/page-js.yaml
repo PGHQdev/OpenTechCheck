@@ -1,0 +1,8 @@
+name: Page.js
+slug: page-js
+category: js-library
+website: https://github.com/visionmedia/page.js
+detect:
+  js:
+    page.Route:
+      - pattern: ''

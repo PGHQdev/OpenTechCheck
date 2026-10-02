@@ -1,0 +1,7 @@
+name: Pixpa
+slug: pixpa
+category: js-library
+website: https://www.pixpa.com
+detect:
+  scripts:
+    - pattern: 'themeassets\.pixpa\.com/'

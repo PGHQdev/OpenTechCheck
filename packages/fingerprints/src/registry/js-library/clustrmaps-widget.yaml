@@ -1,0 +1,10 @@
+name: ClustrMaps Widget
+slug: clustrmaps-widget
+category: js-library
+website: https://clustrmaps.com/
+detect:
+  scripts:
+    - pattern: 'clustrmaps\.com'
+  dom:
+    img[src*='clustrmaps.com']:
+      - pattern: ''

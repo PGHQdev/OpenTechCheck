@@ -1,0 +1,15 @@
+name: DataTables
+slug: datatables
+category: js-library
+website: https://datatables.net
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'dataTables.*\.js'
+  js:
+    $.fn.dataTable.version:
+      - pattern: '^(.+)$'
+        version: 1
+    jQuery.fn.dataTable.version:
+      - pattern: '^(.+)$'
+        version: 1

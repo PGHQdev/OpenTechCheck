@@ -1,0 +1,8 @@
+name: OpenStreetMap
+slug: openstreetmap
+category: js-library
+website: https://www.openstreetmap.org
+detect:
+  dom:
+    iframe[src*='openstreetmap.org'],iframe[data-lazy-src*='openstreetmap.org']:
+      - pattern: ''

@@ -1,0 +1,11 @@
+name: Quicklink
+slug: quicklink
+category: js-library
+website: https://getquick.link/
+detect:
+  scripts:
+    - pattern: 'quicklink@([\d.]+)/dist/quicklink.*\.js'
+      version: 1
+  js:
+    drupalSettings.quicklink:
+      - pattern: ''

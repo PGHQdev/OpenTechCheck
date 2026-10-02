@@ -1,0 +1,14 @@
+name: Bokeh
+slug: bokeh
+category: js-library
+website: https://bokeh.org
+implies: [python]
+detect:
+  scripts:
+    - pattern: 'bokeh.*\.js'
+  js:
+    Bokeh:
+      - pattern: ''
+    Bokeh.version:
+      - pattern: '^(.+)$'
+        version: 1

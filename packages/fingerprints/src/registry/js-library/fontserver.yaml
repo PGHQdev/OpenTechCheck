@@ -1,0 +1,9 @@
+name: FontServer
+slug: fontserver
+category: js-library
+website: https://fontserver.ir
+detect:
+  dom:
+    link[href*='.font']:
+      - attr: href
+        pattern: '\.font(?:api|cdn)\.ir'

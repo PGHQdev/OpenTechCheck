@@ -1,0 +1,10 @@
+name: Fittingbox
+slug: fittingbox
+category: js-library
+website: https://www.fittingbox.com
+detect:
+  scripts:
+    - pattern: '\.fittingbox\.com'
+  js:
+    FitMix:
+      - pattern: ''

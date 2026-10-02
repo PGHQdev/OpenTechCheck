@@ -1,0 +1,10 @@
+name: Cufon
+slug: cufon
+category: js-library
+website: https://cufon.shoqolate.com
+detect:
+  scripts:
+    - pattern: 'cufon-yui\.js'
+  js:
+    Cufon:
+      - pattern: ''

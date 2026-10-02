@@ -1,0 +1,11 @@
+name: React Flow
+slug: react-flow
+category: js-library
+website: https://reactflow.dev
+within:
+  techs: [react]
+detect:
+  dom:
+    style[type='text/css']:
+      - text: true
+        pattern: 'react-flow'

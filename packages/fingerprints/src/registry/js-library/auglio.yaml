@@ -1,0 +1,14 @@
+name: Auglio
+slug: auglio
+category: js-library
+website: https://auglio.com
+detect:
+  js:
+    VirtooalApp:
+      - pattern: ''
+    loadVirtooalScript:
+      - pattern: ''
+    virtooal_logger:
+      - pattern: ''
+    virtooal_script_loaded:
+      - pattern: ''

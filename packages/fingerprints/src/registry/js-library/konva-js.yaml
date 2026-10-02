@@ -1,0 +1,11 @@
+name: Konva.js
+slug: konva-js
+category: js-library
+website: https://konvajs.org
+detect:
+  js:
+    Konva:
+      - pattern: ''
+    Konva.version:
+      - pattern: '^(.+)$'
+        version: 1

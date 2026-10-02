@@ -1,0 +1,8 @@
+name: Moofx
+slug: moofx
+category: js-library
+website: https://github.com/kamicane/moofx
+detect:
+  js:
+    moofx.parse:
+      - pattern: ''

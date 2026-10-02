@@ -1,0 +1,19 @@
+name: Gallery
+slug: gallery
+category: js-library
+website: https://galleryproject.org/
+detect:
+  html:
+    - pattern: '<div id="gsNavBar" class="gcBorder1">'
+    - pattern: '<a href="http://gallery\.sourceforge\.net"><img[^>]+Powered by Gallery\s*(?:(?:v|Version)\s*([0-9.]+))?'
+      version: 1
+  js:
+    $.fn.gallery_valign:
+      - pattern: ''
+    galleryAuthToken:
+      - pattern: ''
+  dom:
+    div[id*='gsNavBar']:
+      - pattern: ''
+    div[class*='gcBorder1']:
+      - pattern: ''

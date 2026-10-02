@@ -1,0 +1,10 @@
+name: Puter.js
+slug: puter-js
+category: js-library
+website: https://docs.puter.com
+detect:
+  js:
+    puter.APIOrigin:
+      - pattern: ''
+    puter_gui_enabled:
+      - pattern: ''
