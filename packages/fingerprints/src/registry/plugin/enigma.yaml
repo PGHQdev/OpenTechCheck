@@ -1,0 +1,9 @@
+name: Enigma
+slug: enigma
+category: plugin
+website: https://wordpress.org/themes/enigma
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/enigma/'

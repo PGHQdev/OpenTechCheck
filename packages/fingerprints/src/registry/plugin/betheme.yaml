@@ -1,0 +1,10 @@
+name: BeTheme
+slug: betheme
+category: plugin
+website: https://www.betheme.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/betheme/js/scripts(?:\.min)?\.js\?ver=([\d.]+)'
+      version: 1

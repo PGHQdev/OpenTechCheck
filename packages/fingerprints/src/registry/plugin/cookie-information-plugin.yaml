@@ -1,0 +1,9 @@
+name: Cookie Information plugin
+slug: cookie-information-plugin
+category: plugin
+website: https://wordpress.org/plugins/wp-gdpr-compliance
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-gdpr-compliance/'

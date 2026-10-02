@@ -1,0 +1,15 @@
+name: Colorlib Travelify
+slug: colorlib-travelify
+category: plugin
+website: https://colorlib.com/wp/themes/travelify
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/travelify/'
+  js:
+    travelify_slider_value:
+      - pattern: ''
+  dom:
+    link#travelify-style-css:
+      - pattern: ''

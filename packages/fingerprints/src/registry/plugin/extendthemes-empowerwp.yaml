@@ -1,0 +1,13 @@
+name: ExtendThemes EmpowerWP
+slug: extendthemes-empowerwp
+category: plugin
+website: https://extendthemes.com/empowerwp
+excludes: [extendthemes-mesmerize]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/empowerwp(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/empowerwp']:
+      - pattern: ''

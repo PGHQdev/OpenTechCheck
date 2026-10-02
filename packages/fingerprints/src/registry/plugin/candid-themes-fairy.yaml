@@ -1,0 +1,10 @@
+name: Candid Themes Fairy
+slug: candid-themes-fairy
+category: plugin
+website: https://www.candidthemes.com/themes/fairy
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/fairy(?:-premium)?/.+custom\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

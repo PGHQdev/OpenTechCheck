@@ -1,0 +1,12 @@
+name: Avada AVASHIP
+slug: avada-avaship
+category: plugin
+website: https://apps.shopify.com/avaship
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'freeshippingbar\.apps\.avada\.io/'
+  js:
+    AVADA_FSB.bars:
+      - pattern: ''

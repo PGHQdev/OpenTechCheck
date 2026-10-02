@@ -1,0 +1,12 @@
+name: EasyGift
+slug: easygift
+category: plugin
+website: https://apps.shopify.com/gifter-cart-auto-include
+within:
+  techs: [shopify]
+detect:
+  js:
+    EasyGift.nonTargetingRules:
+      - pattern: ''
+    EasyGiftScriptLoaded:
+      - pattern: ''

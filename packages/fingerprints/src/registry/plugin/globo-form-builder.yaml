@@ -1,0 +1,8 @@
+name: Globo Form Builder
+slug: globo-form-builder
+category: plugin
+website: https://apps.shopify.com/form-builder-contact-form
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '/assets/globo\.formbuilder\.init\.js'

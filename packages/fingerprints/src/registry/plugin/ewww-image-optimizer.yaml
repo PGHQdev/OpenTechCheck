@@ -1,0 +1,12 @@
+name: EWWW Image Optimizer
+slug: ewww-image-optimizer
+category: plugin
+website: https://github.com/nosilver4u/ewww-image-optimizer
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/ewww-image-optimizer/'
+  js:
+    ewww_webp_supported:
+      - pattern: ''

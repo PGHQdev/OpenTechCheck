@@ -1,0 +1,9 @@
+name: Avada SEO
+slug: avada-seo
+category: plugin
+website: https://apps.shopify.com/avada-seo-suite
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'seo\.apps\.avada\.io/'

@@ -1,0 +1,21 @@
+name: ExtendThemes Mesmerize
+slug: extendthemes-mesmerize
+category: plugin
+website: https://extendthemes.com/mesmerize
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/mesmerize(?:-pro)?/'
+  js:
+    MesmerizeKube:
+      - pattern: ''
+    mesmerizeDomReady:
+      - pattern: ''
+    mesmerizeFooterParalax:
+      - pattern: ''
+    mesmerizeMenuSticky:
+      - pattern: ''
+  dom:
+    link#mesmerize-style-css:
+      - pattern: ''

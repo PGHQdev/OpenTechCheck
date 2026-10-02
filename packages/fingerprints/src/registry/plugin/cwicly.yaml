@@ -1,0 +1,13 @@
+name: Cwicly
+slug: cwicly
+category: plugin
+website: https://cwicly.com
+implies: [gutenberg]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/cwicly/'
+  dom:
+    link[href*='/wp-content/uploads/cwicly/']:
+      - pattern: ''

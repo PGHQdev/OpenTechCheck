@@ -1,0 +1,18 @@
+name: Cryout Creations Parabola
+slug: cryout-creations-parabola
+category: plugin
+website: https://www.cryoutcreations.eu/wordpress-themes/parabola
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/parabola/.+frontend\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    parabola_mobilemenu_init:
+      - pattern: ''
+    parabola_settings:
+      - pattern: ''
+  dom:
+    link#parabola-style-css, img[src*='/wp-content/themes/parabola/']:
+      - pattern: ''

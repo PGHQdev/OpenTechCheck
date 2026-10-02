@@ -1,0 +1,16 @@
+name: Govalo
+slug: govalo
+category: plugin
+website: https://govalo.com
+implies: [shopify]
+detect:
+  html:
+    - pattern: 'shopify-app-block govalo'
+    - pattern: 'APP EMBED: GOVALO'
+    - pattern: 'govalo-rewards'
+  scripts:
+    - pattern: 'cdn\.shopify\.com/extensions/.+/([\d\.]+)/assets/govalo\.min\.js'
+      version: 1
+  js:
+    Govalo.meta:
+      - pattern: ''

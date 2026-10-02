@@ -1,0 +1,12 @@
+name: GoDaddy CoBlocks
+slug: godaddy-coblocks
+category: plugin
+website: https://github.com/godaddy-wordpress/coblocks
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/coblocks/'
+  dom:
+    link[href*='/wp-content/plugins/coblocks/']:
+      - pattern: ''

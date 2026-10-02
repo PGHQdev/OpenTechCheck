@@ -1,0 +1,18 @@
+name: Blocksy
+slug: blocksy
+category: plugin
+website: https://creativethemes.com/blocksy
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/blocksy/(?:.+main\.js(?:\?ver=([\d\.]+)))?'
+      version: 1
+  js:
+    blocksyJsonP:
+      - pattern: ''
+    blocksyResponsiveMenuCache:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/themes/blocksy/']:
+      - pattern: ''

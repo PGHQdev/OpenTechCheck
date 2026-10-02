@@ -1,0 +1,9 @@
+name: Flits
+slug: flits
+category: plugin
+website: https://getflits.com
+implies: [shopify]
+detect:
+  js:
+    flitsObjects.accountPage:
+      - pattern: ''

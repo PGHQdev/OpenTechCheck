@@ -1,0 +1,13 @@
+name: ExtendThemes Highlight
+slug: extendthemes-highlight
+category: plugin
+website: https://extendthemes.com/highlight
+excludes: [extendthemes-mesmerize]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/highlight(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/highlight/'], link[href*='/wp-content/themes/highlight-pro/']:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Globo Pre-Order
+slug: globo-pre-order
+category: plugin
+website: https://apps.shopify.com/pre-order-pro
+implies: [shopify]
+detect:
+  js:
+    GloboPreorderParams:
+      - pattern: ''

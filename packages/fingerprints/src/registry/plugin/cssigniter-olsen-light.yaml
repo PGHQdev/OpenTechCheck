@@ -1,0 +1,10 @@
+name: CSSIgniter Olsen Light
+slug: cssigniter-olsen-light
+category: plugin
+website: https://www.cssigniter.com/themes/olsen-light
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/olsen-light/.+scripts(?:\.min)?\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

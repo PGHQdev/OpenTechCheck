@@ -1,0 +1,9 @@
+name: Juphy
+slug: juphy
+category: plugin
+website: https://juphy.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'static\.juphy\.com/'

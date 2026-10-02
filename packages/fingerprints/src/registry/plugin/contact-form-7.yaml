@@ -1,0 +1,16 @@
+name: Contact Form 7
+slug: contact-form-7
+category: plugin
+website: https://contactform7.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/contact-form-7/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    wpcf7:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/contact-form-7/']:
+      - pattern: ''

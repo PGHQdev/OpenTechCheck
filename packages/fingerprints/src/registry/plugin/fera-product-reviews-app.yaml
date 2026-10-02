@@ -1,0 +1,9 @@
+name: Fera Product Reviews App
+slug: fera-product-reviews-app
+category: plugin
+website: https://apps.shopify.com/fera
+implies: [shopify]
+detect:
+  js:
+    feraJsUrl:
+      - pattern: 'cdn\.fera\.ai/js/fera\.js.+\.myshopify\.com'

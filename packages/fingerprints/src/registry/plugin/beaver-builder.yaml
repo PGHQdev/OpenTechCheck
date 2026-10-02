@@ -1,0 +1,10 @@
+name: Beaver Builder
+slug: beaver-builder
+category: plugin
+website: https://www.wpbeaverbuilder.com/
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/uploads/bb-plugin/']:
+      - pattern: ''

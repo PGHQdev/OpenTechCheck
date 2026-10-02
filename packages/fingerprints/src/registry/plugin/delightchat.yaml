@@ -1,0 +1,10 @@
+name: DelightChat
+slug: delightchat
+category: plugin
+website: https://www.delightchat.io
+within:
+  techs: [shopify]
+detect:
+  dom:
+    div#delightchat-widget, div#delightchat-welcome-widget:
+      - pattern: ''

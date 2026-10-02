@@ -1,0 +1,10 @@
+name: BetterDocs plugin
+slug: betterdocs-plugin
+category: plugin
+website: https://betterdocs.co/docs/wordpress
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/betterdocs(?:-pro)?/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

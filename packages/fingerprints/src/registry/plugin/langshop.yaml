@@ -1,0 +1,15 @@
+name: LangShop
+slug: langshop
+category: plugin
+website: https://langshop.io
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '\.langshop\.app/'
+  js:
+    LangShop:
+      - pattern: ''
+    LangShopConfig:
+      - pattern: ''
+    LangShopSDK:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Autocommerce
+slug: autocommerce
+category: plugin
+website: https://autocommerce.io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.autocommerce\.io/'

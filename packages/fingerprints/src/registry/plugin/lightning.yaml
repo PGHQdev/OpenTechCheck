@@ -1,0 +1,16 @@
+name: Lightning
+slug: lightning
+category: plugin
+website: https://lightning.vektor-inc.co.jp/en/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/lightning(?:-pro)?/.+lightning\.min\.js(?:.+ver=([\d\.]+))?'
+      version: 1
+  js:
+    lightningOpt.header_scrool:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/themes/lightning/'], link[href*='/wp-content/themes/lightning-pro/']:
+      - pattern: ''

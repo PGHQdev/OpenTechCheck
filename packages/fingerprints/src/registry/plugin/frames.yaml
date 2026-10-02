@@ -1,0 +1,10 @@
+name: Frames
+slug: frames
+category: plugin
+website: https://getframes.io
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/frames-plugin/']:
+      - pattern: ''

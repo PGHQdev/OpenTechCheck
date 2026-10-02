@@ -1,0 +1,10 @@
+name: JetTabs
+slug: jettabs
+category: plugin
+website: https://crocoblock.com/plugins/jettabs
+detect:
+  js:
+    JetTabs.accordionInit:
+      - pattern: ''
+    JetTabsSettings:
+      - pattern: ''

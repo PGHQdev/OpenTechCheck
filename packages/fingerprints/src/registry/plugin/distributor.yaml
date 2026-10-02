@@ -1,0 +1,12 @@
+name: Distributor
+slug: distributor
+category: plugin
+website: https://distributorplugin.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/distributor'
+  headers:
+    x-distributor:
+      - pattern: 'yes'

@@ -1,0 +1,11 @@
+name: BookThatApp
+slug: bookthatapp
+category: plugin
+website: https://www.bookthatapp.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '\.bookthatapp\.com/'
+  js:
+    BookThatApp:
+      - pattern: ''

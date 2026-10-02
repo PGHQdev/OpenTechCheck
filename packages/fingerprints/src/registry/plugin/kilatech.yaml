@@ -1,0 +1,7 @@
+name: Kilatech
+slug: kilatech
+category: plugin
+website: https://web.kilatechapps.com
+detect:
+  scripts:
+    - pattern: 'cdn\.kilatechapps\.com/'

@@ -1,0 +1,11 @@
+name: GoDaddy Escapade
+slug: godaddy-escapade
+category: plugin
+website: https://github.com/godaddy-wordpress/primer-child-escapade
+excludes: [godaddy-primer]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/themes/escapade/']:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Catch Themes Catch Box
+slug: catch-themes-catch-box
+category: plugin
+website: https://catchthemes.com/themes/catch-box
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/catch-box(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/catch-box/']:
+      - pattern: ''

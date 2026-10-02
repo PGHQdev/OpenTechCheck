@@ -1,0 +1,10 @@
+name: Formidable Form
+slug: formidable-form
+category: plugin
+website: https://formidableforms.com
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/formidable/']:
+      - pattern: ''

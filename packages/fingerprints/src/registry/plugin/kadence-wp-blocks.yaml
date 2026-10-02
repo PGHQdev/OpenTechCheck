@@ -1,0 +1,14 @@
+name: Kadence WP Blocks
+slug: kadence-wp-blocks
+category: plugin
+website: https://www.kadencewp.com/kadence-blocks/
+implies: [gutenberg]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/kadence-blocks/dist/.+/kb-form-block\.min\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/kadence-blocks/']:
+      - pattern: ''

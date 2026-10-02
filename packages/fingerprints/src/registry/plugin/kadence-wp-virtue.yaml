@@ -1,0 +1,13 @@
+name: Kadence WP Virtue
+slug: kadence-wp-virtue
+category: plugin
+website: https://www.kadencewp.com/product/virtue-free-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/virtue/.+main-min\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/themes/virtue/']:
+      - pattern: ''

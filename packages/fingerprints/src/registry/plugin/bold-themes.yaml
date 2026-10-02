@@ -1,0 +1,11 @@
+name: Bold Themes
+slug: bold-themes
+category: plugin
+website: https://bold-themes.com/wordpress-themes-plugins/
+implies: [wordpress]
+detect:
+  js:
+    BoldThemesURI:
+      - pattern: ''
+    boldthemes_theme_loaded:
+      - pattern: '^true$'

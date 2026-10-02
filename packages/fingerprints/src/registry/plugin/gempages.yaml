@@ -1,0 +1,13 @@
+name: GemPages
+slug: gempages
+category: plugin
+website: https://gempages.net
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '/files/gempagev\d+\.js'
+  js:
+    GEMSTORE:
+      - pattern: ''
+    GEMVENDOR:
+      - pattern: ''

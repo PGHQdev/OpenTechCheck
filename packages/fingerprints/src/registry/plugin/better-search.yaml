@@ -1,0 +1,10 @@
+name: Better Search
+slug: better-search
+category: plugin
+website: https://webberzone.com/plugins/better-search/
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/better-search/']:
+      - pattern: ''

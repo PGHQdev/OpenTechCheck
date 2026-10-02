@@ -1,0 +1,13 @@
+name: Auberge
+slug: auberge
+category: plugin
+website: https://www.webmandesign.eu/portfolio/auberge-wordpress-theme/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/auberge/.+\.js\?ver=([\d\.]+)'
+      version: 1
+  dom:
+    link[href*='/wp-content/themes/auberge/']:
+      - pattern: ''

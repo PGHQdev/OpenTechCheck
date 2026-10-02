@@ -1,0 +1,12 @@
+name: Asgaros Forum
+slug: asgaros-forum
+category: plugin
+website: https://www.asgaros.de
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/asgaros-forum/'
+  dom:
+    link[href*='/wp-content/plugins/asgaros-forum/']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: LTheme
+slug: ltheme
+category: plugin
+website: https://ltheme.com
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    script[id*='ltheme-custom-js']:
+      - pattern: ''

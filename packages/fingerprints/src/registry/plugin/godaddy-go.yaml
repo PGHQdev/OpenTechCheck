@@ -1,0 +1,16 @@
+name: GoDaddy Go
+slug: godaddy-go
+category: plugin
+website: https://github.com/godaddy-wordpress/go
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/go/.+frontend\.min\.js(?:.+ver=([\d\.]+))?'
+      version: 1
+  js:
+    goFrontend.openMenuOnHover:
+      - pattern: ''
+  dom:
+    link#go-style-css:
+      - pattern: ''

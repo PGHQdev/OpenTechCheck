@@ -1,0 +1,9 @@
+name: Justuno App
+slug: justuno-app
+category: plugin
+website: https://apps.shopify.com/justuno-pop-ups-email-conversion
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '//scripttags\.justuno\.com/shopify_justuno'

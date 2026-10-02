@@ -1,0 +1,20 @@
+name: Colibri WP
+slug: colibri-wp
+category: plugin
+website: https://colibriwp.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/colibri-page-builder.+\.js(?:.+ver=([\d\.\-\w]+))?'
+      version: 1
+  js:
+    Colibri:
+      - pattern: ''
+    colibriData:
+      - pattern: ''
+    colibriFrontendData:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/colibri-page-builder']:
+      - pattern: ''

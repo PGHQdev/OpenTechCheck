@@ -1,0 +1,12 @@
+name: Avada Boost Sales
+slug: avada-boost-sales
+category: plugin
+website: https://apps.shopify.com/avada-boost-sales
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'boostsales\.apps\.avada\.io/'
+  js:
+    AVADA_BS_LAST_UPDATE:
+      - pattern: ''

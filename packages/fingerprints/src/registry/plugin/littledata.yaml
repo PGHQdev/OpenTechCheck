@@ -1,0 +1,14 @@
+name: Littledata
+slug: littledata
+category: plugin
+website: https://www.littledata.io
+implies: [shopify]
+within:
+  categories: [ecommerce]
+detect:
+  js:
+    LittledataLayer:
+      - pattern: ''
+    LittledataLayer.version:
+      - pattern: 'v([\d\.]+)'
+        version: 1

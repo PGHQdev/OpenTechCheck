@@ -1,0 +1,9 @@
+name: Bold Page Builder
+slug: bold-page-builder
+category: plugin
+website: https://wordpress.org/plugins/bold-page-builder
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/bold-page-builder/'

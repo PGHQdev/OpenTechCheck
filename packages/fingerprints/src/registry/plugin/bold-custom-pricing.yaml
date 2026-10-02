@@ -1,0 +1,12 @@
+name: Bold Custom Pricing
+slug: bold-custom-pricing
+category: plugin
+website: https://boldcommerce.com/custom-pricing
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cp.\.boldapps\.net/'
+  js:
+    BOLD.csp.version:
+      - pattern: '([\d\.]+)'
+        version: 1

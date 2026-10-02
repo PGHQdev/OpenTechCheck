@@ -1,0 +1,13 @@
+name: MDBootstrap WP theme
+slug: mdbootstrap-wp-theme
+category: plugin
+website: https://mdbgo.com/docs/projects/wordpress/
+implies: [mdbootstrap]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/themes/mdbootstrap']:
+      - attr: href
+        pattern: '/wp-content/themes/mdbootstrap(?:\d+)?/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

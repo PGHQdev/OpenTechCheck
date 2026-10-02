@@ -1,0 +1,10 @@
+name: Envo eCommerce
+slug: envo-ecommerce
+category: plugin
+website: https://envothemes.com/free-envo-ecommerce/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/envo-ecommerce/.+customscript\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

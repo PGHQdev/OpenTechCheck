@@ -1,0 +1,8 @@
+name: ElasticPress
+slug: elasticpress
+category: plugin
+website: https://www.elasticpress.io/
+detect:
+  headers:
+    x-elasticpress-query:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Brilliant Web-to-Lead
+slug: brilliant-web-to-lead
+category: plugin
+website: https://brilliantplugins.com/downloads/salesforce/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/salesforce-wordpress-to-lead/'

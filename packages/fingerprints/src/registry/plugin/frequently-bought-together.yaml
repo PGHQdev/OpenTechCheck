@@ -1,0 +1,9 @@
+name: Frequently Bought Together
+slug: frequently-bought-together
+category: plugin
+website: https://www.codeblackbelt.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.codeblackbelt\.com/js/modules/frequently-bought-together/'

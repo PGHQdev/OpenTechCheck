@@ -1,0 +1,9 @@
+name: Animation Addons
+slug: animation-addons
+category: plugin
+website: https://animation-addons.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/extension-for-animation-addons/'

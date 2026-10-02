@@ -1,0 +1,10 @@
+name: LandingPress
+slug: landingpress
+category: plugin
+website: https://landingpress.net
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/landingpress-wp/.+script\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

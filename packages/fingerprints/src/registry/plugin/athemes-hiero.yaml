@@ -1,0 +1,9 @@
+name: aThemes Hiero
+slug: athemes-hiero
+category: plugin
+website: https://athemes.com/theme/hiero
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/hiero/'

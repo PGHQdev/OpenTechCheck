@@ -1,0 +1,19 @@
+name: Download Monitor
+slug: download-monitor
+category: plugin
+website: https://www.download-monitor.com
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    dlm-version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+  js:
+    DLM_XHR_Download:
+      - pattern: ''
+    dlmXHR.prevent_duplicates:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/download-monitor/']:
+      - pattern: ''

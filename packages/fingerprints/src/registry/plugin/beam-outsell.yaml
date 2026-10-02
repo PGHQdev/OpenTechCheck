@@ -1,0 +1,13 @@
+name: Beam OutSell
+slug: beam-outsell
+category: plugin
+website: https://apps.shopify.com/outsell
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '//outsellapp\.com/'
+  js:
+    outsellAiRecommendationsIsEnabled:
+      - pattern: ''
+    outsellApp:
+      - pattern: ''

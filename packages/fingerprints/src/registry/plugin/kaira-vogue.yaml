@@ -1,0 +1,12 @@
+name: Kaira Vogue
+slug: kaira-vogue
+category: plugin
+website: https://kairaweb.com/wordpress-theme/vogue
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/vogue(?:-child)?/'
+  dom:
+    link#vogue-style-css:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Envo Storefront
+slug: envo-storefront
+category: plugin
+website: https://envothemes.com/free-envo-storefront
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/envo-storefront/.+customscript\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

@@ -1,0 +1,11 @@
+name: Bold Upsell
+slug: bold-upsell
+category: plugin
+website: https://boldcommerce.com/upsell
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'upsells\.boldapps\.net/'
+  js:
+    BOLD.upsell:
+      - pattern: ''

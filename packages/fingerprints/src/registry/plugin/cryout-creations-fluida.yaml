@@ -1,0 +1,13 @@
+name: Cryout Creations Fluida
+slug: cryout-creations-fluida
+category: plugin
+website: https://www.cryoutcreations.eu/wordpress-themes/fluida
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/fluida(?:-plus)?/.+frontend\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link#fluida-themefonts-css:
+      - pattern: ''

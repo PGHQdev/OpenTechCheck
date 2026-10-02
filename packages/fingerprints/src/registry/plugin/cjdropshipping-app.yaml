@@ -1,0 +1,9 @@
+name: CJDropshipping app
+slug: cjdropshipping-app
+category: plugin
+website: https://apps.shopify.com/cucheng
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.cjdropshipping\.com/'

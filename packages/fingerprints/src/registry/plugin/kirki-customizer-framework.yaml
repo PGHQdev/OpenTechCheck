@@ -1,0 +1,12 @@
+name: Kirki Customizer Framework
+slug: kirki-customizer-framework
+category: plugin
+website: https://kirki.org
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/kirki/'
+  dom:
+    link[href*='/wp-content/plugins/kirki/']:
+      - pattern: ''

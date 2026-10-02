@@ -1,0 +1,9 @@
+name: Instafeed
+slug: instafeed
+category: plugin
+website: https://apps.shopify.com/instafeed
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'instafeed\.nfcube\.com/'

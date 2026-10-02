@@ -1,0 +1,10 @@
+name: Apollo13Themes Rife
+slug: apollo13themes-rife
+category: plugin
+website: https://apollo13themes.com/rife
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/rife(?:-free)?/(?:.+script\.min\.js(?:\?ver=([\d\.]+)))?'
+      version: 1

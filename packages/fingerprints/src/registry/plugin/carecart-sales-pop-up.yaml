@@ -1,0 +1,8 @@
+name: CareCart Sales Pop Up
+slug: carecart-sales-pop-up
+category: plugin
+website: https://carecart.io/sales-pop-up-app
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'sales-pop\.carecart\.io/'

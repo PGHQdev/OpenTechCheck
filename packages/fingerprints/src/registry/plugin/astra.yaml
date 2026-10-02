@@ -1,0 +1,18 @@
+name: Astra
+slug: astra
+category: plugin
+website: https://wpastra.com/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'themes/astra\S*\.js(?:\?ver=([0-9.]+))?'
+      version: 1
+  dom:
+    link[href*='themes/astra']:
+      - attr: href
+        pattern: 'astra\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1
+    style[id*='astra-theme'], body[class*='astra-'], script[id*='astra-']:
+      - text: true
+        pattern: ''

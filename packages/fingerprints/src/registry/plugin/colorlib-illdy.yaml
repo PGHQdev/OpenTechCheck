@@ -1,0 +1,12 @@
+name: Colorlib Illdy
+slug: colorlib-illdy
+category: plugin
+website: https://colorlib.com/wp/themes/illdy
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/illdy/'
+  dom:
+    link#illdy-style-css:
+      - pattern: ''

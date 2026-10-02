@@ -1,0 +1,12 @@
+name: EraofEcom WinAds
+slug: eraofecom-winads
+category: plugin
+website: https://eraofecom.org/collections/tech/products/win-ads-manager
+implies: [shopify]
+detect:
+  js:
+    win_ads.baseURL:
+      - pattern: 'winads\.eraofecom\.org'
+  dom:
+    link[href*='winads.eraofecom.org']:
+      - pattern: ''

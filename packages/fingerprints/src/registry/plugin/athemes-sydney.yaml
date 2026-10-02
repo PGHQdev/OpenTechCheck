@@ -1,0 +1,12 @@
+name: aThemes Sydney
+slug: athemes-sydney
+category: plugin
+website: https://athemes.com/theme/sydney
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/sydney(?:-pro-ii)?/'
+  dom:
+    link#sydney-style-css:
+      - pattern: ''

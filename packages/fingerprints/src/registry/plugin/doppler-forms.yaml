@@ -1,0 +1,10 @@
+name: Doppler Forms
+slug: doppler-forms
+category: plugin
+website: https://wordpress.org/plugins/doppler-form/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/doppler-form/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

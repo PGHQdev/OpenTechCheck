@@ -1,0 +1,9 @@
+name: MetaSlider
+slug: metaslider
+category: plugin
+website: https://www.metaslider.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/ml-slider(?:-pro)?/'

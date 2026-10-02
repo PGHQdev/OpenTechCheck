@@ -1,0 +1,9 @@
+name: Booster Page Speed Optimizer
+slug: booster-page-speed-optimizer
+category: plugin
+website: https://apps.shopify.com/page-speed-optimizer
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '/assets/booster-page-speed-optimizer\.js'

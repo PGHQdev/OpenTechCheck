@@ -1,0 +1,20 @@
+name: Cryout Creations Mantra
+slug: cryout-creations-mantra
+category: plugin
+website: https://www.cryoutcreations.eu/wordpress-themes/mantra
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/mantra(?:-plus)?/.+frontend\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    mantra_mobilemenu_init:
+      - pattern: ''
+    mantra_onload:
+      - pattern: ''
+    mantra_options:
+      - pattern: ''
+  dom:
+    link#mantra-style-css, img[src*='/wp-content/themes/mantra/']:
+      - pattern: ''

@@ -1,0 +1,17 @@
+name: MailChimp for WordPress
+slug: mailchimp-for-wordpress
+category: plugin
+website: https://www.mc4wp.com
+implies: [mailchimp]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/mailchimp-for-wp/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    mc4wp:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/mailchimp-for-wp/']:
+      - pattern: ''

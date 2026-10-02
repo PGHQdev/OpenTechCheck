@@ -1,0 +1,9 @@
+name: AndersNoren Baskerville
+slug: andersnoren-baskerville
+category: plugin
+website: https://andersnoren.se/teman/baskerville-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/baskerville(?:-2)?/'

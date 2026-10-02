@@ -1,0 +1,12 @@
+name: aThemes Astrid
+slug: athemes-astrid
+category: plugin
+website: https://athemes.com/theme/astrid
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/astrid/'
+  dom:
+    link#astrid-style-css:
+      - pattern: ''

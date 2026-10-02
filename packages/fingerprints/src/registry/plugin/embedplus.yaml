@@ -1,0 +1,10 @@
+name: EmbedPlus
+slug: embedplus
+category: plugin
+website: https://www.embedplus.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/youtube-embed-plus(?:-pro)?/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

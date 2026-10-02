@@ -1,0 +1,13 @@
+name: AitThemes
+slug: aitthemes
+category: plugin
+website: https://www.ait-themes.club
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    author:
+      - pattern: 'AitThemes\.club'
+  js:
+    AitSettings:
+      - pattern: ''

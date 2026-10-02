@@ -1,0 +1,9 @@
+name: Creativ.eMail
+slug: creativ-email
+category: plugin
+website: https://www.creativemail.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/creative-mail-by-constant-contact/'

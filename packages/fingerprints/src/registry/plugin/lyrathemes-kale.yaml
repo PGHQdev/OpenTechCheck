@@ -1,0 +1,12 @@
+name: LyraThemes Kale
+slug: lyrathemes-kale
+category: plugin
+website: https://www.lyrathemes.com/kale
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/kale(?:-pro)?/'
+  js:
+    kale_responsive_videos:
+      - pattern: ''

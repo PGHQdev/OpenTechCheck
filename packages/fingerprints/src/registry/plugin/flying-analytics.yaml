@@ -1,0 +1,12 @@
+name: Flying Analytics
+slug: flying-analytics
+category: plugin
+website: https://wordpress.org/plugins/flying-analytics/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/flying-analytics/'
+  dom:
+    link[href*='/wp-content/plugins/flying-analytics/']:
+      - pattern: ''

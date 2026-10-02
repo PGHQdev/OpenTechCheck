@@ -1,0 +1,11 @@
+name: Digismoothie Candy Rack
+slug: digismoothie-candy-rack
+category: plugin
+website: https://www.digismoothie.com/apps/candy-rack
+implies: [shopify]
+detect:
+  js:
+    CANDYRACK_DOCUMENT_LISTENER:
+      - pattern: ''
+    candyrackEnableDebug:
+      - pattern: ''

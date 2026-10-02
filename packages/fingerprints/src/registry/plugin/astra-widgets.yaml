@@ -1,0 +1,12 @@
+name: Astra Widgets
+slug: astra-widgets
+category: plugin
+website: https://wpastra.com/did-you-know-astra-is-widget-ready
+within:
+  techs: [astra, wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/astra-widgets/']:
+      - attr: href
+        pattern: '/wp-content/plugins/astra-widgets/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

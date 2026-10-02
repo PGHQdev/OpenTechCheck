@@ -1,0 +1,11 @@
+name: Bold Subscriptions
+slug: bold-subscriptions
+category: plugin
+website: https://boldcommerce.com/shopify-subscription-app
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'sub\.boldapps\.net/'
+  js:
+    BOLD.subscriptions:
+      - pattern: ''

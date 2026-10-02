@@ -1,0 +1,15 @@
+name: Gravity Forms
+slug: gravity-forms
+category: plugin
+website: https://gravityforms.com
+within:
+  techs: [wordpress]
+detect:
+  html:
+    - pattern: '<div class=(?:"|'')[^>]*gform_wrapper'
+    - pattern: '<div class=(?:"|'')[^>]*gform_body'
+    - pattern: '<ul [^>]*class=(?:"|'')[^>]*gform_fields'
+    - pattern: '<link [^>]*href=(?:"|'')[^>]*wp-content/plugins/gravityforms/css/'
+  scripts:
+    - pattern: '/wp-content/plugins/gravityforms/js/[^/]+\.js\?ver=([\d.]+)$'
+      version: 1

@@ -1,0 +1,9 @@
+name: Locksmith
+slug: locksmith
+category: plugin
+website: https://apps.shopify.com/locksmith
+implies: [shopify]
+detect:
+  js:
+    Locksmith:
+      - pattern: ''

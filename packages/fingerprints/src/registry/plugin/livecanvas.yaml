@@ -1,0 +1,10 @@
+name: LiveCanvas
+slug: livecanvas
+category: plugin
+website: https://livecanvas.com
+implies: [bootstrap]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/livecanvas/'

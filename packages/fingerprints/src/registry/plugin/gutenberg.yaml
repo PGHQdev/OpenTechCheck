@@ -1,0 +1,14 @@
+name: Gutenberg
+slug: gutenberg
+category: plugin
+website: https://github.com/WordPress/gutenberg
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/gutenberg/'
+  dom:
+    link[href*='/wp-content/plugins/gutenberg/']:
+      - attr: href
+        pattern: '/wp-content/plugins/gutenberg/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

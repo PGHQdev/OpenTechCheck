@@ -1,0 +1,11 @@
+name: MinMaxify
+slug: minmaxify
+category: plugin
+website: https://apps.shopify.com/order-limits-minmaxify
+implies: [shopify]
+detect:
+  js:
+    minMaxify.checkLimits:
+      - pattern: ''
+    minMaxify.shop:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Colorlib Activello
+slug: colorlib-activello
+category: plugin
+website: https://colorlib.com/wp/themes/activello
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/activello/'
+  js:
+    ActivelloIsMobile:
+      - pattern: ''
+  dom:
+    link#activello-style-css:
+      - pattern: ''

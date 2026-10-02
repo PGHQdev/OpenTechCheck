@@ -1,0 +1,12 @@
+name: FalguniThemes Nisarg
+slug: falgunithemes-nisarg
+category: plugin
+website: https://www.falgunithemes.com/downloads/nisarg
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/nisarg(?:pro)?/'
+  js:
+    nisargpro_script_vars:
+      - pattern: ''

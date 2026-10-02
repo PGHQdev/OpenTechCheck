@@ -1,0 +1,8 @@
+name: Core Framework
+slug: core-framework
+category: plugin
+website: https://coreframework.com
+detect:
+  dom:
+    link#core-framework-frontend-css, style#core-framework-inline-inline-css:
+      - pattern: ''

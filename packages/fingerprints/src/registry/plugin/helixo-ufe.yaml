@@ -1,0 +1,11 @@
+name: Helixo UFE
+slug: helixo-ufe
+category: plugin
+website: https://helixo.co/upsell-funnel-engine/
+implies: [shopify]
+detect:
+  js:
+    ufe.funnelData:
+      - pattern: ''
+    ufeStore.cartTotal:
+      - pattern: ''

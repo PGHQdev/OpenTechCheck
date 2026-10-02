@@ -1,0 +1,12 @@
+name: Genesis theme
+slug: genesis-theme
+category: plugin
+website: https://www.studiopress.com/themes/genesis
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/genesis/lib/js/'
+  js:
+    genesis_responsive_menu:
+      - pattern: ''

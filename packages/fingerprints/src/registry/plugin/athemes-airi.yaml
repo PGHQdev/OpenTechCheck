@@ -1,0 +1,12 @@
+name: aThemes Airi
+slug: athemes-airi
+category: plugin
+website: https://athemes.com/theme/airi
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/airi/'
+  dom:
+    link#airi-style-css:
+      - pattern: ''

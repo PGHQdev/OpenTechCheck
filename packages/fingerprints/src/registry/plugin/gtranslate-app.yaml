@@ -1,0 +1,12 @@
+name: GTranslate app
+slug: gtranslate-app
+category: plugin
+website: https://apps.shopify.com/multilingual-shop-by-gtranslate
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'gtranslate\.io/shopify/'
+  dom:
+    img[src*='gtranslate.io/shopify']:
+      - pattern: ''

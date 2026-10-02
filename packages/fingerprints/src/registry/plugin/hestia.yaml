@@ -1,0 +1,18 @@
+name: Hestia
+slug: hestia
+category: plugin
+website: https://themeisle.com/themes/hestia/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'themes/hestia.*\.js(?:\?ver=([0-9.]+))?'
+      version: 1
+  dom:
+    body[class*='hestia-theme']:
+      - text: true
+        pattern: ''
+    link[id*='hestia']:
+      - attr: href
+        pattern: 'hestia\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1

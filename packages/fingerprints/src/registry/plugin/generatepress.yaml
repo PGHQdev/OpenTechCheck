@@ -1,0 +1,27 @@
+name: GeneratePress
+slug: generatepress
+category: plugin
+website: https://generatepress.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'themes/generatepress\S*\.js(?:\?ver=([0-9.]+))?'
+      version: 1
+  js:
+    generatepressMenu:
+      - pattern: ''
+    generatepressNavSearch:
+      - pattern: ''
+  dom:
+    body[class*='generatepress-theme']:
+      - text: true
+        pattern: ''
+    link[id*='generate-style']:
+      - attr: href
+        pattern: 'generatepress\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1
+    link[id*='generatepress']:
+      - attr: href
+        pattern: 'generatepress\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1

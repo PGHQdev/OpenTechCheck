@@ -1,0 +1,12 @@
+name: Froonze
+slug: froonze
+category: plugin
+website: https://www.froonze.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.shopify\.com/extensions/[^/]+/froonze-loyalty-wishlist[^/]*'
+  js:
+    frcp.httpsUrl:
+      - pattern: 'app\.froonze\.com'

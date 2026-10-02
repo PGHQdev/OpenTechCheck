@@ -1,0 +1,19 @@
+name: ExtendThemes Materialis
+slug: extendthemes-materialis
+category: plugin
+website: https://extendthemes.com/materialis
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/materialis(?:-pro)?/'
+  js:
+    MaterialisTheme:
+      - pattern: ''
+    materialisSetHeaderTopSpacing:
+      - pattern: ''
+    materialis_theme_pro_settings:
+      - pattern: ''
+  dom:
+    link#materialis-style-css:
+      - pattern: ''

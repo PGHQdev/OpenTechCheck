@@ -1,0 +1,12 @@
+name: aThemes Moesia
+slug: athemes-moesia
+category: plugin
+website: https://athemes.com/theme/moesia
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/moesia(?:-pro-ii)?/'
+  dom:
+    link#moesia-style-css:
+      - pattern: ''

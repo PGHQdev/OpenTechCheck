@@ -1,0 +1,11 @@
+name: Bold Bundles
+slug: bold-bundles
+category: plugin
+website: https://boldcommerce.com/bundles
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'bundles\.boldapps\.net/'
+  js:
+    BOLD.bundles:
+      - pattern: ''

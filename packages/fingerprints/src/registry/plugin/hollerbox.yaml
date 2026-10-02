@@ -1,0 +1,10 @@
+name: HollerBox
+slug: hollerbox
+category: plugin
+website: https://hollerwp.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    HollerBox.active:
+      - pattern: ''

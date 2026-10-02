@@ -1,0 +1,15 @@
+name: a3 Lazy Load
+slug: a3-lazy-load
+category: plugin
+website: https://a3rev.com/shop/a3-lazy-load/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/a3-lazy-load/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    a3_lazyload_extend_params:
+      - pattern: ''
+    a3_lazyload_params:
+      - pattern: ''

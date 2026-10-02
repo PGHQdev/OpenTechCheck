@@ -1,0 +1,10 @@
+name: GTranslate
+slug: gtranslate
+category: plugin
+website: https://gtranslate.io
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/gtranslate/'], img[src*='/wp-content/plugins/gtranslate/']:
+      - pattern: ''

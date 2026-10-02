@@ -1,0 +1,12 @@
+name: Easy Accordion
+slug: easy-accordion
+category: plugin
+website: https://easyaccordion.io
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/easy-accordion-free/'
+  dom:
+    link[href*='/wp-content/plugins/easy-accordion-free/']:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Cryout Creations Bravada
+slug: cryout-creations-bravada
+category: plugin
+website: https://www.cryoutcreations.eu/wordpress-themes/bravada
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/bravada(?:-plus)?/.+frontend\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link#bravada-style-css, img[src*='/wp-content/themes/bravada/']:
+      - pattern: ''

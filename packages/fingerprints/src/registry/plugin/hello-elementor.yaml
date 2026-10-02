@@ -1,0 +1,19 @@
+name: Hello Elementor
+slug: hello-elementor
+category: plugin
+website: https://elementor.com/hello-theme/
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[id*='elementor-hello']:
+      - attr: href
+        pattern: 'elementor-hello\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1
+    link[id*='hello-elementor']:
+      - attr: href
+        pattern: 'hello-elementor\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1
+    script[id*='hello-elementor']:
+      - text: true
+        pattern: ''

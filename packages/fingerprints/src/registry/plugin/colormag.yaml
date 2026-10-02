@@ -1,0 +1,18 @@
+name: ColorMag
+slug: colormag
+category: plugin
+website: https://themegrill.com/themes/colormag/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'themes/colormag.*\.js(?:\?ver=([0-9.]+))?'
+      version: 1
+  dom:
+    body[class*='colormag-theme']:
+      - text: true
+        pattern: ''
+    link[id*='colormag']:
+      - attr: href
+        pattern: 'themes/colormag\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1

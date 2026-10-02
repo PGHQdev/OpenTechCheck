@@ -1,0 +1,18 @@
+name: Kadence WP Kadence
+slug: kadence-wp-kadence
+category: plugin
+website: https://www.kadencewp.com/kadence-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/kadence/.+navigation\.min\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  js:
+    kadence:
+      - pattern: ''
+    kadenceConfig:
+      - pattern: ''
+  dom:
+    link#kadence-global-css:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Accentuate Custom Fields
+slug: accentuate-custom-fields
+category: plugin
+website: https://www.accentuate.io
+within:
+  techs: [shopify]
+detect:
+  dom:
+    a[style*='.accentuate.io/'], a[data-bg*='.accentuate.io/'], div[style*='.accentuate.io/'], img[src*='.accentuate.io/'], img[data-src*='.accentuate.io/']:
+      - pattern: ''

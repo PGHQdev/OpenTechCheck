@@ -1,0 +1,9 @@
+name: In Cart Upsell & Cross-Sell
+slug: in-cart-upsell-cross-sell
+category: plugin
+website: https://incartupsell.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.incartupsell\.com/'

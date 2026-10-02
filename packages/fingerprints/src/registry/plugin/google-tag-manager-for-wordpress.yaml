@@ -1,0 +1,14 @@
+name: Google Tag Manager for WordPress
+slug: google-tag-manager-for-wordpress
+category: plugin
+website: https://gtm4wp.com
+implies: [google-tag-manager]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/duracelltomi-google-tag-manager/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/duracelltomi-google-tag-manager/']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Coin Currency Converter
+slug: coin-currency-converter
+category: plugin
+website: https://apps.shopify.com/coin
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '/apps/coin/coin\.js.+\.myshopify\.com'

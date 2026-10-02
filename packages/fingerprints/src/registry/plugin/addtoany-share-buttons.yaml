@@ -1,0 +1,10 @@
+name: AddToAny Share Buttons
+slug: addtoany-share-buttons
+category: plugin
+website: https://github.com/projectestac/wordpress-add-to-any
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/add-to-any/addtoany\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

@@ -1,0 +1,10 @@
+name: Elementor Header & Footer Builder
+slug: elementor-header-footer-builder
+category: plugin
+website: https://github.com/brainstormforce/header-footer-elementor
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/header-footer-elementor/']:
+      - pattern: ''

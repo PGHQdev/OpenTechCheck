@@ -1,0 +1,15 @@
+name: Colorlib Shapely
+slug: colorlib-shapely
+category: plugin
+website: https://colorlib.com/wp/themes/shapely
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/shapely/'
+  js:
+    ShapelyAdminObject:
+      - pattern: ''
+  dom:
+    link#shapely-style-css:
+      - pattern: ''

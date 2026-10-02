@@ -1,0 +1,16 @@
+name: Flying Pages
+slug: flying-pages
+category: plugin
+website: https://wordpress.org/plugins/flying-pages/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/flying-pages/.+\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  js:
+    flyingPages:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/flying-pages/']:
+      - pattern: ''

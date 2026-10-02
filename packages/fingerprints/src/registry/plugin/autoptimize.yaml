@@ -1,0 +1,13 @@
+name: Autoptimize
+slug: autoptimize
+category: plugin
+website: https://autoptimize.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/autoptimize/.+\.js(?:\?ao_version=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/autoptimize/'], link[href*='/wp-content/cache/autoptimize/']:
+      - pattern: ''

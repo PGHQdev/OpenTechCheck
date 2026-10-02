@@ -1,0 +1,10 @@
+name: Metro CreativeX
+slug: metro-creativex
+category: plugin
+website: https://themeisle.com/themes/metrox/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/metro-creativex/js/.*\.js\?ver=([\d\.]+)'
+      version: 1

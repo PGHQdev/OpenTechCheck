@@ -1,0 +1,8 @@
+name: Globo Also Bought
+slug: globo-also-bought
+category: plugin
+website: https://apps.shopify.com/globo-related-products
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'assets/globo\.alsobought\.js'

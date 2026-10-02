@@ -1,0 +1,12 @@
+name: Colorlib Sparkling
+slug: colorlib-sparkling
+category: plugin
+website: https://colorlib.com/wp/themes/sparkling
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/sparkling/'
+  dom:
+    link#sparkling-style-css:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: AFThemes CoverNews
+slug: afthemes-covernews
+category: plugin
+website: https://afthemes.com/products/covernews
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/covernews(?:-pro)?/'

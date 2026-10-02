@@ -1,0 +1,9 @@
+name: AndersNoren Hitchcock
+slug: andersnoren-hitchcock
+category: plugin
+website: https://andersnoren.se/teman/hitchcock-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/hitchcock/'

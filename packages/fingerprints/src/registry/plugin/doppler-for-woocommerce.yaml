@@ -1,0 +1,10 @@
+name: Doppler for WooCommerce
+slug: doppler-for-woocommerce
+category: plugin
+website: https://wordpress.org/plugins/doppler-for-woocommerce/
+within:
+  techs: [woocommerce, wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/doppler-for-woocommerce/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

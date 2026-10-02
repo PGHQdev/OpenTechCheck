@@ -1,0 +1,15 @@
+name: Ivory Search
+slug: ivory-search
+category: plugin
+website: https://ivorysearch.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/add-search-to-menu/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    IvorySearchVars:
+      - pattern: ''
+    ivory_search_analytics:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Master Slider Plugin
+slug: master-slider-plugin
+category: plugin
+website: https://wordpress.org/plugins/master-slider
+implies: [master-slider]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link#ms-main-css:
+      - attr: href
+        pattern: '/wp-content/plugins/masterslider/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

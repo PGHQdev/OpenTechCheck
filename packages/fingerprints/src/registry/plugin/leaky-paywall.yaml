@@ -1,0 +1,12 @@
+name: Leaky Paywall
+slug: leaky-paywall
+category: plugin
+website: https://leakypaywall.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    leaky_paywall_quick_register:
+      - pattern: ''
+    leaky_paywall_recurring:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Flying Images
+slug: flying-images
+category: plugin
+website: https://wordpress.org/plugins/nazy-load/
+within:
+  techs: [wordpress]
+detect:
+  js:
+    flyingImages:
+      - pattern: ''

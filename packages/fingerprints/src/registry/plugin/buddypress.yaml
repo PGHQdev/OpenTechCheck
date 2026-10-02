@@ -1,0 +1,10 @@
+name: BuddyPress
+slug: buddypress
+category: plugin
+website: https://buddypress.org
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/buddypress/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

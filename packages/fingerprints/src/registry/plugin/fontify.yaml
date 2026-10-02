@@ -1,0 +1,9 @@
+name: Fontify
+slug: fontify
+category: plugin
+website: https://apps.shopify.com/fontify-change-customize-font-for-your-store
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'fontify\.nitroapps\.co/'

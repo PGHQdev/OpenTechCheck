@@ -1,0 +1,18 @@
+name: Caldera Forms
+slug: caldera-forms
+category: plugin
+website: https://calderaforms.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/caldera-forms/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    calderaForms:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/caldera-forms/']:
+      - attr: href
+        pattern: '/wp-content/plugins/caldera-forms/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

@@ -1,0 +1,9 @@
+name: Delm
+slug: delm
+category: plugin
+website: https://delm.io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.delm\.io/'

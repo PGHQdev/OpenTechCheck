@@ -1,0 +1,12 @@
+name: Greyd.Suite
+slug: greyd-suite
+category: plugin
+website: https://greyd.io/
+within:
+  techs: [wordpress]
+detect:
+  js:
+    greyd.animations:
+      - pattern: ''
+    greydFormSettings:
+      - pattern: ''

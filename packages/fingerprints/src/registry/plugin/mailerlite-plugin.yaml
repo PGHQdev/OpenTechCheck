@@ -1,0 +1,10 @@
+name: MailerLite plugin
+slug: mailerlite-plugin
+category: plugin
+website: https://ru.wordpress.org/plugins/official-mailerlite-sign-up-forms/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/woo-mailerlite/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

@@ -1,0 +1,14 @@
+name: AMP for WordPress
+slug: amp-for-wordpress
+category: plugin
+website: https://amp-wp.org
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    generator:
+      - pattern: '^AMP Plugin v(\d+\.\d+.*)$'
+        version: 1
+  dom:
+    link[href*='/wp-content/plugins/amp/']:
+      - pattern: ''

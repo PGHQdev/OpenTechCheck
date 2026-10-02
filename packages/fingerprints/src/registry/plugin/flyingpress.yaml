@@ -1,0 +1,12 @@
+name: FlyingPress
+slug: flyingpress
+category: plugin
+website: https://flying-press.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/flying-press/'
+  dom:
+    link[href*='/wp-content/plugins/flying-press/']:
+      - pattern: ''

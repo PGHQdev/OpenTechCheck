@@ -1,0 +1,12 @@
+name: Catch Themes Fotografie
+slug: catch-themes-fotografie
+category: plugin
+website: https://catchthemes.com/themes/fotografie
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/fotografie(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/fotografie/']:
+      - pattern: ''

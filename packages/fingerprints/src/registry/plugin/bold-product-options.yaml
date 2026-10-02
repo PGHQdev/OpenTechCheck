@@ -1,0 +1,12 @@
+name: Bold Product Options
+slug: bold-product-options
+category: plugin
+website: https://boldcommerce.com/product-options
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'option\.boldapps\.net/'
+  js:
+    BOLD.options.version:
+      - pattern: '([\d\.]+)'
+        version: 1

@@ -1,0 +1,9 @@
+name: AndersNoren Lovecraft
+slug: andersnoren-lovecraft
+category: plugin
+website: https://andersnoren.se/teman/lovecraft-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/lovecraft/'

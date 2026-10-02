@@ -1,0 +1,13 @@
+name: Chimpmatic
+slug: chimpmatic
+category: plugin
+website: https://chimpmatic.com
+implies: [contact-form-7, mailchimp]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    form[class*='chimpmatic']:
+      - attr: class
+        pattern: 'chimpmatic-([\d\.]+)'
+        version: 1

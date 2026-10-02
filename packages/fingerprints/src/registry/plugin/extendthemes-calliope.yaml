@@ -1,0 +1,12 @@
+name: ExtendThemes Calliope
+slug: extendthemes-calliope
+category: plugin
+website: https://wordpress.org/themes/calliope
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/calliope/'
+  dom:
+    link[href*='/wp-content/themes/calliope/']:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Essential Addons for Elementor
+slug: essential-addons-for-elementor
+category: plugin
+website: https://essential-addons.com/elementor/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/uploads/essential-addons-elementor/'
+  dom:
+    link[href*='/wp-content/uploads/essential-addons-elementor/']:
+      - pattern: ''

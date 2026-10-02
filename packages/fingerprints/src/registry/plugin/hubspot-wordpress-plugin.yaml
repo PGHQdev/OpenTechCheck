@@ -1,0 +1,12 @@
+name: HubSpot WordPress plugin
+slug: hubspot-wordpress-plugin
+category: plugin
+website: https://wordpress.org/plugins/leadin/
+implies: [hubspot]
+within:
+  techs: [wordpress]
+detect:
+  js:
+    leadin_wordpress.leadinPluginVersion:
+      - pattern: '^([\d.]+)$'
+        version: 1

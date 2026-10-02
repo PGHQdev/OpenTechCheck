@@ -1,0 +1,10 @@
+name: Jilt App
+slug: jilt-app
+category: plugin
+website: https://community.shopify.com/c/shopify-apps/jilt-is-over-what-app-to-use-for-abandoned-carts-now/td-p/1575095
+within:
+  techs: [shopify]
+detect:
+  js:
+    jiltStorefrontParams.platform:
+      - pattern: '^shopify$'

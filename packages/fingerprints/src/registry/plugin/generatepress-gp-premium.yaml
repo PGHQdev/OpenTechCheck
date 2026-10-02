@@ -1,0 +1,11 @@
+name: GeneratePress GP Premium
+slug: generatepress-gp-premium
+category: plugin
+website: https://docs.generatepress.com/article/installing-gp-premium/
+implies: [generatepress]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/gp-premium/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

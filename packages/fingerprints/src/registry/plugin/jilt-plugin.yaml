@@ -1,0 +1,10 @@
+name: Jilt plugin
+slug: jilt-plugin
+category: plugin
+website: https://wordpress.org/plugins/jilt-for-woocommerce
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '\.jilt\.com/.+/jilt\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

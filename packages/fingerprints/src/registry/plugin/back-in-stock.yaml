@@ -1,0 +1,9 @@
+name: Back In Stock
+slug: back-in-stock
+category: plugin
+website: https://backinstock.org
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.backinstock\.org/'

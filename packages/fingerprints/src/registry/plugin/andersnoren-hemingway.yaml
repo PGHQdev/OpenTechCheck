@@ -1,0 +1,9 @@
+name: AndersNoren Hemingway
+slug: andersnoren-hemingway
+category: plugin
+website: https://andersnoren.se/teman/hemingway-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/hemingway/'

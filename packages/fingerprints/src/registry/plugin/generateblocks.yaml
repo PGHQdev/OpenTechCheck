@@ -1,0 +1,10 @@
+name: GenerateBlocks
+slug: generateblocks
+category: plugin
+website: https://generateblocks.com
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link#generateblocks-css:
+      - pattern: ''

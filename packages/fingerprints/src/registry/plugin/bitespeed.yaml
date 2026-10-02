@@ -1,0 +1,9 @@
+name: BiteSpeed
+slug: bitespeed
+category: plugin
+website: https://www.bitespeed.co
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.bitespeed\.co/'

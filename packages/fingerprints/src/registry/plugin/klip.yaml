@@ -1,0 +1,8 @@
+name: Klip
+slug: klip
+category: plugin
+website: https://klipcoupons.com
+detect:
+  js:
+    KLIP_APP_DATA.ATCPath:
+      - pattern: ''

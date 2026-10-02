@@ -1,0 +1,12 @@
+name: CyberChimps Responsive
+slug: cyberchimps-responsive
+category: plugin
+website: https://cyberchimps.com/responsive
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/responsive(?:pro)?/'
+  dom:
+    link[href*='/wp-content/themes/responsive/'], link[href*='/wp-content/themes/responsivepro/']:
+      - pattern: ''

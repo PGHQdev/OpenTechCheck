@@ -1,0 +1,14 @@
+name: FameThemes OnePress
+slug: famethemes-onepress
+category: plugin
+website: https://www.famethemes.com/themes/onepress
+within:
+  techs: [wordpress]
+detect:
+  js:
+    OnePress_Plus:
+      - pattern: ''
+    onepressIsMobile:
+      - pattern: ''
+    onepress_js_settings:
+      - pattern: ''

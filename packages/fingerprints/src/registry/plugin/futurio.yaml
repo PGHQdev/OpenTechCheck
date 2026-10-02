@@ -1,0 +1,13 @@
+name: Futurio
+slug: futurio
+category: plugin
+website: https://futuriowp.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/futurio/.+customscript\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/themes/futurio/']:
+      - pattern: ''

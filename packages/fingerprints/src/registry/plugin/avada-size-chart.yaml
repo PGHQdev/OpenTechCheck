@@ -1,0 +1,9 @@
+name: Avada Size Chart
+slug: avada-size-chart
+category: plugin
+website: https://apps.shopify.com/avada-size-chart
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'sizechart\.apps\.avada\.io/'

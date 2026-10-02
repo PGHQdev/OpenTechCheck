@@ -1,0 +1,9 @@
+name: AndersNoren Fukasawa
+slug: andersnoren-fukasawa
+category: plugin
+website: https://andersnoren.se/teman/fukasawa-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/fukasawa/'

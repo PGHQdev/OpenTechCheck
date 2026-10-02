@@ -1,0 +1,13 @@
+name: Hextom Ultimate Sales Boost
+slug: hextom-ultimate-sales-boost
+category: plugin
+website: https://hextom.com/case_study/ultimate-sales-boost
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '\.hextom\.com/js/ultimatesalesboost\.js'
+  js:
+    hextom_usb:
+      - pattern: ''
+    ht_usb.isLoaded:
+      - pattern: ''

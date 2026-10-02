@@ -1,0 +1,8 @@
+name: Hextom Free Shipping Bar
+slug: hextom-free-shipping-bar
+category: plugin
+website: https://hextom.com/case_study/free-shipping-bar
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '\.hextom\.com/js/freeshippingbar\.js'

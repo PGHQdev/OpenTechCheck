@@ -1,0 +1,8 @@
+name: LayoutHub
+slug: layouthub
+category: plugin
+website: https://layouthub.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.layouthub\.com/shopify/layouthub\.js'

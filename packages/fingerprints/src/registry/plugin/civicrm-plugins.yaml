@@ -1,0 +1,10 @@
+name: CiviCRM plugins
+slug: civicrm-plugins
+category: plugin
+website: https://wordpress.org/plugins/search/civicrm/
+implies: [civicrm]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'wp-content/plugins/(?:[\w\-]+)?civicrm(?:[\w\-]+)?/'

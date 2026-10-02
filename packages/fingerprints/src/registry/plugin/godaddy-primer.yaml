@@ -1,0 +1,13 @@
+name: GoDaddy Primer
+slug: godaddy-primer
+category: plugin
+website: https://github.com/godaddy-wordpress/primer
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/primer/.+navigation\.min\.js(?:.+ver=([\d\.]+))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/themes/primer/']:
+      - pattern: ''

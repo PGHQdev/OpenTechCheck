@@ -1,0 +1,12 @@
+name: Jetpack
+slug: jetpack
+category: plugin
+website: https://jetpack.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/jetpack/'
+  dom:
+    link[href*='/wp-content/plugins/jetpack/']:
+      - pattern: ''
