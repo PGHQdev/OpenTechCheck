@@ -1,0 +1,8 @@
+name: TradingView
+slug: tradingview
+category: js-library
+website: https://www.tradingview.com
+detect:
+  dom:
+    iframe[src*='.tradingview.com/']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Splide
+slug: splide
+category: js-library
+website: https://splidejs.com
+detect:
+  js:
+    Splide.STATES:
+      - pattern: ''

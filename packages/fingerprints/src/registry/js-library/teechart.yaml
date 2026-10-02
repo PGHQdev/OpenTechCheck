@@ -1,0 +1,8 @@
+name: TeeChart
+slug: teechart
+category: js-library
+website: http://216.92.101.67/product/html5
+detect:
+  js:
+    Tee.Animation:
+      - pattern: ''

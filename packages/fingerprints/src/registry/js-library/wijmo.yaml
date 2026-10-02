@@ -1,0 +1,11 @@
+name: Wijmo
+slug: wijmo
+category: js-library
+website: https://developer.mescius.com/wijmo
+detect:
+  scripts:
+    - pattern: '/Scripts/Acts/Wijmo/wijmo\.min\.js\?v=([\d]+\.\d+)'
+      version: 1
+  js:
+    wijmo:
+      - pattern: ''

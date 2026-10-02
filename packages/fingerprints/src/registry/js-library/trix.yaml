@@ -1,0 +1,9 @@
+name: Trix
+slug: trix
+category: js-library
+website: https://trix-editor.org
+detect:
+  js:
+    Trix.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

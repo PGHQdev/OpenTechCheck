@@ -1,0 +1,13 @@
+name: scrollreveal
+slug: scrollreveal
+category: js-library
+website: https://scrollrevealjs.org
+detect:
+  html:
+    - pattern: '<[^>]+data-sr(?:-id)'
+  scripts:
+    - pattern: 'scrollreveal(?:\.min)?\.js(?:\?v(?:er)?=((?:\d+\.){1,9}\d+))?'
+      version: 1
+  js:
+    ScrollReveal:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: TogetherJS
+slug: togetherjs
+category: js-library
+website: https://togetherjs.com
+detect:
+  js:
+    TogetherJS:
+      - pattern: ''
+    TogetherJSConfig_cloneClicks:
+      - pattern: ''
+    TogetherJSConfig_toolName:
+      - pattern: ''

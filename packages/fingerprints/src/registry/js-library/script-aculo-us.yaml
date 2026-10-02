@@ -1,0 +1,11 @@
+name: script.aculo.us
+slug: script-aculo-us
+category: js-library
+website: https://script.aculo.us
+detect:
+  scripts:
+    - pattern: '/(?:scriptaculous|protoaculous)(?:\.js|/)'
+  js:
+    Scriptaculous.Version:
+      - pattern: '^(.+)$'
+        version: 1

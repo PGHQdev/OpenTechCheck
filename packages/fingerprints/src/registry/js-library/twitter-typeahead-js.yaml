@@ -1,0 +1,11 @@
+name: Twitter typeahead.js
+slug: twitter-typeahead-js
+category: js-library
+website: https://twitter.github.io/typeahead.js
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: '(?:typeahead|bloodhound)\.(?:jquery|bundle)?(?:\.min)?\.js'
+  js:
+    typeahead:
+      - pattern: ''

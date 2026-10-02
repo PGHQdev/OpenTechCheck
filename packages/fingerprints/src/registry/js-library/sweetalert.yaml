@@ -1,0 +1,11 @@
+name: SweetAlert
+slug: sweetalert
+category: js-library
+website: https://sweetalert.js.org
+detect:
+  scripts:
+    - pattern: 'sweet(?:-)?alert(?:\.min)?\.js'
+  dom:
+    link[href*='sweet-alert']:
+      - attr: href
+        pattern: 'sweet-alert(?:\.min)?\.css'

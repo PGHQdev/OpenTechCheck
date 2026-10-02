@@ -1,0 +1,11 @@
+name: web-vitals
+slug: web-vitals
+category: js-library
+website: https://github.com/GoogleChrome/web-vitals
+detect:
+  scripts:
+    - pattern: 'web-vitals@([\d.]+)/dist/web-vitals.*\.js'
+      version: 1
+  js:
+    webVitals:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Uppy
+slug: uppy
+category: js-library
+website: https://uppy.io
+detect:
+  js:
+    Uppy.Audio:
+      - pattern: ''
+    UppyUploader:
+      - pattern: ''

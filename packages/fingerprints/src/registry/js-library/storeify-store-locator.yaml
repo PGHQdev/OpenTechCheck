@@ -1,0 +1,14 @@
+name: Storeify Store Locator
+slug: storeify-store-locator
+category: js-library
+website: https://storeify.app
+within:
+  techs: [shopify]
+detect:
+  html:
+    - pattern: 'sl\.storeify\.app/js/frontend/scripttag\.js'
+  scripts:
+    - pattern: 'sl\.storeify\.app/js/frontend/scripttag\.js'
+  js:
+    storeify_storelocator_form:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Typer.js
+slug: typer-js
+category: js-library
+website: https://github.com/straversi/Typer.js
+detect:
+  scripts:
+    - pattern: 'unpkg\.com/typer-dot-js@([\d\.]+)/typer\.js'
+      version: 1

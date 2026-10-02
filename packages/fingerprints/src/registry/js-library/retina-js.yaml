@@ -1,0 +1,13 @@
+name: Retina.js
+slug: retina-js
+category: js-library
+website: https://imulus.github.io/retinajs
+detect:
+  scripts:
+    - pattern: '/js/retina(\.min)?\.js\?ver=([\d\.]+)'
+      version: 2
+  js:
+    RetinaImage:
+      - pattern: ''
+    retinajs:
+      - pattern: ''

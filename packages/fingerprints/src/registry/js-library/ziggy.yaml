@@ -1,0 +1,9 @@
+name: Ziggy
+slug: ziggy
+category: js-library
+website: https://github.com/tighten/ziggy
+implies: [laravel, inertia-js]
+detect:
+  js:
+    Ziggy:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: Tippy.js
+slug: tippy-js
+category: js-library
+website: https://atomiks.github.io/tippyjs
+detect:
+  scripts:
+    - pattern: '/tippy\.js(?:@|/)?([\d\.]+)?'
+      version: 1
+  js:
+    tippy.defaultProps:
+      - pattern: ''
+  dom:
+    style[data-tippy-stylesheet]:
+      - pattern: ''

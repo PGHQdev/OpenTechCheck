@@ -1,0 +1,8 @@
+name: uPlot
+slug: uplot
+category: js-library
+website: https://leeoniya.github.io/uPlot
+detect:
+  js:
+    uPlot:
+      - pattern: ''

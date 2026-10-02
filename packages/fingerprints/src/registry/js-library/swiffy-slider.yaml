@@ -1,0 +1,11 @@
+name: Swiffy Slider
+slug: swiffy-slider
+category: js-library
+website: https://swiffyslider.com
+detect:
+  scripts:
+    - pattern: '/npm/swiffy-slider@([\d\.]+)/'
+      version: 1
+  dom:
+    link[href*='/swiffy-slider.min.css']:
+      - pattern: ''

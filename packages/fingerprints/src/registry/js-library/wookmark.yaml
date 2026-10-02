@@ -1,0 +1,13 @@
+name: WookMark
+slug: wookmark
+category: js-library
+website: https://wookmark.com
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: 'wookmark\.min\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  js:
+    Wookmark:
+      - pattern: ''

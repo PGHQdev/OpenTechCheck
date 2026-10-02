@@ -1,0 +1,11 @@
+name: Theatre.js
+slug: theatre-js
+category: js-library
+website: https://www.theatrejs.com
+detect:
+  js:
+    __TheatreJS_CoreBundle:
+      - pattern: ''
+    __TheatreJS_CoreBundle.version:
+      - pattern: '((?:\d+\.){1,9}\d+)'
+        version: 1

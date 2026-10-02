@@ -1,0 +1,15 @@
+name: XRegExp
+slug: xregexp
+category: js-library
+website: https://xregexp.com
+detect:
+  scripts:
+    - pattern: 'xregexp[.-]([\d.]*\d)[^/]*\.js'
+      version: 1
+    - pattern: '/([\d.]+)/xregexp(?:\.min)?\.js'
+      version: 1
+    - pattern: 'xregexp.*\.js'
+  js:
+    XRegExp.version:
+      - pattern: '^(.+)$'
+        version: 1

@@ -1,0 +1,11 @@
+name: Rickshaw
+slug: rickshaw
+category: js-library
+website: https://code.shutterstock.com/rickshaw/
+implies: [d3]
+detect:
+  scripts:
+    - pattern: 'rickshaw(?:\.min)?\.js'
+  js:
+    Rickshaw:
+      - pattern: ''

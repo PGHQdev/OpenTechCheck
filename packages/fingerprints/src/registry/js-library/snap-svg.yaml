@@ -1,0 +1,11 @@
+name: Snap.svg
+slug: snap-svg
+category: js-library
+website: https://snapsvg.io
+detect:
+  scripts:
+    - pattern: 'snap\.svg(?:-min)?\.js'
+  js:
+    Snap.version:
+      - pattern: '^(.+)$'
+        version: 1

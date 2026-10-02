@@ -1,0 +1,14 @@
+name: WEBDEV
+slug: webdev
+category: js-library
+website: https://www.windev.com/webdev/index.html
+detect:
+  html:
+    - pattern: '<!-- [a-zA-Z0-9_]+ [\d/]+ [\d:]+ WebDev \d\d ([\d.]+) -->'
+      version: 1
+  headers:
+    webdevsrc:
+      - pattern: ''
+  meta:
+    generator:
+      - pattern: '^WEBDEV$'

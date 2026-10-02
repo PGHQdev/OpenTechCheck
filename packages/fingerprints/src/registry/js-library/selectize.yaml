@@ -1,0 +1,11 @@
+name: Selectize
+slug: selectize
+category: js-library
+website: https://selectize.dev
+implies: [jquery]
+detect:
+  js:
+    Selectize:
+      - pattern: ''
+    selectize:
+      - pattern: ''

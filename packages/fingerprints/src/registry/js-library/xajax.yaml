@@ -1,0 +1,7 @@
+name: Xajax
+slug: xajax
+category: js-library
+website: https://xajax-project.org
+detect:
+  scripts:
+    - pattern: 'xajax_core.*\.js'

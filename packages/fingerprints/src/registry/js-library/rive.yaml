@@ -1,0 +1,11 @@
+name: Rive
+slug: rive
+category: js-library
+website: https://rive.app
+detect:
+  js:
+    rive.Rive:
+      - pattern: ''
+  dom:
+    link[href*='rive.app/'][rel='canonical']:
+      - pattern: ''

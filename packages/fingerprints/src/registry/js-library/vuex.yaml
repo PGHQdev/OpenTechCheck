@@ -1,0 +1,10 @@
+name: Vuex
+slug: vuex
+category: js-library
+website: https://vuex.vuejs.org/
+implies: [vue]
+detect:
+  js:
+    Vuex.version:
+      - pattern: '(.*)'
+        version: 1

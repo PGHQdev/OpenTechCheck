@@ -1,0 +1,9 @@
+name: Skitter
+slug: skitter
+category: js-library
+website: https://skitter-slider.net
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '/jquery\.skitter\.min\.js'

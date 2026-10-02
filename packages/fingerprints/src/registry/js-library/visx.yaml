@@ -1,0 +1,11 @@
+name: Visx
+slug: visx
+category: js-library
+website: https://airbnb.io/visx/
+within:
+  techs: [react]
+detect:
+  dom:
+    g.visx-group,g.vx-group:
+      - attr: class
+        pattern: '(?:v(?:is)?x)-group'

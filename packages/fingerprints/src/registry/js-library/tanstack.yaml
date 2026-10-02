@@ -1,0 +1,10 @@
+name: TanStack
+slug: tanstack
+category: js-library
+website: https://tanstack.com
+detect:
+  scripts:
+    - pattern: '/static/.*npm\.tanstack.*\.js'
+  dom:
+    link[href*='@tanstack']:
+      - pattern: ''

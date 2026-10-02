@@ -1,0 +1,15 @@
+name: SmugMug
+slug: smugmug
+category: js-library
+website: https://www.smugmug.com
+detect:
+  headers:
+    smug-cdn:
+      - pattern: ''
+  js:
+    _smugsp:
+      - pattern: ''
+  dom:
+    .sm-page-footer-copyright:
+      - text: true
+        pattern: 'SmugMug'

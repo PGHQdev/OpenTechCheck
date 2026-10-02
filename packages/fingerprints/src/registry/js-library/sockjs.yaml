@@ -1,0 +1,16 @@
+name: SockJS
+slug: sockjs
+category: js-library
+website: https://github.com/sockjs/sockjs-client
+detect:
+  scripts:
+    - pattern: 'sockjs(?:-((?:\d+\.){1,9}\d+))?(?:\.min)?\.js'
+      version: 1
+    - pattern: '(?:((?:\d+\.){1,9}\d+)\/)?sockjs(?:\.min)?\.js'
+      version: 1
+  js:
+    SockJS.CLOSED:
+      - pattern: ''
+    SockJS.version:
+      - pattern: '([\d\.]+)'
+        version: 1

@@ -1,0 +1,13 @@
+name: Slimbox 2
+slug: slimbox-2
+category: js-library
+website: https://www.digitalia.be/software/slimbox2
+implies: [jquery]
+detect:
+  html:
+    - pattern: '<link [^>]*href="[^/]*slimbox2(?:-rtl)?\.css'
+  scripts:
+    - pattern: 'slimbox2\.js'
+  dom:
+    link[href*='slimbox2.css'], link[href*='slimbox2-rtl.css']:
+      - pattern: ''

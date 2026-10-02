@@ -1,0 +1,8 @@
+name: tlooto
+slug: tlooto
+category: js-library
+website: https://tlooto.com
+detect:
+  js:
+    tlooto.copilot:
+      - pattern: ''

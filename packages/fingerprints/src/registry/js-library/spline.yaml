@@ -1,0 +1,8 @@
+name: Spline
+slug: spline
+category: js-library
+website: https://spline.design
+detect:
+  dom:
+    div[data-spline-url*='prod.spline.design/']:
+      - pattern: ''

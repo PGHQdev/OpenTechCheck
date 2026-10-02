@@ -1,0 +1,10 @@
+name: Wurfl
+slug: wurfl
+category: js-library
+website: https://web.wurfl.io/
+detect:
+  scripts:
+    - pattern: '\.wurfl\.io'
+  js:
+    WURFL:
+      - pattern: ''

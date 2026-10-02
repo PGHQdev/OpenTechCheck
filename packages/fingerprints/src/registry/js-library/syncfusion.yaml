@@ -1,0 +1,13 @@
+name: Syncfusion
+slug: syncfusion
+category: js-library
+website: https://www.syncfusion.com
+detect:
+  scripts:
+    - pattern: '\.syncfusion\.com/'
+  js:
+    Syncfusion:
+      - pattern: ''
+  dom:
+    link[href*='cdn.syncfusion.com/']:
+      - pattern: ''

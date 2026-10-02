@@ -1,0 +1,10 @@
+name: Tipso
+slug: tipso
+category: js-library
+website: https://tipso.object505.com
+detect:
+  scripts:
+    - pattern: '/js/tipso\.min\.js'
+  js:
+    tipsoData.background:
+      - pattern: ''

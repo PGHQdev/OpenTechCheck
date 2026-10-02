@@ -1,0 +1,8 @@
+name: Supersized
+slug: supersized
+category: js-library
+website: https://buildinternet.com/project/supersized
+detect:
+  scripts:
+    - pattern: 'supersized(?:\.([\d.]*[\d]))?.*\.js'
+      version: 1

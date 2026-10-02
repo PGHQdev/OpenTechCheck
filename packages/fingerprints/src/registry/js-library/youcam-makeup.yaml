@@ -1,0 +1,12 @@
+name: YouCam Makeup
+slug: youcam-makeup
+category: js-library
+website: https://www.perfectcorp.com/business/products/virtual-makeup
+detect:
+  scripts:
+    - pattern: 'plugins-media\.(?:perfectcorp|makeupar)\.com/'
+  js:
+    YMK.applyMakeupByLook:
+      - pattern: ''
+    YMK.calDeltaE:
+      - pattern: ''

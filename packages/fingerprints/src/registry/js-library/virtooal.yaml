@@ -1,0 +1,9 @@
+name: Virtooal
+slug: virtooal
+category: js-library
+website: https://try.virtooal.com
+within:
+  categories: [ecommerce]
+detect:
+  scripts:
+    - pattern: '\.virtooal\.com/'

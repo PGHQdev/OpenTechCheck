@@ -1,0 +1,11 @@
+name: SimplexNoise.js
+slug: simplexnoise-js
+category: js-library
+website: https://github.com/jwagner/simplex-noise.js
+detect:
+  scripts:
+    - pattern: '/simplex-noise/([\d\.]+)/simplex-noise.min.js'
+      version: 1
+  js:
+    SimplexNoise:
+      - pattern: ''

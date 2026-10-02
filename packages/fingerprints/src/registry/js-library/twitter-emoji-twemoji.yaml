@@ -1,0 +1,13 @@
+name: Twitter Emoji (Twemoji)
+slug: twitter-emoji-twemoji
+category: js-library
+website: https://twitter.github.io/twemoji/
+detect:
+  scripts:
+    - pattern: 'twemoji(?:\.min)?\.js'
+  js:
+    twemoji:
+      - pattern: ''
+    twemoji.base:
+      - pattern: 'twemoji\.maxcdn\.com/v/([\d\.]+)/'
+        version: 1

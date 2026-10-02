@@ -1,0 +1,13 @@
+name: SoundManager
+slug: soundmanager
+category: js-library
+website: https://www.schillmania.com/projects/soundmanager2
+detect:
+  js:
+    BaconPlayer:
+      - pattern: ''
+    SoundManager:
+      - pattern: ''
+    soundManager.version:
+      - pattern: 'V(.+) '
+        version: 1

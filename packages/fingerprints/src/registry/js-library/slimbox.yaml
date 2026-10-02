@@ -1,0 +1,13 @@
+name: Slimbox
+slug: slimbox
+category: js-library
+website: https://www.digitalia.be/software/slimbox
+implies: [mootools]
+detect:
+  html:
+    - pattern: '<link [^>]*href="[^/]*slimbox(?:-rtl)?\.css'
+  scripts:
+    - pattern: 'slimbox\.js'
+  dom:
+    link[href*='slimbox.css'],link[href*='slimbox-rtl.css']:
+      - pattern: ''

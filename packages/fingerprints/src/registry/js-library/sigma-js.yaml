@@ -1,0 +1,10 @@
+name: Sigma.js
+slug: sigma-js
+category: js-library
+website: https://www.sigmajs.org
+detect:
+  scripts:
+    - pattern: '/(static/js/|)sigma\.min\.js(?:\?ver=([\d\.]+))?'
+  js:
+    sigma.canvas:
+      - pattern: ''

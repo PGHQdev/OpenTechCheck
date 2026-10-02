@@ -1,0 +1,9 @@
+name: Skrollr
+slug: skrollr
+category: js-library
+website: https://prinzhorn.github.io/skrollr/
+detect:
+  js:
+    skrollr.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

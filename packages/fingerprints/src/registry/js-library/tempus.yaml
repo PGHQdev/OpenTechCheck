@@ -1,0 +1,8 @@
+name: Tempus
+slug: tempus
+category: js-library
+website: https://github.com/darkroomengineering/tempus
+detect:
+  js:
+    tempusVersion:
+      - pattern: ''

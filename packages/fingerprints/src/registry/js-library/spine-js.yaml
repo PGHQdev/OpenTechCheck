@@ -1,0 +1,13 @@
+name: Spine.js
+slug: spine-js
+category: js-library
+website: https://spine.github.io
+detect:
+  js:
+    Spine:
+      - pattern: ''
+    Spine.version:
+      - pattern: '^(.+)$'
+        version: 1
+    pixi_spine.Spine:
+      - pattern: ''

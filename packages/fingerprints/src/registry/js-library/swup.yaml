@@ -1,0 +1,14 @@
+name: Swup
+slug: swup
+category: js-library
+website: https://swup.js.org
+detect:
+  scripts:
+    - pattern: '(?:((?:\d+\.){1,9}\d+)\/(?:dist\/)?)?swup(?:-preload)?(?:-plugin)?(?:\.min)?\.js'
+      version: 1
+  js:
+    Swup:
+      - pattern: ''
+  dom:
+    html[class*='swup-enabled']:
+      - pattern: ''

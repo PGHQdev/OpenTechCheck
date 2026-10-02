@@ -1,0 +1,8 @@
+name: Vex
+slug: vex
+category: js-library
+website: https://github.hubspot.com/vex
+detect:
+  js:
+    vex.close:
+      - pattern: ''

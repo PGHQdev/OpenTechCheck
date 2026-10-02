@@ -1,0 +1,10 @@
+name: Unbounce
+slug: unbounce
+category: js-library
+website: https://unbounce.com
+detect:
+  scripts:
+    - pattern: 'ubembed\.com'
+  headers:
+    x-unbounce-pageid:
+      - pattern: ''

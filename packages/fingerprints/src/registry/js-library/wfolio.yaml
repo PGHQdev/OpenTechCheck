@@ -1,0 +1,8 @@
+name: Wfolio
+slug: wfolio
+category: js-library
+website: https://wfolio.com
+detect:
+  js:
+    initWfolioCard:
+      - pattern: ''

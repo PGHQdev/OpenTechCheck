@@ -1,0 +1,8 @@
+name: ZingChart
+slug: zingchart
+category: js-library
+website: https://www.zingchart.com
+detect:
+  js:
+    zingchart:
+      - pattern: ''

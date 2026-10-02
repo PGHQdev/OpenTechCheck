@@ -1,0 +1,8 @@
+name: Tiny Slider
+slug: tiny-slider
+category: js-library
+website: https://github.com/ganlanyuan/tiny-slider
+detect:
+  scripts:
+    - pattern: '(?:/([\d\.]+)/min/)?tiny-slider(?:\.min)?\.js'
+      version: 1

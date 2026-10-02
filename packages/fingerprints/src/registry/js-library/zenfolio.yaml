@@ -1,0 +1,8 @@
+name: Zenfolio
+slug: zenfolio
+category: js-library
+website: https://zenfolio.com
+detect:
+  js:
+    Zenfolio:
+      - pattern: ''

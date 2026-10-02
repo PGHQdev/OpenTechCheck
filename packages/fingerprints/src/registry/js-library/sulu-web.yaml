@@ -1,0 +1,8 @@
+name: '@sulu/web'
+slug: sulu-web
+category: js-library
+website: https://github.com/sulu/web-js
+detect:
+  js:
+    web.startComponents:
+      - pattern: ''
