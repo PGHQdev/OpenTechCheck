@@ -1,0 +1,10 @@
+name: GiveSmart
+slug: givesmart
+category: payment
+website: https://www.givesmart.com
+detect:
+  scripts:
+    - pattern: '\.givesmart\.com/'
+  dom:
+    a[href*='.givesmart.com/']:
+      - pattern: ''

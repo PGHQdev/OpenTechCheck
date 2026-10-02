@@ -1,0 +1,10 @@
+name: Yuno
+slug: yuno
+category: payment
+website: https://y.uno/
+detect:
+  scripts:
+    - pattern: 'sdk-web\.y\.uno'
+  js:
+    Yuno.threeDSecure:
+      - pattern: ''

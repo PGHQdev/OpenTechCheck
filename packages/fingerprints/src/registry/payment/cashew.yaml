@@ -1,0 +1,9 @@
+name: cashew
+slug: cashew
+category: payment
+website: https://www.cashewpayments.com
+within:
+  categories: [ecommerce]
+detect:
+  scripts:
+    - pattern: '\.cashewpayments\.com/'

@@ -1,0 +1,7 @@
+name: SendOwl
+slug: sendowl
+category: payment
+website: https://www.sendowl.com
+detect:
+  scripts:
+    - pattern: 'transactions\.sendowl\.com'

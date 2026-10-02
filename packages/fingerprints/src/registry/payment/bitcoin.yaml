@@ -1,0 +1,8 @@
+name: Bitcoin
+slug: bitcoin
+category: payment
+website: https://en.wikipedia.org/wiki/Bitcoin
+detect:
+  dom:
+    "[aria-labelledby='pi-bitcoin']":
+      - pattern: ''

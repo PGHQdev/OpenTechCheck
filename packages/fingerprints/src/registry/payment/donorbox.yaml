@@ -1,0 +1,15 @@
+name: Donorbox
+slug: donorbox
+category: payment
+website: https://donorbox.org
+detect:
+  js:
+    DONORBOX:
+      - pattern: ''
+    DonorBox:
+      - pattern: ''
+    donorbox_check_donation_period:
+      - pattern: ''
+  dom:
+    a[href*='//donorbox.org/'], iframe[src*='//donorbox.org/']:
+      - pattern: ''

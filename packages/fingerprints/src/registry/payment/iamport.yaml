@@ -1,0 +1,11 @@
+name: Iamport
+slug: iamport
+category: payment
+website: https://www.iamport.kr
+detect:
+  scripts:
+    - pattern: 'cdn\.iamport\.kr/js/iamport\.payment-([\d\.]+)\.js'
+      version: 1
+  js:
+    IMP.request_pay:
+      - pattern: ''

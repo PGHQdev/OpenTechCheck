@@ -1,0 +1,12 @@
+name: Tabby
+slug: tabby
+category: payment
+website: https://tabby.ai/
+detect:
+  scripts:
+    - pattern: 'checkout\.tabby\.ai'
+  js:
+    Tabby:
+      - pattern: ''
+    TabbyPromo:
+      - pattern: ''

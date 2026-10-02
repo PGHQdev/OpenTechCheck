@@ -1,0 +1,10 @@
+name: Qgiv
+slug: qgiv
+category: payment
+website: https://www.qgiv.com
+detect:
+  scripts:
+    - pattern: '//secure\.qgiv\.com/'
+  dom:
+    a[href*='//secure.qgiv.com/']:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: ZestMoney
+slug: zestmoney
+category: payment
+website: https://www.zestmoney.in
+detect:
+  js:
+    ZestMoneyWidget:
+      - pattern: ''
+    zestBind:
+      - pattern: ''
+    zestMerchant:
+      - pattern: ''

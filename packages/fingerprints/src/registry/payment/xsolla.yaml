@@ -1,0 +1,7 @@
+name: Xsolla
+slug: xsolla
+category: payment
+website: https://xsolla.com
+detect:
+  scripts:
+    - pattern: '\.xsolla\.(com|net)'

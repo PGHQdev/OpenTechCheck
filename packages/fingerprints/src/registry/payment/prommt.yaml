@@ -1,0 +1,10 @@
+name: Prommt
+slug: prommt
+category: payment
+website: https://www.prommt.com
+detect:
+  scripts:
+    - pattern: 'app\.prommt\.com/'
+  js:
+    Prommt:
+      - pattern: ''

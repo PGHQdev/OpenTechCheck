@@ -1,0 +1,7 @@
+name: Scalapay
+slug: scalapay
+category: payment
+website: https://www.scalapay.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.scalapay\.com'

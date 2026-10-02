@@ -1,0 +1,7 @@
+name: Mintpay
+slug: mintpay
+category: payment
+website: https://mintpay.lk
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/mintpay/'

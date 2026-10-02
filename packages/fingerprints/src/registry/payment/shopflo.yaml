@@ -1,0 +1,8 @@
+name: Shopflo
+slug: shopflo
+category: payment
+website: https://shopflo.com
+detect:
+  js:
+    Shopflo:
+      - pattern: ''

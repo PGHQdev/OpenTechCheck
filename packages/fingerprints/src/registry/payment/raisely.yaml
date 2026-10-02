@@ -1,0 +1,12 @@
+name: Raisely
+slug: raisely
+category: payment
+website: https://raisely.com
+detect:
+  js:
+    RaiselyComponents:
+      - pattern: ''
+    __raiselyDebug:
+      - pattern: ''
+    wpRaisely:
+      - pattern: ''

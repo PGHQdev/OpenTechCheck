@@ -1,0 +1,10 @@
+name: Stax
+slug: stax
+category: payment
+website: https://staxpayments.com
+detect:
+  scripts:
+    - pattern: 'staxjs\.staxpayments\.com/'
+  js:
+    StaxJs:
+      - pattern: ''

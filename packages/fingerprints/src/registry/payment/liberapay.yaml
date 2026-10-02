@@ -1,0 +1,10 @@
+name: Liberapay
+slug: liberapay
+category: payment
+website: https://liberapay.com/
+detect:
+  scripts:
+    - pattern: '//liberapay\.com/'
+  dom:
+    a[href*='//liberapay.com/'][target='_blank']:
+      - pattern: ''

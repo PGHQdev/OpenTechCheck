@@ -1,0 +1,12 @@
+name: Pagar.me
+slug: pagar-me
+category: payment
+website: https://pagar.me
+detect:
+  scripts:
+    - pattern: 'assets\.pagar\.me/'
+  js:
+    PagarMeCheckout:
+      - pattern: ''
+    pagarme.balance:
+      - pattern: ''

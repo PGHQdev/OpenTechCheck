@@ -1,0 +1,15 @@
+name: Visa
+slug: visa
+category: payment
+website: https://www.visa.com
+detect:
+  js:
+    visaApi:
+      - pattern: ''
+    visaImage:
+      - pattern: ''
+    visaSrc:
+      - pattern: ''
+  dom:
+    "[aria-labelledby='pi-visa']":
+      - pattern: ''

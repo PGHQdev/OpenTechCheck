@@ -1,0 +1,10 @@
+name: KueskiPay
+slug: kueskipay
+category: payment
+website: https://kueskipay.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.kueskipay\.com'
+  js:
+    kueskypushhead:
+      - pattern: ''

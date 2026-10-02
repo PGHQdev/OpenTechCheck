@@ -1,0 +1,17 @@
+name: Sezzle
+slug: sezzle
+category: payment
+website: https://sezzle.com/
+detect:
+  scripts:
+    - pattern: 'widget\.sezzle\.(?:in|com)'
+  meta:
+    sezzle_cid:
+      - pattern: ''
+  js:
+    AwesomeSezzle:
+      - pattern: ''
+    renderSezzleIframe:
+      - pattern: ''
+    sezzle_footer_images:
+      - pattern: ''

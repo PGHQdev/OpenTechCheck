@@ -1,0 +1,7 @@
+name: Virtuous
+slug: virtuous
+category: payment
+website: https://virtuous.org
+detect:
+  scripts:
+    - pattern: '\.virtuoussoftware\.com/'

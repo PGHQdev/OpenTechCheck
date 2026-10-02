@@ -1,0 +1,9 @@
+name: MiniBC
+slug: minibc
+category: payment
+website: https://www.minibc.com
+within:
+  techs: [bigcommerce]
+detect:
+  scripts:
+    - pattern: 'apps\.minibc\.com'

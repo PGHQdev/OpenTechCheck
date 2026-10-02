@@ -1,0 +1,10 @@
+name: Yever
+slug: yever
+category: payment
+website: https://www.yever.com.br
+detect:
+  js:
+    currentUrlYever:
+      - pattern: ''
+    getUtmsUrlYever:
+      - pattern: ''

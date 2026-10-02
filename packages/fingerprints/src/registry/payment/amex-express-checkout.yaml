@@ -1,0 +1,10 @@
+name: Amex Express Checkout
+slug: amex-express-checkout
+category: payment
+website: https://www.americanexpress.com/us/express-checkout/
+detect:
+  scripts:
+    - pattern: 'aexp-static\.com'
+  dom:
+    img[alt*='We accept Amex']:
+      - pattern: ''

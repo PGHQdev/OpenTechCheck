@@ -1,0 +1,10 @@
+name: Paidy
+slug: paidy
+category: payment
+website: https://paidy.com
+detect:
+  scripts:
+    - pattern: 'apps\.paidy\.com'
+  js:
+    Constants.paidy:
+      - pattern: ''

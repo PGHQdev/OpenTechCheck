@@ -1,0 +1,14 @@
+name: Blackbaud CRM
+slug: blackbaud-crm
+category: payment
+website: https://www.blackbaud.com
+detect:
+  url:
+    - pattern: '/site/Donation2?.*df_id='
+  scripts:
+    - pattern: 'js/convio/modules\.js'
+  js:
+    BLACKBAUD:
+      - pattern: ''
+    don_premium_map:
+      - pattern: ''

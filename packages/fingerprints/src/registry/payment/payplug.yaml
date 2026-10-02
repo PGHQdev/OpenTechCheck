@@ -1,0 +1,12 @@
+name: Payplug
+slug: payplug
+category: payment
+website: https://www.payplug.com
+detect:
+  js:
+    PAYPLUG_DOMAIN:
+      - pattern: '\.payplug\.com'
+    payplug.card:
+      - pattern: ''
+    payplug_ajax_url:
+      - pattern: ''

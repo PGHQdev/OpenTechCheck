@@ -1,0 +1,12 @@
+name: Grab Pay Later
+slug: grab-pay-later
+category: payment
+website: https://www.grab.com/sg/finance/pay-later/
+detect:
+  scripts:
+    - pattern: 'grab-paylater\.js'
+  js:
+    GrabWidget:
+      - pattern: ''
+    grab_widget_money_format:
+      - pattern: ''

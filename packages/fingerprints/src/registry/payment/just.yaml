@@ -1,0 +1,7 @@
+name: JUST
+slug: just
+category: payment
+website: https://www.getjusto.com
+detect:
+  scripts:
+    - pattern: 'checkout-button-.+/just-pay-button\.js'

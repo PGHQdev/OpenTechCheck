@@ -1,0 +1,10 @@
+name: Paydock
+slug: paydock
+category: payment
+website: https://paydock.com
+detect:
+  scripts:
+    - pattern: 'app\.paydock\.com'
+  dom:
+    link[href*='app-sandbox.paydock.com']:
+      - pattern: ''

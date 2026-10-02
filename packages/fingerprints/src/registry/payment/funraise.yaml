@@ -1,0 +1,11 @@
+name: Funraise
+slug: funraise
+category: payment
+website: https://funraise.org
+detect:
+  js:
+    FR.IMAGE_BASE_URL:
+      - pattern: '\.funraise\.io'
+  dom:
+    a[href*='.funraise.org/']:
+      - pattern: ''

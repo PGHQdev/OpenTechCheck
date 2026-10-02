@@ -1,0 +1,10 @@
+name: Atome
+slug: atome
+category: payment
+website: https://www.atome.sg/
+detect:
+  scripts:
+    - pattern: 'gateway\.apaylater\.com/'
+  js:
+    atomeWidget:
+      - pattern: ''

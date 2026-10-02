@@ -1,0 +1,10 @@
+name: LayUp
+slug: layup
+category: payment
+website: https://layup.co.za
+detect:
+  scripts:
+    - pattern: 'layup\.co\.za'
+  js:
+    LayUpCheckoutButton:
+      - pattern: ''

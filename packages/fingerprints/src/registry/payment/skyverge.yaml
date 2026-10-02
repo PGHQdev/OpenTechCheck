@@ -1,0 +1,12 @@
+name: SkyVerge
+slug: skyverge
+category: payment
+website: https://www.skyverge.com
+implies: [woocommerce]
+detect:
+  scripts:
+    - pattern: 'sv-wc-payment-gateway-payment-form\.js(?:\?ver=([\d.]+))?'
+      version: 1
+  js:
+    sv_wc_payment_gateway_payment_form_param:
+      - pattern: ''

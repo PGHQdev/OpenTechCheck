@@ -1,0 +1,8 @@
+name: Payoneer
+slug: payoneer
+category: payment
+website: https://www.payoneer.com
+detect:
+  dom:
+    link[href*='/wp-content/plugins/wc-payoneer-payment-gateway/'], link#payoneer-plugn-css:
+      - pattern: ''

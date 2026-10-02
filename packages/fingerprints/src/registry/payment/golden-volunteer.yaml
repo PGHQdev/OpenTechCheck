@@ -1,0 +1,8 @@
+name: Golden Volunteer
+slug: golden-volunteer
+category: payment
+website: https://www.goldenvolunteer.com
+detect:
+  dom:
+    link[href*='.goldenvolunteer.com/']:
+      - pattern: ''

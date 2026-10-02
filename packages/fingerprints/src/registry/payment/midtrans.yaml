@@ -1,0 +1,7 @@
+name: Midtrans
+slug: midtrans
+category: payment
+website: https://midtrans.com
+detect:
+  scripts:
+    - pattern: 'app(?:\.sandbox)?\.midtrans\.com/'

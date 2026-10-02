@@ -1,0 +1,7 @@
+name: Cybersource
+slug: cybersource
+category: payment
+website: https://www.cybersource.com/
+detect:
+  scripts:
+    - pattern: 'cybersource\..+\.js'

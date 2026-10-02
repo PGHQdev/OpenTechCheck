@@ -1,0 +1,10 @@
+name: iRaiser
+slug: iraiser
+category: payment
+website: https://www.iraiser.com
+detect:
+  js:
+    iRaiser.PaymentStartDate:
+      - pattern: ''
+    iraiser_counter:
+      - pattern: ''

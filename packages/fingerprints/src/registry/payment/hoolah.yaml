@@ -1,0 +1,10 @@
+name: hoolah
+slug: hoolah
+category: payment
+website: https://www.hoolah.co
+detect:
+  scripts:
+    - pattern: 'merchant\.cdn\.hoolah\.co/'
+  js:
+    hoolah:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: iugu
+slug: iugu
+category: payment
+website: https://www.iugu.com
+detect:
+  scripts:
+    - pattern: 'js\.iugu\.com'
+  js:
+    Iugu.CreditCard:
+      - pattern: ''

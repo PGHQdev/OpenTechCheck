@@ -1,0 +1,15 @@
+name: Yapla
+slug: yapla
+category: payment
+website: https://www.yapla.com
+detect:
+  meta:
+    generator:
+      - pattern: '^Yapla\sv([\d\.]+)'
+        version: 1
+  js:
+    yaplaConsent.cookieName:
+      - pattern: 'yapla-consent'
+  dom:
+    a[href*='\.yapla\.com/'][target='_blank']:
+      - pattern: ''

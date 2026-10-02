@@ -1,0 +1,11 @@
+name: Recharge
+slug: recharge
+category: payment
+website: https://rechargepayments.com
+detect:
+  scripts:
+    - pattern: 'rechargeassets-bootstrapheroes-rechargeapps\.netdna-ssl\.com'
+    - pattern: '\.rechargecdn\.com/'
+  js:
+    ReChargeWidget:
+      - pattern: ''

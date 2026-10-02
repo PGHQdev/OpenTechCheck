@@ -1,0 +1,11 @@
+name: Wallkit
+slug: wallkit
+category: payment
+website: https://wallkit.net
+detect:
+  scripts:
+    - pattern: '\.wallkit\.net/js/integration/latest/wallkit-integration-library\.min\.js\?ver=([\d\.]+)'
+      version: 1
+  js:
+    WALLKIT_CDN_URL:
+      - pattern: '\.wallkit\.net'

@@ -1,0 +1,7 @@
+name: Zuora
+slug: zuora
+category: payment
+website: https://www.zuora.com
+detect:
+  scripts:
+    - pattern: '\.zuora\.com/'

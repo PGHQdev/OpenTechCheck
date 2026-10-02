@@ -1,0 +1,12 @@
+name: Plenigo
+slug: plenigo
+category: payment
+website: https://plenigo.com
+detect:
+  scripts:
+    - pattern: 'static\.plenigo\.com'
+  js:
+    plenigo.Checkout:
+      - pattern: ''
+    plenigoStartCheckout:
+      - pattern: ''

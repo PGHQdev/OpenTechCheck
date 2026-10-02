@@ -1,0 +1,18 @@
+name: Pesapal
+slug: pesapal
+category: payment
+website: https://www.pesapal.com
+detect:
+  html:
+    - pattern: 'www\.pesapal\.com'
+    - pattern: 'support\.pesapal\.com'
+    - pattern: 'Powered by Pesapal'
+  meta:
+    rights:
+      - pattern: 'Pesapal'
+  js:
+    pesapalIframe:
+      - pattern: ''
+  dom:
+    div#payment-options > a[href*='www.pesapal.com']:
+      - pattern: ''

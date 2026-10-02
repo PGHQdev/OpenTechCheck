@@ -1,0 +1,19 @@
+name: Zip
+slug: zip
+category: payment
+website: https://www.zip.co/
+detect:
+  scripts:
+    - pattern: 'quadpay\.com'
+    - pattern: 'static\.zipmoney\.com\.au'
+    - pattern: 'zip\.co'
+  js:
+    QuadPayShopify:
+      - pattern: ''
+    checkout.enabledpayments.zip:
+      - pattern: '^true$'
+    quadpayID:
+      - pattern: ''
+  dom:
+    link[href*='widgets.quadpay.com/'], div[data-quadpay-src*='.quadpay.com/']:
+      - pattern: ''

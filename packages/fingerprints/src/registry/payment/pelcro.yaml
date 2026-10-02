@@ -1,0 +1,12 @@
+name: Pelcro
+slug: pelcro
+category: payment
+website: https://www.get.pelcro.com
+detect:
+  scripts:
+    - pattern: 'js\.pelcro\.com'
+  js:
+    Pelcro.adblock:
+      - pattern: ''
+    PelcroEventsAlreadyFired:
+      - pattern: ''

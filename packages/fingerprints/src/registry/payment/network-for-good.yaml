@@ -1,0 +1,10 @@
+name: Network for Good
+slug: network-for-good
+category: payment
+website: https://www.networkforgood.com
+detect:
+  scripts:
+    - pattern: '\.networkforgood\.com/'
+  dom:
+    a[href*='.networkforgood.com/']:
+      - pattern: ''

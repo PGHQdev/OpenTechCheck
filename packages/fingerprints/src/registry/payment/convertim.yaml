@@ -1,0 +1,8 @@
+name: Convertim
+slug: convertim
+category: payment
+website: https://www.convertim.com
+detect:
+  js:
+    convertimSetup:
+      - pattern: ''

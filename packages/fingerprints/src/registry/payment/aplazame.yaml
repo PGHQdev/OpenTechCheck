@@ -1,0 +1,11 @@
+name: Aplazame
+slug: aplazame
+category: payment
+website: https://aplazame.com
+detect:
+  scripts:
+    - pattern: 'cdn\.aplazame\.com/aplazame\.js'
+    - pattern: 'aplazame\.com/static/aplazame\.js'
+  js:
+    aplazame:
+      - pattern: ''

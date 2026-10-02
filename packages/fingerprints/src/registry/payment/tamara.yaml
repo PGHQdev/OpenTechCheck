@@ -1,0 +1,10 @@
+name: Tamara
+slug: tamara
+category: payment
+website: https://tamara.co/
+detect:
+  scripts:
+    - pattern: 'cdn\.tamara\.co'
+  js:
+    TamaraProductWidget:
+      - pattern: ''

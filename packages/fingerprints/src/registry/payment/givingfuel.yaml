@@ -1,0 +1,10 @@
+name: GivingFuel
+slug: givingfuel
+category: payment
+website: https://www.givingfuel.com
+detect:
+  scripts:
+    - pattern: '\.givingfuel\.com/'
+  dom:
+    a[href*='.givingfuel.com/']:
+      - pattern: ''

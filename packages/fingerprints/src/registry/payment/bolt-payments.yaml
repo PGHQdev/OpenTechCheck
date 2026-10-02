@@ -1,0 +1,20 @@
+name: Bolt Payments
+slug: bolt-payments
+category: payment
+website: https://www.bolt.com/
+detect:
+  scripts:
+    - pattern: 'connect\.bolt\.com/'
+    - pattern: 'account\.bolt\.com/'
+  js:
+    BoltCheckout:
+      - pattern: ''
+    BoltPopup:
+      - pattern: ''
+    BoltTrack:
+      - pattern: ''
+    bolt_callbacks:
+      - pattern: ''
+  dom:
+    bolt-checkout-button:
+      - pattern: ''

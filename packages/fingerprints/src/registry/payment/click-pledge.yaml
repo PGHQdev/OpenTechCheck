@@ -1,0 +1,10 @@
+name: Click & Pledge
+slug: click-pledge
+category: payment
+website: https://clickandpledge.com
+detect:
+  scripts:
+    - pattern: '\.clickandpledge\.com/'
+  dom:
+    a[href*='.clickandpledge.com/']:
+      - pattern: ''

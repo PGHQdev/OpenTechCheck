@@ -1,0 +1,11 @@
+name: ActBlue
+slug: actblue
+category: payment
+website: https://secure.actblue.com
+detect:
+  js:
+    actblue.__configuration:
+      - pattern: ''
+  dom:
+    a[href*='//secure.actblue.com/donate/']:
+      - pattern: ''

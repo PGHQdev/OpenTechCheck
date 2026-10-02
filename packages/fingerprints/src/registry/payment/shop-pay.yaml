@@ -1,0 +1,21 @@
+name: Shop Pay
+slug: shop-pay
+category: payment
+website: https://shop.app
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.shopify\.com/shopifycloud/shopify_pay/'
+  js:
+    ShopPay:
+      - pattern: ''
+    ShopifyPay.apiHost:
+      - pattern: ''
+  dom:
+    "[aria-labelledby='pi-shopify_pay']":
+      - text: true
+        pattern: ''
+    ul[data-shopify-buttoncontainer] li:
+      - text: true
+        pattern: 'ShopPay'

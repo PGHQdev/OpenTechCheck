@@ -1,0 +1,11 @@
+name: Paymentus
+slug: paymentus
+category: payment
+website: https://www.paymentus.com
+detect:
+  html:
+    - pattern: 'paymentus\.com'
+    - pattern: '"paymentus"\s*:\s*\{'
+  js:
+    PaymentusFeedback:
+      - pattern: ''

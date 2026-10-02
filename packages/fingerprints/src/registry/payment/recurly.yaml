@@ -1,0 +1,16 @@
+name: Recurly
+slug: recurly
+category: payment
+website: https://recurly.com
+detect:
+  html:
+    - pattern: '<input[^>]+data-recurly'
+  scripts:
+    - pattern: 'js\.recurly\.com'
+  js:
+    recurly.version:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    input[data-recurly]:
+      - pattern: ''

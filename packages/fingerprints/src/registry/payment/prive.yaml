@@ -1,0 +1,12 @@
+name: Prive
+slug: prive
+category: payment
+website: https://www.tryprive.com
+detect:
+  scripts:
+    - pattern: '\.tryprive\.com'
+  js:
+    PRIVE_SHOPPER_PORTAL_WIDGET:
+      - pattern: ''
+    PRIVE_WIDGET:
+      - pattern: ''

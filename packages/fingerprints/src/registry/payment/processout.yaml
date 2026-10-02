@@ -1,0 +1,10 @@
+name: ProcessOut
+slug: processout
+category: payment
+website: https://www.processout.com
+detect:
+  scripts:
+    - pattern: 'js\.processout\.com'
+  js:
+    ProcessOut.ActionFlow:
+      - pattern: ''

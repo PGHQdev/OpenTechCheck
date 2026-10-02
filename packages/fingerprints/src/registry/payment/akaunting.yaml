@@ -1,0 +1,12 @@
+name: Akaunting
+slug: akaunting
+category: payment
+website: https://akaunting.com
+implies: [laravel]
+detect:
+  html:
+    - pattern: '<link[^>]+akaunting-green\.css'
+    - pattern: 'Powered By Akaunting: <a [^>]*href="https?://(?:www\.)?akaunting\.com[^>]+>'
+  headers:
+    x-akaunting:
+      - pattern: '^Free Accounting Software$'

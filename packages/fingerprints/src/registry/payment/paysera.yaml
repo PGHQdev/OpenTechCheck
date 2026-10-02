@@ -1,0 +1,7 @@
+name: Paysera
+slug: paysera
+category: payment
+website: https://www.paysera.com
+detect:
+  scripts:
+    - pattern: '\.paysera\.com/'

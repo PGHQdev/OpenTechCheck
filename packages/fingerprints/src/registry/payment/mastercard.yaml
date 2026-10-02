@@ -1,0 +1,8 @@
+name: Mastercard
+slug: mastercard
+category: payment
+website: https://www.mastercard.com
+detect:
+  dom:
+    "[aria-labelledby='pi-mastercard'], [aria-labelledby='pi-master']":
+      - pattern: ''

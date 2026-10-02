@@ -1,0 +1,21 @@
+name: Bread
+slug: bread
+category: payment
+website: https://www.breadpayments.com
+detect:
+  scripts:
+    - pattern: '\.getbread\.com'
+  js:
+    BreadCalc:
+      - pattern: ''
+    BreadError:
+      - pattern: ''
+    BreadLoaded:
+      - pattern: ''
+    BreadShopify:
+      - pattern: ''
+    bread.appHost:
+      - pattern: ''
+  dom:
+    '#bread-mini-cart-btn':
+      - pattern: ''

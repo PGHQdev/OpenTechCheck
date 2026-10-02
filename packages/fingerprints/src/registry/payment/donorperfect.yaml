@@ -1,0 +1,11 @@
+name: DonorPerfect
+slug: donorperfect
+category: payment
+website: https://www.donorperfect.com
+detect:
+  scripts:
+    - pattern: '\.donorperfect\.net/'
+  dom:
+    a[href*='.donorperfect.']:
+      - attr: href
+        pattern: '\.donorperfect\.(?:com|net)'

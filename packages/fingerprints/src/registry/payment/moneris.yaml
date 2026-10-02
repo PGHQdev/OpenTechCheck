@@ -1,0 +1,13 @@
+name: Moneris
+slug: moneris
+category: payment
+website: https://www.moneris.com
+detect:
+  html:
+    - pattern: 'wc-moneris-checkout-block-css'
+    - pattern: 'WC_Moneris_Payment_Form_Handler'
+  js:
+    initialServerData.monerisConfiguration:
+      - pattern: ''
+    wc_moneris_payment_form_handler:
+      - pattern: ''

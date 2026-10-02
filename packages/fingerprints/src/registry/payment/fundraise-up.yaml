@@ -1,0 +1,10 @@
+name: Fundraise Up
+slug: fundraise-up
+category: payment
+website: https://fundraiseup.com
+detect:
+  scripts:
+    - pattern: '\.fundraiseup\.com/'
+  js:
+    FundraiseUp:
+      - pattern: ''

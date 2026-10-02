@@ -1,0 +1,12 @@
+name: Omise
+slug: omise
+category: payment
+website: https://www.omise.co
+detect:
+  scripts:
+    - pattern: 'cdn\.omise\.co'
+  js:
+    Omise:
+      - pattern: ''
+    OmiseCard:
+      - pattern: ''

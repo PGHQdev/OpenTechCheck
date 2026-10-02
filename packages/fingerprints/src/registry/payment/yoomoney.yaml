@@ -1,0 +1,10 @@
+name: YooMoney
+slug: yoomoney
+category: payment
+website: https://yoomoney.ru
+detect:
+  scripts:
+    - pattern: '\.yoomoney\.ru/'
+  dom:
+    a[href*='yoomoney.ru'][target='_blank'], iframe[src*='yoomoney.ru'], img[src*='yoomoney.ru']:
+      - pattern: ''

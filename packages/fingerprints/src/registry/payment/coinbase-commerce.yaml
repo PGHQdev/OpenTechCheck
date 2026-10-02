@@ -1,0 +1,8 @@
+name: Coinbase Commerce
+slug: coinbase-commerce
+category: payment
+website: https://commerce.coinbase.com/
+detect:
+  dom:
+    a[href^='https://commerce.coinbase.com/checkout/']:
+      - pattern: ''

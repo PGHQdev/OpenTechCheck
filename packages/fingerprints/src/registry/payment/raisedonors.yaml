@@ -1,0 +1,11 @@
+name: RaiseDonors
+slug: raisedonors
+category: payment
+website: https://explore.raisedonors.com
+detect:
+  meta:
+    author:
+      - pattern: '^RaiseDonors$'
+  dom:
+    a[href*='//raisedonors.com/'][target='_blank']:
+      - pattern: ''

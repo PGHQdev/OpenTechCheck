@@ -1,0 +1,14 @@
+name: SeQura
+slug: sequra
+category: payment
+website: https://www.sequra.es
+detect:
+  scripts:
+    - pattern: 'live\.sequracdn\.com/'
+  js:
+    Sequra:
+      - pattern: ''
+    SequraConfiguration:
+      - pattern: ''
+    sequraProducts:
+      - pattern: ''

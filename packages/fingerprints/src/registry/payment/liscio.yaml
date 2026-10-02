@@ -1,0 +1,11 @@
+name: Liscio
+slug: liscio
+category: payment
+website: https://www.liscio.me
+detect:
+  html:
+    - pattern: 'liscio\.me'
+    - pattern: 'app\.liscio\.me'
+  js:
+    webpackChunkliscio_ui.push:
+      - pattern: ''

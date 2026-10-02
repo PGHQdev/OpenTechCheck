@@ -1,0 +1,19 @@
+name: PayPal Credit
+slug: paypal-credit
+category: payment
+website: https://www.paypal.com/uk/webapps/mpp/paypal-virtual-credit
+implies: [paypal]
+within:
+  categories: [ecommerce]
+detect:
+  scripts:
+    - pattern: '\.paypalobjects\.com/.+/smart-credit-message@([\d\.]+)\.js'
+      version: 1
+  js:
+    PaypalOffersObject:
+      - pattern: ''
+    payPalCreditPopover:
+      - pattern: ''
+  dom:
+    img[alt*='PayPal Credit'], a[title*='PayPal Credit']:
+      - pattern: ''

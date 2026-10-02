@@ -1,0 +1,12 @@
+name: Barion
+slug: barion
+category: payment
+website: https://www.barion.com
+detect:
+  scripts:
+    - pattern: 'pixel\.barion\.com/'
+  js:
+    BarionAnalyticsObject:
+      - pattern: ''
+    barion_pixel_id:
+      - pattern: ''

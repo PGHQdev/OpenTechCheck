@@ -1,0 +1,10 @@
+name: EveryAction
+slug: everyaction
+category: payment
+website: https://www.everyaction.com
+detect:
+  scripts:
+    - pattern: '\.everyaction\.com/'
+  dom:
+    a[href*='secure.everyaction.com/'], div[data-form-url*='secure.everyaction.com/']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: SumUp
+slug: sumup
+category: payment
+website: https://www.sumup.com
+detect:
+  js:
+    SumUpCard.debug:
+      - pattern: ''
+    SumUpPayment.debug:
+      - pattern: ''

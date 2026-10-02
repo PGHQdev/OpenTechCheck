@@ -1,0 +1,11 @@
+name: FundRazr
+slug: fundrazr
+category: payment
+website: https://fundrazr.com
+detect:
+  js:
+    FundRazr:
+      - pattern: ''
+  dom:
+    link[href*='//static.fundrazr.com/']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: ChargeAfter
+slug: chargeafter
+category: payment
+website: https://chargeafter.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.chargeafter\.com'
+  js:
+    ChargeAfter:
+      - pattern: ''

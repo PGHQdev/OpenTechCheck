@@ -1,0 +1,12 @@
+name: Culqi
+slug: culqi
+category: payment
+website: https://culqi.com
+detect:
+  scripts:
+    - pattern: '\.culqi\.com'
+  js:
+    Culqi3DS:
+      - pattern: ''
+    CulqiCheckout:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: jQuery Payment
+slug: jquery-payment
+category: payment
+website: https://plugins.jquery.com/payment
+within:
+  techs: [jquery]
+detect:
+  scripts:
+    - pattern: '/jquery-payment/jquery\.payment\.min\.js'

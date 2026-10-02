@@ -1,0 +1,14 @@
+name: DivideBuy
+slug: dividebuy
+category: payment
+website: https://dividebuy.co.uk/
+detect:
+  html:
+    - pattern: 'dividebuy-softcredit'
+    - pattern: 'widgets\.dividebuy\.co\.uk'
+  js:
+    display_dividebuy_modal:
+      - pattern: ''
+  dom:
+    div[class*='dividebuy-softcredit']:
+      - pattern: ''

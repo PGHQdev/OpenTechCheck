@@ -1,0 +1,15 @@
+name: LatitudePay
+slug: latitudepay
+category: payment
+website: https://www.latitudepay.com
+detect:
+  scripts:
+    - pattern: '\.latitudepayapps\.com/'
+  js:
+    checkout.enabledpayments.latitudepay:
+      - pattern: '^true$'
+    wc_ga_pro.available_gateways.latitudepay:
+      - pattern: ''
+  dom:
+    a[href*='latitudepay.com/'][target='_blank'], img[src='.latitudepayapps.com/']:
+      - pattern: ''

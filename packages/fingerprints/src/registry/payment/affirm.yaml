@@ -1,0 +1,16 @@
+name: Affirm
+slug: affirm
+category: payment
+website: https://www.affirm.com
+detect:
+  scripts:
+    - pattern: '\.affirm\.com/js/v([\d\.]+)/affirm\.js'
+      version: 1
+  js:
+    _affirm_config:
+      - pattern: ''
+    affirm.Rollbar:
+      - pattern: ''
+  dom:
+    link[href*='.affirm.com']:
+      - pattern: ''

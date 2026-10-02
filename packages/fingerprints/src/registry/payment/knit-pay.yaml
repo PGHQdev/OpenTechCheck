@@ -1,0 +1,8 @@
+name: Knit pay
+slug: knit-pay
+category: payment
+website: https://www.knockcrm.com
+detect:
+  js:
+    knit_pay_payment_button_ajax_object:
+      - pattern: ''

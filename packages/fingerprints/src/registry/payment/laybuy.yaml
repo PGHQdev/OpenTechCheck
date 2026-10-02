@@ -1,0 +1,24 @@
+name: LayBuy
+slug: laybuy
+category: payment
+website: https://www.laybuy.com
+within:
+  categories: [ecommerce]
+detect:
+  scripts:
+    - pattern: '\.laybuy\.com/'
+    - pattern: '/wp-content/plugins/woo-laybuy/'
+  js:
+    LaybuyHelper:
+      - pattern: ''
+    checkout.enabledpayments.laybuy:
+      - pattern: '^true$'
+    laybuyEnableCart:
+      - pattern: ''
+    laybuyMoneyOverides:
+      - pattern: ''
+    wc_ga_pro.available_gateways.laybuy:
+      - pattern: ''
+  dom:
+    iframe[src='.laybuy.com/'], a[href*='.laybuy.com/what-is-laybuy']:
+      - pattern: ''

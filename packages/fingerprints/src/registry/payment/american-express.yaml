@@ -1,0 +1,8 @@
+name: American Express
+slug: american-express
+category: payment
+website: https://www.americanexpress.com
+detect:
+  dom:
+    "[aria-labelledby='pi-american_express']":
+      - pattern: ''

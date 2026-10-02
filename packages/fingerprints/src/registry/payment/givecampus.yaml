@@ -1,0 +1,11 @@
+name: GiveCampus
+slug: givecampus
+category: payment
+website: https://go.givecampus.com
+detect:
+  meta:
+    author:
+      - pattern: '^GiveCampus$'
+  dom:
+    a[href*='.givecampus.com/']:
+      - pattern: ''

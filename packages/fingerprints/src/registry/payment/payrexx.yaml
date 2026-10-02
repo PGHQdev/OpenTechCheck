@@ -1,0 +1,7 @@
+name: Payrexx
+slug: payrexx
+category: payment
+website: https://payrexx.com
+detect:
+  scripts:
+    - pattern: '\.payrexx\.com/'

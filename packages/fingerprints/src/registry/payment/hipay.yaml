@@ -1,0 +1,10 @@
+name: HiPay
+slug: hipay
+category: payment
+website: https://hipay.com/
+detect:
+  scripts:
+    - pattern: '\.hipay\.com/'
+  js:
+    HiPay:
+      - pattern: ''

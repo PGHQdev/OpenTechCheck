@@ -1,0 +1,15 @@
+name: PagSeguro
+slug: pagseguro
+category: payment
+website: https://pagseguro.uol.com.br
+detect:
+  scripts:
+    - pattern: '\.pagseguro\.uol\.com\.br/'
+  js:
+    PagSeguroDirectPayment:
+      - pattern: ''
+    _PagSeguroDirectPayment:
+      - pattern: ''
+  dom:
+    form[action*='pagseguro.uol.com.br'][target='pagseguro']:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Feroot
+slug: feroot
+category: payment
+website: https://www.feroot.com
+detect:
+  scripts:
+    - pattern: 'pg\.feroot\.com'

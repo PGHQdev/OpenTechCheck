@@ -1,0 +1,8 @@
+name: Juspay
+slug: juspay
+category: payment
+website: https://juspay.in
+detect:
+  js:
+    Juspay:
+      - pattern: ''

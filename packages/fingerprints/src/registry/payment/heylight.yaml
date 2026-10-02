@@ -1,0 +1,17 @@
+name: HeyLight
+slug: heylight
+category: payment
+website: https://heylight.com/it/it
+detect:
+  js:
+    closePagodilModal:
+      - pattern: ''
+    openPagodilModal:
+      - pattern: ''
+    pagodilLang:
+      - pattern: ''
+    pagodilSprintf:
+      - pattern: ''
+  dom:
+    div#heidipay-container, div[data-heidipay], div#pagolight-pro-dialog, iframe#heidipay-iframe-product-description-pagolight, style#heyLightFonts:
+      - pattern: ''

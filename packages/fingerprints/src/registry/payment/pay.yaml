@@ -1,0 +1,10 @@
+name: Pay.
+slug: pay
+category: payment
+website: https://www.pay.nl
+detect:
+  js:
+    PaynlLabel:
+      - pattern: ''
+    paynl_gateways:
+      - pattern: ''

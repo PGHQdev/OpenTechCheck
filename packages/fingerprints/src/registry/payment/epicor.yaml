@@ -1,0 +1,10 @@
+name: Epicor
+slug: epicor
+category: payment
+website: https://www.epicor.com
+detect:
+  js:
+    Epicor_Common:
+      - pattern: ''
+    Epicor_SalesrepPricing:
+      - pattern: ''

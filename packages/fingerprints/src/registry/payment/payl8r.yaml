@@ -1,0 +1,11 @@
+name: Payl8r
+slug: payl8r
+category: payment
+website: https://payl8r.com/
+detect:
+  html:
+    - pattern: 'payl8r\.com'
+    - pattern: 'Payl8r_Logo'
+    - pattern: 'Payl8r Finance'
+  scripts:
+    - pattern: 'payl8r\.com'

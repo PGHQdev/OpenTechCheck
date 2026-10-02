@@ -1,0 +1,8 @@
+name: Yampi Checkout
+slug: yampi-checkout
+category: payment
+website: https://www.yampi.com.br/checkout
+detect:
+  js:
+    yampiCheckoutUrl:
+      - pattern: ''

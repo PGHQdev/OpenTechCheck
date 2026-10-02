@@ -1,0 +1,10 @@
+name: Mul-Pay
+slug: mul-pay
+category: payment
+website: https://static.mul-pay.jp
+detect:
+  scripts:
+    - pattern: 'static\.mul-pay\.jp/'
+  js:
+    Multipayment.config:
+      - pattern: ''

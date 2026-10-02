@@ -1,0 +1,8 @@
+name: SpurIT Partial Payments App
+slug: spurit-partial-payments-app
+category: payment
+website: https://spur-i-t.com/shopify-apps/split-partial-payments/
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn-spurit\.com/shopify-apps/split-payments/'

@@ -1,0 +1,10 @@
+name: iyzico
+slug: iyzico
+category: payment
+website: https://www.iyzico.com
+detect:
+  js:
+    iyz.ideaSoft:
+      - pattern: ''
+    iyz.position:
+      - pattern: ''
