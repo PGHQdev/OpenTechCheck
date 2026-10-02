@@ -1,0 +1,12 @@
+name: Phlox
+slug: phlox
+category: plugin
+website: https://www.phlox.pro
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/phlox(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/phlox/'], link[href*='/wp-content/themes/phlox-pro/']:
+      - pattern: ''

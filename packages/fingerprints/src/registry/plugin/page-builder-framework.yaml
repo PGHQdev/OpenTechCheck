@@ -1,0 +1,10 @@
+name: Page Builder Framework
+slug: page-builder-framework
+category: plugin
+website: https://wp-pagebuilderframework.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/page-builder-framework/.+site-min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

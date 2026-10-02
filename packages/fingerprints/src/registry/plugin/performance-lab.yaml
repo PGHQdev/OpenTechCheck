@@ -1,0 +1,11 @@
+name: Performance Lab
+slug: performance-lab
+category: plugin
+website: https://wordpress.org/plugins/performance-lab/
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    generator:
+      - pattern: '^Performance Lab ?([\d.]+)?'
+        version: 1

@@ -1,0 +1,13 @@
+name: Popup Maker
+slug: popup-maker
+category: plugin
+website: https://wppopupmaker.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/popup-maker/(?:.+site(?:\.min)?\.js\?.+ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    pum_popups:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Tyslo EasySell
+slug: tyslo-easysell
+category: plugin
+website: https://tyslo.com
+implies: [shopify]
+detect:
+  js:
+    openTysloForm:
+      - pattern: ''
+    tysloApplyDiscount:
+      - pattern: ''
+    tysloConfigVersion:
+      - pattern: ''
+    tysloEasysellConfig:
+      - pattern: ''

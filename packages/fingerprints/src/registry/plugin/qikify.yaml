@@ -1,0 +1,9 @@
+name: Qikify
+slug: qikify
+category: plugin
+website: https://qikify.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'sdk\.qikify\.com/'

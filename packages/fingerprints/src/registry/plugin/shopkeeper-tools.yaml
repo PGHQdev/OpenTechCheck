@@ -1,0 +1,9 @@
+name: ShopKeeper Tools
+slug: shopkeeper-tools
+category: plugin
+website: https://www.shopkeepertools.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'magic-button-app\.shopkeepertools\.com/'

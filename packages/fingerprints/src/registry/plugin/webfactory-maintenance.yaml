@@ -1,0 +1,13 @@
+name: WebFactory Maintenance
+slug: webfactory-maintenance
+category: plugin
+website: https://wordpress.org/plugins/maintenance
+within:
+  techs: [wordpress]
+detect:
+  js:
+    mtnc_front_options:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/maintenance/']:
+      - pattern: ''

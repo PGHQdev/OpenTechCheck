@@ -1,0 +1,9 @@
+name: Privy App
+slug: privy-app
+category: plugin
+website: https://apps.shopify.com/privy
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '//shopify\.privy\.com/'

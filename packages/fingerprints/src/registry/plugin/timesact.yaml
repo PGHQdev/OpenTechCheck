@@ -1,0 +1,11 @@
+name: Timesact
+slug: timesact
+category: plugin
+website: https://timesact.com
+detect:
+  js:
+    timesactScriptNew:
+      - pattern: ''
+  dom:
+    div[class*='timesact_powered_by']:
+      - pattern: ''

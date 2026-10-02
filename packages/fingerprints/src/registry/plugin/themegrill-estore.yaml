@@ -1,0 +1,13 @@
+name: ThemeGrill eStore
+slug: themegrill-estore
+category: plugin
+website: https://themegrill.com/themes/estore
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/e(?:s|S)tore(?:-pro)?/'
+  meta:
+    generator:
+      - pattern: 'eStore v\.([\d\.]+)'
+        version: 1

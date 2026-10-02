@@ -1,0 +1,13 @@
+name: Visual Portfolio
+slug: visual-portfolio
+category: plugin
+website: https://visualportfolio.co
+within:
+  techs: [wordpress]
+detect:
+  js:
+    VPData.screenSizes:
+      - pattern: ''
+    VPData.version:
+      - pattern: '([\d\.]+)'
+        version: 1

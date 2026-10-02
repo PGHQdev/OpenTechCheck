@@ -1,0 +1,10 @@
+name: Modula
+slug: modula
+category: plugin
+website: https://wp-modula.com
+detect:
+  js:
+    ModulaIsotope:
+      - pattern: ''
+    modulaInViewport:
+      - pattern: ''

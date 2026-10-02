@@ -1,0 +1,10 @@
+name: WooCommerce Multilingual
+slug: woocommerce-multilingual
+category: plugin
+website: https://wordpress.org/plugins/woocommerce-multilingual
+within:
+  techs: [woocommerce, wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/woocommerce-multilingual/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

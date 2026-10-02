@@ -1,0 +1,12 @@
+name: Think Up Themes Consulting
+slug: think-up-themes-consulting
+category: plugin
+website: https://www.thinkupthemes.com/themes/consulting
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/consulting(?:-pro)?/'
+  dom:
+    link#consulting-style-css:
+      - pattern: ''

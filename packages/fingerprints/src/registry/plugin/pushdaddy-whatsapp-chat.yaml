@@ -1,0 +1,12 @@
+name: PushDaddy Whatsapp Chat
+slug: pushdaddy-whatsapp-chat
+category: plugin
+website: https://apps.shopify.com/whatsapp-chat-for-support
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.shopify\.com/.+/pushdaddy_v([\d\.]+).*\.js'
+      version: 1
+  dom:
+    div.pushdaddy-chats:
+      - pattern: ''

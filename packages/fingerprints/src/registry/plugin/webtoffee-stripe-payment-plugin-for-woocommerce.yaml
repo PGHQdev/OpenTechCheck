@@ -1,0 +1,11 @@
+name: WebToffee Stripe Payment Plugin for WooCommerce
+slug: webtoffee-stripe-payment-plugin-for-woocommerce
+category: plugin
+website: https://www.webtoffee.com/product/woocommerce-stripe-payment-gateway/
+implies: [stripe, woocommerce]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/payment-gateway-stripe-and-woocommerce-integration/']:
+      - pattern: ''

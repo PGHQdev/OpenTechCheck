@@ -1,0 +1,11 @@
+name: Secomapp
+slug: secomapp
+category: plugin
+website: https://www.secomapp.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.secomapp\.com/'
+  js:
+    SECOMAPP:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Woostify
+slug: woostify
+category: plugin
+website: https://woostify.com
+implies: [woocommerce]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/woostify/'
+  js:
+    woostifyConditionScrolling:
+      - pattern: ''
+    woostify_woocommerce_general:
+      - pattern: ''

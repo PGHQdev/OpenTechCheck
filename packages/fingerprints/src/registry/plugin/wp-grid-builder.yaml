@@ -1,0 +1,11 @@
+name: WP Grid Builder
+slug: wp-grid-builder
+category: plugin
+website: https://wpgridbuilder.com
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-grid-builder/frontend/assets/js/layout\.js\?ver=([\d.]+)'
+      version: 1
+  js:
+    WP_Grid_Builder:
+      - pattern: ''

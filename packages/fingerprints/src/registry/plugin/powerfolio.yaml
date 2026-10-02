@@ -1,0 +1,14 @@
+name: Powerfolio
+slug: powerfolio
+category: plugin
+website: https://powerfoliowp.com
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[id='elpt-portfolio-css-css'][href*='portfolio-elementor']:
+      - attr: href
+        pattern: 'ver=([\d\.]+)'
+        version: 1
+    style#powerfolio-portfolio-block-style-inline-css:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Themegraphy Graphy
+slug: themegraphy-graphy
+category: plugin
+website: https://themegraphy.com/wordpress-themes/graphy
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/graphy(?:-pro)?/'

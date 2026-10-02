@@ -1,0 +1,8 @@
+name: Packlink PRO
+slug: packlink-pro
+category: plugin
+website: https://apps.shopify.com/packlink-pro
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'packlink-spf-pro\.appspot\.com/.+myshopify\.com'

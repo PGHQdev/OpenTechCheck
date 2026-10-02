@@ -1,0 +1,13 @@
+name: Moneris Payment Gateway
+slug: moneris-payment-gateway
+category: plugin
+website: https://wordpress.org/plugins/wc-moneris-payment-gateway
+implies: [moneris, woocommerce]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/woocommerce-gateway-moneris/'
+  js:
+    wc_moneris_hosted_tokenization_params:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Shopapps
+slug: shopapps
+category: plugin
+website: https://www.shopapps.in
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.myshopapps\.com/'
+  js:
+    iStockUrl:
+      - pattern: 'iwish\.myshopapps\.com/'
+    iWishUrl:
+      - pattern: 'iwish\.myshopapps\.com/'

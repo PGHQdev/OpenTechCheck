@@ -1,0 +1,13 @@
+name: WP Maintenance Mode
+slug: wp-maintenance-mode
+category: plugin
+website: https://github.com/andrianvaleanu/WP-Maintenance-Mode
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-maintenance-mode/.+wpmm\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    wpmm_vars:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Motion.page
+slug: motion-page
+category: plugin
+website: https://motion.page
+detect:
+  js:
+    MOTIONPAGE_FRONT.version:
+      - pattern: '^([0-9\.]+)$'
+        version: 1

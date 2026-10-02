@@ -1,0 +1,9 @@
+name: Theme Freesia Photograph
+slug: theme-freesia-photograph
+category: plugin
+website: https://themefreesia.com/themes/Photograph
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/photograph(?:-plus)?/'

@@ -1,0 +1,13 @@
+name: Photo Gallery
+slug: photo-gallery
+category: plugin
+website: https://10web.io/plugins/wordpress-photo-gallery
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/photo-gallery/.+scripts\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/photo-gallery/']:
+      - pattern: ''

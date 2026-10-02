@@ -1,0 +1,17 @@
+name: WP-Royal Ashe
+slug: wp-royal-ashe
+category: plugin
+website: https://wp-royal.com/themes/item-ashe-free
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/ashe(?:-pro-premium)?/'
+  js:
+    ashePreloader:
+      - pattern: ''
+    asheStickySidebar:
+      - pattern: ''
+  dom:
+    link#ashe-style-css:
+      - pattern: ''

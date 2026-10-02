@@ -1,0 +1,12 @@
+name: Scissor Themes Writee
+slug: scissor-themes-writee
+category: plugin
+website: https://www.scissorthemes.com/themes/writee-free
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/writee(?:-pro)?/'
+  dom:
+    link#WRT-style-css:
+      - pattern: ''

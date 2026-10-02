@@ -1,0 +1,13 @@
+name: OrderLogic app
+slug: orderlogic-app
+category: plugin
+website: https://apps.shopify.com/orderlogic
+implies: [shopify]
+detect:
+  js:
+    OrderLogic.ALERTS_KEY:
+      - pattern: ''
+    OrderLogic.DEFAULT_MONEY_FORMAT:
+      - pattern: ''
+    OrderLogic.cartData:
+      - pattern: ''

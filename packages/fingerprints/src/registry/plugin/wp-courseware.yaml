@@ -1,0 +1,13 @@
+name: WP Courseware
+slug: wp-courseware
+category: plugin
+website: https://flyplugins.com/wp-courseware-wordpress-lms
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-courseware/.+frontend\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    wpcw_course_note_params.api_url:
+      - pattern: '/wp-json/wpcw/'

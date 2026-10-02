@@ -1,0 +1,9 @@
+name: Picture It
+slug: picture-it
+category: plugin
+website: https://www.pictureit.co
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.pictureit\.co/'

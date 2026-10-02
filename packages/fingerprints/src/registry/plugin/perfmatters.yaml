@@ -1,0 +1,9 @@
+name: Perfmatters
+slug: perfmatters
+category: plugin
+website: https://perfmatters.io
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/(?:plugins|cache|uploads)/perfmatters/'

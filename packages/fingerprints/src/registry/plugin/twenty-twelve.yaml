@@ -1,0 +1,12 @@
+name: Twenty Twelve
+slug: twenty-twelve
+category: plugin
+website: https://wordpress.org/themes/twentytwelve
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentytwelve/'
+  dom:
+    link#twentytwelve-style-css:
+      - pattern: ''

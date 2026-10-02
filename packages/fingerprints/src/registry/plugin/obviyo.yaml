@@ -1,0 +1,13 @@
+name: Obviyo
+slug: obviyo
+category: plugin
+website: https://www.obviyo.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'deploy\.hiconversion\.com'
+  js:
+    __hic.version:
+      - pattern: '([\d.]+)'
+        version: 1

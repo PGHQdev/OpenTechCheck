@@ -1,0 +1,8 @@
+name: ShipTection
+slug: shiptection
+category: plugin
+website: https://wamapps.io/pages/shiptection-protection
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.shiptection\.com/'

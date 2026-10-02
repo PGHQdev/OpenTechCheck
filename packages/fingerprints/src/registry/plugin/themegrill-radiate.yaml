@@ -1,0 +1,15 @@
+name: ThemeGrill Radiate
+slug: themegrill-radiate
+category: plugin
+website: https://themegrill.com/themes/radiate
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/radiate(?:-pro)?/'
+  js:
+    radiateScriptParam:
+      - pattern: ''
+  dom:
+    link#radiate-style-css:
+      - pattern: ''

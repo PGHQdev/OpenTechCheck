@@ -1,0 +1,15 @@
+name: MonsterInsights
+slug: monsterinsights
+category: plugin
+website: https://www.monsterinsights.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/google-analytics-for-wordpress/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    MonsterInsights:
+      - pattern: ''
+    monsterinsights_frontend:
+      - pattern: ''

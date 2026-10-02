@@ -1,0 +1,15 @@
+name: Twenty Seventeen
+slug: twenty-seventeen
+category: plugin
+website: https://wordpress.org/themes/twentyseventeen
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentyseventeen/'
+  js:
+    twentyseventeenScreenReaderText:
+      - pattern: ''
+  dom:
+    link#twentyseventeen-style-css:
+      - pattern: ''

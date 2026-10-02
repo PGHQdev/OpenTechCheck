@@ -1,0 +1,9 @@
+name: ThemezHut HitMag
+slug: themezhut-hitmag
+category: plugin
+website: https://themezhut.com/themes/hitmag
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/hitmag(?:-pro)?/'

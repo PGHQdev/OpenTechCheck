@@ -1,0 +1,12 @@
+name: Twenty Thirteen
+slug: twenty-thirteen
+category: plugin
+website: https://wordpress.org/themes/twentythirteen
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentythirteen/'
+  dom:
+    link#twentythirteen-style-css:
+      - pattern: ''

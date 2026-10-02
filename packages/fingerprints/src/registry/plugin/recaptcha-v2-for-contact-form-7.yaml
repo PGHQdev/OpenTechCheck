@@ -1,0 +1,11 @@
+name: ReCaptcha v2 for Contact Form 7
+slug: recaptcha-v2-for-contact-form-7
+category: plugin
+website: https://wordpress.org/plugins/wpcf7-recaptcha/
+implies: [contact-form-7]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wpcf7-recaptcha/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

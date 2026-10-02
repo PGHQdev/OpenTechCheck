@@ -1,0 +1,16 @@
+name: SpeedyCache
+slug: speedycache
+category: plugin
+website: https://speedycache.com
+within:
+  techs: [wordpress]
+detect:
+  headers:
+    x-speedycache-source:
+      - pattern: ''
+  js:
+    speedycachell:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/cache/speedycache/']:
+      - pattern: ''

@@ -1,0 +1,16 @@
+name: Revy
+slug: revy
+category: plugin
+website: https://revy.io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'api\.revy\.io/'
+  js:
+    RevyApp:
+      - pattern: ''
+    RevyBundle:
+      - pattern: ''
+    RevyUpsell:
+      - pattern: ''

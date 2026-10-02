@@ -1,0 +1,12 @@
+name: Theme Horse NewsCard
+slug: theme-horse-newscard
+category: plugin
+website: https://www.themehorse.com/themes/newscard
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/newscard(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/newscard-pro/']:
+      - pattern: ''

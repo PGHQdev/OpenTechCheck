@@ -1,0 +1,13 @@
+name: Thrive Architect
+slug: thrive-architect
+category: plugin
+website: https://thrivethemes.com/architect/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/thrive-visual-editor/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/thrive-visual-editor/']:
+      - pattern: ''

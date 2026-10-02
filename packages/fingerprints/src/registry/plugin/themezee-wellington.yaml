@@ -1,0 +1,12 @@
+name: ThemeZee Wellington
+slug: themezee-wellington
+category: plugin
+website: https://themezee.com/themes/wellington
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/wellington/'
+  js:
+    wellingtonScreenReaderText:
+      - pattern: ''

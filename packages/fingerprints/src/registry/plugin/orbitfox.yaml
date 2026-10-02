@@ -1,0 +1,10 @@
+name: OrbitFox
+slug: orbitfox
+category: plugin
+website: https://themeisle.com/plugins/orbit-fox-companion
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/themeisle-companion/']:
+      - pattern: ''

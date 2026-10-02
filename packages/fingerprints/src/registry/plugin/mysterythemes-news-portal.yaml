@@ -1,0 +1,10 @@
+name: MysteryThemes News Portal
+slug: mysterythemes-news-portal
+category: plugin
+website: https://mysterythemes.com/wp-themes/news-portal
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/news-portal(?:-pro)?/.+np-custom-scripts\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

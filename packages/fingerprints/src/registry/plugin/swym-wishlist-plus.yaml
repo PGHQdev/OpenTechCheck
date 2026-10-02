@@ -1,0 +1,12 @@
+name: Swym Wishlist Plus
+slug: swym-wishlist-plus
+category: plugin
+website: https://swym.it/apps/wishlist/
+implies: [shopify]
+detect:
+  js:
+    swappName:
+      - pattern: 'Wishlist'
+    swymCart.attributes:
+      - pattern: ''
+        confidence: 50

@@ -1,0 +1,9 @@
+name: Webriti Busiprof
+slug: webriti-busiprof
+category: plugin
+website: https://webriti.com/busiprof-premium-wordpress-theme-1
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/busiprof(?:-pro)?/'

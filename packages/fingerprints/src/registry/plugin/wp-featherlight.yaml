@@ -1,0 +1,9 @@
+name: WP Featherlight
+slug: wp-featherlight
+category: plugin
+website: https://wordpress.org/plugins/wp-featherlight
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wpFeatherlight\.pkgd\.min\.js'

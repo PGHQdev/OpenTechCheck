@@ -1,0 +1,13 @@
+name: PopularFX
+slug: popularfx
+category: plugin
+website: https://popularfx.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/popularfx/.+\?ver=([\d\.]+)'
+      version: 1
+  dom:
+    link#popularfx-style-css:
+      - pattern: ''

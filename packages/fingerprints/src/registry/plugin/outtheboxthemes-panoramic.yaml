@@ -1,0 +1,13 @@
+name: OutTheBoxThemes Panoramic
+slug: outtheboxthemes-panoramic
+category: plugin
+website: https://www.outtheboxthemes.com/wordpress-themes/panoramic
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/panoramic/.+custom\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link#panoramic_customizer_theme_fonts-css:
+      - pattern: ''

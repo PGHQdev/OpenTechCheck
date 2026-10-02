@@ -1,0 +1,14 @@
+name: ThemeZee Donovan
+slug: themezee-donovan
+category: plugin
+website: https://themezee.com/themes/donovan
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/donovan/'
+  js:
+    donovanScreenReaderText:
+      - pattern: ''
+    donovan_menu_title:
+      - pattern: ''

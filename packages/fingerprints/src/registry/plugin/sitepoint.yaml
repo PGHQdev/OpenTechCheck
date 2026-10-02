@@ -1,0 +1,13 @@
+name: SitePoint
+slug: sitepoint
+category: plugin
+website: https://www.sitepoint.com/wordpress
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/sitepoint-base/js/vendors(?:\.min)?\.js\?ver=([\d.]+)'
+      version: 1
+  dom:
+    script#sitepoint-base-vendors-js:
+      - pattern: ''

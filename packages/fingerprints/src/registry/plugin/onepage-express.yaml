@@ -1,0 +1,15 @@
+name: OnePage Express
+slug: onepage-express
+category: plugin
+website: https://onepageexpress.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/one-page-express(?:-pro)?/'
+  js:
+    one_page_express_settings:
+      - pattern: ''
+  dom:
+    link#one-page-express-style-css:
+      - pattern: ''

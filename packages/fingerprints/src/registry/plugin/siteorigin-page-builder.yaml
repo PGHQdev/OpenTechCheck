@@ -1,0 +1,13 @@
+name: SiteOrigin Page Builder
+slug: siteorigin-page-builder
+category: plugin
+website: https://siteorigin.com/page-builder
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/siteorigin-panels/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/siteorigin-panels/']:
+      - pattern: ''

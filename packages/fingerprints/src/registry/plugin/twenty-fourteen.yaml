@@ -1,0 +1,12 @@
+name: Twenty Fourteen
+slug: twenty-fourteen
+category: plugin
+website: https://wordpress.org/themes/twentyfourteen
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentyfourteen/'
+  dom:
+    link#twentyfourteen-style-css, style#twentyfourteen-lato-css:
+      - pattern: ''

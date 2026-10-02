@@ -1,0 +1,9 @@
+name: UltimatelySocial
+slug: ultimatelysocial
+category: plugin
+website: https://www.ultimatelysocial.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/ultimate-social-media-icons/'

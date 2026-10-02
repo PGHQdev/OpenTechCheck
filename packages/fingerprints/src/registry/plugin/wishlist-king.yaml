@@ -1,0 +1,14 @@
+name: Wishlist King
+slug: wishlist-king
+category: plugin
+website: https://appmate.io
+within:
+  techs: [shopify]
+detect:
+  js:
+    Appmate.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+        confidence: 1
+    Appmate.wk:
+      - pattern: ''

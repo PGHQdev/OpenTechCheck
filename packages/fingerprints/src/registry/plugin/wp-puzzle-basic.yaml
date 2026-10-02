@@ -1,0 +1,9 @@
+name: WP Puzzle Basic
+slug: wp-puzzle-basic
+category: plugin
+website: https://wp-puzzle.com/basic
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/basic/'

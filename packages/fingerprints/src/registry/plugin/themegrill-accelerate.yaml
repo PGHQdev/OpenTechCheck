@@ -1,0 +1,12 @@
+name: ThemeGrill Accelerate
+slug: themegrill-accelerate
+category: plugin
+website: https://themegrill.com/themes/accelerate
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/accelerate(?:-pro)?/'
+  dom:
+    link#accelerate_style-css:
+      - pattern: ''

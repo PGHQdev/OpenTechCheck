@@ -1,0 +1,9 @@
+name: Themonic Iconic One
+slug: themonic-iconic-one
+category: plugin
+website: https://themonic.com/iconic-one
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/iconic-one(?:-[\w]+)?/'

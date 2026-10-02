@@ -1,0 +1,12 @@
+name: SiteOrigin Vantage
+slug: siteorigin-vantage
+category: plugin
+website: https://siteorigin.com/theme/vantage
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/vantage/'
+  dom:
+    style#vantage-style-css:
+      - pattern: ''

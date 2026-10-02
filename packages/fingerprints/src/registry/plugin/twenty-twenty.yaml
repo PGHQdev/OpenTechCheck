@@ -1,0 +1,15 @@
+name: Twenty Twenty
+slug: twenty-twenty
+category: plugin
+website: https://wordpress.org/themes/twentytwenty
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentytwenty/'
+  js:
+    twentytwenty:
+      - pattern: ''
+  dom:
+    link#twentytwenty-style-css:
+      - pattern: ''

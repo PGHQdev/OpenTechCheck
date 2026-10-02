@@ -1,0 +1,12 @@
+name: ThemeGrill Cenote
+slug: themegrill-cenote
+category: plugin
+website: https://themegrill.com/themes/cenote
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/cenote(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/cenote/'], link[href*='/wp-content/themes/cenote-pro/']:
+      - pattern: ''

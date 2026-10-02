@@ -1,0 +1,12 @@
+name: Twenty Ten
+slug: twenty-ten
+category: plugin
+website: https://wordpress.org/themes/twentyten
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentyten/'
+  dom:
+    link[href*='/wp-content/themes/twentyten/']:
+      - pattern: ''

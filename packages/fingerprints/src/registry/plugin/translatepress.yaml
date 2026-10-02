@@ -1,0 +1,14 @@
+name: TranslatePress
+slug: translatepress
+category: plugin
+website: https://translatepress.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    trp_el:
+      - pattern: ''
+    trp_ls_shortcode_width:
+      - pattern: ''
+    trp_ls_shortcodes:
+      - pattern: ''

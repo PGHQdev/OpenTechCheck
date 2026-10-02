@@ -1,0 +1,12 @@
+name: Tabarnapp
+slug: tabarnapp
+category: plugin
+website: https://tabarnapp.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.tabarn\.app/'
+  js:
+    tabarnapp_loaded_ad:
+      - pattern: ''

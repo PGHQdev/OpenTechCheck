@@ -1,0 +1,9 @@
+name: SpiceThemes SpicePress
+slug: spicethemes-spicepress
+category: plugin
+website: https://spicethemes.com/spicepress-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/spicepress(?:-pro)?/'

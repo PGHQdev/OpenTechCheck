@@ -1,0 +1,17 @@
+name: WooCommerce Subscriptions
+slug: woocommerce-subscriptions
+category: plugin
+website: https://woocommerce.com/products/woocommerce-subscriptions
+implies: [woocommerce]
+within:
+  techs: [wordpress]
+detect:
+  html:
+    - pattern: '/plugins/woocommerce-subscriptions/vendor/woocommerce/subscriptions-core/build'
+  dom:
+    link[href*='/wp-content/plugins/woocommerce-subscriptions/']:
+      - pattern: '/wp-content/plugins/woocommerce-subscriptions/[^"'']*\.(css|js)'
+    link[href*="/plugins/woocommerce-subscriptions/"]:
+      - pattern: '/plugins/woocommerce-subscriptions/[^"'']*\.(css|js)'
+    script[src*="/plugins/woocommerce-subscriptions/"]:
+      - pattern: '/plugins/woocommerce-subscriptions/[^"'']*\.js'

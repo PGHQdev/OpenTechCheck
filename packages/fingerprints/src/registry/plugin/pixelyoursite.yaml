@@ -1,0 +1,16 @@
+name: PixelYourSite
+slug: pixelyoursite
+category: plugin
+website: https://www.pixelyoursite.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/pixelyoursite/'
+  js:
+    pys.Facebook:
+      - pattern: ''
+    pysOptions:
+      - pattern: ''
+    pys_generate_token:
+      - pattern: ''

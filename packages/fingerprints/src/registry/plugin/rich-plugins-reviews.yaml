@@ -1,0 +1,12 @@
+name: Rich Plugins Reviews
+slug: rich-plugins-reviews
+category: plugin
+website: https://richplugins.com/business-reviews-bundle-wordpress-plugin
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/widget-google-reviews/'
+  dom:
+    link[href*='/wp-content/plugins/widget-google-reviews/']:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Quoli
+slug: quoli
+category: plugin
+website: https://quoli.io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.quoli\.io/'

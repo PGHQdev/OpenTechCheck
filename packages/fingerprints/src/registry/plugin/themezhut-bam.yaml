@@ -1,0 +1,9 @@
+name: ThemezHut Bam
+slug: themezhut-bam
+category: plugin
+website: https://themezhut.com/themes/bam
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/bam(?:-pro)?/'

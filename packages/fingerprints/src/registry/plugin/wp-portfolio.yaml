@@ -1,0 +1,10 @@
+name: WP Portfolio
+slug: wp-portfolio
+category: plugin
+website: https://wpportfolio.net
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/astra-portfolio/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

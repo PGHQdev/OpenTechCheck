@@ -1,0 +1,13 @@
+name: Press Customizr
+slug: press-customizr
+category: plugin
+website: https://presscustomizr.com/customizr
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/customizr/.+js(?:\?ver=([\d\.]+))?'
+      version: 1
+  dom:
+    style#customizr-skin-inline-css, link#customizr-style-css:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Smile App
+slug: smile-app
+category: plugin
+website: https://apps.shopify.com/smile-io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'js\.smile\.io/.+smile-shopify\.js'

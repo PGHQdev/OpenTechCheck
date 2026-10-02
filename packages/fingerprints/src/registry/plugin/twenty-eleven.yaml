@@ -1,0 +1,10 @@
+name: Twenty Eleven
+slug: twenty-eleven
+category: plugin
+website: https://wordpress.org/themes/twentyeleven
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/themes/twentyeleven/']:
+      - pattern: ''

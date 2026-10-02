@@ -1,0 +1,9 @@
+name: Order Deadline
+slug: order-deadline
+category: plugin
+website: https://apps.shopify.com/order-deadline
+implies: [shopify]
+detect:
+  js:
+    orderDeadlineAppByEESL:
+      - pattern: ''

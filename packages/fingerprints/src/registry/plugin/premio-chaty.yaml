@@ -1,0 +1,14 @@
+name: Premio Chaty
+slug: premio-chaty
+category: plugin
+website: https://premio.io/downloads/chaty
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/chaty/'
+  js:
+    chaty_settings.chaty_widgets:
+      - pattern: ''
+    chaty_settings.object_settings:
+      - pattern: ''

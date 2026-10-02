@@ -1,0 +1,13 @@
+name: WordPress Popular Posts
+slug: wordpress-popular-posts
+category: plugin
+website: https://wordpress.org/plugins/wordpress-popular-posts/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wordpress-popular-posts/.+wpp\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  headers:
+    wordpresspopularposts:
+      - pattern: ''

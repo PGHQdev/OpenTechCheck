@@ -1,0 +1,12 @@
+name: WooCommerce Blocks
+slug: woocommerce-blocks
+category: plugin
+website: https://github.com/woocommerce/woocommerce-gutenberg-products-block
+within:
+  techs: [woocommerce, wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/woo-gutenberg-products-block/']:
+      - attr: href
+        pattern: '/wp-content/plugins/woo-gutenberg-products-block/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

@@ -1,0 +1,10 @@
+name: Themes4Wp Bulk
+slug: themes4wp-bulk
+category: plugin
+website: https://themes4wp.com/theme/bulk
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/bulk(?:-pro)?/.+customscript\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

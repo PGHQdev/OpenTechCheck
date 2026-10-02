@@ -1,0 +1,12 @@
+name: WP-Royal Bard
+slug: wp-royal-bard
+category: plugin
+website: https://wp-royal.com/themes/item-bard-free
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/bard(?:-pro-premium)?/'
+  dom:
+    link#bard-style-css, style#bard_predefined_custom_css:
+      - pattern: ''

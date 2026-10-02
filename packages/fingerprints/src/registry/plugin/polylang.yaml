@@ -1,0 +1,17 @@
+name: Polylang
+slug: polylang
+category: plugin
+website: https://wordpress.org/plugins/polylang
+within:
+  techs: [wordpress]
+detect:
+  headers:
+    x-redirected-by:
+      - pattern: 'Polylang(?: (Pro))?'
+        version: 1
+  cookies:
+    pll_language:
+      - pattern: '[a-z]{2}'
+  dom:
+    '#pll_switcher':
+      - pattern: ''

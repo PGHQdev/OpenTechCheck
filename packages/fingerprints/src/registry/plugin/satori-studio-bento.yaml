@@ -1,0 +1,9 @@
+name: Satori Studio Bento
+slug: satori-studio-bento
+category: plugin
+website: https://satoristudio.net/bento-free-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/bento/'

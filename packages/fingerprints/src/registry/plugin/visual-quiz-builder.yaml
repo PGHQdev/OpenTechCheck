@@ -1,0 +1,9 @@
+name: Visual Quiz Builder
+slug: visual-quiz-builder
+category: plugin
+website: https://apps.shopify.com/product-recommendation-quiz
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '//whai-cdn\.nyc\d\.cdn\.digitaloceanspaces\.com/'

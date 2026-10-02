@@ -1,0 +1,11 @@
+name: WP Google Map Embed
+slug: wp-google-map-embed
+category: plugin
+website: https://wpgooglemap.com
+implies: [google-maps]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link#wp-gmap-embed-front-css-css:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: Redux Framework
+slug: redux-framework
+category: plugin
+website: https://redux.io
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    framework:
+      - pattern: 'Redux\s([\d\.]+)'
+        version: 1
+    generator:
+      - pattern: 'Redux\s([\d\.]+)'
+        version: 1

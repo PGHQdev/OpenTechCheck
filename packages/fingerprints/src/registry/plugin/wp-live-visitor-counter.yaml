@@ -1,0 +1,10 @@
+name: WP Live Visitor Counter
+slug: wp-live-visitor-counter
+category: plugin
+website: https://wordpress.org/plugins/wp-visitors-widget/
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/wp-visitors-widget/']:
+      - pattern: ''

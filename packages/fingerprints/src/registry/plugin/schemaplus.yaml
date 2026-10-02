@@ -1,0 +1,14 @@
+name: SchemaPlus
+slug: schemaplus
+category: plugin
+website: https://schemaplus.io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '//schemaplusfiles\.s3\.amazonaws\.com/'
+  js:
+    SchemaPlus_Reviews:
+      - pattern: ''
+    SchemaPlus_handleCallback:
+      - pattern: ''

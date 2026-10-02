@@ -1,0 +1,17 @@
+name: The Events Calendar
+slug: the-events-calendar
+category: plugin
+website: https://theeventscalendar.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/the-events-calendar(?:-pro)?/'
+  js:
+    TribeCalendar:
+      - pattern: ''
+    tribe_l10n_datatables:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/the-events-calendar/']:
+      - pattern: ''

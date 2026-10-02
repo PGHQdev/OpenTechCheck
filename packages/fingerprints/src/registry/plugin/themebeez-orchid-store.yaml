@@ -1,0 +1,13 @@
+name: Themebeez Orchid Store
+slug: themebeez-orchid-store
+category: plugin
+website: https://themebeez.com/themes/orchid-store
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/orchid-store(?:-child)?/.+bundle\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    orchid_store_obj:
+      - pattern: ''

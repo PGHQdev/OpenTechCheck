@@ -1,0 +1,13 @@
+name: Vertex
+slug: vertex
+category: plugin
+website: https://dessign.net/vertex-theme/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/Vertex/js/'
+  meta:
+    generator:
+      - pattern: 'Vertex v\.([\d.]+)'
+        version: 1

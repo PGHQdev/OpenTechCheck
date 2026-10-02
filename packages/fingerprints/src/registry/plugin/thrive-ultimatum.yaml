@@ -1,0 +1,13 @@
+name: Thrive Ultimatum
+slug: thrive-ultimatum
+category: plugin
+website: https://thrivethemes.com/ultimatum/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/thrive-ultimatum/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/thrive-ultimatum/']:
+      - pattern: ''

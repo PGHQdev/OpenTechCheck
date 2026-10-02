@@ -1,0 +1,11 @@
+name: MysteryThemes News Portal Lite
+slug: mysterythemes-news-portal-lite
+category: plugin
+website: https://mysterythemes.com/wp-themes/news-portal-lite
+excludes: [mysterythemes-news-portal]
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/themes/news-portal-lite/']:
+      - pattern: ''

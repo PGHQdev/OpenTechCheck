@@ -1,0 +1,11 @@
+name: Ordersify Product Alerts
+slug: ordersify-product-alerts
+category: plugin
+website: https://ordersify.com/products/product-alerts
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.ordersify\.com/sdk/productalerts-shopify\.js'
+  js:
+    ORDERSIFY_BIS.stockRemainingSetting:
+      - pattern: ''

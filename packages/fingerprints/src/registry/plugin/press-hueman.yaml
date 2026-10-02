@@ -1,0 +1,16 @@
+name: Press Hueman
+slug: press-hueman
+category: plugin
+website: https://presscustomizr.com/hueman
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/hueman/.+scripts\.min\.js(?:\?ver=([\d\.]+))?'
+      version: 1
+  js:
+    HUParams:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/themes/hueman/']:
+      - pattern: ''

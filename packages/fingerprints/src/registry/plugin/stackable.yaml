@@ -1,0 +1,18 @@
+name: Stackable
+slug: stackable
+category: plugin
+website: https://wpstackable.com
+implies: [gutenberg]
+within:
+  techs: [wordpress]
+detect:
+  js:
+    stackable.restUrl:
+      - pattern: ''
+    stackableAnimations:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/stackable-ultimate-gutenberg-blocks']:
+      - attr: href
+        pattern: '/wp-content/plugins/stackable-ultimate-gutenberg-blocks(?:-premium)?/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

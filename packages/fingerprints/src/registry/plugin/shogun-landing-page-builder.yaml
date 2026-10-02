@@ -1,0 +1,9 @@
+name: Shogun Landing Page Builder
+slug: shogun-landing-page-builder
+category: plugin
+website: https://apps.shopify.com/shogun
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.getshogun\.com/.+\.myshopify\.com'

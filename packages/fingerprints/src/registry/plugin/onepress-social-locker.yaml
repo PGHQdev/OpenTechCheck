@@ -1,0 +1,14 @@
+name: OnePress Social Locker
+slug: onepress-social-locker
+category: plugin
+website: https://wordpress.org/plugins/social-locker
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/social-?locker(?:-next-premium)?/bizpanda/assets/'
+  js:
+    __pandalockers:
+      - pattern: ''
+    bizpanda:
+      - pattern: ''

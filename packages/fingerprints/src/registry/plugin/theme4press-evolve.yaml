@@ -1,0 +1,12 @@
+name: Theme4Press Evolve
+slug: theme4press-evolve
+category: plugin
+website: https://theme4press.com/evolve-multipurpose-wordpress-theme
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/evolve(?:-plus)?/'
+  js:
+    evolve_js_local_vars:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: WooCommerce PayPal Checkout Payment Gateway
+slug: woocommerce-paypal-checkout-payment-gateway
+category: plugin
+website: https://github.com/woocommerce/woocommerce-gateway-paypal-express-checkout
+implies: [paypal]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/']:
+      - pattern: ''

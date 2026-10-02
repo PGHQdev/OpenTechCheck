@@ -1,0 +1,9 @@
+name: Spin-a-Sale
+slug: spin-a-sale
+category: plugin
+website: https://spinasale.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'client\.spinasale\.com/'

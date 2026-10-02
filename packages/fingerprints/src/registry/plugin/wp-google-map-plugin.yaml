@@ -1,0 +1,14 @@
+name: WP Google Map Plugin
+slug: wp-google-map-plugin
+category: plugin
+website: https://www.wpmapspro.com
+implies: [google-maps]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-google-map-plugin/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    wpgmp_local:
+      - pattern: ''

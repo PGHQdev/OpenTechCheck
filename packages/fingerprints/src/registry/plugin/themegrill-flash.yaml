@@ -1,0 +1,12 @@
+name: ThemeGrill Flash
+slug: themegrill-flash
+category: plugin
+website: https://themegrill.com/themes/flash
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/flash(?:-pro)?/'
+  dom:
+    link[href='/wp-content/themes/flash']:
+      - pattern: ''

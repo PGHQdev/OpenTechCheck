@@ -1,0 +1,12 @@
+name: Semplice
+slug: semplice
+category: plugin
+website: https://www.semplice.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/semplice(?:\d+)?(?:-child)?(?:-theme)?/'
+  js:
+    semplice.template_dir:
+      - pattern: ''

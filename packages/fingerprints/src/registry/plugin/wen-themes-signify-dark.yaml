@@ -1,0 +1,10 @@
+name: WEN Themes Signify Dark
+slug: wen-themes-signify-dark
+category: plugin
+website: https://wenthemes.com/item/wordpress-themes/signify-dark
+within:
+  techs: [wordpress]
+detect:
+  js:
+    signifyOptions:
+      - pattern: ''

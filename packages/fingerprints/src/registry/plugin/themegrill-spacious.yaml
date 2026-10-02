@@ -1,0 +1,15 @@
+name: ThemeGrill Spacious
+slug: themegrill-spacious
+category: plugin
+website: https://themegrill.com/themes/spacious
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/spacious(?:-pro)?/'
+  js:
+    spacious_slider_value:
+      - pattern: ''
+  dom:
+    link#spacious_style-css:
+      - pattern: ''

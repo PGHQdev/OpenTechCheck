@@ -1,0 +1,15 @@
+name: Seal Subscriptions
+slug: seal-subscriptions
+category: plugin
+website: https://www.sealsubscriptions.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '\.sealsubscriptions\.com/'
+  js:
+    SealSubs.checkout:
+      - pattern: ''
+    sealsubscriptions_settings_updated:
+      - pattern: ''
+    sealsubsloaded:
+      - pattern: ''

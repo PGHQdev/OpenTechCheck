@@ -1,0 +1,13 @@
+name: SiteOrigin Widgets Bundle
+slug: siteorigin-widgets-bundle
+category: plugin
+website: https://siteorigin.com/widgets-bundle
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/so-widgets-bundle/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/so-widgets-bundle/']:
+      - pattern: ''

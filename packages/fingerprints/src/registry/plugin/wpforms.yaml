@@ -1,0 +1,15 @@
+name: WPForms
+slug: wpforms
+category: plugin
+website: https://wpforms.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wpforms(?:-lite)?/.+(?:frontend\.min|wpforms)\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    wpforms:
+      - pattern: ''
+    wpforms_settings:
+      - pattern: ''

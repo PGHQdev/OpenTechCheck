@@ -1,0 +1,10 @@
+name: Omnisend Email Marketing & SMS
+slug: omnisend-email-marketing-sms
+category: plugin
+website: https://apps.shopify.com/omnisend
+implies: [omnisend]
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'omnis(?:nippet1|rc)\.com/inShop/Embed/shopify\.js'

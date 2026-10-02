@@ -1,0 +1,9 @@
+name: Spexo Addons
+slug: spexo-addons
+category: plugin
+website: https://spexoaddons.com/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/sastra-essential-addons-for-elementor/'

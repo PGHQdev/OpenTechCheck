@@ -1,0 +1,11 @@
+name: PickyStory
+slug: pickystory
+category: plugin
+website: https://pickystory.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.pickystory\.com/'
+  js:
+    pickystory.overrideStore:
+      - pattern: ''

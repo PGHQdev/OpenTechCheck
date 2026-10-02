@@ -1,0 +1,18 @@
+name: Vitals
+slug: vitals
+category: plugin
+website: https://vitals.co
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '//appsolve\.io/'
+  js:
+    VITALS:
+      - pattern: ''
+    vitals_app_cache_keys_v1:
+      - pattern: ''
+    vitals_country_code:
+      - pattern: ''
+    vitals_product_data:
+      - pattern: ''

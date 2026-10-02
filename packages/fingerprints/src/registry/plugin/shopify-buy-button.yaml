@@ -1,0 +1,10 @@
+name: Shopify Buy Button
+slug: shopify-buy-button
+category: plugin
+website: https://apps.shopify.com/buy-button
+detect:
+  scripts:
+    - pattern: 'sdk\. shopifycdn\.com/buy-button/latest/'
+  js:
+    ShopifyBuy:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: RankMath SEO
+slug: rankmath-seo
+category: plugin
+website: https://rankmath.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/seo-by-rank-math(?:-pro)?/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/seo-by-rank-math/'], script.rank-math-schema-pro, script.rank-math-schema:
+      - pattern: ''

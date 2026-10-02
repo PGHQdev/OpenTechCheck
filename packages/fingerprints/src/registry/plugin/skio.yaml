@@ -1,0 +1,8 @@
+name: Skio
+slug: skio
+category: plugin
+website: https://skio.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.skio\.com/'

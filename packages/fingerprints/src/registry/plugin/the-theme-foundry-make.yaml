@@ -1,0 +1,17 @@
+name: The Theme Foundry Make
+slug: the-theme-foundry-make
+category: plugin
+website: https://thethemefoundry.com/wordpress-themes/make
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/make(?:-child)?/.+frontend\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    MakeDynamicStylesheet:
+      - pattern: ''
+        confidence: 50
+    MakeFrontEnd:
+      - pattern: ''
+        confidence: 50

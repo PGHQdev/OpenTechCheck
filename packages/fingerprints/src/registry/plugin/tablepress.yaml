@@ -1,0 +1,10 @@
+name: TablePress
+slug: tablepress
+category: plugin
+website: https://tablepress.org
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/tablepress/']:
+      - pattern: ''

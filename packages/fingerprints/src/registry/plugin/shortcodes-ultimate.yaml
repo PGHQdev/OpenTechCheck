@@ -1,0 +1,13 @@
+name: Shortcodes Ultimate
+slug: shortcodes-ultimate
+category: plugin
+website: https://getshortcodes.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/shortcodes-ultimate/.+index\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/shortcodes-ultimate/']:
+      - pattern: ''

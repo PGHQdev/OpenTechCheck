@@ -1,0 +1,18 @@
+name: OceanWP
+slug: oceanwp
+category: plugin
+website: https://oceanwp.org
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'themes/oceanwp\S*\.js(?:\?ver=([0-9.]+))?'
+      version: 1
+  dom:
+    body[class*='oceanwp-theme']:
+      - text: true
+        pattern: ''
+    link[id*='oceanwp']:
+      - attr: href
+        pattern: 'oceanwp\S*\.css(?:\?ver=([0-9.]+))?'
+        version: 1

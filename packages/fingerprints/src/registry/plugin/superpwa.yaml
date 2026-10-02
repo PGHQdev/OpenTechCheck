@@ -1,0 +1,9 @@
+name: SuperPWA
+slug: superpwa
+category: plugin
+website: https://superpwa.com
+implies: [wordpress, pwa]
+detect:
+  js:
+    superpwa_sw:
+      - pattern: ''

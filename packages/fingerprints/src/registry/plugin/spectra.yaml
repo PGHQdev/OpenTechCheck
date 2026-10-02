@@ -1,0 +1,14 @@
+name: Spectra
+slug: spectra
+category: plugin
+website: https://wpspectra.com
+implies: [gutenberg]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/ultimate-addons-for-gutenberg/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='/wp-content/plugins/ultimate-addons-for-gutenberg/']:
+      - pattern: ''

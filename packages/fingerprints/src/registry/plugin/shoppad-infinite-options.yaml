@@ -1,0 +1,9 @@
+name: ShopPad Infinite Options
+slug: shoppad-infinite-options
+category: plugin
+website: https://apps.shopify.com/custom-options
+implies: [shopify]
+detect:
+  js:
+    Shoppad.apps.infiniteoptions:
+      - pattern: ''

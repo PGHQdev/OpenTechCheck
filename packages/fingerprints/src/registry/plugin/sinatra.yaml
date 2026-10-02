@@ -1,0 +1,15 @@
+name: Sinatra
+slug: sinatra
+category: plugin
+website: https://try.sinatrawp.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/sinatra/.+sinatra\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    sinatraSlideUp:
+      - pattern: ''
+    sinatra_vars.nonce:
+      - pattern: ''

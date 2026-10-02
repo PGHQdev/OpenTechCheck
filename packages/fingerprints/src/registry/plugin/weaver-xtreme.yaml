@@ -1,0 +1,20 @@
+name: Weaver Xtreme
+slug: weaver-xtreme
+category: plugin
+website: https://weavertheme.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/weaver-xtreme/.+weaverxjslib-end\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    weaverxBottomFooter:
+      - pattern: ''
+    weaverxMonitorContent:
+      - pattern: ''
+    weaverxOnResize:
+      - pattern: ''
+  dom:
+    link#weaverx-style-sheet-css:
+      - pattern: ''

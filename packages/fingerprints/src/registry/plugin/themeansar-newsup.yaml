@@ -1,0 +1,9 @@
+name: Themeansar Newsup
+slug: themeansar-newsup
+category: plugin
+website: https://themeansar.com/free-themes/newsup
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/newsup(?:-pro)?/'

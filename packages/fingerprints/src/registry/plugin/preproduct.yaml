@@ -1,0 +1,12 @@
+name: PreProduct
+slug: preproduct
+category: plugin
+website: https://preproduct.io
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.preproduct\.io'
+  js:
+    PPshowPreProduct:
+      - pattern: ''

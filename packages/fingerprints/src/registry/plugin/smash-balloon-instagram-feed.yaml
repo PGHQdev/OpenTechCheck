@@ -1,0 +1,12 @@
+name: Smash Balloon Instagram Feed
+slug: smash-balloon-instagram-feed
+category: plugin
+website: https://smashballoon.com/instagram-feed
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/instagram-feed/'
+  dom:
+    link[href*='/wp-content/plugins/instagram-feed/']:
+      - pattern: ''

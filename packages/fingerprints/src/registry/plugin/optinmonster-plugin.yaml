@@ -1,0 +1,10 @@
+name: OptinMonster plugin
+slug: optinmonster-plugin
+category: plugin
+website: https://optinmonster.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/optinmonster/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

@@ -1,0 +1,10 @@
+name: Understrap
+slug: understrap
+category: plugin
+website: https://understrap.com
+implies: [bootstrap]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'wp-content/themes/understrap(?:[masterchild-]+)?(?:[masterchild-]+)?/'

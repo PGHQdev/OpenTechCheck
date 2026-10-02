@@ -1,0 +1,10 @@
+name: WebFactory Under Construction
+slug: webfactory-under-construction
+category: plugin
+website: https://wordpress.org/plugins/under-construction-page
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/under-construction-page/']:
+      - pattern: ''

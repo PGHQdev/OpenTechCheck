@@ -1,0 +1,15 @@
+name: Theme Vision Agama
+slug: theme-vision-agama
+category: plugin
+website: https://theme-vision.com/agama
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/agama(?:-pro)?/.+functions\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    agama:
+      - pattern: ''
+    agama_pro:
+      - pattern: ''

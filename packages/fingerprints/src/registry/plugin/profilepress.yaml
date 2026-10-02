@@ -1,0 +1,16 @@
+name: ProfilePress
+slug: profilepress
+category: plugin
+website: https://profilepress.net
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-user-avatar(?:-pro)?/.+frontend\.min\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  cookies:
+    ppwp_wp_session:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/plugins/wp-user-avatar/']:
+      - pattern: ''

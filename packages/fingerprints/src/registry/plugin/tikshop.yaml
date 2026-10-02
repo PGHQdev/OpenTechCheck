@@ -1,0 +1,9 @@
+name: TikShop
+slug: tikshop
+category: plugin
+website: https://tikshop.co
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.tikshop\.co/'

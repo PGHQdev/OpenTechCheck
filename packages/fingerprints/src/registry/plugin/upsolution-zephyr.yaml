@@ -1,0 +1,10 @@
+name: UpSolution Zephyr
+slug: upsolution-zephyr
+category: plugin
+website: https://zephyr.us-themes.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/Zephyr/.+us\.theme\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

@@ -1,0 +1,12 @@
+name: Theme Freesia ShoppingCart
+slug: theme-freesia-shoppingcart
+category: plugin
+website: https://themefreesia.com/themes/shoppingcart
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/shoppingcart(?:-plus)?/'
+  js:
+    shoppingcart_slider_value:
+      - pattern: ''

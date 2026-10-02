@@ -1,0 +1,12 @@
+name: WordPress Default
+slug: wordpress-default
+category: plugin
+website: https://wordpress.org/themes/default
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/default/'
+  dom:
+    link[href*='/wp-content/themes/default/']:
+      - pattern: ''

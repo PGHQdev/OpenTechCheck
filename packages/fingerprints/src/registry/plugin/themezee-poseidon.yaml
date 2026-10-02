@@ -1,0 +1,12 @@
+name: ThemeZee Poseidon
+slug: themezee-poseidon
+category: plugin
+website: https://themezee.com/themes/poseidon
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/poseidon/'
+  js:
+    poseidonScreenReaderText:
+      - pattern: ''

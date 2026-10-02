@@ -1,0 +1,8 @@
+name: WideBundle
+slug: widebundle
+category: plugin
+website: https://en.widebundle.com
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: '//widebundle\.com/'

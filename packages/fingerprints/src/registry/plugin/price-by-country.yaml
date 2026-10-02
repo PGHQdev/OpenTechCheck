@@ -1,0 +1,10 @@
+name: Price By Country
+slug: price-by-country
+category: plugin
+website: https://woocommerce.com/products/price-by-country
+detect:
+  js:
+    wc_price_based_country_ajax_geo_params:
+      - pattern: ''
+    wc_price_based_country_pro_frontend_params:
+      - pattern: ''

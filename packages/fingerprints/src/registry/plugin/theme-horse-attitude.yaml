@@ -1,0 +1,12 @@
+name: Theme Horse Attitude
+slug: theme-horse-attitude
+category: plugin
+website: https://www.themehorse.com/themes/attitude
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/attitude(?:-pro)?/'
+  dom:
+    link[href*='/wp-content/themes/attitude-pro/']:
+      - pattern: ''

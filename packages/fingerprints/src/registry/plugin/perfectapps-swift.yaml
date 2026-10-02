@@ -1,0 +1,19 @@
+name: PerfectApps Swift
+slug: perfectapps-swift
+category: plugin
+website: https://apps.shopify.com/swift
+within:
+  techs: [shopify]
+detect:
+  html:
+    - pattern: 'ps_apiURI\s*=\s*["'']https://swift-api\.perfectapps\.io'
+    - pattern: 'ps_storeUrl\s*=\s*["'']https://swift\.perfectapps\.io'
+  scripts:
+    - pattern: 'swift\.perfectapps\.io/'
+  js:
+    ps_apiURI:
+      - pattern: 'swift-api\.perfectapps\.io/'
+      - pattern: 'swift-api\.perfectapps\.io'
+    ps_storeUrl:
+      - pattern: 'swift\.perfectapps\.io'
+      - pattern: 'swift\.perfectapps\.io'

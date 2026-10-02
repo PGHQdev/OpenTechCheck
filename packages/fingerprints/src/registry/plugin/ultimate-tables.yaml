@@ -1,0 +1,9 @@
+name: Ultimate Tables
+slug: ultimate-tables
+category: plugin
+website: https://wphive.com/plugins/ultimate-tables
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/ultimate-tables/'

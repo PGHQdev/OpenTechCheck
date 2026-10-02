@@ -1,0 +1,17 @@
+name: Twenty Twenty-One
+slug: twenty-twenty-one
+category: plugin
+website: https://wordpress.org/themes/twentytwentyone
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/twentytwentyone/'
+  js:
+    twentytwentyoneCollapseMenuOnClickOutside:
+      - pattern: ''
+    twentytwentyoneResponsiveEmbeds:
+      - pattern: ''
+  dom:
+    link#twenty-twenty-one-style-css:
+      - pattern: ''

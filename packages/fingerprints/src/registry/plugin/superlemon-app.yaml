@@ -1,0 +1,9 @@
+name: SuperLemon app
+slug: superlemon-app
+category: plugin
+website: https://apps.shopify.com/whatsapp-chat-button
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '/files/superlemon_.+\.js'

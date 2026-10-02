@@ -1,0 +1,13 @@
+name: Releasit COD Form & Upsells
+slug: releasit-cod-form-upsells
+category: plugin
+website: https://www.releas.it/products/releasit-cod-form-upsells
+within:
+  techs: [shopify]
+detect:
+  js:
+    RSI_CSS_LOADER:
+      - pattern: ''
+  dom:
+    script#rsi-cod-form-product-cache:
+      - pattern: ''

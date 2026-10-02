@@ -1,0 +1,15 @@
+name: WP Fastest Cache
+slug: wp-fastest-cache
+category: plugin
+website: https://www.wpfastestcache.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/cache/wpfc-minified/'
+  js:
+    Wpfcll:
+      - pattern: ''
+  dom:
+    link[href*='/wp-content/cache/wpfc-minified/']:
+      - pattern: ''

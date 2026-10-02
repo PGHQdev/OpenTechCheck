@@ -1,0 +1,17 @@
+name: PressMaximum Customify
+slug: pressmaximum-customify
+category: plugin
+website: https://pressmaximum.com/customify
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/customify/.+theme\.min\.js(?:.+ver=([\d\.]+))?'
+      version: 1
+  js:
+    Customify:
+      - pattern: ''
+    Customify_JS:
+      - pattern: ''
+    customify_is_mobile:
+      - pattern: ''

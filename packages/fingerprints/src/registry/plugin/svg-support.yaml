@@ -1,0 +1,12 @@
+name: SVG Support
+slug: svg-support
+category: plugin
+website: https://github.com/wp-plugins/svg-support
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/svg-support/'
+  dom:
+    link[href*='/wp-content/plugins/svg-support/']:
+      - pattern: ''

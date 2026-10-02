@@ -1,0 +1,10 @@
+name: ThemeIsle Menu Icons
+slug: themeisle-menu-icons
+category: plugin
+website: https://wordpress.org/plugins/menu-icons
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/plugins/menu-icons/']:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Ultimate Addons for Elementor
+slug: ultimate-addons-for-elementor
+category: plugin
+website: https://ultimateelementor.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    uael_particles_script.particles_url:
+      - pattern: '/wp-content/plugins/ultimate-elementor/'
+  dom:
+    link[href*='/wp-content/plugins/ultimate-elementor/']:
+      - attr: href
+        pattern: '/wp-content/plugins/ultimate-elementor/.+\.css(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+        version: 1

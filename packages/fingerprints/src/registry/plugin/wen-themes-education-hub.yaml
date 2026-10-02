@@ -1,0 +1,12 @@
+name: WEN Themes Education Hub
+slug: wen-themes-education-hub
+category: plugin
+website: https://wenthemes.com/item/wordpress-themes/education-hub
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/education-hub(?:-pro)?/'
+  js:
+    EducationHubScreenReaderText:
+      - pattern: ''

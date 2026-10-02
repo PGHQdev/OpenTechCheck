@@ -1,0 +1,13 @@
+name: WP Job Openings
+slug: wp-job-openings
+category: plugin
+website: https://wpjobopenings.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-job-openings/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    awsmJobs:
+      - pattern: ''

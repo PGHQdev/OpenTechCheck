@@ -1,0 +1,10 @@
+name: Themebeez Cream Magazine
+slug: themebeez-cream-magazine
+category: plugin
+website: https://themebeez.com/themes/cream-magazine
+within:
+  techs: [wordpress]
+detect:
+  js:
+    cream_magazine_script_obj:
+      - pattern: ''

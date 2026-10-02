@@ -1,0 +1,12 @@
+name: Theme Freesia Edge
+slug: theme-freesia-edge
+category: plugin
+website: https://themefreesia.com/themes/edge
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/edge(?:-plus)?/'
+  js:
+    edge_slider_value:
+      - pattern: ''

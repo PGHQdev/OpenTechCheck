@@ -1,0 +1,9 @@
+name: Smart Slider 3
+slug: smart-slider-3
+category: plugin
+website: https://smartslider3.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/smart-slider-3(?:-pro)?/'

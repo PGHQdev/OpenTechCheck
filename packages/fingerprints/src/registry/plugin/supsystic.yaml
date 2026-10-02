@@ -1,0 +1,9 @@
+name: Supsystic
+slug: supsystic
+category: plugin
+website: https://supsystic.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/plugins/data-tables-generator-by-supsystic/'
