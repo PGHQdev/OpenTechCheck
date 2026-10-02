@@ -1,0 +1,8 @@
+name: Zipteams
+slug: zipteams
+category: live-chat
+website: https://zipteams.com
+detect:
+  js:
+    ZipteamsWidget:
+      - pattern: ''

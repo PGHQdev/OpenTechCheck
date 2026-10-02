@@ -1,0 +1,7 @@
+name: Tooltip
+slug: tooltip
+category: live-chat
+website: https://tooltip.io
+detect:
+  scripts:
+    - pattern: 'cdn\.tooltip\.io/'

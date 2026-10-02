@@ -1,0 +1,12 @@
+name: WhosOn
+slug: whoson
+category: live-chat
+website: https://www.whoson.com
+detect:
+  scripts:
+    - pattern: '\.whoson\.com/'
+  js:
+    whoson_global:
+      - pattern: ''
+    whoson_init:
+      - pattern: ''

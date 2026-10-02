@@ -1,0 +1,14 @@
+name: Tiledesk
+slug: tiledesk
+category: live-chat
+website: https://tiledesk.com
+detect:
+  js:
+    Tiledesk:
+      - pattern: ''
+    tileDeskAsyncInit:
+      - pattern: ''
+    tiledesk:
+      - pattern: ''
+    tiledeskSettings:
+      - pattern: ''

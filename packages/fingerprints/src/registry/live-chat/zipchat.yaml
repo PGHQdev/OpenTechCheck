@@ -1,0 +1,8 @@
+name: Zipchat
+slug: zipchat
+category: live-chat
+website: https://zipchat.ai
+detect:
+  js:
+    zipchatWidgetLoaded:
+      - pattern: ''

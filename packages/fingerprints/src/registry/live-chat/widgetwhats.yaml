@@ -1,0 +1,10 @@
+name: WidgetWhats
+slug: widgetwhats
+category: live-chat
+website: https://widgetwhats.com
+detect:
+  scripts:
+    - pattern: '\.widgetwhats\.com/'
+  js:
+    wwwa_loaded:
+      - pattern: ''

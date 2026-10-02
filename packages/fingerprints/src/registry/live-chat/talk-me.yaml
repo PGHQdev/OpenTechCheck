@@ -1,0 +1,14 @@
+name: Talk-Me
+slug: talk-me
+category: live-chat
+website: https://talk-me.ru
+detect:
+  js:
+    MeTalk:
+      - pattern: ''
+    TalkMe:
+      - pattern: ''
+    TalkMeIsInitialized:
+      - pattern: ''
+    TalkMeSetup:
+      - pattern: ''

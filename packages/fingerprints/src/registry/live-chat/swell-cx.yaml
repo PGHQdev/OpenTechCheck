@@ -1,0 +1,7 @@
+name: Swell CX
+slug: swell-cx
+category: live-chat
+website: https://www.swellcx.com
+detect:
+  scripts:
+    - pattern: 'platform\.swellcx\.com/'

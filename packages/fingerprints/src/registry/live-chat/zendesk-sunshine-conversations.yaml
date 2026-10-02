@@ -1,0 +1,8 @@
+name: Zendesk Sunshine Conversations
+slug: zendesk-sunshine-conversations
+category: live-chat
+website: https://www.zendesk.com/platform/conversations
+implies: [zendesk]
+detect:
+  scripts:
+    - pattern: 'cdn\.smooch\.io/'

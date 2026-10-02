@@ -1,0 +1,10 @@
+name: Tactful
+slug: tactful
+category: live-chat
+website: https://tactful.ai
+detect:
+  scripts:
+    - pattern: 'webchat\.tactful\.ai'
+  js:
+    Tactful.TACTFUL_CLIENT_ID:
+      - pattern: ''

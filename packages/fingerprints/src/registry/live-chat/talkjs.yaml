@@ -1,0 +1,11 @@
+name: TalkJS
+slug: talkjs
+category: live-chat
+website: https://talkjs.com
+detect:
+  js:
+    Talk.v:
+      - pattern: '^(.+)$'
+        version: 1
+    _talkjs_locales:
+      - pattern: ''

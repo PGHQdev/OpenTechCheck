@@ -1,0 +1,12 @@
+name: Whelp
+slug: whelp
+category: live-chat
+website: https://whelp.co
+detect:
+  scripts:
+    - pattern: 'widget\.getwhelp\.com'
+  js:
+    Whelp.Init:
+      - pattern: ''
+    WhelpConfig:
+      - pattern: ''

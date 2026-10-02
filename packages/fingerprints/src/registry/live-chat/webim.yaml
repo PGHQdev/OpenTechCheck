@@ -1,0 +1,13 @@
+name: Webim
+slug: webim
+category: live-chat
+website: https://webim.ru
+detect:
+  scripts:
+    - pattern: '\.webim\.ru/'
+  js:
+    webim:
+      - pattern: ''
+    webim.version:
+      - pattern: '^(.+)$'
+        version: 1

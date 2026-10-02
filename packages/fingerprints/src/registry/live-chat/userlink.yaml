@@ -1,0 +1,12 @@
+name: Userlink
+slug: userlink
+category: live-chat
+website: https://userlink.ai
+detect:
+  scripts:
+    - pattern: 'files\.userlink\.ai'
+  js:
+    setUserlinkChatVisible:
+      - pattern: ''
+    userlinkIsInAvailableTimePeriod:
+      - pattern: ''

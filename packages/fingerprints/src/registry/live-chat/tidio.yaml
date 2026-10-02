@@ -1,0 +1,10 @@
+name: Tidio
+slug: tidio
+category: live-chat
+website: https://www.tidio.com
+detect:
+  scripts:
+    - pattern: 'code\.tidio\.co'
+  js:
+    tidioChatApi:
+      - pattern: ''

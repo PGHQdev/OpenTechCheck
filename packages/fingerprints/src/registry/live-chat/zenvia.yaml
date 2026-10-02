@@ -1,0 +1,10 @@
+name: Zenvia
+slug: zenvia
+category: live-chat
+website: https://www.zenvia.com
+detect:
+  scripts:
+    - pattern: 'static\.zenvia\.com'
+  js:
+    ZenviaChat:
+      - pattern: ''

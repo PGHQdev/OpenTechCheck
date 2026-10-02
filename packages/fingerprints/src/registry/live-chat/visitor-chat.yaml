@@ -1,0 +1,14 @@
+name: Visitor Chat
+slug: visitor-chat
+category: live-chat
+website: https://visitor.chat
+detect:
+  js:
+    VisitorChatInit:
+      - pattern: ''
+    VisitorChat_Close:
+      - pattern: ''
+    VisitorChat_Init:
+      - pattern: ''
+    VisitorChat_clearStore:
+      - pattern: ''

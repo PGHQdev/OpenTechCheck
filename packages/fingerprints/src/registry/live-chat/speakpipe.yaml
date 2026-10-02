@@ -1,0 +1,14 @@
+name: SpeakPipe
+slug: speakpipe
+category: live-chat
+website: https://www.speakpipe.com
+detect:
+  js:
+    _speakpipe_dialog_loaded:
+      - pattern: ''
+    _speakpipe_open_reply_dialog:
+      - pattern: ''
+    _speakpipe_open_reply_dialog_by_token:
+      - pattern: ''
+    _speakpipe_open_widget:
+      - pattern: ''

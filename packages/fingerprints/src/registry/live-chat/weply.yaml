@@ -1,0 +1,10 @@
+name: Weply
+slug: weply
+category: live-chat
+website: https://weply.chat
+detect:
+  scripts:
+    - pattern: 'app\.weply\.chat/'
+  js:
+    $$weply:
+      - pattern: ''

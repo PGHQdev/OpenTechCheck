@@ -1,0 +1,10 @@
+name: yellow.ai
+slug: yellow-ai
+category: live-chat
+website: https://yellow.ai/
+detect:
+  scripts:
+    - pattern: 'cdn\.yellowmessenger\.com'
+  js:
+    ymConfig:
+      - pattern: ''

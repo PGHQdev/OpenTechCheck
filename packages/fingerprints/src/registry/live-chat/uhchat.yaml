@@ -1,0 +1,13 @@
+name: uhChat
+slug: uhchat
+category: live-chat
+website: https://uhchat.net
+detect:
+  cookies:
+    uhchatrelock:
+      - pattern: ''
+  js:
+    getuhchatCookie:
+      - pattern: ''
+    uhchatClick:
+      - pattern: ''

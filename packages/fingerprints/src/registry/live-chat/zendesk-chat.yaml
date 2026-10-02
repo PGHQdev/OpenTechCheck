@@ -1,0 +1,7 @@
+name: Zendesk Chat
+slug: zendesk-chat
+category: live-chat
+website: https://www.zendesk.com/service/messaging/live-chat-software/
+detect:
+  scripts:
+    - pattern: 'v2\.zopim\.com'

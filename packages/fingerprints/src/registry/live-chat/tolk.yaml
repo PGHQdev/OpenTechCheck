@@ -1,0 +1,7 @@
+name: Tolk
+slug: tolk
+category: live-chat
+website: https://www.tolk.ai
+detect:
+  scripts:
+    - pattern: 'script\.tolk\.ai'

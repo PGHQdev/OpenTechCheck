@@ -1,0 +1,9 @@
+name: Spatie Support Bubble
+slug: spatie-support-bubble
+category: live-chat
+website: https://github.com/spatie/laravel-support-bubble
+implies: [laravel, tailwindcss]
+detect:
+  dom:
+    div.spatie-support-bubble:
+      - pattern: ''

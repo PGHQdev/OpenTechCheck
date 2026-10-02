@@ -1,0 +1,8 @@
+name: Verloop
+slug: verloop
+category: live-chat
+website: https://verloop.io/
+detect:
+  js:
+    Verloop:
+      - pattern: ''

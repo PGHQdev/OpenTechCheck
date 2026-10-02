@@ -1,0 +1,13 @@
+name: Tars
+slug: tars
+category: live-chat
+website: https://hellotars.com/
+detect:
+  scripts:
+    - pattern: 'api\.hellotars\.com/'
+  js:
+    tarsWidget:
+      - pattern: ''
+  dom:
+    link[href*='api.hellotars.com/']:
+      - pattern: ''

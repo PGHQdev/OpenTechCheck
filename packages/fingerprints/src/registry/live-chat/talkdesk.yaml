@@ -1,0 +1,12 @@
+name: Talkdesk
+slug: talkdesk
+category: live-chat
+website: https://www.talkdesk.com
+detect:
+  scripts:
+    - pattern: '\.talkdeskapp\.com/'
+  js:
+    TalkdeskChatSDK:
+      - pattern: ''
+    webpackChunkTalkdeskChatSDK:
+      - pattern: ''

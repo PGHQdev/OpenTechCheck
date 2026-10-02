@@ -1,0 +1,10 @@
+name: Zoho SalesIQ
+slug: zoho-salesiq
+category: live-chat
+website: https://www.zoho.com/salesiq
+detect:
+  scripts:
+    - pattern: 'salesiq\.zohopublic\.com'
+  js:
+    $zoho.salesiq:
+      - pattern: ''

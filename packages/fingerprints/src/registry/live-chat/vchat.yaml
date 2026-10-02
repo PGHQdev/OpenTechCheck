@@ -1,0 +1,8 @@
+name: vChat
+slug: vchat
+category: live-chat
+website: https://vchat.vn
+detect:
+  js:
+    __vnpDefault.url:
+      - pattern: 'core\.vchat\.vn'

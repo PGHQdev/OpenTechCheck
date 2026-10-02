@@ -1,0 +1,10 @@
+name: Superchat
+slug: superchat
+category: live-chat
+website: https://www.superchat.com/
+detect:
+  scripts:
+    - pattern: '\.superchat\.de/'
+  js:
+    Superchat.init:
+      - pattern: ''

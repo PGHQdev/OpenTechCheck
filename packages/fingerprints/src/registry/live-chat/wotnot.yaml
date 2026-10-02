@@ -1,0 +1,10 @@
+name: WotNot
+slug: wotnot
+category: live-chat
+website: https://wotnot.io
+detect:
+  scripts:
+    - pattern: 'app\.wotnot\.io/'
+  js:
+    WotNot.GetChatWindow:
+      - pattern: ''

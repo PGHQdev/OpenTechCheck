@@ -1,0 +1,10 @@
+name: Trengo
+slug: trengo
+category: live-chat
+website: https://trengo.com
+detect:
+  scripts:
+    - pattern: '\.widget\.trengo\.eu/'
+  js:
+    Trengo.eventBus:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Venyoo
+slug: venyoo
+category: live-chat
+website: https://venew.io
+detect:
+  scripts:
+    - pattern: '\.venyoo\.ru/'
+  js:
+    venyooProxyScript:
+      - pattern: ''

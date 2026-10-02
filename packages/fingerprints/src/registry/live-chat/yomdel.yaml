@@ -1,0 +1,7 @@
+name: Yomdel
+slug: yomdel
+category: live-chat
+website: https://www.yomdel.com
+detect:
+  scripts:
+    - pattern: 'clients\.yomdel\.com/'

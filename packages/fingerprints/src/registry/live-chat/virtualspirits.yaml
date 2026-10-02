@@ -1,0 +1,12 @@
+name: VirtualSpirits
+slug: virtualspirits
+category: live-chat
+website: https://www.virtualspirits.com
+detect:
+  js:
+    vspiritbutton:
+      - pattern: ''
+    vspirits_chat_client:
+      - pattern: ''
+    vspiritsizeheight:
+      - pattern: ''

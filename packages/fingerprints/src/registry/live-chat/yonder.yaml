@@ -1,0 +1,12 @@
+name: Yonder
+slug: yonder
+category: live-chat
+website: https://www.yonderhq.com
+detect:
+  scripts:
+    - pattern: '\.yonderhq\.com/'
+  js:
+    YONDER_APP_LOADED:
+      - pattern: ''
+    toggleYonderChat:
+      - pattern: ''

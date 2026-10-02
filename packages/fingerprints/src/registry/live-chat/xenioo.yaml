@@ -1,0 +1,10 @@
+name: Xenioo
+slug: xenioo
+category: live-chat
+website: https://www.xenioo.com
+detect:
+  scripts:
+    - pattern: 'static\.xenioo\.com'
+  js:
+    Xenioo:
+      - pattern: ''

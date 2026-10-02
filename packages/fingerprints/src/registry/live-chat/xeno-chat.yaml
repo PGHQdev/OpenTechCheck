@@ -1,0 +1,12 @@
+name: Xeno Chat
+slug: xeno-chat
+category: live-chat
+website: https://xenoapp.com
+detect:
+  scripts:
+    - pattern: 'cdn\.xeno\.app'
+  js:
+    _xeno._Utils:
+      - pattern: ''
+    _xenoLoader:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Subiz
+slug: subiz
+category: live-chat
+website: https://subiz.com.vn
+detect:
+  js:
+    subiz:
+      - pattern: ''
