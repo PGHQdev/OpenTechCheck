@@ -1,0 +1,10 @@
+name: Quora Pixel
+slug: quora-pixel
+category: analytics
+website: https://quoraadsupport.zendesk.com/hc/en-us/categories/115001573928-Pixels-Tracking
+detect:
+  scripts:
+    - pattern: '\.quora\.com/'
+  js:
+    qp.qp:
+      - pattern: ''

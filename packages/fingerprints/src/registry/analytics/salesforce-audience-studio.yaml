@@ -1,0 +1,15 @@
+name: Salesforce Audience Studio
+slug: salesforce-audience-studio
+category: analytics
+website: https://www.salesforce.com/products/marketing-cloud/data-management
+detect:
+  scripts:
+    - pattern: '\.krxd\.net/'
+  js:
+    Krux:
+      - pattern: ''
+    updateKruxCookie:
+      - pattern: ''
+  dom:
+    link[href*='.krxd.net']:
+      - pattern: ''

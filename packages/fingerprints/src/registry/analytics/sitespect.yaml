@@ -1,0 +1,10 @@
+name: SiteSpect
+slug: sitespect
+category: analytics
+website: https://www.sitespect.com
+detect:
+  scripts:
+    - pattern: '/__ssobj/core\.js'
+  js:
+    ss_dom_var:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Segmetrics
+slug: segmetrics
+category: analytics
+website: https://segmetrics.io
+detect:
+  scripts:
+    - pattern: '\.segmetrics\.io'

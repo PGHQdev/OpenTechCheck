@@ -1,0 +1,10 @@
+name: Wonder
+slug: wonder
+category: analytics
+website: https://www.wonder-ma.com
+detect:
+  scripts:
+    - pattern: '\.wonder-ma\.com/'
+  js:
+    vmwondertracking:
+      - pattern: ''

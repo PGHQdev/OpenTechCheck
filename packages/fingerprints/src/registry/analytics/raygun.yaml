@@ -1,0 +1,14 @@
+name: Raygun
+slug: raygun
+category: analytics
+website: https://raygun.com
+detect:
+  scripts:
+    - pattern: '\.raygun\.io'
+  js:
+    Raygun:
+      - pattern: ''
+    raygunEnabled:
+      - pattern: ''
+    raygunFactory:
+      - pattern: ''

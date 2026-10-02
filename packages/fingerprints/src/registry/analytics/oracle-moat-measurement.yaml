@@ -1,0 +1,7 @@
+name: Oracle Moat Measurement
+slug: oracle-moat-measurement
+category: analytics
+website: https://www.oracle.com/cx/advertising/measurement/
+detect:
+  scripts:
+    - pattern: 'moatads\.com'

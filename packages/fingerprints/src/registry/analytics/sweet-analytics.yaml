@@ -1,0 +1,8 @@
+name: Sweet Analytics
+slug: sweet-analytics
+category: analytics
+website: https://sweetanalytics.com
+detect:
+  js:
+    sweet.acceptCookies:
+      - pattern: ''

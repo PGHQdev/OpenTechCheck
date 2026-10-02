@@ -1,0 +1,10 @@
+name: Signifyd
+slug: signifyd
+category: analytics
+website: https://www.signifyd.com
+detect:
+  scripts:
+    - pattern: '\.signifyd\.com'
+  js:
+    SIGNIFYD_GLOBAL:
+      - pattern: ''

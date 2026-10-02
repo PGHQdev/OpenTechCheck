@@ -1,0 +1,7 @@
+name: Quotemedia
+slug: quotemedia
+category: analytics
+website: https://quotemedia.com
+detect:
+  scripts:
+    - pattern: 'qmod\.quotemedia\.com/'

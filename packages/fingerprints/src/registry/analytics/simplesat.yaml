@@ -1,0 +1,10 @@
+name: SimpleSat
+slug: simplesat
+category: analytics
+website: https://www.simplesat.io
+detect:
+  scripts:
+    - pattern: '\.simplesat\.io/'
+  dom:
+    link[href*='cdn.simplesat.io/']:
+      - pattern: ''

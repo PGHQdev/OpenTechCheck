@@ -1,0 +1,9 @@
+name: Talkable
+slug: talkable
+category: analytics
+website: https://www.talkable.com
+detect:
+  js:
+    talkable.config.version:
+      - pattern: '([\d\.]+)'
+        version: 1

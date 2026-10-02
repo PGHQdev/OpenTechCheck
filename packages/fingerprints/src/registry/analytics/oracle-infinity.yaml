@@ -1,0 +1,7 @@
+name: Oracle Infinity
+slug: oracle-infinity
+category: analytics
+website: https://www.oracle.com/cx/marketing/digital-intelligence/
+detect:
+  scripts:
+    - pattern: 'c\.oracleinfinity\.io'

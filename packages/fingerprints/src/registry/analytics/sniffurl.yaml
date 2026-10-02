@@ -1,0 +1,8 @@
+name: SniffURL
+slug: sniffurl
+category: analytics
+website: https://sniffurl.com
+detect:
+  js:
+    SniffUrl.identify:
+      - pattern: ''

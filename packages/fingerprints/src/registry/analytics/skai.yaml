@@ -1,0 +1,8 @@
+name: Skai
+slug: skai
+category: analytics
+website: https://skai.io
+detect:
+  js:
+    Ktag_Constants:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Roistat
+slug: roistat
+category: analytics
+website: https://roistat.com/
+detect:
+  js:
+    roistatHost:
+      - pattern: ''
+    roistatProjectId:
+      - pattern: ''

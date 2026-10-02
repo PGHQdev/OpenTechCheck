@@ -1,0 +1,10 @@
+name: Vercel Analytics
+slug: vercel-analytics
+category: analytics
+website: https://vercel.com/analytics
+within:
+  techs: [vercel]
+detect:
+  scripts:
+    - pattern: '/va/script\.js'
+    - pattern: '/_vercel/insights/script\.js'

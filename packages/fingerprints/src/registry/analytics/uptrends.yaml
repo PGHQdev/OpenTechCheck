@@ -1,0 +1,11 @@
+name: Uptrends
+slug: uptrends
+category: analytics
+website: https://www.uptrends.com
+detect:
+  scripts:
+    - pattern: '\.uptrendsdata\.com/'
+  js:
+    UTBOOMR.version:
+      - pattern: '([\d\.]+)'
+        version: 1

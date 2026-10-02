@@ -1,0 +1,15 @@
+name: OpnForm
+slug: opnform
+category: analytics
+website: https://opnform.com
+detect:
+  html:
+    - pattern: 'i-opnform:'
+  url:
+    - pattern: 'opnform\.com'
+  meta:
+    description:
+      - pattern: 'OpnForm'
+  cookies:
+    OpnForm_session:
+      - pattern: ''

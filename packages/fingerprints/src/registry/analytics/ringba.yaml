@@ -1,0 +1,10 @@
+name: Ringba
+slug: ringba
+category: analytics
+website: https://www.ringba.com
+detect:
+  js:
+    ringba.release:
+      - pattern: ''
+    ringba_known_numbers:
+      - pattern: ''

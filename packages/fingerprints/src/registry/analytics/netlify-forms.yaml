@@ -1,0 +1,9 @@
+name: Netlify Forms
+slug: netlify-forms
+category: analytics
+website: https://www.netlify.com/products/forms
+implies: [netlify]
+detect:
+  dom:
+    form[data-netlify]:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: mParticle
+slug: mparticle
+category: analytics
+website: https://www.mparticle.com
+detect:
+  scripts:
+    - pattern: '\.mparticle\.com/'
+  js:
+    mParticle:
+      - pattern: ''
+    mParticle.config.snippetVersion:
+      - pattern: '(.+)'
+        version: 1

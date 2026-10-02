@@ -1,0 +1,10 @@
+name: Useberry
+slug: useberry
+category: analytics
+website: https://www.useberry.com
+detect:
+  scripts:
+    - pattern: 'api\.useberry\.com'
+  js:
+    useberryLive:
+      - pattern: ''

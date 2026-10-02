@@ -1,0 +1,10 @@
+name: Rambler
+slug: rambler
+category: analytics
+website: https://www.rambler.ru
+detect:
+  scripts:
+    - pattern: 'counter\.rambler\.ru'
+  dom:
+    a[href*='.rambler.ru/'] > img[src*='counter.rambler.ru/']:
+      - pattern: ''

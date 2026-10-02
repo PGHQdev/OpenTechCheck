@@ -1,0 +1,7 @@
+name: Seline
+slug: seline
+category: analytics
+website: https://seline.so
+detect:
+  scripts:
+    - pattern: 'cdn\.seline\.so'

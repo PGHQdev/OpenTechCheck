@@ -1,0 +1,12 @@
+name: Olvy
+slug: olvy
+category: analytics
+website: https://olvy.co
+detect:
+  scripts:
+    - pattern: 'app\.olvy\.co'
+  js:
+    OlvyConfig:
+      - pattern: ''
+    OlvyInstances:
+      - pattern: ''

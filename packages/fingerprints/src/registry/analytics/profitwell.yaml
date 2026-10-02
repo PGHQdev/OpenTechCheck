@@ -1,0 +1,10 @@
+name: Profitwell
+slug: profitwell
+category: analytics
+website: https://www.profitwell.com/
+detect:
+  scripts:
+    - pattern: 'profitwell\.js'
+  js:
+    profitwell:
+      - pattern: ''

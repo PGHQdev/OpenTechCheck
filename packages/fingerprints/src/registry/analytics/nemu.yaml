@@ -1,0 +1,10 @@
+name: Nemu
+slug: nemu
+category: analytics
+website: https://usenemu.com
+detect:
+  scripts:
+    - pattern: 'trackings\.nemu\.com\.br'
+  js:
+    trackingNemu:
+      - pattern: ''

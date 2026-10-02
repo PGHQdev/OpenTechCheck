@@ -1,0 +1,9 @@
+name: PayPal Marketing Solutions
+slug: paypal-marketing-solutions
+category: analytics
+website: https://developer.paypal.com/docs/marketing-solutions
+implies: [paypal]
+detect:
+  scripts:
+    - pattern: '\.paypalobjects\.com/muse/'
+    - pattern: '\.paypal\.com/tagmanager/pptm\.js'

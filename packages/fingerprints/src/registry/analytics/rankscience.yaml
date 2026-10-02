@@ -1,0 +1,7 @@
+name: RankScience
+slug: rankscience
+category: analytics
+website: https://www.rankscience.com
+detect:
+  scripts:
+    - pattern: 'cdn\.ranksci\.com'

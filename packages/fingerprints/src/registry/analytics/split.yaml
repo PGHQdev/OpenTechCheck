@@ -1,0 +1,17 @@
+name: Split
+slug: split
+category: analytics
+website: https://www.split.io
+detect:
+  scripts:
+    - pattern: '\.split\.io/(?:sdk/split-([\d\.]+)\.min\.js)?'
+      version: 1
+  js:
+    SPLITIO_API_KEY:
+      - pattern: ''
+    split_shopper_client:
+      - pattern: ''
+    split_visitor_client:
+      - pattern: ''
+    splitio:
+      - pattern: ''

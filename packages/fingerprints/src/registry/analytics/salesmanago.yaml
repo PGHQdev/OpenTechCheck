@@ -1,0 +1,10 @@
+name: SALESmanago
+slug: salesmanago
+category: analytics
+website: https://www.salesmanago.com
+detect:
+  scripts:
+    - pattern: '\.salesmanago\.com/'
+  js:
+    SalesmanagoObject:
+      - pattern: ''

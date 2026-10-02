@@ -1,0 +1,7 @@
+name: ThankYou Analytics
+slug: thankyou-analytics
+category: analytics
+website: https://thankyouanalytics.com
+detect:
+  scripts:
+    - pattern: 'data\.thank-you\.io/'

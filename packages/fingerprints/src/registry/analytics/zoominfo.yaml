@@ -1,0 +1,7 @@
+name: Zoominfo
+slug: zoominfo
+category: analytics
+website: https://www.zoominfo.com/
+detect:
+  scripts:
+    - pattern: 'ws\.zoominfo\.com'

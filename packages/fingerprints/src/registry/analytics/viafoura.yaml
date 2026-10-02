@@ -1,0 +1,12 @@
+name: Viafoura
+slug: viafoura
+category: analytics
+website: https://viafoura.com
+detect:
+  js:
+    dfm_viafoura_options:
+      - pattern: ''
+    viafoura.bootstrap:
+      - pattern: ''
+    viafoura.core:
+      - pattern: ''

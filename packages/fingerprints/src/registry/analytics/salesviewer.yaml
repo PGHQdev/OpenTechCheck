@@ -1,0 +1,12 @@
+name: SalesViewer
+slug: salesviewer
+category: analytics
+website: https://www.salesviewer.com
+detect:
+  js:
+    SV_JSON:
+      - pattern: ''
+    SV_XHR:
+      - pattern: ''
+    SV_XHR_0:
+      - pattern: ''

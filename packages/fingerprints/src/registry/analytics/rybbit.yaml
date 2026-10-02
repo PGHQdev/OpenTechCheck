@@ -1,0 +1,10 @@
+name: Rybbit
+slug: rybbit
+category: analytics
+website: https://www.rybbit.io
+detect:
+  scripts:
+    - pattern: '\.rybbit\.io/'
+  js:
+    rybbit:
+      - pattern: ''

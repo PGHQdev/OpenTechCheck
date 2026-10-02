@@ -1,0 +1,11 @@
+name: Site Kit
+slug: site-kit
+category: analytics
+website: https://sitekit.withgoogle.com/
+within:
+  techs: [wordpress]
+detect:
+  meta:
+    generator:
+      - pattern: '^Site Kit by Google ?([\d.]+)?'
+        version: 1

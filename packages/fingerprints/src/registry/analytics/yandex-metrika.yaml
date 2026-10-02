@@ -1,0 +1,11 @@
+name: Yandex.Metrika
+slug: yandex-metrika
+category: analytics
+website: https://metrika.yandex.com
+detect:
+  scripts:
+    - pattern: 'mc\.yandex\.ru/metrika/(?:tag|watch)\.js'
+    - pattern: 'cdn\.jsdelivr\.net/npm/yandex\-metrica\-watch/(?:tag|watch)\.js'
+  js:
+    yandex_metrika:
+      - pattern: ''

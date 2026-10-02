@@ -1,0 +1,12 @@
+name: Tableau
+slug: tableau
+category: analytics
+website: https://www.tableau.com
+detect:
+  scripts:
+    - pattern: 'public\.tableau\.com'
+  js:
+    tableau.CategoricalFilter:
+      - pattern: ''
+    tableauSoftware.CategoricalFilter:
+      - pattern: ''

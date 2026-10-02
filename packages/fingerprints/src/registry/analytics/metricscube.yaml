@@ -1,0 +1,13 @@
+name: MetricsCube
+slug: metricscube
+category: analytics
+website: https://www.metricscube.io
+detect:
+  scripts:
+    - pattern: 'api\.metricscube\.io'
+  cookies:
+    METRICSCUBE_ANALITYCS:
+      - pattern: ''
+  dom:
+    script#metricscubestats:
+      - pattern: ''

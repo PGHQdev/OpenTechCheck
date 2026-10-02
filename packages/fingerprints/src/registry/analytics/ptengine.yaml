@@ -1,0 +1,10 @@
+name: Ptengine
+slug: ptengine
+category: analytics
+website: https://www.ptengine.com
+detect:
+  scripts:
+    - pattern: 'js\.ptengine\.(?:jp|cn|com)?/'''
+  js:
+    ptengine:
+      - pattern: ''

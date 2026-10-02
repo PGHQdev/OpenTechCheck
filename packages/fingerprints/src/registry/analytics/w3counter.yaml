@@ -1,0 +1,7 @@
+name: W3Counter
+slug: w3counter
+category: analytics
+website: https://www.w3counter.com
+detect:
+  scripts:
+    - pattern: 'w3counter\.com/tracker\.js'

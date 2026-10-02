@@ -1,0 +1,10 @@
+name: VK Pixel
+slug: vk-pixel
+category: analytics
+website: https://vk.com/
+detect:
+  scripts:
+    - pattern: 'vk\.com/js/api/openapi\.js'
+  dom:
+    img[src*='vk.com/rtrg?p=VK-RTRG-']:
+      - pattern: ''

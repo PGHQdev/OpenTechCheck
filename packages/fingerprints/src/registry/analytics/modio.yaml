@@ -1,0 +1,10 @@
+name: Modio
+slug: modio
+category: analytics
+website: https://www.modio.cz
+detect:
+  scripts:
+    - pattern: 'trackingapi\.modio\.cz'
+  js:
+    ModioCZ:
+      - pattern: ''

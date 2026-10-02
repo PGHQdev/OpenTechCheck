@@ -1,0 +1,7 @@
+name: Twitter Analytics
+slug: twitter-analytics
+category: analytics
+website: https://analytics.twitter.com
+detect:
+  scripts:
+    - pattern: 'analytics\.twitter\.com'

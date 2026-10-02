@@ -1,0 +1,10 @@
+name: Northbeam
+slug: northbeam
+category: analytics
+website: https://www.northbeam.io
+detect:
+  scripts:
+    - pattern: '\.northbeam\.io/'
+  dom:
+    script[data-src*='.northbeam.io/']:
+      - pattern: ''

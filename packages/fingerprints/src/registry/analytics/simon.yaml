@@ -1,0 +1,13 @@
+name: Simon
+slug: simon
+category: analytics
+website: https://www.simondata.com/
+detect:
+  scripts:
+    - pattern: 'static\.simonsignal\.com'
+  js:
+    SimonData:
+      - pattern: ''
+  dom:
+    link[href*='.simonsignal.com']:
+      - pattern: ''

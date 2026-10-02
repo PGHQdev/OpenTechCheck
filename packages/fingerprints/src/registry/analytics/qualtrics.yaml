@@ -1,0 +1,10 @@
+name: Qualtrics
+slug: qualtrics
+category: analytics
+website: https://www.qualtrics.com
+detect:
+  scripts:
+    - pattern: '\.qualtrics\.com/'
+  js:
+    QSI.ClientSideTargeting:
+      - pattern: ''

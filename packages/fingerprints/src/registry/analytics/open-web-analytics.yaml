@@ -1,0 +1,14 @@
+name: Open Web Analytics
+slug: open-web-analytics
+category: analytics
+website: https://www.openwebanalytics.com
+detect:
+  html:
+    - pattern: '<!-- (?:Start|End) Open Web Analytics Tracker -->'
+  js:
+    OWA.config.baseUrl:
+      - pattern: ''
+    owa_baseUrl:
+      - pattern: ''
+    owa_cmds:
+      - pattern: ''

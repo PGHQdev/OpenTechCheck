@@ -1,0 +1,10 @@
+name: Siteimprove
+slug: siteimprove
+category: analytics
+website: https://www.siteimprove.com
+detect:
+  scripts:
+    - pattern: '(?:\.|//)siteimprove(?:analytics)?\.com/js/siteanalyze'
+  js:
+    _sz.analytics.heatmap:
+      - pattern: ''

@@ -1,0 +1,20 @@
+name: Refiner
+slug: refiner
+category: analytics
+website: https://refiner.io
+detect:
+  scripts:
+    - pattern: 'js\.refiner\.io/v([\d]+)/client\.js'
+      version: 1
+  js:
+    _refiner:
+      - pattern: ''
+    _refinerAlreadyBooted:
+      - pattern: ''
+    _refinerQueue:
+      - pattern: ''
+    _refinerTracker:
+      - pattern: ''
+  dom:
+    div#refiner-widget-wrapper:
+      - pattern: ''

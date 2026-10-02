@@ -1,0 +1,11 @@
+name: Superform
+slug: superform
+category: analytics
+website: https://superformjs.webflow.io/
+detect:
+  js:
+    Superform:
+      - pattern: ''
+    SuperformAPI.version:
+      - pattern: '^v([\d\.]+)'
+        version: 1

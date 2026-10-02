@@ -1,0 +1,8 @@
+name: Trak
+slug: trak
+category: analytics
+website: https://www.trak.io
+detect:
+  js:
+    trak.custom_event:
+      - pattern: ''

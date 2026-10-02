@@ -1,0 +1,7 @@
+name: Tail
+slug: tail
+category: analytics
+website: https://www.tail.digital
+detect:
+  scripts:
+    - pattern: '\.tailtarget\.com/'

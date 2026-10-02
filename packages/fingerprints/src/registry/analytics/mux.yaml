@@ -1,0 +1,10 @@
+name: Mux
+slug: mux
+category: analytics
+website: https://www.mux.com
+detect:
+  js:
+    MuxVideoElement:
+      - pattern: ''
+    initBitmovinMux:
+      - pattern: ''

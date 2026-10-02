@@ -1,0 +1,12 @@
+name: Nocodelytics
+slug: nocodelytics
+category: analytics
+website: https://www.nocodelytics.com
+within:
+  techs: [webflow]
+detect:
+  scripts:
+    - pattern: 'tracker\.nocodelytics\.com/'
+  js:
+    __NOCODELYTICS_SITE_ID__:
+      - pattern: ''

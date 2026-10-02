@@ -1,0 +1,12 @@
+name: Swagify
+slug: swagify
+category: analytics
+website: https://swagifyapp.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'api\.swagifyapp\.com/'
+  js:
+    Swagify:
+      - pattern: ''

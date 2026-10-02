@@ -1,0 +1,10 @@
+name: Raaft
+slug: raaft
+category: analytics
+website: https://raaft.io
+detect:
+  js:
+    RAAFT_APP_ID:
+      - pattern: ''
+    raaft:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Segmanta
+slug: segmanta
+category: analytics
+website: https://segmanta.com
+detect:
+  scripts:
+    - pattern: 'pge\.segmanta\.com/widget_embed_js(?:/widgetEmbed-v([\d.]+)\.min\.js)?'
+      version: 1
+  js:
+    SEGMANTA__DYNAMIC_EMBED_CONFIG:
+      - pattern: ''
+    SEGMANTA__USER_METADATA:
+      - pattern: ''

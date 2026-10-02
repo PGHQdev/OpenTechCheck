@@ -1,0 +1,13 @@
+name: Survicate
+slug: survicate
+category: analytics
+website: https://survicate.com
+detect:
+  scripts:
+    - pattern: '\.survicate\.com/'
+  js:
+    survicate:
+      - pattern: ''
+  dom:
+    link[href*='.survicate.com']:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Web3Forms
+slug: web3forms
+category: analytics
+website: https://web3forms.com
+detect:
+  dom:
+    form[action*='api.web3forms.com/']:
+      - pattern: ''

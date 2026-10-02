@@ -1,0 +1,16 @@
+name: Quanta
+slug: quanta
+category: analytics
+website: https://www.quanta.io
+detect:
+  scripts:
+    - pattern: '\.quanta\.io/(?:.+/quanta-rum-v([\d\.]+)\.min\.js)?'
+      version: 1
+  cookies:
+    _qta_rum:
+      - pattern: ''
+  js:
+    QUANTA.app_id:
+      - pattern: ''
+    QuantaTagRUMSpeedIndex:
+      - pattern: ''

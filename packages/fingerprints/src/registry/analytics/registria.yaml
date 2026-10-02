@@ -1,0 +1,12 @@
+name: Registria
+slug: registria
+category: analytics
+website: https://www.registria.com
+detect:
+  js:
+    Registria.Cases:
+      - pattern: ''
+    getRegistriaData:
+      - pattern: ''
+    getRegistriaDateData:
+      - pattern: ''

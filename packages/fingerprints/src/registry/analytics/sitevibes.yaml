@@ -1,0 +1,10 @@
+name: SiteVibes
+slug: sitevibes
+category: analytics
+website: https://sitevibes.com
+detect:
+  scripts:
+    - pattern: 'app\.sitevibes\.com/'
+  js:
+    SiteVibesManager:
+      - pattern: ''

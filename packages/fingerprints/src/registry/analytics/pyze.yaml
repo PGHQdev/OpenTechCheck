@@ -1,0 +1,12 @@
+name: Pyze
+slug: pyze
+category: analytics
+website: https://www.pyze.com
+detect:
+  scripts:
+    - pattern: 'cdn\.pyze\.com'
+  js:
+    Pyze.getAppInstanceId:
+      - pattern: ''
+    PyzeCuratedEvents:
+      - pattern: ''

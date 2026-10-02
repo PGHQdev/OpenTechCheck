@@ -1,0 +1,13 @@
+name: Zoho PageSense
+slug: zoho-pagesense
+category: analytics
+website: https://www.zoho.com/pagesense/
+implies: [zoho]
+detect:
+  scripts:
+    - pattern: '\.pagesense\.(?:cn|io)?'
+  js:
+    $pagesense:
+      - pattern: ''
+    pagesense:
+      - pattern: ''

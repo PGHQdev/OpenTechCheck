@@ -1,0 +1,8 @@
+name: Userback
+slug: userback
+category: analytics
+website: https://userback.io
+detect:
+  js:
+    Userback.access_token:
+      - pattern: ''

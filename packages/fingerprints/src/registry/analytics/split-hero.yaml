@@ -1,0 +1,9 @@
+name: Split Hero
+slug: split-hero
+category: analytics
+website: https://splithero.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'app\.splithero\.com/'

@@ -1,0 +1,12 @@
+name: TrackJs
+slug: trackjs
+category: analytics
+website: https://trackjs.com
+detect:
+  scripts:
+    - pattern: 'cdn\.trackjs\.com'
+  js:
+    TrackJs:
+      - pattern: ''
+    trackJs:
+      - pattern: ''

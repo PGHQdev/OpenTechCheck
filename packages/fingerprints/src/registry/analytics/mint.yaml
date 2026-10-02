@@ -1,0 +1,10 @@
+name: Mint
+slug: mint
+category: analytics
+website: https://haveamint.com
+detect:
+  scripts:
+    - pattern: 'mint/\?js'
+  js:
+    Mint:
+      - pattern: ''

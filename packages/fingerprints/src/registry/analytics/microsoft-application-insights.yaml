@@ -1,0 +1,12 @@
+name: Microsoft Application Insights
+slug: microsoft-application-insights
+category: analytics
+website: https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
+detect:
+  js:
+    appInsights.SeverityLevel:
+      - pattern: ''
+    appInsights.addTelemetryInitializer:
+      - pattern: ''
+    appInsightsSDK:
+      - pattern: 'appInsights'

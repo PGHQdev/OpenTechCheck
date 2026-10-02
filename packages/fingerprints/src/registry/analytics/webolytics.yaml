@@ -1,0 +1,16 @@
+name: Webolytics
+slug: webolytics
+category: analytics
+website: https://www.webolytics.com
+detect:
+  js:
+    webo_gtm_id:
+      - pattern: ''
+    webo_gtm_label:
+      - pattern: ''
+    webo_gtm_prefix:
+      - pattern: ''
+    webolytics_site_tag:
+      - pattern: ''
+    webolytics_webhook_call:
+      - pattern: ''

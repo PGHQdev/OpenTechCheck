@@ -1,0 +1,10 @@
+name: Wisetracker
+slug: wisetracker
+category: analytics
+website: https://www.wisetracker.co.kr
+detect:
+  js:
+    DOP_SDK_CONF.adClkEndPoint:
+      - pattern: '\.analytics\.wisetracker\.co\.kr'
+    DOT_ADCLK_ENDPOINT:
+      - pattern: '\.analytics\.wisetracker\.co\.kr'

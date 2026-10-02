@@ -1,0 +1,12 @@
+name: Quform
+slug: quform
+category: analytics
+website: https://www.quform.com
+within:
+  techs: [wordpress]
+detect:
+  js:
+    Quform.captchaRefreshFormQueue:
+      - pattern: ''
+    QuformRecaptchaLoaded:
+      - pattern: ''

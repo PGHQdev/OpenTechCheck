@@ -1,0 +1,12 @@
+name: Microsoft Power BI
+slug: microsoft-power-bi
+category: analytics
+website: https://www.microsoft.com/en-us/power-platform/products/power-bi
+detect:
+  scripts:
+    - pattern: 'content\.powerapps\.com'
+  js:
+    powerBIAccessToken:
+      - pattern: ''
+    powerBIEmbedToken:
+      - pattern: ''

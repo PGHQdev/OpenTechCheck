@@ -1,0 +1,7 @@
+name: Netcore Cloud
+slug: netcore-cloud
+category: analytics
+website: https://netcorecloud.com
+detect:
+  scripts:
+    - pattern: '\.netcoresmartech\.com/'

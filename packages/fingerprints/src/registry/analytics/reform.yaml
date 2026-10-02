@@ -1,0 +1,10 @@
+name: Reform
+slug: reform
+category: analytics
+website: https://www.reform.app
+detect:
+  js:
+    Reform:
+      - pattern: ''
+    ReformHandlers:
+      - pattern: ''

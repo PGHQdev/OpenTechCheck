@@ -1,0 +1,8 @@
+name: Riddle
+slug: riddle
+category: analytics
+website: https://www.riddle.com
+detect:
+  js:
+    riddleAPI:
+      - pattern: ''

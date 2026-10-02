@@ -1,0 +1,10 @@
+name: SessionStack
+slug: sessionstack
+category: analytics
+website: https://www.sessionstack.com
+detect:
+  scripts:
+    - pattern: 'cdn\.sessionstack\.com/'
+  js:
+    SessionStack:
+      - pattern: ''

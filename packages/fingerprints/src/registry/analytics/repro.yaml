@@ -1,0 +1,11 @@
+name: Repro
+slug: repro
+category: analytics
+website: https://repro.io
+detect:
+  scripts:
+    - pattern: 'cdn\.reproio\.com/web/v([\d\.]+)/repro-sdk\.min\.js'
+      version: 1
+  js:
+    reproio:
+      - pattern: ''

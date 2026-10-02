@@ -1,0 +1,13 @@
+name: Upvoty
+slug: upvoty
+category: analytics
+website: https://upvoty.com
+implies: [php]
+detect:
+  js:
+    upvoty:
+      - pattern: ''
+  dom:
+    div.upvotyContainer:
+      - text: true
+        pattern: ''

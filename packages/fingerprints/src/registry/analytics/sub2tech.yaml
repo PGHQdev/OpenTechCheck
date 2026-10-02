@@ -1,0 +1,11 @@
+name: Sub2Tech
+slug: sub2tech
+category: analytics
+website: https://www.sub2tech.com
+detect:
+  scripts:
+    - pattern: 'cdn\.sub2tech\.com/'
+  js:
+    SUB2.codebaseversion:
+      - pattern: '^([\d\.]+)$'
+        version: 1

@@ -1,0 +1,12 @@
+name: Shoplift
+slug: shoplift
+category: analytics
+website: https://www.shoplift.ai
+within:
+  techs: [shopify]
+detect:
+  js:
+    shoplift.getVisitorData:
+      - pattern: ''
+    shopliftInstance:
+      - pattern: ''

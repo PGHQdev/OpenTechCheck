@@ -1,0 +1,11 @@
+name: SegmentStream
+slug: segmentstream
+category: analytics
+website: https://segmentstream.com
+detect:
+  scripts:
+    - pattern: 'cdn\.segmentstream\.com'
+  js:
+    segmentstream.VERSION:
+      - pattern: '(.+)'
+        version: 1

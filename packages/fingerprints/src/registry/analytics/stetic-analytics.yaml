@@ -1,0 +1,8 @@
+name: Stetic Analytics
+slug: stetic-analytics
+category: analytics
+website: https://www.stetic.com
+detect:
+  js:
+    stetic.track:
+      - pattern: ''

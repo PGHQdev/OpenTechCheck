@@ -1,0 +1,20 @@
+name: user.com
+slug: user-com
+category: analytics
+website: https://user.com
+detect:
+  html:
+    - pattern: '<div[^>]+/id="ue_widget"'
+    - pattern: 'id="usercom-widget"'
+    - pattern: 'window\.civchat\s*='
+    - pattern: 'userengage-widget'
+  scripts:
+    - pattern: '\.user\.com/widget\.js'
+  js:
+    UserEngage:
+      - pattern: ''
+    civchat:
+      - pattern: ''
+  dom:
+    div[id*='ue_widget']:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Sprocket
+slug: sprocket
+category: analytics
+website: https://www.sprocket.bz
+detect:
+  scripts:
+    - pattern: '\.sprocket\.bz/'
+  cookies:
+    _sprocket_:
+      - pattern: ''
+  js:
+    sprocketMunicipalities:
+      - pattern: ''
+    sprocketSpots:
+      - pattern: ''

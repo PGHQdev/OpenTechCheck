@@ -1,0 +1,12 @@
+name: ShinyStat
+slug: shinystat
+category: analytics
+website: https://shinystat.com
+detect:
+  html:
+    - pattern: '<img[^>]*\s+src=[''"]?https?://www\.shinystat\.com/cgi-bin/shinystat\.cgi\?[^''"\s>]*[''"\s/>]'
+  scripts:
+    - pattern: '^https?://codice(?:business|ssl|pro|isp)?\.shinystat\.com/cgi-bin/getcod\.cgi'
+  js:
+    SSsdk:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Sirge
+slug: sirge
+category: analytics
+website: https://www.sirge.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.app\.sirge\.com/'

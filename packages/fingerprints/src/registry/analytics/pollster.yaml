@@ -1,0 +1,7 @@
+name: Pollster
+slug: pollster
+category: analytics
+website: https://pollster.pl
+detect:
+  scripts:
+    - pattern: '\.pollster\.pl'

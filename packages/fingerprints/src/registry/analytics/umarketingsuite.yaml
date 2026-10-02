@@ -1,0 +1,9 @@
+name: uMarketingSuite
+slug: umarketingsuite
+category: analytics
+website: https://www.umarketingsuite.com
+implies: [umbraco]
+detect:
+  js:
+    uMarketingSuite:
+      - pattern: ''

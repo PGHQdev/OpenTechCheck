@@ -1,0 +1,8 @@
+name: Piwik PRO Core
+slug: piwik-pro-core
+category: analytics
+website: https://piwik.pro
+excludes: [matomo]
+detect:
+  scripts:
+    - pattern: '\.piwik\.pro/'

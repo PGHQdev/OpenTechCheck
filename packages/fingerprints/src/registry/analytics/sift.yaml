@@ -1,0 +1,12 @@
+name: Sift
+slug: sift
+category: analytics
+website: https://sift.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.sift(?:science)?\.com/s\.js'
+  js:
+    __siftFlashCB:
+      - pattern: ''
+    _sift:
+      - pattern: ''

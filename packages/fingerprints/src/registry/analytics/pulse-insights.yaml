@@ -1,0 +1,7 @@
+name: Pulse Insights
+slug: pulse-insights
+category: analytics
+website: https://www.pulseinsights.com
+detect:
+  scripts:
+    - pattern: 'js\.pulseinsights\.com'

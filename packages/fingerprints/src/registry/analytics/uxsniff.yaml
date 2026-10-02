@@ -1,0 +1,12 @@
+name: UXSniff
+slug: uxsniff
+category: analytics
+website: https://uxsniff.com
+detect:
+  scripts:
+    - pattern: 'api\.uxsniff\.com'
+  js:
+    __UXS_BEACON_COOLDOWN_MS:
+      - pattern: ''
+    __uxs_beaconInCooldown:
+      - pattern: ''

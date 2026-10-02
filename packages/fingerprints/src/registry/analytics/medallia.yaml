@@ -1,0 +1,17 @@
+name: Medallia
+slug: medallia
+category: analytics
+website: https://www.medallia.com
+detect:
+  scripts:
+    - pattern: 'cf\.kampyle\.com/k_button\.js'
+  cookies:
+    k_visit:
+      - pattern: ''
+  js:
+    KAMPYLE_COMMON:
+      - pattern: ''
+    k_track:
+      - pattern: ''
+    kampyle:
+      - pattern: ''

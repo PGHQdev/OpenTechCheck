@@ -1,0 +1,13 @@
+name: Sirdata
+slug: sirdata
+category: analytics
+website: https://www.sirdata.com
+detect:
+  scripts:
+    - pattern: '(?:choices|cache)\.consentframework\.com/'
+    - pattern: 'js\.sddan\.com/'
+  js:
+    SDDAN.cmp:
+      - pattern: ''
+    Sddan.cmpLoaded:
+      - pattern: ''

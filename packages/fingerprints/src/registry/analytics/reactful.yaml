@@ -1,0 +1,7 @@
+name: Reactful
+slug: reactful
+category: analytics
+website: https://app.reactful.com
+detect:
+  scripts:
+    - pattern: 'visitor\.reactful\.com'

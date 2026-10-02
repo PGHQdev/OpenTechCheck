@@ -1,0 +1,7 @@
+name: Omeda
+slug: omeda
+category: analytics
+website: https://www.omeda.com
+detect:
+  scripts:
+    - pattern: 'olytics\.omeda\.com/'

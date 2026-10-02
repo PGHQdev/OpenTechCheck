@@ -1,0 +1,7 @@
+name: Sematext Experience
+slug: sematext-experience
+category: analytics
+website: https://sematext.com/experience
+detect:
+  scripts:
+    - pattern: '\.sematext\.com/experience\.js'

@@ -1,0 +1,16 @@
+name: Statcounter
+slug: statcounter
+category: analytics
+website: https://www.statcounter.com
+detect:
+  scripts:
+    - pattern: 'statcounter\.com/counter/counter'
+  js:
+    _statcounter:
+      - pattern: ''
+    sc_project:
+      - pattern: ''
+        confidence: 50
+    sc_security:
+      - pattern: ''
+        confidence: 50

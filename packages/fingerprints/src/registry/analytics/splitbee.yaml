@@ -1,0 +1,10 @@
+name: Splitbee
+slug: splitbee
+category: analytics
+website: https://splitbee.io
+detect:
+  scripts:
+    - pattern: '^https://cdn\.splitbee\.io/sb\.js'
+  js:
+    splitbee:
+      - pattern: ''

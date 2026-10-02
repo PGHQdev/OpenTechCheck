@@ -1,0 +1,8 @@
+name: Trovit
+slug: trovit
+category: analytics
+website: https://www.trovit.com
+detect:
+  js:
+    TrovitAnalyticsObject:
+      - pattern: ''

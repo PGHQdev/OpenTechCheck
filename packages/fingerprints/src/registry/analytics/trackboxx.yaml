@@ -1,0 +1,10 @@
+name: Trackboxx
+slug: trackboxx
+category: analytics
+website: https://trackboxx.com
+detect:
+  scripts:
+    - pattern: 'cdn\.trackboxx\.info'
+  js:
+    trackboxx:
+      - pattern: ''

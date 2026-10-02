@@ -1,0 +1,14 @@
+name: Totango
+slug: totango
+category: analytics
+website: https://www.totango.com
+detect:
+  scripts:
+    - pattern: '\.totango\.com/totango([\d\.]+)\.js'
+      version: 1
+    - pattern: '\.amazonaws\.com/totango-cdn/totango\d\.js'
+  js:
+    totango:
+      - pattern: ''
+    totangoLoader:
+      - pattern: ''

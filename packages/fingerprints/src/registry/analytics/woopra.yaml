@@ -1,0 +1,7 @@
+name: Woopra
+slug: woopra
+category: analytics
+website: https://www.woopra.com
+detect:
+  scripts:
+    - pattern: 'static\.woopra\.com'

@@ -1,0 +1,12 @@
+name: Optibase
+slug: optibase
+category: analytics
+website: https://www.optibase.io
+within:
+  techs: [webflow]
+detect:
+  scripts:
+    - pattern: 'app\.optibase\.io/'
+  js:
+    optibaseScriptLoaded:
+      - pattern: ''

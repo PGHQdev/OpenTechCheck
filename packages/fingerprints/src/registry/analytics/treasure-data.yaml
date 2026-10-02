@@ -1,0 +1,14 @@
+name: Treasure Data
+slug: treasure-data
+category: analytics
+website: https://www.treasuredata.com
+detect:
+  scripts:
+    - pattern: 'cdn\.treasuredata\.com/'
+  js:
+    Treasure.version:
+      - pattern: '(.+)'
+        version: 1
+  dom:
+    link[href*='.treasuredata.com']:
+      - pattern: ''

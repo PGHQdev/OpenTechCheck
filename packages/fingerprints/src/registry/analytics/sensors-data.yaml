@@ -1,0 +1,18 @@
+name: Sensors Data
+slug: sensors-data
+category: analytics
+website: https://www.sensorsdata.cn
+detect:
+  scripts:
+    - pattern: 'sensorsdata'
+  cookies:
+    sensorsdata2015jssdkcross:
+      - pattern: ''
+    sensorsdata2015session:
+      - pattern: ''
+  js:
+    sa.lib_version:
+      - pattern: '([\d.]+)'
+        version: 1
+    sensorsdata_app_js_bridge_call_js:
+      - pattern: ''

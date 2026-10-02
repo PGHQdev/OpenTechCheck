@@ -1,0 +1,11 @@
+name: SealMetrics
+slug: sealmetrics
+category: analytics
+website: https://sealmetrics.com
+detect:
+  scripts:
+    - pattern: '\.sealmetrics\.com/'
+  js:
+    sm.VERSION:
+      - pattern: '^([\d\.]+)$'
+        version: 1

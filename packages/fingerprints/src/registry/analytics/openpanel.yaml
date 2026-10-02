@@ -1,0 +1,10 @@
+name: OpenPanel
+slug: openpanel
+category: analytics
+website: https://openpanel.dev
+detect:
+  scripts:
+    - pattern: '//openpanel\.dev/'
+  js:
+    openpanel.api:
+      - pattern: ''

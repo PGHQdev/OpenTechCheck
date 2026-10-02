@@ -1,0 +1,11 @@
+name: PriceSpider
+slug: pricespider
+category: analytics
+website: https://www.pricespider.com
+detect:
+  scripts:
+    - pattern: 'cdn\.pricespider\.com/'
+  js:
+    PriceSpider.version:
+      - pattern: '(.+)'
+        version: 1

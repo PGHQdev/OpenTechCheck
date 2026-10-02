@@ -1,0 +1,7 @@
+name: Pinpoll
+slug: pinpoll
+category: analytics
+website: https://www.pinpoll.com
+detect:
+  scripts:
+    - pattern: 'cdn\.pinpoll\.com'

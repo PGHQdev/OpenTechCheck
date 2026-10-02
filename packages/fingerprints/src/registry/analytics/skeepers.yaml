@@ -1,0 +1,10 @@
+name: Skeepers
+slug: skeepers
+category: analytics
+website: https://skeepers.io
+detect:
+  scripts:
+    - pattern: 'sdk\.skeepers\.io'
+  js:
+    skeepersStarsCounter:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: WildJar
+slug: wildjar
+category: analytics
+website: https://www.wildjar.com
+detect:
+  scripts:
+    - pattern: 'trkcall\.com/scripts'

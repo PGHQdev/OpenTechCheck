@@ -1,0 +1,16 @@
+name: Site24x7
+slug: site24x7
+category: analytics
+website: https://www.site24x7.com
+detect:
+  scripts:
+    - pattern: '\.site24x7rum\.com'
+  js:
+    S247RumQueueImpl:
+      - pattern: ''
+    s247RUM:
+      - pattern: ''
+    site24x7RumError:
+      - pattern: ''
+    site24x7rum:
+      - pattern: ''

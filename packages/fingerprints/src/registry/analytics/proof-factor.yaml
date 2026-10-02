@@ -1,0 +1,10 @@
+name: Proof Factor
+slug: proof-factor
+category: analytics
+website: https://prooffactor.com
+detect:
+  js:
+    PROOF_FACTOR_ACCOUNT_ID:
+      - pattern: ''
+    PROOF_FACTOR_ANALYTICS_SETUP:
+      - pattern: ''

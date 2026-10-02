@@ -1,0 +1,13 @@
+name: Quantcast Measure
+slug: quantcast-measure
+category: analytics
+website: https://www.quantcast.com/products/measure-audience-insights
+detect:
+  scripts:
+    - pattern: '\.quantserve\.com/quant\.js'
+  js:
+    quantserve:
+      - pattern: ''
+  dom:
+    link[href*='.quantserve.com']:
+      - pattern: '\.quantserve\.com/quant\.js'

@@ -1,0 +1,12 @@
+name: Plerdy
+slug: plerdy
+category: analytics
+website: https://www.plerdy.com
+detect:
+  scripts:
+    - pattern: '\.plerdy\.com/'
+  js:
+    plerdyScript:
+      - pattern: ''
+    plerdymainscript:
+      - pattern: ''

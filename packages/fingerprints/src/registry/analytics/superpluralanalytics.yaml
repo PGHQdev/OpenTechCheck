@@ -1,0 +1,7 @@
+name: SuperPluralAnalytics
+slug: superpluralanalytics
+category: analytics
+website: https://superplural.com/analytics/
+detect:
+  scripts:
+    - pattern: '\.superplural\.com'

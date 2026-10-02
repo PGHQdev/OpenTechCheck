@@ -1,0 +1,14 @@
+name: Monetate
+slug: monetate
+category: analytics
+website: https://monetate.com
+detect:
+  scripts:
+    - pattern: '\.monetate\.net'
+  js:
+    monetate:
+      - pattern: ''
+    monetateQ:
+      - pattern: ''
+    monetateT:
+      - pattern: ''

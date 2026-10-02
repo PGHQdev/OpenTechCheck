@@ -1,0 +1,15 @@
+name: Tally
+slug: tally
+category: analytics
+website: https://tally.so/
+detect:
+  scripts:
+    - pattern: '//tally\.so/'
+  js:
+    Tally:
+      - pattern: ''
+  dom:
+    iframe[data-tally-src^='https://tally.so/embed/']:
+      - pattern: ''
+    a[href*='//tally.so/r/']:
+      - pattern: ''

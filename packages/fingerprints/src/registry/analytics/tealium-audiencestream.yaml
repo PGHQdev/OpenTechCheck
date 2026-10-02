@@ -1,0 +1,10 @@
+name: Tealium AudienceStream
+slug: tealium-audiencestream
+category: analytics
+website: https://tealium.com/products/audiencestream
+detect:
+  scripts:
+    - pattern: '\.tealiumiq\.com'
+  dom:
+    link[href*='.tealiumiq.com']:
+      - pattern: ''

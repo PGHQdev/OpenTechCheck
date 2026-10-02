@@ -1,0 +1,7 @@
+name: Poltio
+slug: poltio
+category: analytics
+website: https://poltio.com
+detect:
+  scripts:
+    - pattern: '\.poltio\.com/'

@@ -1,0 +1,8 @@
+name: Recommy
+slug: recommy
+category: analytics
+website: https://recommy.com
+detect:
+  js:
+    RecommyFeedbackWidget:
+      - pattern: ''

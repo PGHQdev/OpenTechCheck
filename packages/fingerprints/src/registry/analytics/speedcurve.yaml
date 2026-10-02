@@ -1,0 +1,17 @@
+name: SpeedCurve
+slug: speedcurve
+category: analytics
+website: https://www.speedcurve.com
+detect:
+  scripts:
+    - pattern: '\.speedcurve\.com'
+  js:
+    LUX.version:
+      - pattern: '([\d.]+)'
+        version: 1
+    LUX_t_end:
+      - pattern: '\d'
+        confidence: 50
+    LUX_t_start:
+      - pattern: '\d'
+        confidence: 50

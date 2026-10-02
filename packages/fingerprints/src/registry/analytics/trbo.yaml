@@ -1,0 +1,19 @@
+name: Trbo
+slug: trbo
+category: analytics
+website: https://www.trbo.com
+detect:
+  scripts:
+    - pattern: '\.trbo\.com'
+  cookies:
+    trbo_session:
+      - pattern: '^(?:[\d]+)$'
+    trbo_usr:
+      - pattern: '^(?:[\d\w]+)$'
+  js:
+    _trbo:
+      - pattern: ''
+    _trbo_start:
+      - pattern: ''
+    _trboq:
+      - pattern: ''

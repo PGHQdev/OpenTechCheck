@@ -1,0 +1,8 @@
+name: Panelbear
+slug: panelbear
+category: analytics
+website: https://panelbear.com
+detect:
+  js:
+    panelbear:
+      - pattern: ''

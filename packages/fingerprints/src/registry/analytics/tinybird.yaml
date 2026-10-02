@@ -1,0 +1,10 @@
+name: Tinybird
+slug: tinybird
+category: analytics
+website: https://www.tinybird.co/
+detect:
+  scripts:
+    - pattern: '\.tinybird.co/js/index\.js'
+  js:
+    Tinybird:
+      - pattern: ''

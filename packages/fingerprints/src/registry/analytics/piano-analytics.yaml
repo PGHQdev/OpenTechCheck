@@ -1,0 +1,8 @@
+name: Piano Analytics
+slug: piano-analytics
+category: analytics
+website: https://piano.io/product/analytics/
+detect:
+  js:
+    pianoAnalytics:
+      - pattern: ''

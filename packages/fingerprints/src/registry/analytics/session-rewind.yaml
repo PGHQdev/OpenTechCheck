@@ -1,0 +1,10 @@
+name: Session Rewind
+slug: session-rewind
+category: analytics
+website: https://sessionrewind.com
+detect:
+  scripts:
+    - pattern: '\.sessionrewind\.com/'
+  js:
+    SessionRewindConfig.apiKey:
+      - pattern: ''

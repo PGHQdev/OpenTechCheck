@@ -1,0 +1,12 @@
+name: Varify
+slug: varify
+category: analytics
+website: https://varify.io
+detect:
+  scripts:
+    - pattern: 'app\.varify\.io/'
+  js:
+    varify.debug:
+      - pattern: ''
+    webpackChunkvarify_io:
+      - pattern: ''

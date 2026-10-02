@@ -1,0 +1,12 @@
+name: Spotler Activate
+slug: spotler-activate
+category: analytics
+website: https://spotleractivate.com
+detect:
+  scripts:
+    - pattern: '//squeezely\.tech/'
+  js:
+    sqzlCommon.getVariantName:
+      - pattern: ''
+    sqzlPersonalization:
+      - pattern: ''

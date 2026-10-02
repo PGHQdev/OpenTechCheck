@@ -1,0 +1,10 @@
+name: Vidora
+slug: vidora
+category: analytics
+website: https://www.vidora.com
+detect:
+  scripts:
+    - pattern: '\.vidora\.com/'
+  js:
+    vidora:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: Mediahawk
+slug: mediahawk
+category: analytics
+website: http://mediahawk.co.uk
+detect:
+  js:
+    _mhct:
+      - pattern: ''
+    mhctRequestFiredBeforeComplete:
+      - pattern: ''
+    mhctRequestInitial:
+      - pattern: ''
+    mhctRequestRunning:
+      - pattern: ''

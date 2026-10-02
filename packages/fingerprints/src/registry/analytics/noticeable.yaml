@@ -1,0 +1,10 @@
+name: Noticeable
+slug: noticeable
+category: analytics
+website: https://noticeable.io
+detect:
+  scripts:
+    - pattern: 'sdk\.noticeable\.io/'
+  js:
+    noticeable:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Resonate
+slug: resonate
+category: analytics
+website: https://www.resonate.com
+detect:
+  scripts:
+    - pattern: 'cdn\.resonate\.com'
+  js:
+    resonateAnalytics:
+      - pattern: ''

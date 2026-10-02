@@ -1,0 +1,7 @@
+name: Smartocto
+slug: smartocto
+category: analytics
+website: https://smartocto.com
+detect:
+  scripts:
+    - pattern: '\.smartocto\.com/'

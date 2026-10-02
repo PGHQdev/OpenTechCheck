@@ -1,0 +1,10 @@
+name: Monsido
+slug: monsido
+category: analytics
+website: https://monsido.com
+detect:
+  js:
+    _monsido:
+      - pattern: ''
+    monsido_tracking:
+      - pattern: ''

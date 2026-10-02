@@ -1,0 +1,8 @@
+name: Swetrix
+slug: swetrix
+category: analytics
+website: https://swetrix.com
+detect:
+  js:
+    swetrix.LIB_INSTANCE:
+      - pattern: ''

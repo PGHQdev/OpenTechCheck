@@ -1,0 +1,13 @@
+name: Omniconvert
+slug: omniconvert
+category: analytics
+website: https://www.omniconvert.com
+detect:
+  scripts:
+    - pattern: 'cdn\.omniconvert\.com'
+  js:
+    _omni:
+      - pattern: ''
+  dom:
+    link[href*='app.omniconvert.com']:
+      - pattern: ''

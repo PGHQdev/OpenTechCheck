@@ -1,0 +1,10 @@
+name: Tend
+slug: tend
+category: analytics
+website: https://tend.io
+detect:
+  js:
+    tend.event:
+      - pattern: ''
+    tendKey:
+      - pattern: ''

@@ -1,0 +1,14 @@
+name: Metrilo
+slug: metrilo
+category: analytics
+website: https://www.metrilo.com
+detect:
+  scripts:
+    - pattern: '\.metrilo\.com/'
+  js:
+    metrilo:
+      - pattern: ''
+    metriloBotRegexp:
+      - pattern: ''
+    metriloCookie:
+      - pattern: ''

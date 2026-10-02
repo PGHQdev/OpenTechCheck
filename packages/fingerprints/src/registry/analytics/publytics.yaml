@@ -1,0 +1,10 @@
+name: Publytics
+slug: publytics
+category: analytics
+website: https://publytics.net
+detect:
+  scripts:
+    - pattern: 'api\.publytics\.net/'
+  js:
+    publytics:
+      - pattern: ''

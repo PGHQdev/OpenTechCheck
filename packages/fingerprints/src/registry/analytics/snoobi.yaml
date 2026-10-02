@@ -1,0 +1,10 @@
+name: Snoobi
+slug: snoobi
+category: analytics
+website: https://www.snoobi.com
+detect:
+  scripts:
+    - pattern: 'snoobi\.com/snoop\.php'
+  js:
+    snoobi:
+      - pattern: ''

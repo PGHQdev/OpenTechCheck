@@ -1,0 +1,10 @@
+name: Pingdom RUM
+slug: pingdom-rum
+category: analytics
+website: https://www.pingdom.com/real-user-monitoring/
+detect:
+  scripts:
+    - pattern: 'rum-static\.pingdom\.net'
+  js:
+    _prum:
+      - pattern: ''

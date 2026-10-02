@@ -1,0 +1,10 @@
+name: Qualaroo
+slug: qualaroo
+category: analytics
+website: https://qualaroo.com
+detect:
+  scripts:
+    - pattern: '\.qualaroo\.com'
+  js:
+    QUALAROO_DNT:
+      - pattern: ''

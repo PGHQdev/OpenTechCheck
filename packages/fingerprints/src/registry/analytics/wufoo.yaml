@@ -1,0 +1,8 @@
+name: Wufoo
+slug: wufoo
+category: analytics
+website: https://www.wufoo.com
+detect:
+  dom:
+    a[href*='.wufoo.com/forms/'][target='_blank']:
+      - pattern: ''

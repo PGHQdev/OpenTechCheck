@@ -1,0 +1,13 @@
+name: Oracle BlueKai
+slug: oracle-bluekai
+category: analytics
+website: https://www.oracle.com/cx/marketing/data-management-platform
+detect:
+  scripts:
+    - pattern: 'tags\.(?:bluekai|bkrtx)\.com/'
+  js:
+    bluekaiLoaded:
+      - pattern: ''
+  dom:
+    link[href*='tags.bluekai.com'],link[href*='tags.bkrtx.com']:
+      - pattern: ''

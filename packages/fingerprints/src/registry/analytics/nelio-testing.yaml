@@ -1,0 +1,13 @@
+name: Nelio Testing
+slug: nelio-testing
+category: analytics
+website: https://neliosoftware.com/testing
+within:
+  techs: [wordpress]
+detect:
+  cookies:
+    nabUniqueViews:
+      - pattern: ''
+  js:
+    nabSettings:
+      - pattern: ''

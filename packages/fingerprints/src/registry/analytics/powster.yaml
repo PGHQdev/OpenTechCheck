@@ -1,0 +1,15 @@
+name: Powster
+slug: powster
+category: analytics
+website: https://powster.com
+detect:
+  scripts:
+    - pattern: 'tracking\.powster\.com/'
+  meta:
+    author:
+      - pattern: '^Powster$'
+  js:
+    powsterGtag:
+      - pattern: ''
+    powsterOneTrust:
+      - pattern: ''
