@@ -1,0 +1,12 @@
+name: Adobe Muse
+slug: adobe-muse
+category: web-framework
+website: https://helpx.adobe.com/muse/kb/adobe-muse-end-of-service.html
+detect:
+  js:
+    Muse:
+      - pattern: ''
+    museConfigLoadedAndExecuted:
+      - pattern: ''
+    muse_init:
+      - pattern: ''

@@ -1,0 +1,15 @@
+name: Blitz.js
+slug: blitz-js
+category: web-framework
+website: https://blitzjs.com
+implies: [nextjs]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Blitz\.js?([0-9.]+)?'
+        version: 1
+  js:
+    __BLITZ_MIDDLEWARE_HOOKS:
+      - pattern: ''
+    __BLITZ_SUSPENSE_ENABLED:
+      - pattern: ''

@@ -1,0 +1,11 @@
+name: Ionic
+slug: ionic
+category: web-framework
+website: https://ionicframework.com
+detect:
+  js:
+    Ionic.config:
+      - pattern: ''
+    Ionic.version:
+      - pattern: '^(.+)$'
+        version: 1

@@ -1,0 +1,12 @@
+name: Wt
+slug: wt
+category: web-framework
+website: https://www.webtoolkit.eu/wt
+detect:
+  js:
+    Wt.WT.$:
+      - pattern: ''
+    WtOnLoad:
+      - pattern: ''
+    WtSignalEmit:
+      - pattern: ''

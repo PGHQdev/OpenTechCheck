@@ -1,0 +1,12 @@
+name: Hexo
+slug: hexo
+category: web-framework
+website: https://hexo.io
+implies: [nodejs]
+detect:
+  html:
+    - pattern: 'Powered by <a href="https?://hexo\.io/?"[^>]*>Hexo</'
+  meta:
+    generator:
+      - pattern: 'Hexo(?: v?([\d.]+))?'
+        version: 1

@@ -1,0 +1,10 @@
+name: Lift
+slug: lift
+category: web-framework
+website: https://liftweb.net
+implies: [scala]
+detect:
+  headers:
+    x-lift-version:
+      - pattern: '(.+)'
+        version: 1

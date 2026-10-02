@@ -1,0 +1,11 @@
+name: Revel
+slug: revel
+category: web-framework
+website: https://revel.github.io
+implies: [go]
+detect:
+  cookies:
+    REVEL_FLASH:
+      - pattern: ''
+    REVEL_SESSION:
+      - pattern: ''

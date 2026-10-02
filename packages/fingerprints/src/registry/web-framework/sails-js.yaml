@@ -1,0 +1,9 @@
+name: Sails.js
+slug: sails-js
+category: web-framework
+website: https://sailsjs.org
+implies: [express]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Sails(?:$|[^a-z0-9])'

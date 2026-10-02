@@ -1,0 +1,14 @@
+name: Web2py
+slug: web2py
+category: web-framework
+website: https://web2py.com
+implies: [python, jquery]
+detect:
+  scripts:
+    - pattern: 'web2py\.js'
+  headers:
+    x-powered-by:
+      - pattern: 'web2py'
+  meta:
+    generator:
+      - pattern: '^Web2py'

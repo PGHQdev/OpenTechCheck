@@ -1,0 +1,12 @@
+name: ASP.NET Boilerplate
+slug: asp-net-boilerplate
+category: web-framework
+website: https://www.aspnetboilerplate.com
+implies: [aspnet]
+detect:
+  js:
+    abp.aspnetboilerplate.version:
+      - pattern: '(.*)'
+        version: 1
+    abp.timing.utcClockProvider:
+      - pattern: ''

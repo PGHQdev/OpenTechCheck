@@ -1,0 +1,5 @@
+name: Scala
+slug: scala
+category: language
+website: https://www.scala-lang.org
+detect: {}

@@ -1,0 +1,22 @@
+name: GLPI
+slug: glpi
+category: web-framework
+website: https://glpi-project.org
+implies: [php]
+detect:
+  scripts:
+    - pattern: '//.*glpi.+common\.min\.js\?v=(\d+\.\d+\.\d+)'
+      version: 1
+  meta:
+    glpi:csrf_token:
+      - pattern: ''
+  js:
+    glpiUnsavedFormChanges:
+      - pattern: ''
+  dom:
+    div[id*='footer-login'] > a:
+      - text: true
+        pattern: 'GLPI\s+version\s+([\d\.]+)'
+        version: 1
+    input[name='_glpi_csrf_token']:
+      - pattern: ''

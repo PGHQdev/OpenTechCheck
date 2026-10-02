@@ -1,0 +1,9 @@
+name: Helix Ultimate
+slug: helix-ultimate
+category: web-framework
+website: https://www.joomshaper.com/joomla-templates/helixultimate
+implies: [joomla]
+detect:
+  dom:
+    header#sp-header, body.helix-ultimate:
+      - pattern: ''

@@ -1,0 +1,22 @@
+name: Yii
+slug: yii
+category: web-framework
+website: https://www.yiiframework.com
+implies: [php]
+detect:
+  html:
+    - pattern: 'Powered by <a href="http://www\.yiiframework\.com/" rel="external">Yii Framework</a>'
+    - pattern: '<input type="hidden" value="[a-zA-Z0-9]{40}" name="YII_CSRF_TOKEN" \/>'
+    - pattern: '<!\[CDATA\[YII-BLOCK-(?:HEAD|BODY-BEGIN|BODY-END)\]'
+  scripts:
+    - pattern: '/assets/[a-zA-Z0-9]{8}\/yii\.js$'
+    - pattern: 'yii(?:\.|)?(?:validation|activeform)\.js'
+  cookies:
+    YII_CSRF_TOKEN:
+      - pattern: ''
+  js:
+    yii.init:
+      - pattern: ''
+  dom:
+    input[name='YII_CSRF_TOKEN'][type='hidden'], a[href*='//www.yiiframework.com/'][rel='external']:
+      - pattern: ''

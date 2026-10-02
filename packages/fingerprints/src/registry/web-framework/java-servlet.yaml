@@ -1,0 +1,10 @@
+name: Java Servlet
+slug: java-servlet
+category: web-framework
+website: https://www.oracle.com/technetwork/java/index-jsp-135475.html
+implies: [java]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Servlet(?:\/([\d.]+))?'
+        version: 1

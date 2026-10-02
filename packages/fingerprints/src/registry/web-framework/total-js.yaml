@@ -1,0 +1,9 @@
+name: total.js
+slug: total-js
+category: web-framework
+website: https://totaljs.com
+implies: [nodejs]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^total\.js'

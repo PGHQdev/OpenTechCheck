@@ -1,0 +1,9 @@
+name: Akka HTTP
+slug: akka-http
+category: web-framework
+website: https://akka.io
+detect:
+  headers:
+    server:
+      - pattern: 'akka-http(?:/([\d.]+))?'
+        version: 1

@@ -1,0 +1,13 @@
+name: Publii
+slug: publii
+category: web-framework
+website: https://getpublii.com
+detect:
+  js:
+    publiiDetectLoadedImages:
+      - pattern: ''
+    publiiThemeMenuConfig:
+      - pattern: ''
+  dom:
+    meta[content*='Publii Open-Source CMS for Static Site']:
+      - pattern: ''

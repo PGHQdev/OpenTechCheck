@@ -1,0 +1,5 @@
+name: Rust
+slug: rust
+category: language
+website: https://www.rust-lang.org
+detect: {}

@@ -1,0 +1,11 @@
+name: Bridgetown
+slug: bridgetown
+category: web-framework
+website: https://www.bridgetownrb.com
+implies: [ruby]
+detect:
+  scripts:
+    - pattern: '^/_bridgetown/static/.+\.js$'
+  dom:
+    link[href^='/_bridgetown/static/']:
+      - pattern: ''

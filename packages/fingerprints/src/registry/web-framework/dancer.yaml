@@ -1,0 +1,12 @@
+name: Dancer
+slug: dancer
+category: web-framework
+website: https://perldancer.org
+detect:
+  headers:
+    server:
+      - pattern: 'Perl Dancer ([\d.]+)'
+        version: 1
+    x-powered-by:
+      - pattern: 'Perl Dancer ([\d.]+)'
+        version: 1

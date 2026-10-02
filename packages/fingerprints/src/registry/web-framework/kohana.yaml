@@ -1,0 +1,13 @@
+name: Kohana
+slug: kohana
+category: web-framework
+website: https://kohanaframework.org
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Kohana Framework ([\d.]+)'
+        version: 1
+  cookies:
+    kohanasession:
+      - pattern: ''

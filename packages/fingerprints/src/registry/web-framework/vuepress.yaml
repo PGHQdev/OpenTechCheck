@@ -1,0 +1,14 @@
+name: VuePress
+slug: vuepress
+category: web-framework
+website: https://vuepress.vuejs.org/
+implies: [vue]
+detect:
+  meta:
+    generator:
+      - pattern: '^VuePress(?: ([0-9.]+)(-[a-z]+.[0-9]+)?)?$'
+        version: 1
+  js:
+    __VUEPRESS__.version:
+      - pattern: '([\d\.]+)'
+        version: 1

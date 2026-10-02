@@ -1,0 +1,11 @@
+name: Shiny
+slug: shiny
+category: web-framework
+website: https://shiny.posit.co
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Shiny Server$'
+  js:
+    Shiny.addCustomMessageHandler:
+      - pattern: ''

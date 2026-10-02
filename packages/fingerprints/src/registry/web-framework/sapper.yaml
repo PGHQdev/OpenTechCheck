@@ -1,0 +1,12 @@
+name: Sapper
+slug: sapper
+category: web-framework
+website: https://sapper.svelte.dev
+implies: [svelte, nodejs]
+detect:
+  html:
+    - pattern: '<script[^>]*>__SAPPER__'
+    - pattern: '#sapper'
+  js:
+    __SAPPER__:
+      - pattern: ''

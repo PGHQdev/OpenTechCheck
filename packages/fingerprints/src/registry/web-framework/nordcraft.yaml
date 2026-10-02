@@ -1,0 +1,11 @@
+name: Nordcraft
+slug: nordcraft
+category: web-framework
+website: https://nordcraft.com
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Nordcraft$'
+  meta:
+    application-name:
+      - pattern: '^Nordcraft$'

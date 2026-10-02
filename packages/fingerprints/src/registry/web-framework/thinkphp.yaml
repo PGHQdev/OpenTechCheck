@@ -1,0 +1,12 @@
+name: ThinkPHP
+slug: thinkphp
+category: web-framework
+website: https://www.thinkphp.cn
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'ThinkPHP'
+  cookies:
+    thinkphp_show_page_trace:
+      - pattern: ''

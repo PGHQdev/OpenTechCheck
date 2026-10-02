@@ -1,0 +1,9 @@
+name: Eleventy
+slug: eleventy
+category: web-framework
+website: https://www.11ty.dev
+detect:
+  meta:
+    generator:
+      - pattern: '^Eleventy\sv([\d\.]+)$'
+        version: 1

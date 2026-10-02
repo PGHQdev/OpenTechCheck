@@ -1,0 +1,16 @@
+name: Base44
+slug: base44
+category: web-framework
+website: https://base44.com/
+detect:
+  html:
+    - pattern: 'base44_access_token'
+    - pattern: 'data-ds'', ''base44'''
+    - pattern: 'base44-prod'
+  meta:
+    apple-mobile-web-app-title:
+      - pattern: 'base44'
+    og:image:alt:
+      - pattern: 'Base44 link preview'
+    og:image:
+      - pattern: 'base44-prod'

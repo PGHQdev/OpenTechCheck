@@ -1,0 +1,8 @@
+name: Mono
+slug: mono
+category: web-framework
+website: https://mono-project.com
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Mono'

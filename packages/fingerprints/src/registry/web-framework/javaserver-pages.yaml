@@ -1,0 +1,10 @@
+name: JavaServer Pages
+slug: javaserver-pages
+category: web-framework
+website: https://www.oracle.com/technetwork/java/javaee/jsp/index.html
+implies: [java]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'JSP(?:/([\d.]+))?'
+        version: 1

@@ -1,0 +1,9 @@
+name: Apache Wicket
+slug: apache-wicket
+category: web-framework
+website: https://wicket.apache.org
+implies: [java]
+detect:
+  js:
+    Wicket:
+      - pattern: ''

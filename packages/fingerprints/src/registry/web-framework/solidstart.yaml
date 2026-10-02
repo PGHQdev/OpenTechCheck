@@ -1,0 +1,9 @@
+name: SolidStart
+slug: solidstart
+category: web-framework
+website: https://start.solidjs.com
+implies: [solid]
+detect:
+  js:
+    _$HY.init:
+      - pattern: ''

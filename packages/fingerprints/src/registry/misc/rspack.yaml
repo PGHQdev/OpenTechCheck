@@ -1,0 +1,6 @@
+name: Rspack
+slug: rspack
+category: misc
+website: https://www.rspack.dev
+implies: [rust]
+detect: {}

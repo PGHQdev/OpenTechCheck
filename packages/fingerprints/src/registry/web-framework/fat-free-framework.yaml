@@ -1,0 +1,9 @@
+name: Fat-Free Framework
+slug: fat-free-framework
+category: web-framework
+website: https://fatfreeframework.com
+implies: [php]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^Fat-Free Framework$'

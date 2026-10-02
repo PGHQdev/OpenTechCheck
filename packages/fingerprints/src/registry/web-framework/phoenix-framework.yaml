@@ -1,0 +1,9 @@
+name: Phoenix Framework
+slug: phoenix-framework
+category: web-framework
+website: https://www.phoenixframework.org
+implies: [elixir]
+detect:
+  js:
+    Phoenix.Channel:
+      - pattern: ''

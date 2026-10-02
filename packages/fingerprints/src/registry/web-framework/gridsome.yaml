@@ -1,0 +1,10 @@
+name: Gridsome
+slug: gridsome
+category: web-framework
+website: https://gridsome.org
+implies: [vue]
+detect:
+  meta:
+    generator:
+      - pattern: '^Gridsome v([\d.]+)$'
+        version: 1

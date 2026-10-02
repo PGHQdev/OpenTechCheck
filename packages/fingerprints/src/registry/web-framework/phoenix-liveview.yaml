@@ -1,0 +1,12 @@
+name: Phoenix LiveView
+slug: phoenix-liveview
+category: web-framework
+website: https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.html
+implies: [phoenix-framework]
+detect:
+  js:
+    liveSocket.socket:
+      - pattern: ''
+  dom:
+    div[data-phx-session]:
+      - pattern: ''

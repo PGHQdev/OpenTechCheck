@@ -1,0 +1,19 @@
+name: Nextra
+slug: nextra
+category: web-framework
+website: https://nextra.site/
+within:
+  techs: [nextjs]
+detect:
+  js:
+    __nextra_internal__:
+      - pattern: ''
+    __nextra_pageContext__:
+      - pattern: ''
+  dom:
+    div.nextra-container:
+      - pattern: ''
+    div.nextra-nav-container:
+      - pattern: ''
+    div.nextra-sidebar-container:
+      - pattern: ''

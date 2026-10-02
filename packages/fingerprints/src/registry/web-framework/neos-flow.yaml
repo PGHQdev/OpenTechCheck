@@ -1,0 +1,11 @@
+name: Neos Flow
+slug: neos-flow
+category: web-framework
+website: https://flow.neos.io
+implies: [php]
+excludes: [typo3]
+detect:
+  headers:
+    x-flow-powered:
+      - pattern: 'Flow/?(.+)?$'
+        version: 1

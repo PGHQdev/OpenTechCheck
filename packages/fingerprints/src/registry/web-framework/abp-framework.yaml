@@ -1,0 +1,12 @@
+name: ABP Framework
+slug: abp-framework
+category: web-framework
+website: https://abp.io/
+implies: [aspnet]
+detect:
+  js:
+    abp.timing.timeZone:
+      - pattern: ''
+    abp.version:
+      - pattern: '(.*)'
+        version: 1

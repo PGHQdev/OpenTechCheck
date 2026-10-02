@@ -1,0 +1,10 @@
+name: Snap
+slug: snap
+category: web-framework
+website: https://snapframework.com
+implies: [haskell]
+detect:
+  headers:
+    server:
+      - pattern: 'Snap/([.\d]+)'
+        version: 1

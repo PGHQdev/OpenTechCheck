@@ -1,0 +1,11 @@
+name: Ktor
+slug: ktor
+category: web-framework
+website: https://ktor.io
+implies: [kotlin]
+detect:
+  headers:
+    server:
+      - pattern: '^Ktor/debug$'
+    x-engine:
+      - pattern: '^Ktor$'

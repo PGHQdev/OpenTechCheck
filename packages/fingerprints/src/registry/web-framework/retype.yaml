@@ -1,0 +1,10 @@
+name: Retype
+slug: retype
+category: web-framework
+website: https://retype.com
+implies: [nodejs]
+detect:
+  meta:
+    generator:
+      - pattern: 'Retype\s([\d\.]+)?'
+        version: 1

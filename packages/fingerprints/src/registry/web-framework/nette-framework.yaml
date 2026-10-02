@@ -1,0 +1,25 @@
+name: Nette Framework
+slug: nette-framework
+category: web-framework
+website: https://nette.org
+implies: [php]
+detect:
+  html:
+    - pattern: '<input[^>]+data-nette-rules'
+    - pattern: '<div[^>]+id="snippet-'
+    - pattern: '<input[^>]+id="frm-'
+  headers:
+    x-powered-by:
+      - pattern: '^Nette Framework'
+  cookies:
+    nette-browser:
+      - pattern: ''
+  js:
+    Nette:
+      - pattern: ''
+    Nette.version:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    input[data-nette-rules], div[id^='snippet-'], input[id^='frm-']:
+      - pattern: ''

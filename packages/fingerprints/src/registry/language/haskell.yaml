@@ -1,0 +1,5 @@
+name: Haskell
+slug: haskell
+category: language
+website: https://wiki.haskell.org/Haskell
+detect: {}

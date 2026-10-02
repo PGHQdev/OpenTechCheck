@@ -1,0 +1,10 @@
+name: Rspress
+slug: rspress
+category: web-framework
+website: https://rspress.dev
+implies: [rspack]
+detect:
+  meta:
+    generator:
+      - pattern: 'Rspress\sv([\d\.]+)'
+        version: 1

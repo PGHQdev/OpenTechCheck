@@ -1,0 +1,9 @@
+name: Spring
+slug: spring
+category: web-framework
+website: https://spring.io
+implies: [java]
+detect:
+  headers:
+    x-application-context:
+      - pattern: ''

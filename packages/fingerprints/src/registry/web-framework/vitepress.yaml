@@ -1,0 +1,9 @@
+name: VitePress
+slug: vitepress
+category: web-framework
+website: https://vitepress.vuejs.org/
+implies: [vue, vite]
+detect:
+  js:
+    __VP_HASH_MAP__:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Scully
+slug: scully
+category: web-framework
+website: https://scully.io
+implies: [angular]
+detect:
+  meta:
+    generator:
+      - pattern: '^Scully\s([\d\.]+)$'
+        version: 1
+  js:
+    ScullyIO:
+      - pattern: ''

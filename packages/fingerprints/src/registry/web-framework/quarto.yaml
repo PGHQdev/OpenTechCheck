@@ -1,0 +1,16 @@
+name: Quarto
+slug: quarto
+category: web-framework
+website: https://quarto.org
+detect:
+  meta:
+    generator:
+      - pattern: '^quarto-([\d\.]+)$'
+        version: 1
+  js:
+    quartoOpenSearch:
+      - pattern: ''
+    quartoToggleHeadroom:
+      - pattern: ''
+    quartoToggleReader:
+      - pattern: ''

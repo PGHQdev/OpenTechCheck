@@ -1,0 +1,13 @@
+name: Reflex
+slug: reflex
+category: web-framework
+website: https://reflex.dev
+within:
+  techs: [react]
+detect:
+  meta:
+    application-name:
+      - pattern: '^Reflex$'
+  js:
+    __reflex.react:
+      - pattern: ''
