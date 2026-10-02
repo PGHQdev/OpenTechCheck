@@ -193,7 +193,7 @@
         <li><span class="ltile"><img src={`/icons/${tech.slug}.png`} alt="" /></span>{tech.name}</li>
       {/each}
     </ul>
-    <a class="btn secondary" href={`${repo}/tree/main/packages/fingerprints/src/registry`} target="_blank" rel="noreferrer">Browse technologies ↗</a>
+    <a class="btn secondary" href="/technologies">Browse technologies</a>
   </div>
 </section>
 

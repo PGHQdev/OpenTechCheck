@@ -16,6 +16,7 @@
       <span class="brand">OpenTechCheck</span>
     </a>
     <div class="links">
+      <a href="/technologies">Technologies</a>
       <a href="https://github.com/PGHQdev/OpenTechCheck" target="_blank" rel="noreferrer">GitHub</a>
       <a href="https://github.com/PGHQdev/OpenTechCheck/blob/main/CONTRIBUTING.md" target="_blank" rel="noreferrer">Contribute</a>
       <a class="cta" href="https://chromewebstore.google.com/detail/opentechcheck/ijggpkkfefnlkinbpkkiihiciffpjnab" target="_blank" rel="noreferrer">Get the extension</a>

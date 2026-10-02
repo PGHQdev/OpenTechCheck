@@ -5,3 +5,4 @@ static/favicon.png
 build/
 src/registry-count.json
 .wrangler/
+src/registry-catalog.json
