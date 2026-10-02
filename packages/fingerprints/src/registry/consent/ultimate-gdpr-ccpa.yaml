@@ -1,0 +1,10 @@
+name: Ultimate GDPR & CCPA
+slug: ultimate-gdpr-ccpa
+category: consent
+website: https://www.createit.com/gdpr
+within:
+  techs: [wordpress]
+detect:
+  js:
+    ct_ultimate_gdpr_cookie:
+      - pattern: ''

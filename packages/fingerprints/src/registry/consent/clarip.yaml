@@ -1,0 +1,14 @@
+name: Clarip
+slug: clarip
+category: consent
+website: https://www.clarip.com
+detect:
+  scripts:
+    - pattern: '//cdn\.clarip\.com/'
+  js:
+    claripCdnHost:
+      - pattern: ''
+    claripHost:
+      - pattern: ''
+    pageData.claripConsentJSUrl:
+      - pattern: ''

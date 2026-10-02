@@ -1,0 +1,13 @@
+name: Borlabs Cookie
+slug: borlabs-cookie
+category: consent
+website: https://borlabs.io/borlabs-cookie/
+within:
+  techs: [wordpress]
+detect:
+  js:
+    borlabsCookieConfig:
+      - pattern: ''
+  dom:
+    '#BorlabsCookieBox':
+      - pattern: ''

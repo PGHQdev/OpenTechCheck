@@ -1,0 +1,24 @@
+name: Axeptio
+slug: axeptio
+category: consent
+website: https://www.axept.io
+detect:
+  cookies:
+    axeptio_all_vendors:
+      - pattern: ''
+    axeptio_authorized_vendors:
+      - pattern: ''
+    axeptio_cookies:
+      - pattern: ''
+  js:
+    axeptioBuildTimestamp:
+      - pattern: ''
+    axeptioHandleVendors:
+      - pattern: ''
+    axeptioSDK:
+      - pattern: ''
+    axeptioSettings:
+      - pattern: ''
+  dom:
+    img[src*='axeptio.imgix.net/'], div#axeptio_overlay:
+      - pattern: ''

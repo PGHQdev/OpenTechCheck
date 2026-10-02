@@ -1,0 +1,7 @@
+name: Cookie Script
+slug: cookie-script
+category: consent
+website: https://cookie-script.com
+detect:
+  scripts:
+    - pattern: '\.cookie-script\.com/'

@@ -1,0 +1,10 @@
+name: Alfright
+slug: alfright
+category: consent
+website: https://www.alfright.eu
+detect:
+  scripts:
+    - pattern: 'app\.alfright\.eu/'
+  dom:
+    iframe[src*='app.alfright.eu/']:
+      - pattern: ''

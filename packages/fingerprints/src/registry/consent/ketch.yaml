@@ -1,0 +1,7 @@
+name: Ketch
+slug: ketch
+category: consent
+website: https://www.ketch.com
+detect:
+  scripts:
+    - pattern: '\.ketchcdn\.com/'

@@ -1,0 +1,16 @@
+name: snigel AdConsent
+slug: snigel-adconsent
+category: consent
+website: https://www.snigel.com/adconsent/
+detect:
+  scripts:
+    - pattern: '(?:staging-)?cdn\.snigelweb\.com/(?:snhb|adconsent)/'
+  js:
+    adconsent.version:
+      - pattern: '^([\d.]+)$'
+        version: 1
+    snhb.baseSettings:
+      - pattern: ''
+        confidence: 50
+    snhb.info.cmpVersion:
+      - pattern: ''

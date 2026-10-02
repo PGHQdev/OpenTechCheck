@@ -1,0 +1,11 @@
+name: Yett
+slug: yett
+category: consent
+website: https://github.com/elbywan/yett
+detect:
+  scripts:
+    - pattern: '/yett@([\d\.]+)/dist/yett\.min\.js'
+      version: 1
+  js:
+    YETT_BLACKLIST:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: 2B Advice
+slug: 2b-advice
+category: consent
+website: https://www.2b-advice.com/en/data-privacy-software/cookie-consent-plugin/
+detect:
+  scripts:
+    - pattern: '2badvice-cdn\.azureedge\.net'
+  js:
+    BBCookieControler:
+      - pattern: ''

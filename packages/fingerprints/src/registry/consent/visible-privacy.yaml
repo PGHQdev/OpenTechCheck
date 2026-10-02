@@ -1,0 +1,7 @@
+name: Visible Privacy
+slug: visible-privacy
+category: consent
+website: https://visibleprivacy.com/
+detect:
+  scripts:
+    - pattern: '//bc-prod-config\.empathy\.co/'

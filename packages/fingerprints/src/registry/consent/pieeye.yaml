@@ -1,0 +1,10 @@
+name: PieEye
+slug: pieeye
+category: consent
+website: https://pii.ai
+detect:
+  scripts:
+    - pattern: '\.cookie\.pii\.ai/'
+  js:
+    piEyeScript:
+      - pattern: ''

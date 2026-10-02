@@ -1,0 +1,11 @@
+name: Legal Monster
+slug: legal-monster
+category: consent
+website: https://www.legalmonster.com
+detect:
+  scripts:
+    - pattern: '\.legalmonster\.com/'
+  js:
+    legal.__VERSION__:
+      - pattern: '([\d.]+)'
+        version: 1

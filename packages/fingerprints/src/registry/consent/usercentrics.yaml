@@ -1,0 +1,14 @@
+name: Usercentrics
+slug: usercentrics
+category: consent
+website: https://usercentrics.com
+detect:
+  scripts:
+    - pattern: '\.usercentrics\.eu/.+\.js'
+  js:
+    usercentrics.appVersion:
+      - pattern: '([\d.]+)'
+        version: 1
+  dom:
+    link[href*='app.usercentrics.eu'], script[data-usercentrics]:
+      - pattern: ''

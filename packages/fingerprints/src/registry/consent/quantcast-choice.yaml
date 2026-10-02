@@ -1,0 +1,7 @@
+name: Quantcast Choice
+slug: quantcast-choice
+category: consent
+website: https://www.quantcast.com/products/choice-consent-management-platform
+detect:
+  scripts:
+    - pattern: 'quantcast\.mgr\.consensu\.org'

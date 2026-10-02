@@ -1,0 +1,29 @@
+name: Consent Manager
+slug: consent-manager
+category: consent
+website: https://www.consentmanager.net
+detect:
+  cookies:
+    __cmpcccx274:
+      - pattern: ''
+    __cmpconsentx274:
+      - pattern: ''
+    __cmpiuid:
+      - pattern: ''
+  js:
+    cmpCCPA:
+      - pattern: ''
+    cmpConsentPurposes:
+      - pattern: ''
+    cmpConsentString:
+      - pattern: ''
+    cmpCustomPurposeConsent:
+      - pattern: ''
+    cmpGDPR:
+      - pattern: ''
+    cmpGoogleVendorsConsent:
+      - pattern: ''
+    cmp_closevendor:
+      - pattern: ''
+    cmp_vendordelivery:
+      - pattern: ''

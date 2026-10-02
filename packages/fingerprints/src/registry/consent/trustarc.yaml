@@ -1,0 +1,7 @@
+name: TrustArc
+slug: trustarc
+category: consent
+website: https://trustarc.com
+detect:
+  scripts:
+    - pattern: 'consent\.trustarc\.com'

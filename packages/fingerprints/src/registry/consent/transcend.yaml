@@ -1,0 +1,8 @@
+name: Transcend
+slug: transcend
+category: consent
+website: https://www.transcend.io
+detect:
+  js:
+    transcend:
+      - pattern: ''

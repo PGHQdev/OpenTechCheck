@@ -1,0 +1,11 @@
+name: Vera
+slug: vera
+category: consent
+website: https://www.getvera.ai
+detect:
+  scripts:
+    - pattern: '\.privasee\.io/'
+    - pattern: '\.getvera\.ai/'
+  js:
+    privasee:
+      - pattern: ''

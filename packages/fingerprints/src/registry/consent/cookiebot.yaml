@@ -1,0 +1,11 @@
+name: Cookiebot
+slug: cookiebot
+category: consent
+website: https://www.cookiebot.com
+detect:
+  scripts:
+    - pattern: 'consent\.cookiebot\.com'
+  js:
+    Cookiebot.version:
+      - pattern: '^(.+)$'
+        version: 1

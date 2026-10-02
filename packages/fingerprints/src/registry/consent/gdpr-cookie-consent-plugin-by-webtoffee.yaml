@@ -1,0 +1,11 @@
+name: GDPR Cookie Consent Plugin by Webtoffee
+slug: gdpr-cookie-consent-plugin-by-webtoffee
+category: consent
+website: https://www.webtoffee.com/product/gdpr-cookie-consent/
+detect:
+  cookies:
+    wt_consent:
+      - pattern: ''
+  js:
+    webtoffee._wccConsentStore:
+      - pattern: ''

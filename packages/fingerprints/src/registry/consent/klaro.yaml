@@ -1,0 +1,10 @@
+name: Klaro
+slug: klaro
+category: consent
+website: https://heyklaro.com
+detect:
+  js:
+    klaro:
+      - pattern: ''
+    klaroConfig:
+      - pattern: ''

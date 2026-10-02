@@ -1,0 +1,12 @@
+name: biskoui
+slug: biskoui
+category: consent
+website: https://biskoui.ch
+detect:
+  scripts:
+    - pattern: 'cdn\.biskoui\.com'
+  js:
+    biskouiScriptLoaded:
+      - pattern: ''
+    biskouiSettings:
+      - pattern: ''

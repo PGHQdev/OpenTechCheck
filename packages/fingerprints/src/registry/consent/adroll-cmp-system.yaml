@@ -1,0 +1,10 @@
+name: AdRoll CMP System
+slug: adroll-cmp-system
+category: consent
+website: https://www.adroll.com/features/consent-management
+detect:
+  js:
+    __adroll_consent:
+      - pattern: ''
+    __adroll_consent_is_gdpr:
+      - pattern: ''

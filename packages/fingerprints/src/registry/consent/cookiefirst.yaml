@@ -1,0 +1,10 @@
+name: CookieFirst
+slug: cookiefirst
+category: consent
+website: https://cookiefirst.com
+detect:
+  scripts:
+    - pattern: 'consent\.cookiefirst\.com/'
+  js:
+    cookiefirst_show_settings:
+      - pattern: ''

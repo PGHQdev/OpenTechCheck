@@ -1,0 +1,12 @@
+name: Seers
+slug: seers
+category: consent
+website: https://www.seersco.com
+detect:
+  scripts:
+    - pattern: '(?://|\.)seersco\.com/'
+  js:
+    cb_banner_cpra_file_name:
+      - pattern: '\.seersco\.com/'
+    cb_host:
+      - pattern: '\.seersco\.com'

@@ -1,0 +1,7 @@
+name: Commanders Act TrustCommander
+slug: commanders-act-trustcommander
+category: consent
+website: https://www.commandersact.com/en/solutions/trustcommander/
+detect:
+  scripts:
+    - pattern: '\.trustcommander\.net/privacy/.+_v([\d]+)_([\d]+)\.js'

@@ -1,0 +1,10 @@
+name: Byscuit
+slug: byscuit
+category: consent
+website: https://www.byscuit.com
+detect:
+  scripts:
+    - pattern: 'api\.byscuit\.com/'
+  js:
+    onloadByscuit:
+      - pattern: ''

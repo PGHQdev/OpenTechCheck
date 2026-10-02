@@ -1,0 +1,15 @@
+name: CrownPeak Universal Consent Platform
+slug: crownpeak-universal-consent-platform
+category: consent
+website: https://www.crownpeak.com/products/privacy-and-consent-management
+detect:
+  scripts:
+    - pattern: '\.evidon\.com/'
+  js:
+    EB.EvidonConsent:
+      - pattern: ''
+    evidon:
+      - pattern: ''
+  dom:
+    a[href*='info.evidon.com/pub_info/']:
+      - pattern: ''

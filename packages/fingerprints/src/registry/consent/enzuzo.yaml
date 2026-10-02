@@ -1,0 +1,17 @@
+name: Enzuzo
+slug: enzuzo
+category: consent
+website: https://www.enzuzo.com
+detect:
+  scripts:
+    - pattern: 'app\.enzuzo\.com'
+  headers:
+    x-enzuzo-city:
+      - pattern: ''
+    x-enzuzo-country:
+      - pattern: ''
+  js:
+    __ENZUZO_STARTED__:
+      - pattern: ''
+    enzuzoGtmConsentObj:
+      - pattern: ''

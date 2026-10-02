@@ -1,0 +1,13 @@
+name: AdOpt
+slug: adopt
+category: consent
+website: https://goadopt.io
+implies: [svelte]
+detect:
+  scripts:
+    - pattern: 'tag\.goadopt\.io/'
+  js:
+    adoptApp.domain:
+      - pattern: ''
+    adopt_website_code:
+      - pattern: ''

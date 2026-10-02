@@ -1,0 +1,11 @@
+name: HulkApps GDPR/CCPA Compliance Manager
+slug: hulkapps-gdpr-ccpa-compliance-manager
+category: consent
+website: https://www.hulkapps.com/products/gdpr-ccpa-cookie-manager-shopify-app
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cookiebar\.hulkapps\.com/hulk_cookie_bar\.js'
+  js:
+    hulkSetCookie:
+      - pattern: ''

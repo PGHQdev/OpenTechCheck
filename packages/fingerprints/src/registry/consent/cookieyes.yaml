@@ -1,0 +1,19 @@
+name: CookieYes
+slug: cookieyes
+category: consent
+website: https://www.cookieyes.com/
+detect:
+  scripts:
+    - pattern: 'app\.cookieyes\.com/client_data/'
+    - pattern: 'cdn-cookieyes\.com/client_data/'
+    - pattern: '/wp-content/plugins/cookie-law-info/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    cookieYes:
+      - pattern: ''
+  dom:
+    '#cookie-law-info-bar':
+      - text: true
+        pattern: ''
+    link[href*='/wp-content/plugins/cookie-law-info/']:
+      - pattern: ''

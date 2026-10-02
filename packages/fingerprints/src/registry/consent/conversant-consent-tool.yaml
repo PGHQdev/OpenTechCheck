@@ -1,0 +1,10 @@
+name: Conversant Consent Tool
+slug: conversant-consent-tool
+category: consent
+website: https://www.conversantmedia.eu/consent-tool
+detect:
+  scripts:
+    - pattern: 'cdn\.conversant\.mgr\.consensu\.org/'
+  js:
+    conversant:
+      - pattern: ''

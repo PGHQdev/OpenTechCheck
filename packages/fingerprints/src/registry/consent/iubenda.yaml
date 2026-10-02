@@ -1,0 +1,12 @@
+name: iubenda
+slug: iubenda
+category: consent
+website: https://www.iubenda.com
+detect:
+  scripts:
+    - pattern: 'iubenda\.com/'
+  js:
+    _iub:
+      - pattern: ''
+    addIubendaCs:
+      - pattern: ''

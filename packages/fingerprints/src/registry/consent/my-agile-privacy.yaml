@@ -1,0 +1,10 @@
+name: My Agile Privacy
+slug: my-agile-privacy
+category: consent
+website: https://www.myagileprivacy.com/en/
+detect:
+  js:
+    MyAgilePixel:
+      - pattern: ''
+    MyAgilePixelProxyBeacon:
+      - pattern: ''

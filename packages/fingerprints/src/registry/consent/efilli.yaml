@@ -1,0 +1,16 @@
+name: Efilli
+slug: efilli
+category: consent
+website: https://efilli.com
+detect:
+  js:
+    EFILLI_GLOBAL_OPTIONS:
+      - pattern: ''
+    Efilli:
+      - pattern: ''
+    efilli.__cookieBlocker:
+      - pattern: ''
+    efilliSdk:
+      - pattern: ''
+    efilliSdkConfig:
+      - pattern: ''

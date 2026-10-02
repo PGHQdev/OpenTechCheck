@@ -1,0 +1,8 @@
+name: HubSpot Cookie Policy Banner
+slug: hubspot-cookie-policy-banner
+category: consent
+website: https://knowledge.hubspot.com/reports/customize-your-cookie-tracking-settings-and-privacy-policy-alert
+detect:
+  dom:
+    '#hs-eu-cookie-confirmation':
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: Cookie Notice
+slug: cookie-notice
+category: consent
+website: https://wordpress.org/plugins/cookie-notice
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/cookie-notice/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

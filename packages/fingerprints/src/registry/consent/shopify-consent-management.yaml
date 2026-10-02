@@ -1,0 +1,8 @@
+name: Shopify Consent Management
+slug: shopify-consent-management
+category: consent
+website: https://apps.shopify.com/customer-privacy-banner
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cookie_consent_shopify\.js'

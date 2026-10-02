@@ -1,0 +1,13 @@
+name: Acconsento.click
+slug: acconsento-click
+category: consent
+website: https://shop.acconsento.click
+detect:
+  js:
+    AcconsentoAPI:
+      - pattern: ''
+    acconsentoCreateElement:
+      - pattern: ''
+  dom:
+    link[href*='//acconsento.click/']:
+      - pattern: ''

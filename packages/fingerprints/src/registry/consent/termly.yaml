@@ -1,0 +1,7 @@
+name: Termly
+slug: termly
+category: consent
+website: https://termly.io/
+detect:
+  scripts:
+    - pattern: 'app\.termly\.io/embed\.min\.js'

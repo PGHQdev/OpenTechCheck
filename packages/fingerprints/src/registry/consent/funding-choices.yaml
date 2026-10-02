@@ -1,0 +1,13 @@
+name: Funding Choices
+slug: funding-choices
+category: consent
+website: https://developers.google.com/funding-choices
+detect:
+  scripts:
+    - pattern: 'fundingchoicesmessages\.google\.com'
+  js:
+    __googlefc:
+      - pattern: ''
+  dom:
+    .fc-consent-root, iframe[name='googlefcLoaded'], iframe[name='googlefcPresent'], .fc-dialog, .fc-choice-dialog:
+      - pattern: ''

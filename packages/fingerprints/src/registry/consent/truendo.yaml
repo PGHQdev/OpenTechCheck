@@ -1,0 +1,13 @@
+name: TRUENDO
+slug: truendo
+category: consent
+website: https://truendo.com
+detect:
+  scripts:
+    - pattern: 'cdn\.priv\.center/'
+    - pattern: 'cdn\.truendo\.com/'
+  js:
+    Truendo:
+      - pattern: ''
+    TruendoCookieControlCallback:
+      - pattern: ''

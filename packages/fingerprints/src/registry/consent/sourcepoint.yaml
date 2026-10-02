@@ -1,0 +1,14 @@
+name: Sourcepoint
+slug: sourcepoint
+category: consent
+website: https://sourcepoint.com
+detect:
+  cookies:
+    _sp_enable_dfp_personalized_ads:
+      - pattern: ''
+  js:
+    tealium_sourcepoint:
+      - pattern: ''
+  dom:
+    body.f_sourcepoint_ccpa_on:
+      - pattern: ''

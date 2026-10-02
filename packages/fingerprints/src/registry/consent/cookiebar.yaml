@@ -1,0 +1,10 @@
+name: CookieBAR
+slug: cookiebar
+category: consent
+website: https://cookie-bar.eu
+detect:
+  scripts:
+    - pattern: '/cookie-bar/cookiebar-latest\.min\.js'
+  js:
+    setupCookieBar:
+      - pattern: ''

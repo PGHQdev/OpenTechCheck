@@ -1,0 +1,8 @@
+name: c15t
+slug: c15t
+category: consent
+website: https://c15t.com
+detect:
+  js:
+    c15tStore.getInitialState:
+      - pattern: ''

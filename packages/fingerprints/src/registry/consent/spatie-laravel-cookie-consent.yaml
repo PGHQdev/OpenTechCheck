@@ -1,0 +1,9 @@
+name: Spatie Laravel Cookie Consent
+slug: spatie-laravel-cookie-consent
+category: consent
+website: https://github.com/spatie/laravel-cookie-consent
+implies: [laravel]
+detect:
+  js:
+    laravelCookieConsent:
+      - pattern: ''

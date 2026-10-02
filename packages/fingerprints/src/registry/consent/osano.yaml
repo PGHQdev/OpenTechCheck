@@ -1,0 +1,10 @@
+name: Osano
+slug: osano
+category: consent
+website: https://www.osano.com
+detect:
+  scripts:
+    - pattern: 'cmp\.osano\.com/'
+  js:
+    Osano:
+      - pattern: ''

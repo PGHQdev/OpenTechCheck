@@ -1,0 +1,23 @@
+name: Pandectes
+slug: pandectes
+category: consent
+website: https://pandectes.io
+detect:
+  scripts:
+    - pattern: 'pandectes-core\.js|(?:s3\.us-west-2\.amazonaws\.com|gdpr-privacy-policy-assets\.s3-us-west-2\.amazonaws\.com)/gdpr-privacy-policy-assets/'
+  cookies:
+    _pandectes_gdpr:
+      - pattern: ''
+  js:
+    Pandectes:
+      - pattern: ''
+    PandectesBlocker:
+      - pattern: ''
+    PandectesCore:
+      - pattern: ''
+    PandectesGeolocation:
+      - pattern: ''
+    PandectesRules:
+      - pattern: ''
+    PandectesSettings:
+      - pattern: ''

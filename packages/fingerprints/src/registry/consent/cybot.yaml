@@ -1,0 +1,8 @@
+name: Cybot
+slug: cybot
+category: consent
+website: https://www.cybot.com/
+detect:
+  dom:
+    div#CybotCookiebotDialog:
+      - pattern: ''

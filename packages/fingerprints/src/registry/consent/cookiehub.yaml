@@ -1,0 +1,11 @@
+name: CookieHub
+slug: cookiehub
+category: consent
+website: https://www.cookiehub.com
+detect:
+  scripts:
+    - pattern: 'cookiehub\.net/.*\.js'
+    - pattern: 'cdn\.cookiehub\.eu/'
+  cookies:
+    cookiehub:
+      - pattern: ''

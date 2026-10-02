@@ -1,0 +1,10 @@
+name: Moove GDPR Consent
+slug: moove-gdpr-consent
+category: consent
+website: https://www.mooveagency.com/wordpress/gdpr-cookie-compliance-plugin
+within:
+  techs: [wordpress]
+detect:
+  js:
+    moove_frontend_gdpr_scripts:
+      - pattern: ''
