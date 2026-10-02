@@ -67,7 +67,7 @@
   footer { border-top: 1.5px solid var(--ink); margin-top: 0; background: var(--paper); }
   .foot { display: flex; align-items: center; justify-content: space-between; padding-top: 22px; padding-bottom: 22px; flex-wrap: wrap; gap: 12px; }
   .fleft { display: flex; align-items: center; gap: 12px; }
-  .small { font-size: 11px; letter-spacing: 0.08em; color: var(--dim); }
+  .small { font-size: 12px; letter-spacing: 0.08em; color: var(--dim); }
   .fright { display: flex; gap: 18px; }
   .fright a { text-decoration: none; }
   .fright a:hover { color: var(--blue); }
