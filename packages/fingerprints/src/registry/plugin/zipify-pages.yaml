@@ -1,0 +1,9 @@
+name: Zipify Pages
+slug: zipify-pages
+category: plugin
+website: https://zipify.com/apps/pages/
+implies: [shopify]
+detect:
+  js:
+    ZipifyPages:
+      - pattern: ''

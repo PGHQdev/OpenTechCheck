@@ -1,0 +1,9 @@
+name: ZendApps
+slug: zendapps
+category: plugin
+website: https://zendapps.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.zend-apps\.com/'

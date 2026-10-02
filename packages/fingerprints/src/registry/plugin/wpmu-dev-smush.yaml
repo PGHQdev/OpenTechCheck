@@ -1,0 +1,10 @@
+name: WPMU DEV Smush
+slug: wpmu-dev-smush
+category: plugin
+website: https://wpmudev.com/project/wp-smush-pro
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/wp-smushit(?:-pro)?/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1

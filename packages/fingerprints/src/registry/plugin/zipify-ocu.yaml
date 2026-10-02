@@ -1,0 +1,7 @@
+name: Zipify OCU
+slug: zipify-ocu
+category: plugin
+website: https://zipify.com/apps/ocu/
+detect:
+  scripts:
+    - pattern: '/zipify-oneclickupsell-vendor\.js'

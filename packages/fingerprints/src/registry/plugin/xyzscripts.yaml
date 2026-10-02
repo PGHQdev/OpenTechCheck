@@ -1,0 +1,8 @@
+name: XYZScripts
+slug: xyzscripts
+category: plugin
+website: https://xyzscripts.com
+detect:
+  dom:
+    a[href*='xyzscripts.com/'] + a[href*='www.xyzscripts.com']:
+      - pattern: ''

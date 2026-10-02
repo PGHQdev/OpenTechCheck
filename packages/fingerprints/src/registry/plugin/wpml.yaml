@@ -1,0 +1,16 @@
+name: WPML
+slug: wpml
+category: plugin
+website: https://wpml.org/
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/sitepress-multilingual-cms/'
+  meta:
+    generator:
+      - pattern: '^WPML\sver\:([\d\.]+)'
+        version: 1
+  cookies:
+    wp-wpml_current_language:
+      - pattern: ''

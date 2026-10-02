@@ -1,0 +1,14 @@
+name: Zalify
+slug: zalify
+category: plugin
+website: https://www.zalify.com
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '\.zalify\.com/'
+  js:
+    zalify.render:
+      - pattern: ''
+    zalifyCurrentScript:
+      - pattern: ''

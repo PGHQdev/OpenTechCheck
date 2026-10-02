@@ -1,0 +1,16 @@
+name: Zakeke Interactive Product Designer
+slug: zakeke-interactive-product-designer
+category: plugin
+website: https://www.zakeke.com
+within:
+  techs: [woocommerce]
+detect:
+  html:
+    - pattern: 'id="zakeke-(?:product-page|shop)-js"'
+    - pattern: 'product-type-zakeke'
+  scripts:
+    - pattern: '/wp-content/plugins/zakeke-interactive-product-designer/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    zakekeProductPage:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: WPS Visitor Counter
+slug: wps-visitor-counter
+category: plugin
+website: https://wordpress.org/plugins/wps-visitor-counter/
+within:
+  techs: [wordpress]
+detect:
+  js:
+    wpspagevisit:
+      - pattern: ''

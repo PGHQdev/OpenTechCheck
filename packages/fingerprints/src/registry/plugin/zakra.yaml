@@ -1,0 +1,17 @@
+name: Zakra
+slug: zakra
+category: plugin
+website: https://zakratheme.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/themes/zakra/'
+  js:
+    zakraFrontend:
+      - pattern: ''
+    zakraNavHelper.dimension:
+      - pattern: ''
+  dom:
+    link#zakra-style-css:
+      - pattern: ''

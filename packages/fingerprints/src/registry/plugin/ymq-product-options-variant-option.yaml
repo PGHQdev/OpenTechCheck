@@ -1,0 +1,10 @@
+name: YMQ Product Options Variant Option
+slug: ymq-product-options-variant-option
+category: plugin
+website: https://apps.shopify.com/ymq-options
+implies: [shopify]
+detect:
+  js:
+    ymq_option.v:
+      - pattern: '\?v=([\d\.]+)'
+        version: 1

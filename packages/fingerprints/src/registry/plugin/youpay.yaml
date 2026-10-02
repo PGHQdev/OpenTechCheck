@@ -1,0 +1,15 @@
+name: YouPay
+slug: youpay
+category: plugin
+website: https://youpay.co
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'app\.youpay\.ai/'
+  js:
+    YouPay.buttonWindow:
+      - pattern: ''
+    youpayReady:
+      - pattern: ''
+    youpayStatus:
+      - pattern: ''
