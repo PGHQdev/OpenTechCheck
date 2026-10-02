@@ -1,0 +1,13 @@
+name: MooTools
+slug: mootools
+category: js-framework
+website: https://mootools.net
+detect:
+  scripts:
+    - pattern: 'mootools.*\.js'
+  js:
+    MooTools:
+      - pattern: ''
+    MooTools.version:
+      - pattern: '^(.+)$'
+        version: 1

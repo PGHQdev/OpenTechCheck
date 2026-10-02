@@ -1,0 +1,16 @@
+name: Polymer
+slug: polymer
+category: js-framework
+website: https://polymer-project.org
+detect:
+  html:
+    - pattern: '(?:<polymer-[^>]+|<link[^>]+rel="import"[^>]+/polymer\.html")'
+  scripts:
+    - pattern: 'polymer\.js'
+  js:
+    Polymer.version:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    link[rel='import'][href*='/polymer.html']:
+      - pattern: ''

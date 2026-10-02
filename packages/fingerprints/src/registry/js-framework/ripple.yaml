@@ -1,0 +1,9 @@
+name: Ripple
+slug: ripple
+category: js-framework
+website: https://dpc-sdp.github.io/sdp-docs/ripple/
+implies: [nuxt, vue, drupal]
+detect:
+  headers:
+    x-sdp-app-type:
+      - pattern: 'ripple'

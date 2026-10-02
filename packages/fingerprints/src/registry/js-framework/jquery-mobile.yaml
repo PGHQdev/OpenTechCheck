@@ -1,0 +1,15 @@
+name: jQuery Mobile
+slug: jquery-mobile
+category: js-framework
+website: https://jquerymobile.com
+implies: [jquery]
+detect:
+  scripts:
+    - pattern: 'jquery[.-]mobile(?:-([\d.]+))?(?:\.min)?\.js'
+      version: 1
+    - pattern: 'jquery[.-]mobile(?:-)?(?:\.min)?\.js(?:\?ver=([\d.]+))?'
+      version: 1
+  js:
+    jQuery.mobile.version:
+      - pattern: '^(.+)$'
+        version: 1

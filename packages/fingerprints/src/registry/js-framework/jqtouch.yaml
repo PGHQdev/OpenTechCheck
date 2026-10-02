@@ -1,0 +1,10 @@
+name: jQTouch
+slug: jqtouch
+category: js-framework
+website: https://jqtouch.com
+detect:
+  scripts:
+    - pattern: 'jqtouch.*\.js'
+  js:
+    jQT:
+      - pattern: ''

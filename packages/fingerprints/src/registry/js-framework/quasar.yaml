@@ -1,0 +1,21 @@
+name: Quasar
+slug: quasar
+category: js-framework
+website: https://quasar.dev
+implies: [vue]
+within:
+  techs: [vue]
+detect:
+  dom:
+    div#q-app:
+      - attr: id
+        pattern: ''
+        confidence: 50
+    div.q-notifications:
+      - pattern: ''
+    div.q-page-container:
+      - attr: class
+        pattern: ''
+        confidence: 50
+    span.q-focus-helper:
+      - pattern: ''

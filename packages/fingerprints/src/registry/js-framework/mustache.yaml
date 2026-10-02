@@ -1,0 +1,11 @@
+name: Mustache
+slug: mustache
+category: js-framework
+website: https://mustache.github.io
+detect:
+  scripts:
+    - pattern: 'mustache(?:\.min)?\.js'
+  js:
+    Mustache.version:
+      - pattern: '^(.+)$'
+        version: 1

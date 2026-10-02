@@ -1,0 +1,10 @@
+name: AlertifyJS
+slug: alertifyjs
+category: js-framework
+website: https://alertifyjs.com
+detect:
+  scripts:
+    - pattern: '/alertify/alertify\.min\.js'
+  js:
+    alertify.defaults.autoReset:
+      - pattern: ''

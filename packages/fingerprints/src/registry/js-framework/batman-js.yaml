@@ -1,0 +1,7 @@
+name: Batman.js
+slug: batman-js
+category: js-framework
+website: https://batmanjs.org
+detect:
+  scripts:
+    - pattern: '(^|/)(batman\.js)(\?|$)'

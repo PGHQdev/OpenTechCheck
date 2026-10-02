@@ -1,0 +1,8 @@
+name: RightJS
+slug: rightjs
+category: js-framework
+website: https://github.com/rightjs
+detect:
+  js:
+    RightJS:
+      - pattern: ''

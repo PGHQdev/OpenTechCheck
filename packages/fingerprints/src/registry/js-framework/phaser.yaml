@@ -1,0 +1,11 @@
+name: Phaser
+slug: phaser
+category: js-framework
+website: https://phaser.io
+detect:
+  js:
+    Phaser:
+      - pattern: ''
+    Phaser.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

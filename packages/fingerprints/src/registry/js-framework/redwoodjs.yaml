@@ -1,0 +1,9 @@
+name: RedwoodJS
+slug: redwoodjs
+category: js-framework
+website: https://redwoodjs.com
+implies: [react, graphql, typescript]
+detect:
+  dom:
+    div#redwood-app:
+      - pattern: ''

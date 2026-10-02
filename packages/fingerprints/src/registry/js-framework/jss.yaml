@@ -1,0 +1,8 @@
+name: JSS
+slug: jss
+category: js-framework
+website: https://cssinjs.org/
+detect:
+  dom:
+    style[data-jss]:
+      - pattern: ''

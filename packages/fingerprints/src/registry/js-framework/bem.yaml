@@ -1,0 +1,13 @@
+name: BEM
+slug: bem
+category: js-framework
+website: https://en.bem.info
+detect:
+  html:
+    - pattern: '<[^>]+data-bem'
+    - pattern: 'class="[^"]*i-bem'
+    - pattern: 'i-mini-bem'
+    - pattern: 'bemjson='
+  js:
+    MBEM:
+      - pattern: ''

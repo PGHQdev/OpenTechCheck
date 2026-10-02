@@ -1,0 +1,13 @@
+name: Riot.js
+slug: riot-js
+category: js-framework
+website: https://riot.js.org
+detect:
+  scripts:
+    - pattern: 'riot(?:\+compiler)?(?:\.min)?\.js'
+  js:
+    riot:
+      - pattern: ''
+    riot.version:
+      - pattern: 'v([\d\.]+)'
+        version: 1

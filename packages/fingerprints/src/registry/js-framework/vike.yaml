@@ -1,0 +1,12 @@
+name: Vike
+slug: vike
+category: js-framework
+website: https://vike.dev
+implies: [vite, typescript]
+detect:
+  js:
+    __vike:
+      - pattern: ''
+  dom:
+    script#vike_pageContext:
+      - pattern: ''

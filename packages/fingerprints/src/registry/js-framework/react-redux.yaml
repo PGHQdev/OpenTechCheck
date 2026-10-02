@@ -1,0 +1,9 @@
+name: React Redux
+slug: react-redux
+category: js-framework
+website: https://react-redux.js.org/
+implies: [react, redux]
+detect:
+  scripts:
+    - pattern: '/react-redux(@|/)([\d.]+)(?:/[a-z]+)?/react-redux(?:.min)?\.js'
+      version: 2

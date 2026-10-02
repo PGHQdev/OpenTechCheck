@@ -1,0 +1,9 @@
+name: Satūs
+slug: sat-s
+category: js-framework
+website: https://github.com/darkroomengineering/satus
+detect:
+  js:
+    satusVersion:
+      - pattern: '^(.+)$'
+        version: 1

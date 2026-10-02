@@ -1,0 +1,9 @@
+name: Twitter Flight
+slug: twitter-flight
+category: js-framework
+website: https://flightjs.github.io/
+implies: [jquery]
+detect:
+  js:
+    flight:
+      - pattern: ''

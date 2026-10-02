@@ -1,0 +1,22 @@
+name: Unpoly
+slug: unpoly
+category: js-framework
+website: https://unpoly.com
+detect:
+  scripts:
+    - pattern: '/unpoly@([\d\.]+)/unpoly\.min\.js'
+      version: 1
+  cookies:
+    _unpoly_demo_layers_session:
+      - pattern: ''
+  js:
+    up.CompilerPass:
+      - pattern: ''
+        confidence: 25
+    up.framework:
+      - pattern: ''
+        confidence: 26
+    up.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+        confidence: 0

@@ -1,0 +1,9 @@
+name: Knockout.js
+slug: knockout-js
+category: js-framework
+website: https://knockoutjs.com
+detect:
+  js:
+    ko.version:
+      - pattern: '^(.+)$'
+        version: 1

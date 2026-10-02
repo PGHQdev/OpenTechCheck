@@ -1,0 +1,7 @@
+name: Datastar
+slug: datastar
+category: js-framework
+website: https://data-star.dev
+detect:
+  scripts:
+    - pattern: 'https?://(?:[^/]+/.*)?datastar\.js(?:\?.*)?$'

@@ -1,0 +1,9 @@
+name: toastr
+slug: toastr
+category: js-framework
+website: https://github.com/CodeSeven/toastr
+detect:
+  js:
+    toastr.version:
+      - pattern: '(.*)'
+        version: 1

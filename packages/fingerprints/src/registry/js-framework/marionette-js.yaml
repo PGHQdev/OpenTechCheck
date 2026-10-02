@@ -1,0 +1,14 @@
+name: Marionette.js
+slug: marionette-js
+category: js-framework
+website: https://marionettejs.com
+implies: [underscore]
+detect:
+  scripts:
+    - pattern: 'backbone\.marionette.*\.js'
+  js:
+    Marionette:
+      - pattern: ''
+    Marionette.VERSION:
+      - pattern: '^(.+)$'
+        version: 1

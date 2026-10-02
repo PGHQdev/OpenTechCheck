@@ -1,0 +1,11 @@
+name: Ajax.NET Professional
+slug: ajax-net-professional
+category: js-framework
+website: https://github.com/michaelschwarz/Ajax.NET-Professional
+detect:
+  js:
+    AjaxPro:
+      - pattern: ''
+    AjaxPro.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1

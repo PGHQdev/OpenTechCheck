@@ -1,0 +1,10 @@
+name: Essential JS 2
+slug: essential-js-2
+category: js-framework
+website: https://www.syncfusion.com/javascript-ui-controls
+detect:
+  html:
+    - pattern: '<[^>]+ class ?= ?"(?:e-control|[^"]+ e-control)(?: )[^"]* e-lib\b'
+  dom:
+    "[class*='e-control'][class~='e-lib']":
+      - pattern: ''

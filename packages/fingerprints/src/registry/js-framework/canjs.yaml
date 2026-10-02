@@ -1,0 +1,10 @@
+name: CanJS
+slug: canjs
+category: js-framework
+website: https://canjs.com
+detect:
+  scripts:
+    - pattern: '/canjs/can\.custom\.min\.js'
+  js:
+    can.Animation:
+      - pattern: ''

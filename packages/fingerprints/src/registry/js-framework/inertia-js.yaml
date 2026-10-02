@@ -1,0 +1,14 @@
+name: Inertia.js
+slug: inertia-js
+category: js-framework
+website: https://inertiajs.com
+detect:
+  headers:
+    vary:
+      - pattern: 'X-Inertia'
+    x-inertia:
+      - pattern: ''
+  dom:
+    div[data-page*='component']:
+      - attr: data-page
+        pattern: 'component.+props.+url'

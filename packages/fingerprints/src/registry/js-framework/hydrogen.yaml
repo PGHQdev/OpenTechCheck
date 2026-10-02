@@ -1,0 +1,9 @@
+name: Hydrogen
+slug: hydrogen
+category: js-framework
+website: https://hydrogen.shopify.dev
+implies: [shopify, react, vite]
+detect:
+  headers:
+    powered-by:
+      - pattern: '^Shopify-Hydrogen$'

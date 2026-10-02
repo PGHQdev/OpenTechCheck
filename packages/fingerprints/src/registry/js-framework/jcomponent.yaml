@@ -1,0 +1,10 @@
+name: jComponent
+slug: jcomponent
+category: js-framework
+website: https://componentator.com
+implies: [jquery]
+detect:
+  js:
+    MAIN.version:
+      - pattern: '(.*)'
+        version: 1

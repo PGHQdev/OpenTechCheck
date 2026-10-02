@@ -1,0 +1,11 @@
+name: AlloyUI
+slug: alloyui
+category: js-framework
+website: https://www.alloyui.com
+implies: [bootstrap]
+detect:
+  scripts:
+    - pattern: '^https?://cdn\.alloyui\.com/'
+  js:
+    AUI:
+      - pattern: ''

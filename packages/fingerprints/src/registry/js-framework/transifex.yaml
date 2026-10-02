@@ -1,0 +1,9 @@
+name: Transifex
+slug: transifex
+category: js-framework
+website: https://www.transifex.com
+detect:
+  js:
+    Transifex.live.lib_version:
+      - pattern: '(.+)'
+        version: 1

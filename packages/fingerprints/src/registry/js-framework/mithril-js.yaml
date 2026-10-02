@@ -1,0 +1,7 @@
+name: Mithril.js
+slug: mithril-js
+category: js-framework
+website: https://mithril.js.org
+detect:
+  scripts:
+    - pattern: '/mithril(?:\.min)?\.js'

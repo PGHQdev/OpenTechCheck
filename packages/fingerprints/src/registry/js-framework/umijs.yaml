@@ -1,0 +1,12 @@
+name: UmiJs
+slug: umijs
+category: js-framework
+website: https://umijs.org
+implies: [nodejs]
+detect:
+  scripts:
+    - pattern: '/umi(\.[\w\d]{8})?\.js'
+  js:
+    g_umi.version:
+      - pattern: '([\d\.]+)'
+        version: 1

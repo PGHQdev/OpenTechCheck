@@ -1,0 +1,9 @@
+name: WeBlocks
+slug: weblocks
+category: js-framework
+website: https://www.weblocks.com
+within:
+  techs: [webflow]
+detect:
+  scripts:
+    - pattern: '//weblocks\.io/'

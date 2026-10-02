@@ -1,0 +1,18 @@
+name: Redux
+slug: redux
+category: js-framework
+website: https://redux.js.org
+detect:
+  scripts:
+    - pattern: '/redux(@|/)([\d.]+)(?:/[a-z]+)?/redux(?:.min)?\.js'
+      version: 2
+  js:
+    ReactRedux:
+      - pattern: ''
+    Redux.applyMiddleware:
+      - pattern: ''
+    __REDUX_DEVTOOLS_EXTENSION__:
+      - pattern: ''
+  dom:
+    link[href*='//redux.js.org']:
+      - pattern: ''

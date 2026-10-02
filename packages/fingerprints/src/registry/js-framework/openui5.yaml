@@ -1,0 +1,17 @@
+name: OpenUI5
+slug: openui5
+category: js-framework
+website: https://openui5.org
+detect:
+  scripts:
+    - pattern: 'sap-ui-core\.js'
+  meta:
+    sap-ui-fesr:
+      - pattern: ''
+  cookies:
+    sap-usercontext:
+      - pattern: 'sap-client'
+  js:
+    sap.ui.version:
+      - pattern: '^(.+)$'
+        version: 1

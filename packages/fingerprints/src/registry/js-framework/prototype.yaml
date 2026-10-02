@@ -1,0 +1,12 @@
+name: Prototype
+slug: prototype
+category: js-framework
+website: https://www.prototypejs.org
+detect:
+  scripts:
+    - pattern: '(?:prototype|protoaculous)(?:-([\d.]*[\d]))?.*\.js'
+      version: 1
+  js:
+    Prototype.Version:
+      - pattern: '^(.+)$'
+        version: 1

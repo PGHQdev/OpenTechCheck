@@ -1,0 +1,10 @@
+name: Webix
+slug: webix
+category: js-framework
+website: https://webix.com
+detect:
+  scripts:
+    - pattern: '\bwebix\.js'
+  js:
+    webix:
+      - pattern: ''

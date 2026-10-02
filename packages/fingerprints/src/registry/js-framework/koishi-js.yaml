@@ -1,0 +1,9 @@
+name: Koishi.js
+slug: koishi-js
+category: js-framework
+website: https://github.com/koishijs
+implies: [typescript]
+detect:
+  js:
+    KOISHI_CONFIG:
+      - pattern: ''

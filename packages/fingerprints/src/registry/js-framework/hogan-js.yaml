@@ -1,0 +1,13 @@
+name: Hogan.js
+slug: hogan-js
+category: js-framework
+website: https://twitter.github.io/hogan.js/
+detect:
+  scripts:
+    - pattern: 'hogan-[.-]([\d.]*\d)[^/]*\.js'
+      version: 1
+    - pattern: '([\d.]+)/hogan(?:\.min)?\.js'
+      version: 1
+  js:
+    Hogan:
+      - pattern: ''

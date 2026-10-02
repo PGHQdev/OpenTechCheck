@@ -1,0 +1,11 @@
+name: Stitches
+slug: stitches
+category: js-framework
+website: https://stitches.dev
+detect:
+  meta:
+    generator:
+      - pattern: '^c-[A-Za-z]{5}$'
+  dom:
+    style#stitches:
+      - pattern: ''

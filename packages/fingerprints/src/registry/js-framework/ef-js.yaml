@@ -1,0 +1,13 @@
+name: ef.js
+slug: ef-js
+category: js-framework
+website: https://ef.js.org
+detect:
+  scripts:
+    - pattern: '/ef(?:-core)?(?:\.min|\.dev)?\.js'
+  js:
+    ef.version:
+      - pattern: '^(.+)$'
+        version: 1
+    efCore:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Moon
+slug: moon
+category: js-framework
+website: https://kbrsh.github.io/moon/
+detect:
+  scripts:
+    - pattern: '/moon(?:\.min)?\.js$'

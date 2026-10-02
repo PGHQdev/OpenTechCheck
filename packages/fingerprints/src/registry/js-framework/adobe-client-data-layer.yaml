@@ -1,0 +1,9 @@
+name: Adobe Client Data Layer
+slug: adobe-client-data-layer
+category: js-framework
+website: https://github.com/adobe/adobe-client-data-layer
+detect:
+  js:
+    adobeDataLayer.version:
+      - pattern: '([\d\.]+)'
+        version: 1
