@@ -1,0 +1,18 @@
+name: Freshworks CRM
+slug: freshworks-crm
+category: crm
+website: https://www.freshworks.com/crm
+detect:
+  scripts:
+    - pattern: 'cdn\.freshmarketer\.com'
+    - pattern: 'cdn\.zarget\.com'
+  js:
+    ZargetForm:
+      - pattern: ''
+    zarget:
+      - pattern: ''
+    zargetAPI:
+      - pattern: ''
+  dom:
+    div[class*='Footer-PoweredBy'] > span > a[href*='www.freshworks.com/']:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: RentCafe
+slug: rentcafe
+category: crm
+website: https://www.rentcafe.com
+detect:
+  scripts:
+    - pattern: '\.rentcafe\.com/'

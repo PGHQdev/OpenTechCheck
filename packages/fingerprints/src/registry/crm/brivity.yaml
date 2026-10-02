@@ -1,0 +1,10 @@
+name: Brivity
+slug: brivity
+category: crm
+website: https://www.brivity.com
+detect:
+  scripts:
+    - pattern: 'cdn1\.brivityidx\.com'
+  js:
+    getBrivityHomeMiddlewareBaseUrl:
+      - pattern: ''

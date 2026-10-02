@@ -1,0 +1,10 @@
+name: Subscribfy
+slug: subscribfy
+category: crm
+website: https://subscribfy.ai
+detect:
+  js:
+    SUBSCRIBFYFASTMODE:
+      - pattern: ''
+    SUBSCRIBFY_CLR:
+      - pattern: ''

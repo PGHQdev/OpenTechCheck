@@ -1,0 +1,7 @@
+name: Armin
+slug: armin
+category: crm
+website: https://chatarmin.com
+detect:
+  scripts:
+    - pattern: '\.chatarmin\.com/'

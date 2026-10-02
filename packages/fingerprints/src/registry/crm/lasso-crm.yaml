@@ -1,0 +1,10 @@
+name: Lasso CRM
+slug: lasso-crm
+category: crm
+website: https://www.ecisolutions.com/products/lasso-crm
+detect:
+  scripts:
+    - pattern: '\.lassocrm\.com/'
+  js:
+    LassoAnalytics:
+      - pattern: ''

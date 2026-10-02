@@ -1,0 +1,11 @@
+name: Bowtie
+slug: bowtie
+category: crm
+website: https://www.bowtie.ai
+detect:
+  js:
+    bowtieDataToken:
+      - pattern: ''
+  dom:
+    div#bowtie-widget-container:
+      - pattern: ''

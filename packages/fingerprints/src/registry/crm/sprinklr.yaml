@@ -1,0 +1,12 @@
+name: Sprinklr
+slug: sprinklr
+category: crm
+website: https://www.sprinklr.com
+detect:
+  scripts:
+    - pattern: '\.sprinklr\.com/'
+  js:
+    sprChat:
+      - pattern: ''
+    sprChatSettings:
+      - pattern: ''

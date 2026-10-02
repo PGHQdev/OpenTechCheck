@@ -1,0 +1,15 @@
+name: Roller
+slug: roller
+category: crm
+website: https://www.roller.software
+detect:
+  js:
+    RollerCheckout:
+      - pattern: ''
+    RollerConstants:
+      - pattern: ''
+    rollerDL:
+      - pattern: ''
+  dom:
+    iframe#roller-widget, template[data-nitro-marker-id='roller-checkout']:
+      - pattern: ''

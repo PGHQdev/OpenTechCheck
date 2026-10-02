@@ -1,0 +1,10 @@
+name: Sinch
+slug: sinch
+category: crm
+website: https://www.sinch.com
+detect:
+  js:
+    SinchClient:
+      - pattern: ''
+    SinchSdk:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Hiver
+slug: hiver
+category: crm
+website: https://hiverhq.com
+detect:
+  scripts:
+    - pattern: 'chat-widget\.hiverhq\.com/'
+  js:
+    $hiverChatWidget:
+      - pattern: ''
+  dom:
+    link[href*='chat-widget.hiverhq.com']:
+      - pattern: ''

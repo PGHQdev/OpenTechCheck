@@ -1,0 +1,8 @@
+name: Gallabox
+slug: gallabox
+category: crm
+website: https://gallabox.com
+detect:
+  js:
+    gbwawc:
+      - pattern: ''

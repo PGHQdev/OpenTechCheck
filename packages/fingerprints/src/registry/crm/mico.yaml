@@ -1,0 +1,7 @@
+name: Mico
+slug: mico
+category: crm
+website: https://mico-inc.com
+detect:
+  scripts:
+    - pattern: '\.mico-cloud\.jp/'

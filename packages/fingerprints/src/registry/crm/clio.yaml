@@ -1,0 +1,10 @@
+name: Clio
+slug: clio
+category: crm
+website: https://www.clio.com
+detect:
+  html:
+    - pattern: 'app\.clio\.com\/link'
+  cookies:
+    clio_grow_support_id:
+      - pattern: ''

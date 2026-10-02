@@ -1,0 +1,10 @@
+name: Astute Solutions
+slug: astute-solutions
+category: crm
+website: https://astutesolutions.com
+detect:
+  scripts:
+    - pattern: '\.iperceptions\.com'
+  dom:
+    iframe[src*='.iperceptions.com'], link[href*='.iperceptions.com']:
+      - pattern: ''

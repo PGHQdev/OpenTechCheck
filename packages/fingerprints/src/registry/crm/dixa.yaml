@@ -1,0 +1,10 @@
+name: Dixa
+slug: dixa
+category: crm
+website: https://www.dixa.com
+detect:
+  scripts:
+    - pattern: '\.dixa\.io'
+  js:
+    _dixa_.addListener:
+      - pattern: ''

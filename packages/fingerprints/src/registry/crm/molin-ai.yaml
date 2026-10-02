@@ -1,0 +1,12 @@
+name: Molin AI
+slug: molin-ai
+category: crm
+website: https://molin.ai
+detect:
+  scripts:
+    - pattern: '\.molin\.ai/'
+  js:
+    __INIT_MOLIN_SHOP_AI:
+      - pattern: ''
+    __INIT_MOLIN_SHOP_AI_OPTIONS:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Hesk
+slug: hesk
+category: crm
+website: https://www.hesk.com
+detect:
+  js:
+    heskKBquery:
+      - pattern: ''
+    hesk_rate:
+      - pattern: ''
+    hesk_window:
+      - pattern: ''

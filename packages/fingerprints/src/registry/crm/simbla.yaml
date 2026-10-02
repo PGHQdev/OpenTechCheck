@@ -1,0 +1,12 @@
+name: Simbla
+slug: simbla
+category: crm
+website: https://www.simbla.com
+detect:
+  js:
+    Simbla:
+      - pattern: ''
+    createSimblaObj:
+      - pattern: ''
+    isSimblaObject:
+      - pattern: ''

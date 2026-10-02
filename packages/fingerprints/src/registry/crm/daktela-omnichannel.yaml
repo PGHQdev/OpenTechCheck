@@ -1,0 +1,12 @@
+name: Daktela Omnichannel
+slug: daktela-omnichannel
+category: crm
+website: https://daktela.com
+detect:
+  scripts:
+    - pattern: '\.daktela\.com/'
+  js:
+    daktelaCli:
+      - pattern: ''
+    daktelaGuiConfig:
+      - pattern: ''

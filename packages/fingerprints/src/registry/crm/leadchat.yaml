@@ -1,0 +1,9 @@
+name: LeadChat
+slug: leadchat
+category: crm
+website: https://www.leadchat.com
+within:
+  techs: [livechat]
+detect:
+  scripts:
+    - pattern: '(?://|\.)chatsystem\.io/'

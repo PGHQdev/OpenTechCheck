@@ -1,0 +1,7 @@
+name: Gorilla Dash
+slug: gorilla-dash
+category: crm
+website: https://gorilladash.com
+detect:
+  scripts:
+    - pattern: '//gorilladash\.com/'

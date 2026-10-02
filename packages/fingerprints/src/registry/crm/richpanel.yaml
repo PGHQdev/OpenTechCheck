@@ -1,0 +1,14 @@
+name: Richpanel
+slug: richpanel
+category: crm
+website: https://www.richpanel.com
+detect:
+  scripts:
+    - pattern: '\.richpanel\.com/'
+  js:
+    Richpanel.PLUGIN_API_URL:
+      - pattern: ''
+    RichpanelAppProxy:
+      - pattern: ''
+    richpanel_messenger_url:
+      - pattern: ''

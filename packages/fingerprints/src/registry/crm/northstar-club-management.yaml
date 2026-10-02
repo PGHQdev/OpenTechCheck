@@ -1,0 +1,8 @@
+name: Northstar Club Management
+slug: northstar-club-management
+category: crm
+website: https://www.globalnorthstar.com
+detect:
+  headers:
+    portal:
+      - pattern: '^Northstar Connect'

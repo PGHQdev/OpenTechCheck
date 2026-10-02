@@ -1,0 +1,10 @@
+name: Wati
+slug: wati
+category: crm
+website: https://www.wati.io
+detect:
+  scripts:
+    - pattern: 'wati-integration-prod-service\.clare\.ai/'
+  js:
+    wati_options:
+      - pattern: ''

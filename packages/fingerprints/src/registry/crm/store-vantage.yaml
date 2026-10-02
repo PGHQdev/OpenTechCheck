@@ -1,0 +1,13 @@
+name: Store Vantage
+slug: store-vantage
+category: crm
+website: https://storevantage.com
+detect:
+  cookies:
+    storevantage:
+      - pattern: ''
+    svSession:
+      - pattern: ''
+  js:
+    _storevantage.account:
+      - pattern: ''

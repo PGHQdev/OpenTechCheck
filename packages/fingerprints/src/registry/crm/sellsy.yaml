@@ -1,0 +1,10 @@
+name: Sellsy
+slug: sellsy
+category: crm
+website: https://go.sellsy.com
+detect:
+  scripts:
+    - pattern: '\.sellsy\.com/'
+  js:
+    SellsySnippet:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Kundo
+slug: kundo
+category: crm
+website: https://www.kundo.se
+detect:
+  scripts:
+    - pattern: 'static-chat\.kundo\.se'
+  js:
+    $kundo_chat.DEFAULT_AVATAR_URL:
+      - pattern: ''

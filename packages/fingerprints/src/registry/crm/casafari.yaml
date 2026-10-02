@@ -1,0 +1,10 @@
+name: Casafari
+slug: casafari
+category: crm
+website: https://casafaricrm.com
+detect:
+  meta:
+    author:
+      - pattern: 'casafaricrm\.com'
+    publisher:
+      - pattern: '^Casafari CRM$'

@@ -1,0 +1,10 @@
+name: MRI Eagle
+slug: mri-eagle
+category: crm
+website: https://www.mrisoftware.com/au/products/eagle
+detect:
+  scripts:
+    - pattern: '\.eaglesoftware\.com\.au'
+  dom:
+    link[href*='cdn.eaglesoftware.com.au']:
+      - pattern: ''

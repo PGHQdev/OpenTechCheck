@@ -1,0 +1,15 @@
+name: Virtuagym
+slug: virtuagym
+category: crm
+website: https://business.virtuagym.com
+detect:
+  js:
+    VGTutorial:
+      - pattern: ''
+    open_vg_custom_modal:
+      - pattern: ''
+    trigger_vg_neutral_message:
+      - pattern: ''
+  dom:
+    a[href*='.virtuagym.com'][target='_blank'], iframe[src*='.virtuagym.com/']:
+      - pattern: ''

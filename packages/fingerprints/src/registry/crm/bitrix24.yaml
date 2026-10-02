@@ -1,0 +1,15 @@
+name: Bitrix24
+slug: bitrix24
+category: crm
+website: https://www.bitrix24.com
+detect:
+  scripts:
+    - pattern: 'cdn\.bitrix24\.com'
+    - pattern: '\.bitrix24\..+/bitrix/js/crm/form_loader\.js'
+  js:
+    Bitrix24FormLoader:
+      - pattern: ''
+    Bitrix24FormObject:
+      - pattern: ''
+    b24Tracker:
+      - pattern: ''

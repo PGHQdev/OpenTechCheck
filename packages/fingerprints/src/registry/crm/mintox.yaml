@@ -1,0 +1,15 @@
+name: Mintox
+slug: mintox
+category: crm
+website: https://www.mintox.com
+detect:
+  meta:
+    author:
+      - pattern: '^Mintox'
+  js:
+    MintoxJS:
+      - pattern: ''
+    mintoxPaging:
+      - pattern: ''
+    mintoxTrim:
+      - pattern: ''

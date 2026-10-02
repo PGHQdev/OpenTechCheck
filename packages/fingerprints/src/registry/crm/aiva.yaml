@@ -1,0 +1,10 @@
+name: Aiva
+slug: aiva
+category: crm
+website: https://hireaiva.com
+detect:
+  scripts:
+    - pattern: '\.hireaiva\.com'
+  js:
+    __AivaLiveChat:
+      - pattern: ''

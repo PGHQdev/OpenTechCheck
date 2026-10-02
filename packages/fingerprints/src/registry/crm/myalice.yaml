@@ -1,0 +1,10 @@
+name: MyAlice
+slug: myalice
+category: crm
+website: https://www.myalice.ai
+detect:
+  scripts:
+    - pattern: 'widget\.myalice\.ai'
+  js:
+    MyAliceWebChat:
+      - pattern: ''

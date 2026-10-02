@@ -1,0 +1,8 @@
+name: Plutio
+slug: plutio
+category: crm
+website: https://www.plutio.com
+detect:
+  dom:
+    link[href*='cdn.plutio.com/']:
+      - pattern: ''

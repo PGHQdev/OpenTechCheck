@@ -1,0 +1,10 @@
+name: Insightly CRM
+slug: insightly-crm
+category: crm
+website: https://www.insightly.com/crm/
+detect:
+  scripts:
+    - pattern: '\.insightly\.services/'
+  dom:
+    form[action*='.insightly.com/']:
+      - pattern: ''

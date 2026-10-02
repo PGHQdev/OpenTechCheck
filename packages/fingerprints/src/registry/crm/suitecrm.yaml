@@ -1,0 +1,13 @@
+name: SuiteCRM
+slug: suitecrm
+category: crm
+website: https://suitecrm.com
+detect:
+  scripts:
+    - pattern: 'themes/SuiteP/js/'
+  cookies:
+    SCRMSESSID:
+      - pattern: ''
+  dom:
+    link[href*='dist/themes/suite8/']:
+      - pattern: ''

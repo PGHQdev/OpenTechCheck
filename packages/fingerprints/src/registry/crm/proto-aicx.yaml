@@ -1,0 +1,10 @@
+name: Proto AICX
+slug: proto-aicx
+category: crm
+website: https://www.proto.cx
+detect:
+  js:
+    Proto.close:
+      - pattern: ''
+    protoSettings:
+      - pattern: ''

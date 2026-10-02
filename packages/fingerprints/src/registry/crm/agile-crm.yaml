@@ -1,0 +1,10 @@
+name: Agile CRM
+slug: agile-crm
+category: crm
+website: https://www.agilecrm.com
+detect:
+  js:
+    AgileCRMTracker:
+      - pattern: ''
+    Agile_API:
+      - pattern: ''

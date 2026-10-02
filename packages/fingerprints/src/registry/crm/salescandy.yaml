@@ -1,0 +1,9 @@
+name: SalesCandy
+slug: salescandy
+category: crm
+website: https://www.salescandy.com
+detect:
+  scripts:
+    - pattern: '\.salescandy\.com/'
+    - pattern: 's\.cdy\.ai/candypixel/'
+    - pattern: '\.cdy\.ai/'

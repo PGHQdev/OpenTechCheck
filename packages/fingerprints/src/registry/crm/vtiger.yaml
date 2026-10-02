@@ -1,0 +1,12 @@
+name: Vtiger
+slug: vtiger
+category: crm
+website: https://www.vtiger.com
+detect:
+  js:
+    Vtiger:
+      - pattern: ''
+    Vtiger_Base_Js:
+      - pattern: ''
+    Vtiger_Helper_Js:
+      - pattern: ''

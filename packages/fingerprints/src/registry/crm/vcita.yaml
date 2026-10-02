@@ -1,0 +1,16 @@
+name: vcita
+slug: vcita
+category: crm
+website: https://www.vcita.com
+detect:
+  scripts:
+    - pattern: 'www\.vcita\.com/widgets/'
+    - pattern: 'widgets\.vcdnita\.com/'
+  js:
+    LiveSite.btCheckout:
+      - pattern: ''
+    Vcita:
+      - pattern: ''
+  dom:
+    iframe[src*='www.vcita.com/widgets/']:
+      - pattern: ''

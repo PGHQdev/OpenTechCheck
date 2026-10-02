@@ -1,0 +1,10 @@
+name: Arnica
+slug: arnica
+category: crm
+website: https://arnica.pro
+detect:
+  scripts:
+    - pattern: 'app\.arnica\.pro'
+  js:
+    arnicaBooking.init:
+      - pattern: ''

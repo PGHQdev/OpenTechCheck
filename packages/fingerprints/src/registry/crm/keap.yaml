@@ -1,0 +1,10 @@
+name: Keap
+slug: keap
+category: crm
+website: https://keap.com
+detect:
+  scripts:
+    - pattern: '\.infusionsoft\.com/'
+  dom:
+    form[action*='property.infusionsoft.com'], link[href*='.infusionsoft.com']:
+      - pattern: ''

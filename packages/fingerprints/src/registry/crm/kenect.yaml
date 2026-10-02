@@ -1,0 +1,11 @@
+name: Kenect
+slug: kenect
+category: crm
+website: https://www.kenect.com
+detect:
+  js:
+    toggleKenectWidget:
+      - pattern: ''
+  dom:
+    iframe[src*='.kenect.com/']:
+      - pattern: ''

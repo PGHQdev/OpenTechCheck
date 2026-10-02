@@ -1,0 +1,10 @@
+name: Jonas Club Software
+slug: jonas-club-software
+category: crm
+website: https://jonasclub.com
+detect:
+  js:
+    jonasPrivacyPolicy:
+      - pattern: ''
+    jonasPrivacyPolicyClassName:
+      - pattern: ''

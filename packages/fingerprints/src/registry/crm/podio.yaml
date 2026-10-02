@@ -1,0 +1,10 @@
+name: Podio
+slug: podio
+category: crm
+website: https://www.podio.com
+detect:
+  scripts:
+    - pattern: '//podio\.com/'
+  js:
+    _podioWebForm:
+      - pattern: ''

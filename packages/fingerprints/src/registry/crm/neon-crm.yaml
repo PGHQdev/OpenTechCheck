@@ -1,0 +1,15 @@
+name: Neon CRM
+slug: neon-crm
+category: crm
+website: https://neonone.com
+detect:
+  js:
+    _neoncrm_ga:
+      - pattern: ''
+    neonPayCard:
+      - pattern: ''
+    neoncrm_email_ajax_object:
+      - pattern: ''
+  dom:
+    a[href*='.app.neoncrm.com/']:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Erxes
+slug: erxes
+category: crm
+website: https://erxes.io
+detect:
+  scripts:
+    - pattern: '.app\.erxes\.io'
+  js:
+    Erxes.showMessenger:
+      - pattern: ''
+    erxesEnv:
+      - pattern: ''

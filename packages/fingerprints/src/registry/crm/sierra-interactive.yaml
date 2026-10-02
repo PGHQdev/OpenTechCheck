@@ -1,0 +1,8 @@
+name: Sierra Interactive
+slug: sierra-interactive
+category: crm
+website: https://www.sierrainteractive.com
+detect:
+  js:
+    SI_BASE_URL_CAA:
+      - pattern: ''

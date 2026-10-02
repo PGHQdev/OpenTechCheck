@@ -1,0 +1,8 @@
+name: Aidbase
+slug: aidbase
+category: crm
+website: https://www.aidbase.ai
+detect:
+  js:
+    AIDBASE_CHATBOT_ID:
+      - pattern: ''

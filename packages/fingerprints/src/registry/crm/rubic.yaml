@@ -1,0 +1,9 @@
+name: Rubic
+slug: rubic
+category: crm
+website: https://rubic.no
+detect:
+  html:
+    - pattern: 'app\.rubic\.no'
+  scripts:
+    - pattern: 'app\.rubic\.no'

@@ -1,0 +1,13 @@
+name: Unless
+slug: unless
+category: crm
+website: https://unless.com/
+detect:
+  scripts:
+    - pattern: '\.unless\.com/'
+  js:
+    unlessComponentCleanUp:
+      - pattern: ''
+  dom:
+    script[data-unless]:
+      - pattern: ''

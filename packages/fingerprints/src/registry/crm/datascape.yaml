@@ -1,0 +1,11 @@
+name: Datascape
+slug: datascape
+category: crm
+website: https://datacom.com/nz/en/products/datascape/digital-experience/my-datascape
+detect:
+  js:
+    DatacomSphere:
+      - pattern: ''
+  dom:
+    link[href*='cdn-sites.datascape.cloud']:
+      - pattern: ''

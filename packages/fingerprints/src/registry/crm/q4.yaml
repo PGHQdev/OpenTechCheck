@@ -1,0 +1,10 @@
+name: Q4
+slug: q4
+category: crm
+website: https://www.q4inc.com/products/investor-relations-websites/default.aspx
+detect:
+  js:
+    q4App.a11yAnnouncement:
+      - pattern: ''
+    q4Defaults.fancySignup:
+      - pattern: ''

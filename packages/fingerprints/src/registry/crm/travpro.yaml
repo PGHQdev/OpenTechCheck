@@ -1,0 +1,7 @@
+name: TravPRO
+slug: travpro
+category: crm
+website: https://travpromobile.com
+detect:
+  scripts:
+    - pattern: 'data\.travpromobile\.com'

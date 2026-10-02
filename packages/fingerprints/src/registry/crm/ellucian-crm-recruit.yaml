@@ -1,0 +1,13 @@
+name: Ellucian CRM Recruit
+slug: ellucian-crm-recruit
+category: crm
+website: https://www.ellucian.com/solutions/ellucian-crm-recruit
+detect:
+  js:
+    Ellucian.Recruit:
+      - pattern: ''
+    ellucianAddressChooseLabel:
+      - pattern: ''
+  dom:
+    " a[href*='.elluciancrmrecruit.com/']":
+      - pattern: ''

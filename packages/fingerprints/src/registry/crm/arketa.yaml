@@ -1,0 +1,10 @@
+name: Arketa
+slug: arketa
+category: crm
+website: https://www.arketa.com
+detect:
+  scripts:
+    - pattern: 'app\.arketa\.co'
+  js:
+    ArketaChatbot:
+      - pattern: ''

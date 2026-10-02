@@ -1,0 +1,10 @@
+name: Dito
+slug: dito
+category: crm
+website: https://www.dito.com.br
+detect:
+  scripts:
+    - pattern: 'storage\.googleapis\.com/dito/sdk\.js'
+  js:
+    dito.AppSettings:
+      - pattern: ''

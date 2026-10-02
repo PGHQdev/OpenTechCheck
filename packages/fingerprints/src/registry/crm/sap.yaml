@@ -1,0 +1,14 @@
+name: SAP
+slug: sap
+category: crm
+website: https://sap.com
+detect:
+  html:
+    - pattern: '\/sap\/saml2\/sp\/acs'
+  headers:
+    server:
+      - pattern: 'SAP NetWeaver Application Server'
+    sap-server:
+      - pattern: ''
+    sap-perf-fesrec:
+      - pattern: ''

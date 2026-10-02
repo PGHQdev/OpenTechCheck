@@ -1,0 +1,10 @@
+name: Laylo
+slug: laylo
+category: crm
+website: https://laylo.com
+detect:
+  scripts:
+    - pattern: 'embed\.laylo\.com'
+  js:
+    layloSdkLoading:
+      - pattern: ''

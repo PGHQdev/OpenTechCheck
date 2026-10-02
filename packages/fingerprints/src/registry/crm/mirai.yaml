@@ -1,0 +1,10 @@
+name: Mirai
+slug: mirai
+category: crm
+website: https://www.mirai.com
+detect:
+  scripts:
+    - pattern: '\.mirai\.com/'
+  js:
+    Mirai:
+      - pattern: ''

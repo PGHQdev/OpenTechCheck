@@ -1,0 +1,8 @@
+name: Backbase
+slug: backbase
+category: crm
+website: https://www.backbase.com
+detect:
+  js:
+    backbase_com_2013_aurora:
+      - pattern: ''

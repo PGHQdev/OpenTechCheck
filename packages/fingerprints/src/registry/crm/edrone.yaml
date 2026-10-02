@@ -1,0 +1,13 @@
+name: Edrone
+slug: edrone
+category: crm
+website: https://edrone.me
+detect:
+  js:
+    _edrone:
+      - pattern: ''
+    _edrone.version:
+      - pattern: '([\d.]+)'
+        version: 1
+    _edrone_send_handler:
+      - pattern: ''

@@ -1,0 +1,16 @@
+name: amoCRM
+slug: amocrm
+category: crm
+website: https://www.amocrm.com
+detect:
+  scripts:
+    - pattern: '\.amocrm\.(?:ru|com)'
+  js:
+    AMOCRM:
+      - pattern: ''
+    AMO_PIXEL_CLIENT:
+      - pattern: ''
+    amoFormsWidget:
+      - pattern: ''
+    amoSocialButton:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Bookboost
+slug: bookboost
+category: crm
+website: https://www.bookboost.io
+detect:
+  scripts:
+    - pattern: 'web-messenger\.bookboost\.io'
+  js:
+    BookboostWebMessengerObject:
+      - pattern: ''

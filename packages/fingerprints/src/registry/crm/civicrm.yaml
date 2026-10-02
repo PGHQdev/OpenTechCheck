@@ -1,0 +1,11 @@
+name: CiviCRM
+slug: civicrm
+category: crm
+website: https://civicrm.org
+detect:
+  html:
+    - pattern: 'crmLoad'
+    - pattern: 'CiviCRM''s AJAX'
+  dom:
+    a[href*='/civicrm/contribute/transact'], link[href*='/com_civicrm/civicrm/']:
+      - pattern: ''

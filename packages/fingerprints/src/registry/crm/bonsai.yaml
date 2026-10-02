@@ -1,0 +1,8 @@
+name: Bonsai
+slug: bonsai
+category: crm
+website: https://www.hellobonsai.com
+detect:
+  dom:
+    iframe[src*='app.hellobonsai.com/']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Anthology Encompass
+slug: anthology-encompass
+category: crm
+website: https://www.anthology.com/products/lifecycle-engagement/alumni-and-advancement/anthology-encompass
+detect:
+  url:
+    - pattern: 'https.+\.imodules\.com/s/'
+  dom:
+    a[href*='.imodules.com/s/']:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Plait
+slug: plait
+category: crm
+website: http://plaithealth.com
+detect:
+  js:
+    $plait:
+      - pattern: ''
+    plaitSDK:
+      - pattern: ''
+    plaitSettings:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: WoowUp
+slug: woowup
+category: crm
+website: https://www.woowup.com
+detect:
+  scripts:
+    - pattern: 'assets-cdn\.woowup\.com/'
+  js:
+    WU._trackProductVTEXField:
+      - pattern: ''

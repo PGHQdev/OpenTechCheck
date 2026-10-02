@@ -1,0 +1,12 @@
+name: LeanData
+slug: leandata
+category: crm
+website: https://www.leandata.com
+detect:
+  js:
+    LDBookItPopup:
+      - pattern: ''
+    LDBookItV2:
+      - pattern: ''
+    LDCalendaring:
+      - pattern: ''

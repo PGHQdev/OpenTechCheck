@@ -1,0 +1,10 @@
+name: Gloo
+slug: gloo
+category: crm
+website: https://www.gloo.us
+detect:
+  scripts:
+    - pattern: '\.gloo\.us/'
+  js:
+    __GLOO_ONLINE:
+      - pattern: ''

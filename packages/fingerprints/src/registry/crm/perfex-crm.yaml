@@ -1,0 +1,11 @@
+name: Perfex CRM
+slug: perfex-crm
+category: crm
+website: https://www.perfexcrm.com
+detect:
+  scripts:
+    - pattern: '/assets/themes/perfex/js/global\.min\.js(?:\?v=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  dom:
+    link[href*='perfexcrm.com/']:
+      - pattern: ''

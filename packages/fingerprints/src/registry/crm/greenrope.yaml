@@ -1,0 +1,10 @@
+name: GreenRope
+slug: greenrope
+category: crm
+website: https://www.greenrope.com
+detect:
+  scripts:
+    - pattern: 'app\.greenrope\.com/'
+  js:
+    bfpd:
+      - pattern: 'app\.greenrope\.com'

@@ -1,0 +1,12 @@
+name: Bevy
+slug: bevy
+category: crm
+website: https://bevy.com
+detect:
+  js:
+    _BEVY_LANGUAGE_:
+      - pattern: ''
+    _BEVY_SETTINGS_:
+      - pattern: ''
+    _BEVY_STYLES_:
+      - pattern: ''

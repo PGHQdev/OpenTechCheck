@@ -1,0 +1,10 @@
+name: Hoowla
+slug: hoowla
+category: crm
+website: https://www.hoowla.com
+detect:
+  scripts:
+    - pattern: 'cdn\.hoowla\.com'
+  js:
+    hoowlainit:
+      - pattern: ''

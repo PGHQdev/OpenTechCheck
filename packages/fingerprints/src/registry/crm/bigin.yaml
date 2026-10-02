@@ -1,0 +1,16 @@
+name: Bigin
+slug: bigin
+category: crm
+website: https://en.bigin.io
+detect:
+  scripts:
+    - pattern: 'sdk\.bigin\.io/'
+  js:
+    BIGIN_SDK_API:
+      - pattern: ''
+    bigin._checkDataSize:
+      - pattern: ''
+    biginCafe24DisableOptions:
+      - pattern: ''
+    bigin_search:
+      - pattern: ''

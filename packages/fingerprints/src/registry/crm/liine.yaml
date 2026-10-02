@@ -1,0 +1,8 @@
+name: Liine
+slug: liine
+category: crm
+website: https://www.liine.com
+detect:
+  js:
+    Liine.addURLChangeListener:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: EspoCRM
+slug: espocrm
+category: crm
+website: https://www.espocrm.com
+detect:
+  scripts:
+    - pattern: 'espo(?:\.min)?\.js'
+  js:
+    Espo:
+      - pattern: ''
+  dom:
+    meta[content*='EspoCRM'], link[href*='/espo/']:
+      - pattern: ''
