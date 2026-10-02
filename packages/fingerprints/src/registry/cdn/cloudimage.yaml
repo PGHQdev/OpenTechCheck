@@ -1,0 +1,11 @@
+name: Cloudimage
+slug: cloudimage
+category: cdn
+website: https://www.cloudimage.io
+detect:
+  js:
+    ciResponsive.config.domain:
+      - pattern: 'cloudimg\.io'
+  dom:
+    img[src*='.cloudimg.io/'], link[href*='.cloudimg.io/'], amp-img[src*='.cloudimg.io/']:
+      - pattern: ''

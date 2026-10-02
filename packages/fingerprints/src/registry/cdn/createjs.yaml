@@ -1,0 +1,7 @@
+name: CreateJS
+slug: createjs
+category: cdn
+website: https://code.createjs.com
+detect:
+  scripts:
+    - pattern: 'code\.createjs\.com/'

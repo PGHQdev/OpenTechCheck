@@ -1,0 +1,10 @@
+name: Alibaba Cloud CDN
+slug: alibaba-cloud-cdn
+category: cdn
+website: https://www.alibabacloud.com/product/content-delivery-network
+detect:
+  scripts:
+    - pattern: '\.alicdn\.com/'
+  dom:
+    img[src*='.alicdn.com/']:
+      - pattern: ''

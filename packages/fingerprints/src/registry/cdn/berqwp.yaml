@@ -1,0 +1,14 @@
+name: BerqWP
+slug: berqwp
+category: cdn
+website: https://berqwp.com/
+within:
+  techs: [wordpress]
+detect:
+  js:
+    BerqWPcacheResource:
+      - pattern: ''
+    berqwp_add_assets_browser_cache:
+      - pattern: ''
+    berqwp_readyState:
+      - pattern: ''

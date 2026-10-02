@@ -1,0 +1,8 @@
+name: KuronekoServer CDN
+slug: kuronekoserver-cdn
+category: cdn
+website: https://cdn.krnk.org
+detect:
+  dom:
+    link[href*='cdn.krnk.org/']:
+      - pattern: ''

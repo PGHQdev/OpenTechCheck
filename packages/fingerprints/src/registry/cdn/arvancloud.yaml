@@ -1,0 +1,14 @@
+name: ArvanCloud
+slug: arvancloud
+category: cdn
+website: https://www.arvancloud.ir
+detect:
+  headers:
+    server:
+      - pattern: 'ArvanCloud'
+  js:
+    ArvanCloud:
+      - pattern: ''
+  dom:
+    img[src*='.arvanstorage.com/'], img[src*='.arvanstorage.ir/']:
+      - pattern: ''

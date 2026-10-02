@@ -1,0 +1,8 @@
+name: Fireblade
+slug: fireblade
+category: cdn
+website: https://fireblade.com
+detect:
+  headers:
+    server:
+      - pattern: 'fbs'

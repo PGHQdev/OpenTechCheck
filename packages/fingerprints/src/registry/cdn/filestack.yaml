@@ -1,0 +1,13 @@
+name: Filestack
+slug: filestack
+category: cdn
+website: https://www.filestack.com
+detect:
+  html:
+    - pattern: 'filestack_api_key'
+    - pattern: 'filestack\.esm'
+  scripts:
+    - pattern: '\.filestackapi\.com'
+  js:
+    gon.filestack_api_key:
+      - pattern: ''

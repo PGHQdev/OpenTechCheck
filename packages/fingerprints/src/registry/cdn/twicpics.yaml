@@ -1,0 +1,20 @@
+name: TwicPics
+slug: twicpics
+category: cdn
+website: https://www.twicpics.com
+detect:
+  scripts:
+    - pattern: '.\.twic\.pics'
+  headers:
+    server:
+      - pattern: '^TwicPics/\d+\.\d+\.\d+$'
+  dom:
+    .twic:
+      - attr: data-src
+        pattern: ''
+    '[data-twic-src]':
+      - attr: data-twic-src
+        pattern: ''
+    data-twic-background:
+      - attr: data-twic-background
+        pattern: ''

@@ -1,0 +1,11 @@
+name: Azion
+slug: azion
+category: cdn
+website: https://www.azion.com/
+detect:
+  headers:
+    server:
+      - pattern: '^Azion '
+  dom:
+    link[href*='.azion.com/'][rel='canonical']:
+      - pattern: ''

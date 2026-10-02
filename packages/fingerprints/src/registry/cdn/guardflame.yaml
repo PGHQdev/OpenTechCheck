@@ -1,0 +1,11 @@
+name: GuardFlame
+slug: guardflame
+category: cdn
+website: https://hydun.com
+detect:
+  html:
+    - pattern: 'href="https://hydun\.com"'
+    - pattern: '火毅盾云安全'
+  headers:
+    server:
+      - pattern: '^GuardFlame$'

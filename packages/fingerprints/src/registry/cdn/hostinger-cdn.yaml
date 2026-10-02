@@ -1,0 +1,8 @@
+name: Hostinger CDN
+slug: hostinger-cdn
+category: cdn
+website: https://www.hostinger.com
+detect:
+  headers:
+    server:
+      - pattern: 'hcdn'

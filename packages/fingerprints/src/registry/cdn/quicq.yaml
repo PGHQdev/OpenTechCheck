@@ -1,0 +1,8 @@
+name: Quicq
+slug: quicq
+category: cdn
+website: https://afosto.com/apps/quicq
+detect:
+  dom:
+    img[src*='.qcqcdn.com/'], img[data-src*='.qcqcdn.com/'], img[src*='cdn.quicq.io/'], img[data-src*='cdn.quicq.io/']:
+      - pattern: ''

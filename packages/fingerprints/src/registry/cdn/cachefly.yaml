@@ -1,0 +1,12 @@
+name: CacheFly
+slug: cachefly
+category: cdn
+website: https://www.cachefly.com
+detect:
+  headers:
+    server:
+      - pattern: '^CFS '
+    x-cf1:
+      - pattern: ''
+    x-cf2:
+      - pattern: ''

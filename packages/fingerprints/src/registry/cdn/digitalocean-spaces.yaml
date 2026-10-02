@@ -1,0 +1,8 @@
+name: DigitalOcean Spaces
+slug: digitalocean-spaces
+category: cdn
+website: https://www.digitalocean.com/products/spaces
+detect:
+  dom:
+    img[data-src*='.digitaloceanspaces.com'], img[src*='.digitaloceanspaces.com']:
+      - pattern: ''

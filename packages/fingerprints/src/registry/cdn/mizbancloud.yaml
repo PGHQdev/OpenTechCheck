@@ -1,0 +1,8 @@
+name: MizbanCloud
+slug: mizbancloud
+category: cdn
+website: https://mizbancloud.com
+detect:
+  headers:
+    server:
+      - pattern: '^MizbanCloud$'

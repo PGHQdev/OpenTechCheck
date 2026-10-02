@@ -1,0 +1,8 @@
+name: Speed Kit
+slug: speed-kit
+category: cdn
+website: https://www.speedkit.com
+detect:
+  js:
+    speedKit:
+      - pattern: ''

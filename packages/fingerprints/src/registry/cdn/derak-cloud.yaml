@@ -1,0 +1,18 @@
+name: DERAK.CLOUD
+slug: derak-cloud
+category: cdn
+website: https://derak.cloud
+detect:
+  headers:
+    derak-umbrage:
+      - pattern: ''
+    server:
+      - pattern: '^DERAK\.CLOUD$'
+  cookies:
+    __derak_auth:
+      - pattern: ''
+    __derak_user:
+      - pattern: ''
+  js:
+    derakCloud.init:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Oracle Web Cache
+slug: oracle-web-cache
+category: cdn
+website: https://oracle.com
+detect:
+  headers:
+    server:
+      - pattern: 'Oracle(?:AS)?[- ]Web[- ]Cache(?:[- /]([\da-z./]+))?'
+        version: 1

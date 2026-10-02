@@ -1,0 +1,10 @@
+name: Sucuri
+slug: sucuri
+category: cdn
+website: https://sucuri.net/
+detect:
+  headers:
+    'x-sucuri-cache:':
+      - pattern: ''
+    x-sucuri-id:
+      - pattern: ''

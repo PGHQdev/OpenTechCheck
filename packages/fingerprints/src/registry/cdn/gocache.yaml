@@ -1,0 +1,10 @@
+name: GoCache
+slug: gocache
+category: cdn
+website: https://www.gocache.com.br/
+detect:
+  headers:
+    server:
+      - pattern: '^gocache$'
+    x-gocache-cachestatus:
+      - pattern: ''

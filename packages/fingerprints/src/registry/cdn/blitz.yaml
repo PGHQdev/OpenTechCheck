@@ -1,0 +1,16 @@
+name: Blitz
+slug: blitz
+category: cdn
+website: https://putyourlightson.com/plugins/blitz
+implies: [craft-cms]
+detect:
+  html:
+    - pattern: '<!-- Cached by Blitz on'
+  headers:
+    x-powered-by:
+      - pattern: '^Blitz$'
+  js:
+    Blitz:
+      - pattern: ''
+    blitzReplace:
+      - pattern: ''

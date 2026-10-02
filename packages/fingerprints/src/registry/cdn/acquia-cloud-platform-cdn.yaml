@@ -1,0 +1,10 @@
+name: Acquia Cloud Platform CDN
+slug: acquia-cloud-platform-cdn
+category: cdn
+website: https://docs.acquia.com/cloud-platform/platformcdn/
+implies: [acquia-cloud-platform]
+detect:
+  headers:
+    via:
+      - pattern: 'Acquia Platform CDN (.+)'
+        version: 1

@@ -1,0 +1,8 @@
+name: EdgeOne
+slug: edgeone
+category: cdn
+website: https://edgeone.ai
+detect:
+  headers:
+    server:
+      - pattern: '^TencentEdgeOne$'

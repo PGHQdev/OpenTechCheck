@@ -1,0 +1,8 @@
+name: Airee
+slug: airee
+category: cdn
+website: https://xn--80aqc2a.xn--p1ai
+detect:
+  headers:
+    server:
+      - pattern: '^Airee'

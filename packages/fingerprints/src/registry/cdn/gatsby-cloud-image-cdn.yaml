@@ -1,0 +1,8 @@
+name: Gatsby Cloud Image CDN
+slug: gatsby-cloud-image-cdn
+category: cdn
+website: https://www.gatsbyjs.com/products/cloud/image-cdn
+detect:
+  dom:
+    img[srcset*='/_gatsby/image/'], source[srcset*='/_gatsby/image/']:
+      - pattern: ''

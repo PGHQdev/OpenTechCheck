@@ -1,0 +1,18 @@
+name: LiteSpeed Cache
+slug: litespeed-cache
+category: cdn
+website: https://www.litespeedtech.com/products/cache-plugins/wordpress-acceleration
+implies: [litespeed]
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'wp-content/plugins/litespeed-cache/'
+  headers:
+    x-litespeed-cache:
+      - pattern: ''
+    x-turbo-charged-by:
+      - pattern: 'LiteSpeed'
+  js:
+    litespeed_docref:
+      - pattern: ''

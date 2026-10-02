@@ -1,0 +1,8 @@
+name: CDN77
+slug: cdn77
+category: cdn
+website: https://www.cdn77.com
+detect:
+  headers:
+    server:
+      - pattern: '^CDN77-Turbo$'

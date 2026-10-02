@@ -1,0 +1,8 @@
+name: Cronitor
+slug: cronitor
+category: cdn
+website: https://cronitor.io
+detect:
+  js:
+    cronitor.q:
+      - pattern: ''

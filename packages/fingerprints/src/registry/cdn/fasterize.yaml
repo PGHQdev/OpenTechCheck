@@ -1,0 +1,8 @@
+name: Fasterize
+slug: fasterize
+category: cdn
+website: https://www.fasterize.com/
+detect:
+  js:
+    fstrz:
+      - pattern: ''

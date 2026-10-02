@@ -1,0 +1,8 @@
+name: ImageEngine
+slug: imageengine
+category: cdn
+website: https://imageengine.io
+detect:
+  dom:
+    link[href*='.imgeng.in/'], img[src*='.imgeng.in/'], img[data-src*='.imgeng.in/'], source[srcset*='.imgeng.in/']:
+      - pattern: ''

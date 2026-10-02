@@ -1,0 +1,11 @@
+name: Partytown
+slug: partytown
+category: cdn
+website: https://partytown.builder.io/
+detect:
+  js:
+    partytown:
+      - pattern: ''
+  dom:
+    script[type*='text/partytown']:
+      - pattern: ''

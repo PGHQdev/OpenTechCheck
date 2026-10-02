@@ -1,0 +1,12 @@
+name: Sitecore Experience Edge
+slug: sitecore-experience-edge
+category: cdn
+website: https://doc.sitecore.com/xp/en/developers/101/developer-tools/experience-edge-for-xm-apis.html
+implies: [graphql, sitecore-experience-platform]
+within:
+  techs: [astro, gatsby]
+  categories: [js-framework]
+detect:
+  dom:
+    img[src*='edge.sitecorecloud.io']:
+      - pattern: ''

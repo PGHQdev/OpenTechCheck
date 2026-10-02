@@ -1,0 +1,9 @@
+name: Intersection Observer
+slug: intersection-observer
+category: cdn
+website: https://www.w3.org/TR/intersection-observer
+detect:
+  scripts:
+    - pattern: 'cdn\.jsdelivr\.net/npm/intersection-observer@([\d\.]+)'
+      version: 1
+    - pattern: '/assets/(?:.+)?intersection-observer\.[\d\w\.]+\.js'

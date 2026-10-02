@@ -1,0 +1,8 @@
+name: Google Cloud Trace
+slug: google-cloud-trace
+category: cdn
+website: https://cloud.google.com/trace
+detect:
+  headers:
+    x-cloud-trace-context:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Quadran
+slug: quadran
+category: cdn
+website: https://www.quadran.eu
+detect:
+  scripts:
+    - pattern: 'tracker\.quadran\.eu'

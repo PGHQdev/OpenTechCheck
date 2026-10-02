@@ -1,0 +1,7 @@
+name: Request Metrics
+slug: request-metrics
+category: cdn
+website: https://requestmetrics.com
+detect:
+  scripts:
+    - pattern: 'cdn\.requestmetrics\.com'

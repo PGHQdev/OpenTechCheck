@@ -1,0 +1,8 @@
+name: NitroPack
+slug: nitropack
+category: cdn
+website: https://nitropack.io/
+detect:
+  meta:
+    generator:
+      - pattern: 'NitroPack'

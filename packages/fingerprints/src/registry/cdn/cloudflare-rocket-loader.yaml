@@ -1,0 +1,10 @@
+name: Cloudflare Rocket Loader
+slug: cloudflare-rocket-loader
+category: cdn
+website: https://support.cloudflare.com/hc/en-us/articles/200168056-Understanding-Rocket-Loader
+detect:
+  js:
+    __cfQR.done:
+      - pattern: ''
+    __cfRLUnblockHandlers:
+      - pattern: ''

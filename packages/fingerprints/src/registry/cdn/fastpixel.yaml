@@ -1,0 +1,9 @@
+name: FastPixel
+slug: fastpixel
+category: cdn
+website: https://fastpixel.io
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'api\.fastpixel\.io/'

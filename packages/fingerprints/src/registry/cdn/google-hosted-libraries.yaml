@@ -1,0 +1,10 @@
+name: Google Hosted Libraries
+slug: google-hosted-libraries
+category: cdn
+website: https://developers.google.com/speed/libraries
+detect:
+  scripts:
+    - pattern: 'ajax\.googleapis\.com/ajax/libs/'
+  dom:
+    link[href*='ajax.googleapis.com/ajax/libs']:
+      - pattern: ''

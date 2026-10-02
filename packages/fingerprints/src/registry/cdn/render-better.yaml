@@ -1,0 +1,10 @@
+name: Render Better
+slug: render-better
+category: cdn
+website: https://www.renderbetter.com
+within:
+  techs: [shopify]
+detect:
+  js:
+    renderbetter:
+      - pattern: ''

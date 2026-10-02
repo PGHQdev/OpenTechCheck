@@ -1,0 +1,9 @@
+name: Sections.design Shopify App Optimization
+slug: sections-design-shopify-app-optimization
+category: cdn
+website: https://github.com/mirceapiturca/Sections/tree/master/App%20Optimization
+implies: [shopify]
+detect:
+  dom:
+    div#shopify-section-app-optimization:
+      - pattern: ''

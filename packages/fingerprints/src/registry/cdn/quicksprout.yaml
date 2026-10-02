@@ -1,0 +1,8 @@
+name: Quicksprout
+slug: quicksprout
+category: cdn
+website: https://www.quicksprout.com
+detect:
+  js:
+    _QS.CDN:
+      - pattern: 'cdn\.quicksprout\.com'

@@ -1,0 +1,10 @@
+name: Tencent Cloud
+slug: tencent-cloud
+category: cdn
+website: https://intl.cloud.tencent.com
+detect:
+  scripts:
+    - pattern: '\.tencent-cloud\.(?:cn|com)/'
+  meta:
+    copyright:
+      - pattern: '^.+Tencent\sCloud\.$'

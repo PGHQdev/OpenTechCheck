@@ -1,0 +1,12 @@
+name: Section.io
+slug: section-io
+category: cdn
+website: https://www.section.io
+detect:
+  headers:
+    section-io-id:
+      - pattern: ''
+    section-io-origin-status:
+      - pattern: ''
+    section-io-origin-time-seconds:
+      - pattern: ''

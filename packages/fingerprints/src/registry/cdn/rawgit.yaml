@@ -1,0 +1,7 @@
+name: RawGit
+slug: rawgit
+category: cdn
+website: https://rawgit.com
+detect:
+  scripts:
+    - pattern: 'cdn\.rawgit\.com'

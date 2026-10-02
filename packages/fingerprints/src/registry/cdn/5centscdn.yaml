@@ -1,0 +1,13 @@
+name: 5centsCDN
+slug: 5centscdn
+category: cdn
+website: https://www.5centscdn.net
+detect:
+  scripts:
+    - pattern: '\.5centscdn\.com/'
+  headers:
+    x-cdn:
+      - pattern: '^5centsCDN$'
+  dom:
+    link[href*='.5centscdn.com/']:
+      - pattern: ''

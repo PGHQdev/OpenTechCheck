@@ -1,0 +1,35 @@
+name: WP Rocket
+slug: wp-rocket
+category: cdn
+website: https://wp-rocket.me
+within:
+  techs: [wordpress]
+detect:
+  html:
+    - pattern: '<!--[^>]+WP Rocket'
+  scripts:
+    - pattern: '/wp-content/plugins/wp-rocket/'
+  headers:
+    x-powered-by:
+      - pattern: 'WP Rocket(?:/([\d.]+))?'
+        version: 1
+    x-rocket-nginx-bypass:
+      - pattern: ''
+  meta:
+    generator:
+      - pattern: '^WP Rocket ([\d.]+)'
+        version: 1
+  js:
+    RocketBrowserCompatibilityChecker:
+      - pattern: ''
+    RocketLazyLoadScripts:
+      - pattern: ''
+    RocketPreloadLinksConfig:
+      - pattern: ''
+    rocket_lazy:
+      - pattern: ''
+    rocket_lazyload_css_data:
+      - pattern: ''
+  dom:
+    style#wpr-usedcss:
+      - pattern: ''

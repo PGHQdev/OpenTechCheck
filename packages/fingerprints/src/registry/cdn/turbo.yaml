@@ -1,0 +1,8 @@
+name: Turbo
+slug: turbo
+category: cdn
+website: https://turbo.hotwired.dev/
+detect:
+  js:
+    Turbo:
+      - pattern: ''

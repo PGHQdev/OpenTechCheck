@@ -1,0 +1,11 @@
+name: AiSpeed
+slug: aispeed
+category: cdn
+website: https://apps.shopify.com/aispeed
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'aispeed\.js'
+  js:
+    aispeed_init:
+      - pattern: ''

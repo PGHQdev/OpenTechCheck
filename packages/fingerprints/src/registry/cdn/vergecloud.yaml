@@ -1,0 +1,8 @@
+name: VergeCloud
+slug: vergecloud
+category: cdn
+website: https://www.vergecloud.com/
+detect:
+  headers:
+    server:
+      - pattern: '^vergecloud$'

@@ -1,0 +1,10 @@
+name: Gumlet
+slug: gumlet
+category: cdn
+website: https://www.gumlet.com/
+detect:
+  scripts:
+    - pattern: 'cdn\.gumlet\.com'
+  js:
+    gumlet:
+      - pattern: ''

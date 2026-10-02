@@ -1,0 +1,12 @@
+name: Uploadcare
+slug: uploadcare
+category: cdn
+website: https://uploadcare.com
+detect:
+  js:
+    uploadcare.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+  dom:
+    img[src*='.ucarecdn.com/'], link[href*='ucarecdn.com'], img[data-src*='.ucarecdn.com/']:
+      - pattern: ''

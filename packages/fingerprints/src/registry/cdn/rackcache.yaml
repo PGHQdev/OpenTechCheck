@@ -1,0 +1,9 @@
+name: RackCache
+slug: rackcache
+category: cdn
+website: https://github.com/rtomayko/rack-cache
+implies: [ruby]
+detect:
+  headers:
+    x-rack-cache:
+      - pattern: ''

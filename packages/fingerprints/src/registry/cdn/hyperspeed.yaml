@@ -1,0 +1,11 @@
+name: Hyperspeed
+slug: hyperspeed
+category: cdn
+website: https://www.hyperspeed.me
+implies: [shopify]
+detect:
+  scripts:
+    - pattern: 'cdn\.shopify\.com/.+/assets/hs-(?:instantload|lazysizes)\.min\.js'
+  js:
+    hyperscripts:
+      - pattern: ''

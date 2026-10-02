@@ -1,0 +1,8 @@
+name: Sotoon
+slug: sotoon
+category: cdn
+website: https://sotoon.ir
+detect:
+  headers:
+    server:
+      - pattern: '^Sotoon(?: CDN)?$'
