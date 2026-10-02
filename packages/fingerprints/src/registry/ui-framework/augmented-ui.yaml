@@ -1,0 +1,8 @@
+name: augmented-ui
+slug: augmented-ui
+category: ui-framework
+website: https://augmented-ui.com
+detect:
+  dom:
+    '[data-augmented-ui]':
+      - pattern: ''

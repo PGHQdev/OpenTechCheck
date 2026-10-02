@@ -1,0 +1,10 @@
+name: WebAwesome
+slug: webawesome
+category: ui-framework
+website: https://webawesome.com/
+detect:
+  scripts:
+    - pattern: '/webawesome\.loader\.js'
+  dom:
+    link[href*='/dist-cdn/styles/webawesome.css']:
+      - pattern: ''

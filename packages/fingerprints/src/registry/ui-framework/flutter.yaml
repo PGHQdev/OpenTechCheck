@@ -1,0 +1,16 @@
+name: Flutter
+slug: flutter
+category: ui-framework
+website: https://flutter.dev
+implies: [dart]
+detect:
+  meta:
+    id:
+      - pattern: '^flutterweb-theme$'
+  js:
+    _flutter.loader:
+      - pattern: ''
+    _flutter_web_set_location_strategy:
+      - pattern: ''
+    flutterCanvasKit:
+      - pattern: ''

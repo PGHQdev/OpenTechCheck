@@ -1,0 +1,13 @@
+name: framework7
+slug: framework7-tech
+category: ui-framework
+website: https://framework7.io/
+detect:
+  scripts:
+    - pattern: '(?:\/(?:js\/)?)?framework7(?:-((?:\d+\.){1,9}\d+))?(?:\.custom)?(?:\.min)?(?:-vue)?_?[\w\.]{0,29}\.js'
+      version: 1
+    - pattern: '(?:((?:\d+\.){1,9}\d+)\/(?:js\/)?)?framework7(?:-)?(?:\.custom)?(?:\.min)?(?:-vue)?_?[\w\.]{0,29}\.js'
+      version: 1
+  dom:
+    link[href*='framework7'], .framework7-root, .framework7-modals:
+      - pattern: ''

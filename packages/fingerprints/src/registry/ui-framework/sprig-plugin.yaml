@@ -1,0 +1,10 @@
+name: Sprig plugin
+slug: sprig-plugin
+category: ui-framework
+website: https://putyourlightson.com/plugins/sprig
+within:
+  techs: [craft-cms]
+detect:
+  dom:
+    form[sprig], button[sprig], input[sprig], div.sprig-component:
+      - pattern: ''

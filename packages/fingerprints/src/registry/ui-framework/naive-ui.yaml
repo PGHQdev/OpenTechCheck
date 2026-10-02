@@ -1,0 +1,11 @@
+name: Naive UI
+slug: naive-ui
+category: ui-framework
+website: https://www.naiveui.com
+implies: [vue, typescript]
+detect:
+  dom:
+    style[cssr-id^='n-']:
+      - attr: cssr-id
+        pattern: '^n-[a-z-]+$'
+        confidence: 99

@@ -1,0 +1,12 @@
+name: MDBootstrap
+slug: mdbootstrap
+category: ui-framework
+website: https://mdbootstrap.com
+implies: [bootstrap]
+detect:
+  scripts:
+    - pattern: '(?:/mdbootstrap/([\d\.]+)/)?js/mdb\.min\.js'
+      version: 1
+  js:
+    mdb.ScrollSpy:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: PrimeVue
+slug: primevue
+category: ui-framework
+website: https://primevue.org
+within:
+  techs: [vue]
+detect:
+  dom:
+    style[data-primevue-style-id]:
+      - pattern: ''

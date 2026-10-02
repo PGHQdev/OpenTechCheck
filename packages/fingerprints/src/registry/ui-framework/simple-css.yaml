@@ -1,0 +1,8 @@
+name: Simple.css
+slug: simple-css
+category: ui-framework
+website: https://simplecss.org
+detect:
+  dom:
+    link[href*='cdn.simplecss.org/']:
+      - pattern: ''

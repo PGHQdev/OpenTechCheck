@@ -1,0 +1,15 @@
+name: shadcn-svelte
+slug: shadcn-svelte
+category: ui-framework
+website: https://www.shadcn-svelte.com
+within:
+  techs: [svelte]
+detect:
+  js:
+    sessionStorage.sveltekit:scroll:
+      - pattern: ''
+    sessionStorage.sveltekit:snapshot:
+      - pattern: ''
+  dom:
+    link[href*='shadcn-svelte']:
+      - pattern: ''

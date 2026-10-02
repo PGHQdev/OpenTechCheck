@@ -1,0 +1,11 @@
+name: NSW Design System
+slug: nsw-design-system
+category: ui-framework
+website: https://www.digital.nsw.gov.au/digital-design-system
+detect:
+  js:
+    NSW.initSite:
+      - pattern: ''
+  dom:
+    .nsw-container, .nsw-header, .nsw-icon, link[href*='nsw-design-system']:
+      - pattern: ''

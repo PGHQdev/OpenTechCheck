@@ -1,0 +1,8 @@
+name: Aura
+slug: aura
+category: ui-framework
+website: https://github.com/forcedotcom/aura
+detect:
+  js:
+    Aura.app:
+      - pattern: 'siteforce\:communityApp'

@@ -1,0 +1,8 @@
+name: Normalize.css
+slug: normalize-css
+category: ui-framework
+website: https://csstools.github.io/normalize.css
+detect:
+  dom:
+    link[href*='/assets/css/normalize.css']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Storefront UI
+slug: storefront-ui
+category: ui-framework
+website: https://vuestorefront.io/storefront-ui
+implies: [vue]
+detect:
+  dom:
+    link[href*='/dist/sfui']:
+      - attr: href
+        pattern: '/dist/sfui.+\.js'

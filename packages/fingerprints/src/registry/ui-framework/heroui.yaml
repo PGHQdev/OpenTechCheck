@@ -1,0 +1,13 @@
+name: HeroUI
+slug: heroui
+category: ui-framework
+website: https://nextui.org/
+implies: [react]
+detect:
+  html:
+    - pattern: '--nextui-fonts-sans'
+    - pattern: '--nextui-fontSizes-'
+    - pattern: 'nextui-t-[a-zA-Z0-9]+'
+  dom:
+    link[href*='nextui.org'][rel='canonical']:
+      - pattern: ''

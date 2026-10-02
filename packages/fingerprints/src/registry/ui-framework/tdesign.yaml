@@ -1,0 +1,10 @@
+name: TDesign
+slug: tdesign
+category: ui-framework
+website: https://tdesign.tencent.com
+detect:
+  scripts:
+    - pattern: 'tdesign\.gtimg\.com/'
+  dom:
+    .t-button__text, .t-layout:
+      - pattern: ''

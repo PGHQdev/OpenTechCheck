@@ -1,0 +1,13 @@
+name: Tachyons
+slug: tachyons
+category: ui-framework
+website: https://tachyons.io
+detect:
+  js:
+    webpackChunkgatsby_starter_blog_tachyons:
+      - pattern: ''
+  dom:
+    link[href*='tachyons.min.css']:
+      - attr: href
+        pattern: '(?:([\d\.]+)(?:/css)?/)?tachyons\.min\.css'
+        version: 1

@@ -1,0 +1,12 @@
+name: Kobalte
+slug: kobalte
+category: ui-framework
+website: https://kobalte.dev
+implies: [solid]
+detect:
+  cookies:
+    kb-color-mode:
+      - pattern: ''
+  dom:
+    div[data-kb-top-layer], html[data-kb-theme]:
+      - pattern: ''

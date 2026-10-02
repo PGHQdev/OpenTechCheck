@@ -1,0 +1,12 @@
+name: Pure CSS
+slug: pure-css
+category: ui-framework
+website: https://purecss.io
+detect:
+  html:
+    - pattern: '<link[^>]+(?:([\d.])+/)?pure(?:-min)?\.css'
+      version: 1
+    - pattern: '<div[^>]+class="[^"]*pure-u-(?:sm-|md-|lg-|xl-)?\d-\d'
+  dom:
+    link[href*='pure.css'], link[href*='pure-min.css'], div[class*='pure-u-']:
+      - pattern: ''

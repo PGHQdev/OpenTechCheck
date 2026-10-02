@@ -1,0 +1,17 @@
+name: Material Design Lite
+slug: material-design-lite
+category: ui-framework
+website: https://getmdl.io
+detect:
+  html:
+    - pattern: '<link[^>]* href="[^"]*material(?:\.[\w]+-[\w]+)?(?:\.min)?\.css'
+  scripts:
+    - pattern: '(?:/([\d.]+))?/material(?:\.min)?\.js'
+      version: 1
+  js:
+    MaterialButton:
+      - pattern: ''
+    MaterialIconToggle:
+      - pattern: ''
+    MaterialLayout:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Formalize CSS
+slug: formalize-css
+category: ui-framework
+website: https://formalize.me
+detect:
+  scripts:
+    - pattern: '/js/jquery\.formalize\.js'
+  js:
+    FORMALIZE.init:
+      - pattern: ''

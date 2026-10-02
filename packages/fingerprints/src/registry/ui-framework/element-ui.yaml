@@ -1,0 +1,11 @@
+name: Element UI
+slug: element-ui
+category: ui-framework
+website: https://element.eleme.io/
+within:
+  techs: [vue]
+detect:
+  dom:
+    "[class*='el-']":
+      - attr: class
+        pattern: 'el-(?:table-column|table-filter|popper|pagination|pager|select-group|form-item|color-predefine|color-hue-slider|color-svpanel|color-alpha-slider|color-dropdown|color-picker|badge|tree-node|select-group|message-box|dialog|checkbox-button|checkbox-group|steps|menu-item|submenu|menu-item-group|button-group|select-dropdown|tabs|notification|progress-bar|popover|tooltip|cascader|cascader-menus|cascader-menu|time-spinner|spinner-inner|transfer-panel|rate|slider|dropdown-menu|input-group|radio-group|breadcrumb|time-range-picker|date-range-picker|year-table|date-editor|range-editor|date-picker|time-panel|date-table|month-table|picker-panel|collapse-item|alert|scrollbar|switch|upload-dragger|upload-list|upload-cover|input-number|radio-button|autocomplete-suggestion|loading-mask|loading-spinner)(?:\s|__|$)'

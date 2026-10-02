@@ -1,0 +1,18 @@
+name: GOV.UK Frontend
+slug: gov-uk-frontend
+category: ui-framework
+website: https://design-system.service.gov.uk/
+detect:
+  html:
+    - pattern: '<link[^>]* href=[^>]*?govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\d]+(?:.[\d]+(?:.[\d]+)?)?)|)[^>]*?(?:\.min)?\.css'
+      version: 1
+    - pattern: '<body[^>]+govuk-template__body'
+      confidence: 80
+    - pattern: '<a[^>]+govuk-link'
+      confidence: 10
+  scripts:
+    - pattern: 'govuk-frontend(?:[^>]*?([0-9a-fA-F]{7,40}|[\d]+(?:.[\d]+(?:.[\d]+)?)?)|)[^>]*?(?:\.min)?\.js'
+      version: 1
+  js:
+    GOVUKFrontend:
+      - pattern: ''

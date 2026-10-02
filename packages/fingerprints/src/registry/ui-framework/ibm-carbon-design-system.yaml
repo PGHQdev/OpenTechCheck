@@ -1,0 +1,7 @@
+name: IBM Carbon Design System
+slug: ibm-carbon-design-system
+category: ui-framework
+website: https://carbondesignsystem.com
+detect:
+  scripts:
+    - pattern: 'www\.s81c\.com/common/'

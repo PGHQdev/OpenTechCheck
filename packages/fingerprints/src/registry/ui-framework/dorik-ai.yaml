@@ -1,0 +1,8 @@
+name: Dorik AI
+slug: dorik-ai
+category: ui-framework
+website: https://dorik.com
+detect:
+  dom:
+    "link[href*='cdn.dorik.com'], section[class*='dorik-section'] ":
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: Layui
+slug: layui
+category: ui-framework
+website: https://layui.gitee.io
+detect:
+  js:
+    layui.v:
+      - pattern: '([\d\.]+)'
+        version: 1

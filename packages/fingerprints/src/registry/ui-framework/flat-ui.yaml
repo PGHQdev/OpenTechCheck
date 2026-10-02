@@ -1,0 +1,11 @@
+name: Flat UI
+slug: flat-ui
+category: ui-framework
+website: https://designmodo.github.io/Flat-UI/
+implies: [bootstrap]
+detect:
+  html:
+    - pattern: '<link[^>]* href=[^>]+flat-ui(?:\.min)?\.css'
+  dom:
+    link[href*='flat-ui.css'], link[href*='flat-ui.min.css']:
+      - pattern: ''

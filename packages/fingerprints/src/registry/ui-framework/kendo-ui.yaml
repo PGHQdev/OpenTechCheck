@@ -1,0 +1,21 @@
+name: Kendo UI
+slug: kendo-ui
+category: ui-framework
+website: https://www.telerik.com/kendo-ui
+implies: [jquery]
+detect:
+  html:
+    - pattern: '<link[^>]*\s+href=[^>]*styles/kendo\.common(?:\.min)?\.css[^>]*/>'
+  scripts:
+    - pattern: '/kendo/.*-([\d]{4})%20([\d\.]{6})'
+  js:
+    kendo:
+      - pattern: ''
+    kendo.version:
+      - pattern: '^(.+)$'
+        version: 1
+  dom:
+    link[href*=kendo]:
+      - attr: href
+        pattern: '/([\d\.]+).*/kendo\.common\.min\.css'
+        version: 1

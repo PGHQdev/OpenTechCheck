@@ -1,0 +1,12 @@
+name: GOV.UK Toolkit
+slug: gov-uk-toolkit
+category: ui-framework
+website: https://github.com/alphagov/govuk_frontend_toolkit
+detect:
+  js:
+    GOVUK.details:
+      - pattern: ''
+    GOVUK.modules:
+      - pattern: ''
+    GOVUK.primaryLinks:
+      - pattern: ''

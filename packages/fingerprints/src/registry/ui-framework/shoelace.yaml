@@ -1,0 +1,13 @@
+name: Shoelace
+slug: shoelace
+category: ui-framework
+website: https://shoelace.style
+detect:
+  scripts:
+    - pattern: '/npm/@shoelace-style/shoelace@([\d.]+)'
+      version: 1
+  dom:
+    html[data-shoelace-version]:
+      - attr: data-shoelace-version
+        pattern: '^([\d.]+)$'
+        version: 1

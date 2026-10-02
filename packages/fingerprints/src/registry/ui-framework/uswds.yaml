@@ -1,0 +1,10 @@
+name: USWDS
+slug: uswds
+category: ui-framework
+website: https://designsystem.digital.gov
+detect:
+  scripts:
+    - pattern: '\buswds\b'
+  js:
+    uswdsPresent:
+      - pattern: ''

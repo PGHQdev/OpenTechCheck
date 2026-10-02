@@ -1,0 +1,12 @@
+name: Angular Material
+slug: angular-material
+category: ui-framework
+website: https://material.angularjs.org
+excludes: [material-design-lite]
+detect:
+  scripts:
+    - pattern: '/([\d.rc-]+)?/angular-material(?:\.min)?\.js'
+      version: 1
+  js:
+    ngMaterial:
+      - pattern: ''

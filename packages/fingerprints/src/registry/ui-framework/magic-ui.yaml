@@ -1,0 +1,10 @@
+name: Magic UI
+slug: magic-ui
+category: ui-framework
+website: https://magicui.design/
+detect:
+  dom:
+    iframe[src*='.magicui.design']:
+      - pattern: ''
+    a[href*='magicui.design'] > video[src*='cdn.magicui.design']:
+      - pattern: ''

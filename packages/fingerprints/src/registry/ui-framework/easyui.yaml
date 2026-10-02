@@ -1,0 +1,7 @@
+name: EasyUI
+slug: easyui
+category: ui-framework
+website: https://jeasyui.com
+detect:
+  scripts:
+    - pattern: '/jquery\.easyui\.min\.js'

@@ -1,0 +1,14 @@
+name: MudBlazor
+slug: mudblazor
+category: ui-framework
+website: https://mudblazor.com/
+implies: [blazor]
+detect:
+  scripts:
+    - pattern: '_content/MudBlazor/MudBlazor\.min\.js'
+  js:
+    mudWindow:
+      - pattern: ''
+  dom:
+    link[href*='/MudBlazor.min.css']:
+      - pattern: ''

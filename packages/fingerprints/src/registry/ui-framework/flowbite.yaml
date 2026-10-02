@@ -1,0 +1,9 @@
+name: Flowbite
+slug: flowbite
+category: ui-framework
+website: https://github.com/themesberg/flowbite
+implies: [tailwindcss]
+detect:
+  scripts:
+    - pattern: '/flowbite(?:@([\d\.]+)/|\.bundle\.js)'
+      version: 1

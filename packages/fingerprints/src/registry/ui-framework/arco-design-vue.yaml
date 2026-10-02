@@ -1,0 +1,12 @@
+name: Arco Design Vue
+slug: arco-design-vue
+category: ui-framework
+website: https://arco.design
+implies: [vue]
+detect:
+  html:
+    - pattern: 'class="arco-(spin|select|tabs|trigger|tree|layout|button|input|modal|dropdown|menu|popover|tooltip|form|checkbox|radio|switch|slider|pagination|table|card|avatar|badge|tag|alert|message|notification|progress|skeleton|empty|result|drawer|collapse|carousel|steps|timeline|descriptions|statistic|image|upload|transfer|cascader|date-picker|time-picker|color-picker|rate|anchor|back-top|affix|config-provider|space|divider|grid|list|typography|page-header|breadcrumb|auto-complete|mentions|input-number|input-tag|textarea|verification-code|watermark)'
+    - pattern: 'arco-(spin|select|tabs|trigger|tree-select|layout|button|input|modal|dropdown|menu|popover|tooltip|form|checkbox|radio|switch|slider|pagination|table|card|avatar|badge|tag|alert|message|notification|progress|skeleton|empty|result|drawer|collapse|carousel|steps|timeline|descriptions|statistic|image|upload|transfer|cascader|date-picker|time-picker|color-picker|rate|anchor|back-top|affix|config-provider|space|divider|grid|list|typography|page-header|breadcrumb|auto-complete|mentions|input-number|input-tag|textarea|verification-code|watermark)-'
+  dom:
+    link[href*='arcodesign'], link[href*='arco-design'], body[arco-theme], section[class*='arco-layout']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: MDUI
+slug: mdui
+category: ui-framework
+website: https://www.mdui.org
+detect:
+  js:
+    _mduiEventId:
+      - pattern: ''
+    mdui.Drawer:
+      - pattern: ''

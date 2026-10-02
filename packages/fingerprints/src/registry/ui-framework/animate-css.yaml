@@ -1,0 +1,14 @@
+name: Animate.css
+slug: animate-css
+category: ui-framework
+website: https://animate.style
+detect:
+  dom:
+    .animate__animated:
+      - attr: class
+        pattern: ''
+        confidence: 99
+    link[href*='animate']:
+      - attr: href
+        pattern: '([\d\.]+)?/animate\.min\.css'
+        version: 1

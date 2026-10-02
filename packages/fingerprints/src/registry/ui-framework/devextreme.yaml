@@ -1,0 +1,9 @@
+name: DevExtreme
+slug: devextreme
+category: ui-framework
+website: https://js.devexpress.com
+implies: [react, vue, jquery, angular]
+detect:
+  js:
+    DevExpress._DEVEXTREME_BUNDLE_INITIALIZED:
+      - pattern: ''

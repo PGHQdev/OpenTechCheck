@@ -1,0 +1,8 @@
+name: Open-Props
+slug: open-props
+category: ui-framework
+website: https://open-props.style
+detect:
+  dom:
+    link[href*='unpkg.com/open-props'][rel='stylesheet']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Automatic.css
+slug: automatic-css
+category: ui-framework
+website: https://automaticcss.com
+within:
+  techs: [wordpress]
+detect:
+  dom:
+    link[href*='/wp-content/uploads/automatic-css/']:
+      - pattern: ''

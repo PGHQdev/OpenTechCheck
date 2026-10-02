@@ -1,0 +1,8 @@
+name: Pico CSS
+slug: pico-css
+category: ui-framework
+website: https://picocss.com
+detect:
+  dom:
+    link[href*='/pico.min.css'], link[href*='picocss.com/']:
+      - pattern: ''

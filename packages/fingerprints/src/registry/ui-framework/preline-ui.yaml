@@ -1,0 +1,8 @@
+name: Preline UI
+slug: preline-ui
+category: ui-framework
+website: https://preline.co
+implies: [tailwindcss]
+detect:
+  scripts:
+    - pattern: '/preline\.js'

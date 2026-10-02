@@ -1,0 +1,20 @@
+name: Vant
+slug: vant
+category: ui-framework
+website: https://github.com/youzan/vant
+implies: [typescript]
+within:
+  techs: [vue]
+detect:
+  js:
+    vant.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+  dom:
+    link[href*='/npm/vant']:
+      - attr: href
+        pattern: 'cdn\.jsdelivr\.net/npm/vant@([\d\.]+)/'
+        version: 1
+    link[href*='/vant-']:
+      - attr: href
+        pattern: '/vant-[\w\d]{8}\.js'

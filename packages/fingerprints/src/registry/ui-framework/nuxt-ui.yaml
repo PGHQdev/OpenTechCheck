@@ -1,0 +1,10 @@
+name: Nuxt UI
+slug: nuxt-ui
+category: ui-framework
+website: https://ui.nuxt.com
+within:
+  techs: [nuxt]
+detect:
+  dom:
+    style[id*='nuxt-ui-']:
+      - pattern: ''

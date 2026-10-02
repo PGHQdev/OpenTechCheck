@@ -1,0 +1,14 @@
+name: MetroUI
+slug: metroui
+category: ui-framework
+website: https://github.com/olton/Metro-UI-CSS
+detect:
+  js:
+    Metro.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1
+  dom:
+    link[href*='//cdn.metroui.org.ua/']:
+      - attr: href
+        pattern: '//cdn\.metroui\.org\.ua/v([\d\.]+)/'
+        version: 1

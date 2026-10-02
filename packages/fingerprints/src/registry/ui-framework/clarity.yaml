@@ -1,0 +1,14 @@
+name: Clarity
+slug: clarity
+category: ui-framework
+website: https://clarity.design
+implies: [angular]
+detect:
+  scripts:
+    - pattern: 'clr-angular(?:\.umd)?(?:\.min)?\.js'
+  js:
+    ClarityIcons:
+      - pattern: ''
+  dom:
+    link[href*='clr-ui'], clr-main-container:
+      - pattern: ''

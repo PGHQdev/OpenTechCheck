@@ -1,0 +1,12 @@
+name: CoreUI
+slug: coreui
+category: ui-framework
+website: https://coreui.io
+detect:
+  html:
+    - pattern: 'webpackJsonp@coreui/coreui'
+  js:
+    coreui:
+      - pattern: ''
+    webpackJsonp@coreui/coreui-free-react-admin-template:
+      - pattern: ''

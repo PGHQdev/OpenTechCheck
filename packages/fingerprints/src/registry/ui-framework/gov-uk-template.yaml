@@ -1,0 +1,16 @@
+name: GOV.UK Template
+slug: gov-uk-template
+category: ui-framework
+website: https://github.com/alphagov/govuk_template/
+detect:
+  html:
+    - pattern: '<link[^>]+govuk-template[^>"]+css'
+    - pattern: '<link[^>]+govuk-template-print[^>"]+css'
+    - pattern: '<link[^>]+govuk-template-ie6[^>"]+css'
+    - pattern: '<link[^>]+govuk-template-ie7[^>"]+css'
+    - pattern: '<link[^>]+govuk-template-ie8[^>"]+css'
+  scripts:
+    - pattern: 'govuk-template\.js'
+  js:
+    GOVUK:
+      - pattern: ''
