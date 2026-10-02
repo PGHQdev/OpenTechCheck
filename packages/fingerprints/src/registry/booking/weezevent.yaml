@@ -1,0 +1,7 @@
+name: Weezevent
+slug: weezevent
+category: booking
+website: https://weezevent.com
+detect:
+  scripts:
+    - pattern: 'widget\.weezevent\.com/'

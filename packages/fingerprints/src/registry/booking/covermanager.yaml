@@ -1,0 +1,10 @@
+name: CoverManager
+slug: covermanager
+category: booking
+website: https://www.covermanager.com
+detect:
+  scripts:
+    - pattern: '\.covermanager\.com/'
+  dom:
+    iframe[src*='.covermanager.com/']:
+      - pattern: ''

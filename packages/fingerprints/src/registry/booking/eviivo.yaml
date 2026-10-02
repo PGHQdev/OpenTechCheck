@@ -1,0 +1,13 @@
+name: Eviivo
+slug: eviivo
+category: booking
+website: https://eviivo.com
+detect:
+  html:
+    - pattern: 'via\.eviivo\.com'
+  cookies:
+    eviivo_lang:
+      - pattern: ''
+  js:
+    eviivo.announcement:
+      - pattern: ''

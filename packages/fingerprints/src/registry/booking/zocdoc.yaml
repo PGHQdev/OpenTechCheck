@@ -1,0 +1,10 @@
+name: Zocdoc
+slug: zocdoc
+category: booking
+website: https://www.zocdoc.com
+detect:
+  scripts:
+    - pattern: 'offsiteschedule\.zocdoc\.com'
+  dom:
+    a[href*='www.zocdoc.com'][target='_blank']:
+      - pattern: ''

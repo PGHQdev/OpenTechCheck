@@ -1,0 +1,7 @@
+name: Maxxton
+slug: maxxton
+category: booking
+website: https://maxxton.com
+detect:
+  scripts:
+    - pattern: '\.maxxton\.net'

@@ -1,0 +1,12 @@
+name: Appointo
+slug: appointo
+category: booking
+website: https://www.sidepanda.com/appointo
+within:
+  techs: [shopify]
+detect:
+  scripts:
+    - pattern: '/appointo-14/assets/appointo_bundle.js'
+  js:
+    onRefreshAppointoWidget:
+      - pattern: ''

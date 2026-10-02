@@ -1,0 +1,8 @@
+name: Timma
+slug: timma
+category: booking
+website: https://timma.no
+detect:
+  meta:
+    author:
+      - pattern: '^Timma'

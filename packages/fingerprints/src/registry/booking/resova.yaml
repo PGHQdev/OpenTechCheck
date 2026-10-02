@@ -1,0 +1,14 @@
+name: Resova
+slug: resova
+category: booking
+website: https://resova.com
+detect:
+  js:
+    baseUrl:
+      - pattern: '\.resova\.(?:us|eu|co\.uk)'
+    initResova:
+      - pattern: ''
+  dom:
+    a[href*='.resova.']:
+      - attr: href
+        pattern: '\.resova\.(?:us|eu|co\.uk)'

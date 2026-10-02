@@ -1,0 +1,8 @@
+name: Appointedd
+slug: appointedd
+category: booking
+website: https://www.appointedd.com
+detect:
+  js:
+    Appointedd:
+      - pattern: ''

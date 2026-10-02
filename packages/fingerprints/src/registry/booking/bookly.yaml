@@ -1,0 +1,17 @@
+name: Bookly
+slug: bookly
+category: booking
+website: https://www.booking-wp-plugin.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/bookly-responsive-appointment-booking-tool/.+\.js(?:\?ver=(\d+(?:\.\d+){1,9}))?'
+      version: 1
+  js:
+    BooklyL10n.daysShort:
+      - pattern: ''
+    bookly:
+      - pattern: ''
+    booklyCustomerProfile:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Resmio
+slug: resmio
+category: booking
+website: https://www.resmio.com
+detect:
+  scripts:
+    - pattern: 'static\.resmio\.\w+/static/'
+  js:
+    ResmioButton:
+      - pattern: ''

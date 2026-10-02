@@ -1,0 +1,10 @@
+name: Chili Piper
+slug: chili-piper
+category: booking
+website: https://www.chilipiper.com/
+detect:
+  scripts:
+    - pattern: 'js\.chilipiper\.com/marketing\.js'
+  js:
+    ChiliPiper:
+      - pattern: ''

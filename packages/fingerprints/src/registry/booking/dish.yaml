@@ -1,0 +1,7 @@
+name: DISH
+slug: dish
+category: booking
+website: https://www.dish.co/XX
+detect:
+  scripts:
+    - pattern: '\.dish\.co'

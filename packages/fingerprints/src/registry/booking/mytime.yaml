@@ -1,0 +1,10 @@
+name: MyTime
+slug: mytime
+category: booking
+website: https://mytime.com
+detect:
+  scripts:
+    - pattern: 'www\.mytime\.com'
+  js:
+    myTimeWidget:
+      - pattern: ''

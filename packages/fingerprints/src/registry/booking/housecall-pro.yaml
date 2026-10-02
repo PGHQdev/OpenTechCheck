@@ -1,0 +1,7 @@
+name: Housecall Pro
+slug: housecall-pro
+category: booking
+website: https://www.housecallpro.com
+detect:
+  scripts:
+    - pattern: '\.housecallpro\.com'

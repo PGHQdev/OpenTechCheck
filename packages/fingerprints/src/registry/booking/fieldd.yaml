@@ -1,0 +1,10 @@
+name: Fieldd
+slug: fieldd
+category: booking
+website: https://fieldd.co
+detect:
+  js:
+    FielddBooking.init:
+      - pattern: ''
+    FielddLeadForm:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: BLiNK AI
+slug: blink-ai
+category: booking
+website: https://blinkai.com
+detect:
+  scripts:
+    - pattern: 'cdn\.blinkai\.com'
+  js:
+    BlinkAI:
+      - pattern: ''
+    blinkai.autoOpen:
+      - pattern: ''

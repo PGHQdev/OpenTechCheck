@@ -1,0 +1,7 @@
+name: SynBird
+slug: synbird
+category: booking
+website: https://www.synbird.com
+detect:
+  scripts:
+    - pattern: '\.synbird\.com/'

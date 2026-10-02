@@ -1,0 +1,14 @@
+name: Asksuite
+slug: asksuite
+category: booking
+website: https://asksuite.com
+detect:
+  js:
+    AsksuiteUtil.calcTime:
+      - pattern: ''
+    asksuiteLocalStorage:
+      - pattern: ''
+    asksuiteLog:
+      - pattern: ''
+    asksuiteSessionStorage:
+      - pattern: ''

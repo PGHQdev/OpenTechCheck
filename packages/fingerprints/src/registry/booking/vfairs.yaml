@@ -1,0 +1,16 @@
+name: vFairs
+slug: vfairs
+category: booking
+website: https://www.vfairs.com
+detect:
+  html:
+    - pattern: 'cdnjs1\.vfairs\.ca'
+    - pattern: 'cdncss1\.vfairs\.ca'
+    - pattern: 'vfairs-core-backend'
+  url:
+    - pattern: '\.vfairs\.(com|ca|net|org)'
+  scripts:
+    - pattern: 'vfairs\.(com|ca)'
+  dom:
+    scripts[data-domain*='vfairscombined.com']:
+      - pattern: ''

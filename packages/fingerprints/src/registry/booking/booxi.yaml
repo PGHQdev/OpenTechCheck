@@ -1,0 +1,14 @@
+name: Booxi
+slug: booxi
+category: booking
+website: https://www.booxi.com
+detect:
+  scripts:
+    - pattern: '/bxe_core\.js'
+  js:
+    booxi:
+      - pattern: ''
+    booxiController:
+      - pattern: ''
+    bxe_core:
+      - pattern: ''

@@ -1,0 +1,13 @@
+name: Bookeo
+slug: bookeo
+category: booking
+website: https://www.bookeo.com
+detect:
+  js:
+    bookeo_start:
+      - pattern: ''
+    bookeo_startMobileLabel:
+      - pattern: ''
+  dom:
+    a[href*='//bookeo.com/'], iframe[src*='//bookeo.com/']:
+      - pattern: ''

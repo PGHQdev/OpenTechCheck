@@ -1,0 +1,12 @@
+name: A2Z Events
+slug: a2z-events
+category: booking
+website: https://mya2zevents.com
+detect:
+  scripts:
+    - pattern: '\.a2zinc\.net/'
+  js:
+    a2z.Widget:
+      - pattern: ''
+    a2zAnalytics:
+      - pattern: ''

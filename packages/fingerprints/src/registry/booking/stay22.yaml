@@ -1,0 +1,11 @@
+name: Stay22
+slug: stay22
+category: booking
+website: https://www.stay22.com
+detect:
+  scripts:
+    - pattern: '\.stay22\.com/'
+  js:
+    Stay22.version:
+      - pattern: '([\d\.]+)$'
+        version: 1

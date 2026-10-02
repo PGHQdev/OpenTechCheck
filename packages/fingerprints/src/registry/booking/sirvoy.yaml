@@ -1,0 +1,8 @@
+name: Sirvoy
+slug: sirvoy
+category: booking
+website: https://sirvoy.com
+detect:
+  js:
+    SirvoyBookingWidget:
+      - pattern: ''

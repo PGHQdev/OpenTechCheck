@@ -1,0 +1,11 @@
+name: Etix
+slug: etix
+category: booking
+website: https://hello.etix.com
+detect:
+  js:
+    Etix.javaContext:
+      - pattern: ''
+  dom:
+    a[href*='.etix.com/ticket/'][target='_blank']:
+      - pattern: ''

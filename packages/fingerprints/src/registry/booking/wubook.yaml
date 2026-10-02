@@ -1,0 +1,12 @@
+name: WuBook
+slug: wubook
+category: booking
+website: https://wubook.net
+detect:
+  scripts:
+    - pattern: '//wubook\.net/'
+  js:
+    _WuBook:
+      - pattern: ''
+    wbWuBookUrl:
+      - pattern: ''

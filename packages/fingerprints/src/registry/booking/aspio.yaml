@@ -1,0 +1,9 @@
+name: Aspio
+slug: aspio
+category: booking
+website: https://aspio.io
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/aspio-io-customer/public/js/aspio-io-customer-public\.js'

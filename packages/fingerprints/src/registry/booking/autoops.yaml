@@ -1,0 +1,8 @@
+name: AutoOps
+slug: autoops
+category: booking
+website: https://www.autoops.com/
+detect:
+  js:
+    AutoOps.addSourceTracking:
+      - pattern: ''

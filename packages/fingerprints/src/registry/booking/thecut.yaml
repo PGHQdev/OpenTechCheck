@@ -1,0 +1,8 @@
+name: theCut
+slug: thecut
+category: booking
+website: https://thecut.co
+detect:
+  dom:
+    iframe[src*='.thecut.co']:
+      - pattern: ''

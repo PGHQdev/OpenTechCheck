@@ -1,0 +1,7 @@
+name: TableFever
+slug: tablefever
+category: booking
+website: https://www.tablefever.com
+detect:
+  scripts:
+    - pattern: '\.tablefever\.com'

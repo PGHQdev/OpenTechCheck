@@ -1,0 +1,10 @@
+name: Simplotel
+slug: simplotel
+category: booking
+website: https://www.simplotel.com
+detect:
+  scripts:
+    - pattern: 'cdn\.simplotel\.com/'
+  js:
+    validateform_simplotel:
+      - pattern: ''

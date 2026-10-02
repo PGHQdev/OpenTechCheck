@@ -1,0 +1,8 @@
+name: Glofox
+slug: glofox
+category: booking
+website: https://www.glofox.com
+detect:
+  dom:
+    a[href*='.glofox.com/'], iframe[src*='.glofox.com/']:
+      - pattern: ''

@@ -1,0 +1,10 @@
+name: Timify
+slug: timify
+category: booking
+website: https://www.timify.com
+detect:
+  scripts:
+    - pattern: '\.timify\.com/'
+  js:
+    TimifyWidget:
+      - pattern: ''

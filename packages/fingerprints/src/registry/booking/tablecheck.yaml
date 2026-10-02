@@ -1,0 +1,11 @@
+name: TableCheck
+slug: tablecheck
+category: booking
+website: https://www.tablecheck.com
+detect:
+  scripts:
+    - pattern: 'tc_widget\.js'
+  dom:
+    form[action*='tablecheck']:
+      - attr: action
+        pattern: '\.tablecheck\.\w+/'

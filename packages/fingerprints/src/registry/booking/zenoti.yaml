@@ -1,0 +1,10 @@
+name: Zenoti
+slug: zenoti
+category: booking
+website: https://www.zenoti.com/
+detect:
+  html:
+    - pattern: 'zenoti\.com'
+  meta:
+    author:
+      - pattern: '^zenoti$'

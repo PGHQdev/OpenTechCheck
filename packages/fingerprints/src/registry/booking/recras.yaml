@@ -1,0 +1,12 @@
+name: Recras
+slug: recras
+category: booking
+website: https://www.recras.com
+detect:
+  scripts:
+    - pattern: '\.recras\.nl/'
+  js:
+    RecrasBooking:
+      - pattern: ''
+    submitRecrasForm:
+      - pattern: ''

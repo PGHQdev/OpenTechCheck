@@ -1,0 +1,12 @@
+name: Slotti
+slug: slotti
+category: booking
+website: https://slotti.fi
+detect:
+  html:
+    - pattern: 'slotti\.fi/static/js/embed\.js'
+  scripts:
+    - pattern: 'slotti\.fi/static/js/embed\.js'
+  js:
+    Slotti:
+      - pattern: ''

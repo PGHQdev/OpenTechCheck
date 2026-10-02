@@ -1,0 +1,10 @@
+name: GloriaFood
+slug: gloriafood
+category: booking
+website: https://www.gloriafood.com
+detect:
+  js:
+    glfBindButtons:
+      - pattern: ''
+    glfWidget:
+      - pattern: ''

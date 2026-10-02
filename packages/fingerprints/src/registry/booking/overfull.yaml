@@ -1,0 +1,11 @@
+name: Overfull
+slug: overfull
+category: booking
+website: https://www.overfull.fr
+detect:
+  html:
+    - pattern: 'app\.overfull\.fr/booking'
+    - pattern: 'overfull\.fr'
+  dom:
+    iframe[src*='app.overfull.fr']:
+      - pattern: ''

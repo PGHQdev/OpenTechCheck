@@ -1,0 +1,8 @@
+name: EventOn
+slug: eventon
+category: booking
+website: https://www.myeventon.com
+detect:
+  dom:
+    link#eventon_dynamic_styles-css, link[href*='/css/eventon_styles\.css']:
+      - pattern: ''

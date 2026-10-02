@@ -1,0 +1,10 @@
+name: HotDoc
+slug: hotdoc
+category: booking
+website: https://www.hotdoc.com.au
+detect:
+  scripts:
+    - pattern: 'cdn\.hotdoc\.com\.au'
+  js:
+    hotdoc.assetsURL:
+      - pattern: ''

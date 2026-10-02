@@ -1,0 +1,7 @@
+name: GlobRes
+slug: globres
+category: booking
+website: https://globres.com
+detect:
+  scripts:
+    - pattern: 'api\.globres\.io'

@@ -1,0 +1,7 @@
+name: iClose
+slug: iclose
+category: booking
+website: https://iclosed.io
+detect:
+  scripts:
+    - pattern: '\.iclosed\.io/'

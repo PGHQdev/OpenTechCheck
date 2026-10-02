@@ -1,0 +1,7 @@
+name: GlampManager
+slug: glampmanager
+category: booking
+website: https://www.glampmanager.com
+detect:
+  scripts:
+    - pattern: 'bookings\.glampmanager\.com'

@@ -1,0 +1,12 @@
+name: Ventrata
+slug: ventrata
+category: booking
+website: https://ventrata.com
+detect:
+  js:
+    Ventrata.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+  dom:
+    script#ventratajs-js:
+      - pattern: ''

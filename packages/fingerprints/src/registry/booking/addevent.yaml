@@ -1,0 +1,10 @@
+name: AddEvent
+slug: addevent
+category: booking
+website: https://www.addevent.com
+detect:
+  scripts:
+    - pattern: '(?://|\.)addevent\.com/'
+  js:
+    addeventatc:
+      - pattern: ''

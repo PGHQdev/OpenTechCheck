@@ -1,0 +1,7 @@
+name: Triptease
+slug: triptease
+category: booking
+website: https://www.triptease.com
+detect:
+  scripts:
+    - pattern: '\.triptease\.io/'

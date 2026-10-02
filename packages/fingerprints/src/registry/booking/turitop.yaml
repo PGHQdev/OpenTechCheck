@@ -1,0 +1,12 @@
+name: TuriTop
+slug: turitop
+category: booking
+website: https://www.turitop.com
+detect:
+  scripts:
+    - pattern: 'app\.turitop\.com/'
+  js:
+    httpTuritop:
+      - pattern: 'app\.turitop\.com'
+    turitopBuild:
+      - pattern: ''

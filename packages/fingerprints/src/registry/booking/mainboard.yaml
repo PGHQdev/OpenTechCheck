@@ -1,0 +1,8 @@
+name: Mainboard
+slug: mainboard
+category: booking
+website: https://www.mainboard.com
+detect:
+  headers:
+    server:
+      - pattern: 'Mainboard\.com'

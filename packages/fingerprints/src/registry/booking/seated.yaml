@@ -1,0 +1,7 @@
+name: Seated
+slug: seated
+category: booking
+website: https://www.seated.com
+detect:
+  scripts:
+    - pattern: 'widget\.seated\.com/'

@@ -1,0 +1,7 @@
+name: KKTIX
+slug: kktix
+category: booking
+website: https://kktix.com
+detect:
+  scripts:
+    - pattern: 'assets\.kktix\.io'

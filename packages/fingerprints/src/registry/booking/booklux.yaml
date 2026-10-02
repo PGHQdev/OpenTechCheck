@@ -1,0 +1,9 @@
+name: Booklux
+slug: booklux
+category: booking
+website: https://www.booklux.com
+detect:
+  html:
+    - pattern: 'booklux\.com'
+  scripts:
+    - pattern: 'app\.booklux\.com'

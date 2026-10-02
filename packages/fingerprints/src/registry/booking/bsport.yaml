@@ -1,0 +1,12 @@
+name: Bsport
+slug: bsport
+category: booking
+website: https://pro.bsport.io
+detect:
+  scripts:
+    - pattern: 'cdn\.bsport\.io'
+  js:
+    BsportWidget.el_list_id:
+      - pattern: ''
+    runtimeBsport:
+      - pattern: ''

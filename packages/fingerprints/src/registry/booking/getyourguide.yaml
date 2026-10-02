@@ -1,0 +1,17 @@
+name: GetYourGuide
+slug: getyourguide
+category: booking
+website: https://partner.getyourguide.com
+detect:
+  scripts:
+    - pattern: '\.getyourguide\.com/'
+  dom:
+    a[href*='.getyourguide.']:
+      - attr: href
+        pattern: '\.getyourguide\.\w+/\?partner_id='
+    img[src*='cdn.getyourguide.com/']:
+      - attr: src
+        pattern: ''
+    link[href*='cdn.getyourguide.com/']:
+      - attr: src
+        pattern: ''

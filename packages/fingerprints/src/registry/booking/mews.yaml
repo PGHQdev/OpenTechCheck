@@ -1,0 +1,13 @@
+name: Mews
+slug: mews
+category: booking
+website: https://www.mews.com
+detect:
+  scripts:
+    - pattern: '\.mews\.li/'
+  js:
+    Mews:
+      - pattern: ''
+  dom:
+    a[href*='.mews.li/'][target='_blank']:
+      - pattern: ''

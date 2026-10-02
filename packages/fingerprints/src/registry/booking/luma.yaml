@@ -1,0 +1,10 @@
+name: Luma
+slug: luma
+category: booking
+website: https://lu.ma
+detect:
+  scripts:
+    - pattern: 'embed\.lu\.ma'
+  js:
+    luma.initCheckout:
+      - pattern: ''

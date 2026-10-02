@@ -1,0 +1,12 @@
+name: Shore
+slug: shore
+category: booking
+website: https://shore.com
+detect:
+  scripts:
+    - pattern: 'connect\.shore\.com'
+  js:
+    ShoreBookingButtonAlreadyLoaded:
+      - pattern: ''
+    shoreBookingSettings:
+      - pattern: ''

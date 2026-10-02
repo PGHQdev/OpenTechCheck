@@ -1,0 +1,10 @@
+name: SquadUP
+slug: squadup
+category: booking
+website: https://www.squadup.com
+detect:
+  scripts:
+    - pattern: '\.squadup\.com/'
+  js:
+    SquadupConfig.configValues:
+      - pattern: ''

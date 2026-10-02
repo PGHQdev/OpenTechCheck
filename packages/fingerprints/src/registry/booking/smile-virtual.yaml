@@ -1,0 +1,7 @@
+name: Smile Virtual
+slug: smile-virtual
+category: booking
+website: https://www.smilevirtual.com
+detect:
+  scripts:
+    - pattern: 'www\.smilevirtual\.com'

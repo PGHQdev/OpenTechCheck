@@ -1,0 +1,9 @@
+name: Tickera
+slug: tickera
+category: booking
+website: https://tickera.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: '/wp-content/plugins/tickera/js/'

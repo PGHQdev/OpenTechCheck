@@ -1,0 +1,10 @@
+name: Resy
+slug: resy
+category: booking
+website: https://resy.com
+detect:
+  scripts:
+    - pattern: 'widgets\.resy\.\w+'
+  js:
+    resyWidget:
+      - pattern: ''

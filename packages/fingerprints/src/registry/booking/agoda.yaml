@@ -1,0 +1,13 @@
+name: Agoda
+slug: agoda
+category: booking
+website: https://www.agoda.com
+detect:
+  js:
+    agoda:
+      - pattern: ''
+    agoda_ad_client:
+      - pattern: ''
+  dom:
+    link[href*='banner.agoda.com']:
+      - pattern: ''

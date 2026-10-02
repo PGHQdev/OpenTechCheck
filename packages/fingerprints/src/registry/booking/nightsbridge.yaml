@@ -1,0 +1,11 @@
+name: NightsBridge
+slug: nightsbridge
+category: booking
+website: https://site.nightsbridge.com
+detect:
+  js:
+    webpackChunkNightsbridgeBookingForm:
+      - pattern: ''
+  dom:
+    a[target='_blank'][href*='.nightsbridge.co']:
+      - pattern: ''

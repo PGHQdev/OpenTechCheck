@@ -1,0 +1,10 @@
+name: Swoogo
+slug: swoogo
+category: booking
+website: https://swoogo.events
+detect:
+  scripts:
+    - pattern: '\.swoogo\.com/'
+  js:
+    swoogoUrl:
+      - pattern: ''

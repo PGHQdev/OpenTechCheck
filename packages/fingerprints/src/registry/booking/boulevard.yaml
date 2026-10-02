@@ -1,0 +1,10 @@
+name: Boulevard
+slug: boulevard
+category: booking
+website: https://www.joinblvd.com
+detect:
+  scripts:
+    - pattern: '\.joinboulevard\.com/'
+  dom:
+    iframe[src*='.boulevard.io']:
+      - pattern: ''

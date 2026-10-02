@@ -1,0 +1,11 @@
+name: Evvnt
+slug: evvnt
+category: booking
+website: https://evvnt.com
+detect:
+  js:
+    evvnt_require:
+      - pattern: ''
+  dom:
+    script[data-source*='evvnt']:
+      - pattern: ''

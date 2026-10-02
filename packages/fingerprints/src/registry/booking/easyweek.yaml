@@ -1,0 +1,10 @@
+name: EasyWeek
+slug: easyweek
+category: booking
+website: https://easyweek.io
+detect:
+  scripts:
+    - pattern: '\.easyweek\.io/'
+  js:
+    EasyWeekWidget:
+      - pattern: ''

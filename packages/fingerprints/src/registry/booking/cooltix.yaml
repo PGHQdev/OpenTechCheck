@@ -1,0 +1,7 @@
+name: Cooltix
+slug: cooltix
+category: booking
+website: https://cooltix.com
+detect:
+  scripts:
+    - pattern: 'static\.cooltix\.com/'

@@ -1,0 +1,12 @@
+name: Etermio
+slug: etermio
+category: booking
+website: https://www.etermio.com
+detect:
+  js:
+    $eTermio:
+      - pattern: ''
+    eTermio_autoOpenWindow:
+      - pattern: ''
+    etermio_handler:
+      - pattern: ''

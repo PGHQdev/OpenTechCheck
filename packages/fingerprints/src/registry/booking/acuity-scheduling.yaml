@@ -1,0 +1,13 @@
+name: Acuity Scheduling
+slug: acuity-scheduling
+category: booking
+website: https://acuityscheduling.com
+detect:
+  scripts:
+    - pattern: '\.acuityscheduling\.com'
+  js:
+    ACUITY_MODAL_INIT:
+      - pattern: ''
+  dom:
+    iframe[src*='app.acuityscheduling.com/']:
+      - pattern: ''

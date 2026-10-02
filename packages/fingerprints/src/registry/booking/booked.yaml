@@ -1,0 +1,8 @@
+name: Booked
+slug: booked
+category: booking
+website: https://www.bookedscheduler.com/
+detect:
+  dom:
+    link[href*='css/booked.css']:
+      - pattern: ''

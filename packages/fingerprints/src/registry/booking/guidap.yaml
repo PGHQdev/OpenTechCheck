@@ -1,0 +1,13 @@
+name: Guidap
+slug: guidap
+category: booking
+website: https://guidap.com
+detect:
+  js:
+    GUIDAP:
+      - pattern: ''
+    GUIDAPInitConfig:
+      - pattern: ''
+  dom:
+    link[href*='//cart.guidap.net/']:
+      - pattern: ''

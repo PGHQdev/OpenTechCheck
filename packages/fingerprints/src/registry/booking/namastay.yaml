@@ -1,0 +1,12 @@
+name: Namastay
+slug: namastay
+category: booking
+website: https://www.namastay.io
+detect:
+  scripts:
+    - pattern: 'sdk\.namastay\.io'
+  js:
+    closeNamastay:
+      - pattern: ''
+    initNamastay:
+      - pattern: ''

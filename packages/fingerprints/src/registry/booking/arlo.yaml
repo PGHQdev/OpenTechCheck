@@ -1,0 +1,10 @@
+name: Arlo
+slug: arlo
+category: booking
+website: https://www.arlo.co
+detect:
+  js:
+    ArloST.apiClient:
+      - pattern: ''
+    ArloStarterTemplate:
+      - pattern: ''

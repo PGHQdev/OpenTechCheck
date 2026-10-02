@@ -1,0 +1,16 @@
+name: Bookero
+slug: bookero
+category: booking
+website: https://www.bookero.org
+detect:
+  html:
+    - pattern: 'bookero-plugin-(?:form|header)'
+    - pattern: 'cdn\.bookero\.pl/plugin'
+  url:
+    - pattern: '\.bookero\.(?:org|pl)'
+  scripts:
+    - pattern: 'cdn\.bookero\.pl'
+    - pattern: 'bookero-compiled\.js'
+  js:
+    bookero_config:
+      - pattern: ''

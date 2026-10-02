@@ -1,0 +1,12 @@
+name: Haku
+slug: haku
+category: booking
+website: https://hakusports.com
+detect:
+  scripts:
+    - pattern: '\.hakuapp\.com/'
+  js:
+    addHakuRegisterEvent:
+      - pattern: ''
+    addHakuSubmitEvent:
+      - pattern: ''

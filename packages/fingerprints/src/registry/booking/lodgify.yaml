@@ -1,0 +1,7 @@
+name: Lodgify
+slug: lodgify
+category: booking
+website: https://www.lodgify.com
+detect:
+  scripts:
+    - pattern: '\.lodgify\.com/'

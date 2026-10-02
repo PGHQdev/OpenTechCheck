@@ -1,0 +1,12 @@
+name: Thefork
+slug: thefork
+category: booking
+website: https://www.thefork.com
+detect:
+  dom:
+    iframe[data-src*='lafourchette']:
+      - attr: data-src
+        pattern: 'module\.lafourchette.\w+'
+    iframe[src*='lafourchette']:
+      - attr: src
+        pattern: 'module\.lafourchette.\w+'

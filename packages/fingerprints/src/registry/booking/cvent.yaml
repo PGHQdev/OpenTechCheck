@@ -1,0 +1,15 @@
+name: Cvent
+slug: cvent
+category: booking
+website: https://www.cvent.com
+detect:
+  scripts:
+    - pattern: '\.cvent-assets\.com/'
+  js:
+    CVENT:
+      - pattern: ''
+    CVENT.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+    Cvent_findElement:
+      - pattern: ''

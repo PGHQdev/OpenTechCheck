@@ -1,0 +1,14 @@
+name: Vacation Labs
+slug: vacation-labs
+category: booking
+website: https://www.vacationlabs.com
+detect:
+  html:
+    - pattern: 'vacationlabs\.com'
+    - pattern: 'Online booking system by Vacation Labs'
+  scripts:
+    - pattern: 'app\.vacationlabs\.com'
+    - pattern: 'vl-prod-static\.b-cdn\.net'
+  cookies:
+    _vl_attr:
+      - pattern: ''

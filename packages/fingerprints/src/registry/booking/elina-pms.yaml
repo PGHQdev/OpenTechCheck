@@ -1,0 +1,10 @@
+name: Elina PMS
+slug: elina-pms
+category: booking
+website: https://www.elinapms.com
+detect:
+  scripts:
+    - pattern: '\.elinapms\.com'
+  js:
+    elinaGlobalConst:
+      - pattern: ''

@@ -1,0 +1,16 @@
+name: Trumba
+slug: trumba
+category: booking
+website: https://www.trumba.com
+detect:
+  js:
+    $Trumba:
+      - pattern: ''
+    $Trumba.version:
+      - pattern: '([\d\.]+)'
+        version: 1
+    Trumba:
+      - pattern: ''
+  dom:
+    a[href*='www.trumba.com/calendars/']:
+      - pattern: ''

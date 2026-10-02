@@ -1,0 +1,10 @@
+name: Momence
+slug: momence
+category: booking
+website: https://momence.com
+detect:
+  scripts:
+    - pattern: '//momence\.com/plugin/'
+  dom:
+    div[id*='momence-plugin-lead-form']:
+      - pattern: ''

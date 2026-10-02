@@ -1,0 +1,10 @@
+name: Fitssey
+slug: fitssey
+category: booking
+website: https://fitssey.com
+detect:
+  scripts:
+    - pattern: 'app\.fitssey\.com'
+  js:
+    FitsseyWidget:
+      - pattern: ''

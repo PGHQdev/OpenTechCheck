@@ -1,0 +1,7 @@
+name: Zenchef
+slug: zenchef
+category: booking
+website: https://www.zenchef.com
+detect:
+  scripts:
+    - pattern: 'sdk\.zenchef\.com/'

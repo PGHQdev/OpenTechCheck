@@ -1,0 +1,8 @@
+name: SavvyCal
+slug: savvycal
+category: booking
+website: https://savvycal.com
+detect:
+  js:
+    SavvyCal:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: Revinate
+slug: revinate
+category: booking
+website: https://www.revinate.com
+detect:
+  scripts:
+    - pattern: 'contact-api\.inguest\.com/.*/revinate-form\.js'
