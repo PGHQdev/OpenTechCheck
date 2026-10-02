@@ -1,0 +1,13 @@
+name: mod_wsgi
+slug: mod-wsgi
+category: server
+website: https://code.google.com/p/modwsgi
+implies: [python, apache]
+detect:
+  headers:
+    server:
+      - pattern: 'mod_wsgi(?:/([\d.]+))?'
+        version: 1
+    x-powered-by:
+      - pattern: 'mod_wsgi(?:/([\d.]+))?'
+        version: 1

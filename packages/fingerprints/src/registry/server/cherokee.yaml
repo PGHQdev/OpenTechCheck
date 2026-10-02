@@ -1,0 +1,9 @@
+name: Cherokee
+slug: cherokee
+category: server
+website: https://www.cherokee-project.com
+detect:
+  headers:
+    server:
+      - pattern: '^Cherokee(?:/([\d.]+))?'
+        version: 1

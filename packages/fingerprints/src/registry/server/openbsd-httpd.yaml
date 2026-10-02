@@ -1,0 +1,9 @@
+name: OpenBSD httpd
+slug: openbsd-httpd
+category: server
+website: https://man.openbsd.org/httpd.8
+excludes: [apache]
+detect:
+  headers:
+    server:
+      - pattern: '^OpenBSD httpd'

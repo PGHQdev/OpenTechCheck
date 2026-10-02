@@ -1,0 +1,9 @@
+name: Oracle HTTP Server
+slug: oracle-http-server
+category: server
+website: https://oracle.com
+detect:
+  headers:
+    server:
+      - pattern: 'Oracle-HTTP-Server(?:/([\d.]+))?'
+        version: 1

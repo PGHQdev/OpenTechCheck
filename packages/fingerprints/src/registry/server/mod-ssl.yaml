@@ -1,0 +1,10 @@
+name: mod_ssl
+slug: mod-ssl
+category: server
+website: https://modssl.org
+implies: [apache]
+detect:
+  headers:
+    server:
+      - pattern: 'mod_ssl(?:/([\d.]+))?'
+        version: 1

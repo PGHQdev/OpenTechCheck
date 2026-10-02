@@ -1,0 +1,8 @@
+name: AlmaLinux
+slug: almalinux
+category: server
+website: https://almalinux.org
+detect:
+  headers:
+    server:
+      - pattern: 'AlmaLinux'

@@ -1,0 +1,17 @@
+name: Synology DiskStation
+slug: synology-diskstation
+category: server
+website: https://synology.com
+detect:
+  html:
+    - pattern: '<noscript><div class=''syno-no-script'''
+  scripts:
+    - pattern: 'webapi/entry\.cgi\?api=SYNO\.(?:Core|Filestation)\.Desktop\.'
+  meta:
+    application-name:
+      - pattern: 'Synology DiskStation'
+    description:
+      - pattern: '^DiskStation provides a full-featured network attached storage'
+  dom:
+    noscript > div[class*='syno-no-script']:
+      - pattern: ''

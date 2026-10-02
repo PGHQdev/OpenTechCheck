@@ -1,0 +1,13 @@
+name: Azure Front Door
+slug: azure-front-door
+category: server
+website: https://docs.microsoft.com/en-us/azure/frontdoor/
+detect:
+  headers:
+    x-azure-ref:
+      - pattern: ''
+  cookies:
+    ASLBSA:
+      - pattern: ''
+    ASLBSACORS:
+      - pattern: ''

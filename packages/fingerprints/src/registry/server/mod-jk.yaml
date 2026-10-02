@@ -1,0 +1,10 @@
+name: mod_jk
+slug: mod-jk
+category: server
+website: https://tomcat.apache.org/tomcat-3.3-doc/mod_jk-howto.html
+implies: [tomcat, apache]
+detect:
+  headers:
+    server:
+      - pattern: 'mod_jk(?:/([\d\.]+))?'
+        version: 1

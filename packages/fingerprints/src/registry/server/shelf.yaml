@@ -1,0 +1,11 @@
+name: Shelf
+slug: shelf
+category: server
+website: https://pub.dev/packages/shelf
+implies: [dart]
+detect:
+  headers:
+    server:
+      - pattern: 'dart:io with Shelf'
+    x-powered-by:
+      - pattern: 'Dart with package:shelf'

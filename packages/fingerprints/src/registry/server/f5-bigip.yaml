@@ -1,0 +1,23 @@
+name: F5 BigIP
+slug: f5-bigip
+category: server
+website: https://www.f5.com/products/big-ip-services
+detect:
+  headers:
+    server:
+      - pattern: '^big-?ip$'
+  cookies:
+    F5_HT_shrinked:
+      - pattern: ''
+    F5_ST:
+      - pattern: ''
+    F5_fullWT:
+      - pattern: ''
+    LastMRH_Session:
+      - pattern: ''
+    MRHSHint:
+      - pattern: ''
+    MRHSequence:
+      - pattern: ''
+    MRHSession:
+      - pattern: ''

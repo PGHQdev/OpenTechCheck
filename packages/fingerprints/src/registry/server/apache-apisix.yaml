@@ -1,0 +1,11 @@
+name: Apache APISIX
+slug: apache-apisix
+category: server
+website: https://apisix.apache.org
+detect:
+  headers:
+    x-apisix-upstream-status:
+      - pattern: ''
+    server:
+      - pattern: '^APISIX(?:/([\d\.]+))?$'
+        version: 1

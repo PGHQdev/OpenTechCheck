@@ -1,0 +1,8 @@
+name: GoAhead
+slug: goahead
+category: server
+website: https://embedthis.com/products/goahead/index.html
+detect:
+  headers:
+    server:
+      - pattern: 'GoAhead'

@@ -1,0 +1,13 @@
+name: AzuraCast
+slug: azuracast
+category: server
+website: https://www.azuracast.com
+detect:
+  html:
+    - pattern: 'Powered by <a href="https://azuracast\.com/"[^>]*>AzuraCast</a>'
+    - pattern: '<title>[^<]*AzuraCast</title>'
+  text:
+    - pattern: 'Welcome to AzuraCast!'
+  dom:
+    link[href*='/public/azuratest_radio/']:
+      - pattern: ''

@@ -1,0 +1,9 @@
+name: SimpleHTTP
+slug: simplehttp
+category: server
+website: https://example.com
+detect:
+  headers:
+    server:
+      - pattern: 'SimpleHTTP(?:/([\d.]+))?'
+        version: 1

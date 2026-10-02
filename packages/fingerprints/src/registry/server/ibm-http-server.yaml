@@ -1,0 +1,9 @@
+name: IBM HTTP Server
+slug: ibm-http-server
+category: server
+website: https://ibm.com/software/webservers/httpservers
+detect:
+  headers:
+    server:
+      - pattern: 'IBM_HTTP_Server(?:/([\d.]+))?'
+        version: 1

@@ -1,0 +1,10 @@
+name: GlassFish
+slug: glassfish
+category: server
+website: https://glassfish.java.net
+implies: [java]
+detect:
+  headers:
+    server:
+      - pattern: 'GlassFish(?: Server)?(?: Open Source Edition)?(?: ?/?([\d.]+))?'
+        version: 1

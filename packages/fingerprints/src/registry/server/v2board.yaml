@@ -1,0 +1,8 @@
+name: V2Board
+slug: v2board
+category: server
+website: https://v2board.com
+detect:
+  dom:
+    link[href*='/theme/v2board/assets/']:
+      - pattern: ''

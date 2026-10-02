@@ -1,0 +1,8 @@
+name: Amazon EC2
+slug: amazon-ec2
+category: server
+website: https://aws.amazon.com/ec2/
+detect:
+  headers:
+    server:
+      - pattern: '\(Amazon\)'

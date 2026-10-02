@@ -1,0 +1,9 @@
+name: Monkey HTTP Server
+slug: monkey-http-server
+category: server
+website: https://monkey-project.com
+detect:
+  headers:
+    server:
+      - pattern: 'Monkey/?([\d.]+)?'
+        version: 1

@@ -1,0 +1,9 @@
+name: Mongrel
+slug: mongrel
+category: server
+website: https://mongrel2.org
+implies: [ruby]
+detect:
+  headers:
+    server:
+      - pattern: 'Mongrel'

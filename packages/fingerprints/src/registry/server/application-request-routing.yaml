@@ -1,0 +1,10 @@
+name: Application Request Routing
+slug: application-request-routing
+category: server
+website: https://www.iis.net/downloads/microsoft/application-request-routing
+implies: [iis]
+detect:
+  headers:
+    x-powered-by:
+      - pattern: '^ARR/([\d\.]+)$'
+        version: 1

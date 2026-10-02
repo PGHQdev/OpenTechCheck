@@ -1,0 +1,9 @@
+name: CherryPy
+slug: cherrypy
+category: server
+website: https://cherrypy.org/
+detect:
+  headers:
+    server:
+      - pattern: 'CherryPy(?:/([\d.]+))?'
+        version: 1

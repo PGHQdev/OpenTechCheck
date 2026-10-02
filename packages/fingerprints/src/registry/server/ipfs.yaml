@@ -1,0 +1,24 @@
+name: IPFS
+slug: ipfs
+category: server
+website: https://ipfs.tech/
+detect:
+  headers:
+    x-cf-ipfs-cache-status:
+      - pattern: ''
+    x-ipfs-datasize:
+      - pattern: ''
+    x-ipfs-gateway-host:
+      - pattern: ''
+    x-ipfs-lb-pop:
+      - pattern: ''
+    x-ipfs-path:
+      - pattern: ''
+    x-ipfs-pop:
+      - pattern: ''
+    x-ipfs-root:
+      - pattern: ''
+    x-ipfs-root-cid:
+      - pattern: ''
+    x-ipfs-roots:
+      - pattern: ''

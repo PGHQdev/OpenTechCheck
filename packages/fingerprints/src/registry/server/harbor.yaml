@@ -1,0 +1,9 @@
+name: Harbor
+slug: harbor
+category: server
+website: https://goharbor.io
+implies: [go]
+detect:
+  dom:
+    harbor-app:
+      - pattern: ''

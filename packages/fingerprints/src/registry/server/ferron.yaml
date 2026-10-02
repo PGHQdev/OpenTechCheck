@@ -1,0 +1,10 @@
+name: Ferron
+slug: ferron
+category: server
+website: https://ferron.sh
+detect:
+  headers:
+    server:
+      - pattern: '^Ferron$'
+    x-ferron-cache:
+      - pattern: ''

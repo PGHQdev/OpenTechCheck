@@ -1,0 +1,10 @@
+name: mod_dav
+slug: mod-dav
+category: server
+website: https://webdav.org/mod_dav
+implies: [apache]
+detect:
+  headers:
+    server:
+      - pattern: '\b(?:mod_)?DAV\b(?:/([\d.]+))?'
+        version: 1

@@ -1,0 +1,9 @@
+name: RoadRunner
+slug: roadrunner
+category: server
+website: https://roadrunner.dev
+implies: [php]
+detect:
+  headers:
+    server:
+      - pattern: 'RoadRunner'

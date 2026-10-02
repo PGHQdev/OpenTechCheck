@@ -1,0 +1,9 @@
+name: AOLserver
+slug: aolserver
+category: server
+website: https://aolserver.com
+detect:
+  headers:
+    server:
+      - pattern: 'AOLserver/?([\d.]+)?'
+        version: 1

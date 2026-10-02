@@ -1,0 +1,10 @@
+name: Darwin
+slug: darwin
+category: server
+website: https://opensource.apple.com
+detect:
+  headers:
+    server:
+      - pattern: 'Darwin'
+    x-powered-by:
+      - pattern: 'Darwin'

@@ -1,0 +1,9 @@
+name: Angie
+slug: angie
+category: server
+website: https://angie.software/en/
+detect:
+  headers:
+    server:
+      - pattern: '^Angie(?:/([\d\.]+))?$'
+        version: 1

@@ -1,0 +1,9 @@
+name: Hypercorn
+slug: hypercorn
+category: server
+website: https://pgjones.gitlab.io/hypercorn/
+implies: [python]
+detect:
+  headers:
+    server:
+      - pattern: 'hypercorn'

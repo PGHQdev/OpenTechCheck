@@ -1,0 +1,9 @@
+name: FreeBSD
+slug: freebsd
+category: server
+website: https://freebsd.org
+detect:
+  headers:
+    server:
+      - pattern: 'FreeBSD(?: ([\d.]+))?'
+        version: 1

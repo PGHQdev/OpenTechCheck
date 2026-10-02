@@ -1,0 +1,10 @@
+name: Scientific Linux
+slug: scientific-linux
+category: server
+website: https://scientificlinux.org
+detect:
+  headers:
+    server:
+      - pattern: 'Scientific Linux'
+    x-powered-by:
+      - pattern: 'Scientific Linux'

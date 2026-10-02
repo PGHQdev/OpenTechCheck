@@ -1,0 +1,8 @@
+name: Cowboy
+slug: cowboy
+category: server
+website: https://github.com/ninenines/cowboy
+detect:
+  headers:
+    server:
+      - pattern: '^Cowboy$'

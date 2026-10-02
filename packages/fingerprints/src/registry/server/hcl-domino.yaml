@@ -1,0 +1,9 @@
+name: HCL Domino
+slug: hcl-domino
+category: server
+website: https://www.hcltechsw.com/domino
+implies: [java]
+detect:
+  headers:
+    server:
+      - pattern: '^Lotus-Domino$'

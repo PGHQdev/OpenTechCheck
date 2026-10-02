@@ -1,0 +1,12 @@
+name: ELOG HTTP
+slug: elog-http
+category: server
+website: https://midas.psi.ch/elog
+detect:
+  headers:
+    server:
+      - pattern: 'ELOG HTTP ?([\d.-]+)?'
+        version: 1
+  meta:
+    keywords:
+      - pattern: '\belog\b.*\blogbook\b'

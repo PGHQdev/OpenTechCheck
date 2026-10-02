@@ -1,0 +1,10 @@
+name: Raspbian
+slug: raspbian
+category: server
+website: https://www.raspbian.org/
+detect:
+  headers:
+    server:
+      - pattern: 'Raspbian'
+    x-powered-by:
+      - pattern: 'Raspbian'

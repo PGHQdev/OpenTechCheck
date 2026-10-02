@@ -1,0 +1,9 @@
+name: Apache Traffic Server
+slug: apache-traffic-server
+category: server
+website: https://trafficserver.apache.org/
+detect:
+  headers:
+    server:
+      - pattern: 'ATS/?([\d.]+)?'
+        version: 1

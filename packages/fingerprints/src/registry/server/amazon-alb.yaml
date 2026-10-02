@@ -1,0 +1,10 @@
+name: Amazon ALB
+slug: amazon-alb
+category: server
+website: https://aws.amazon.com/elasticloadbalancing/
+detect:
+  cookies:
+    AWSALB:
+      - pattern: ''
+    AWSALBCORS:
+      - pattern: ''

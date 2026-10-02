@@ -1,0 +1,10 @@
+name: Red Hat
+slug: red-hat
+category: server
+website: https://www.redhat.com
+detect:
+  headers:
+    server:
+      - pattern: 'Red Hat'
+    x-powered-by:
+      - pattern: 'Red Hat'

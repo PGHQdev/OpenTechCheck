@@ -1,0 +1,10 @@
+name: Warp
+slug: warp
+category: server
+website: https://www.stackage.org/package/warp
+implies: [haskell]
+detect:
+  headers:
+    server:
+      - pattern: '^Warp/(\d+(?:\.\d+){1,9})?$'
+        version: 1

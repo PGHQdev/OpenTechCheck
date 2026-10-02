@@ -1,0 +1,10 @@
+name: mod_perl
+slug: mod-perl
+category: server
+website: https://perl.apache.org
+implies: [apache]
+detect:
+  headers:
+    server:
+      - pattern: 'mod_perl(?:/([\d\.]+))?'
+        version: 1

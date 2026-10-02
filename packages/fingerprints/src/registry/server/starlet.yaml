@@ -1,0 +1,8 @@
+name: Starlet
+slug: starlet
+category: server
+website: https://metacpan.org/pod/Starlet
+detect:
+  headers:
+    server:
+      - pattern: '^Plack::Handler::Starlet'

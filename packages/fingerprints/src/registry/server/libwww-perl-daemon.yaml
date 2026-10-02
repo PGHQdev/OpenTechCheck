@@ -1,0 +1,9 @@
+name: libwww-perl-daemon
+slug: libwww-perl-daemon
+category: server
+website: https://metacpan.org/pod/HTTP::Daemon
+detect:
+  headers:
+    server:
+      - pattern: 'libwww-perl-daemon(?:/([\d\.]+))?'
+        version: 1

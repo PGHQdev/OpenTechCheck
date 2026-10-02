@@ -1,0 +1,11 @@
+name: BigPoint
+slug: bigpoint
+category: server
+website: https://www.bigpoint.net
+detect:
+  meta:
+    author:
+      - pattern: 'Bigpoint GmbH'
+  dom:
+    form[action*='/Authentication/Bigpoint']:
+      - pattern: ''

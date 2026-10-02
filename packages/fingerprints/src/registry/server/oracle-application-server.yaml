@@ -1,0 +1,9 @@
+name: Oracle Application Server
+slug: oracle-application-server
+category: server
+website: https://www.oracle.com/technetwork/middleware/ias/overview/index.html
+detect:
+  headers:
+    server:
+      - pattern: 'Oracle[- ]Application[- ]Server(?: Containers for J2EE)?(?:[- ](\d[\da-z./]+))?'
+        version: 1

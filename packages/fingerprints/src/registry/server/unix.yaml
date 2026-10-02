@@ -1,0 +1,8 @@
+name: UNIX
+slug: unix
+category: server
+website: https://unix.org
+detect:
+  headers:
+    server:
+      - pattern: 'Unix'

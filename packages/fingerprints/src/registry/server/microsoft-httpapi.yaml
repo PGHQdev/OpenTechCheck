@@ -1,0 +1,9 @@
+name: Microsoft HTTPAPI
+slug: microsoft-httpapi
+category: server
+website: https://learn.microsoft.com/en-us/windows/win32/http/http-api-start-page
+detect:
+  headers:
+    server:
+      - pattern: 'Microsoft-HTTPAPI(?:/([\d.]+))?'
+        version: 1

@@ -1,0 +1,11 @@
+name: Debian
+slug: debian
+category: server
+website: https://debian.org
+detect:
+  headers:
+    server:
+      - pattern: 'Debian'
+    x-powered-by:
+      - pattern: '(?:Debian|dotdeb|(potato|woody|sarge|etch|lenny|squeeze|wheezy|jessie|stretch|buster|sid))'
+        version: 1

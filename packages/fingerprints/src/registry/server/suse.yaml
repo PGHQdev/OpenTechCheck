@@ -1,0 +1,12 @@
+name: SUSE
+slug: suse
+category: server
+website: https://suse.com
+detect:
+  headers:
+    server:
+      - pattern: 'SUSE(?:/?\s?-?([\d.]+))?'
+        version: 1
+    x-powered-by:
+      - pattern: 'SUSE(?:/?\s?-?([\d.]+))?'
+        version: 1

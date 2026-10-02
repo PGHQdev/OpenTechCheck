@@ -1,0 +1,10 @@
+name: mod_python
+slug: mod-python
+category: server
+website: https://www.modpython.org
+implies: [python, apache]
+detect:
+  headers:
+    server:
+      - pattern: 'mod_python(?:/([\d.]+))?'
+        version: 1

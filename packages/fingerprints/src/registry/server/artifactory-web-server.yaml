@@ -1,0 +1,9 @@
+name: Artifactory Web Server
+slug: artifactory-web-server
+category: server
+website: https://jfrog.com/open-source/#os-arti
+detect:
+  headers:
+    server:
+      - pattern: 'Artifactory(?:/([\d.]+))?'
+        version: 1

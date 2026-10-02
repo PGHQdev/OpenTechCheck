@@ -1,0 +1,9 @@
+name: WEBrick
+slug: webrick
+category: server
+website: https://docs.ruby-lang.org/en/2.4.0/WEBrick.html
+detect:
+  headers:
+    server:
+      - pattern: '^WEBrick/([\d\.]+)'
+        version: 1

@@ -1,0 +1,9 @@
+name: TornadoServer
+slug: tornadoserver
+category: server
+website: https://tornadoweb.org
+detect:
+  headers:
+    server:
+      - pattern: 'TornadoServer(?:/([\d.]+))?'
+        version: 1

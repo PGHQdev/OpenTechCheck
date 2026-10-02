@@ -1,0 +1,14 @@
+name: PubNub
+slug: pubnub
+category: server
+website: https://www.pubnub.com
+detect:
+  js:
+    PubNub:
+      - pattern: ''
+    PubNubCenter:
+      - pattern: ''
+    PubNubOccupancy:
+      - pattern: ''
+    PubNubPayload:
+      - pattern: ''

@@ -1,0 +1,12 @@
+name: Zend
+slug: zend
+category: server
+website: https://zend.com
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'Zend(?:Server)?(?:[\s/]?([0-9.]+))?'
+        version: 1
+  cookies:
+    ZENDSERVERSESSID:
+      - pattern: ''

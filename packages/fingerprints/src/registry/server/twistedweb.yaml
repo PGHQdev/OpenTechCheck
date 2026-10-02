@@ -1,0 +1,9 @@
+name: TwistedWeb
+slug: twistedweb
+category: server
+website: https://twistedmatrix.com/trac/wiki/TwistedWeb
+detect:
+  headers:
+    server:
+      - pattern: 'TwistedWeb(?:/([\d.]+))?'
+        version: 1

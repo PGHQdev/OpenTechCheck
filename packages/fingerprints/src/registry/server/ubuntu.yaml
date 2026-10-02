@@ -1,0 +1,10 @@
+name: Ubuntu
+slug: ubuntu
+category: server
+website: https://www.ubuntu.com/server
+detect:
+  headers:
+    server:
+      - pattern: 'Ubuntu'
+    x-powered-by:
+      - pattern: 'Ubuntu'

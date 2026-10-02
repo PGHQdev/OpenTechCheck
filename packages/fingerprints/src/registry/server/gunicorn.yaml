@@ -1,0 +1,10 @@
+name: gunicorn
+slug: gunicorn
+category: server
+website: https://gunicorn.org
+implies: [python]
+detect:
+  headers:
+    server:
+      - pattern: 'gunicorn(?:/([\d.]+))?'
+        version: 1

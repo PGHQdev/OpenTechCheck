@@ -1,0 +1,9 @@
+name: lighttpd
+slug: lighttpd
+category: server
+website: https://www.lighttpd.net
+detect:
+  headers:
+    server:
+      - pattern: '(?:L|l)ight(?:y)?(?:tpd)?(?:/([\d\.]+))?'
+        version: 1

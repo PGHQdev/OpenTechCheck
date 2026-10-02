@@ -1,0 +1,11 @@
+name: Kangle
+slug: kangle
+category: server
+website: https://kangle.org
+detect:
+  headers:
+    server:
+      - pattern: '^kangle(?:/([\d\.]+))?'
+        version: 1
+    x-cache:
+      - pattern: '^MISS from (?:[\w& ]+ )?kangle\b'

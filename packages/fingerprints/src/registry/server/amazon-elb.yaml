@@ -1,0 +1,11 @@
+name: Amazon ELB
+slug: amazon-elb
+category: server
+website: https://aws.amazon.com/elasticloadbalancing/
+detect:
+  headers:
+    server:
+      - pattern: 'awselb'
+  cookies:
+    AWSELB:
+      - pattern: ''

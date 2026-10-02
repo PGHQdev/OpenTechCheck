@@ -1,0 +1,9 @@
+name: EZproxy
+slug: ezproxy
+category: server
+website: https://www.oclc.org/en/ezproxy.html
+excludes: [apache, nginx]
+detect:
+  headers:
+    server:
+      - pattern: '^EZproxy$'

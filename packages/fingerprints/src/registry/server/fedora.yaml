@@ -1,0 +1,8 @@
+name: Fedora
+slug: fedora
+category: server
+website: https://fedoraproject.org
+detect:
+  headers:
+    server:
+      - pattern: 'Fedora'

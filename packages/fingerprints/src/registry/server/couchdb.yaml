@@ -1,0 +1,9 @@
+name: CouchDB
+slug: couchdb
+category: server
+website: https://couchdb.apache.org
+detect:
+  headers:
+    server:
+      - pattern: 'CouchDB/([\d.]+)'
+        version: 1

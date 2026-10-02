@@ -1,0 +1,9 @@
+name: Hiawatha
+slug: hiawatha
+category: server
+website: https://gitlab.com/hsleisink/hiawatha
+detect:
+  headers:
+    server:
+      - pattern: 'Hiawatha v([\d.]+)'
+        version: 1

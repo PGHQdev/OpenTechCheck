@@ -1,0 +1,10 @@
+name: Resin
+slug: resin
+category: server
+website: https://caucho.com
+implies: [java]
+detect:
+  headers:
+    server:
+      - pattern: '^Resin(?:/(\S*))?'
+        version: 1

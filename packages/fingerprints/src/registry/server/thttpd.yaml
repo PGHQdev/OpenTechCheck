@@ -1,0 +1,9 @@
+name: thttpd
+slug: thttpd
+category: server
+website: https://acme.com/software/thttpd
+detect:
+  headers:
+    server:
+      - pattern: '\bthttpd(?:/([\d.]+))?'
+        version: 1

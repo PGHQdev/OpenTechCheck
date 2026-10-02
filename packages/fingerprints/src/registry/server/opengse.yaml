@@ -1,0 +1,9 @@
+name: OpenGSE
+slug: opengse
+category: server
+website: https://code.google.com/p/opengse
+implies: [java]
+detect:
+  headers:
+    server:
+      - pattern: 'GSE'

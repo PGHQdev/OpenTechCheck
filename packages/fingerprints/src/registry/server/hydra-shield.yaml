@@ -1,0 +1,9 @@
+name: Hydra-Shield
+slug: hydra-shield
+category: server
+website: https://hydra-shield.fr
+detect:
+  headers:
+    server:
+      - pattern: '^Hydra-Shield\sV([\d\.]+)$'
+        version: 1

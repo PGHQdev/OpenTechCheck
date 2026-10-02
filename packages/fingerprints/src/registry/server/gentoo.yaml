@@ -1,0 +1,8 @@
+name: Gentoo
+slug: gentoo
+category: server
+website: https://www.gentoo.org
+detect:
+  headers:
+    x-powered-by:
+      - pattern: 'gentoo'

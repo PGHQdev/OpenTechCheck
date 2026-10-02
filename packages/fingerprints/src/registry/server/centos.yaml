@@ -1,0 +1,10 @@
+name: CentOS
+slug: centos
+category: server
+website: https://centos.org
+detect:
+  headers:
+    server:
+      - pattern: 'CentOS'
+    x-powered-by:
+      - pattern: 'CentOS'

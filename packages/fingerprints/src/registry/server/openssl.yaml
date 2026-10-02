@@ -1,0 +1,9 @@
+name: OpenSSL
+slug: openssl
+category: server
+website: https://openssl.org
+detect:
+  headers:
+    server:
+      - pattern: 'OpenSSL(?:/([\d.]+[a-z]?))?'
+        version: 1

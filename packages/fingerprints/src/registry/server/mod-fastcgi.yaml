@@ -1,0 +1,10 @@
+name: mod_fastcgi
+slug: mod-fastcgi
+category: server
+website: https://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html
+implies: [apache]
+detect:
+  headers:
+    server:
+      - pattern: 'mod_fastcgi(?:/([\d.]+))?'
+        version: 1

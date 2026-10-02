@@ -1,0 +1,9 @@
+name: Zope
+slug: zope
+category: server
+website: https://zope.org
+implies: [python]
+detect:
+  headers:
+    server:
+      - pattern: '^Zope/'

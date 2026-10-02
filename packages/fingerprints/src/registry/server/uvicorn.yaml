@@ -1,0 +1,9 @@
+name: Uvicorn
+slug: uvicorn
+category: server
+website: https://www.uvicorn.org
+implies: [python]
+detect:
+  headers:
+    server:
+      - pattern: 'uvicorn'

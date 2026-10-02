@@ -1,0 +1,9 @@
+name: Yaws
+slug: yaws
+category: server
+website: https://github.com/erlyaws/yaws
+detect:
+  headers:
+    server:
+      - pattern: 'Yaws(?: ([\d.]+))?'
+        version: 1

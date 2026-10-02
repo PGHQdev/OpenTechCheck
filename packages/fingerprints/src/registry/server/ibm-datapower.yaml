@@ -1,0 +1,10 @@
+name: IBM DataPower
+slug: ibm-datapower
+category: server
+website: https://www.ibm.com/products/datapower-gateway
+detect:
+  headers:
+    x-backside-transport:
+      - pattern: ''
+    x-global-transaction-id:
+      - pattern: ''
