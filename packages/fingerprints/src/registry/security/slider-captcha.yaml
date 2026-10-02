@@ -1,0 +1,9 @@
+name: Slider Captcha
+slug: slider-captcha
+category: security
+website: https://github.com/ArgoZhang/SliderCaptcha
+implies: [jquery]
+detect:
+  js:
+    sliderCaptcha:
+      - pattern: ''

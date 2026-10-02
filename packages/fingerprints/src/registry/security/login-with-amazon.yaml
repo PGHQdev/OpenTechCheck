@@ -1,0 +1,8 @@
+name: Login with Amazon
+slug: login-with-amazon
+category: security
+website: https://developer.amazon.com/apps-and-games/login-with-amazon
+detect:
+  js:
+    onAmazonLoginReady:
+      - pattern: ''

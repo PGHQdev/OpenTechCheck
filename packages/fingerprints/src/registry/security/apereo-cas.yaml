@@ -1,0 +1,10 @@
+name: Apereo CAS
+slug: apereo-cas
+category: security
+website: https://www.apereo.org/projects/cas
+implies: [java, php]
+detect:
+  dom:
+    head > title:
+      - text: true
+        pattern: 'CAS – (?:Central Authentication Service|Service Central d''Authentification)'

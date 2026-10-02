@@ -1,0 +1,17 @@
+name: LoginRadius
+slug: loginradius
+category: security
+website: https://www.loginradius.com
+detect:
+  scripts:
+    - pattern: '\.loginradius\.com'
+    - pattern: '\.lrcontent\.com'
+  js:
+    LoginRadius:
+      - pattern: ''
+    LoginRadiusDefaults:
+      - pattern: ''
+    LoginRadiusSDK:
+      - pattern: ''
+    LoginRadiusUtility:
+      - pattern: ''

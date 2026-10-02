@@ -1,0 +1,7 @@
+name: Securiti
+slug: securiti
+category: security
+website: https://securiti.ai
+detect:
+  scripts:
+    - pattern: '\.securiti\.ai'

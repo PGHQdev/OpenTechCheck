@@ -1,0 +1,7 @@
+name: ComplyAuto
+slug: complyauto
+category: security
+website: https://complyauto.com
+detect:
+  scripts:
+    - pattern: 'cdn\.complyauto\.com/'

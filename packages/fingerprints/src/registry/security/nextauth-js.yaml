@@ -1,0 +1,12 @@
+name: NextAuth.js
+slug: nextauth-js
+category: security
+website: https://next-auth.js.org
+within:
+  techs: [nextjs]
+detect:
+  cookies:
+    __Host-next-auth.csrf-token:
+      - pattern: ''
+    __Secure-next-auth.callback-url:
+      - pattern: ''

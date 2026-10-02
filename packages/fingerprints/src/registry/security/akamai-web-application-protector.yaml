@@ -1,0 +1,14 @@
+name: Akamai Web Application Protector
+slug: akamai-web-application-protector
+category: security
+website: https://www.akamai.com/us/en/products/security/web-application-protector-enterprise-waf-firewall-ddos-protection.jsp
+implies: [akamai]
+detect:
+  scripts:
+    - pattern: 'ds-aksb-a\.akamaihd\.net/aksb.min.js'
+    - pattern: 'aksb\.min\.js'
+      confidence: 50
+  js:
+    AKSB:
+      - pattern: ''
+        confidence: 50

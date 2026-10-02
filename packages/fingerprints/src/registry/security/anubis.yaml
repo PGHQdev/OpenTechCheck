@@ -1,0 +1,10 @@
+name: Anubis
+slug: anubis
+category: security
+website: https://anubis.techaro.lol
+detect:
+  cookies:
+    techaro.lol-anubis-auth:
+      - pattern: ''
+    techaro.lol-anubis-cookie-verification:
+      - pattern: ''

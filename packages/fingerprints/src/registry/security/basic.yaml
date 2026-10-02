@@ -1,0 +1,8 @@
+name: Basic
+slug: basic
+category: security
+website: https://tools.ietf.org/html/rfc7617
+detect:
+  headers:
+    www-authenticate:
+      - pattern: '^Basic'

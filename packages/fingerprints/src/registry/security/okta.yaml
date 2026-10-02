@@ -1,0 +1,19 @@
+name: Okta
+slug: okta
+category: security
+website: https://developer.okta.com
+detect:
+  scripts:
+    - pattern: 'oktacdn\.com/.+/([\d.]+)/'
+      version: 1
+  js:
+    OktaAuth:
+      - pattern: ''
+    isOktaEnabled:
+      - pattern: ''
+    okta.cdnUrlHostname:
+      - pattern: ''
+    okta.locale:
+      - pattern: ''
+    oktaCurrentSessionUrl:
+      - pattern: ''

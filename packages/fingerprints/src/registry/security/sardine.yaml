@@ -1,0 +1,7 @@
+name: Sardine
+slug: sardine
+category: security
+website: https://www.sardine.ai
+detect:
+  scripts:
+    - pattern: 'api\.sardine\.ai'

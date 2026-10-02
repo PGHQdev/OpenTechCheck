@@ -1,0 +1,13 @@
+name: Akamai Bot Manager
+slug: akamai-bot-manager
+category: security
+website: https://www.akamai.com/us/en/products/security/bot-manager.jsp
+implies: [akamai]
+detect:
+  cookies:
+    ak_bmsc:
+      - pattern: ''
+    bm_sv:
+      - pattern: ''
+    bm_sz:
+      - pattern: ''

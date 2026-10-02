@@ -1,0 +1,8 @@
+name: Auth0 Lock
+slug: auth0-lock
+category: security
+website: https://auth0.com/docs/libraries/lock
+detect:
+  scripts:
+    - pattern: '/lock/([\d.]+)/lock(?:.min)?\.js'
+      version: 1

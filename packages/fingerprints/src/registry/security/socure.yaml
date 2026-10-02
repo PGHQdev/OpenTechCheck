@@ -1,0 +1,10 @@
+name: Socure
+slug: socure
+category: security
+website: https://www.socure.com
+detect:
+  scripts:
+    - pattern: '\.socure\.com/'
+  js:
+    SocureDocVSDK.launch:
+      - pattern: ''

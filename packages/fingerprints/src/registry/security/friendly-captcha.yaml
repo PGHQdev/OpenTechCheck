@@ -1,0 +1,17 @@
+name: Friendly Captcha
+slug: friendly-captcha
+category: security
+website: https://friendlycaptcha.com
+detect:
+  html:
+    - pattern: 'cdn\.jsdelivr\.net/npm/@friendlycaptcha/sdk'
+  scripts:
+    - pattern: '@friendlycaptcha/sdk'
+  js:
+    friendlyCaptchaActive:
+      - pattern: ''
+    friendlyCaptchaVersion:
+      - pattern: ''
+  dom:
+    div.frc-captcha:
+      - pattern: ''

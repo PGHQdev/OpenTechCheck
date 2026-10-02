@@ -1,0 +1,8 @@
+name: DDoS-Guard
+slug: ddos-guard
+category: security
+website: https://ddos-guard.net
+detect:
+  headers:
+    server:
+      - pattern: '^ddos-guard$'

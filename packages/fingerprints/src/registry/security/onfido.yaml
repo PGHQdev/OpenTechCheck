@@ -1,0 +1,13 @@
+name: Onfido
+slug: onfido
+category: security
+website: https://onfido.com
+detect:
+  html:
+    - pattern: 'OnfidoIdentityVerificationSdk'
+    - pattern: 'useOnfidoStyling'
+    - pattern: 'CompleteOnfido'
+    - pattern: 'static/Onfido-[A-Za-z0-9]+\.js'
+  dom:
+    link[href*='.onfido.com'], iframe[src*='onfido.com']:
+      - pattern: ''

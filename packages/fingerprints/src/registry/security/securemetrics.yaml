@@ -1,0 +1,8 @@
+name: SecureMetrics
+slug: securemetrics
+category: security
+website: https://www.securitymetrics.com
+detect:
+  dom:
+    a[href*='www.securitymetrics.com'] > img[src*='www.securitymetrics.com']:
+      - pattern: ''

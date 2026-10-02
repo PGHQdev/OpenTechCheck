@@ -1,0 +1,7 @@
+name: SAP Customer Data Cloud Sign-in
+slug: sap-customer-data-cloud-sign-in
+category: security
+website: https://www.sap.com/uk/acquired-brands/what-is-gigya.html
+detect:
+  scripts:
+    - pattern: '\.gigya\.com/JS/gigya\.js'

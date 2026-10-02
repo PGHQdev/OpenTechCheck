@@ -1,0 +1,8 @@
+name: Hanko
+slug: hanko
+category: security
+website: https://www.hanko.io
+detect:
+  js:
+    _hankoStyle:
+      - pattern: ''

@@ -1,0 +1,8 @@
+name: RapidSec
+slug: rapidsec
+category: security
+website: https://rapidsec.com
+detect:
+  headers:
+    report-to:
+      - pattern: '\.rapidsec\.net'

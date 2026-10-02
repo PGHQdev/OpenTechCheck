@@ -1,0 +1,13 @@
+name: Forter
+slug: forter
+category: security
+website: https://www.forter.com
+detect:
+  scripts:
+    - pattern: 'forter\.com'
+  cookies:
+    forterToken:
+      - pattern: ''
+  js:
+    ftr__startScriptLoad:
+      - pattern: ''

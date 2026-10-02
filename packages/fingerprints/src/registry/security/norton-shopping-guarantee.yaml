@@ -1,0 +1,10 @@
+name: Norton Shopping Guarantee
+slug: norton-shopping-guarantee
+category: security
+website: https://norton.buysafe.com
+detect:
+  scripts:
+    - pattern: 'nsg\.symantec\.com/'
+  js:
+    DO_NORTON_SHOPPING:
+      - pattern: ''

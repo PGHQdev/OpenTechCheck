@@ -1,0 +1,10 @@
+name: BuySafe
+slug: buysafe
+category: security
+website: https://www.buysafe.com
+detect:
+  scripts:
+    - pattern: 'seal\.buysafe\.com/'
+  js:
+    buySAFE:
+      - pattern: ''

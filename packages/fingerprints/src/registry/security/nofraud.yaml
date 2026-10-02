@@ -1,0 +1,9 @@
+name: NoFraud
+slug: nofraud
+category: security
+website: https://www.nofraud.com
+within:
+  categories: [ecommerce]
+detect:
+  scripts:
+    - pattern: 'services\.nofraud\.com/'

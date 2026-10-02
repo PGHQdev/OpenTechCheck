@@ -1,0 +1,12 @@
+name: Microsoft Authentication
+slug: microsoft-authentication
+category: security
+website: https://github.com/AzureAD/microsoft-authentication-library-for-js
+detect:
+  js:
+    Msal.Authority:
+      - pattern: ''
+    msal.authorityInstance:
+      - pattern: ''
+    msalConfig.auth:
+      - pattern: ''

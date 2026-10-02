@@ -1,0 +1,10 @@
+name: FraudLabs Pro
+slug: fraudlabs-pro
+category: security
+website: https://www.fraudlabspro.com
+detect:
+  scripts:
+    - pattern: '\.fraudlabspro\.com/'
+  js:
+    FraudLabsProAgent:
+      - pattern: ''

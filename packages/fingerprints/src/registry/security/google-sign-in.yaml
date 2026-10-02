@@ -1,0 +1,18 @@
+name: Google Sign-in
+slug: google-sign-in
+category: security
+website: https://developers.google.com/identity/sign-in/web
+detect:
+  scripts:
+    - pattern: 'accounts\.google\.com/gsi/client'
+  meta:
+    google-signin-client_id:
+      - pattern: ''
+    google-signin-scope:
+      - pattern: ''
+  js:
+    googleSignInClientId:
+      - pattern: ''
+  dom:
+    iframe[src*='accounts.google.com/o/oauth2'], a[href*='accounts.google.com/o/oauth2']:
+      - pattern: ''

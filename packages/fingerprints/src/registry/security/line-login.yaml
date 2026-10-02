@@ -1,0 +1,12 @@
+name: LINE Login
+slug: line-login
+category: security
+website: https://developers.line.biz/en/services/line-login/
+detect:
+  js:
+    Constants.authorization_request_url:
+      - pattern: 'access\.line\.me/oauth2/v([\d\.]+)/'
+        version: 1
+  dom:
+    a[href*='access.line.me/']:
+      - pattern: ''

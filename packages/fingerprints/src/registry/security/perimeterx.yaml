@@ -1,0 +1,19 @@
+name: PerimeterX
+slug: perimeterx
+category: security
+website: https://www.perimeterx.com
+detect:
+  scripts:
+    - pattern: 'client\.a\.pxi\.pub/'
+  cookies:
+    _px3:
+      - pattern: ''
+    _pxff_cc:
+      - pattern: ''
+    _pxhd:
+      - pattern: ''
+    _pxvid:
+      - pattern: ''
+  js:
+    _pxAppId:
+      - pattern: ''

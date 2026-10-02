@@ -1,0 +1,16 @@
+name: SimpleSAMLphp
+slug: simplesamlphp
+category: security
+website: https://simplesamlphp.org
+implies: [php]
+detect:
+  html:
+    - pattern: 'SimpleSAMLphp'
+    - pattern: 'simplesamlphp\.org/docs'
+  url:
+    - pattern: '/module\.php/'
+  cookies:
+    SimpleSAML:
+      - pattern: ''
+    SimpleSAMLSessionID:
+      - pattern: ''

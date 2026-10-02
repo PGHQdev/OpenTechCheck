@@ -1,0 +1,8 @@
+name: ARCaptcha
+slug: arcaptcha
+category: security
+website: https://arcaptcha.co
+detect:
+  js:
+    arcaptcha.checkboxCreatorRegistered:
+      - pattern: ''

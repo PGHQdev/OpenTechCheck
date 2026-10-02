@@ -1,0 +1,7 @@
+name: Negate
+slug: negate
+category: security
+website: https://negate.io
+detect:
+  scripts:
+    - pattern: 'sapi\.negate\.io'

@@ -1,0 +1,10 @@
+name: Entrust
+slug: entrust
+category: security
+website: https://www.entrust.com/products/digital-certificates
+detect:
+  scripts:
+    - pattern: 'seal\.entrust\.net/'
+  js:
+    goEntrust:
+      - pattern: ''

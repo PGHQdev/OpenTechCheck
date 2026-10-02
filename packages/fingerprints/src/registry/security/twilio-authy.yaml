@@ -1,0 +1,8 @@
+name: Twilio Authy
+slug: twilio-authy
+category: security
+website: https://authy.com
+detect:
+  js:
+    Authy:
+      - pattern: ''

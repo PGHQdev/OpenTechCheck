@@ -1,0 +1,7 @@
+name: Fraud Blocker
+slug: fraud-blocker
+category: security
+website: https://fraudblocker.com
+detect:
+  scripts:
+    - pattern: 'monitor\.fraudblocker\.com'

@@ -1,0 +1,12 @@
+name: Linkedin Sign-in
+slug: linkedin-sign-in
+category: security
+website: https://www.linkedin.com/developers
+detect:
+  scripts:
+    - pattern: 'platform\.linkedin\.com/(?:.*)?(?:in\.js(?:\?version)?([\d.]+)?|litms/utag/[^?]+\.js(?:\?cb=[\d]+)?)'
+  js:
+    OnLinkedInAuth:
+      - pattern: ''
+    onLinkedInLoad:
+      - pattern: ''

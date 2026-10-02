@@ -1,0 +1,7 @@
+name: Kiprotect
+slug: kiprotect
+category: security
+website: https://kiprotect.com
+detect:
+  scripts:
+    - pattern: 'cdn\.kiprotect\.com'

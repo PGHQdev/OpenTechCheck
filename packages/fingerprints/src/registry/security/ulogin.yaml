@@ -1,0 +1,9 @@
+name: uLogin
+slug: ulogin
+category: security
+website: https://ulogin.ru
+detect:
+  js:
+    uLogin.version:
+      - pattern: '^([\d\.]+)$'
+        version: 1

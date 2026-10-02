@@ -1,0 +1,7 @@
+name: DataGrail
+slug: datagrail
+category: security
+website: https://www.datagrail.io
+detect:
+  scripts:
+    - pattern: '\.datagrail\.io/'

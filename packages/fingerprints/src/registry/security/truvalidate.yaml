@@ -1,0 +1,8 @@
+name: TruValidate
+slug: truvalidate
+category: security
+website: https://www.transunion.com/solution/truvalidate
+detect:
+  scripts:
+    - pattern: 'mpsnare\.iesnare\.com'
+    - pattern: 'ci-mpsnare\.iovation\.com'

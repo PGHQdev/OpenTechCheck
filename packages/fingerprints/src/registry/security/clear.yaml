@@ -1,0 +1,10 @@
+name: Clear
+slug: clear
+category: security
+website: https://www.clearme.com
+detect:
+  js:
+    ClearMe.Environments:
+      - pattern: ''
+    clearMeClientID:
+      - pattern: ''

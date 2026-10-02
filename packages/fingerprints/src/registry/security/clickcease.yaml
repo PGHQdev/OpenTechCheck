@@ -1,0 +1,7 @@
+name: ClickCease
+slug: clickcease
+category: security
+website: https://www.clickcease.com
+detect:
+  scripts:
+    - pattern: '\.clickcease\.com/monitor/'

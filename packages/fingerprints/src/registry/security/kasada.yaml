@@ -1,0 +1,11 @@
+name: Kasada
+slug: kasada
+category: security
+website: https://www.kasada.io
+detect:
+  cookies:
+    KP_UIDz:
+      - pattern: ''
+  js:
+    KPSDK.configure:
+      - pattern: ''

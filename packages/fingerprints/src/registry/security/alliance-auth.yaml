@@ -1,0 +1,16 @@
+name: Alliance Auth
+slug: alliance-auth
+category: security
+website: https://gitlab.com/allianceauth/allianceauth
+implies: [django, python, font-awesome, bootstrap, jquery]
+detect:
+  html:
+    - pattern: '/static/allianceauth/icons/'
+  meta:
+    og:description:
+      - pattern: 'Alliance Auth - An auth system for EVE Online'
+    msapplication-config:
+      - pattern: '/static/allianceauth/icons/browserconfig'
+  dom:
+    link[rel='stylesheet'][href*='/static/allianceauth/css']:
+      - pattern: ''

@@ -1,0 +1,7 @@
+name: ThreatMetrix
+slug: threatmetrix
+category: security
+website: https://risk.lexisnexis.com/products/threatmetrix
+detect:
+  scripts:
+    - pattern: '\.online-metrix\.net'

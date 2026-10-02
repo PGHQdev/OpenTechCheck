@@ -1,0 +1,10 @@
+name: CleanTalk
+slug: cleantalk
+category: security
+website: https://cleantalk.org
+detect:
+  scripts:
+    - pattern: 'moderate\.cleantalk\.org/'
+  js:
+    ctAjaxSetupAddCleanTalkDataBeforeSendAjax:
+      - pattern: ''

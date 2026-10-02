@@ -1,0 +1,10 @@
+name: Super Socializer
+slug: super-socializer
+category: security
+website: https://super-socializer-wordpress.heateor.com
+within:
+  techs: [wordpress]
+detect:
+  scripts:
+    - pattern: 'plugins/super-socializer/.+?ver=([\d.]+)'
+      version: 1

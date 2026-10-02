@@ -1,0 +1,11 @@
+name: Blue Triangle
+slug: blue-triangle
+category: security
+website: https://bluetriangle.com
+detect:
+  scripts:
+    - pattern: '\.btttag\.com/btt\.js'
+  js:
+    _bttUtil.version:
+      - pattern: '([\d.]+)'
+        version: 1

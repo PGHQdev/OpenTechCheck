@@ -1,0 +1,8 @@
+name: Variti
+slug: variti
+category: security
+website: https://variti.io
+detect:
+  headers:
+    x-variti-ccr:
+      - pattern: ''

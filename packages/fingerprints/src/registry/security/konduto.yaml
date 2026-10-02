@@ -1,0 +1,15 @@
+name: Konduto
+slug: konduto
+category: security
+website: https://www.konduto.com
+detect:
+  scripts:
+    - pattern: '\.k-analytix\.com'
+  js:
+    Konduto:
+      - pattern: ''
+    getKondutoID:
+      - pattern: ''
+  dom:
+    link[href*='.konduto.com']:
+      - pattern: ''

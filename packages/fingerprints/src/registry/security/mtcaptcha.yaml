@@ -1,0 +1,12 @@
+name: MTCaptcha
+slug: mtcaptcha
+category: security
+website: https://www.mtcaptcha.com
+detect:
+  scripts:
+    - pattern: 'service(?:2)?\.mtcaptcha\.com/'
+  js:
+    mtcaptcha.getVerifiedToken:
+      - pattern: ''
+    mtcaptchaConfig.sitekey:
+      - pattern: ''

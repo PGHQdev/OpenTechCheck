@@ -1,0 +1,10 @@
+name: OneAll
+slug: oneall
+category: security
+website: https://www.oneall.com
+detect:
+  scripts:
+    - pattern: 'api\.oneall\.com/socialize'
+  js:
+    oa_social_login:
+      - pattern: ''

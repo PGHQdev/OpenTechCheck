@@ -1,0 +1,9 @@
+name: Cloudflare Bot Management
+slug: cloudflare-bot-management
+category: security
+website: https://www.cloudflare.com/en-gb/products/bot-management/
+implies: [cloudflare]
+detect:
+  cookies:
+    __cf_bm:
+      - pattern: ''

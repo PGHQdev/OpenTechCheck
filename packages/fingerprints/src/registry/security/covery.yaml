@@ -1,0 +1,10 @@
+name: Covery
+slug: covery
+category: security
+website: https://covery.ai
+detect:
+  js:
+    handleCoveryFpKey:
+      - pattern: ''
+    sendCoveryFpKey:
+      - pattern: ''

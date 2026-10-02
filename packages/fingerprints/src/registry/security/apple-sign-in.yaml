@@ -1,0 +1,19 @@
+name: Apple Sign-in
+slug: apple-sign-in
+category: security
+website: https://developer.apple.com/sign-in-with-apple/
+detect:
+  scripts:
+    - pattern: 'appleid\.auth\.js'
+  meta:
+    appleid-signin-client-id:
+      - pattern: ''
+  js:
+    AppleID:
+      - pattern: ''
+  dom:
+    a[href*='appleid.apple.com/auth/authorize']:
+      - pattern: ''
+    button:
+      - text: true
+        pattern: '(Sign (in|up)|Log in|Continue) with Apple'

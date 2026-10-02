@@ -1,0 +1,8 @@
+name: SiteLock
+slug: sitelock
+category: security
+website: https://www.sitelock.com
+detect:
+  dom:
+    a[href*='#'] > img[src*='.sitelock.com/']:
+      - pattern: ''

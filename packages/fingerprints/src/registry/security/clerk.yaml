@@ -1,0 +1,13 @@
+name: Clerk
+slug: clerk
+category: security
+website: https://clerk.dev
+detect:
+  js:
+    Clerk.authenticateWithMetamask:
+      - pattern: ''
+    Clerk.openSignIn:
+      - pattern: ''
+    Clerk.version:
+      - pattern: '([\d\.]+)'
+        version: 1

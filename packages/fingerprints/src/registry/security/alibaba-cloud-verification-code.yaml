@@ -1,0 +1,7 @@
+name: Alibaba Cloud Verification Code
+slug: alibaba-cloud-verification-code
+category: security
+website: https://help.aliyun.com/document_detail/193141.html
+detect:
+  scripts:
+    - pattern: 'cf\.aliyun\.com/'

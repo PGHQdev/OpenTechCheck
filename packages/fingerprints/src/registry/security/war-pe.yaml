@@ -1,0 +1,7 @@
+name: WAR.PE
+slug: war-pe
+category: security
+website: https://war.pe
+detect:
+  scripts:
+    - pattern: '//war\.pe/warp\.js'

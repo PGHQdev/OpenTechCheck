@@ -1,0 +1,10 @@
+name: Skyflow
+slug: skyflow
+category: security
+website: https://www.skyflow.com
+detect:
+  js:
+    Skyflow.ElementType.CARD_NUMBER:
+      - pattern: ''
+    Skyflow.ValidationRuleType:
+      - pattern: ''

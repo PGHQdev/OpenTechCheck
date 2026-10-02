@@ -1,0 +1,7 @@
+name: Oxi Social Login
+slug: oxi-social-login
+category: security
+website: https://www.oxiapps.com/
+detect:
+  scripts:
+    - pattern: 'social-login\.oxiapps\.com'

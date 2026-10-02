@@ -1,0 +1,12 @@
+name: Seon
+slug: seon
+category: security
+website: https://seon.io
+detect:
+  scripts:
+    - pattern: 'cdn\.seon\.io/'
+  js:
+    seon.appIdentifier:
+      - pattern: ''
+    waitForSeon:
+      - pattern: ''
