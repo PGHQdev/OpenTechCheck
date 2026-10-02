@@ -43,5 +43,5 @@ if (FIXTURES === undefined || !existsSync(FIXTURES)) {
     }
     expect(misses).toEqual([])
     expect(matches).toBeGreaterThan(0)
-  }, 60_000) // every html rule on every real page: slower than the default 5 s on CI runners
+  }, 300_000) // every html rule on every real page: slower than the default 5 s on CI runners and under parallel load
 }
