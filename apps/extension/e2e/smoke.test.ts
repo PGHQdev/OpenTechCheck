@@ -44,6 +44,13 @@ test('badge and popup reflect fixture detections', async () => {
   const workerTarget = await browser.waitForTarget((t) => t.type() === 'service_worker', { timeout: 15_000 })
   const worker = await workerTarget.worker()
   if (!worker) throw new Error('no service worker')
+  // The target appears when the worker starts; with the full registry its
+  // script can still be evaluating, so wait until the listener exists.
+  await worker.evaluate(async () => {
+    for (let i = 0; i < 150 && !chrome.webRequest.onHeadersReceived.hasListeners(); i++) {
+      await new Promise((r) => setTimeout(r, 100))
+    }
+  })
 
   const page = await browser.newPage()
   await page.goto(`http://localhost:${PORT}/`, { waitUntil: 'networkidle0' })
