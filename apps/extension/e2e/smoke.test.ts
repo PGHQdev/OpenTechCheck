@@ -47,7 +47,7 @@ test('badge and popup reflect fixture detections', async () => {
   // The target appears when the worker starts; with the full registry its
   // script can still be evaluating, so wait until the listener exists.
   await worker.evaluate(async () => {
-    for (let i = 0; i < 150 && !chrome.webRequest.onHeadersReceived.hasListeners(); i++) {
+    for (let i = 0; i < 150 && !chrome.webRequest?.onHeadersReceived.hasListeners(); i++) {
       await new Promise((r) => setTimeout(r, 100))
     }
   })
