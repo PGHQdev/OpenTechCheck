@@ -1,0 +1,13 @@
+name: FastAPI
+slug: fastapi
+category: web-framework
+website: https://fastapi.tiangolo.com
+implies: [python]
+detect:
+  html:
+    # FastAPI's generated Swagger UI keeps its own favicon and default UI config.
+    - pattern: '<link\s+rel="shortcut icon"\s+href="https://fastapi\.tiangolo\.com/img/favicon\.png">[\s\S]*?<title>[^<]+ - Swagger UI</title>[\s\S]*?<div id="swagger-ui">\s*</div>[\s\S]*?<script src="https://cdn\.jsdelivr\.net/npm/swagger-ui-dist@[3-5]/swagger-ui-bundle\.js"></script>[\s\S]*?const ui = SwaggerUIBundle\(\{[\s\S]*?"dom_id":\s*"#swagger-ui"[\s\S]*?"layout":\s*"BaseLayout"[\s\S]*?"deepLinking":\s*true[\s\S]*?"showExtensions":\s*true[\s\S]*?"showCommonExtensions":\s*true[\s\S]*?SwaggerUIBundle\.presets\.apis[\s\S]*?SwaggerUIBundle\.SwaggerUIStandalonePreset'
+      confidence: 95
+    # FastAPI's generated ReDoc page uses the same framework-owned favicon.
+    - pattern: '<title>[^<]+ - ReDoc</title>[\s\S]*?<link\s+rel="shortcut icon"\s+href="https://fastapi\.tiangolo\.com/img/favicon\.png">[\s\S]*?<redoc\s+spec-url="[^"]+"></redoc>[\s\S]*?<script src="https://cdn\.jsdelivr\.net/npm/redoc@(?:2|next)/bundles/redoc\.standalone\.js"'
+      confidence: 95
